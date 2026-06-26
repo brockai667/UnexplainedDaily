@@ -1,7 +1,11 @@
 {
   "pexels_api_key": "",
   "buffer_token": "",
-  "buffer_channels": [],
+  "buffer_channels": [
+    { "id": "6a3e2c415ab6d2f1067372d1", "service": "instagram", "name": "unex.plaineddaily" },
+    { "id": "6a3e2c7c5ab6d2f106737384", "service": "youtube", "name": "UnexplainedDaily" },
+    { "id": "6a3e2c585ab6d2f106737311", "service": "tiktok", "name": "unexplained_daily" }
+  ],
   "cloudinary_cloud_name": "",
   "cloudinary_api_key": "",
   "cloudinary_api_secret": "",
