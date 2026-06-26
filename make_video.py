@@ -219,8 +219,10 @@ def build_ass(all_words, cfg, path):
                 word = w[2].upper().replace("\n", " ").replace("{", "(").replace("}", ")")
                 if k == wi:
                     parts.append(f"{{\\c&H{hl}&\\fscx{pop}\\fscy{pop}}}{word}{{\\r}}")
+                elif k < wi:
+                    parts.append(word)                                # uz povedane -> viditelne
                 else:
-                    parts.append(word)
+                    parts.append(f"{{\\alpha&HFF&}}{word}{{\\r}}")     # buduce -> nevidiltelne (drzi sirku, neprezradi)
             text = " ".join(parts)
             lines.append(f"Dialogue: 0,{secs_to_ass(ev_start)},{secs_to_ass(ev_end)},Default,,0,0,0,,{text}")
     with open(path, "w", encoding="utf-8") as f:
