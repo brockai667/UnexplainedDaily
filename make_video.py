@@ -241,6 +241,31 @@ def concat_segments(seg_files, cfg, tmp):
     return out
 
 
+def add_sfx(ff, video, cut_times, tmp):
+    """Pridá jemny 'whoosh' na kazdy strih. Plne chranene -> pri chybe vrati povodne video."""
+    if not cut_times:
+        return video
+    try:
+        whoosh = os.path.join(tmp, "_whoosh.wav")
+        run([ff, "-y", "-f", "lavfi", "-i", "anoisesrc=d=0.3:c=pink:a=0.08",
+             "-af", "highpass=f=350,lowpass=f=4500,afade=t=in:d=0.05,"
+                    "afade=t=out:st=0.12:d=0.18,volume=0.45", whoosh])
+        inputs = ["-i", video]
+        fc, labels = [], ["[0:a]"]
+        for n, t in enumerate(cut_times):
+            inputs += ["-i", whoosh]
+            ms = int(t * 1000)
+            fc.append(f"[{n+1}:a]adelay={ms}|{ms}[s{n}]")
+            labels.append(f"[s{n}]")
+        fc.append("".join(labels) + f"amix=inputs={len(labels)}:duration=first:normalize=0[a]")
+        out = os.path.join(tmp, "with_sfx.mp4")
+        run([ff, "-y", *inputs, "-filter_complex", ";".join(fc),
+             "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k", out])
+        return out
+    except Exception:
+        return video   # ak SFX zlyha, video ostane bez nich (nic sa nerozbije)
+
+
 def add_music(video, music, cfg, tmp):
     ff = cfg["ffmpeg"]
     vol = cfg.get("music_volume", 0.12)
@@ -304,7 +329,11 @@ def main():
     all_words = []
     seg_files = []
     cursor = 0.0
-    used_ids = set()   # ID klipov uz pouzitych v tomto videu -> ziadne opakovanie
+    cuts = []           # casy strihov -> jemne zvukove efekty
+    first_broll = None  # loop-bookend: posledny zaber = prvy -> plynuly loop
+    used_ids = set()    # ID klipov uz pouzitych v tomto videu -> ziadne opakovanie
+    loop_end = cfg.get("loop_bookend", True)
+    last_i = len(segments) - 1
     for i, seg in enumerate(segments):
         text = seg["text"].strip()
         print(f"  [{i+1}/{len(segments)}] TTS: {text[:55]}...")
@@ -314,7 +343,12 @@ def main():
                     cfg.get("tts_rate", "+0%"), cfg.get("tts_pitch", "+0Hz"))
         trim_trailing_silence(cfg["ffmpeg"], raw_audio, audio, cfg.get("segment_gap", 0.12))
         dur = probe_duration(cfg["ffprobe"], audio)
-        broll, vid = get_broll(seg.get("keywords", ""), cfg, broll_dir, used_ids)
+        if loop_end and i == last_i and first_broll:
+            broll, vid = first_broll, None      # bookend: koniec = zaciatok
+        else:
+            broll, vid = get_broll(seg.get("keywords", ""), cfg, broll_dir, used_ids)
+        if i == 0:
+            first_broll = broll
         if vid is not None:
             used_ids.add(vid)
         if not broll and seg.get("keywords"):
@@ -322,6 +356,8 @@ def main():
         render_segment(i, audio, dur, broll, cfg, tmp)
         for (o, d, txt) in words:
             all_words.append((cursor + o, d, txt))
+        if i > 0:
+            cuts.append(cursor)                 # strih na zaciatku tohto segmentu
         cursor += dur
         seg_files.append(os.path.join(tmp, f"seg_{i:03d}.mp4"))
 
@@ -335,6 +371,10 @@ def main():
     if musics:
         print(f"  Pridavam hudbu: {os.path.basename(musics[0])}")
         video = add_music(video, musics[0], cfg, tmp)
+
+    if cfg.get("sfx", True):
+        print("  Pridavam jemne zvukove efekty na strihy...")
+        video = add_sfx(cfg["ffmpeg"], video, cuts, tmp)
 
     slug = slugify(spec.get("title", "video"))
     final = os.path.join(out_dir, slug + ".mp4")
