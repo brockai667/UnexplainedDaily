@@ -75,12 +75,12 @@ def tts(text, voice, out_mp3, rate="+0%", pitch="+0Hz"):
     return asyncio.run(_tts(text, voice, out_mp3, rate, pitch))
 
 
-def trim_trailing_silence(ff, src, dst):
-    """Odreze dlhe ticho na konci segmentu a necha jednotnu malu pauzu (0.1s)
-    -> ziadne divne dlhe pauzy medzi vetami. Trailing-only (cez areverse),
+def trim_trailing_silence(ff, src, dst, gap=0.12):
+    """Odreze dlhe ticho na konci segmentu a necha jednotnu pauzu (gap s)
+    -> oddeli vety/fakty ako odseky. Trailing-only (cez areverse),
     takze casovanie slov pre titulky ostava platne."""
     af = ("areverse,silenceremove=start_periods=1:start_duration=0.02:"
-          "start_threshold=-50dB,areverse,apad=pad_dur=0.1")
+          f"start_threshold=-50dB,areverse,apad=pad_dur={gap}")
     try:
         run([ff, "-y", "-i", src, "-af", af, dst])
         return dst
@@ -310,7 +310,7 @@ def main():
         audio = os.path.join(tmp, f"seg_{i:03d}.mp3")
         words = tts(text, voice, raw_audio,
                     cfg.get("tts_rate", "+0%"), cfg.get("tts_pitch", "+0Hz"))
-        trim_trailing_silence(cfg["ffmpeg"], raw_audio, audio)
+        trim_trailing_silence(cfg["ffmpeg"], raw_audio, audio, cfg.get("segment_gap", 0.12))
         dur = probe_duration(cfg["ffprobe"], audio)
         broll, vid = get_broll(seg.get("keywords", ""), cfg, broll_dir, used_ids)
         if vid is not None:

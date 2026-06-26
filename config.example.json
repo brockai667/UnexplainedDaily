@@ -12,6 +12,7 @@
   "voice": "en-GB-RyanNeural",
   "tts_rate": "-10%",
   "tts_pitch": "-3Hz",
+  "segment_gap": 0.4,
   "width": 1080,
   "height": 1920,
   "fps": 30,

@@ -29,10 +29,13 @@ EXAMPLE = {
     "title": "3 Mysteries Science Can't Explain",
     "segments": [
         {"text": "We've mapped less of the ocean than the surface of Mars.", "keywords": "deep ocean dark"},
-        {"text": "And what's down there only gets stranger.", "keywords": "dark underwater"},
-        {"text": "Strange sounds echo from the deep with no known source.", "keywords": "ocean waves night"},
-        {"text": "Creatures we've never seen drift in total darkness.", "keywords": "deep sea creature"},
-        {"text": "Most of it has never seen human eyes.", "keywords": "underwater dark blue"},
+        {"text": "And it only gets stranger from here.", "keywords": "dark underwater"},
+        {"text": "First, a sound so loud sensors heard it across an entire ocean.", "keywords": "ocean waves night"},
+        {"text": "To this day, no one knows what made it.", "keywords": "dark stormy sea"},
+        {"text": "Next, creatures we've never seen drift in total darkness.", "keywords": "deep sea creature"},
+        {"text": "Some glow with a light we still can't fully explain.", "keywords": "bioluminescent ocean"},
+        {"text": "And most of the deep has never seen human eyes.", "keywords": "underwater dark blue"},
+        {"text": "We truly don't know what is down there.", "keywords": "dark abyss"},
         {"text": "Follow for mysteries we still can't explain.", "keywords": "dark foggy forest"},
     ],
     "description": "We've explored more of space than our own oceans. Follow for daily mysteries!",
@@ -50,10 +53,11 @@ def build_prompt(n, existing_titles):
         f"{json.dumps(EXAMPLE, ensure_ascii=False, indent=2)}\n\n"
         "Rules (make it feel PRO and VIRAL, eerie but trustworthy):\n"
         "- title: catchy, like '3 Mysteries Science Can't Explain' or 'Things That Shouldn't Exist'.\n"
-        "- exactly 6 segments. Segment 1 is THE HOOK: an unsettling, true fact under 12 words "
+        "- 8 to 11 segments. Segment 1 is THE HOOK: an unsettling, true fact under 12 words "
         "that makes a viewer think 'wait, that's real?'. Never start with 'Did you know'.\n"
-        "- segment 2 is a short open-loop tease (e.g. 'And it only gets stranger.', "
-        "'But the last one has no explanation at all.').\n"
+        "- segment 2 is a short open-loop tease (e.g. 'And it only gets stranger.').\n"
+        "- then present EACH point in TWO short lines: a claim, then one eerie detail that pays it "
+        "off, so every point lands and the video runs ~30-40s (not a rushed one-line list).\n"
         "- the LAST segment text MUST be exactly: 'Follow for mysteries we still can't explain.'\n"
         "- write for a slow, ominous SPOKEN voiceover: short, punchy, simple sentences.\n"
         "- USE ONLY REAL, widely-reported phenomena or genuine unsolved cases. NO invented facts, "
