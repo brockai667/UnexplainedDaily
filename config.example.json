@@ -2,9 +2,21 @@
   "pexels_api_key": "",
   "buffer_token": "",
   "buffer_channels": [
-    { "id": "6a3e2c415ab6d2f1067372d1", "service": "instagram", "name": "unex.plaineddaily" },
-    { "id": "6a3e2c7c5ab6d2f106737384", "service": "youtube", "name": "UnexplainedDaily" },
-    { "id": "6a3e2c585ab6d2f106737311", "service": "tiktok", "name": "unexplained_daily" }
+    {
+      "id": "6a3e2c415ab6d2f1067372d1",
+      "service": "instagram",
+      "name": "unex.plaineddaily"
+    },
+    {
+      "id": "6a3e2c7c5ab6d2f106737384",
+      "service": "youtube",
+      "name": "UnexplainedDaily"
+    },
+    {
+      "id": "6a3e2c585ab6d2f106737311",
+      "service": "tiktok",
+      "name": "unexplained_daily"
+    }
   ],
   "cloudinary_cloud_name": "",
   "cloudinary_api_key": "",
@@ -21,12 +33,28 @@
   "brand_name": "UnexplainedDaily",
   "brand_handle": "",
   "brand_cta": "Follow for mysteries we still can't explain 🌑",
-  "brand_hashtags": ["#unexplained", "#mystery", "#creepy", "#strange", "#didyouknow", "#shorts", "#fyp", "#scary"],
+  "brand_hashtags": [
+    "#unexplained",
+    "#mystery",
+    "#creepy",
+    "#strange",
+    "#didyouknow",
+    "#shorts",
+    "#fyp",
+    "#scary"
+  ],
   "color_grade": "eq=contrast=1.25:brightness=-0.1:saturation=0.68:gamma=0.85,vignette=angle=PI/3.5",
   "caption_words_per_line": 3,
   "caption_fontsize": 80,
   "caption_margin_v": 880,
   "caption_margin_h": 185,
   "ffmpeg": "ffmpeg",
-  "ffprobe": "ffprobe"
+  "ffprobe": "ffprobe",
+  "caption_style": "color",
+  "caption_highlight_hex": "FF26B0",
+  "caption_box_hex": "FF26B0",
+  "caption_text_hex": "FFFFFF",
+  "caption_pop_scale": 112,
+  "brand_primary": "0x120a1a",
+  "brand_accent": "0xb026ff"
 }
