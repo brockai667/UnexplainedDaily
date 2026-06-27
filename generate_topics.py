@@ -73,6 +73,8 @@ def build_prompt(n, existing_titles):
         "'red lake', sailing stones -> 'desert cracked ground', a space signal -> 'radio telescope "
         "night'). Keep it dark/moody but CONCRETE, never abstract.\n"
         "- description: one intriguing sentence ending with 'Follow for daily mysteries!'.\n"
+        "- About half the time, add ONE fitting emoji at the very END of the description (e.g. 🔍, 👁️, 🌑, ❓). "
+        "Emoji ONLY in the description text, NEVER inside any segment 'text' (spoken captions).\n"
         "- hashtags: 6-8 tags including #unexplained #mystery #shorts #fyp.\n"
         f"- Do NOT reuse any of these existing titles: {existing_titles}\n"
         "Return ONLY the JSON array."
