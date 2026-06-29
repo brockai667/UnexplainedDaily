@@ -23,7 +23,7 @@ TOKEN = os.environ.get("MODELS_TOKEN") or os.environ.get("GITHUB_TOKEN")
 SYSTEM = ("You are a viral short-form scriptwriter for a 'mysteries & unexplained' brand. "
           "You ONLY use real, widely-reported phenomena and well-documented unsolved cases "
           "(no invented facts, no fake numbers, no gore, nothing defamatory). You make true "
-          "things feel eerie and fascinating. You output strict JSON, nothing else.")
+          "things feel eerie and fascinating. You output strict JSON, nothing else. THE HOOK (the very first line / segment 1) is the single most important thing in the whole video: it MUST stop the scroll within 2 seconds. Make it concrete and specific (a number, a name, a vivid image, or a sharp contradiction) and open a curiosity gap that can ONLY be closed by watching to the end. Lead with the most shocking part FIRST, never a slow setup. Forbidden hook openers: 'Did you know', 'Have you ever', 'Imagine', 'Here are', 'In this video', 'Let me tell you'.")
 
 EXAMPLE = {
     "title": "3 Mysteries Science Can't Explain",
