@@ -10,6 +10,10 @@ import re
 import sys
 
 import requests
+try:
+    import trends                      # trend scanner (Reddit + YouTube), volitelny
+except Exception:
+    trends = None
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 BANK = os.path.join(ROOT, "topics_bank.json")
@@ -19,6 +23,10 @@ TARGET = int(os.environ.get("TOPICS_TARGET", "15"))
 MODEL = os.environ.get("MODELS_MODEL", "openai/gpt-4o-mini")
 BASE = os.environ.get("MODELS_BASE_URL", "https://models.github.ai/inference")
 TOKEN = os.environ.get("MODELS_TOKEN") or os.environ.get("GITHUB_TOKEN")
+
+# Nika: ZAHADY / unexplained -> kde ludia realne diskutuju / co pozeraju
+TREND_SUBREDDITS = ['UnresolvedMysteries', 'HighStrangeness', 'Paranormal', 'Glitch_in_the_Matrix', 'mystery']
+TREND_YT_QUERIES = ['unexplained mysteries', 'strange phenomena', 'unsolved mysteries']
 
 SYSTEM = ("You are a viral short-form scriptwriter for a 'mysteries & unexplained' brand. "
           "You ONLY use real, widely-reported phenomena and well-documented unsolved cases "
@@ -43,7 +51,17 @@ EXAMPLE = {
 }
 
 
-def build_prompt(n, existing_titles):
+def build_prompt(n, existing_titles, trending=None):
+    trend_block = ""
+    if trending:
+        joined = chr(10).join("- " + t for t in trending)
+        trend_block = (
+            " WHAT REAL PEOPLE DISCUSS AND WATCH THIS WEEK (live headlines from Reddit communities and "
+            "top YouTube videos in this niche - what the audience actually cares about right now): " + joined +
+            " Let at least HALF of the new topics be directly inspired by a SPECIFIC item above, turned "
+            "into a strong hook that STILL follows the style and safety rules described. Do NOT copy any "
+            "headline word-for-word, and NEVER mention Reddit or YouTube. "
+        )
     return (
         f"Generate {n} NEW faceless short-form video topics for a MYSTERIES & UNEXPLAINED brand "
         "(TikTok / Reels / YouTube Shorts).\n"
@@ -79,6 +97,7 @@ def build_prompt(n, existing_titles):
         f"- Do NOT reuse any of these existing titles: {existing_titles}\n"
         "- Do NOT repeat the same SUBJECT, fact or concept as any existing title above, even reworded, "
         "renumbered or from a different angle. Every topic must be a genuinely DIFFERENT idea.\n"
+        + trend_block +
         "Return ONLY the JSON array."
     )
 
@@ -165,7 +184,15 @@ def main():
         print(f"Banka OK: {len(unused)} nepouzitych tem (>= {TARGET}), netreba dopnat.")
         return
     print(f"Nepouzitych {len(unused)} < {TARGET} -> generujem ~{need} novych tem cez {MODEL}...")
-    raw = call_model(build_prompt(need + 3, sorted(titles)))
+    trending = []
+    if trends is not None:
+        try:
+            trending, meta = trends.gather(TREND_SUBREDDITS, TREND_YT_QUERIES, top=18, return_meta=True)
+            if trending:
+                print(f"Trendy: {len(trending)} titulkov (Reddit={meta['reddit']}, YouTube={meta['youtube']}) -> temy z realneho dopytu.")
+        except Exception as e:
+            print("Trendy preskocene:", str(e)[:120])
+    raw = call_model(build_prompt(need + 3, sorted(titles), trending))
     items = extract_json(raw)
     added = 0
     existing_sigs = [_sig(x) for x in titles]
