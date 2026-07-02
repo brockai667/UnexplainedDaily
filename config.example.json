@@ -75,6 +75,6 @@
   "broll_fallback_query": "dark mysterious fog forest",
   "pixabay_api_key": "",
   "visual_engine": "motion",
-  "motion_bg": "stars",
+  "motion_bg": "auto",
   "motion_style": "dark mysterious cinematic photograph, fog, eerie cold light, desaturated, single clear subject, no text, no watermark"
 }
