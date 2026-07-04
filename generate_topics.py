@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""
-Doplni banku tem (topics_bank.json) cez GitHub Models (zadarmo) ak je malo nepouzitych.
-Nika: ZAHADY / nevysvetlene / creepy (TRUE, siroko-uznavane javy; ziadne vymysly, ziaden gore).
-Spusta sa v GitHub Actions (token z GITHUB_TOKEN, permission models: read).
-"""
+"""Doplni banku tem cez GitHub Models (zadarmo). Nika: ZAHADY / unexplained.
+NOVY FORMAT (PRO engine, eerie dizajn): tema = mystery + place + country + 5-6 scen
+(hook/map/fact/archive/callout/cta) s presnymi queries, sync chipmi, ARCHIVE scenou
+(realna fotka artefaktu/miesta z Wikimedia) a popisom kde sa to stalo/naslo.
+Stare temy bez 'scenes' sa vyradia az ked su aspon 3 nove (den nikdy neostane bez videi)."""
 import json
 import os
 import re
@@ -24,30 +24,41 @@ MODEL = os.environ.get("MODELS_MODEL", "openai/gpt-4o-mini")
 BASE = os.environ.get("MODELS_BASE_URL", "https://models.github.ai/inference")
 TOKEN = os.environ.get("MODELS_TOKEN") or os.environ.get("GITHUB_TOKEN")
 
-# Nika: ZAHADY / unexplained -> kde ludia realne diskutuju / co pozeraju
 TREND_SUBREDDITS = ['UnresolvedMysteries', 'HighStrangeness', 'Paranormal', 'Glitch_in_the_Matrix', 'mystery']
 TREND_YT_QUERIES = ['unexplained mysteries', 'strange phenomena', 'unsolved mysteries']
 
-SYSTEM = ("You are a viral short-form scriptwriter for a 'mysteries & unexplained' brand. "
-          "You ONLY use real, widely-reported phenomena and well-documented unsolved cases "
-          "(no invented facts, no fake numbers, no gore, nothing defamatory). You make true "
-          "things feel eerie and fascinating. You output strict JSON, nothing else. THE HOOK (the very first line / segment 1) is the single most important thing in the whole video: it MUST stop the scroll within 2 seconds. Make it concrete and specific (a number, a name, a vivid image, or a sharp contradiction) and open a curiosity gap that can ONLY be closed by watching to the end. Lead with the most shocking part FIRST, never a slow setup. Forbidden hook openers: 'Did you know', 'Have you ever', 'Imagine', 'Here are', 'In this video', 'Let me tell you'.")
+SYSTEM = ("You are a scriptwriter for a 'mysteries & unexplained' brand. You retell REAL, "
+          "widely-documented mysteries: strange phenomena, unexplained discoveries, ancient artifacts, "
+          "lost signals, places science still debates. STRICT SAFETY RULES: (1) ACCURACY IS SACRED - "
+          "only real, widely-reported facts; never invent details, numbers or claims. (2) Be HONEST "
+          "about the state of knowledge: if science has a leading explanation, present it as the "
+          "accepted theory; what is unknown stays clearly unknown - never sell pseudoscience as fact. "
+          "(3) No gore, nothing defamatory, no victim photos. (4) Eerie and fascinating, never "
+          "misleading. You output strict JSON, nothing else.")
 
 EXAMPLE = {
-    "title": "3 Mysteries Science Can't Explain",
-    "segments": [
-        {"text": "We've mapped less of the ocean than the surface of Mars.", "keywords": "deep ocean dark"},
-        {"text": "And it only gets stranger from here.", "keywords": "dark underwater"},
-        {"text": "First, the Bloop, a sound sensors caught deep underwater.", "keywords": "ocean waves night"},
-        {"text": "It was heard across an entire ocean, and its source is still debated.", "keywords": "dark stormy sea"},
-        {"text": "Next, creatures we've never seen drift in total darkness.", "keywords": "deep sea creature"},
-        {"text": "Some glow with a light we still can't fully explain.", "keywords": "bioluminescent ocean"},
-        {"text": "And most of the deep has never seen human eyes.", "keywords": "underwater dark blue"},
-        {"text": "We truly don't know what is down there.", "keywords": "dark abyss"},
-        {"text": "Follow for mysteries we still can't explain.", "keywords": "dark foggy forest"},
+    "title": "The 2,000-Year-Old Computer",
+    "place": "Antikythera",
+    "country": "Greece",
+    "scenes": [
+        {"role": "hook", "text": "A machine two thousand years ahead of its time, found on a shipwreck.",
+         "hook_top": "A 2,000 YEAR OLD COMPUTER", "query": "underwater shipwreck diver dark",
+         "query2": "deep sea dark water"},
+        {"role": "map", "text": "It was pulled from a Roman-era shipwreck off Antikythera, a tiny island in Greece."},
+        {"role": "fact", "text": "Sponge divers found it in 1901. X-rays later revealed at least thirty interlocking bronze gears.",
+         "query": "ancient bronze mechanism gears", "query2": "old gears macro dark",
+         "chips": [{"t": "FOUND IN 1901", "on": "1901", "style": "white"}, {"t": "30 BRONZE GEARS", "on": "gears", "style": "accent"}],
+         "punch": "gears"},
+        {"role": "archive", "text": "Its corroded fragments are kept in Athens, still being decoded more than a century later.",
+         "archive_query": "Antikythera mechanism fragment", "archive_label": "Antikythera mechanism"},
+        {"role": "callout", "text": "It tracked the sun and the moon, and predicted eclipses, centuries before anything like it existed.",
+         "query": "night sky stars moon timelapse", "query2": "solar eclipse dark sky",
+         "label": "PREDICTED ECLIPSES", "sub": "centuries ahead of its time", "label_on": "eclipses", "punch": "eclipses"},
+        {"role": "cta", "text": "Follow for a new mystery every day.",
+         "query": "foggy forest night mist", "query2": "dark ocean night waves"}
     ],
-    "description": "We've explored more of space than our own oceans. Follow for daily mysteries!",
-    "hashtags": ["#unexplained", "#mystery", "#ocean", "#creepy", "#strange", "#shorts", "#fyp", "#scary"],
+    "description": "\U0001F4CD Antikythera, Greece - 1901. Sponge divers pulled a corroded machine from a Roman shipwreck: at least 30 bronze gears that tracked the sun and moon and predicted eclipses. Follow for daily mysteries!",
+    "hashtags": ["#mystery", "#unexplained", "#antikythera", "#greece", "#ancienttech", "#history", "#shorts", "#fyp"],
 }
 
 
@@ -62,63 +73,57 @@ CTAS = [
 ]
 
 
-def build_prompt(n, existing_titles, trending=None):
+def build_prompt(n, existing_titles, existing_places, trending=None):
     trend_block = ""
     if trending:
         joined = chr(10).join("- " + t for t in trending)
         trend_block = (
             " WHAT REAL PEOPLE DISCUSS AND WATCH THIS WEEK (live headlines from Reddit communities and "
-            "top YouTube videos in this niche - what the audience actually cares about right now): " + joined +
+            "top YouTube videos in this niche): " + joined +
             " Let at least HALF of the new topics be directly inspired by a SPECIFIC item above, turned "
-            "into a strong hook that STILL follows the style and safety rules described. Do NOT copy any "
-            "headline word-for-word, and NEVER mention Reddit or YouTube. "
+            "into a strong hook that STILL follows all safety rules. Do NOT copy any headline "
+            "word-for-word, and NEVER mention Reddit or YouTube. "
         )
     return (
-        f"Generate {n} NEW faceless short-form video topics for a MYSTERIES & UNEXPLAINED brand "
-        "(TikTok / Reels / YouTube Shorts).\n"
-        "Niche: real unsolved mysteries, strange-but-true phenomena, eerie history, and things "
-        "science can't fully explain (deep ocean, space signals, ancient sites, natural oddities).\n"
-        "Return ONLY a JSON array (no markdown, no commentary). Each item EXACTLY this schema:\n"
+        f"Generate {n} NEW faceless short-form video topics for a MYSTERIES & UNEXPLAINED brand. Each video "
+        "is a cinematic MICRO-DOC of ONE real, widely-documented mystery (TikTok / Reels / Shorts).\n"
+        "Return ONLY a JSON array (no markdown). Each item EXACTLY this schema:\n"
         f"{json.dumps(EXAMPLE, ensure_ascii=False, indent=2)}\n\n"
-        "Rules (make it feel PRO and VIRAL, eerie but trustworthy):\n"
-        "- title: catchy, like '3 Mysteries Science Can't Explain' or 'Things That Shouldn't Exist'.\n"
-        "- 8 to 11 segments. Segment 1 is THE HOOK: an unsettling, true fact under 12 words "
-        "that makes a viewer think 'wait, that's real?'. Never start with 'Did you know'.\n"
-        "- segment 2 is a short open-loop tease (e.g. 'And it only gets stranger.').\n"
-        "- then present EACH point in TWO short lines: NAME the specific real thing (e.g. 'the Bloop', "
-        "'fast radio bursts', 'the Antikythera mechanism', 'the sailing stones of Death Valley'), then "
-        "EXPLAIN the real intriguing detail that makes it unexplained. Give a genuine 'whoa, I just "
-        "learned something' payoff — go into the actual fact, do NOT just vaguely hint at it from a "
-        "distance. ~30-40s total, not a rushed one-line list.\n"
-        "- the SECOND-TO-LAST segment must LOOP BACK to the opening hook (re-pose the mystery you "
-        "started with) so a rewatch feels seamless; the final segment is the fixed follow line below.\n"
-        "- the LAST segment text MUST be exactly: 'Follow for mysteries we still can't explain.'\n"
-        "- write for a slow, ominous SPOKEN voiceover: short, punchy, simple sentences.\n"
-        "- USE ONLY REAL, widely-reported phenomena or genuine unsolved cases. NO invented facts, "
-        "NO fake statistics, NO gore or graphic death, NO real named victims, nothing defamatory. "
-        "Eerie and fascinating, never harmful misinformation.\n"
-        "- each segment 'keywords': 1-3 ENGLISH words for real Pexels footage that VISUALLY MATCHES "
-        "the specific thing named in that line, so viewers can picture it (line about a red lake -> "
-        "'red lake', sailing stones -> 'desert cracked ground', a space signal -> 'radio telescope "
-        "night'). Keep it dark/moody but CONCRETE, never abstract.\n"
-        "- description: one intriguing sentence ending with 'Follow for daily mysteries!'.\n"
-        "- About half the time, add ONE fitting emoji at the very END of the description (e.g. 🔍, 👁️, 🌑, ❓). "
-        "Emoji ONLY in the description text, NEVER inside any segment 'text' (spoken captions).\n"
-        "- hashtags: 6-8 tags including #unexplained #mystery #shorts #fyp.\n"
-        "- VARY THE TITLE FORMAT: do NOT start more than one in five titles with a number "
-        "(avoid the repetitive 'N things' pattern). Mix a bold claim, a question, a "
-        "'why/how' angle and a curiosity gap so titles never look the same.\n"
-        "- ACCURACY IS CRITICAL: use ONLY widely-documented, verifiable facts. NEVER invent or "
-        "guess numbers, percentages, dates, amounts or statistics. If a specific figure is not "
-        "universally established, say it generally instead of making one up. Wrong facts kill the "
-        "channel's credibility, so double-check every claim.\n"
-        "- BE SPECIFIC: name the ACTUAL subject of the video (the exact place, case, event, person "
-        "or thing) so it is never vague. Viewers complain when the location or subject is not named.\n"
+        "Rules (PRO editing pipeline depends on these):\n"
+        "- Pick a REAL, widely-documented mystery: strange phenomena, unexplained discoveries, ancient "
+        "artifacts, lost signals, mysterious places, historic enigmas. No invented mysteries, no creepypasta.\n"
+        "- 'place' = where it happened / was found (city, island, region), 'country' = country (both REQUIRED - used for the "
+        "map pin, must be findable on OpenStreetMap).\n"
+        "- EXACTLY 5 or 6 scenes in this order: hook, map, fact, (optional archive), callout, cta. "
+        "Each scene 'text' = 1-2 short spoken sentences (serious documentary voice, no gore).\n"
+        "- hook: the most gripping TRUE detail, under 14 words. 'hook_top' = the same idea compressed "
+        "to MAX 6 punchy words (big kinetic text). Never start with 'Did you know'.\n"
+        "- map scene 'text' MUST say where it happened or was found, accurately.\n"
+        "- fact scenes: 'chips' = 1-2 short TRUE fact-chips: {'t': 'MAX 22 CHARS', 'on': 'spoken trigger "
+        "word', 'style': 'white'|'accent'}. ONLY widely-documented numbers/years (e.g. 'FOUND IN 1901', '30 BRONZE "
+        "GEARS'); if no reliable number, use a word chip (e.g. 'STILL UNEXPLAINED').\n"
+        "- archive scene (include ONLY if a real image almost certainly exists on Wikimedia "
+        "Commons): 'archive_query' = precise Commons search (famous artifact, site, document - "
+        "e.g. 'Antikythera mechanism fragment', 'Nazca lines aerial', 'Voynich manuscript page'), "
+        "'archive_label' = short caption (max 26 chars). NEVER use photos of victims or private people.\n"
+        "- callout scene: 'label' = 2-4 word on-screen label (e.g. 'NEVER RECOVERED'), 'sub' = short "
+        "sub-line (max 34 chars), 'label_on' = spoken trigger word.\n"
+        "- 'punch' (optional): ONE spoken word where the shot subtly zooms.\n"
+        "- EVERY scene except map/archive needs 'query' = cinematic moody stock search (e.g. 'foggy forest "
+        "night', 'deep ocean dark', 'ancient ruins mist', 'night sky stars timelapse') and 'query2' = "
+        "alternative. Concrete, atmospheric, NEVER graphic or violent.\n"
+        "- the LAST scene text MUST be exactly: 'Follow for a new mystery every day.'\n"
+        "- HONESTY: if science has a leading explanation, include it as the accepted theory; what is "
+        "unknown stays clearly unknown; never sell pseudoscience as fact; ACCURACY IS SACRED.\n"
+        "- description: MUST begin with '\U0001F4CD <Place>, <Country> - <Year>.' then 1-2 gripping TRUE "
+        "sentences about the mystery, then 'Follow for daily mysteries!'\n"
+        "- hashtags: 6-9 tags: #mystery #unexplained #shorts #fyp + 2-3 specific to the case/place.\n"
+        "- VARY THE TITLE FORMAT: mix a bold claim, a question and a curiosity gap; do NOT start more "
+        "than one in five titles with a number; never clickbait that misleads.\n"
         f"- Do NOT reuse any of these existing titles: {existing_titles}\n"
-        "- Do NOT repeat the same SUBJECT, fact or concept as any existing title above, even reworded, "
-        "renumbered or from a different angle. Every topic must be a genuinely DIFFERENT idea.\n"
+        f"- Do NOT reuse any of these already-covered mysteries/places (no repeats, not even reworded): {existing_places}\n"
         + trend_block +
-        "STORYBOARD (visual directing, IMPORTANT): to EVERY segment ADD a field 'visual' = an object choosing HOW to visualize exactly what that line SAYS (never generic): {\"type\":\"kenburns\",\"prompt\":\"LITERAL ENGLISH image prompt naming ONE concrete, instantly recognizable subject/scene that depicts exactly what the line says (a real thing a camera could photograph; NEVER abstract, NEVER metaphors)\"} for normal lines; {\"type\":\"counter\",\"target\":1000,\"suffix\":\"x\",\"label\":\"3-4 WORD CAPTION\"} when the line contains a big number; {\"type\":\"compare\",\"small_prompt\":\"...\",\"big_prompt\":\"...\",\"small_label\":\"X\",\"big_label\":\"Y\",\"stat\":\"300x\"} for size/amount comparisons; {\"type\":\"callouts\",\"prompt\":\"subject image\",\"labels\":[\"SHORT LABEL\"]} to point at parts of a subject; {\"type\":\"lineup\",\"items\":[{\"name\":\"A\",\"prompt\":\"...\"}]} for listing 3-5 things; {\"type\":\"arrow\",\"from_prompt\":\"...\",\"to_prompt\":\"...\",\"label\":\"WHAT MOVES\"} for movement/flow. First segment gets {\"type\":\"hook\",\"prompt\":\"dramatic scene image\",\"big\":\"SHORT PUNCHY QUESTION OR CLAIM (max 5 words)\"}; last segment {\"type\":\"cta\",\"prompt\":\"iconic subject of the video\"}. Labels MUST describe what the narration says at that moment - never invent unrelated text. Image prompts must describe 3D RENDERED CGI assets in a modern 3D-explainer style - NEVER photographs, NEVER photorealistic people; if a person is needed, describe an elegant dark silhouette with dramatic rim light, or the relevant anatomy/object instead - NEVER cartoon characters, NEVER toys; prefer objects, anatomy, environments, close-up details; the subject must FILL the frame and be well lit. Return ONLY the JSON array."
+        "Return ONLY the JSON array."
     )
 
 
@@ -126,14 +131,9 @@ def call_model(user_text):
     r = requests.post(
         BASE.rstrip("/") + "/chat/completions",
         headers={"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json"},
-        json={
-            "model": MODEL,
-            "temperature": 0.95,
-            "messages": [
-                {"role": "system", "content": SYSTEM},
-                {"role": "user", "content": user_text},
-            ],
-        },
+        json={"model": MODEL, "temperature": 0.95,
+              "messages": [{"role": "system", "content": SYSTEM},
+                           {"role": "user", "content": user_text}]},
         timeout=180,
     )
     if r.status_code >= 400:
@@ -152,17 +152,38 @@ def extract_json(s):
 
 
 def valid(t):
-    if not isinstance(t, dict):
+    """Overi + doopravi NOVY format temy (scenes). Stare/nevalidne temy odmietne."""
+    if not isinstance(t, dict) or not t.get("title") or not t.get("place") or not t.get("country"):
         return False
-    if "title" not in t or "segments" not in t:
+    scenes = t.get("scenes")
+    if not isinstance(scenes, list) or not (4 <= len(scenes) <= 7):
         return False
-    if not isinstance(t["segments"], list) or len(t["segments"]) < 4:
-        return False
-    for seg in t["segments"]:
-        if "text" not in seg or "keywords" not in seg:
+    for sc in scenes:
+        if not isinstance(sc, dict) or not sc.get("text"):
             return False
-    t.setdefault("description", t["title"] + " Follow for daily mysteries!")
-    t.setdefault("hashtags", ["#unexplained", "#mystery", "#shorts", "#fyp"])
+        sc.setdefault("role", "fact")
+    roles = [sc["role"] for sc in scenes]
+    scenes[0]["role"] = "hook"
+    scenes[-1]["role"] = "cta"
+    if "map" not in roles:
+        return False
+    for sc in scenes:
+        if sc["role"] == "hook":
+            top = re.sub(r"[^A-Za-z0-9' ]", "", str(sc.get("hook_top") or sc["text"]))
+            sc["hook_top"] = " ".join(top.split()[:6]).upper()
+        if sc["role"] == "archive" and not sc.get("archive_query"):
+            sc["role"] = "fact"
+        if sc["role"] not in ("map", "archive") and not sc.get("query"):
+            sc["query"] = "foggy forest night mist"
+        if sc["role"] not in ("map", "archive") and not sc.get("query2"):
+            sc["query2"] = "dark ocean night waves"
+        if sc["role"] == "fact":
+            chips = [c for c in (sc.get("chips") or []) if isinstance(c, dict) and c.get("t")]
+            for c in chips:
+                c["t"] = str(c["t"])[:24]
+            sc["chips"] = chips[:2]
+    t.setdefault("description", f"\U0001F4CD {t['place']}, {t['country']}. " + t["title"] + " Follow for daily mysteries!")
+    t.setdefault("hashtags", ["#mystery", "#unexplained", "#shorts", "#fyp"])
     return True
 
 
@@ -191,6 +212,15 @@ def _too_similar(sig, existing_sigs):
     return False
 
 
+def _place_key(t):
+    """Normalizovany kluc zahady: titulok+miesto (ta ista zahada sa NIKDY neopakuje)."""
+    if isinstance(t, dict):
+        base = str(t.get("place", "")) + " " + str(t.get("title", ""))
+    else:
+        base = str(t)
+    return re.sub(r"[^a-z0-9]+", "", base.lower())[:60]
+
+
 
 # --- ANTI-OPAKOVANIE (dedup): po behu odstrani z banky NEPOUZITE temy, ktore su subjektom
 # prilis podobne inej teme. Signatura = title+description+hook + cisla/roky; caste niche-slova
@@ -205,8 +235,13 @@ revealed discover""".split())
 
 
 def _dd_sig(t):
-    txt = (str(t.get("title", "")) + " " + str(t.get("description", "")) + " "
-           + (t.get("segments", [{}])[0].get("text", "") if t.get("segments") else ""))
+    first = ""
+    if t.get("scenes"):
+        first = t["scenes"][0].get("text", "")
+    elif t.get("segments"):
+        first = t["segments"][0].get("text", "")
+    txt = (str(t.get("title", "")) + " " + str(t.get("place", "")) + " "
+           + str(t.get("description", "")) + " " + str(first))
     low = txt.lower()
     toks = set(w for w in re.findall(r"[a-z]+", low) if len(w) > 2 and w not in _DD_STOP)
     toks |= set("#" + n for n in re.findall(r"\d{2,}", low))
@@ -267,17 +302,23 @@ def _clean_bank():
 
 def main():
     if not TOKEN:
-        print("CHYBA: chyba MODELS_TOKEN/GITHUB_TOKEN")
-        sys.exit(1)
+        print("CHYBA: chyba MODELS_TOKEN/GITHUB_TOKEN"); sys.exit(1)
     bank = json.load(open(BANK, encoding="utf-8"))
     used = json.load(open(STATE, encoding="utf-8")) if os.path.exists(STATE) else []
+    # MIGRACIA na PRO format: nepouzite temy STAREHO formatu (bez 'scenes') vyrad -
+    # ale LEN ak uz mame aspon 3 nove PRO temy (den nikdy neostane bez videi)
+    old = [t for t in bank if not t.get("scenes") and t["title"] not in used]
+    new_unused = [t for t in bank if t.get("scenes") and t["title"] not in used]
+    if old and len(new_unused) >= 3:
+        bank = [t for t in bank if t.get("scenes") or t["title"] in used]
+        print(f"Migracia: vyradenych {len(old)} nepouzitych tem stareho formatu.")
     titles = {t["title"] for t in bank}
     unused = [t for t in bank if t["title"] not in used]
     need = TARGET - len(unused)
     if need <= 0:
-        print(f"Banka OK: {len(unused)} nepouzitych tem (>= {TARGET}), netreba dopnat.")
-        return
-    print(f"Nepouzitych {len(unused)} < {TARGET} -> generujem ~{need} novych tem cez {MODEL}...")
+        json.dump(bank, open(BANK, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+        print(f"Banka OK: {len(unused)} nepouzitych tem."); return
+    print(f"Generujem ~{need} novych tem cez {MODEL}...")
     trending = []
     if trends is not None:
         try:
@@ -286,24 +327,27 @@ def main():
                 print(f"Trendy: {len(trending)} titulkov (Reddit={meta['reddit']}, YouTube={meta['youtube']}) -> temy z realneho dopytu.")
         except Exception as e:
             print("Trendy preskocene:", str(e)[:120])
-    raw = call_model(build_prompt(need + 3, sorted(titles), trending))
-    items = extract_json(raw)
+    places = sorted({_place_key(t) for t in bank})
+    items = extract_json(call_model(build_prompt(need + 3, sorted(titles), places, trending)))
     added = 0
     existing_sigs = [_sig(x) for x in titles]
+    existing_places = {_place_key(t) for t in bank}
     for t in items:
         if not valid(t) or t["title"] in titles:
             continue
         _s = _sig(t["title"])
         if _too_similar(_s, existing_sigs):   # ta ista TEMA (iny nazov) -> preskoc (ziadne opakovanie)
             print("  preskocene (podobna tema):", t["title"]); continue
-        if t.get("segments"):
-            t["segments"][-1]["text"] = random.choice(CTAS)  # CTAS_ROTATE: nie vzdy rovnaka veta
-        bank.append(t)
-        titles.add(t["title"])
-        existing_sigs.append(_s)
-        added += 1
+        pk = _place_key(t)
+        if pk and pk in existing_places:
+            print("  preskocene (zahada uz bola):", t["title"]); continue
+        if t.get("scenes"):
+            t["scenes"][-1]["text"] = random.choice(CTAS)  # CTAS_ROTATE: nie vzdy rovnaka veta
+        bank.append(t); titles.add(t["title"]); existing_sigs.append(_s); added += 1
+        if pk:
+            existing_places.add(pk)
     json.dump(bank, open(BANK, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
-    print(f"Pridanych {added} novych tem. Banka ma teraz {len(bank)} tem.")
+    print(f"Pridanych {added} tem. Banka ma {len(bank)} tem.")
 
 
 if __name__ == "__main__":
