@@ -2459,5 +2459,215 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "The 2,000-Year-Old Computer",
+    "place": "Antikythera",
+    "country": "Greece",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A machine two thousand years ahead of its time, found on a shipwreck.",
+        "hook_top": "A 2000 YEAR OLD COMPUTER",
+        "query": "underwater shipwreck diver dark",
+        "query2": "deep sea dark water"
+      },
+      {
+        "role": "map",
+        "text": "It was pulled from a Roman-era shipwreck off Antikythera, a tiny island in Greece."
+      },
+      {
+        "role": "fact",
+        "text": "Sponge divers found it in 1901. X-rays later revealed at least thirty interlocking bronze gears.",
+        "query": "ancient bronze mechanism gears",
+        "query2": "old gears macro dark",
+        "chips": [
+          {
+            "t": "FOUND IN 1901",
+            "on": "1901",
+            "style": "white"
+          },
+          {
+            "t": "30 BRONZE GEARS",
+            "on": "gears",
+            "style": "accent"
+          }
+        ],
+        "punch": "gears"
+      },
+      {
+        "role": "archive",
+        "text": "Its corroded fragments are kept in Athens, still being decoded more than a century later.",
+        "archive_query": "Antikythera mechanism fragment",
+        "archive_label": "Antikythera mechanism"
+      },
+      {
+        "role": "callout",
+        "text": "It tracked the sun and the moon, and predicted eclipses, centuries before anything like it existed.",
+        "query": "night sky stars moon timelapse",
+        "query2": "solar eclipse dark sky",
+        "label": "PREDICTED ECLIPSES",
+        "sub": "centuries ahead of its time",
+        "label_on": "eclipses",
+        "punch": "eclipses"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new mystery every day.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "📍 Antikythera, Greece - 1901. Sponge divers pulled a corroded machine from a Roman shipwreck: at least 30 bronze gears that tracked the sun and moon and predicted eclipses. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#antikythera",
+      "#greece",
+      "#ancienttech",
+      "#history",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Signal That Never Came Back",
+    "place": "Delaware, Ohio",
+    "country": "USA",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "In 1977, a radio telescope caught a signal so strange, the astronomer wrote wow.",
+        "hook_top": "THE WOW SIGNAL",
+        "query": "radio telescope dish night sky",
+        "query2": "satellite dish stars night"
+      },
+      {
+        "role": "map",
+        "text": "It happened at the Big Ear observatory in Delaware, Ohio."
+      },
+      {
+        "role": "fact",
+        "text": "The signal lasted seventy two seconds, and looked exactly like what an alien broadcast was predicted to look like.",
+        "query": "deep space stars radio waves",
+        "query2": "night sky stars timelapse",
+        "chips": [
+          {
+            "t": "1977",
+            "on": "seventy",
+            "style": "white"
+          },
+          {
+            "t": "72 SECONDS",
+            "on": "seconds",
+            "style": "accent"
+          }
+        ],
+        "punch": "alien"
+      },
+      {
+        "role": "archive",
+        "text": "The astronomer circled the printout and wrote one word in the margin. Wow.",
+        "archive_query": "Wow! signal printout",
+        "archive_label": "The original printout"
+      },
+      {
+        "role": "callout",
+        "text": "Astronomers have pointed telescopes at that spot for decades. The signal has never repeated.",
+        "query": "observatory telescope night",
+        "query2": "astronomer silhouette stars",
+        "label": "NEVER REPEATED",
+        "sub": "despite decades of listening",
+        "label_on": "repeated",
+        "punch": "never"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new mystery every day.",
+        "query": "night sky milky way timelapse",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "📍 Delaware, Ohio - 1977. A 72-second radio signal matched predictions of an alien broadcast so well the astronomer wrote 'Wow!' on the printout. It never repeated. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#wowsignal",
+      "#space",
+      "#aliens",
+      "#seti",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "Drawings Only the Sky Can Read",
+    "place": "Nazca",
+    "country": "Peru",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Someone carved giant drawings into this desert, that can only be seen from the sky.",
+        "hook_top": "ART ONLY THE SKY SEES",
+        "query": "nazca lines aerial desert",
+        "query2": "desert aerial view patterns"
+      },
+      {
+        "role": "map",
+        "text": "These are the Nazca Lines, stretched across the coastal desert of southern Peru."
+      },
+      {
+        "role": "fact",
+        "text": "Hundreds of figures, a hummingbird, a monkey, a spider, some over three hundred meters long, made around two thousand years ago.",
+        "query": "nazca lines hummingbird aerial",
+        "query2": "peru desert aerial",
+        "chips": [
+          {
+            "t": "2,000 YEARS OLD",
+            "on": "thousand",
+            "style": "accent"
+          },
+          {
+            "t": "300M FIGURES",
+            "on": "meters",
+            "style": "white"
+          }
+        ],
+        "punch": "spider"
+      },
+      {
+        "role": "archive",
+        "text": "The lines were made by removing dark stones to reveal the pale ground beneath, and the desert kept them alive.",
+        "archive_query": "Nazca Lines hummingbird",
+        "archive_label": "The hummingbird"
+      },
+      {
+        "role": "callout",
+        "text": "Why build art you can never see whole? The leading theory says the paths were walked in rituals.",
+        "query": "desert path aerial peru",
+        "query2": "arid landscape aerial",
+        "label": "WALKED IN RITUALS",
+        "sub": "the leading theory",
+        "label_on": "rituals",
+        "punch": "whole"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new mystery every day.",
+        "query": "desert sunset aerial peru",
+        "query2": "canyon desert sunset aerial"
+      }
+    ],
+    "description": "📍 Nazca, Peru. Two thousand years ago, someone carved hundreds of giant figures into the desert - visible only from the sky. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#nazcalines",
+      "#peru",
+      "#ancient",
+      "#archaeology",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]
