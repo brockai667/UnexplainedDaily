@@ -1,0 +1,70 @@
+{
+  "title": "The Signal That Never Came Back",
+  "place": "Delaware, Ohio",
+  "country": "USA",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "In 1977, a radio telescope caught a signal so strange, the astronomer wrote wow.",
+      "hook_top": "THE WOW SIGNAL",
+      "query": "radio telescope dish night sky",
+      "query2": "satellite dish stars night"
+    },
+    {
+      "role": "map",
+      "text": "It happened at the Big Ear observatory in Delaware, Ohio."
+    },
+    {
+      "role": "fact",
+      "text": "The signal lasted seventy two seconds, and looked exactly like what an alien broadcast was predicted to look like.",
+      "query": "deep space stars radio waves",
+      "query2": "night sky stars timelapse",
+      "chips": [
+        {
+          "t": "1977",
+          "on": "seventy",
+          "style": "white"
+        },
+        {
+          "t": "72 SECONDS",
+          "on": "seconds",
+          "style": "accent"
+        }
+      ],
+      "punch": "alien"
+    },
+    {
+      "role": "archive",
+      "text": "The astronomer circled the printout and wrote one word in the margin. Wow.",
+      "archive_query": "Wow! signal printout",
+      "archive_label": "The original printout"
+    },
+    {
+      "role": "callout",
+      "text": "Astronomers have pointed telescopes at that spot for decades. The signal has never repeated.",
+      "query": "observatory telescope night",
+      "query2": "astronomer silhouette stars",
+      "label": "NEVER REPEATED",
+      "sub": "despite decades of listening",
+      "label_on": "repeated",
+      "punch": "never"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new mystery every day.",
+      "query": "night sky milky way timelapse",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "📍 Delaware, Ohio - 1977. A 72-second radio signal matched predictions of an alien broadcast so well the astronomer wrote 'Wow!' on the printout. It never repeated. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#wowsignal",
+    "#space",
+    "#aliens",
+    "#seti",
+    "#shorts",
+    "#fyp"
+  ]
+}

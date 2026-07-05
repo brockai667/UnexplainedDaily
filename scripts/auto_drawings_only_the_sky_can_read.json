@@ -1,0 +1,70 @@
+{
+  "title": "Drawings Only the Sky Can Read",
+  "place": "Nazca",
+  "country": "Peru",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Someone carved giant drawings into this desert, that can only be seen from the sky.",
+      "hook_top": "ART ONLY THE SKY SEES",
+      "query": "nazca lines aerial desert",
+      "query2": "desert aerial view patterns"
+    },
+    {
+      "role": "map",
+      "text": "These are the Nazca Lines, stretched across the coastal desert of southern Peru."
+    },
+    {
+      "role": "fact",
+      "text": "Hundreds of figures, a hummingbird, a monkey, a spider, some over three hundred meters long, made around two thousand years ago.",
+      "query": "nazca lines hummingbird aerial",
+      "query2": "peru desert aerial",
+      "chips": [
+        {
+          "t": "2,000 YEARS OLD",
+          "on": "thousand",
+          "style": "accent"
+        },
+        {
+          "t": "300M FIGURES",
+          "on": "meters",
+          "style": "white"
+        }
+      ],
+      "punch": "spider"
+    },
+    {
+      "role": "archive",
+      "text": "The lines were made by removing dark stones to reveal the pale ground beneath, and the desert kept them alive.",
+      "archive_query": "Nazca Lines hummingbird",
+      "archive_label": "The hummingbird"
+    },
+    {
+      "role": "callout",
+      "text": "Why build art you can never see whole? The leading theory says the paths were walked in rituals.",
+      "query": "desert path aerial peru",
+      "query2": "arid landscape aerial",
+      "label": "WALKED IN RITUALS",
+      "sub": "the leading theory",
+      "label_on": "rituals",
+      "punch": "whole"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new mystery every day.",
+      "query": "desert sunset aerial peru",
+      "query2": "canyon desert sunset aerial"
+    }
+  ],
+  "description": "📍 Nazca, Peru. Two thousand years ago, someone carved hundreds of giant figures into the desert - visible only from the sky. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#nazcalines",
+    "#peru",
+    "#ancient",
+    "#archaeology",
+    "#shorts",
+    "#fyp"
+  ]
+}

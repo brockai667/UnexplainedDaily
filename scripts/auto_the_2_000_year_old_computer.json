@@ -1,0 +1,70 @@
+{
+  "title": "The 2,000-Year-Old Computer",
+  "place": "Antikythera",
+  "country": "Greece",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A machine two thousand years ahead of its time, found on a shipwreck.",
+      "hook_top": "A 2000 YEAR OLD COMPUTER",
+      "query": "underwater shipwreck diver dark",
+      "query2": "deep sea dark water"
+    },
+    {
+      "role": "map",
+      "text": "It was pulled from a Roman-era shipwreck off Antikythera, a tiny island in Greece."
+    },
+    {
+      "role": "fact",
+      "text": "Sponge divers found it in 1901. X-rays later revealed at least thirty interlocking bronze gears.",
+      "query": "ancient bronze mechanism gears",
+      "query2": "old gears macro dark",
+      "chips": [
+        {
+          "t": "FOUND IN 1901",
+          "on": "1901",
+          "style": "white"
+        },
+        {
+          "t": "30 BRONZE GEARS",
+          "on": "gears",
+          "style": "accent"
+        }
+      ],
+      "punch": "gears"
+    },
+    {
+      "role": "archive",
+      "text": "Its corroded fragments are kept in Athens, still being decoded more than a century later.",
+      "archive_query": "Antikythera mechanism fragment",
+      "archive_label": "Antikythera mechanism"
+    },
+    {
+      "role": "callout",
+      "text": "It tracked the sun and the moon, and predicted eclipses, centuries before anything like it existed.",
+      "query": "night sky stars moon timelapse",
+      "query2": "solar eclipse dark sky",
+      "label": "PREDICTED ECLIPSES",
+      "sub": "centuries ahead of its time",
+      "label_on": "eclipses",
+      "punch": "eclipses"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new mystery every day.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "📍 Antikythera, Greece - 1901. Sponge divers pulled a corroded machine from a Roman shipwreck: at least 30 bronze gears that tracked the sun and moon and predicted eclipses. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#antikythera",
+    "#greece",
+    "#ancienttech",
+    "#history",
+    "#shorts",
+    "#fyp"
+  ]
+}
