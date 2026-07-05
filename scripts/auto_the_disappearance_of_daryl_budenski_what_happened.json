@@ -1,0 +1,63 @@
+{
+  "title": "The Disappearance of Daryl Budenski: What Happened?",
+  "place": "Ohio",
+  "country": "United States",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A man vanished without a trace in 2021, leaving many questions.",
+      "hook_top": "WHERE IS DARYL BUDENSKI",
+      "query": "empty street night shadows",
+      "query2": "dimly lit park"
+    },
+    {
+      "role": "map",
+      "text": "Daryl Budenski disappeared from Ohio in 2021, sparking concern."
+    },
+    {
+      "role": "fact",
+      "text": "His last known sighting was captured on surveillance, but leads quickly went cold.",
+      "query": "surveillance footage dark",
+      "query2": "mysterious figure night",
+      "chips": [
+        {
+          "t": "MISSING SINCE 2021",
+          "on": "2021",
+          "style": "white"
+        },
+        {
+          "t": "FEW LEADS",
+          "on": "leads",
+          "style": "accent"
+        }
+      ],
+      "punch": "cold"
+    },
+    {
+      "role": "callout",
+      "text": "Friends and family hold out hope, but time is running thin.",
+      "query": "people searching woods",
+      "query2": "desperate search lights",
+      "label": "HOPES FADE",
+      "sub": "Will he ever be found?",
+      "label_on": "hopes",
+      "punch": "found"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new mystery every day.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "📍 Ohio, United States - 2021. Daryl Budenski vanished seemingly without a trace, leaving behind unanswered questions and a worried community. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#darylbudenski",
+    "#missingperson",
+    "#Ohio",
+    "#shorts",
+    "#fyp"
+  ]
+}

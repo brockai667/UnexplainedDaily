@@ -1,0 +1,63 @@
+{
+  "title": "The Unsolved Murder of Paul Stevens",
+  "place": "Southall",
+  "country": "United Kingdom",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A brutal murder in 1990 still haunts the Southall community.",
+      "hook_top": "WHO MURDERED PAUL STEVENS",
+      "query": "dark alleyway crime scene",
+      "query2": "abandoned street night"
+    },
+    {
+      "role": "map",
+      "text": "Paul Stevens was murdered in Southall, UK, heightening local fears."
+    },
+    {
+      "role": "fact",
+      "text": "Witnesses reported seeing a suspicious figure near the crime scene.",
+      "query": "suspicious figure shadows",
+      "query2": "unknown person dim light",
+      "chips": [
+        {
+          "t": "MURDERED IN 1990",
+          "on": "1990",
+          "style": "white"
+        },
+        {
+          "t": "STILL UNSOLVED",
+          "on": "unsolved",
+          "style": "accent"
+        }
+      ],
+      "punch": "unsolved"
+    },
+    {
+      "role": "callout",
+      "text": "Many theories exist, but the murderer remains unidentified.",
+      "query": "cloudy night sky",
+      "query2": "dark thoughts shadows",
+      "label": "MYSTERY CONTINUES",
+      "sub": "The search for justice persists.",
+      "label_on": "mystery",
+      "punch": "justice"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new mystery every day.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "📍 Southall, United Kingdom - 1990. The unsolved murder of Paul Stevens shocked the community, with ongoing speculation about the identity of his killer. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#paulstevens",
+    "#UK",
+    "#coldcase",
+    "#shorts",
+    "#fyp"
+  ]
+}

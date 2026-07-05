@@ -2669,5 +2669,573 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "The Ominous Evidence in Janet Brown's Case",
+    "place": "Luton",
+    "country": "United Kingdom",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A woman’s mysterious murder in 1995 remains unsolved.",
+        "hook_top": "WHO KILLED JANET BROWN",
+        "query": "foggy streets night shadows",
+        "query2": "dark alley mystery"
+      },
+      {
+        "role": "map",
+        "text": "Janet Brown was murdered in Luton, UK, leaving behind unanswered questions."
+      },
+      {
+        "role": "fact",
+        "text": "Her body was discovered in a field, sparking a major investigation.",
+        "query": "police investigation flashlights",
+        "query2": "detectives at night",
+        "chips": [
+          {
+            "t": "FOUND IN 1995",
+            "on": "1995",
+            "style": "white"
+          },
+          {
+            "t": "UNSOLVED MYSTERY",
+            "on": "unsolved",
+            "style": "accent"
+          }
+        ],
+        "punch": "mystery"
+      },
+      {
+        "role": "callout",
+        "text": "Despite several leads and arrests, the case remains unresolved.",
+        "query": "newspaper headlines investigation",
+        "query2": "courtroom drama dim light",
+        "label": "STILL UNSOLVED",
+        "sub": "Justice may still prevail.",
+        "label_on": "unsolved",
+        "punch": "justice"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the cases no one can explain.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "📍 Luton, United Kingdom - 1995. Janet Brown’s murder left her family devastated and police puzzled. Despite many leads, the case remains unsolved. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#janetbrown",
+      "#UK",
+      "#coldcase",
+      "#history",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Disappearance of Daryl Budenski: What Happened?",
+    "place": "Ohio",
+    "country": "United States",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A man vanished without a trace in 2021, leaving many questions.",
+        "hook_top": "WHERE IS DARYL BUDENSKI",
+        "query": "empty street night shadows",
+        "query2": "dimly lit park"
+      },
+      {
+        "role": "map",
+        "text": "Daryl Budenski disappeared from Ohio in 2021, sparking concern."
+      },
+      {
+        "role": "fact",
+        "text": "His last known sighting was captured on surveillance, but leads quickly went cold.",
+        "query": "surveillance footage dark",
+        "query2": "mysterious figure night",
+        "chips": [
+          {
+            "t": "MISSING SINCE 2021",
+            "on": "2021",
+            "style": "white"
+          },
+          {
+            "t": "FEW LEADS",
+            "on": "leads",
+            "style": "accent"
+          }
+        ],
+        "punch": "cold"
+      },
+      {
+        "role": "callout",
+        "text": "Friends and family hold out hope, but time is running thin.",
+        "query": "people searching woods",
+        "query2": "desperate search lights",
+        "label": "HOPES FADE",
+        "sub": "Will he ever be found?",
+        "label_on": "hopes",
+        "punch": "found"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new mystery every day.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "📍 Ohio, United States - 2021. Daryl Budenski vanished seemingly without a trace, leaving behind unanswered questions and a worried community. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#darylbudenski",
+      "#missingperson",
+      "#Ohio",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Unsolved Murder of Paul Stevens",
+    "place": "Southall",
+    "country": "United Kingdom",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A brutal murder in 1990 still haunts the Southall community.",
+        "hook_top": "WHO MURDERED PAUL STEVENS",
+        "query": "dark alleyway crime scene",
+        "query2": "abandoned street night"
+      },
+      {
+        "role": "map",
+        "text": "Paul Stevens was murdered in Southall, UK, heightening local fears."
+      },
+      {
+        "role": "fact",
+        "text": "Witnesses reported seeing a suspicious figure near the crime scene.",
+        "query": "suspicious figure shadows",
+        "query2": "unknown person dim light",
+        "chips": [
+          {
+            "t": "MURDERED IN 1990",
+            "on": "1990",
+            "style": "white"
+          },
+          {
+            "t": "STILL UNSOLVED",
+            "on": "unsolved",
+            "style": "accent"
+          }
+        ],
+        "punch": "unsolved"
+      },
+      {
+        "role": "callout",
+        "text": "Many theories exist, but the murderer remains unidentified.",
+        "query": "cloudy night sky",
+        "query2": "dark thoughts shadows",
+        "label": "MYSTERY CONTINUES",
+        "sub": "The search for justice persists.",
+        "label_on": "mystery",
+        "punch": "justice"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new mystery every day.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "📍 Southall, United Kingdom - 1990. The unsolved murder of Paul Stevens shocked the community, with ongoing speculation about the identity of his killer. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#paulstevens",
+      "#UK",
+      "#coldcase",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Lost Signal from space: What Could It Be?",
+    "place": "Outer Space",
+    "country": "N/A",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "An unexplained radio signal from deep space leaves scientists puzzled.",
+        "hook_top": "THE MYSTERIOUS SIGNAL",
+        "query": "dark space stars twinkling",
+        "query2": "deep space mystery"
+      },
+      {
+        "role": "map",
+        "text": "The signal originated from deep space, making its source a mystery."
+      },
+      {
+        "role": "fact",
+        "text": "Astronomers detected it intermittently, yet its origin remains unknown.",
+        "query": "radio telescope night",
+        "query2": "space observatory dark",
+        "chips": [
+          {
+            "t": "FIRST DETECTED IN 2007",
+            "on": "2007",
+            "style": "white"
+          },
+          {
+            "t": "ORIGIN UNKNOWN",
+            "on": "unknown",
+            "style": "accent"
+          }
+        ],
+        "punch": "unknown"
+      },
+      {
+        "role": "callout",
+        "text": "Is it a natural phenomenon or a sign of extraterrestrial life?",
+        "query": "galaxy stars dark",
+        "query2": "alien worlds mystery",
+        "label": "SIGN OF LIFE?",
+        "sub": "Scientists debate endlessly.",
+        "label_on": "life",
+        "punch": "life"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new mystery every day.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "📍 Outer Space - 2007. An unexplained radio signal captured by astronomers raised questions about its mysterious source, leaving scientists debating ever since. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#space",
+      "#aliens",
+      "#astronomy",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Unexplained Disappearance of Donna Keogh",
+    "place": "Dublin",
+    "country": "Ireland",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A young woman disappeared in 1998, leaving family in despair.",
+        "hook_top": "WHERE IS DONNA KEOGH",
+        "query": "dark street Dublin night",
+        "query2": "abandoned building"
+      },
+      {
+        "role": "map",
+        "text": "Donna Keogh vanished from Dublin, Ireland, triggering a police search."
+      },
+      {
+        "role": "fact",
+        "text": "Several leads arose, but no trace of her was ever found.",
+        "query": "search party lights",
+        "query2": "missing person flyer",
+        "chips": [
+          {
+            "t": "DISAPPEARED IN 1998",
+            "on": "1998",
+            "style": "white"
+          },
+          {
+            "t": "NO TRACE FOUND",
+            "on": "trace",
+            "style": "accent"
+          }
+        ],
+        "punch": "trace"
+      },
+      {
+        "role": "callout",
+        "text": "Loved ones continue to seek answers about her fate.",
+        "query": "family searching photos",
+        "query2": "tears and hope",
+        "label": "SEARCH FOR ANSWERS",
+        "sub": "Will they ever find her?",
+        "label_on": "answers",
+        "punch": "find"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the cases no one can explain.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "📍 Dublin, Ireland - 1998. Donna Keogh's sudden disappearance left her community heartbroken and searching for answers. Despite extensive searches, she has never been found. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#donnakeogh",
+      "#missingperson",
+      "#Ireland",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Enigma of the Voynich Manuscript",
+    "place": "N/A",
+    "country": "N/A",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "An ancient manuscript full of unknown writing has baffled experts for centuries.",
+        "hook_top": "THE VOYNICH MANUSCRIPT",
+        "query": "ancient manuscript closeup",
+        "query2": "mysterious old texts"
+      },
+      {
+        "role": "map",
+        "text": "The Voynich Manuscript remains an unsolved riddle from history."
+      },
+      {
+        "role": "fact",
+        "text": "Written in an unknown script, its content remains undeciphered.",
+        "query": "old book pages",
+        "query2": "ancient script closeup",
+        "chips": [
+          {
+            "t": "CREATED IN 15TH CENTURY",
+            "on": "15th century",
+            "style": "white"
+          },
+          {
+            "t": "UNDECIPHERED TEXT",
+            "on": "text",
+            "style": "accent"
+          }
+        ],
+        "punch": "undeciphered"
+      },
+      {
+        "role": "callout",
+        "text": "Many have tried and failed to decode its mysteries.",
+        "query": "scholars working night",
+        "query2": "puzzled experts dim light",
+        "label": "CODE STILL UNSOLVED",
+        "sub": "A challenge for linguists.",
+        "label_on": "unsolved",
+        "punch": "challenge"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "📍 N/A - 15th Century. The Voynich Manuscript, filled with strange symbols and illustrations, remains undeciphered to this day, puzzling historians and cryptographers alike. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#voynichmanuscript",
+      "#history",
+      "#ancienttexts",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Enigmatic Nazca Lines from Ancient Peru",
+    "place": "Nazca",
+    "country": "Peru",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Gigantic geoglyphs etched into the desert floor leave us wondering why.",
+        "hook_top": "WHO CREATED THE NAZCA LINES",
+        "query": "aerial view Nazca lines",
+        "query2": "desert landscape patterns"
+      },
+      {
+        "role": "map",
+        "text": "The Nazca Lines stretch across the Nazca Desert in Peru."
+      },
+      {
+        "role": "fact",
+        "text": "They were created between 500 BC and AD 500, but their purpose is still debated.",
+        "query": "ancient geoglyphs overview",
+        "query2": "Nazca patterns closeup",
+        "chips": [
+          {
+            "t": "CREATED 500 BC - AD 500",
+            "on": "dates",
+            "style": "white"
+          },
+          {
+            "t": "PURPOSE UNKNOWN",
+            "on": "purpose",
+            "style": "accent"
+          }
+        ],
+        "punch": "purpose"
+      },
+      {
+        "role": "callout",
+        "text": "Some theorize they were astronomical markers or religious symbols.",
+        "query": "starry sky Peru",
+        "query2": "mysterious ancient symbols",
+        "label": "ASTRONOMICAL ALIGNMENT?",
+        "sub": "Their function remains unclear.",
+        "label_on": "alignment",
+        "punch": "unclear"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "📍 Nazca, Peru - 500 BC to AD 500. The Nazca Lines, colossal geoglyphs carved into the ground, have sparked various theories about their purpose, but questions remain unanswered. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#nazcalines",
+      "#Peru",
+      "#ancientcivilization",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Enigma of the Bermuda Triangle",
+    "place": "Bermuda Triangle",
+    "country": "N/A",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A region infamous for its enigmatic disappearances of vessels and aircraft.",
+        "hook_top": "WHAT'S BEHIND THE BERMUDA TRIANGLE",
+        "query": "stormy ocean clouds",
+        "query2": "mysterious waves"
+      },
+      {
+        "role": "map",
+        "text": "The Bermuda Triangle lies in the North Atlantic Ocean between Miami, Bermuda, and Puerto Rico."
+      },
+      {
+        "role": "fact",
+        "text": "Over a thousand ships and planes are said to have vanished here without explanation.",
+        "query": "ocean waves dark storm",
+        "query2": "flying aircraft mysterious",
+        "chips": [
+          {
+            "t": "THOUSANDS MISSING",
+            "on": "missing",
+            "style": "white"
+          },
+          {
+            "t": "STILL UNEXPLAINED",
+            "on": "unexplained",
+            "style": "accent"
+          }
+        ],
+        "punch": "missing"
+      },
+      {
+        "role": "callout",
+        "text": "Scientific explanations include natural phenomena, but many remain skeptical.",
+        "query": "scientists analyzing waves",
+        "query2": "fascinating ocean mysteries",
+        "label": "NATURAL PHENOMENA?",
+        "sub": "Or something more mysterious?",
+        "label_on": "phenomena",
+        "punch": "mysterious"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "📍 Bermuda Triangle - N/A. A notorious area where ships and planes have disappeared, the Bermuda Triangle continues to baffle experts with its strange occurrences. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#bermudatriangle",
+      "#oceanmysteries",
+      "#history",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Unsolved Case of Eric Tamiyasu",
+    "place": "Burbank, California",
+    "country": "United States",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A murder case from 2001 is being reviewed again, raising hope for justice.",
+        "hook_top": "WHAT HAPPENED TO ERIC",
+        "query": "dark street Burbank night",
+        "query2": "mysterious forest"
+      },
+      {
+        "role": "map",
+        "text": "Eric Tamiyasu's murder case is being re-examined in Burbank, California."
+      },
+      {
+        "role": "fact",
+        "text": "His death was a major case, but leads have faded over time.",
+        "query": "investigators working night",
+        "query2": "detective files dim light",
+        "chips": [
+          {
+            "t": "MURDERED IN 2001",
+            "on": "2001",
+            "style": "white"
+          },
+          {
+            "t": "NEW INVESTIGATION",
+            "on": "investigation",
+            "style": "accent"
+          }
+        ],
+        "punch": "new"
+      },
+      {
+        "role": "callout",
+        "text": "Authorities now hope modern techniques can uncover new evidence.",
+        "query": "police analyzing evidence",
+        "query2": "cold case research",
+        "label": "HOPE FOR JUSTICE",
+        "sub": "With new hope, the past may speak.",
+        "label_on": "hope",
+        "punch": "speak"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the cases no one can explain.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "📍 Burbank, California - 2001. The unsolved murder of Eric Tamiyasu is being reopened, offering new hope for answers after many years. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#erictamiyasu",
+      "#coldcase",
+      "#California",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]

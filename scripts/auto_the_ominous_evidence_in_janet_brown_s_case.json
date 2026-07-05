@@ -1,0 +1,64 @@
+{
+  "title": "The Ominous Evidence in Janet Brown's Case",
+  "place": "Luton",
+  "country": "United Kingdom",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A woman’s mysterious murder in 1995 remains unsolved.",
+      "hook_top": "WHO KILLED JANET BROWN",
+      "query": "foggy streets night shadows",
+      "query2": "dark alley mystery"
+    },
+    {
+      "role": "map",
+      "text": "Janet Brown was murdered in Luton, UK, leaving behind unanswered questions."
+    },
+    {
+      "role": "fact",
+      "text": "Her body was discovered in a field, sparking a major investigation.",
+      "query": "police investigation flashlights",
+      "query2": "detectives at night",
+      "chips": [
+        {
+          "t": "FOUND IN 1995",
+          "on": "1995",
+          "style": "white"
+        },
+        {
+          "t": "UNSOLVED MYSTERY",
+          "on": "unsolved",
+          "style": "accent"
+        }
+      ],
+      "punch": "mystery"
+    },
+    {
+      "role": "callout",
+      "text": "Despite several leads and arrests, the case remains unresolved.",
+      "query": "newspaper headlines investigation",
+      "query2": "courtroom drama dim light",
+      "label": "STILL UNSOLVED",
+      "sub": "Justice may still prevail.",
+      "label_on": "unsolved",
+      "punch": "justice"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the cases no one can explain.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "📍 Luton, United Kingdom - 1995. Janet Brown’s murder left her family devastated and police puzzled. Despite many leads, the case remains unsolved. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#janetbrown",
+    "#UK",
+    "#coldcase",
+    "#history",
+    "#shorts",
+    "#fyp"
+  ]
+}

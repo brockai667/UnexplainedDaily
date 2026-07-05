@@ -1,0 +1,63 @@
+{
+  "title": "The Lost Signal from space: What Could It Be?",
+  "place": "Outer Space",
+  "country": "N/A",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "An unexplained radio signal from deep space leaves scientists puzzled.",
+      "hook_top": "THE MYSTERIOUS SIGNAL",
+      "query": "dark space stars twinkling",
+      "query2": "deep space mystery"
+    },
+    {
+      "role": "map",
+      "text": "The signal originated from deep space, making its source a mystery."
+    },
+    {
+      "role": "fact",
+      "text": "Astronomers detected it intermittently, yet its origin remains unknown.",
+      "query": "radio telescope night",
+      "query2": "space observatory dark",
+      "chips": [
+        {
+          "t": "FIRST DETECTED IN 2007",
+          "on": "2007",
+          "style": "white"
+        },
+        {
+          "t": "ORIGIN UNKNOWN",
+          "on": "unknown",
+          "style": "accent"
+        }
+      ],
+      "punch": "unknown"
+    },
+    {
+      "role": "callout",
+      "text": "Is it a natural phenomenon or a sign of extraterrestrial life?",
+      "query": "galaxy stars dark",
+      "query2": "alien worlds mystery",
+      "label": "SIGN OF LIFE?",
+      "sub": "Scientists debate endlessly.",
+      "label_on": "life",
+      "punch": "life"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new mystery every day.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "📍 Outer Space - 2007. An unexplained radio signal captured by astronomers raised questions about its mysterious source, leaving scientists debating ever since. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#space",
+    "#aliens",
+    "#astronomy",
+    "#shorts",
+    "#fyp"
+  ]
+}
