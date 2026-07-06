@@ -1,0 +1,63 @@
+{
+  "title": "The Enigmatic Nazca Lines from Ancient Peru",
+  "place": "Nazca",
+  "country": "Peru",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Gigantic geoglyphs etched into the desert floor leave us wondering why.",
+      "hook_top": "WHO CREATED THE NAZCA LINES",
+      "query": "aerial view Nazca lines",
+      "query2": "desert landscape patterns"
+    },
+    {
+      "role": "map",
+      "text": "The Nazca Lines stretch across the Nazca Desert in Peru."
+    },
+    {
+      "role": "fact",
+      "text": "They were created between 500 BC and AD 500, but their purpose is still debated.",
+      "query": "ancient geoglyphs overview",
+      "query2": "Nazca patterns closeup",
+      "chips": [
+        {
+          "t": "CREATED 500 BC - AD 500",
+          "on": "dates",
+          "style": "white"
+        },
+        {
+          "t": "PURPOSE UNKNOWN",
+          "on": "purpose",
+          "style": "accent"
+        }
+      ],
+      "punch": "purpose"
+    },
+    {
+      "role": "callout",
+      "text": "Some theorize they were astronomical markers or religious symbols.",
+      "query": "starry sky Peru",
+      "query2": "mysterious ancient symbols",
+      "label": "ASTRONOMICAL ALIGNMENT?",
+      "sub": "Their function remains unclear.",
+      "label_on": "alignment",
+      "punch": "unclear"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "📍 Nazca, Peru - 500 BC to AD 500. The Nazca Lines, colossal geoglyphs carved into the ground, have sparked various theories about their purpose, but questions remain unanswered. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#nazcalines",
+    "#Peru",
+    "#ancientcivilization",
+    "#shorts",
+    "#fyp"
+  ]
+}

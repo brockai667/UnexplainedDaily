@@ -1,0 +1,63 @@
+{
+  "title": "The Unsolved Case of Eric Tamiyasu",
+  "place": "Burbank, California",
+  "country": "United States",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A murder case from 2001 is being reviewed again, raising hope for justice.",
+      "hook_top": "WHAT HAPPENED TO ERIC",
+      "query": "dark street Burbank night",
+      "query2": "mysterious forest"
+    },
+    {
+      "role": "map",
+      "text": "Eric Tamiyasu's murder case is being re-examined in Burbank, California."
+    },
+    {
+      "role": "fact",
+      "text": "His death was a major case, but leads have faded over time.",
+      "query": "investigators working night",
+      "query2": "detective files dim light",
+      "chips": [
+        {
+          "t": "MURDERED IN 2001",
+          "on": "2001",
+          "style": "white"
+        },
+        {
+          "t": "NEW INVESTIGATION",
+          "on": "investigation",
+          "style": "accent"
+        }
+      ],
+      "punch": "new"
+    },
+    {
+      "role": "callout",
+      "text": "Authorities now hope modern techniques can uncover new evidence.",
+      "query": "police analyzing evidence",
+      "query2": "cold case research",
+      "label": "HOPE FOR JUSTICE",
+      "sub": "With new hope, the past may speak.",
+      "label_on": "hope",
+      "punch": "speak"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the cases no one can explain.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "📍 Burbank, California - 2001. The unsolved murder of Eric Tamiyasu is being reopened, offering new hope for answers after many years. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#erictamiyasu",
+    "#coldcase",
+    "#California",
+    "#shorts",
+    "#fyp"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "title": "Baffling Nature: The Bermuda Triangle",
+  "place": "Bermuda Triangle",
+  "country": "N/A",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A region where ships and planes mysteriously vanish.",
+      "hook_top": "THE BERMUDA TRIANGLE",
+      "query": "calm ocean morning",
+      "query2": "stormy sea"
+    },
+    {
+      "role": "map",
+      "text": "The Bermuda Triangle lies between Miami, Bermuda, and Puerto Rico."
+    },
+    {
+      "role": "fact",
+      "text": "Numerous vessels and aircraft have disappeared without explanation since the 19th century.",
+      "query": "ships lost at sea",
+      "query2": "mysterious waters",
+      "chips": [
+        {
+          "t": "MYSTERIOUS DISAPPEARANCE",
+          "on": "disappearances",
+          "style": "white"
+        },
+        {
+          "t": "19TH CENTURY TO NOW",
+          "on": "century",
+          "style": "accent"
+        }
+      ],
+      "punch": "mysteries"
+    },
+    {
+      "role": "archive",
+      "text": "It remains a popular topic of speculation and investigation.",
+      "archive_query": "Bermuda Triangle map",
+      "archive_label": "Bermuda Triangle"
+    },
+    {
+      "role": "callout",
+      "text": "Scientific explanations exist, but many remain unsatisfied.",
+      "query": "ocean waves crashing",
+      "query2": "stormy sea",
+      "label": "WHY THE MYSTERY?",
+      "sub": "Unresolved after decades",
+      "label_on": "mystery",
+      "punch": "mystery"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "storm brewing over ocean",
+      "query2": "serene ocean sunset"
+    }
+  ],
+  "description": "📍 Bermuda Triangle - N/A. A notorious area where ships and planes have vanished without a trace, raising questions for over a century. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#bermudatriangle",
+    "#disappearances",
+    "#ocean",
+    "#shorts",
+    "#fyp"
+  ]
+}

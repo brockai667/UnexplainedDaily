@@ -1,0 +1,63 @@
+{
+  "title": "The Enigma of the Voynich Manuscript",
+  "place": "N/A",
+  "country": "N/A",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "An ancient manuscript full of unknown writing has baffled experts for centuries.",
+      "hook_top": "THE VOYNICH MANUSCRIPT",
+      "query": "ancient manuscript closeup",
+      "query2": "mysterious old texts"
+    },
+    {
+      "role": "map",
+      "text": "The Voynich Manuscript remains an unsolved riddle from history."
+    },
+    {
+      "role": "fact",
+      "text": "Written in an unknown script, its content remains undeciphered.",
+      "query": "old book pages",
+      "query2": "ancient script closeup",
+      "chips": [
+        {
+          "t": "CREATED IN 15TH CENTURY",
+          "on": "15th century",
+          "style": "white"
+        },
+        {
+          "t": "UNDECIPHERED TEXT",
+          "on": "text",
+          "style": "accent"
+        }
+      ],
+      "punch": "undeciphered"
+    },
+    {
+      "role": "callout",
+      "text": "Many have tried and failed to decode its mysteries.",
+      "query": "scholars working night",
+      "query2": "puzzled experts dim light",
+      "label": "CODE STILL UNSOLVED",
+      "sub": "A challenge for linguists.",
+      "label_on": "unsolved",
+      "punch": "challenge"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "📍 N/A - 15th Century. The Voynich Manuscript, filled with strange symbols and illustrations, remains undeciphered to this day, puzzling historians and cryptographers alike. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#voynichmanuscript",
+    "#history",
+    "#ancienttexts",
+    "#shorts",
+    "#fyp"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "title": "The Enigma of the Bermuda Triangle",
+  "place": "Bermuda Triangle",
+  "country": "N/A",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A region infamous for its enigmatic disappearances of vessels and aircraft.",
+      "hook_top": "WHAT'S BEHIND THE BERMUDA TRIANGLE",
+      "query": "stormy ocean clouds",
+      "query2": "mysterious waves"
+    },
+    {
+      "role": "map",
+      "text": "The Bermuda Triangle lies in the North Atlantic Ocean between Miami, Bermuda, and Puerto Rico."
+    },
+    {
+      "role": "fact",
+      "text": "Over a thousand ships and planes are said to have vanished here without explanation.",
+      "query": "ocean waves dark storm",
+      "query2": "flying aircraft mysterious",
+      "chips": [
+        {
+          "t": "THOUSANDS MISSING",
+          "on": "missing",
+          "style": "white"
+        },
+        {
+          "t": "STILL UNEXPLAINED",
+          "on": "unexplained",
+          "style": "accent"
+        }
+      ],
+      "punch": "missing"
+    },
+    {
+      "role": "callout",
+      "text": "Scientific explanations include natural phenomena, but many remain skeptical.",
+      "query": "scientists analyzing waves",
+      "query2": "fascinating ocean mysteries",
+      "label": "NATURAL PHENOMENA?",
+      "sub": "Or something more mysterious?",
+      "label_on": "phenomena",
+      "punch": "mysterious"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "📍 Bermuda Triangle - N/A. A notorious area where ships and planes have disappeared, the Bermuda Triangle continues to baffle experts with its strange occurrences. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#bermudatriangle",
+    "#oceanmysteries",
+    "#history",
+    "#shorts",
+    "#fyp"
+  ]
+}
