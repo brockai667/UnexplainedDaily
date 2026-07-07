@@ -1,0 +1,63 @@
+{
+  "title": "The Unseen Creatures of Skinwalker Ranch",
+  "place": "Utah",
+  "country": "USA",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A ranch in Utah with a long history of strange phenomena and sightings.",
+      "hook_top": "THE RANCH OF MYSTERIES",
+      "query": "expansive ranch landscape",
+      "query2": "eerie ranch at dusk"
+    },
+    {
+      "role": "map",
+      "text": "Skinwalker Ranch, located in northeastern Utah, is notorious for its supernatural claims."
+    },
+    {
+      "role": "fact",
+      "text": "Reports of UFOs, strange creatures, and unexplained lights have been documented for decades.",
+      "query": "UFO in night sky",
+      "query2": "strange lights glowing",
+      "chips": [
+        {
+          "t": "DECADES OF REPORTS",
+          "on": "reports",
+          "style": "white"
+        },
+        {
+          "t": "MYSTICAL ENCOUNTERS",
+          "on": "creatures",
+          "style": "accent"
+        }
+      ],
+      "punch": "creatures"
+    },
+    {
+      "role": "callout",
+      "text": "Skeptics doubt the claims, while enthusiasts are convinced of their reality.",
+      "query": "starry night sky",
+      "query2": "mysterious ranch shadows",
+      "label": "REAL OR MYTH?",
+      "sub": "Debate rages on.",
+      "label_on": "mystery",
+      "punch": "debate"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the cases no one can explain.",
+      "query": "ranch landscape at night",
+      "query2": "moonlit fields"
+    }
+  ],
+  "description": "📍 Utah, USA - Ongoing. Skinwalker Ranch is a hotspot for supernatural phenomena, claiming sightings that blur the line between reality and myth. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#SkinwalkerRanch",
+    "#paranormal",
+    "#UFO",
+    "#shorts",
+    "#fyp"
+  ]
+}

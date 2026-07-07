@@ -1,0 +1,69 @@
+{
+  "title": "The Strange Case of the Mary Celeste",
+  "place": "Atlantic Ocean",
+  "country": "N/A",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A ghost ship found adrift, its crew mysteriously missing.",
+      "hook_top": "THE MARY CELESTE MYSTERY",
+      "query": "abandoned ship at sea",
+      "query2": "ghost ship drifting"
+    },
+    {
+      "role": "map",
+      "text": "The Mary Celeste was discovered in the Atlantic Ocean in 1872."
+    },
+    {
+      "role": "fact",
+      "text": "The ship was found intact, but the crew had vanished without a trace.",
+      "query": "shipwreck discovery",
+      "query2": "sailing ship abandoned",
+      "chips": [
+        {
+          "t": "FOUND IN 1872",
+          "on": "1872",
+          "style": "white"
+        },
+        {
+          "t": "CREW MISSING",
+          "on": "crew",
+          "style": "accent"
+        }
+      ],
+      "punch": "missing"
+    },
+    {
+      "role": "archive",
+      "text": "The ship's fate has sparked numerous theories but no conclusive answers.",
+      "archive_query": "Mary Celeste ship",
+      "archive_label": "Mary Celeste"
+    },
+    {
+      "role": "callout",
+      "text": "What could have caused this eerie disappearance?",
+      "query": "stormy sea waves",
+      "query2": "ominous clouds",
+      "label": "EERIE DISAPPEARANCE",
+      "sub": "Mysteries of the sea",
+      "label_on": "disappearance",
+      "punch": "disappearance"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "ocean waves crashing",
+      "query2": "ship sailing into sunset"
+    }
+  ],
+  "description": "📍 Atlantic Ocean - 1872. The Mary Celeste, an abandoned ship, was found drifting with no sign of its crew, leaving only questions. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#maryceleste",
+    "#ghostship",
+    "#atlantic",
+    "#shorts",
+    "#fyp"
+  ]
+}

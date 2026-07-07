@@ -1,0 +1,69 @@
+{
+  "title": "The Ancient Artifacts of Gobekli Tepe",
+  "place": "Gobekli Tepe",
+  "country": "Turkey",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "An ancient temple older than Stonehenge confounds archaeologists.",
+      "hook_top": "GOBEKLI TEPE UNVEILED",
+      "query": "ancient stones landscape",
+      "query2": "archaeological site overview"
+    },
+    {
+      "role": "map",
+      "text": "Located in southeastern Turkey, Gobekli Tepe is over 11,000 years old."
+    },
+    {
+      "role": "fact",
+      "text": "Discovered in the 1990s, it's thought to be the world’s oldest known temple.",
+      "query": "archaeologists working",
+      "query2": "ancient stone carvings",
+      "chips": [
+        {
+          "t": "OVER 11,000 YEARS OLD",
+          "on": "ancient",
+          "style": "white"
+        },
+        {
+          "t": "OLDEST KNOWN TEMPLE",
+          "on": "temple",
+          "style": "accent"
+        }
+      ],
+      "punch": "temple"
+    },
+    {
+      "role": "archive",
+      "text": "The site reveals complex carvings and structures, yet many questions persist.",
+      "archive_query": "Gobekli Tepe carvings",
+      "archive_label": "Gobekli Tepe"
+    },
+    {
+      "role": "callout",
+      "text": "What was its true purpose? Rituals or something else?",
+      "query": "mysterious ancient site",
+      "query2": "stones arranged mysteriously",
+      "label": "PURPOSE STILL QUESTIONED",
+      "sub": "Ancient secrets await",
+      "label_on": "purpose",
+      "punch": "secrets"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "sunrise over ancient site",
+      "query2": "misty hills in background"
+    }
+  ],
+  "description": "📍 Gobekli Tepe, Turkey - 1990s. An ancient site dating back over 11,000 years has changed what we know about human history. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#gobeklitepe",
+    "#ancienthistory",
+    "#turkey",
+    "#shorts",
+    "#fyp"
+  ]
+}

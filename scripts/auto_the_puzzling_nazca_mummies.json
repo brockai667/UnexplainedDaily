@@ -1,0 +1,63 @@
+{
+  "title": "The Puzzling Nazca Mummies",
+  "place": "Nazca",
+  "country": "Peru",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Mummies discovered in Nazca show features previously thought impossible.",
+      "hook_top": "MYSTERIOUS MUMMIES",
+      "query": "close up of mummy",
+      "query2": "archaeological dig"
+    },
+    {
+      "role": "map",
+      "text": "These mummies were found near the famed Nazca lines in Peru, captivating the world."
+    },
+    {
+      "role": "fact",
+      "text": "Some theorized they possess anatomical features that differ from any known species.",
+      "query": "archaeology site",
+      "query2": "ancient burial ground",
+      "chips": [
+        {
+          "t": "FOUND NEAR NAZCA LINES",
+          "on": "Nazca",
+          "style": "white"
+        },
+        {
+          "t": "UNKNOWN ANATOMY",
+          "on": "anatomy",
+          "style": "accent"
+        }
+      ],
+      "punch": "features"
+    },
+    {
+      "role": "callout",
+      "text": "Are these evidence of ancient extraterrestrial visitors or simply misunderstood remains?",
+      "query": "ancient tombs",
+      "query2": "mysterious artifacts",
+      "label": "ALIEN OR NOT?",
+      "sub": "Debate continues.",
+      "label_on": "mummies",
+      "punch": "mystery"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "dusty archaeological site",
+      "query2": "dust on artifacts"
+    }
+  ],
+  "description": "📍 Nazca, Peru - Recent discoveries. Mummies found near the Nazca lines exhibit peculiar features that challenge our understanding of history. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#Nazca",
+    "#ancientmummies",
+    "#archaeology",
+    "#shorts",
+    "#fyp"
+  ]
+}

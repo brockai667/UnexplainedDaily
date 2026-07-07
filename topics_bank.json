@@ -3214,5 +3214,320 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "The Unseen Creatures of Skinwalker Ranch",
+    "place": "Utah",
+    "country": "USA",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A ranch in Utah with a long history of strange phenomena and sightings.",
+        "hook_top": "THE RANCH OF MYSTERIES",
+        "query": "expansive ranch landscape",
+        "query2": "eerie ranch at dusk"
+      },
+      {
+        "role": "map",
+        "text": "Skinwalker Ranch, located in northeastern Utah, is notorious for its supernatural claims."
+      },
+      {
+        "role": "fact",
+        "text": "Reports of UFOs, strange creatures, and unexplained lights have been documented for decades.",
+        "query": "UFO in night sky",
+        "query2": "strange lights glowing",
+        "chips": [
+          {
+            "t": "DECADES OF REPORTS",
+            "on": "reports",
+            "style": "white"
+          },
+          {
+            "t": "MYSTICAL ENCOUNTERS",
+            "on": "creatures",
+            "style": "accent"
+          }
+        ],
+        "punch": "creatures"
+      },
+      {
+        "role": "callout",
+        "text": "Skeptics doubt the claims, while enthusiasts are convinced of their reality.",
+        "query": "starry night sky",
+        "query2": "mysterious ranch shadows",
+        "label": "REAL OR MYTH?",
+        "sub": "Debate rages on.",
+        "label_on": "mystery",
+        "punch": "debate"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the cases no one can explain.",
+        "query": "ranch landscape at night",
+        "query2": "moonlit fields"
+      }
+    ],
+    "description": "📍 Utah, USA - Ongoing. Skinwalker Ranch is a hotspot for supernatural phenomena, claiming sightings that blur the line between reality and myth. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#SkinwalkerRanch",
+      "#paranormal",
+      "#UFO",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Puzzling Nazca Mummies",
+    "place": "Nazca",
+    "country": "Peru",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Mummies discovered in Nazca show features previously thought impossible.",
+        "hook_top": "MYSTERIOUS MUMMIES",
+        "query": "close up of mummy",
+        "query2": "archaeological dig"
+      },
+      {
+        "role": "map",
+        "text": "These mummies were found near the famed Nazca lines in Peru, captivating the world."
+      },
+      {
+        "role": "fact",
+        "text": "Some theorized they possess anatomical features that differ from any known species.",
+        "query": "archaeology site",
+        "query2": "ancient burial ground",
+        "chips": [
+          {
+            "t": "FOUND NEAR NAZCA LINES",
+            "on": "Nazca",
+            "style": "white"
+          },
+          {
+            "t": "UNKNOWN ANATOMY",
+            "on": "anatomy",
+            "style": "accent"
+          }
+        ],
+        "punch": "features"
+      },
+      {
+        "role": "callout",
+        "text": "Are these evidence of ancient extraterrestrial visitors or simply misunderstood remains?",
+        "query": "ancient tombs",
+        "query2": "mysterious artifacts",
+        "label": "ALIEN OR NOT?",
+        "sub": "Debate continues.",
+        "label_on": "mummies",
+        "punch": "mystery"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "dusty archaeological site",
+        "query2": "dust on artifacts"
+      }
+    ],
+    "description": "📍 Nazca, Peru - Recent discoveries. Mummies found near the Nazca lines exhibit peculiar features that challenge our understanding of history. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#Nazca",
+      "#ancientmummies",
+      "#archaeology",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Cryptic Message of the Zodiac Killer",
+    "place": "California",
+    "country": "USA",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A series of coded messages sent by an unidentified killer, still unsolved.",
+        "hook_top": "A CODE BREAKING MYSTERY",
+        "query": "mysterious coded letters",
+        "query2": "darkened alley"
+      },
+      {
+        "role": "map",
+        "text": "The Zodiac Killer operated in Northern California during the late 1960s and early 1970s."
+      },
+      {
+        "role": "fact",
+        "text": "Despite multiple attempts, the final cipher has yet to be decoded, leaving investigators stumped.",
+        "query": "old typewriter",
+        "query2": "dimly lit room",
+        "chips": [
+          {
+            "t": "LAST SEEN IN 1970s",
+            "on": "1970s",
+            "style": "white"
+          },
+          {
+            "t": "CIPHERS UNSOLVED",
+            "on": "ciphers",
+            "style": "accent"
+          }
+        ],
+        "punch": "unsolved"
+      },
+      {
+        "role": "callout",
+        "text": "Could these messages hold the key to identifying the killer?",
+        "query": "mysterious symbols",
+        "query2": "hidden codes",
+        "label": "HIDDEN TRUTHS?",
+        "sub": "Investigators still hope.",
+        "label_on": "messages",
+        "punch": "key"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the cases no one can explain.",
+        "query": "dark urban setting",
+        "query2": "quiet streets at night"
+      }
+    ],
+    "description": "📍 California, USA - Late 1960s to 70s. The Zodiac Killer's encrypted messages tantalize detectives, yet remain decoded after decades. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#ZodiacKiller",
+      "#truecrime",
+      "#coldcase",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Mystery of Carbon Nanotubes",
+    "place": "Laboratories Worldwide",
+    "country": "N/A",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A remarkable material found in bizarre places, defying scientific explanation.",
+        "hook_top": "BIZARRE NANOMATERIAL",
+        "query": "carbon nanotube visuals",
+        "query2": "microscopic world"
+      },
+      {
+        "role": "map",
+        "text": "Carbon nanotubes have been identified in various locations, including laboratories and even ancient artifacts."
+      },
+      {
+        "role": "fact",
+        "text": "Their unique properties are used in numerous fields, yet their origins in some contexts remain a mystery.",
+        "query": "laboratory research",
+        "query2": "scientific breakthroughs",
+        "chips": [
+          {
+            "t": "FOUND IN ANCIENT ARTIFAC",
+            "on": "artifacts",
+            "style": "white"
+          },
+          {
+            "t": "ORIGINS UNKNOWN",
+            "on": "origins",
+            "style": "accent"
+          }
+        ],
+        "punch": "origins"
+      },
+      {
+        "role": "callout",
+        "text": "Could they hint at advanced technology that predates our understanding?",
+        "query": "technological advancements",
+        "query2": "futuristic materials",
+        "label": "ANCient TECHNOLOGY?",
+        "sub": "Conversation continues.",
+        "label_on": "nanotubes",
+        "punch": "hint"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "lab at night",
+        "query2": "research in darkness"
+      }
+    ],
+    "description": "📍 Laboratories Worldwide, N/A - Ongoing. Carbon nanotubes perplex researchers as they appear in unexpected locations, raising questions of their origins. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#nanotechnology",
+      "#science",
+      "#research",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Haunting of the Winchester Mystery House",
+    "place": "San Jose",
+    "country": "USA",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A mansion with stairs leading to nowhere and doors opening into walls.",
+        "hook_top": "A HOUSE OF MYSTERIES",
+        "query": "strange architecture house",
+        "query2": "haunted mansion"
+      },
+      {
+        "role": "map",
+        "text": "The Winchester Mystery House is located in San Jose, California, known for its architectural oddities."
+      },
+      {
+        "role": "fact",
+        "text": "Built continuously for 38 years, its design is a puzzle with no clear purpose.",
+        "query": "mansion interior",
+        "query2": "mysterious corridors",
+        "chips": [
+          {
+            "t": "BUILT FOR 38 YEARS",
+            "on": "years",
+            "style": "white"
+          },
+          {
+            "t": "ARCHITECTURAL RIDDLE",
+            "on": "riddle",
+            "style": "accent"
+          }
+        ],
+        "punch": "riddle"
+      },
+      {
+        "role": "callout",
+        "text": "Was it a refuge from spirits, or simply quirky design choices?",
+        "query": "eerie hallways",
+        "query2": "shadows in the house",
+        "label": "REFUGE OR FANTASY?",
+        "sub": "Theories vary widely.",
+        "label_on": "house",
+        "punch": "spirits"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new mystery every day.",
+        "query": "mansion in moonlight",
+        "query2": "haunted grounds"
+      }
+    ],
+    "description": "📍 San Jose, USA - Ongoing. The Winchester Mystery House is a testament to peculiar architecture and the mysteries it fosters. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#WinchesterMysteryHouse",
+      "#haunted",
+      "#architecture",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]
