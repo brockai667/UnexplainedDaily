@@ -3529,5 +3529,446 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "The Unsolved Murders of Bill and Peggy Stephenson",
+    "place": "Black River Falls",
+    "country": "USA",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A double homicide with chilling details remains unsolved even after years.",
+        "hook_top": "A MYSTERIOUS DOUBLE MURDER",
+        "query": "dark forest night",
+        "query2": "foggy rural road"
+      },
+      {
+        "role": "map",
+        "text": "The case took place in Black River Falls, Wisconsin, in 2011."
+      },
+      {
+        "role": "fact",
+        "text": "Bill and Peggy Stephenson were found dead in their home. The crime scene revealed signs of a violent struggle.",
+        "query": "crime scene investigation",
+        "query2": "detectives examining a scene",
+        "chips": [
+          {
+            "t": "FOUND IN 2011",
+            "on": "2011",
+            "style": "white"
+          },
+          {
+            "t": "UNSOLVED CASE",
+            "on": "unsolved",
+            "style": "accent"
+          }
+        ],
+        "punch": "unsolved"
+      },
+      {
+        "role": "callout",
+        "text": "No suspects have been identified, and the motive remains unclear.",
+        "query": "mysterious shadows",
+        "query2": "dark alleyway",
+        "label": "NO SUSPECTS IDENTIFIED",
+        "sub": "The mystery deepens daily.",
+        "label_on": "suspects",
+        "punch": "suspects"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "misty forest path",
+        "query2": "stars in the night sky"
+      }
+    ],
+    "description": "📍 Black River Falls, USA - 2011. A chilling double murder remains unsolved, leaving the community in fear and confusion. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#blackriverfalls",
+      "#unsolvedmurders",
+      "#truecrime",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Disappearance of Judy Smith",
+    "place": "San Francisco",
+    "country": "USA",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A woman vanished without a trace, leaving behind unanswered questions.",
+        "hook_top": "A MYSTERIOUS DISAPPEARANCE",
+        "query": "empty city street at night",
+        "query2": "abandoned building"
+      },
+      {
+        "role": "map",
+        "text": "Judy Smith disappeared from San Francisco in 2010, sparking widespread concern."
+      },
+      {
+        "role": "fact",
+        "text": "Judy's last known sighting was near a popular bar, but surveillance footage showed no sign of her leaving.",
+        "query": "surveillance camera footage",
+        "query2": "busy bar scene",
+        "chips": [
+          {
+            "t": "LAST SEEN IN 2010",
+            "on": "2010",
+            "style": "white"
+          },
+          {
+            "t": "NO SURVEILLANCE TRACE",
+            "on": "footage",
+            "style": "accent"
+          }
+        ],
+        "punch": "trace"
+      },
+      {
+        "role": "callout",
+        "text": "Family and friends continue to search for answers but remain without leads.",
+        "query": "searching in the dark",
+        "query2": "missing person flyer",
+        "label": "FAMILY STILL SEARCHING",
+        "sub": "The mystery lingers on.",
+        "label_on": "answers",
+        "punch": "answers"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if you can't stop asking why.",
+        "query": "night sky with stars",
+        "query2": "whispering wind in trees"
+      }
+    ],
+    "description": "📍 San Francisco, USA - 2010. Judy Smith vanished without a trace after last being seen in a bar, and her case remains a chilling mystery. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#judysmith",
+      "#missingperson",
+      "#truecrime",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Chilling Case of Alisha Heinrich",
+    "place": "Nashville",
+    "country": "USA",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Her tragic disappearance left a family shattered and a community searching for answers.",
+        "hook_top": "A MYSTERIOUS DISAPPEARANCE",
+        "query": "dark residential street",
+        "query2": "shadowy figures"
+      },
+      {
+        "role": "map",
+        "text": "Alisha Heinrich disappeared in Nashville, Tennessee, in 2007."
+      },
+      {
+        "role": "fact",
+        "text": "Alisha was last seen leaving a friend's house, and her car was later found abandoned.",
+        "query": "abandoned car at night",
+        "query2": "empty road",
+        "chips": [
+          {
+            "t": "LAST SEEN IN 2007",
+            "on": "2007",
+            "style": "white"
+          },
+          {
+            "t": "CAR FOUND ABANDONED",
+            "on": "car",
+            "style": "accent"
+          }
+        ],
+        "punch": "found"
+      },
+      {
+        "role": "callout",
+        "text": "Years later, the case remains open, but leads are scarce.",
+        "query": "chasing shadows",
+        "query2": "starlit night",
+        "label": "CASE STILL OPEN",
+        "sub": "The mystery continues.",
+        "label_on": "leads",
+        "punch": "mystery"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if you can't stop asking why.",
+        "query": "eerie fog at night",
+        "query2": "distant howling wind"
+      }
+    ],
+    "description": "📍 Nashville, USA - 2007. Alisha Heinrich mysteriously disappeared after leaving a friend's house, with her abandoned car showing no clues. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#alishaheinrich",
+      "#missingperson",
+      "#truecrime",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Unseen Mystery of John Doe 41",
+    "place": "Brooklyn",
+    "country": "USA",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A John Doe with no identity or backstory continues to haunt investigators.",
+        "hook_top": "THE JOHN DOE MYSTERY",
+        "query": "dark alleyway",
+        "query2": "mysterious shadow"
+      },
+      {
+        "role": "map",
+        "text": "The remains of John Doe 41 were found in Brooklyn, New York, in 2019."
+      },
+      {
+        "role": "fact",
+        "text": "Forensic scientists are still unable to determine his identity or cause of death.",
+        "query": "forensic lab equipment",
+        "query2": "complex analysis",
+        "chips": [
+          {
+            "t": "FOUND IN 2019",
+            "on": "2019",
+            "style": "white"
+          },
+          {
+            "t": "IDENTITY UNKNOWN",
+            "on": "identity",
+            "style": "accent"
+          }
+        ],
+        "punch": "identity"
+      },
+      {
+        "role": "callout",
+        "text": "Despite media coverage, no one has come forward with information.",
+        "query": "news coverage montage",
+        "query2": "press conference",
+        "label": "NO LEADS IN SIGHT",
+        "sub": "The mystery persists.",
+        "label_on": "information",
+        "punch": "leads"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "nighttime skyline",
+        "query2": "whispering tree branches"
+      }
+    ],
+    "description": "📍 Brooklyn, USA - 2019. John Doe 41 was discovered with no identity, and despite forensic attempts, his story remains unknown. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#johndoe41",
+      "#truecrime",
+      "#unsolvedcases",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Haunting Silence of a Murder Case",
+    "place": "Riverton",
+    "country": "USA",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A murder with no suspects and no leads plunges a community into despair.",
+        "hook_top": "THE UNSOLVED MURDER",
+        "query": "quiet suburban street",
+        "query2": "broken streetlamp"
+      },
+      {
+        "role": "map",
+        "text": "The case occurred in Riverton, Wyoming, in 2005."
+      },
+      {
+        "role": "fact",
+        "text": "The victim was discovered in their home, and despite multiple investigations, no one has been charged.",
+        "query": "detectives at a crime scene",
+        "query2": "police tape at night",
+        "chips": [
+          {
+            "t": "FOUND IN 2005",
+            "on": "2005",
+            "style": "white"
+          },
+          {
+            "t": "NO SUSPECTS CHARGED",
+            "on": "suspects",
+            "style": "accent"
+          }
+        ],
+        "punch": "charged"
+      },
+      {
+        "role": "callout",
+        "text": "Families are left wondering if the case will ever be solved.",
+        "query": "family searching for answers",
+        "query2": "flickering candlelight",
+        "label": "FAMILY STILL HOPES",
+        "sub": "Answers seem distant.",
+        "label_on": "solved",
+        "punch": "solved"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new mystery every day.",
+        "query": "stars shining bright",
+        "query2": "soft rustling leaves"
+      }
+    ],
+    "description": "📍 Riverton, USA - 2005. A chilling murder mystery remains unsolved, leaving the community longing for justice. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#riverton",
+      "#unsolvedmurders",
+      "#crime",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Vanishing of Michael Kuss",
+    "place": "Atlanta",
+    "country": "USA",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A man disappeared following a bizarre series of events, leaving his family perplexed.",
+        "hook_top": "THE MYSTERY OF KUSS",
+        "query": "darkened cityscape",
+        "query2": "faded neon lights"
+      },
+      {
+        "role": "map",
+        "text": "Michael Kuss was last seen in Atlanta, Georgia, in 2003."
+      },
+      {
+        "role": "fact",
+        "text": "In the days before his disappearance, strange messages were sent to his friends, raising suspicions.",
+        "query": "text messages on screen",
+        "query2": "bizarre notifications",
+        "chips": [
+          {
+            "t": "LAST SEEN IN 2003",
+            "on": "2003",
+            "style": "white"
+          },
+          {
+            "t": "BIZARRE MESSAGES SENT",
+            "on": "messages",
+            "style": "accent"
+          }
+        ],
+        "punch": "messages"
+      },
+      {
+        "role": "callout",
+        "text": "Despite numerous leads, investigators have not found him or a reason for his disappearance.",
+        "query": "unsettling investigation scene",
+        "query2": "papers and photos scattered",
+        "label": "STILL MISSING",
+        "sub": "The mystery grows deeper.",
+        "label_on": "leads",
+        "punch": "mystery"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "bright full moon",
+        "query2": "misty evening sky"
+      }
+    ],
+    "description": "📍 Atlanta, USA - 2003. Michael Kuss vanished mysteriously, just days after sending strange messages, leaving family and friends desperate for answers. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#michaelkuss",
+      "#disappearance",
+      "#truecrime",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Ghost Town of Bodie",
+    "place": "Bodie",
+    "country": "USA",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Once a thriving gold mining town, Bodie is now an eerie ghost town.",
+        "hook_top": "THE GHOST TOWN OF BODIE",
+        "query": "abandoned buildings",
+        "query2": "windy desolate landscape"
+      },
+      {
+        "role": "map",
+        "text": "Bodie is located in California, USA, and was founded during the gold rush."
+      },
+      {
+        "role": "fact",
+        "text": "The town was deserted in the 1940s but remains preserved as a state park.",
+        "query": "dusty streets of Bodie",
+        "query2": "ghostly abandoned homes",
+        "chips": [
+          {
+            "t": "DESERTED IN 1940s",
+            "on": "1940s",
+            "style": "white"
+          },
+          {
+            "t": "STATE PARK PRESERVATION",
+            "on": "preservation",
+            "style": "accent"
+          }
+        ],
+        "punch": "preserved"
+      },
+      {
+        "role": "callout",
+        "text": "Visitors report strange sounds and sightings, adding to its ghostly reputation.",
+        "query": "ghostly figures",
+        "query2": "faint whispers",
+        "label": "MYSTERIOUS SIGHTINGS",
+        "sub": "What haunts Bodie?",
+        "label_on": "sightings",
+        "punch": "sightings"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "wind blowing through ruins",
+        "query2": "moonlight over ghost town"
+      }
+    ],
+    "description": "📍 Bodie, USA - 1940s. Once a booming gold mining town, Bodie is now an abandoned ghost town with eerie sightings and sounds reported by visitors. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#bodie",
+      "#ghosttown",
+      "#abandonedplaces",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]

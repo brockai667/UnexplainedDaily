@@ -1,0 +1,63 @@
+{
+  "title": "The Mystery of Carbon Nanotubes",
+  "place": "Laboratories Worldwide",
+  "country": "N/A",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A remarkable material found in bizarre places, defying scientific explanation.",
+      "hook_top": "BIZARRE NANOMATERIAL",
+      "query": "carbon nanotube visuals",
+      "query2": "microscopic world"
+    },
+    {
+      "role": "map",
+      "text": "Carbon nanotubes have been identified in various locations, including laboratories and even ancient artifacts."
+    },
+    {
+      "role": "fact",
+      "text": "Their unique properties are used in numerous fields, yet their origins in some contexts remain a mystery.",
+      "query": "laboratory research",
+      "query2": "scientific breakthroughs",
+      "chips": [
+        {
+          "t": "FOUND IN ANCIENT ARTIFAC",
+          "on": "artifacts",
+          "style": "white"
+        },
+        {
+          "t": "ORIGINS UNKNOWN",
+          "on": "origins",
+          "style": "accent"
+        }
+      ],
+      "punch": "origins"
+    },
+    {
+      "role": "callout",
+      "text": "Could they hint at advanced technology that predates our understanding?",
+      "query": "technological advancements",
+      "query2": "futuristic materials",
+      "label": "ANCient TECHNOLOGY?",
+      "sub": "Conversation continues.",
+      "label_on": "nanotubes",
+      "punch": "hint"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "lab at night",
+      "query2": "research in darkness"
+    }
+  ],
+  "description": "📍 Laboratories Worldwide, N/A - Ongoing. Carbon nanotubes perplex researchers as they appear in unexpected locations, raising questions of their origins. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#nanotechnology",
+    "#science",
+    "#research",
+    "#shorts",
+    "#fyp"
+  ]
+}

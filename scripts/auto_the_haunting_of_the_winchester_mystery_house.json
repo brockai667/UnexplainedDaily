@@ -1,0 +1,63 @@
+{
+  "title": "The Haunting of the Winchester Mystery House",
+  "place": "San Jose",
+  "country": "USA",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A mansion with stairs leading to nowhere and doors opening into walls.",
+      "hook_top": "A HOUSE OF MYSTERIES",
+      "query": "strange architecture house",
+      "query2": "haunted mansion"
+    },
+    {
+      "role": "map",
+      "text": "The Winchester Mystery House is located in San Jose, California, known for its architectural oddities."
+    },
+    {
+      "role": "fact",
+      "text": "Built continuously for 38 years, its design is a puzzle with no clear purpose.",
+      "query": "mansion interior",
+      "query2": "mysterious corridors",
+      "chips": [
+        {
+          "t": "BUILT FOR 38 YEARS",
+          "on": "years",
+          "style": "white"
+        },
+        {
+          "t": "ARCHITECTURAL RIDDLE",
+          "on": "riddle",
+          "style": "accent"
+        }
+      ],
+      "punch": "riddle"
+    },
+    {
+      "role": "callout",
+      "text": "Was it a refuge from spirits, or simply quirky design choices?",
+      "query": "eerie hallways",
+      "query2": "shadows in the house",
+      "label": "REFUGE OR FANTASY?",
+      "sub": "Theories vary widely.",
+      "label_on": "house",
+      "punch": "spirits"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new mystery every day.",
+      "query": "mansion in moonlight",
+      "query2": "haunted grounds"
+    }
+  ],
+  "description": "📍 San Jose, USA - Ongoing. The Winchester Mystery House is a testament to peculiar architecture and the mysteries it fosters. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#WinchesterMysteryHouse",
+    "#haunted",
+    "#architecture",
+    "#shorts",
+    "#fyp"
+  ]
+}

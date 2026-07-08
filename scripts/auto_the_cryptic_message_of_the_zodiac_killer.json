@@ -1,0 +1,63 @@
+{
+  "title": "The Cryptic Message of the Zodiac Killer",
+  "place": "California",
+  "country": "USA",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A series of coded messages sent by an unidentified killer, still unsolved.",
+      "hook_top": "A CODE BREAKING MYSTERY",
+      "query": "mysterious coded letters",
+      "query2": "darkened alley"
+    },
+    {
+      "role": "map",
+      "text": "The Zodiac Killer operated in Northern California during the late 1960s and early 1970s."
+    },
+    {
+      "role": "fact",
+      "text": "Despite multiple attempts, the final cipher has yet to be decoded, leaving investigators stumped.",
+      "query": "old typewriter",
+      "query2": "dimly lit room",
+      "chips": [
+        {
+          "t": "LAST SEEN IN 1970s",
+          "on": "1970s",
+          "style": "white"
+        },
+        {
+          "t": "CIPHERS UNSOLVED",
+          "on": "ciphers",
+          "style": "accent"
+        }
+      ],
+      "punch": "unsolved"
+    },
+    {
+      "role": "callout",
+      "text": "Could these messages hold the key to identifying the killer?",
+      "query": "mysterious symbols",
+      "query2": "hidden codes",
+      "label": "HIDDEN TRUTHS?",
+      "sub": "Investigators still hope.",
+      "label_on": "messages",
+      "punch": "key"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the cases no one can explain.",
+      "query": "dark urban setting",
+      "query2": "quiet streets at night"
+    }
+  ],
+  "description": "📍 California, USA - Late 1960s to 70s. The Zodiac Killer's encrypted messages tantalize detectives, yet remain decoded after decades. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#ZodiacKiller",
+    "#truecrime",
+    "#coldcase",
+    "#shorts",
+    "#fyp"
+  ]
+}
