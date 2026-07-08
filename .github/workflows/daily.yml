@@ -47,8 +47,8 @@ jobs:
           CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
           CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
         run: |
-          python generate_batch.py 5
-          python push_to_buffer.py 5
+          python generate_batch.py 3
+          python push_to_buffer.py 3
 
       - name: Retry failed Buffer posts (auto-heal)
         continue-on-error: true
