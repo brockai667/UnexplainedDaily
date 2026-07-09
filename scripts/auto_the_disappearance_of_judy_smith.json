@@ -1,0 +1,63 @@
+{
+  "title": "The Disappearance of Judy Smith",
+  "place": "San Francisco",
+  "country": "USA",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A woman vanished without a trace, leaving behind unanswered questions.",
+      "hook_top": "A MYSTERIOUS DISAPPEARANCE",
+      "query": "empty city street at night",
+      "query2": "abandoned building"
+    },
+    {
+      "role": "map",
+      "text": "Judy Smith disappeared from San Francisco in 2010, sparking widespread concern."
+    },
+    {
+      "role": "fact",
+      "text": "Judy's last known sighting was near a popular bar, but surveillance footage showed no sign of her leaving.",
+      "query": "surveillance camera footage",
+      "query2": "busy bar scene",
+      "chips": [
+        {
+          "t": "LAST SEEN IN 2010",
+          "on": "2010",
+          "style": "white"
+        },
+        {
+          "t": "NO SURVEILLANCE TRACE",
+          "on": "footage",
+          "style": "accent"
+        }
+      ],
+      "punch": "trace"
+    },
+    {
+      "role": "callout",
+      "text": "Family and friends continue to search for answers but remain without leads.",
+      "query": "searching in the dark",
+      "query2": "missing person flyer",
+      "label": "FAMILY STILL SEARCHING",
+      "sub": "The mystery lingers on.",
+      "label_on": "answers",
+      "punch": "answers"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if you can't stop asking why.",
+      "query": "night sky with stars",
+      "query2": "whispering wind in trees"
+    }
+  ],
+  "description": "📍 San Francisco, USA - 2010. Judy Smith vanished without a trace after last being seen in a bar, and her case remains a chilling mystery. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#judysmith",
+    "#missingperson",
+    "#truecrime",
+    "#shorts",
+    "#fyp"
+  ]
+}

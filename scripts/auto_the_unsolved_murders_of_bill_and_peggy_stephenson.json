@@ -1,0 +1,63 @@
+{
+  "title": "The Unsolved Murders of Bill and Peggy Stephenson",
+  "place": "Black River Falls",
+  "country": "USA",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A double homicide with chilling details remains unsolved even after years.",
+      "hook_top": "A MYSTERIOUS DOUBLE MURDER",
+      "query": "dark forest night",
+      "query2": "foggy rural road"
+    },
+    {
+      "role": "map",
+      "text": "The case took place in Black River Falls, Wisconsin, in 2011."
+    },
+    {
+      "role": "fact",
+      "text": "Bill and Peggy Stephenson were found dead in their home. The crime scene revealed signs of a violent struggle.",
+      "query": "crime scene investigation",
+      "query2": "detectives examining a scene",
+      "chips": [
+        {
+          "t": "FOUND IN 2011",
+          "on": "2011",
+          "style": "white"
+        },
+        {
+          "t": "UNSOLVED CASE",
+          "on": "unsolved",
+          "style": "accent"
+        }
+      ],
+      "punch": "unsolved"
+    },
+    {
+      "role": "callout",
+      "text": "No suspects have been identified, and the motive remains unclear.",
+      "query": "mysterious shadows",
+      "query2": "dark alleyway",
+      "label": "NO SUSPECTS IDENTIFIED",
+      "sub": "The mystery deepens daily.",
+      "label_on": "suspects",
+      "punch": "suspects"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "misty forest path",
+      "query2": "stars in the night sky"
+    }
+  ],
+  "description": "📍 Black River Falls, USA - 2011. A chilling double murder remains unsolved, leaving the community in fear and confusion. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#blackriverfalls",
+    "#unsolvedmurders",
+    "#truecrime",
+    "#shorts",
+    "#fyp"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "title": "The Chilling Case of Alisha Heinrich",
+  "place": "Nashville",
+  "country": "USA",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Her tragic disappearance left a family shattered and a community searching for answers.",
+      "hook_top": "A MYSTERIOUS DISAPPEARANCE",
+      "query": "dark residential street",
+      "query2": "shadowy figures"
+    },
+    {
+      "role": "map",
+      "text": "Alisha Heinrich disappeared in Nashville, Tennessee, in 2007."
+    },
+    {
+      "role": "fact",
+      "text": "Alisha was last seen leaving a friend's house, and her car was later found abandoned.",
+      "query": "abandoned car at night",
+      "query2": "empty road",
+      "chips": [
+        {
+          "t": "LAST SEEN IN 2007",
+          "on": "2007",
+          "style": "white"
+        },
+        {
+          "t": "CAR FOUND ABANDONED",
+          "on": "car",
+          "style": "accent"
+        }
+      ],
+      "punch": "found"
+    },
+    {
+      "role": "callout",
+      "text": "Years later, the case remains open, but leads are scarce.",
+      "query": "chasing shadows",
+      "query2": "starlit night",
+      "label": "CASE STILL OPEN",
+      "sub": "The mystery continues.",
+      "label_on": "leads",
+      "punch": "mystery"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if you can't stop asking why.",
+      "query": "eerie fog at night",
+      "query2": "distant howling wind"
+    }
+  ],
+  "description": "📍 Nashville, USA - 2007. Alisha Heinrich mysteriously disappeared after leaving a friend's house, with her abandoned car showing no clues. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#alishaheinrich",
+    "#missingperson",
+    "#truecrime",
+    "#shorts",
+    "#fyp"
+  ]
+}
