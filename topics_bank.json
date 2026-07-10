@@ -4222,5 +4222,261 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "The Strange Case of Chaim Weiss",
+    "place": "New York",
+    "country": "USA",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A 16-year-old mysteriously vanished, leaving behind unanswered questions.",
+        "hook_top": "MYSTERIOUS DISAPPEARANCE",
+        "query": "foggy New York streets",
+        "query2": "dark alley lights"
+      },
+      {
+        "role": "map",
+        "text": "Chaim Weiss disappeared from Brooklyn, New York, in 1992."
+      },
+      {
+        "role": "fact",
+        "text": "Despite extensive searches and media coverage, he was never found.",
+        "query": "missing person search",
+        "query2": "search party dark",
+        "chips": []
+      },
+      {
+        "role": "callout",
+        "text": "His case remains an enduring mystery, still unsolved.",
+        "query": "dark clouds ominous",
+        "query2": "mystery dark woods",
+        "label": "STILL UNSOLVED",
+        "sub": "A haunting disappearance",
+        "label_on": "unsolved",
+        "punch": "haunting"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "night sky stars",
+        "query2": "dark forest mist"
+      }
+    ],
+    "description": "📍 New York, USA - 1992. Chaim Weiss, only 16, vanished without a trace from Brooklyn. His case remains a mystery, leaving many unanswered questions. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#missingperson",
+      "#newyork",
+      "#coldcase",
+      "#history",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Baffling Signal from Space",
+    "place": "Earth's Orbit",
+    "country": "N/A",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "An unexplained signal from the depths of space left scientists puzzled.",
+        "hook_top": "BIZARRE SPACE SIGNAL",
+        "query": "deep space starry night",
+        "query2": "galaxy panoramic view"
+      },
+      {
+        "role": "map",
+        "text": "The signal was detected by astronomers observing Earth's orbit in recent years."
+      },
+      {
+        "role": "fact",
+        "text": "Scientific analysis has yet to identify the signal's source or purpose.",
+        "query": "scientists analyzing data",
+        "query2": "computer screens beeping",
+        "chips": []
+      },
+      {
+        "role": "callout",
+        "text": "This signal might be the key to understanding our universe.",
+        "query": "universe concept art",
+        "query2": "space exploration visuals",
+        "label": "UNEXPLAINED ORIGIN",
+        "sub": "An astronomical mystery",
+        "label_on": "origin",
+        "punch": "mystery"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new mystery every day.",
+        "query": "space shuttle launch",
+        "query2": "stars in the night sky"
+      }
+    ],
+    "description": "📍 Earth's Orbit - Recent years. Astronomers detected a bizarre signal from space that defies explanation. The origin of this signal remains mysterious, fueling curiosity and theories. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#spacesignal",
+      "#astronomy",
+      "#science",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Strange Giants of Bodie",
+    "place": "Bodie",
+    "country": "USA",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A ghost town full of giants: is Bodie hiding secrets?",
+        "hook_top": "MYSTERIOUS GHOST TOWN",
+        "query": "abandoned ghost town",
+        "query2": "dusty streets empty"
+      },
+      {
+        "role": "map",
+        "text": "The ghost town of Bodie is located in California, once a bustling gold mining hub."
+      },
+      {
+        "role": "fact",
+        "text": "Bodie is preserved in a state of arrested decay, giving it an eerie atmosphere.",
+        "query": "abandoned buildings shadows",
+        "query2": "old mining equipment",
+        "chips": []
+      },
+      {
+        "role": "callout",
+        "text": "Visitors claim to see ghostly figures among the ruins.",
+        "query": "mist over ghost town",
+        "query2": "spooky shadow figures",
+        "label": "GHOSTLY SIGHTINGS",
+        "sub": "Eerie encounters",
+        "label_on": "sightings",
+        "punch": "eerie"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "moonlight over ruins",
+        "query2": "fog covering ground"
+      }
+    ],
+    "description": "📍 Bodie, USA - Unknown. Once a bustling gold mining town, Bodie is now ghostly and abandoned, where visitors report strange sightings. Discover the secrets it might hold. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#ghosttown",
+      "#california",
+      "#historical",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Mystery of the Nazca Lines",
+    "place": "Nazca Desert",
+    "country": "Peru",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Massive geoglyphs etched into the earth, but why?",
+        "hook_top": "MYSTERIOUS GEOGLYPHS",
+        "query": "Nazca lines aerial view",
+        "query2": "ancient earth markings"
+      },
+      {
+        "role": "map",
+        "text": "The Nazca Lines are found in the Nazca Desert of southern Peru."
+      },
+      {
+        "role": "fact",
+        "text": "These intricate designs date back to 500 BCE and remain largely unexplained.",
+        "query": "ancient drawings aerial",
+        "query2": "historical archaeology",
+        "chips": []
+      },
+      {
+        "role": "callout",
+        "text": "Were they created for the gods or as astronomical markers?",
+        "query": "desert cosmos night",
+        "query2": "ancient civilization mystery",
+        "label": "UNEXPLAINED PURPOSE",
+        "sub": "A lasting enigma",
+        "label_on": "purpose",
+        "punch": "enigma"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "desert sunset",
+        "query2": "starry night above desert"
+      }
+    ],
+    "description": "📍 Nazca Desert, Peru - 500 BCE. Massive geoglyphs etched into the earth, the Nazca Lines' true purpose remains a mystery. Were they for the gods or astronomy? Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#nazcalines",
+      "#peru",
+      "#ancientart",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Disappearance of Mysterious Human Remains",
+    "place": "Nez Perce County",
+    "country": "USA",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Recent discoveries reveal remains shrouded in mystery.",
+        "hook_top": "MYSTERIOUS REMAINS",
+        "query": "mysterious woods",
+        "query2": "logged area forest"
+      },
+      {
+        "role": "map",
+        "text": "Human remains were found in Nez Perce County, Idaho, in March 2026."
+      },
+      {
+        "role": "fact",
+        "text": "Authorities identified the remains but the circumstances remain unclear.",
+        "query": "police investigation site",
+        "query2": "mystery unfold",
+        "chips": []
+      },
+      {
+        "role": "callout",
+        "text": "The unanswered questions linger, haunting the community.",
+        "query": "community vigil candles",
+        "query2": "memorial service dusk",
+        "label": "UNANSWERED QUESTIONS",
+        "sub": "A community search",
+        "label_on": "questions",
+        "punch": "haunting"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "dark forest path",
+        "query2": "misty morning landscape"
+      }
+    ],
+    "description": "📍 Nez Perce County, USA - 2026. Human remains found reveal a mystery that continues to haunt the community. Questions linger as authorities investigate. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#missingperson",
+      "#idaho",
+      "#crime",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]

@@ -1,0 +1,63 @@
+{
+  "title": "The Vanishing of Michael Kuss",
+  "place": "Atlanta",
+  "country": "USA",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A man disappeared following a bizarre series of events, leaving his family perplexed.",
+      "hook_top": "THE MYSTERY OF KUSS",
+      "query": "darkened cityscape",
+      "query2": "faded neon lights"
+    },
+    {
+      "role": "map",
+      "text": "Michael Kuss was last seen in Atlanta, Georgia, in 2003."
+    },
+    {
+      "role": "fact",
+      "text": "In the days before his disappearance, strange messages were sent to his friends, raising suspicions.",
+      "query": "text messages on screen",
+      "query2": "bizarre notifications",
+      "chips": [
+        {
+          "t": "LAST SEEN IN 2003",
+          "on": "2003",
+          "style": "white"
+        },
+        {
+          "t": "BIZARRE MESSAGES SENT",
+          "on": "messages",
+          "style": "accent"
+        }
+      ],
+      "punch": "messages"
+    },
+    {
+      "role": "callout",
+      "text": "Despite numerous leads, investigators have not found him or a reason for his disappearance.",
+      "query": "unsettling investigation scene",
+      "query2": "papers and photos scattered",
+      "label": "STILL MISSING",
+      "sub": "The mystery grows deeper.",
+      "label_on": "leads",
+      "punch": "mystery"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "bright full moon",
+      "query2": "misty evening sky"
+    }
+  ],
+  "description": "📍 Atlanta, USA - 2003. Michael Kuss vanished mysteriously, just days after sending strange messages, leaving family and friends desperate for answers. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#michaelkuss",
+    "#disappearance",
+    "#truecrime",
+    "#shorts",
+    "#fyp"
+  ]
+}

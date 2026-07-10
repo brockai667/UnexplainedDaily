@@ -1,0 +1,63 @@
+{
+  "title": "The Haunting Silence of a Murder Case",
+  "place": "Riverton",
+  "country": "USA",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A murder with no suspects and no leads plunges a community into despair.",
+      "hook_top": "THE UNSOLVED MURDER",
+      "query": "quiet suburban street",
+      "query2": "broken streetlamp"
+    },
+    {
+      "role": "map",
+      "text": "The case occurred in Riverton, Wyoming, in 2005."
+    },
+    {
+      "role": "fact",
+      "text": "The victim was discovered in their home, and despite multiple investigations, no one has been charged.",
+      "query": "detectives at a crime scene",
+      "query2": "police tape at night",
+      "chips": [
+        {
+          "t": "FOUND IN 2005",
+          "on": "2005",
+          "style": "white"
+        },
+        {
+          "t": "NO SUSPECTS CHARGED",
+          "on": "suspects",
+          "style": "accent"
+        }
+      ],
+      "punch": "charged"
+    },
+    {
+      "role": "callout",
+      "text": "Families are left wondering if the case will ever be solved.",
+      "query": "family searching for answers",
+      "query2": "flickering candlelight",
+      "label": "FAMILY STILL HOPES",
+      "sub": "Answers seem distant.",
+      "label_on": "solved",
+      "punch": "solved"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new mystery every day.",
+      "query": "stars shining bright",
+      "query2": "soft rustling leaves"
+    }
+  ],
+  "description": "📍 Riverton, USA - 2005. A chilling murder mystery remains unsolved, leaving the community longing for justice. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#riverton",
+    "#unsolvedmurders",
+    "#crime",
+    "#shorts",
+    "#fyp"
+  ]
+}

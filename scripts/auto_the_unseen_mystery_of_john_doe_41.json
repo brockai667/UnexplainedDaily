@@ -1,0 +1,63 @@
+{
+  "title": "The Unseen Mystery of John Doe 41",
+  "place": "Brooklyn",
+  "country": "USA",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A John Doe with no identity or backstory continues to haunt investigators.",
+      "hook_top": "THE JOHN DOE MYSTERY",
+      "query": "dark alleyway",
+      "query2": "mysterious shadow"
+    },
+    {
+      "role": "map",
+      "text": "The remains of John Doe 41 were found in Brooklyn, New York, in 2019."
+    },
+    {
+      "role": "fact",
+      "text": "Forensic scientists are still unable to determine his identity or cause of death.",
+      "query": "forensic lab equipment",
+      "query2": "complex analysis",
+      "chips": [
+        {
+          "t": "FOUND IN 2019",
+          "on": "2019",
+          "style": "white"
+        },
+        {
+          "t": "IDENTITY UNKNOWN",
+          "on": "identity",
+          "style": "accent"
+        }
+      ],
+      "punch": "identity"
+    },
+    {
+      "role": "callout",
+      "text": "Despite media coverage, no one has come forward with information.",
+      "query": "news coverage montage",
+      "query2": "press conference",
+      "label": "NO LEADS IN SIGHT",
+      "sub": "The mystery persists.",
+      "label_on": "information",
+      "punch": "leads"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "nighttime skyline",
+      "query2": "whispering tree branches"
+    }
+  ],
+  "description": "📍 Brooklyn, USA - 2019. John Doe 41 was discovered with no identity, and despite forensic attempts, his story remains unknown. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#johndoe41",
+    "#truecrime",
+    "#unsolvedcases",
+    "#shorts",
+    "#fyp"
+  ]
+}
