@@ -1,0 +1,63 @@
+{
+  "title": "The Mysterious Death of Alisha Heinrich",
+  "place": "Nashville",
+  "country": "Tennessee",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A young woman's death leads to more questions than answers.",
+      "hook_top": "MYSTERIOUS DEATH",
+      "query": "dark alley investigation",
+      "query2": "mysterious crime scene"
+    },
+    {
+      "role": "map",
+      "text": "This case unfolded in Nashville, Tennessee."
+    },
+    {
+      "role": "fact",
+      "text": "In 2016, Alisha Heinrich was found dead in her apartment, with an unexplained cause of death.",
+      "query": "police investigation",
+      "query2": "dark room laptop",
+      "chips": [
+        {
+          "t": "FOUND IN 2016",
+          "on": "2016",
+          "style": "white"
+        },
+        {
+          "t": "UNEXPLAINED DEATH",
+          "on": "unexplained",
+          "style": "accent"
+        }
+      ],
+      "punch": "death"
+    },
+    {
+      "role": "callout",
+      "text": "The circumstances surrounding her death remain a mystery, baffling investigators.",
+      "query": "shadows over desk",
+      "query2": "mysterious lights",
+      "label": "CIRCUMSTANCES UNKNOWN",
+      "sub": "case still open",
+      "label_on": "mystery",
+      "punch": "unknown"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new mystery every day.",
+      "query": "mystical foggy night",
+      "query2": "ominous moonlight"
+    }
+  ],
+  "description": "📍 Nashville, Tennessee - 2016. Alisha Heinrich's body was discovered in her apartment, yet the cause remains a mystery. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#nashville",
+    "#tennessee",
+    "#truecrime",
+    "#shorts",
+    "#fyp"
+  ]
+}

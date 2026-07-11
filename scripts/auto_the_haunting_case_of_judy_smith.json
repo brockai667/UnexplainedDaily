@@ -1,0 +1,63 @@
+{
+  "title": "The Haunting Case of Judy Smith",
+  "place": "California",
+  "country": "USA",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A vanish without a trace: where is Judy Smith?",
+      "hook_top": "MYSTERIOUS VANISHING",
+      "query": "empty street night",
+      "query2": "fog rolling in"
+    },
+    {
+      "role": "map",
+      "text": "This mysterious case took place in California, USA."
+    },
+    {
+      "role": "fact",
+      "text": "Judy Smith disappeared in April 1998, vanishing without any clues.",
+      "query": "dark woods",
+      "query2": "abandoned house",
+      "chips": [
+        {
+          "t": "DISAPPEARED IN 1998",
+          "on": "1998",
+          "style": "white"
+        },
+        {
+          "t": "MYSTERY UNSOLVED",
+          "on": "unsolved",
+          "style": "accent"
+        }
+      ],
+      "punch": "disappeared"
+    },
+    {
+      "role": "callout",
+      "text": "Despite extensive searches, Judy Smith has never been found.",
+      "query": "missing person flyer",
+      "query2": "flashlight in dark",
+      "label": "STILL MISSING",
+      "sub": "no leads available",
+      "label_on": "missing",
+      "punch": "missing"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "moonlit path",
+      "query2": "shadowy forest"
+    }
+  ],
+  "description": "📍 California, USA - 1998. Judy Smith vanished without a trace, leaving behind no clues and raising many questions. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#california",
+    "#usa",
+    "#truecrime",
+    "#shorts",
+    "#fyp"
+  ]
+}

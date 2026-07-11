@@ -1,0 +1,63 @@
+{
+  "title": "The Ghost Town of Bodie",
+  "place": "Bodie",
+  "country": "USA",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Once a thriving gold mining town, Bodie is now an eerie ghost town.",
+      "hook_top": "THE GHOST TOWN OF BODIE",
+      "query": "abandoned buildings",
+      "query2": "windy desolate landscape"
+    },
+    {
+      "role": "map",
+      "text": "Bodie is located in California, USA, and was founded during the gold rush."
+    },
+    {
+      "role": "fact",
+      "text": "The town was deserted in the 1940s but remains preserved as a state park.",
+      "query": "dusty streets of Bodie",
+      "query2": "ghostly abandoned homes",
+      "chips": [
+        {
+          "t": "DESERTED IN 1940s",
+          "on": "1940s",
+          "style": "white"
+        },
+        {
+          "t": "STATE PARK PRESERVATION",
+          "on": "preservation",
+          "style": "accent"
+        }
+      ],
+      "punch": "preserved"
+    },
+    {
+      "role": "callout",
+      "text": "Visitors report strange sounds and sightings, adding to its ghostly reputation.",
+      "query": "ghostly figures",
+      "query2": "faint whispers",
+      "label": "MYSTERIOUS SIGHTINGS",
+      "sub": "What haunts Bodie?",
+      "label_on": "sightings",
+      "punch": "sightings"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "wind blowing through ruins",
+      "query2": "moonlight over ghost town"
+    }
+  ],
+  "description": "📍 Bodie, USA - 1940s. Once a booming gold mining town, Bodie is now an abandoned ghost town with eerie sightings and sounds reported by visitors. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#bodie",
+    "#ghosttown",
+    "#abandonedplaces",
+    "#shorts",
+    "#fyp"
+  ]
+}
