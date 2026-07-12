@@ -1,0 +1,52 @@
+{
+  "title": "The Strange Case of Chaim Weiss",
+  "place": "New York",
+  "country": "USA",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A 16-year-old mysteriously vanished, leaving behind unanswered questions.",
+      "hook_top": "MYSTERIOUS DISAPPEARANCE",
+      "query": "foggy New York streets",
+      "query2": "dark alley lights"
+    },
+    {
+      "role": "map",
+      "text": "Chaim Weiss disappeared from Brooklyn, New York, in 1992."
+    },
+    {
+      "role": "fact",
+      "text": "Despite extensive searches and media coverage, he was never found.",
+      "query": "missing person search",
+      "query2": "search party dark",
+      "chips": []
+    },
+    {
+      "role": "callout",
+      "text": "His case remains an enduring mystery, still unsolved.",
+      "query": "dark clouds ominous",
+      "query2": "mystery dark woods",
+      "label": "STILL UNSOLVED",
+      "sub": "A haunting disappearance",
+      "label_on": "unsolved",
+      "punch": "haunting"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "night sky stars",
+      "query2": "dark forest mist"
+    }
+  ],
+  "description": "📍 New York, USA - 1992. Chaim Weiss, only 16, vanished without a trace from Brooklyn. His case remains a mystery, leaving many unanswered questions. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#missingperson",
+    "#newyork",
+    "#coldcase",
+    "#history",
+    "#shorts",
+    "#fyp"
+  ]
+}

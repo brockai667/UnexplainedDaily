@@ -1,0 +1,63 @@
+{
+  "title": "The Vanished Life of Chaim Weiss",
+  "place": "Brooklyn",
+  "country": "New York",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A man disappears under suspicious circumstances, leaving family in despair.",
+      "hook_top": "MYSTERIOUS DISAPPEARANCE",
+      "query": "dimly lit street night",
+      "query2": "narrow city alley"
+    },
+    {
+      "role": "map",
+      "text": "This case unfolded in Brooklyn, New York."
+    },
+    {
+      "role": "fact",
+      "text": "Chaim Weiss was reported missing in 1995, and the search yielded no results.",
+      "query": "search for missing man",
+      "query2": "family photo despair",
+      "chips": [
+        {
+          "t": "MISSING SINCE 1995",
+          "on": "1995",
+          "style": "white"
+        },
+        {
+          "t": "CASE STILL OPEN",
+          "on": "case",
+          "style": "accent"
+        }
+      ],
+      "punch": "missing"
+    },
+    {
+      "role": "callout",
+      "text": "To this day, his family seeks answers, hanging on to hope.",
+      "query": "family searching",
+      "query2": "hopeful missing flyer",
+      "label": "FAMILY STILL HOPES",
+      "sub": "answers remain elusive",
+      "label_on": "hopes",
+      "punch": "hope"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "lonely street corner",
+      "query2": "darkened park"
+    }
+  ],
+  "description": "📍 Brooklyn, New York - 1995. Chaim Weiss vanished without a trace, and his family continues to search for answers. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#brooklyn",
+    "#newyork",
+    "#truecrime",
+    "#shorts",
+    "#fyp"
+  ]
+}

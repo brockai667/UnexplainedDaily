@@ -1,0 +1,63 @@
+{
+  "title": "The Chilling Echo of Daryl Budenski",
+  "place": "California",
+  "country": "USA",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A man goes missing during a hiking trip, but why?",
+      "hook_top": "HAUNTING DISAPPEARANCE",
+      "query": "misty mountain trail",
+      "query2": "dark forest camping"
+    },
+    {
+      "role": "map",
+      "text": "Daryl Budenski disappeared in the wilderness of California."
+    },
+    {
+      "role": "fact",
+      "text": "He vanished while hiking in 2015, with no sightings or evidence found.",
+      "query": "trail disappearing",
+      "query2": "search teams in woods",
+      "chips": [
+        {
+          "t": "DISAPPEARED IN 2015",
+          "on": "2015",
+          "style": "white"
+        },
+        {
+          "t": "UNEXPLAINED MYSTERY",
+          "on": "mystery",
+          "style": "accent"
+        }
+      ],
+      "punch": "vanished"
+    },
+    {
+      "role": "callout",
+      "text": "His disappearance remains unexplained, leaving families with lingering questions.",
+      "query": "lonely mountain view",
+      "query2": "misty trails",
+      "label": "CASE UNSOLVED",
+      "sub": "search continues",
+      "label_on": "unsolved",
+      "punch": "unsolved"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if you can't stop asking why.",
+      "query": "dark starry sky",
+      "query2": "mysterious forest twilight"
+    }
+  ],
+  "description": "📍 California, USA - 2015. Daryl Budenski disappeared during a hiking trip, with no trace left behind. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#california",
+    "#hiking",
+    "#truecrime",
+    "#shorts",
+    "#fyp"
+  ]
+}
