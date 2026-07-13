@@ -4864,5 +4864,212 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "The Strange Case of Clayton Quayle",
+    "place": "Norris",
+    "country": "USA",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Remains identified after 47 years uncover dark secrets.",
+        "hook_top": "SECRETS OF CLAYTON QUAYLE",
+        "query": "abandoned cabin in woods",
+        "query2": "mysterious old belongings"
+      },
+      {
+        "role": "map",
+        "text": "Clayton Quayle's remains were found near Norris, Montana."
+      },
+      {
+        "role": "fact",
+        "text": "He was reported missing in 1976. For decades, his case puzzled investigators.",
+        "query": "decades-old missing person",
+        "query2": "historical investigation",
+        "chips": [
+          {
+            "t": "MISSING SINCE 1976",
+            "on": "1976",
+            "style": "white"
+          },
+          {
+            "t": "IDENTIFIED AFTER 47 YEAR",
+            "on": "47 years",
+            "style": "accent"
+          }
+        ],
+        "punch": "mystery"
+      },
+      {
+        "role": "archive",
+        "text": "His disappearance and recent identification have rekindled interest in unsolved cases.",
+        "archive_query": "Clayton Quayle remains",
+        "archive_label": "Clayton Quayle Case"
+      },
+      {
+        "role": "callout",
+        "text": "How did he end up there? The answers remain shrouded in mystery.",
+        "query": "enigmatic forest scene",
+        "query2": "mysterious mountain view",
+        "label": "UNEXPLAINED CIRCUMSTANCES",
+        "sub": "who knows the truth?",
+        "label_on": "mystery",
+        "punch": "answers"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "eerie old bridge",
+        "query2": "fog over the river"
+      }
+    ],
+    "description": "📍 Norris, USA - 1976. Clayton Quayle's remains were identified after 47 years, highlighting an old mystery that still needs answers about his fate. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#missingperson",
+      "#usa",
+      "#coldcase",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "What Happened to Brian Grocki?",
+    "place": "Unknown",
+    "country": "USA",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A 14-year-old boy vanished, leaving only questions behind.",
+        "hook_top": "WHERE IS BRIAN GROCKI",
+        "query": "mysterious landscape",
+        "query2": "lost in the wilderness"
+      },
+      {
+        "role": "map",
+        "text": "Brian Grocki disappeared somewhere in the USA, outside his hometown."
+      },
+      {
+        "role": "fact",
+        "text": "His last sighting was in 1999. Family and friends still seek closure.",
+        "query": "search party searching",
+        "query2": "missing person report",
+        "chips": [
+          {
+            "t": "LAST SEEN IN 1999",
+            "on": "1999",
+            "style": "white"
+          },
+          {
+            "t": "STILL MISSING",
+            "on": "missing",
+            "style": "accent"
+          }
+        ],
+        "punch": "closure"
+      },
+      {
+        "role": "archive",
+        "text": "The search for Brian continues, fueled by hope and mystery.",
+        "archive_query": "Brian Grocki missing person poster",
+        "archive_label": "Brian Grocki Search"
+      },
+      {
+        "role": "callout",
+        "text": "With numerous theories and no solid leads, his case remains open.",
+        "query": "people discussing theories",
+        "query2": "cold case discussions",
+        "label": "NUMEROUS THEORIES ",
+        "sub": "but no leads",
+        "label_on": "theories",
+        "punch": "open"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if you can't stop asking why.",
+        "query": "mysterious foggy road",
+        "query2": "path through trees"
+      }
+    ],
+    "description": "📍 Unknown, USA - 1999. Brian Grocki disappeared at 14, leaving a mystery that still haunts his family. The search continues, with no leads to follow. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#missingperson",
+      "#usa",
+      "#coldcase",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Enigma of Betsy Aardsma",
+    "place": "University Park",
+    "country": "USA",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A college student's murder remains unsolved, haunting the community.",
+        "hook_top": "WHO KILLED BETSY AARDSMA",
+        "query": "quiet university campus",
+        "query2": "students walking at night"
+      },
+      {
+        "role": "map",
+        "text": "Betsy Aardsma was killed on a campus at the University Park, Pennsylvania."
+      },
+      {
+        "role": "fact",
+        "text": "She was murdered in 1969, and the case remains cold with little evidence.",
+        "query": "lost case evidence",
+        "query2": "historical investigations",
+        "chips": [
+          {
+            "t": "MURDERED IN 1969",
+            "on": "1969",
+            "style": "white"
+          },
+          {
+            "t": "COLD CASE FILES",
+            "on": "cold",
+            "style": "accent"
+          }
+        ],
+        "punch": "cold"
+      },
+      {
+        "role": "archive",
+        "text": "The ongoing mystery continues to captivate true crime enthusiasts.",
+        "archive_query": "Betsy Aardsma murder investigation",
+        "archive_label": "Betsy Aardsma Case"
+      },
+      {
+        "role": "callout",
+        "text": "New theories emerge every year, but the case remains unsolved.",
+        "query": "people discussing theories",
+        "query2": "detectives at work",
+        "label": "THEORIES ABOUND",
+        "sub": "but no answers",
+        "label_on": "theories",
+        "punch": "answers"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "haunting campus at night",
+        "query2": "eerie student life"
+      }
+    ],
+    "description": "📍 University Park, USA - 1969. Betsy Aardsma was murdered, and her case remains one of the longest cold cases in Pennsylvania. The university community still seeks answers. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#truecrime",
+      "#coldcase",
+      "#university",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]

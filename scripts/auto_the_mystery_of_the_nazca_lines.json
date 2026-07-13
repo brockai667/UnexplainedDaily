@@ -1,0 +1,51 @@
+{
+  "title": "The Mystery of the Nazca Lines",
+  "place": "Nazca Desert",
+  "country": "Peru",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Massive geoglyphs etched into the earth, but why?",
+      "hook_top": "MYSTERIOUS GEOGLYPHS",
+      "query": "Nazca lines aerial view",
+      "query2": "ancient earth markings"
+    },
+    {
+      "role": "map",
+      "text": "The Nazca Lines are found in the Nazca Desert of southern Peru."
+    },
+    {
+      "role": "fact",
+      "text": "These intricate designs date back to 500 BCE and remain largely unexplained.",
+      "query": "ancient drawings aerial",
+      "query2": "historical archaeology",
+      "chips": []
+    },
+    {
+      "role": "callout",
+      "text": "Were they created for the gods or as astronomical markers?",
+      "query": "desert cosmos night",
+      "query2": "ancient civilization mystery",
+      "label": "UNEXPLAINED PURPOSE",
+      "sub": "A lasting enigma",
+      "label_on": "purpose",
+      "punch": "enigma"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "desert sunset",
+      "query2": "starry night above desert"
+    }
+  ],
+  "description": "📍 Nazca Desert, Peru - 500 BCE. Massive geoglyphs etched into the earth, the Nazca Lines' true purpose remains a mystery. Were they for the gods or astronomy? Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#nazcalines",
+    "#peru",
+    "#ancientart",
+    "#shorts",
+    "#fyp"
+  ]
+}

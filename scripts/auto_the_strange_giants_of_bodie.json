@@ -1,0 +1,51 @@
+{
+  "title": "The Strange Giants of Bodie",
+  "place": "Bodie",
+  "country": "USA",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A ghost town full of giants: is Bodie hiding secrets?",
+      "hook_top": "MYSTERIOUS GHOST TOWN",
+      "query": "abandoned ghost town",
+      "query2": "dusty streets empty"
+    },
+    {
+      "role": "map",
+      "text": "The ghost town of Bodie is located in California, once a bustling gold mining hub."
+    },
+    {
+      "role": "fact",
+      "text": "Bodie is preserved in a state of arrested decay, giving it an eerie atmosphere.",
+      "query": "abandoned buildings shadows",
+      "query2": "old mining equipment",
+      "chips": []
+    },
+    {
+      "role": "callout",
+      "text": "Visitors claim to see ghostly figures among the ruins.",
+      "query": "mist over ghost town",
+      "query2": "spooky shadow figures",
+      "label": "GHOSTLY SIGHTINGS",
+      "sub": "Eerie encounters",
+      "label_on": "sightings",
+      "punch": "eerie"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "moonlight over ruins",
+      "query2": "fog covering ground"
+    }
+  ],
+  "description": "📍 Bodie, USA - Unknown. Once a bustling gold mining town, Bodie is now ghostly and abandoned, where visitors report strange sightings. Discover the secrets it might hold. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#ghosttown",
+    "#california",
+    "#historical",
+    "#shorts",
+    "#fyp"
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "title": "The Baffling Signal from Space",
+  "place": "Earth's Orbit",
+  "country": "N/A",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "An unexplained signal from the depths of space left scientists puzzled.",
+      "hook_top": "BIZARRE SPACE SIGNAL",
+      "query": "deep space starry night",
+      "query2": "galaxy panoramic view"
+    },
+    {
+      "role": "map",
+      "text": "The signal was detected by astronomers observing Earth's orbit in recent years."
+    },
+    {
+      "role": "fact",
+      "text": "Scientific analysis has yet to identify the signal's source or purpose.",
+      "query": "scientists analyzing data",
+      "query2": "computer screens beeping",
+      "chips": []
+    },
+    {
+      "role": "callout",
+      "text": "This signal might be the key to understanding our universe.",
+      "query": "universe concept art",
+      "query2": "space exploration visuals",
+      "label": "UNEXPLAINED ORIGIN",
+      "sub": "An astronomical mystery",
+      "label_on": "origin",
+      "punch": "mystery"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new mystery every day.",
+      "query": "space shuttle launch",
+      "query2": "stars in the night sky"
+    }
+  ],
+  "description": "📍 Earth's Orbit - Recent years. Astronomers detected a bizarre signal from space that defies explanation. The origin of this signal remains mysterious, fueling curiosity and theories. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#spacesignal",
+    "#astronomy",
+    "#science",
+    "#shorts",
+    "#fyp"
+  ]
+}
