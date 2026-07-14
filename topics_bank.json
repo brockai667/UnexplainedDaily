@@ -5071,5 +5071,142 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "The Heartbreaking Disappearance of Paula Welden",
+    "place": "Bennington",
+    "country": "Vermont",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A hiking trip leads to a chilling disappearance that remains unsolved.",
+        "hook_top": "THE MYSTERY OF PAULA",
+        "query": "misty forest trail disappearance",
+        "query2": "dark woods empty path"
+      },
+      {
+        "role": "map",
+        "text": "Paula Welden vanished while hiking in the Green Mountains of Vermont in 1946."
+      },
+      {
+        "role": "fact",
+        "text": "She was seen on the Long Trail but never returned, sparking massive searches.",
+        "query": "search teams in forest",
+        "query2": "old newspaper articles",
+        "chips": [
+          {
+            "t": "VANISHED IN 1946",
+            "on": "1946",
+            "style": "white"
+          },
+          {
+            "t": "HIKING ON LONG TRAIL",
+            "on": "hiking",
+            "style": "accent"
+          }
+        ],
+        "punch": "vanished"
+      },
+      {
+        "role": "archive",
+        "text": "Reports and articles about her disappearance still circulate today.",
+        "archive_query": "Paula Welden missing news",
+        "archive_label": "Paula Welden Reports"
+      },
+      {
+        "role": "callout",
+        "text": "Her case remains one of Vermont's greatest mysteries.",
+        "query": "ancient forest landscape",
+        "query2": "sunset over mountains",
+        "label": "A MYSTERY UNRESOLVED",
+        "sub": "Commemoration persists",
+        "label_on": "mystery",
+        "punch": "greatest"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the cases no one can explain.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "📍 Bennington, Vermont - 1946. A young woman disappeared while hiking, leading to extensive searches and leaving behind unanswered questions. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#vermont",
+      "#disappearance",
+      "#coldcase",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Strange Vanishing of Stefanie Damron",
+    "place": "Salt Lake City",
+    "country": "Utah",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A young girl disappears without a trace during a typical day.",
+        "hook_top": "STEFANIE DAMRON MYSTERY",
+        "query": "quiet neighborhood street",
+        "query2": "dark suburban pathway"
+      },
+      {
+        "role": "map",
+        "text": "Stefanie Damron vanished from Salt Lake City, Utah, in September 2024."
+      },
+      {
+        "role": "fact",
+        "text": "Despite extensive searches, her whereabouts remain unknown, leaving family in despair.",
+        "query": "search team in neighborhood",
+        "query2": "community searching for child",
+        "chips": [
+          {
+            "t": "DISAPPEARED IN 2024",
+            "on": "2024",
+            "style": "white"
+          },
+          {
+            "t": "FAMILY STILL SEARCHING",
+            "on": "search",
+            "style": "accent"
+          }
+        ],
+        "punch": "disappeared"
+      },
+      {
+        "role": "archive",
+        "text": "News articles continue to keep the case alive in public memory.",
+        "archive_query": "Stefanie Damron missing news",
+        "archive_label": "Stefanie Damron Reports"
+      },
+      {
+        "role": "callout",
+        "text": "Her case has shocked the community and beyond.",
+        "query": "community vigil candles",
+        "query2": "families holding hands in grief",
+        "label": "COMMUNITY IN PAIN",
+        "sub": "Hope amidst uncertainty",
+        "label_on": "pain",
+        "punch": "community"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "📍 Salt Lake City, Utah - 2024. A young girl vanished unexpectedly, leading to a community-wide search, but she remains missing. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#utah",
+      "#missingchild",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]

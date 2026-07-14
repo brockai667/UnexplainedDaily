@@ -1,0 +1,63 @@
+{
+  "title": "The Mysterious Disappearance of Brian Grocki",
+  "place": "Lansing, Michigan",
+  "country": "USA",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A 14-year-old vanishes without a trace, leaving behind unanswered questions.",
+      "hook_top": "MISSING BRIAN GROCKI",
+      "query": "foggy streets night",
+      "query2": "abandoned park dusk"
+    },
+    {
+      "role": "map",
+      "text": "This mysterious case unfolded in Lansing, Michigan, in 2004."
+    },
+    {
+      "role": "fact",
+      "text": "Brian was last seen on a spring evening, with no leads for years.",
+      "query": "missing person poster",
+      "query2": "search party woods",
+      "chips": [
+        {
+          "t": "DISAPPEARED IN 2004",
+          "on": "2004",
+          "style": "white"
+        },
+        {
+          "t": "STILL UNEXPLAINED",
+          "on": "unexplained",
+          "style": "accent"
+        }
+      ],
+      "punch": "unexplained"
+    },
+    {
+      "role": "callout",
+      "text": "Despite extensive searches, Brian's fate remains unknown.",
+      "query": "vacant lot aerial",
+      "query2": "search and rescue team",
+      "label": "NEVER FOUND",
+      "sub": "The mystery persists to this day.",
+      "label_on": "found",
+      "punch": "found"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new mystery every day.",
+      "query": "shadowy forest path",
+      "query2": "dark empty road"
+    }
+  ],
+  "description": "📍 Lansing, USA - 2004. 14-year-old Brian Grocki vanished without a clue, igniting a decades-long search that yields no answers. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#missingperson",
+    "#Lansing",
+    "#truecrime",
+    "#shorts",
+    "#fyp"
+  ]
+}

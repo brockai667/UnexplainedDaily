@@ -1,0 +1,64 @@
+{
+  "title": "Strange Signals: The Murder of Julie Pacey",
+  "place": "New Hampshire",
+  "country": "United States",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A tragic murder that left mysteries in its wake.",
+      "hook_top": "JULIE PACEY'S CASE",
+      "query": "quiet new england town",
+      "query2": "mystery woods"
+    },
+    {
+      "role": "map",
+      "text": "Julie Pacey was murdered in New Hampshire, leaving a haunting legacy."
+    },
+    {
+      "role": "fact",
+      "text": "The circumstances surrounding her murder remain unresolved decades later.",
+      "query": "police investigation",
+      "query2": "crime scene tape",
+      "chips": [
+        {
+          "t": "MURDERED IN 1993",
+          "on": "1993",
+          "style": "white"
+        },
+        {
+          "t": "COLD CASE",
+          "on": "cold",
+          "style": "accent"
+        }
+      ],
+      "punch": "mystery"
+    },
+    {
+      "role": "callout",
+      "text": "Julie’s case remains one of New Hampshire's most perplexing mysteries.",
+      "query": "darkened woods",
+      "query2": "police lights flashing",
+      "label": "PERPLEXING MYSTERY",
+      "sub": "who killed Julie?",
+      "label_on": "who",
+      "punch": "who"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the cases no one can explain.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "📍 New Hampshire, United States - 1993. The murder of Julie Pacey still looms in the shadows, with unresolved mysteries that haunt the community. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#newhampshire",
+    "#murdermystery",
+    "#coldcase",
+    "#history",
+    "#shorts",
+    "#fyp"
+  ]
+}

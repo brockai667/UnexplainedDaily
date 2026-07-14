@@ -1,0 +1,51 @@
+{
+  "title": "The Disappearance of Mysterious Human Remains",
+  "place": "Nez Perce County",
+  "country": "USA",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Recent discoveries reveal remains shrouded in mystery.",
+      "hook_top": "MYSTERIOUS REMAINS",
+      "query": "mysterious woods",
+      "query2": "logged area forest"
+    },
+    {
+      "role": "map",
+      "text": "Human remains were found in Nez Perce County, Idaho, in March 2026."
+    },
+    {
+      "role": "fact",
+      "text": "Authorities identified the remains but the circumstances remain unclear.",
+      "query": "police investigation site",
+      "query2": "mystery unfold",
+      "chips": []
+    },
+    {
+      "role": "callout",
+      "text": "The unanswered questions linger, haunting the community.",
+      "query": "community vigil candles",
+      "query2": "memorial service dusk",
+      "label": "UNANSWERED QUESTIONS",
+      "sub": "A community search",
+      "label_on": "questions",
+      "punch": "haunting"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "dark forest path",
+      "query2": "misty morning landscape"
+    }
+  ],
+  "description": "📍 Nez Perce County, USA - 2026. Human remains found reveal a mystery that continues to haunt the community. Questions linger as authorities investigate. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#missingperson",
+    "#idaho",
+    "#crime",
+    "#shorts",
+    "#fyp"
+  ]
+}
