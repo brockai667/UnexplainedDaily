@@ -5208,5 +5208,75 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "The Haunting Legacy of the Flat Rock Triple Murder",
+    "place": "North Carolina",
+    "country": "USA",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Three lives lost in a tragic murder case that still haunts a community.",
+        "hook_top": "FLAT ROCK MURDER MYSTERY",
+        "query": "quiet North Carolina town",
+        "query2": "dark rural landscape"
+      },
+      {
+        "role": "map",
+        "text": "The tragedy occurred in Flat Rock, North Carolina, leaving behind a chilling legacy."
+      },
+      {
+        "role": "fact",
+        "text": "In 2004, three residents were brutally murdered, shocking the peaceful community.",
+        "query": "news reports on murder",
+        "query2": "dark investigation scenes",
+        "chips": [
+          {
+            "t": "TRIPLE MURDER IN 2004",
+            "on": "2004",
+            "style": "white"
+          },
+          {
+            "t": "HAUNTED COMMUNITY",
+            "on": "Flat Rock",
+            "style": "accent"
+          }
+        ],
+        "punch": "haunted"
+      },
+      {
+        "role": "archive",
+        "text": "Years later, the case remains unresolved, and memories linger in every corner.",
+        "archive_query": "Flat Rock Triple Murder news",
+        "archive_label": "Unsolved Case"
+      },
+      {
+        "role": "callout",
+        "text": "The community grapples with unanswered questions and lingering fears.",
+        "query": "candlelight vigil",
+        "query2": "local memorial site",
+        "label": "UNSOLVED TRAGEDY",
+        "sub": "A town forever changed",
+        "label_on": "tragedy",
+        "punch": "changed"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if you can't stop asking why.",
+        "query": "dark road through trees",
+        "query2": "quiet town at night"
+      }
+    ],
+    "description": "📍 North Carolina, USA - 2004. Three residents were tragically murdered, casting a shadow over the Flat Rock community. The case remains unsolved, and fear lingers. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#NorthCarolina",
+      "#truecrime",
+      "#unsolvedcase",
+      "#coldcase",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]

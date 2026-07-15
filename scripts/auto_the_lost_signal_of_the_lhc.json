@@ -1,0 +1,70 @@
+{
+  "title": "The Lost Signal of the LHC",
+  "place": "CERN",
+  "country": "Switzerland",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A mysterious signal from the Large Hadron Collider baffled scientists worldwide.",
+      "hook_top": "THE MISSING SIGNAL",
+      "query": "scientific lab equipment",
+      "query2": "particle collider interior"
+    },
+    {
+      "role": "map",
+      "text": "The signal originated from CERN, Switzerland's particle physics lab."
+    },
+    {
+      "role": "fact",
+      "text": "In 2021, anomalous data patterns emerged, puzzling researchers.",
+      "query": "science data analysis",
+      "query2": "scientists collaborating",
+      "chips": [
+        {
+          "t": "FOUND IN 2021",
+          "on": "2021",
+          "style": "white"
+        },
+        {
+          "t": "ANOMALOUS DATA",
+          "on": "signal",
+          "style": "accent"
+        }
+      ],
+      "punch": "signal"
+    },
+    {
+      "role": "archive",
+      "text": "The experimental findings remain archived, with ongoing analysis to decode the mystery.",
+      "archive_query": "CERN collider experiment",
+      "archive_label": "CERN Experiments Archive"
+    },
+    {
+      "role": "callout",
+      "text": "What could this unexplained signal reveal about the universe?",
+      "query": "galaxy time-lapse",
+      "query2": "stars universe vast",
+      "label": "UNEXPLAINED SIGNAL",
+      "sub": "New mysteries in physics.",
+      "label_on": "signal",
+      "punch": "signal"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "dark cosmic space",
+      "query2": "abstract light waves"
+    }
+  ],
+  "description": "📍 CERN, Switzerland - 2021. An unusual signal pattern from the LHC intrigued scientists, leading to ongoing investigations. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#CERN",
+    "#physics",
+    "#particles",
+    "#science",
+    "#shorts",
+    "#fyp"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "title": "The Unsolved Murder of Judy Smith",
+  "place": "Raleigh, North Carolina",
+  "country": "USA",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A woman's murder remains a chilling enigma decades later.",
+      "hook_top": "A COLD CASE",
+      "query": "abandoned house exterior",
+      "query2": "old newspaper articles"
+    },
+    {
+      "role": "map",
+      "text": "This haunting case unfolded in Raleigh, North Carolina, in 1980."
+    },
+    {
+      "role": "fact",
+      "text": "Judy Smith was found dead, but the culprit has never been identified.",
+      "query": "police investigation scene",
+      "query2": "mystery envelope",
+      "chips": [
+        {
+          "t": "MURDERED IN 1980",
+          "on": "1980",
+          "style": "white"
+        },
+        {
+          "t": "STILL UNSOLVED",
+          "on": "unsolved",
+          "style": "accent"
+        }
+      ],
+      "punch": "unsolved"
+    },
+    {
+      "role": "callout",
+      "text": "The investigation turned cold, leaving haunting questions behind.",
+      "query": "dimly lit room",
+      "query2": "shadowy streets",
+      "label": "CASE UNSOLVED",
+      "sub": "Who committed this crime?",
+      "label_on": "unsolved",
+      "punch": "unsolved"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if you can't stop asking why.",
+      "query": "gloomy road at night",
+      "query2": "dark alleyway"
+    }
+  ],
+  "description": "📍 Raleigh, USA - 1980. The murder of Judy Smith remains a haunting unsolved case, with the killer still unidentified after decades. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#truecrime",
+    "#Raleigh",
+    "#coldcase",
+    "#shorts",
+    "#fyp"
+  ]
+}

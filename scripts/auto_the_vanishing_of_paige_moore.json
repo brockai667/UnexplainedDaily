@@ -1,0 +1,63 @@
+{
+  "title": "The Vanishing of Paige Moore",
+  "place": "Broken Arrow, Oklahoma",
+  "country": "USA",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A teenager disappears during a routine outing, leaving her family devastated.",
+      "hook_top": "TEENAGE MYSTERY",
+      "query": "abandoned car on road",
+      "query2": "searchers in field"
+    },
+    {
+      "role": "map",
+      "text": "Paige Moore vanished in Broken Arrow, Oklahoma, in 2012."
+    },
+    {
+      "role": "fact",
+      "text": "She was last seen on July 12, during a seemingly normal day.",
+      "query": "missing person flyer",
+      "query2": "community searching",
+      "chips": [
+        {
+          "t": "DISAPPEARED IN 2012",
+          "on": "2012",
+          "style": "white"
+        },
+        {
+          "t": "STILL UNEXPLAINED",
+          "on": "unexplained",
+          "style": "accent"
+        }
+      ],
+      "punch": "unexplained"
+    },
+    {
+      "role": "callout",
+      "text": "Despite searches and media coverage, no trace has ever been found.",
+      "query": "community vigil",
+      "query2": "search dogs in field",
+      "label": "CASE COLD",
+      "sub": "The mystery endures.",
+      "label_on": "cold",
+      "punch": "case"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the cases no one can explain.",
+      "query": "night forest alone",
+      "query2": "dark empty road"
+    }
+  ],
+  "description": "📍 Broken Arrow, USA - 2012. Teenager Paige Moore vanished without any leads, prompting an extensive search that failed to turn up anything. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#missingperson",
+    "#BrokenArrow",
+    "#truecrime",
+    "#shorts",
+    "#fyp"
+  ]
+}
