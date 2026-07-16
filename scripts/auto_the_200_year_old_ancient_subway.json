@@ -1,0 +1,63 @@
+{
+  "title": "The 200-Year-Old Ancient Subway",
+  "place": "Beijing",
+  "country": "China",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "An underground antiquity hints at lost technology beneath the city.",
+      "hook_top": "A HIDDEN SUBWAY",
+      "query": "underground tunnels",
+      "query2": "archaeological site exploration"
+    },
+    {
+      "role": "map",
+      "text": "These ancient tunnels were discovered in Beijing, China."
+    },
+    {
+      "role": "fact",
+      "text": "Dating back to the 19th century, the tunnels suggest advanced engineering.",
+      "query": "tunnel excavation",
+      "query2": "archaeologists at work",
+      "chips": [
+        {
+          "t": "DISCOVERED IN 2003",
+          "on": "2003",
+          "style": "white"
+        },
+        {
+          "t": "OVER 200 YEARS OLD",
+          "on": "tunnel",
+          "style": "accent"
+        }
+      ],
+      "punch": "engineering"
+    },
+    {
+      "role": "callout",
+      "text": "What civilization constructed this forgotten transport system?",
+      "query": "ancient city ruins",
+      "query2": "mystical underground",
+      "label": "A FORGOTTEN INNOVATION",
+      "sub": "Lost to time.",
+      "label_on": "innovation",
+      "punch": "innovation"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if you can't stop asking why.",
+      "query": "dark cave entrance",
+      "query2": "ancient stonework"
+    }
+  ],
+  "description": "📍 Beijing, China - 2003. An underground tunnel system over 200 years old was unearthed, showcasing advanced engineering from a bygone era. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#Beijing",
+    "#ancientengineering",
+    "#history",
+    "#shorts",
+    "#fyp"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "title": "What Happened to Brian Grocki?",
+  "place": "Unknown",
+  "country": "USA",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A 14-year-old boy vanished, leaving only questions behind.",
+      "hook_top": "WHERE IS BRIAN GROCKI",
+      "query": "mysterious landscape",
+      "query2": "lost in the wilderness"
+    },
+    {
+      "role": "map",
+      "text": "Brian Grocki disappeared somewhere in the USA, outside his hometown."
+    },
+    {
+      "role": "fact",
+      "text": "His last sighting was in 1999. Family and friends still seek closure.",
+      "query": "search party searching",
+      "query2": "missing person report",
+      "chips": [
+        {
+          "t": "LAST SEEN IN 1999",
+          "on": "1999",
+          "style": "white"
+        },
+        {
+          "t": "STILL MISSING",
+          "on": "missing",
+          "style": "accent"
+        }
+      ],
+      "punch": "closure"
+    },
+    {
+      "role": "archive",
+      "text": "The search for Brian continues, fueled by hope and mystery.",
+      "archive_query": "Brian Grocki missing person poster",
+      "archive_label": "Brian Grocki Search"
+    },
+    {
+      "role": "callout",
+      "text": "With numerous theories and no solid leads, his case remains open.",
+      "query": "people discussing theories",
+      "query2": "cold case discussions",
+      "label": "NUMEROUS THEORIES ",
+      "sub": "but no leads",
+      "label_on": "theories",
+      "punch": "open"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if you can't stop asking why.",
+      "query": "mysterious foggy road",
+      "query2": "path through trees"
+    }
+  ],
+  "description": "📍 Unknown, USA - 1999. Brian Grocki disappeared at 14, leaving a mystery that still haunts his family. The search continues, with no leads to follow. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#missingperson",
+    "#usa",
+    "#coldcase",
+    "#shorts",
+    "#fyp"
+  ]
+}

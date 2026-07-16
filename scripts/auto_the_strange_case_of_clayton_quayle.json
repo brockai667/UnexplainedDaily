@@ -1,0 +1,69 @@
+{
+  "title": "The Strange Case of Clayton Quayle",
+  "place": "Norris",
+  "country": "USA",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Remains identified after 47 years uncover dark secrets.",
+      "hook_top": "SECRETS OF CLAYTON QUAYLE",
+      "query": "abandoned cabin in woods",
+      "query2": "mysterious old belongings"
+    },
+    {
+      "role": "map",
+      "text": "Clayton Quayle's remains were found near Norris, Montana."
+    },
+    {
+      "role": "fact",
+      "text": "He was reported missing in 1976. For decades, his case puzzled investigators.",
+      "query": "decades-old missing person",
+      "query2": "historical investigation",
+      "chips": [
+        {
+          "t": "MISSING SINCE 1976",
+          "on": "1976",
+          "style": "white"
+        },
+        {
+          "t": "IDENTIFIED AFTER 47 YEAR",
+          "on": "47 years",
+          "style": "accent"
+        }
+      ],
+      "punch": "mystery"
+    },
+    {
+      "role": "archive",
+      "text": "His disappearance and recent identification have rekindled interest in unsolved cases.",
+      "archive_query": "Clayton Quayle remains",
+      "archive_label": "Clayton Quayle Case"
+    },
+    {
+      "role": "callout",
+      "text": "How did he end up there? The answers remain shrouded in mystery.",
+      "query": "enigmatic forest scene",
+      "query2": "mysterious mountain view",
+      "label": "UNEXPLAINED CIRCUMSTANCES",
+      "sub": "who knows the truth?",
+      "label_on": "mystery",
+      "punch": "answers"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "eerie old bridge",
+      "query2": "fog over the river"
+    }
+  ],
+  "description": "📍 Norris, USA - 1976. Clayton Quayle's remains were identified after 47 years, highlighting an old mystery that still needs answers about his fate. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#missingperson",
+    "#usa",
+    "#coldcase",
+    "#shorts",
+    "#fyp"
+  ]
+}

@@ -5278,5 +5278,197 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "The Mystery of Peter Falconio's Disappearance",
+    "place": "Northern Territory",
+    "country": "Australia",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A vanishing act in the outback leaves many questions.",
+        "hook_top": "WHERE IS PETER FALCONIO",
+        "query": "desert landscape twilight",
+        "query2": "Australian outback mysterious"
+      },
+      {
+        "role": "map",
+        "text": "Peter Falconio disappeared while traveling in the Northern Territory of Australia in 2001."
+      },
+      {
+        "role": "fact",
+        "text": "Despite extensive searches, no trace of him has ever been found.",
+        "query": "mystery deep desert",
+        "query2": "search operation outback",
+        "chips": [
+          {
+            "t": "DISAPPEARED IN 2001",
+            "on": "vanishing",
+            "style": "white"
+          },
+          {
+            "t": "NEVER FOUND",
+            "on": "search",
+            "style": "accent"
+          }
+        ],
+        "punch": "disappearance"
+      },
+      {
+        "role": "callout",
+        "text": "The case gained international attention, yet remains unsolved.",
+        "query": "mystery documentary",
+        "query2": "unexplained disappearance",
+        "label": "INTERNATIONAL CASE",
+        "sub": "remains without closure",
+        "label_on": "unsolved",
+        "punch": "unsolved"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "📍 Northern Territory, Australia - 2001. Peter Falconio vanished during a road trip, and despite extensive searches, he has never been found. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#peterfalconio",
+      "#australia",
+      "#missingperson",
+      "#outback",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Chilling Mystery of Julie Pacey",
+    "place": "North Carolina",
+    "country": "United States",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A young woman's unsolved murder still haunts a community.",
+        "hook_top": "WHO KILLED JULIE PACEY",
+        "query": "dark community streets",
+        "query2": "silent night mystery"
+      },
+      {
+        "role": "map",
+        "text": "Julie Pacey was murdered in North Carolina, leaving behind many unanswered questions."
+      },
+      {
+        "role": "fact",
+        "text": "The case remains unsolved, captivating true crime enthusiasts and investigators alike.",
+        "query": "crime scene investigation",
+        "query2": "murder mystery",
+        "chips": [
+          {
+            "t": "MURDERED IN 2003",
+            "on": "case",
+            "style": "white"
+          },
+          {
+            "t": "STILL UNSOLVED",
+            "on": "investigation",
+            "style": "accent"
+          }
+        ],
+        "punch": "murder"
+      },
+      {
+        "role": "callout",
+        "text": "Her story continues to resonate, inspiring a search for justice.",
+        "query": "investigation night",
+        "query2": "community support",
+        "label": "CALL FOR JUSTICE",
+        "sub": "the search goes on",
+        "label_on": "justice",
+        "punch": "justice"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new mystery every day.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "📍 North Carolina, United States - 2003. Julie Pacey's murder remains unsolved, echoing in the community as a chilling mystery. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#juliepacey",
+      "#northcarolina",
+      "#coldcase",
+      "#truecrime",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Unresolved Case of Brian Grocki",
+    "place": "Michigan",
+    "country": "United States",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A teenager disappeared without a trace, leaving heartache behind.",
+        "hook_top": "WHAT HAPPENED TO BRIAN GROCKI",
+        "query": "darkened streets night",
+        "query2": "mysterious disappearance"
+      },
+      {
+        "role": "map",
+        "text": "Brian Grocki vanished in Michigan in 2000, leaving a profound mystery."
+      },
+      {
+        "role": "fact",
+        "text": "His case remains unsolved, becoming a haunting memory in the community.",
+        "query": "missing person investigation",
+        "query2": "unsolved cases",
+        "chips": [
+          {
+            "t": "DISAPPEARED IN 2000",
+            "on": "vanishing",
+            "style": "white"
+          },
+          {
+            "t": "STILL UNSOLVED",
+            "on": "mystery",
+            "style": "accent"
+          }
+        ],
+        "punch": "disappearance"
+      },
+      {
+        "role": "callout",
+        "text": "The community still asks: where did he go?",
+        "query": "community support mystery",
+        "query2": "search efforts",
+        "label": "COMMUNITY QUESTIONS",
+        "sub": "search for answers",
+        "label_on": "search",
+        "punch": "answers"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "📍 Michigan, United States - 2000. Brian Grocki disappeared under mysterious circumstances, leaving behind unanswered questions and a community in search of justice. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#briangrocki",
+      "#michigan",
+      "#missingperson",
+      "#coldcase",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]
