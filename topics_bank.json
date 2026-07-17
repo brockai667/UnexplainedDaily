@@ -5470,5 +5470,131 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "The Unsolved Murder of Irina Hans",
+    "place": "Washington, D.C.",
+    "country": "USA",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "An intern’s tragic end shrouded in mystery and unanswered questions.",
+        "hook_top": "WHO KILLED IRINA HANS",
+        "query": "quiet city street night",
+        "query2": "dimly lit alley"
+      },
+      {
+        "role": "map",
+        "text": "Irina Hans was murdered in Washington, D.C., in 2002 during her internship."
+      },
+      {
+        "role": "fact",
+        "text": "Her body was found in a National Park, and the case went cold despite extensive investigations.",
+        "query": "investigation scene",
+        "query2": "police at crime scene",
+        "chips": [
+          {
+            "t": "MURDERED IN 2002",
+            "on": "2002",
+            "style": "white"
+          },
+          {
+            "t": "CASE STILL UNSOLVED",
+            "on": "unsolved",
+            "style": "accent"
+          }
+        ],
+        "punch": "cold"
+      },
+      {
+        "role": "callout",
+        "text": "No clear suspects emerged in Irina’s case, leaving many to wonder what really happened.",
+        "query": "investigative reporters",
+        "query2": "police search",
+        "label": "UNANSWERED QUESTIONS",
+        "sub": "A chilling mystery",
+        "label_on": "mystery",
+        "punch": "questions"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the cases no one can explain.",
+        "query": "dark park at night",
+        "query2": "ominous alleyway"
+      }
+    ],
+    "description": "📍 Washington, D.C., USA - 2002. Irina Hans, a Smithsonian intern, was murdered, yet the case remains unsolved decades later. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#irinahans",
+      "#washingtondc",
+      "#unsolved",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Disappearing Shadows of the Bermuda Triangle",
+    "place": "Bermuda Triangle",
+    "country": "Atlantic Ocean",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A region infamous for vanishing ships and planes, but why?",
+        "hook_top": "THE BERMUDA TRIANGLE MYSTERY",
+        "query": "dark ocean aerial",
+        "query2": "stormy sea"
+      },
+      {
+        "role": "map",
+        "text": "The Bermuda Triangle is located in the western part of the North Atlantic Ocean."
+      },
+      {
+        "role": "fact",
+        "text": "Over the years, many vessels and aircraft have disappeared under mysterious circumstances.",
+        "query": "missing plane search",
+        "query2": "ocean mystery",
+        "chips": [
+          {
+            "t": "DISAPPEARANCES REPORTED",
+            "on": "long history",
+            "style": "white"
+          },
+          {
+            "t": "THEORIES ABOUND",
+            "on": "theories",
+            "style": "accent"
+          }
+        ],
+        "punch": "disappearances"
+      },
+      {
+        "role": "callout",
+        "text": "While many theories exist, none definitively explain the region's haunting reputation.",
+        "query": "mysterious maps",
+        "query2": "ocean charts",
+        "label": "STILL UNEXPLAINED",
+        "sub": "What lies beneath?",
+        "label_on": "unexplained",
+        "punch": "unexplained"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "stormy navy ship",
+        "query2": "dark ocean depths"
+      }
+    ],
+    "description": "📍 Bermuda Triangle, Atlantic Ocean - Unknown. This enigmatic region has seen countless disappearances of ships and planes, leaving mysteries that remain unsolved. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#bermudatriangle",
+      "#atlantic",
+      "#sea",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]

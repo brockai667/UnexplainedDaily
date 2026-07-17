@@ -1,0 +1,69 @@
+{
+  "title": "The Heartbreaking Disappearance of Paula Welden",
+  "place": "Bennington",
+  "country": "Vermont",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A hiking trip leads to a chilling disappearance that remains unsolved.",
+      "hook_top": "THE MYSTERY OF PAULA",
+      "query": "misty forest trail disappearance",
+      "query2": "dark woods empty path"
+    },
+    {
+      "role": "map",
+      "text": "Paula Welden vanished while hiking in the Green Mountains of Vermont in 1946."
+    },
+    {
+      "role": "fact",
+      "text": "She was seen on the Long Trail but never returned, sparking massive searches.",
+      "query": "search teams in forest",
+      "query2": "old newspaper articles",
+      "chips": [
+        {
+          "t": "VANISHED IN 1946",
+          "on": "1946",
+          "style": "white"
+        },
+        {
+          "t": "HIKING ON LONG TRAIL",
+          "on": "hiking",
+          "style": "accent"
+        }
+      ],
+      "punch": "vanished"
+    },
+    {
+      "role": "archive",
+      "text": "Reports and articles about her disappearance still circulate today.",
+      "archive_query": "Paula Welden missing news",
+      "archive_label": "Paula Welden Reports"
+    },
+    {
+      "role": "callout",
+      "text": "Her case remains one of Vermont's greatest mysteries.",
+      "query": "ancient forest landscape",
+      "query2": "sunset over mountains",
+      "label": "A MYSTERY UNRESOLVED",
+      "sub": "Commemoration persists",
+      "label_on": "mystery",
+      "punch": "greatest"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the cases no one can explain.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "📍 Bennington, Vermont - 1946. A young woman disappeared while hiking, leading to extensive searches and leaving behind unanswered questions. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#vermont",
+    "#disappearance",
+    "#coldcase",
+    "#shorts",
+    "#fyp"
+  ]
+}
