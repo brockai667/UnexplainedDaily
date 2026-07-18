@@ -5596,5 +5596,420 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "The Mysterious Count Who Refused to Die",
+    "place": "Various locations",
+    "country": "Europe",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "A man claimed to be over 500 years old, yet he never aged.",
+        "hook_top": "THE IMMORTAL COUNT",
+        "query": "ancient castle fog",
+        "query2": "mysterious forest dusk"
+      },
+      {
+        "role": "map",
+        "text": "His legend swirled across Europe, with sightings in France, Germany, and beyond."
+      },
+      {
+        "role": "fact",
+        "text": "The Count of Saint Germain was a 18th-century figure known for his charm and rumored alchemic abilities.",
+        "query": "historical portrait mysterious",
+        "query2": "old books alchemy",
+        "chips": [
+          {
+            "t": "18TH CENTURY LEGEND",
+            "on": "Count of Saint Germain",
+            "style": "white"
+          },
+          {
+            "t": "ALCHEMIST & DIPLOMAT",
+            "on": "alchemist",
+            "style": "accent"
+          }
+        ],
+        "punch": "mysterious"
+      },
+      {
+        "role": "archive",
+        "text": "Many documents discuss his extraordinary tales, but proof of his existence remains elusive.",
+        "archive_query": "Count of Saint Germain",
+        "archive_label": "Historical Enigma"
+      },
+      {
+        "role": "callout",
+        "text": "His identity was a tapestry of rumors, with claims of friendship with historical leaders.",
+        "query": "old map parchment",
+        "query2": "ancient scrolls close-up",
+        "label": "MYSTERIOUS RELATIONSHIPS",
+        "sub": "Intrigued powerful figures",
+        "label_on": "friendship",
+        "punch": "relationships"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "dark castle silhouette",
+        "query2": "misty valley twilight"
+      }
+    ],
+    "description": "📍 Various, Europe - 18th Century. The Count of Saint Germain claimed to be over 500 years old, weaving a tale of mystery throughout Europe. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#history",
+      "#SaintGermain",
+      "#alchemy",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "Did Elves Visit in 1906?",
+    "place": "Skælskør",
+    "country": "Denmark",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "An encounter with mystical beings left locals questioning reality.",
+        "hook_top": "A MYSTICAL ENCOUNTER",
+        "query": "ancient burial mound",
+        "query2": "dark woodland mist"
+      },
+      {
+        "role": "map",
+        "text": "This curious event took place near Skælskør, a quaint town in Denmark."
+      },
+      {
+        "role": "fact",
+        "text": "In 1906, a group of children reported seeing elves at a burial site, captivating the community.",
+        "query": "vintage photo children",
+        "query2": "old stories book",
+        "chips": [
+          {
+            "t": "SKÆLSKØR, 1906",
+            "on": "Denmark",
+            "style": "white"
+          },
+          {
+            "t": "ENCOUNTER WITH ELVES",
+            "on": "elves",
+            "style": "accent"
+          }
+        ],
+        "punch": "elves"
+      },
+      {
+        "role": "archive",
+        "text": "The tale is documented in folklore and historical records, still debated by scholars.",
+        "archive_query": "Skælskør folklore",
+        "archive_label": "Historical Documentation"
+      },
+      {
+        "role": "callout",
+        "text": "Eyewitness testimony remains a profound mystery, with skeptics and believers debating.",
+        "query": "mysterious foggy field",
+        "query2": "ancient folklore book",
+        "label": "UNEXPLAINED ENCOUNTER",
+        "sub": "Skepticism and belief clash",
+        "label_on": "debate",
+        "punch": "debate"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the cases no one can explain.",
+        "query": "moonlit forest path",
+        "query2": "twilight sky stars"
+      }
+    ],
+    "description": "📍 Skælskør, Denmark - 1906. A group of children claimed to see elves near a burial mound, leaving behind a tale of intrigue and debate. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#elves",
+      "#Denmark",
+      "#folklore",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "Japan's Monoliths: Carved Giants",
+    "place": "Various locations",
+    "country": "Japan",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Ancient granite monoliths found in Japan, with no records of their origin.",
+        "hook_top": "ANCIENT GRANITE MYSTERIES",
+        "query": "mysterious stone formations",
+        "query2": "ancient structures mist"
+      },
+      {
+        "role": "map",
+        "text": "These impressive structures are scattered across Japan, hidden in history."
+      },
+      {
+        "role": "fact",
+        "text": "Discovered in modern times, these monoliths weigh up to 800 tonnes yet remain unrecorded in history.",
+        "query": "massive stone close-up",
+        "query2": "ancient monument landscape",
+        "chips": [
+          {
+            "t": "800 TONNE MONOLITHS",
+            "on": "weight",
+            "style": "white"
+          },
+          {
+            "t": "UNRECORD IN HISTORY",
+            "on": "history",
+            "style": "accent"
+          }
+        ],
+        "punch": "weight"
+      },
+      {
+        "role": "archive",
+        "text": "Photographs of the monoliths intrigue archaeologists but offer no explanations.",
+        "archive_query": "Japanese monoliths",
+        "archive_label": "Archaeological Mystery"
+      },
+      {
+        "role": "callout",
+        "text": "Their purpose and the culture that created them remain a source of speculation.",
+        "query": "archaeological dig site",
+        "query2": "mysterious stone carvings",
+        "label": "PURPOSE STILL UNKNOWN",
+        "sub": "An ancient enigma lingers",
+        "label_on": "purpose",
+        "punch": "unknown"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new mystery every day.",
+        "query": "peaceful landscape at dusk",
+        "query2": "ancient ruins sunset"
+      }
+    ],
+    "description": "📍 Various, Japan - Year Unknown. Enormous granite monoliths were found across the country with no historical records, raising endless questions. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#Japan",
+      "#monoliths",
+      "#archaeology",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Magical Oasis of Bahla",
+    "place": "Bahla",
+    "country": "Oman",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "In the heart of Oman, a city built overnight is said to harbor jinn.",
+        "hook_top": "JINN HAUNTED OASIS",
+        "query": "ancient city ruins",
+        "query2": "desert oasis twilight"
+      },
+      {
+        "role": "map",
+        "text": "Bahla is an oasis town in Oman, surrounded by majestic mountains."
+      },
+      {
+        "role": "fact",
+        "text": "Locals believe Bahla, with its stunning fortress, is home to spirits and jinn.",
+        "query": "fortress in desert",
+        "query2": "mystical mountains dusk",
+        "chips": [
+          {
+            "t": "CITY BUILT OVERNIGHT",
+            "on": "Bahla",
+            "style": "white"
+          },
+          {
+            "t": "NATIVE BELIEFS OF JINN",
+            "on": "jinn",
+            "style": "accent"
+          }
+        ],
+        "punch": "jinn"
+      },
+      {
+        "role": "archive",
+        "text": "The city is rich in history, filled with tales that intertwine myth and reality.",
+        "archive_query": "Bahla historical sites",
+        "archive_label": "Historical Oasis"
+      },
+      {
+        "role": "callout",
+        "text": "Legends warn travelers of the enchanting jinn that may deceive the unwary.",
+        "query": "desert at night",
+        "query2": "dark mountain landscape",
+        "label": "DANGERS OF THE JINN",
+        "sub": "Are they watching you?",
+        "label_on": "dangers",
+        "punch": "dangers"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if you can't stop asking why.",
+        "query": "mystical sunset",
+        "query2": "ancient ruins landscape"
+      }
+    ],
+    "description": "📍 Bahla, Oman - Year Unknown. Bahla, an ancient city with a majestic fortress, is said to invoke the jinn's magic, captivating those who visit. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#Bahla",
+      "#Oman",
+      "#jinn",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Strange Case of the Nazca Lines",
+    "place": "Nazca Desert",
+    "country": "Peru",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Giant geoglyphs etched into the desert visible only from the sky.",
+        "hook_top": "MYSTERIOUS GEGLYPHS",
+        "query": "Nazca lines aerial view",
+        "query2": "desert landscape wide"
+      },
+      {
+        "role": "map",
+        "text": "The Nazca Lines are located in the Nazca Desert of Peru, a UNESCO site."
+      },
+      {
+        "role": "fact",
+        "text": "Created between 500 BCE and 500 CE, they include shapes of animals and plants.",
+        "query": "Nazca geoglyphs close-up",
+        "query2": "aerial ancient designs",
+        "chips": [
+          {
+            "t": "DATED 500 BCE - 500 CE",
+            "on": "Nazca Lines",
+            "style": "white"
+          },
+          {
+            "t": "HUNDREDS OF DESIGNS",
+            "on": "designs",
+            "style": "accent"
+          }
+        ],
+        "punch": "designs"
+      },
+      {
+        "role": "archive",
+        "text": "Archaeologists continue to study these lines, with theories about their purpose still debated.",
+        "archive_query": "Nazca lines archaeological study",
+        "archive_label": "Archaeological Mystery"
+      },
+      {
+        "role": "callout",
+        "text": "Were they astronomical markers, or messages to the gods? The truth eludes us.",
+        "query": "ancient culture ceremony",
+        "query2": "Nazca desert night sky",
+        "label": "PURPOSE UNKNOWN",
+        "sub": "An ancient enigma remains",
+        "label_on": "purpose",
+        "punch": "purpose"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if you can't stop asking why.",
+        "query": "Nazca desert sunset",
+        "query2": "aerial desert view"
+      }
+    ],
+    "description": "📍 Nazca Desert, Peru - 500 BCE - 500 CE. The Nazca Lines, mysterious geoglyphs etched into the desert, continue to intrigue researchers about their purpose. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#NazcaLines",
+      "#Peru",
+      "#archaeology",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "Lost Civilizations: The Case of Göbekli Tepe",
+    "place": "Göbekli Tepe",
+    "country": "Turkey",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "An ancient site that rewrites the history of civilization.",
+        "hook_top": "THE OLDEST TEMPLE",
+        "query": "archeological dig site",
+        "query2": "ancient stones sunset"
+      },
+      {
+        "role": "map",
+        "text": "Göbekli Tepe is located in southern Turkey, dating back to 9600 BCE."
+      },
+      {
+        "role": "fact",
+        "text": "Discovered in the 1990s, this site predates Stonehenge and the pyramids by millennia.",
+        "query": "stone carvings ancient",
+        "query2": "historical archaeology",
+        "chips": [
+          {
+            "t": "DATED BACK TO 9600 BCE",
+            "on": "Göbekli Tepe",
+            "style": "white"
+          },
+          {
+            "t": "OLDEST KNOWN TEMPLE",
+            "on": "temple",
+            "style": "accent"
+          }
+        ],
+        "punch": "temple"
+      },
+      {
+        "role": "archive",
+        "text": "Its monumental pillars and unique carvings raise questions about early human society.",
+        "archive_query": "Göbekli Tepe site",
+        "archive_label": "Ancient Mystery"
+      },
+      {
+        "role": "callout",
+        "text": "Scholars debate its purpose: a ceremonial site or early settlement?",
+        "query": "ancient rituals gathering",
+        "query2": "prehistoric ceremonies",
+        "label": "PURPOSE STILL DEBATED",
+        "sub": "An ancient puzzle to solve",
+        "label_on": "debate",
+        "punch": "debate"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the cases no one can explain.",
+        "query": "Göbekli Tepe landscape",
+        "query2": "archeological findings"
+      }
+    ],
+    "description": "📍 Göbekli Tepe, Turkey - 9600 BCE. This remarkable archeological site predates known civilizations, challenging our understanding of humanity’s history. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#GöbekliTepe",
+      "#Turkey",
+      "#archaeology",
+      "#history",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]

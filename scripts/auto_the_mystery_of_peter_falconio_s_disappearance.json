@@ -1,0 +1,64 @@
+{
+  "title": "The Mystery of Peter Falconio's Disappearance",
+  "place": "Northern Territory",
+  "country": "Australia",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A vanishing act in the outback leaves many questions.",
+      "hook_top": "WHERE IS PETER FALCONIO",
+      "query": "desert landscape twilight",
+      "query2": "Australian outback mysterious"
+    },
+    {
+      "role": "map",
+      "text": "Peter Falconio disappeared while traveling in the Northern Territory of Australia in 2001."
+    },
+    {
+      "role": "fact",
+      "text": "Despite extensive searches, no trace of him has ever been found.",
+      "query": "mystery deep desert",
+      "query2": "search operation outback",
+      "chips": [
+        {
+          "t": "DISAPPEARED IN 2001",
+          "on": "vanishing",
+          "style": "white"
+        },
+        {
+          "t": "NEVER FOUND",
+          "on": "search",
+          "style": "accent"
+        }
+      ],
+      "punch": "disappearance"
+    },
+    {
+      "role": "callout",
+      "text": "The case gained international attention, yet remains unsolved.",
+      "query": "mystery documentary",
+      "query2": "unexplained disappearance",
+      "label": "INTERNATIONAL CASE",
+      "sub": "remains without closure",
+      "label_on": "unsolved",
+      "punch": "unsolved"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "📍 Northern Territory, Australia - 2001. Peter Falconio vanished during a road trip, and despite extensive searches, he has never been found. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#peterfalconio",
+    "#australia",
+    "#missingperson",
+    "#outback",
+    "#shorts",
+    "#fyp"
+  ]
+}
