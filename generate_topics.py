@@ -24,8 +24,10 @@ MODEL = os.environ.get("MODELS_MODEL", "openai/gpt-4o-mini")
 BASE = os.environ.get("MODELS_BASE_URL", "https://models.github.ai/inference")
 TOKEN = os.environ.get("MODELS_TOKEN") or os.environ.get("GITHUB_TOKEN")
 
-TREND_SUBREDDITS = ['UnresolvedMysteries', 'HighStrangeness', 'Paranormal', 'Glitch_in_the_Matrix', 'mystery']
-TREND_YT_QUERIES = ['unexplained mysteries', 'strange phenomena', 'unsolved mysteries']
+# preladene 07/2026 na zaklade realnych YT vysledkov: slavne enigmy/artefakty valia,
+# obskurne mena obeti z r/UnresolvedMysteries zomierali (3-10 views) -> prec od nich
+TREND_SUBREDDITS = ['HighStrangeness', 'Paranormal', 'AncientCivilizations', 'mysteries', 'Damnthatsinteresting']
+TREND_YT_QUERIES = ['ancient mysteries', 'unexplained artifacts', 'strange phenomena', 'lost ancient technology']
 
 SYSTEM = ("You are a scriptwriter for a 'mysteries & unexplained' brand. You retell REAL, "
           "widely-documented mysteries: strange phenomena, unexplained discoveries, ancient artifacts, "
@@ -71,6 +73,21 @@ CTAS = [
     "Follow for daily unexplained mysteries.",
     "Follow if the unknown keeps you up at night.",
 ]
+
+
+# PERFORMANCE STEERING - data-driven z realnych YouTube vysledkov (07/2026).
+# Slavne, vyhladatelne enigmy/artefakty maju 10-100x vacsi reach; obskurne mena zomieraju.
+PERFORMANCE = (
+    "\nPERFORMANCE DATA (real results - obey this, it decides reach):\n"
+    "- WHAT PERFORMS (strongly prefer these): famous, searchable enigmas people can look up - "
+    "ancient artifacts and lost technology (Antikythera mechanism, Nazca Lines, Voynich manuscript, "
+    "Baghdad battery), mysterious ancient sites, well-documented unexplained natural phenomena, "
+    "iconic historic enigmas. These are the winners.\n"
+    "- WHAT KILLS REACH (avoid): obscure individual missing-person or cold-case names nobody has heard "
+    "of, random private victims, vague 'a strange thing once happened' stories, and speculative "
+    "hypotheticals ('what if...'). If a topic centers on an unknown private person or an un-searchable "
+    "one-off, DROP it and pick a famous, widely-documented enigma instead.\n"
+)
 
 
 def build_prompt(n, existing_titles, existing_places, trending=None):
@@ -122,6 +139,7 @@ def build_prompt(n, existing_titles, existing_places, trending=None):
         "than one in five titles with a number; never clickbait that misleads.\n"
         f"- Do NOT reuse any of these existing titles: {existing_titles}\n"
         f"- Do NOT reuse any of these already-covered mysteries/places (no repeats, not even reworded): {existing_places}\n"
+        + PERFORMANCE
         + trend_block +
         "Return ONLY the JSON array."
     )
