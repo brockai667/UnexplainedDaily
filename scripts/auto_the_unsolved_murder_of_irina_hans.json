@@ -1,0 +1,63 @@
+{
+  "title": "The Unsolved Murder of Irina Hans",
+  "place": "Washington, D.C.",
+  "country": "USA",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "An intern’s tragic end shrouded in mystery and unanswered questions.",
+      "hook_top": "WHO KILLED IRINA HANS",
+      "query": "quiet city street night",
+      "query2": "dimly lit alley"
+    },
+    {
+      "role": "map",
+      "text": "Irina Hans was murdered in Washington, D.C., in 2002 during her internship."
+    },
+    {
+      "role": "fact",
+      "text": "Her body was found in a National Park, and the case went cold despite extensive investigations.",
+      "query": "investigation scene",
+      "query2": "police at crime scene",
+      "chips": [
+        {
+          "t": "MURDERED IN 2002",
+          "on": "2002",
+          "style": "white"
+        },
+        {
+          "t": "CASE STILL UNSOLVED",
+          "on": "unsolved",
+          "style": "accent"
+        }
+      ],
+      "punch": "cold"
+    },
+    {
+      "role": "callout",
+      "text": "No clear suspects emerged in Irina’s case, leaving many to wonder what really happened.",
+      "query": "investigative reporters",
+      "query2": "police search",
+      "label": "UNANSWERED QUESTIONS",
+      "sub": "A chilling mystery",
+      "label_on": "mystery",
+      "punch": "questions"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the cases no one can explain.",
+      "query": "dark park at night",
+      "query2": "ominous alleyway"
+    }
+  ],
+  "description": "📍 Washington, D.C., USA - 2002. Irina Hans, a Smithsonian intern, was murdered, yet the case remains unsolved decades later. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#irinahans",
+    "#washingtondc",
+    "#unsolved",
+    "#shorts",
+    "#fyp"
+  ]
+}

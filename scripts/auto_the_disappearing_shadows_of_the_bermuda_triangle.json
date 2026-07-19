@@ -1,0 +1,63 @@
+{
+  "title": "The Disappearing Shadows of the Bermuda Triangle",
+  "place": "Bermuda Triangle",
+  "country": "Atlantic Ocean",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A region infamous for vanishing ships and planes, but why?",
+      "hook_top": "THE BERMUDA TRIANGLE MYSTERY",
+      "query": "dark ocean aerial",
+      "query2": "stormy sea"
+    },
+    {
+      "role": "map",
+      "text": "The Bermuda Triangle is located in the western part of the North Atlantic Ocean."
+    },
+    {
+      "role": "fact",
+      "text": "Over the years, many vessels and aircraft have disappeared under mysterious circumstances.",
+      "query": "missing plane search",
+      "query2": "ocean mystery",
+      "chips": [
+        {
+          "t": "DISAPPEARANCES REPORTED",
+          "on": "long history",
+          "style": "white"
+        },
+        {
+          "t": "THEORIES ABOUND",
+          "on": "theories",
+          "style": "accent"
+        }
+      ],
+      "punch": "disappearances"
+    },
+    {
+      "role": "callout",
+      "text": "While many theories exist, none definitively explain the region's haunting reputation.",
+      "query": "mysterious maps",
+      "query2": "ocean charts",
+      "label": "STILL UNEXPLAINED",
+      "sub": "What lies beneath?",
+      "label_on": "unexplained",
+      "punch": "unexplained"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "stormy navy ship",
+      "query2": "dark ocean depths"
+    }
+  ],
+  "description": "📍 Bermuda Triangle, Atlantic Ocean - Unknown. This enigmatic region has seen countless disappearances of ships and planes, leaving mysteries that remain unsolved. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#bermudatriangle",
+    "#atlantic",
+    "#sea",
+    "#shorts",
+    "#fyp"
+  ]
+}

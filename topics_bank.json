@@ -6011,5 +6011,281 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "The Ancient Wands of Egypt: Broken Rituals",
+    "place": "Ancient Egypt",
+    "country": "Egypt",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "Ritual wands shattered upon their owners' deaths—why?",
+        "hook_top": "BROKEN RITUAL WANDS",
+        "query": "ancient artifacts dark",
+        "query2": "egyptian tomb treasures"
+      },
+      {
+        "role": "map",
+        "text": "These artifacts originate from various tombs across Ancient Egypt."
+      },
+      {
+        "role": "fact",
+        "text": "Researchers believe these wands were tied to powerful rites and spells.",
+        "query": "ancient ritual artifacts",
+        "query2": "egyptian relics close-up",
+        "chips": [
+          {
+            "t": "RITUALISTIC OBJECTS",
+            "on": "wands",
+            "style": "white"
+          },
+          {
+            "t": "USED IN CEREMONIES",
+            "on": "ceremonies",
+            "style": "accent"
+          }
+        ],
+        "punch": "ritualistic"
+      },
+      {
+        "role": "archive",
+        "text": "Many broken wands have been preserved in museums, awaiting analysis.",
+        "archive_query": "ancient egyptian wands",
+        "archive_label": "Egyptian Artifacts"
+      },
+      {
+        "role": "callout",
+        "text": "The breaking of these wands was believed to release the owner's spirit.",
+        "query": "dark tombs echoing",
+        "query2": "ancient rituals shadows",
+        "label": "SPIRITUAL SIGNIFICANCE",
+        "sub": "A mystery of life and death.",
+        "label_on": "spirit",
+        "punch": "spirit"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the cases no one can explain.",
+        "query": "foggy pyramids night",
+        "query2": "mysterious desert wind"
+      }
+    ],
+    "description": "📍 Ancient Egypt, Egypt - Unknown. Ritual wands were ritually broken upon the death of their owners, raising questions about their spiritual significance. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#ancientegypt",
+      "#ritualartifacts",
+      "#history",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Elusive Monoliths of Japan",
+    "place": "Japan",
+    "country": "Japan",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "800-tonne granite monoliths appear in no historical records.",
+        "hook_top": "MYSTERIOUS GRANITE MONOLITHS",
+        "query": "mysterious stone structures",
+        "query2": "ancient ruins foggy"
+      },
+      {
+        "role": "map",
+        "text": "These massive structures are scattered across Japan, shrouded in mystery."
+      },
+      {
+        "role": "fact",
+        "text": "Their construction dates back centuries, but their origin is still debated.",
+        "query": "granite stones close-up",
+        "query2": "ancient stone masonry",
+        "chips": [
+          {
+            "t": "800 TONS EACH",
+            "on": "weight",
+            "style": "white"
+          },
+          {
+            "t": "UNRECORDS IN HISTORY",
+            "on": "history",
+            "style": "accent"
+          }
+        ],
+        "punch": "weight"
+      },
+      {
+        "role": "archive",
+        "text": "Some remain unexplored, raising questions about their purpose.",
+        "archive_query": "japan granite monoliths",
+        "archive_label": "Japanese Monoliths"
+      },
+      {
+        "role": "callout",
+        "text": "Locals often whisper of their connection to ancient rituals.",
+        "query": "sacred ancient pathways",
+        "query2": "mystical landscapes",
+        "label": "ANCIENT RITUALS",
+        "sub": "A silence that speaks volumes.",
+        "label_on": "rituals",
+        "punch": "rituals"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if you can't stop asking why.",
+        "query": "foggy mountains night",
+        "query2": "ancient trees misty"
+      }
+    ],
+    "description": "📍 Japan, Japan - Unknown. Massive granite monoliths weighing 800 tons appear across the country, yet no historical records explain their origins. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#japanmonoliths",
+      "#ancientstructures",
+      "#history",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Secrets of Bahla: City of Magic",
+    "place": "Bahla",
+    "country": "Oman",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "An ancient oasis where locals still fear the jinn.",
+        "hook_top": "THE CITY OF MAGIC",
+        "query": "ancient oasis magical",
+        "query2": "mystic desert landscape"
+      },
+      {
+        "role": "map",
+        "text": "Bahla, a UNESCO heritage site, is rich in history and legend."
+      },
+      {
+        "role": "fact",
+        "text": "Legends speak of buildings rising overnight, attributed to magical forces.",
+        "query": "ancient architecture dusk",
+        "query2": "desert ruins ancient",
+        "chips": [
+          {
+            "t": "UNESCO SITE",
+            "on": "Bahla",
+            "style": "white"
+          },
+          {
+            "t": "LEGENDS OF MAGIC",
+            "on": "jinn",
+            "style": "accent"
+          }
+        ],
+        "punch": "magic"
+      },
+      {
+        "role": "archive",
+        "text": "Bahla's fortresses and structures echo tales of the past.",
+        "archive_query": "Bahla fortress aerial",
+        "archive_label": "Bahla's Heritage"
+      },
+      {
+        "role": "callout",
+        "text": "Visitors are often entranced by its enchanting history.",
+        "query": "mystical local traditions",
+        "query2": "cultural dances vibrant",
+        "label": "ENTHRALLING LEGENDS",
+        "sub": "A place steeped in magic.",
+        "label_on": "legends",
+        "punch": "legends"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new mystery every day.",
+        "query": "mystical desert night",
+        "query2": "ancient paths moonlight"
+      }
+    ],
+    "description": "📍 Bahla, Oman - N/A. An ancient oasis where legend claims buildings rose overnight, and locals fear the jinn. Bahla’s enchanting history captivates all who visit. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#bahla",
+      "#cityofmagic",
+      "#oman",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "Unsolved Anomalies: The Great Silence",
+    "place": "N/A",
+    "country": "N/A",
+    "scenes": [
+      {
+        "role": "hook",
+        "text": "An entire region of space where no signals have been detected.",
+        "hook_top": "THE GREAT SILENCE",
+        "query": "vast cosmic dark",
+        "query2": "stars twinkling silence"
+      },
+      {
+        "role": "map",
+        "text": "This area remains one of the most unexplored regions in the universe."
+      },
+      {
+        "role": "fact",
+        "text": "Scientists continue to search for answers but find only silence.",
+        "query": "deep space observations",
+        "query2": "telescope dark space",
+        "chips": [
+          {
+            "t": "EMPTY COSMIC REGION",
+            "on": "silence",
+            "style": "white"
+          },
+          {
+            "t": "STILL UNEXPLAINED",
+            "on": "mystery",
+            "style": "accent"
+          }
+        ],
+        "punch": "silence"
+      },
+      {
+        "role": "archive",
+        "text": "Data from space telescopes keeps revealing new mysteries.",
+        "archive_query": "great silence space",
+        "archive_label": "Cosmic Enigma"
+      },
+      {
+        "role": "callout",
+        "text": "Could it be a natural phenomenon or something beyond our understanding?",
+        "query": "cosmic phenomena unknown",
+        "query2": "dark nebulae obscure",
+        "label": "UNKNOWN ORIGINS",
+        "sub": "A profound cosmic question.",
+        "label_on": "question",
+        "punch": "question"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "silent universe stars",
+        "query2": "vastness of space night"
+      }
+    ],
+    "description": "📍 N/A, N/A - Unknown. An entire region of space dubbed 'The Great Silence' has yielded no detectable signals, posing profound questions about cosmic existence. Follow for daily mysteries!",
+    "hashtags": [
+      "#mystery",
+      "#unexplained",
+      "#spaceanomalies",
+      "#thegreatsilence",
+      "#universe",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]

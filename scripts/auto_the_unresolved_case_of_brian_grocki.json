@@ -1,0 +1,64 @@
+{
+  "title": "The Unresolved Case of Brian Grocki",
+  "place": "Michigan",
+  "country": "United States",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A teenager disappeared without a trace, leaving heartache behind.",
+      "hook_top": "WHAT HAPPENED TO BRIAN GROCKI",
+      "query": "darkened streets night",
+      "query2": "mysterious disappearance"
+    },
+    {
+      "role": "map",
+      "text": "Brian Grocki vanished in Michigan in 2000, leaving a profound mystery."
+    },
+    {
+      "role": "fact",
+      "text": "His case remains unsolved, becoming a haunting memory in the community.",
+      "query": "missing person investigation",
+      "query2": "unsolved cases",
+      "chips": [
+        {
+          "t": "DISAPPEARED IN 2000",
+          "on": "vanishing",
+          "style": "white"
+        },
+        {
+          "t": "STILL UNSOLVED",
+          "on": "mystery",
+          "style": "accent"
+        }
+      ],
+      "punch": "disappearance"
+    },
+    {
+      "role": "callout",
+      "text": "The community still asks: where did he go?",
+      "query": "community support mystery",
+      "query2": "search efforts",
+      "label": "COMMUNITY QUESTIONS",
+      "sub": "search for answers",
+      "label_on": "search",
+      "punch": "answers"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "📍 Michigan, United States - 2000. Brian Grocki disappeared under mysterious circumstances, leaving behind unanswered questions and a community in search of justice. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#briangrocki",
+    "#michigan",
+    "#missingperson",
+    "#coldcase",
+    "#shorts",
+    "#fyp"
+  ]
+}
