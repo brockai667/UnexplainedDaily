@@ -1,0 +1,69 @@
+{
+  "title": "Did Elves Visit in 1906?",
+  "place": "Skælskør",
+  "country": "Denmark",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "An encounter with mystical beings left locals questioning reality.",
+      "hook_top": "A MYSTICAL ENCOUNTER",
+      "query": "ancient burial mound",
+      "query2": "dark woodland mist"
+    },
+    {
+      "role": "map",
+      "text": "This curious event took place near Skælskør, a quaint town in Denmark."
+    },
+    {
+      "role": "fact",
+      "text": "In 1906, a group of children reported seeing elves at a burial site, captivating the community.",
+      "query": "vintage photo children",
+      "query2": "old stories book",
+      "chips": [
+        {
+          "t": "SKÆLSKØR, 1906",
+          "on": "Denmark",
+          "style": "white"
+        },
+        {
+          "t": "ENCOUNTER WITH ELVES",
+          "on": "elves",
+          "style": "accent"
+        }
+      ],
+      "punch": "elves"
+    },
+    {
+      "role": "archive",
+      "text": "The tale is documented in folklore and historical records, still debated by scholars.",
+      "archive_query": "Skælskør folklore",
+      "archive_label": "Historical Documentation"
+    },
+    {
+      "role": "callout",
+      "text": "Eyewitness testimony remains a profound mystery, with skeptics and believers debating.",
+      "query": "mysterious foggy field",
+      "query2": "ancient folklore book",
+      "label": "UNEXPLAINED ENCOUNTER",
+      "sub": "Skepticism and belief clash",
+      "label_on": "debate",
+      "punch": "debate"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the cases no one can explain.",
+      "query": "moonlit forest path",
+      "query2": "twilight sky stars"
+    }
+  ],
+  "description": "📍 Skælskør, Denmark - 1906. A group of children claimed to see elves near a burial mound, leaving behind a tale of intrigue and debate. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#elves",
+    "#Denmark",
+    "#folklore",
+    "#shorts",
+    "#fyp"
+  ]
+}

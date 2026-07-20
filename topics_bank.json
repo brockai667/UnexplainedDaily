@@ -6287,5 +6287,73 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "The Enigma of the Baghdad Battery",
+    "thumb": "ANCIENT POWER SOURCE",
+    "place": "Baghdad",
+    "country": "Iraq",
+    "scenes": [
+      {
+        "text": "Could this ancient artifact generate electricity?",
+        "hook_top": "ANCIENT ELECTRICITY DEVICE",
+        "query": "Baghdad Battery curiosity",
+        "query2": "mystery artifact Iraq",
+        "role": "hook"
+      },
+      {
+        "text": "Discovered in Iraq, dating back to 250 BC.",
+        "map": "Baghdad, Iraq",
+        "role": "fact",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves",
+        "chips": []
+      },
+      {
+        "text": "It may have been used as a battery!",
+        "fact": "250 BC",
+        "chips": [],
+        "punch": "Surprising",
+        "role": "fact",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "text": "View images of the Baghdad Battery.",
+        "archive_query": "Baghdad Battery artifact",
+        "archive_label": "Ancient Battery",
+        "role": "fact",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves",
+        "chips": []
+      },
+      {
+        "text": "What was its true purpose?",
+        "label": "POWER OR MYSTERY?",
+        "sub": "Electricity in ancient times?",
+        "label_on": "power",
+        "role": "fact",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves",
+        "chips": []
+      },
+      {
+        "text": "Follow if the unknown keeps you up at night.",
+        "cta": "Stay curious about our past.",
+        "role": "cta",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "The Baghdad Battery is a fascinating artifact that might have generated electricity. What could this mean for our understanding of ancient technology? Follow for more mysteries!",
+    "hashtags": [
+      "#ancient",
+      "#technology",
+      "#Baghdad",
+      "#history",
+      "#mystery",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]

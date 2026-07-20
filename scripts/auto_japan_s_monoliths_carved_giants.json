@@ -1,0 +1,69 @@
+{
+  "title": "Japan's Monoliths: Carved Giants",
+  "place": "Various locations",
+  "country": "Japan",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "Ancient granite monoliths found in Japan, with no records of their origin.",
+      "hook_top": "ANCIENT GRANITE MYSTERIES",
+      "query": "mysterious stone formations",
+      "query2": "ancient structures mist"
+    },
+    {
+      "role": "map",
+      "text": "These impressive structures are scattered across Japan, hidden in history."
+    },
+    {
+      "role": "fact",
+      "text": "Discovered in modern times, these monoliths weigh up to 800 tonnes yet remain unrecorded in history.",
+      "query": "massive stone close-up",
+      "query2": "ancient monument landscape",
+      "chips": [
+        {
+          "t": "800 TONNE MONOLITHS",
+          "on": "weight",
+          "style": "white"
+        },
+        {
+          "t": "UNRECORD IN HISTORY",
+          "on": "history",
+          "style": "accent"
+        }
+      ],
+      "punch": "weight"
+    },
+    {
+      "role": "archive",
+      "text": "Photographs of the monoliths intrigue archaeologists but offer no explanations.",
+      "archive_query": "Japanese monoliths",
+      "archive_label": "Archaeological Mystery"
+    },
+    {
+      "role": "callout",
+      "text": "Their purpose and the culture that created them remain a source of speculation.",
+      "query": "archaeological dig site",
+      "query2": "mysterious stone carvings",
+      "label": "PURPOSE STILL UNKNOWN",
+      "sub": "An ancient enigma lingers",
+      "label_on": "purpose",
+      "punch": "unknown"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new mystery every day.",
+      "query": "peaceful landscape at dusk",
+      "query2": "ancient ruins sunset"
+    }
+  ],
+  "description": "📍 Various, Japan - Year Unknown. Enormous granite monoliths were found across the country with no historical records, raising endless questions. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#Japan",
+    "#monoliths",
+    "#archaeology",
+    "#shorts",
+    "#fyp"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "title": "The Mysterious Count Who Refused to Die",
+  "place": "Various locations",
+  "country": "Europe",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "A man claimed to be over 500 years old, yet he never aged.",
+      "hook_top": "THE IMMORTAL COUNT",
+      "query": "ancient castle fog",
+      "query2": "mysterious forest dusk"
+    },
+    {
+      "role": "map",
+      "text": "His legend swirled across Europe, with sightings in France, Germany, and beyond."
+    },
+    {
+      "role": "fact",
+      "text": "The Count of Saint Germain was a 18th-century figure known for his charm and rumored alchemic abilities.",
+      "query": "historical portrait mysterious",
+      "query2": "old books alchemy",
+      "chips": [
+        {
+          "t": "18TH CENTURY LEGEND",
+          "on": "Count of Saint Germain",
+          "style": "white"
+        },
+        {
+          "t": "ALCHEMIST & DIPLOMAT",
+          "on": "alchemist",
+          "style": "accent"
+        }
+      ],
+      "punch": "mysterious"
+    },
+    {
+      "role": "archive",
+      "text": "Many documents discuss his extraordinary tales, but proof of his existence remains elusive.",
+      "archive_query": "Count of Saint Germain",
+      "archive_label": "Historical Enigma"
+    },
+    {
+      "role": "callout",
+      "text": "His identity was a tapestry of rumors, with claims of friendship with historical leaders.",
+      "query": "old map parchment",
+      "query2": "ancient scrolls close-up",
+      "label": "MYSTERIOUS RELATIONSHIPS",
+      "sub": "Intrigued powerful figures",
+      "label_on": "friendship",
+      "punch": "relationships"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "dark castle silhouette",
+      "query2": "misty valley twilight"
+    }
+  ],
+  "description": "📍 Various, Europe - 18th Century. The Count of Saint Germain claimed to be over 500 years old, weaving a tale of mystery throughout Europe. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#history",
+    "#SaintGermain",
+    "#alchemy",
+    "#shorts",
+    "#fyp"
+  ]
+}
