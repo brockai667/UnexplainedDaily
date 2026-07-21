@@ -1,0 +1,69 @@
+{
+  "title": "Unsolved Anomalies: The Great Silence",
+  "place": "N/A",
+  "country": "N/A",
+  "scenes": [
+    {
+      "role": "hook",
+      "text": "An entire region of space where no signals have been detected.",
+      "hook_top": "THE GREAT SILENCE",
+      "query": "vast cosmic dark",
+      "query2": "stars twinkling silence"
+    },
+    {
+      "role": "map",
+      "text": "This area remains one of the most unexplored regions in the universe."
+    },
+    {
+      "role": "fact",
+      "text": "Scientists continue to search for answers but find only silence.",
+      "query": "deep space observations",
+      "query2": "telescope dark space",
+      "chips": [
+        {
+          "t": "EMPTY COSMIC REGION",
+          "on": "silence",
+          "style": "white"
+        },
+        {
+          "t": "STILL UNEXPLAINED",
+          "on": "mystery",
+          "style": "accent"
+        }
+      ],
+      "punch": "silence"
+    },
+    {
+      "role": "archive",
+      "text": "Data from space telescopes keeps revealing new mysteries.",
+      "archive_query": "great silence space",
+      "archive_label": "Cosmic Enigma"
+    },
+    {
+      "role": "callout",
+      "text": "Could it be a natural phenomenon or something beyond our understanding?",
+      "query": "cosmic phenomena unknown",
+      "query2": "dark nebulae obscure",
+      "label": "UNKNOWN ORIGINS",
+      "sub": "A profound cosmic question.",
+      "label_on": "question",
+      "punch": "question"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "silent universe stars",
+      "query2": "vastness of space night"
+    }
+  ],
+  "description": "📍 N/A, N/A - Unknown. An entire region of space dubbed 'The Great Silence' has yielded no detectable signals, posing profound questions about cosmic existence. Follow for daily mysteries!",
+  "hashtags": [
+    "#mystery",
+    "#unexplained",
+    "#spaceanomalies",
+    "#thegreatsilence",
+    "#universe",
+    "#shorts",
+    "#fyp"
+  ]
+}
