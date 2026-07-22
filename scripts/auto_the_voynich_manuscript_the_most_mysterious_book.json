@@ -1,0 +1,64 @@
+{
+  "title": "The Voynich Manuscript: The Most Mysterious Book?",
+  "thumb": "UNREADABLE MANUSCRIPT",
+  "place": "Unknown Origin",
+  "country": "unknown",
+  "scenes": [
+    {
+      "text": "This illustrated codex, dating back to the early 15th century, is completely undecipherable.",
+      "hook_top": "UNCRACKABLE ANCIENT CODE",
+      "query": "images of the Voynich Manuscript",
+      "query2": "historical manuscripts",
+      "role": "hook"
+    },
+    {
+      "text": "It features strange illustrations of plants and astrological symbols never seen before.",
+      "chips": [
+        {
+          "t": "over 200 pages",
+          "on": "illustrations",
+          "style": "white"
+        }
+      ],
+      "query": "close-up on manuscript illustrations",
+      "query2": "details of ancient texts",
+      "role": "fact"
+    },
+    {
+      "text": "Leading cryptographers have attempted to decode it with no success.",
+      "chips": [
+        {
+          "t": "thousands of hours",
+          "on": "attempts",
+          "style": "accent"
+        }
+      ],
+      "query": "cryptography analysis in action",
+      "query2": "people researching ancient texts",
+      "role": "fact"
+    },
+    {
+      "text": "Is it an elaborate hoax or a genuine ancient document?",
+      "reveal_top": "A HIDDEN TRUTH UNSOLVED!",
+      "query": "debate over the manuscript's validity",
+      "query2": "discussion about hoaxes",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "text": "Follow for a new mystery every day.",
+      "query": "inviting audience engagement",
+      "query2": "social media following animation",
+      "role": "cta"
+    }
+  ],
+  "description": "The Voynich Manuscript continues to baffle scholars and enthusiasts alike. Explore its mysteries with us as we dig into its origins and meanings!",
+  "hashtags": [
+    "#VoynichManuscript",
+    "#MysteriousBooks",
+    "#History",
+    "#Unsolved",
+    "#Shorts",
+    "#FYP"
+  ]
+}

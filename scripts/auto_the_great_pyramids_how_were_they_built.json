@@ -1,0 +1,64 @@
+{
+  "title": "The Great Pyramids: How Were They Built?",
+  "thumb": "ANCIENT WONDERS UNVEILED",
+  "place": "Giza",
+  "country": "Egypt",
+  "scenes": [
+    {
+      "text": "The Great Pyramid of Giza was built over 4,500 years ago, yet questions linger.",
+      "hook_top": "ANCIENT WONDERS OF GIZA",
+      "query": "historical footage of pyramids",
+      "query2": "aerial views of Giza",
+      "role": "hook"
+    },
+    {
+      "text": "It’s made of approximately 2.3 million blocks, each weighing an average of 2.5 tons.",
+      "chips": [
+        {
+          "t": "2.3 million blocks",
+          "on": "pyramid construction",
+          "style": "white"
+        }
+      ],
+      "query": "construction of ancient pyramids",
+      "query2": "building techniques in ancient times",
+      "role": "fact"
+    },
+    {
+      "text": "Researchers have various theories, from alien assistance to advanced engineering.",
+      "chips": [
+        {
+          "t": "ancient engineering",
+          "on": "theories",
+          "style": "accent"
+        }
+      ],
+      "query": "discussions on pyramid theories",
+      "query2": "scientific approaches to ancient structure",
+      "role": "fact"
+    },
+    {
+      "text": "Despite studies, the exact methods remain a mystery to this day.",
+      "reveal_top": "A CONSTRUCTION SECRET REMAINS!",
+      "query": "mysteries of ancient architecture",
+      "query2": "secrets behind historical buildings",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "text": "Follow for a new mystery every day.",
+      "query": "call to action for following",
+      "query2": "engagement on history topics",
+      "role": "cta"
+    }
+  ],
+  "description": "The Great Pyramids of Giza stand as monumental achievements of ancient architecture. Explore how they were constructed amidst ongoing debates.",
+  "hashtags": [
+    "#GreatPyramids",
+    "#AncientEgypt",
+    "#History",
+    "#Mysteries",
+    "#Shorts",
+    "#FYP"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "title": "The Nazca Lines: Messages from the Ancients?",
+  "thumb": "MYSTERIOUS EARTH ART",
+  "place": "Nazca Desert",
+  "country": "Peru",
+  "scenes": [
+    {
+      "text": "This ancient site features colossal geoglyphs spanning over 1,000 square kilometers.",
+      "hook_top": "COLOSSAL ANCIENT GEGLYPHS",
+      "query": "aerial footage of Nazca Lines",
+      "query2": "desert landscape with geoglyphs",
+      "role": "hook"
+    },
+    {
+      "text": "These enigmatic drawings can only be fully appreciated from the sky.",
+      "chips": [
+        {
+          "t": "ancient designs",
+          "on": "sky",
+          "style": "white"
+        }
+      ],
+      "query": "planes flying over desert geoglyphs",
+      "query2": "birds-eye view of landscapes",
+      "role": "fact"
+    },
+    {
+      "text": "Their purpose remains hotly debated among researchers and archaeologists.",
+      "chips": [
+        {
+          "t": "many theories",
+          "on": "debated",
+          "style": "accent"
+        }
+      ],
+      "query": "scholars discussing ancient theories",
+      "query2": "academic debate on archaeology",
+      "role": "fact"
+    },
+    {
+      "text": "Some believe they were created for gods, while others suggest astronomical alignments.",
+      "reveal_top": "DIVINE OR ASTRONOMICAL?",
+      "query": "spiritual rituals or astronomical models",
+      "query2": "audiovisual of ancient rituals",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "call to action for subscribers",
+      "query2": "people following social channels",
+      "role": "cta"
+    }
+  ],
+  "description": "The Nazca Lines have puzzled historians for decades, igniting theories of communication, worship, and observation. Dive deeper into their enigma!",
+  "hashtags": [
+    "#NazcaLines",
+    "#Geoglyphs",
+    "#AncientCivilizations",
+    "#Mystery",
+    "#Shorts",
+    "#FYP"
+  ]
+}

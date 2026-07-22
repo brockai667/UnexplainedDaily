@@ -5940,5 +5940,197 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "The Nazca Lines: Messages from the Ancients?",
+    "thumb": "MYSTERIOUS EARTH ART",
+    "place": "Nazca Desert",
+    "country": "Peru",
+    "scenes": [
+      {
+        "text": "This ancient site features colossal geoglyphs spanning over 1,000 square kilometers.",
+        "hook_top": "COLOSSAL ANCIENT GEGLYPHS",
+        "query": "aerial footage of Nazca Lines",
+        "query2": "desert landscape with geoglyphs",
+        "role": "hook"
+      },
+      {
+        "text": "These enigmatic drawings can only be fully appreciated from the sky.",
+        "chips": [
+          {
+            "t": "ancient designs",
+            "on": "sky",
+            "style": "white"
+          }
+        ],
+        "query": "planes flying over desert geoglyphs",
+        "query2": "birds-eye view of landscapes",
+        "role": "fact"
+      },
+      {
+        "text": "Their purpose remains hotly debated among researchers and archaeologists.",
+        "chips": [
+          {
+            "t": "many theories",
+            "on": "debated",
+            "style": "accent"
+          }
+        ],
+        "query": "scholars discussing ancient theories",
+        "query2": "academic debate on archaeology",
+        "role": "fact"
+      },
+      {
+        "text": "Some believe they were created for gods, while others suggest astronomical alignments.",
+        "reveal_top": "DIVINE OR ASTRONOMICAL?",
+        "query": "spiritual rituals or astronomical models",
+        "query2": "audiovisual of ancient rituals",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "call to action for subscribers",
+        "query2": "people following social channels",
+        "role": "cta"
+      }
+    ],
+    "description": "The Nazca Lines have puzzled historians for decades, igniting theories of communication, worship, and observation. Dive deeper into their enigma!",
+    "hashtags": [
+      "#NazcaLines",
+      "#Geoglyphs",
+      "#AncientCivilizations",
+      "#Mystery",
+      "#Shorts",
+      "#FYP"
+    ]
+  },
+  {
+    "title": "The Voynich Manuscript: The Most Mysterious Book?",
+    "thumb": "UNREADABLE MANUSCRIPT",
+    "place": "Unknown Origin",
+    "country": "unknown",
+    "scenes": [
+      {
+        "text": "This illustrated codex, dating back to the early 15th century, is completely undecipherable.",
+        "hook_top": "UNCRACKABLE ANCIENT CODE",
+        "query": "images of the Voynich Manuscript",
+        "query2": "historical manuscripts",
+        "role": "hook"
+      },
+      {
+        "text": "It features strange illustrations of plants and astrological symbols never seen before.",
+        "chips": [
+          {
+            "t": "over 200 pages",
+            "on": "illustrations",
+            "style": "white"
+          }
+        ],
+        "query": "close-up on manuscript illustrations",
+        "query2": "details of ancient texts",
+        "role": "fact"
+      },
+      {
+        "text": "Leading cryptographers have attempted to decode it with no success.",
+        "chips": [
+          {
+            "t": "thousands of hours",
+            "on": "attempts",
+            "style": "accent"
+          }
+        ],
+        "query": "cryptography analysis in action",
+        "query2": "people researching ancient texts",
+        "role": "fact"
+      },
+      {
+        "text": "Is it an elaborate hoax or a genuine ancient document?",
+        "reveal_top": "A HIDDEN TRUTH UNSOLVED!",
+        "query": "debate over the manuscript's validity",
+        "query2": "discussion about hoaxes",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "text": "Follow for a new mystery every day.",
+        "query": "inviting audience engagement",
+        "query2": "social media following animation",
+        "role": "cta"
+      }
+    ],
+    "description": "The Voynich Manuscript continues to baffle scholars and enthusiasts alike. Explore its mysteries with us as we dig into its origins and meanings!",
+    "hashtags": [
+      "#VoynichManuscript",
+      "#MysteriousBooks",
+      "#History",
+      "#Unsolved",
+      "#Shorts",
+      "#FYP"
+    ]
+  },
+  {
+    "title": "The Great Pyramids: How Were They Built?",
+    "thumb": "ANCIENT WONDERS UNVEILED",
+    "place": "Giza",
+    "country": "Egypt",
+    "scenes": [
+      {
+        "text": "The Great Pyramid of Giza was built over 4,500 years ago, yet questions linger.",
+        "hook_top": "ANCIENT WONDERS OF GIZA",
+        "query": "historical footage of pyramids",
+        "query2": "aerial views of Giza",
+        "role": "hook"
+      },
+      {
+        "text": "It’s made of approximately 2.3 million blocks, each weighing an average of 2.5 tons.",
+        "chips": [
+          {
+            "t": "2.3 million blocks",
+            "on": "pyramid construction",
+            "style": "white"
+          }
+        ],
+        "query": "construction of ancient pyramids",
+        "query2": "building techniques in ancient times",
+        "role": "fact"
+      },
+      {
+        "text": "Researchers have various theories, from alien assistance to advanced engineering.",
+        "chips": [
+          {
+            "t": "ancient engineering",
+            "on": "theories",
+            "style": "accent"
+          }
+        ],
+        "query": "discussions on pyramid theories",
+        "query2": "scientific approaches to ancient structure",
+        "role": "fact"
+      },
+      {
+        "text": "Despite studies, the exact methods remain a mystery to this day.",
+        "reveal_top": "A CONSTRUCTION SECRET REMAINS!",
+        "query": "mysteries of ancient architecture",
+        "query2": "secrets behind historical buildings",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "text": "Follow for a new mystery every day.",
+        "query": "call to action for following",
+        "query2": "engagement on history topics",
+        "role": "cta"
+      }
+    ],
+    "description": "The Great Pyramids of Giza stand as monumental achievements of ancient architecture. Explore how they were constructed amidst ongoing debates.",
+    "hashtags": [
+      "#GreatPyramids",
+      "#AncientEgypt",
+      "#History",
+      "#Mysteries",
+      "#Shorts",
+      "#FYP"
+    ]
   }
 ]
