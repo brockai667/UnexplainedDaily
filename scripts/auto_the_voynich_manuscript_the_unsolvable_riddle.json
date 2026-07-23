@@ -1,0 +1,56 @@
+{
+  "title": "The Voynich Manuscript: The Unsolvable Riddle",
+  "thumb": "CODED MYSTERY",
+  "place": "Unknown Origin",
+  "country": "Unknown",
+  "scenes": [
+    {
+      "hook_top": "UNDECIPHERED MANUSCRIPT",
+      "query": "Voynich Manuscript close-ups",
+      "query2": "mysterious ancient texts",
+      "role": "hook",
+      "text": "Over 600 years old, yet unreadable."
+    },
+    {
+      "label": "ALIEN LANGUAGE",
+      "query": "Voynich Manuscript alien theories",
+      "query2": "mysteriously coded texts",
+      "role": "myth",
+      "text": "It is often claimed to be a language of extraterrestrial origin."
+    },
+    {
+      "label": "CODES OR HOAXES?",
+      "query": "Voynich Manuscript scholarly theories",
+      "query2": "decoding ancient texts",
+      "role": "truth",
+      "text": "Scholars believe it might just be hoaxes or a constructed language."
+    },
+    {
+      "label": "Enduring Enigma",
+      "sub": "Decoding history's mysteries.",
+      "label_on": "riddle",
+      "role": "callout",
+      "text": "Language still unsolved!",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "query": "people interested in cryptography",
+      "query2": "mystery book enthusiasts",
+      "role": "cta",
+      "text": "Follow for a new mystery every day."
+    }
+  ],
+  "description": "The Voynich Manuscript remains one of the most enigmatic texts from history, frequently misattributed to aliens, while scholars suggest it could be a clever hoax. Explore the depth of this riddle and follow for more fascinating mysteries!",
+  "hashtags": [
+    "#VoynichManuscript",
+    "#Cryptography",
+    "#UnsolvedMysteries",
+    "#shorts",
+    "#fyp",
+    "#AncientTexts",
+    "#History",
+    "#BookMystery",
+    "#Language"
+  ]
+}

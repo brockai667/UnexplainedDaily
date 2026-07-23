@@ -1,0 +1,66 @@
+{
+  "title": "Nazca Lines: Messages from the Ancients?",
+  "thumb": "ANCIENT MYSTERIES",
+  "place": "Nazca Desert",
+  "country": "Peru",
+  "scenes": [
+    {
+      "hook_top": "ANCIENT GEOGYPHS REVEALED",
+      "query": "Nazca geoglyphs",
+      "query2": "ancient art",
+      "role": "hook",
+      "text": "Over 800 ancient geoglyphs are etched in this desert!"
+    },
+    {
+      "chips": [
+        {
+          "t": "1,000 sq km",
+          "on": "vast",
+          "style": "white"
+        }
+      ],
+      "punch": "incredible",
+      "query": "geometric patterns",
+      "query2": "land art",
+      "role": "fact",
+      "text": "They span 1,000 square kilometers."
+    },
+    {
+      "chips": [
+        {
+          "t": "only from air",
+          "on": "view",
+          "style": "accent"
+        }
+      ],
+      "punch": "fascinating",
+      "query": "aerial view of Nazca",
+      "query2": "Nazca Lines",
+      "role": "fact",
+      "text": "They can only be truly seen from the air."
+    },
+    {
+      "reveal_top": "PURPOSE STILL UNSOLVED",
+      "query": "mysteries of the Nazca",
+      "query2": "ancient mysteries",
+      "role": "reveal",
+      "text": "Their exact purpose remains a mystery!"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "The Nazca Lines present a fascinating puzzle: geoglyphs only visible from the sky. Their true purpose is still hotly debated! Follow for more secrets from the past.",
+  "hashtags": [
+    "#NazcaLines",
+    "#ancientmysteries",
+    "#Peru",
+    "#geoglyphs",
+    "#shorts",
+    "#fyp",
+    "#archaeology"
+  ]
+}

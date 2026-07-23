@@ -1,0 +1,67 @@
+{
+  "title": "The Antikythera Mechanism: Ancient Tech?",
+  "thumb": "ANCIENT TECH?",
+  "place": "Antikythera Shipwreck",
+  "country": "Greece",
+  "scenes": [
+    {
+      "hook_top": "ANCIENT DEVICE REVEALED",
+      "query": "ancient mechanical device",
+      "query2": "historical artifact",
+      "role": "hook",
+      "text": "This 2,000-year-old device changed everything!"
+    },
+    {
+      "chips": [
+        {
+          "t": "2,000 years",
+          "on": "ancient",
+          "style": "white"
+        }
+      ],
+      "punch": "amazing",
+      "query": "historical significance",
+      "query2": "ancient technology",
+      "role": "fact",
+      "text": "It's considered the world's first computer."
+    },
+    {
+      "chips": [
+        {
+          "t": "1,500 years",
+          "on": "lost",
+          "style": "accent"
+        }
+      ],
+      "punch": "mysterious",
+      "query": "archaeological discovery",
+      "query2": "ancient history",
+      "role": "fact",
+      "text": "It was lost for over 1,500 years before its discovery."
+    },
+    {
+      "reveal_top": "FULL PURPOSE STILL UNKNOWN",
+      "query": "scientific debate",
+      "query2": "ancient mysteries",
+      "role": "reveal",
+      "text": "Still, scientists debate its full purpose!"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "The Antikythera Mechanism is an ancient Greek artifact that astounds scientists. Its mysterious functions are still debated today. Follow for more ancient enigmas.",
+  "hashtags": [
+    "#Antikythera",
+    "#ancienttechnology",
+    "#mystery",
+    "#history",
+    "#Greece",
+    "#shorts",
+    "#fyp",
+    "#archaeology"
+  ]
+}

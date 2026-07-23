@@ -6132,5 +6132,436 @@
       "#Shorts",
       "#FYP"
     ]
+  },
+  {
+    "title": "The Antikythera Mechanism: Ancient Tech?",
+    "thumb": "ANCIENT TECH?",
+    "place": "Antikythera Shipwreck",
+    "country": "Greece",
+    "scenes": [
+      {
+        "hook_top": "ANCIENT DEVICE REVEALED",
+        "query": "ancient mechanical device",
+        "query2": "historical artifact",
+        "role": "hook",
+        "text": "This 2,000-year-old device changed everything!"
+      },
+      {
+        "chips": [
+          {
+            "t": "2,000 years",
+            "on": "ancient",
+            "style": "white"
+          }
+        ],
+        "punch": "amazing",
+        "query": "historical significance",
+        "query2": "ancient technology",
+        "role": "fact",
+        "text": "It's considered the world's first computer."
+      },
+      {
+        "chips": [
+          {
+            "t": "1,500 years",
+            "on": "lost",
+            "style": "accent"
+          }
+        ],
+        "punch": "mysterious",
+        "query": "archaeological discovery",
+        "query2": "ancient history",
+        "role": "fact",
+        "text": "It was lost for over 1,500 years before its discovery."
+      },
+      {
+        "reveal_top": "FULL PURPOSE STILL UNKNOWN",
+        "query": "scientific debate",
+        "query2": "ancient mysteries",
+        "role": "reveal",
+        "text": "Still, scientists debate its full purpose!"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "The Antikythera Mechanism is an ancient Greek artifact that astounds scientists. Its mysterious functions are still debated today. Follow for more ancient enigmas.",
+    "hashtags": [
+      "#Antikythera",
+      "#ancienttechnology",
+      "#mystery",
+      "#history",
+      "#Greece",
+      "#shorts",
+      "#fyp",
+      "#archaeology"
+    ]
+  },
+  {
+    "title": "The Voynich Manuscript: The Unsolvable Riddle",
+    "thumb": "CODED MYSTERY",
+    "place": "Unknown Origin",
+    "country": "Unknown",
+    "scenes": [
+      {
+        "hook_top": "UNDECIPHERED MANUSCRIPT",
+        "query": "Voynich Manuscript close-ups",
+        "query2": "mysterious ancient texts",
+        "role": "hook",
+        "text": "Over 600 years old, yet unreadable."
+      },
+      {
+        "label": "ALIEN LANGUAGE",
+        "query": "Voynich Manuscript alien theories",
+        "query2": "mysteriously coded texts",
+        "role": "myth",
+        "text": "It is often claimed to be a language of extraterrestrial origin."
+      },
+      {
+        "label": "CODES OR HOAXES?",
+        "query": "Voynich Manuscript scholarly theories",
+        "query2": "decoding ancient texts",
+        "role": "truth",
+        "text": "Scholars believe it might just be hoaxes or a constructed language."
+      },
+      {
+        "label": "Enduring Enigma",
+        "sub": "Decoding history's mysteries.",
+        "label_on": "riddle",
+        "role": "callout",
+        "text": "Language still unsolved!",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "query": "people interested in cryptography",
+        "query2": "mystery book enthusiasts",
+        "role": "cta",
+        "text": "Follow for a new mystery every day."
+      }
+    ],
+    "description": "The Voynich Manuscript remains one of the most enigmatic texts from history, frequently misattributed to aliens, while scholars suggest it could be a clever hoax. Explore the depth of this riddle and follow for more fascinating mysteries!",
+    "hashtags": [
+      "#VoynichManuscript",
+      "#Cryptography",
+      "#UnsolvedMysteries",
+      "#shorts",
+      "#fyp",
+      "#AncientTexts",
+      "#History",
+      "#BookMystery",
+      "#Language"
+    ]
+  },
+  {
+    "title": "Nazca Lines: Messages from the Ancients?",
+    "thumb": "ANCIENT MYSTERIES",
+    "place": "Nazca Desert",
+    "country": "Peru",
+    "scenes": [
+      {
+        "hook_top": "ANCIENT GEOGYPHS REVEALED",
+        "query": "Nazca geoglyphs",
+        "query2": "ancient art",
+        "role": "hook",
+        "text": "Over 800 ancient geoglyphs are etched in this desert!"
+      },
+      {
+        "chips": [
+          {
+            "t": "1,000 sq km",
+            "on": "vast",
+            "style": "white"
+          }
+        ],
+        "punch": "incredible",
+        "query": "geometric patterns",
+        "query2": "land art",
+        "role": "fact",
+        "text": "They span 1,000 square kilometers."
+      },
+      {
+        "chips": [
+          {
+            "t": "only from air",
+            "on": "view",
+            "style": "accent"
+          }
+        ],
+        "punch": "fascinating",
+        "query": "aerial view of Nazca",
+        "query2": "Nazca Lines",
+        "role": "fact",
+        "text": "They can only be truly seen from the air."
+      },
+      {
+        "reveal_top": "PURPOSE STILL UNSOLVED",
+        "query": "mysteries of the Nazca",
+        "query2": "ancient mysteries",
+        "role": "reveal",
+        "text": "Their exact purpose remains a mystery!"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "The Nazca Lines present a fascinating puzzle: geoglyphs only visible from the sky. Their true purpose is still hotly debated! Follow for more secrets from the past.",
+    "hashtags": [
+      "#NazcaLines",
+      "#ancientmysteries",
+      "#Peru",
+      "#geoglyphs",
+      "#shorts",
+      "#fyp",
+      "#archaeology"
+    ]
+  },
+  {
+    "title": "Can the Voynich Manuscript Be Deciphered?",
+    "thumb": "UNSOLVED PUZZLE",
+    "place": "Unknown Origin",
+    "country": "Unknown",
+    "scenes": [
+      {
+        "hook_top": "ANCIENT CODE SOLVED",
+        "query": "mysterious manuscript",
+        "query2": "historical text",
+        "role": "hook",
+        "text": "This codex remains undeciphered for centuries!"
+      },
+      {
+        "chips": [
+          {
+            "t": "15th century",
+            "on": "origin",
+            "style": "white"
+          }
+        ],
+        "punch": "ancient",
+        "query": "history of manuscripts",
+        "query2": "ancient writing",
+        "role": "fact",
+        "text": "It dates back to the 15th century."
+      },
+      {
+        "chips": [
+          {
+            "t": "unusual illustrations",
+            "on": "contents",
+            "style": "accent"
+          }
+        ],
+        "punch": "bizarre",
+        "query": "manuscript illustrations",
+        "query2": "mysterious writings",
+        "role": "fact",
+        "text": "It contains unusual illustrations of plants and diagrams."
+      },
+      {
+        "reveal_top": "HOAX OR ARTIFACT",
+        "query": "Voynich Manuscript debate",
+        "query2": "historical mysteries",
+        "role": "reveal",
+        "text": "Some experts believe it’s a hoax!"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the cases no one can explain.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "The Voynich Manuscript is a legendary enigma of an undeciphered text full of bizarre illustrations. Is it genuine or a clever hoax? Follow for more mysteries.",
+    "hashtags": [
+      "#VoynichManuscript",
+      "#mystery",
+      "#hoax",
+      "#historicalartifacts",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Mystery of the Bermuda Triangle",
+    "thumb": "BERMUDA TRIANGLE",
+    "place": "Bermuda Triangle",
+    "country": "USA",
+    "scenes": [
+      {
+        "hook_top": "MYSTERIOUS VANISHINGS",
+        "query": "Bermuda Triangle",
+        "query2": "mysterious area",
+        "role": "hook",
+        "text": "Over 1,000 ships and planes have vanished here!"
+      },
+      {
+        "chips": [
+          {
+            "t": "1,000+ incidents",
+            "on": "vanishings",
+            "style": "white"
+          }
+        ],
+        "punch": "spooky",
+        "query": "historical disappearances",
+        "query2": "Bermuda mysteries",
+        "role": "fact",
+        "text": "It's infamous for its unexplained disappearances."
+      },
+      {
+        "chips": [
+          {
+            "t": "environmental factors",
+            "on": "theories",
+            "style": "accent"
+          }
+        ],
+        "punch": "interesting",
+        "query": "Bermuda Triangle theories",
+        "query2": "scientific explanations",
+        "role": "fact",
+        "text": "Leading theories involve environmental factors."
+      },
+      {
+        "reveal_top": "NO FULL EXPLANATION",
+        "query": "ongoing mystery",
+        "query2": "Bermuda Triangle",
+        "role": "reveal",
+        "text": "Yet, no theory fully explains it!"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "The Bermuda Triangle remains one of the world's greatest enigmas, with over 1,000 disappearances. While theories abound, none can fully explain the mystery! Follow for more fascinating stories.",
+    "hashtags": [
+      "#BermudaTriangle",
+      "#mystery",
+      "#disappearances",
+      "#oceanmysteries",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Secret of the Antikythera Mechanism",
+    "thumb": "ANCESTRAL CALCULATOR",
+    "place": "Antikythera",
+    "country": "Greece",
+    "scenes": [
+      {
+        "hook_top": "ANCIENT GREECE'S MYSTERY MACHINE",
+        "query": "antikythera mechanism close-up",
+        "query2": "ancient artifacts discovery",
+        "role": "hook",
+        "text": "This ancient device baffled scientists for centuries."
+      },
+      {
+        "label": "ASTROLOGICAL TOOL ONLY",
+        "query": "astrological ancient device",
+        "query2": "historical beliefs about astrology",
+        "role": "myth",
+        "text": "Many believe it was just an astrological tool."
+      },
+      {
+        "label": "COMPLEX ASTRONOMICAL DEVICE",
+        "query": "astronomical calculator workings",
+        "query2": "mechanical astronomy",
+        "role": "truth",
+        "text": "It's actually a complex astronomical calculator."
+      },
+      {
+        "label": "Astonishing Ancient Tech",
+        "sub": "Unlocking the past with science.",
+        "label_on": "technology",
+        "role": "callout",
+        "text": "Ancient technology!",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "query": "people intrigued by ancient devices",
+        "query2": "historical artifact enthusiasts",
+        "role": "cta",
+        "text": "Follow for daily unexplained mysteries."
+      }
+    ],
+    "description": "The Antikythera Mechanism is often misunderstood as a simple astrological tool, but its true purpose as an astronomical calculator reveals an advanced level of ancient technology. Dive deeper into this historical enigma and follow for more!",
+    "hashtags": [
+      "#AntikytheraMechanism",
+      "#AncientHistory",
+      "#Mystery",
+      "#shorts",
+      "#fyp",
+      "#Astronomy",
+      "#AncientTech",
+      "#Greece",
+      "#Artifacts"
+    ]
+  },
+  {
+    "title": "The Nazca Lines: Messages from Ancient Cultures?",
+    "thumb": "MYSTERIOUS LAND ART",
+    "place": "Nazca Desert",
+    "country": "Peru",
+    "scenes": [
+      {
+        "hook_top": "MONUMENTAL EARTH ART",
+        "query": "Nazca Lines aerial view",
+        "query2": "geoglyphs in Peru",
+        "role": "hook",
+        "text": "These massive geoglyphs can be seen from space."
+      },
+      {
+        "label": "ALIEN ARTWORK",
+        "query": "Nazca Lines alien theories",
+        "query2": "extraterrestrial geoglyphs",
+        "role": "myth",
+        "text": "Some say they were created by aliens."
+      },
+      {
+        "label": "HUMAN RITUALISTIC CREATION",
+        "query": "Nazca Lines cultural significance",
+        "query2": "Nazca geoglyph history",
+        "role": "truth",
+        "text": "Experts believe they were made by ancient humans for religious rituals."
+      },
+      {
+        "label": "Cultural Enigmas Revealed",
+        "sub": "Understanding ancient practices.",
+        "label_on": "mysteries",
+        "role": "callout",
+        "text": "Ancient human mysteries!",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "query": "enthusiasts of ancient cultures",
+        "query2": "people interested in ancient mysteries",
+        "role": "cta",
+        "text": "Follow for a new mystery every day."
+      }
+    ],
+    "description": "The Nazca Lines, often thought to be connected to aliens, were likely a product of ancient human artistry and spirituality. Discover more about these fascinating creations and follow for more historic insights!",
+    "hashtags": [
+      "#NazcaLines",
+      "#Archaeology",
+      "#AncientMysteries",
+      "#shorts",
+      "#fyp",
+      "#Peru",
+      "#Geoglyphs",
+      "#History",
+      "#AncientCultures"
+    ]
   }
 ]
