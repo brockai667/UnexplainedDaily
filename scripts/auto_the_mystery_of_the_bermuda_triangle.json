@@ -1,0 +1,65 @@
+{
+  "title": "The Mystery of the Bermuda Triangle",
+  "thumb": "BERMUDA TRIANGLE",
+  "place": "Bermuda Triangle",
+  "country": "USA",
+  "scenes": [
+    {
+      "hook_top": "MYSTERIOUS VANISHINGS",
+      "query": "Bermuda Triangle",
+      "query2": "mysterious area",
+      "role": "hook",
+      "text": "Over 1,000 ships and planes have vanished here!"
+    },
+    {
+      "chips": [
+        {
+          "t": "1,000+ incidents",
+          "on": "vanishings",
+          "style": "white"
+        }
+      ],
+      "punch": "spooky",
+      "query": "historical disappearances",
+      "query2": "Bermuda mysteries",
+      "role": "fact",
+      "text": "It's infamous for its unexplained disappearances."
+    },
+    {
+      "chips": [
+        {
+          "t": "environmental factors",
+          "on": "theories",
+          "style": "accent"
+        }
+      ],
+      "punch": "interesting",
+      "query": "Bermuda Triangle theories",
+      "query2": "scientific explanations",
+      "role": "fact",
+      "text": "Leading theories involve environmental factors."
+    },
+    {
+      "reveal_top": "NO FULL EXPLANATION",
+      "query": "ongoing mystery",
+      "query2": "Bermuda Triangle",
+      "role": "reveal",
+      "text": "Yet, no theory fully explains it!"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "The Bermuda Triangle remains one of the world's greatest enigmas, with over 1,000 disappearances. While theories abound, none can fully explain the mystery! Follow for more fascinating stories.",
+  "hashtags": [
+    "#BermudaTriangle",
+    "#mystery",
+    "#disappearances",
+    "#oceanmysteries",
+    "#shorts",
+    "#fyp"
+  ]
+}

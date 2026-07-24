@@ -1,0 +1,65 @@
+{
+  "title": "Can the Voynich Manuscript Be Deciphered?",
+  "thumb": "UNSOLVED PUZZLE",
+  "place": "Unknown Origin",
+  "country": "Unknown",
+  "scenes": [
+    {
+      "hook_top": "ANCIENT CODE SOLVED",
+      "query": "mysterious manuscript",
+      "query2": "historical text",
+      "role": "hook",
+      "text": "This codex remains undeciphered for centuries!"
+    },
+    {
+      "chips": [
+        {
+          "t": "15th century",
+          "on": "origin",
+          "style": "white"
+        }
+      ],
+      "punch": "ancient",
+      "query": "history of manuscripts",
+      "query2": "ancient writing",
+      "role": "fact",
+      "text": "It dates back to the 15th century."
+    },
+    {
+      "chips": [
+        {
+          "t": "unusual illustrations",
+          "on": "contents",
+          "style": "accent"
+        }
+      ],
+      "punch": "bizarre",
+      "query": "manuscript illustrations",
+      "query2": "mysterious writings",
+      "role": "fact",
+      "text": "It contains unusual illustrations of plants and diagrams."
+    },
+    {
+      "reveal_top": "HOAX OR ARTIFACT",
+      "query": "Voynich Manuscript debate",
+      "query2": "historical mysteries",
+      "role": "reveal",
+      "text": "Some experts believe it’s a hoax!"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the cases no one can explain.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "The Voynich Manuscript is a legendary enigma of an undeciphered text full of bizarre illustrations. Is it genuine or a clever hoax? Follow for more mysteries.",
+  "hashtags": [
+    "#VoynichManuscript",
+    "#mystery",
+    "#hoax",
+    "#historicalartifacts",
+    "#shorts",
+    "#fyp"
+  ]
+}

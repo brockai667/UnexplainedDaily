@@ -6563,5 +6563,187 @@
       "#History",
       "#AncientCultures"
     ]
+  },
+  {
+    "title": "Lost Signals From the Ancient Past",
+    "thumb": "ANCIENT SIGNALS FOUND",
+    "place": "Mohenjo-Daro",
+    "country": "Pakistan",
+    "scenes": [
+      {
+        "text": "In 1922, archaeologists discovered something baffling in Pakistan.",
+        "hook_top": "1922 ANCIENT DISCOVERY",
+        "query": "archaeological site Mohenjo-Daro",
+        "query2": "ancient ruins",
+        "role": "hook"
+      },
+      {
+        "text": "Mohenjo-Daro's urban planning is so advanced, it's compared to modern cities.",
+        "chips": [
+          {
+            "t": "4,500 years old",
+            "on": "Mohenjo-Daro",
+            "style": "accent"
+          }
+        ],
+        "query": "Mohenjo-Daro urban planning",
+        "query2": "ancient city layout",
+        "role": "fact"
+      },
+      {
+        "text": "The site features artifacts with unclear purposes, including unique seals.",
+        "chips": [
+          {
+            "t": "2,000 mysterious seals",
+            "on": "artifacts",
+            "style": "white"
+          }
+        ],
+        "query": "Mohenjo-Daro unique seals",
+        "query2": "ancient artifacts",
+        "role": "fact"
+      },
+      {
+        "text": "Some believe these seals suggest lost communications from a vanished civilization!",
+        "reveal_top": "LOST CIVILIZATION'S MESSAGE?",
+        "query": "Mohenjo-Daro seals mystery",
+        "query2": "lost civilization theory",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "text": "Follow if you can't stop asking why.",
+        "query": "call to action",
+        "query2": "mysteries follow",
+        "role": "cta"
+      }
+    ],
+    "description": "The enigmatic site of Mohenjo-Daro holds signals from an ancient past that may tell us about a lost civilization. Stay tuned for more mysteries!",
+    "hashtags": [
+      "#MohenjoDaro",
+      "#AncientCivilizations",
+      "#Archaeology",
+      "#HistoryMysteries",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "Is There a Lost City Under Mexico?",
+    "thumb": "LOST CITY?",
+    "place": "Chichen Itza",
+    "country": "Mexico",
+    "scenes": [
+      {
+        "hook_top": "HIDDEN CITY UNDER MEXICO",
+        "query": "drone footage of Chichen Itza",
+        "query2": "mystical scenery of ancient ruins",
+        "role": "hook",
+        "text": "Is there a hidden city beneath Chichen Itza?"
+      },
+      {
+        "label": "Lost City Myth",
+        "query": "historical maps of Chichen Itza",
+        "query2": "ancient city excavation images",
+        "role": "myth",
+        "text": "Many believe Chichen Itza hides a lost city."
+      },
+      {
+        "label": "No Hidden City Found",
+        "query": "archaeological site excavation",
+        "query2": "archaeologists working",
+        "role": "truth",
+        "text": "Archaeological evidence shows no hidden city under it."
+      },
+      {
+        "label": "Explore the truth behind myths.",
+        "sub": "What other hidden treasures remain?",
+        "label_on": "Discover!",
+        "role": "callout",
+        "text": "UNVEIL THE TRUTH",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "query": "mystery exploration",
+        "query2": "exciting adventure clips",
+        "role": "cta",
+        "text": "Follow for a new mystery every day."
+      }
+    ],
+    "description": "Chichen Itza is famed for its splendor, but legends whisper of hidden cities. What's the truth behind these ancient myths? Follow for more explorations!",
+    "hashtags": [
+      "#ChichenItza",
+      "#LostCity",
+      "#Mysteries",
+      "#Archaeology",
+      "#AncientRuins",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Unexplainable Nazca Lines",
+    "thumb": "NAZCA LINES MYSTERY",
+    "place": "Nazca Desert",
+    "country": "Peru",
+    "scenes": [
+      {
+        "text": "In the 1920s, massive geoglyphs were uncovered in the Nazca Desert.",
+        "hook_top": "1920S HUGE GEOGYLPHS FOUND",
+        "query": "Nazca Desert geoglyphs",
+        "query2": "Nazca Lines overview",
+        "role": "hook"
+      },
+      {
+        "text": "These lines stretch across 1,000 square kilometers with intricate designs.",
+        "chips": [
+          {
+            "t": "800 geoglyphs",
+            "on": "Nazca Lines",
+            "style": "accent"
+          }
+        ],
+        "query": "Nazca Lines number of geoglyphs",
+        "query2": "Nazca Desert features",
+        "role": "fact"
+      },
+      {
+        "text": "Some shapes are so large they can only be seen from the sky.",
+        "chips": [
+          {
+            "t": "60 meters long",
+            "on": "geoglyphs",
+            "style": "white"
+          }
+        ],
+        "query": "Nazca Lines visibility",
+        "query2": "giant geoglyphs",
+        "role": "fact"
+      },
+      {
+        "text": "The purpose of these massive designs remains a tantalizing mystery!",
+        "reveal_top": "PURPOSE STILL UNCLEAR!",
+        "query": "Nazca Lines purpose mystery",
+        "query2": "Nazca Lines theories",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "call to action",
+        "query2": "follow for more",
+        "role": "cta"
+      }
+    ],
+    "description": "The Nazca Lines are one of the most intriguing mysteries of ancient civilization, with their purpose remaining elusive. Follow for more fascinating tales!",
+    "hashtags": [
+      "#NazcaLines",
+      "#AncientMysteries",
+      "#Geoglyphs",
+      "#Peru",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]
