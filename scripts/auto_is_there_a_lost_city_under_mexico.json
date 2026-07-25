@@ -1,0 +1,54 @@
+{
+  "title": "Is There a Lost City Under Mexico?",
+  "thumb": "LOST CITY?",
+  "place": "Chichen Itza",
+  "country": "Mexico",
+  "scenes": [
+    {
+      "hook_top": "HIDDEN CITY UNDER MEXICO",
+      "query": "drone footage of Chichen Itza",
+      "query2": "mystical scenery of ancient ruins",
+      "role": "hook",
+      "text": "Is there a hidden city beneath Chichen Itza?"
+    },
+    {
+      "label": "Lost City Myth",
+      "query": "historical maps of Chichen Itza",
+      "query2": "ancient city excavation images",
+      "role": "myth",
+      "text": "Many believe Chichen Itza hides a lost city."
+    },
+    {
+      "label": "No Hidden City Found",
+      "query": "archaeological site excavation",
+      "query2": "archaeologists working",
+      "role": "truth",
+      "text": "Archaeological evidence shows no hidden city under it."
+    },
+    {
+      "label": "Explore the truth behind myths.",
+      "sub": "What other hidden treasures remain?",
+      "label_on": "Discover!",
+      "role": "callout",
+      "text": "UNVEIL THE TRUTH",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "query": "mystery exploration",
+      "query2": "exciting adventure clips",
+      "role": "cta",
+      "text": "Follow for a new mystery every day."
+    }
+  ],
+  "description": "Chichen Itza is famed for its splendor, but legends whisper of hidden cities. What's the truth behind these ancient myths? Follow for more explorations!",
+  "hashtags": [
+    "#ChichenItza",
+    "#LostCity",
+    "#Mysteries",
+    "#Archaeology",
+    "#AncientRuins",
+    "#shorts",
+    "#fyp"
+  ]
+}

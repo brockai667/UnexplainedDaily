@@ -6745,5 +6745,190 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "What Lies Beyond The Nazca Lines?",
+    "thumb": "MYSTERIOUS NAZCA LINES",
+    "place": "Nazca, Peru",
+    "country": "Peru",
+    "scenes": [
+      {
+        "hook_top": "ANCIENT NAZCA GEOGYLPHS",
+        "query": "drone footage nazca lines",
+        "query2": "aerial view nazca lines",
+        "role": "hook",
+        "text": "Over 800 ancient geoglyphs in the desert!"
+      },
+      {
+        "chips": [
+          {
+            "t": "1,200 FEET",
+            "on": "largest geoglyph",
+            "style": "accent"
+          }
+        ],
+        "punch": "size",
+        "query": "documentary about nazca lines",
+        "query2": "informative about nazca lines",
+        "role": "fact",
+        "text": "The largest geoglyph measures 1,200 feet long."
+      },
+      {
+        "archive_label": "Nazca Lines Aerial View",
+        "archive_query": "Nazca Lines aerial view",
+        "role": "archive",
+        "text": "Wikimedia Commons search: \"Nazca Lines aerial view\""
+      },
+      {
+        "sub": "Theories abound, yet mystery prevails.",
+        "label_on": "Nazca Lines",
+        "role": "callout",
+        "text": "UNEXPLAINED ANCIENT ART",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "query": "ancient mysteries and artifacts",
+        "query2": "unexplained historical sites",
+        "role": "cta",
+        "text": "Follow if you can't stop asking why."
+      }
+    ],
+    "description": "The Nazca Lines have fascinated researchers for decades with their enormous geoglyphs etched into the Peruvian desert. Despite various theories, their purpose remains a mystery. Stay curious and follow for more!",
+    "hashtags": [
+      "#NazcaLines",
+      "#AncientMysteries",
+      "#Archaeology",
+      "#History",
+      "#Peru",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Puzzling Nazca Lines",
+    "thumb": "NAZCA LINES",
+    "place": "Nazca Desert",
+    "country": "Peru",
+    "scenes": [
+      {
+        "hook_top": "MYSTERIOUS GEOGLYPHS",
+        "query": "Nazca Lines overview",
+        "query2": "Nazca Lines aerial view",
+        "role": "hook",
+        "text": "Over 800 ancient geoglyphs seen from above?"
+      },
+      {
+        "chips": [
+          {
+            "t": "1,200 Feet Long",
+            "on": "length",
+            "style": "accent"
+          }
+        ],
+        "query": "largest Nazca figure",
+        "query2": "Nazca Lines size details",
+        "role": "fact",
+        "text": "The largest Nazca figure measures 1,200 feet in length."
+      },
+      {
+        "chips": [
+          {
+            "t": "500 BC - 500 AD",
+            "on": "dates",
+            "style": "white"
+          }
+        ],
+        "query": "Nazca Lines dating",
+        "query2": "Nazca Lines timeline",
+        "role": "fact",
+        "text": "They were created between 500 BC and 500 AD, but their purpose is still unclear."
+      },
+      {
+        "reveal_top": "CONNECT TO ASTRONOMY",
+        "query": "Nazca Lines astronomy theory",
+        "query2": "Nazca Lines research",
+        "role": "reveal",
+        "text": "Some theories link them to astronomy!"
+      },
+      {
+        "query": "call to action follow",
+        "query2": "engaging follow message",
+        "role": "cta",
+        "text": "Follow for the cases no one can explain."
+      }
+    ],
+    "description": "The Nazca Lines are a marvel of ancient engineering, yet their purpose remains a mystery. Could they have celestial connections? Join us to explore this ancient wonder! #shorts #NazcaLines #ancienthistory #geoglyphs #fyp",
+    "hashtags": [
+      "#shorts",
+      "#NazcaLines",
+      "#ancienthistory",
+      "#geoglyphs",
+      "#mystery",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Mystery of the Voynich Manuscript",
+    "thumb": "VOYNICH MANUSCRIPT",
+    "place": "Unknown Origin",
+    "country": "Unknown",
+    "scenes": [
+      {
+        "hook_top": "UNDECIPHERED TEXT",
+        "query": "Voynich manuscript overview",
+        "query2": "mysterious book Voynich",
+        "role": "hook",
+        "text": "A 600-year-old book written in an untranslatable language?"
+      },
+      {
+        "chips": [
+          {
+            "t": "240+ Pages",
+            "on": "pages",
+            "style": "accent"
+          }
+        ],
+        "query": "Voynich manuscript pages detail",
+        "query2": "count of pages in Voynich",
+        "role": "fact",
+        "text": "It contains over 240 pages filled with illustrations and text."
+      },
+      {
+        "chips": [
+          {
+            "t": "No Success Yet",
+            "on": "failure",
+            "style": "white"
+          }
+        ],
+        "query": "decoding attempts Voynich",
+        "query2": "Voynich decoding history",
+        "role": "fact",
+        "text": "Linguists and cryptographers have failed to decode it despite extensive analysis."
+      },
+      {
+        "reveal_top": "ORIGINS STILL UNCLEAR",
+        "query": "Voynich manuscript origins",
+        "query2": "research on Voynich origins",
+        "role": "reveal",
+        "text": "Its origins remain a complete enigma!"
+      },
+      {
+        "query": "call to action follow",
+        "query2": "engaging follow message",
+        "role": "cta",
+        "text": "Follow if you can't stop asking why."
+      }
+    ],
+    "description": "The Voynich Manuscript is a captivating puzzle that has intrigued scholars for centuries. What secrets does it hold? Follow us as we try to unlock its mysteries! #shorts #Voynich #mystery #ancientbooks #fyp",
+    "hashtags": [
+      "#shorts",
+      "#Voynich",
+      "#mystery",
+      "#ancientbooks",
+      "#enigma",
+      "#fyp"
+    ]
   }
 ]

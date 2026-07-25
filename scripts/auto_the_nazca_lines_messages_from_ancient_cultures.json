@@ -1,0 +1,56 @@
+{
+  "title": "The Nazca Lines: Messages from Ancient Cultures?",
+  "thumb": "MYSTERIOUS LAND ART",
+  "place": "Nazca Desert",
+  "country": "Peru",
+  "scenes": [
+    {
+      "hook_top": "MONUMENTAL EARTH ART",
+      "query": "Nazca Lines aerial view",
+      "query2": "geoglyphs in Peru",
+      "role": "hook",
+      "text": "These massive geoglyphs can be seen from space."
+    },
+    {
+      "label": "ALIEN ARTWORK",
+      "query": "Nazca Lines alien theories",
+      "query2": "extraterrestrial geoglyphs",
+      "role": "myth",
+      "text": "Some say they were created by aliens."
+    },
+    {
+      "label": "HUMAN RITUALISTIC CREATION",
+      "query": "Nazca Lines cultural significance",
+      "query2": "Nazca geoglyph history",
+      "role": "truth",
+      "text": "Experts believe they were made by ancient humans for religious rituals."
+    },
+    {
+      "label": "Cultural Enigmas Revealed",
+      "sub": "Understanding ancient practices.",
+      "label_on": "mysteries",
+      "role": "callout",
+      "text": "Ancient human mysteries!",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "query": "enthusiasts of ancient cultures",
+      "query2": "people interested in ancient mysteries",
+      "role": "cta",
+      "text": "Follow for a new mystery every day."
+    }
+  ],
+  "description": "The Nazca Lines, often thought to be connected to aliens, were likely a product of ancient human artistry and spirituality. Discover more about these fascinating creations and follow for more historic insights!",
+  "hashtags": [
+    "#NazcaLines",
+    "#Archaeology",
+    "#AncientMysteries",
+    "#shorts",
+    "#fyp",
+    "#Peru",
+    "#Geoglyphs",
+    "#History",
+    "#AncientCultures"
+  ]
+}
