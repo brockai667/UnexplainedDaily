@@ -1,0 +1,63 @@
+{
+  "title": "The Puzzling Nazca Lines",
+  "thumb": "NAZCA LINES",
+  "place": "Nazca Desert",
+  "country": "Peru",
+  "scenes": [
+    {
+      "hook_top": "MYSTERIOUS GEOGLYPHS",
+      "query": "Nazca Lines overview",
+      "query2": "Nazca Lines aerial view",
+      "role": "hook",
+      "text": "Over 800 ancient geoglyphs seen from above?"
+    },
+    {
+      "chips": [
+        {
+          "t": "1,200 Feet Long",
+          "on": "length",
+          "style": "accent"
+        }
+      ],
+      "query": "largest Nazca figure",
+      "query2": "Nazca Lines size details",
+      "role": "fact",
+      "text": "The largest Nazca figure measures 1,200 feet in length."
+    },
+    {
+      "chips": [
+        {
+          "t": "500 BC - 500 AD",
+          "on": "dates",
+          "style": "white"
+        }
+      ],
+      "query": "Nazca Lines dating",
+      "query2": "Nazca Lines timeline",
+      "role": "fact",
+      "text": "They were created between 500 BC and 500 AD, but their purpose is still unclear."
+    },
+    {
+      "reveal_top": "CONNECT TO ASTRONOMY",
+      "query": "Nazca Lines astronomy theory",
+      "query2": "Nazca Lines research",
+      "role": "reveal",
+      "text": "Some theories link them to astronomy!"
+    },
+    {
+      "query": "call to action follow",
+      "query2": "engaging follow message",
+      "role": "cta",
+      "text": "Follow for the cases no one can explain."
+    }
+  ],
+  "description": "The Nazca Lines are a marvel of ancient engineering, yet their purpose remains a mystery. Could they have celestial connections? Join us to explore this ancient wonder! #shorts #NazcaLines #ancienthistory #geoglyphs #fyp",
+  "hashtags": [
+    "#shorts",
+    "#NazcaLines",
+    "#ancienthistory",
+    "#geoglyphs",
+    "#mystery",
+    "#fyp"
+  ]
+}

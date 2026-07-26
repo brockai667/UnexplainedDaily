@@ -1,0 +1,64 @@
+{
+  "title": "The Unexplainable Nazca Lines",
+  "thumb": "NAZCA LINES MYSTERY",
+  "place": "Nazca Desert",
+  "country": "Peru",
+  "scenes": [
+    {
+      "text": "In the 1920s, massive geoglyphs were uncovered in the Nazca Desert.",
+      "hook_top": "1920S HUGE GEOGYLPHS FOUND",
+      "query": "Nazca Desert geoglyphs",
+      "query2": "Nazca Lines overview",
+      "role": "hook"
+    },
+    {
+      "text": "These lines stretch across 1,000 square kilometers with intricate designs.",
+      "chips": [
+        {
+          "t": "800 geoglyphs",
+          "on": "Nazca Lines",
+          "style": "accent"
+        }
+      ],
+      "query": "Nazca Lines number of geoglyphs",
+      "query2": "Nazca Desert features",
+      "role": "fact"
+    },
+    {
+      "text": "Some shapes are so large they can only be seen from the sky.",
+      "chips": [
+        {
+          "t": "60 meters long",
+          "on": "geoglyphs",
+          "style": "white"
+        }
+      ],
+      "query": "Nazca Lines visibility",
+      "query2": "giant geoglyphs",
+      "role": "fact"
+    },
+    {
+      "text": "The purpose of these massive designs remains a tantalizing mystery!",
+      "reveal_top": "PURPOSE STILL UNCLEAR!",
+      "query": "Nazca Lines purpose mystery",
+      "query2": "Nazca Lines theories",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "call to action",
+      "query2": "follow for more",
+      "role": "cta"
+    }
+  ],
+  "description": "The Nazca Lines are one of the most intriguing mysteries of ancient civilization, with their purpose remaining elusive. Follow for more fascinating tales!",
+  "hashtags": [
+    "#NazcaLines",
+    "#AncientMysteries",
+    "#Geoglyphs",
+    "#Peru",
+    "#shorts",
+    "#fyp"
+  ]
+}

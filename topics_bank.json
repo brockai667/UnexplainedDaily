@@ -6930,5 +6930,186 @@
       "#enigma",
       "#fyp"
     ]
+  },
+  {
+    "title": "The Shocking Truth of the Antikythera Device",
+    "thumb": "ANCIENT TECHNOLOGY REVEALED",
+    "place": "Antikythera Shipwreck",
+    "country": "Greece",
+    "scenes": [
+      {
+        "hook_top": "2000YEAROLD MYSTERY",
+        "query": "ancient device close-up",
+        "query2": "antique artifacts",
+        "role": "hook",
+        "text": "A 2,000-year-old device still baffles scientists!"
+      },
+      {
+        "chips": [
+          {
+            "t": "astrology",
+            "on": "predicted",
+            "style": "white"
+          }
+        ],
+        "query": "visual representation of astrological predictions",
+        "query2": "astronomy images",
+        "role": "fact",
+        "text": "It predicted astronomical positions with incredible accuracy."
+      },
+      {
+        "chips": [
+          {
+            "t": "first of its kind",
+            "on": "first",
+            "style": "accent"
+          }
+        ],
+        "query": "ancient technology demonstration",
+        "query2": "historical computing devices",
+        "role": "fact",
+        "text": "Thought to be the world's first analog computer."
+      },
+      {
+        "reveal_top": "FULL PURPOSE UNKNOWN",
+        "query": "surprising ancient device mystery",
+        "query2": "mysteries of history",
+        "role": "reveal",
+        "text": "But its full purpose is still a mystery!"
+      },
+      {
+        "query": "catchy call to action graphic",
+        "query2": "engaging ending",
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night."
+      }
+    ],
+    "description": "The Antikythera Mechanism is a breathtaking ancient device that has captivated researchers for centuries. Discover the astonishing facts that surround this historical enigma and what remains unsolved. #shorts #Antikythera #ancientmystery #technology #history #fyp",
+    "hashtags": [
+      "#Antikythera",
+      "#ancienttechnology",
+      "#mystery",
+      "#history",
+      "#fyp",
+      "#shorts",
+      "#unexplained"
+    ]
+  },
+  {
+    "title": "The Enigmatic Baghdad Battery: Ancient Power Source?",
+    "thumb": "ANCIENT POWER SOURCE",
+    "place": "Baghdad",
+    "country": "Iraq",
+    "scenes": [
+      {
+        "hook_top": "ANCIENT ELECTRICITY",
+        "query": "historical artifact displaying ancient battery",
+        "query2": "old battery artifacts",
+        "role": "hook",
+        "text": "Could the Baghdad Battery be the first battery?"
+      },
+      {
+        "label": "Myth: Tomb Electrifier",
+        "query": "ancient artifacts with myths",
+        "query2": "common myths about ancient technology",
+        "role": "myth",
+        "text": "The Baghdad Battery was designed for electrifying tombs."
+      },
+      {
+        "label": "Truth: Electroplating Device",
+        "query": "scientific explanations for ancient artifacts",
+        "query2": "electroplating ancient technology",
+        "role": "truth",
+        "text": "It likely served as a simple electroplating device."
+      },
+      {
+        "label": "What’s the truth?",
+        "sub": "Explore historical mysteries.",
+        "label_on": "Wonders",
+        "role": "callout",
+        "text": "Ancient Wonders!",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if you can't stop asking why.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "Explore the mystery of the Baghdad Battery, believed by some to be an ancient power source. Discover the fascinating truth behind it! #shorts #mysteries #ancientartifacts #BaghdadBattery #history #explained #fyp",
+    "hashtags": [
+      "#shorts",
+      "#mysteries",
+      "#ancientartifacts",
+      "#BaghdadBattery",
+      "#history",
+      "#explained",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "Nazca Lines: Ancient Mysteries Unveiled",
+    "thumb": "MYSTERIOUS GEOGLYPHS REVEALED",
+    "place": "Nazca Desert",
+    "country": "Peru",
+    "scenes": [
+      {
+        "hook_top": "800 GEOGLYPHS DISCOVERED",
+        "query": "Nazca Lines overview",
+        "query2": "geoglyphs aerial view",
+        "role": "hook",
+        "text": "Over 800 geometric shapes etched in the earth!"
+      },
+      {
+        "chips": [
+          {
+            "t": "170 square miles",
+            "on": "170",
+            "style": "white"
+          }
+        ],
+        "query": "massive landscape images",
+        "query2": "vast geographical landscapes",
+        "role": "fact",
+        "text": "They stretch over 170 square miles!"
+      },
+      {
+        "chips": [
+          {
+            "t": "1,200 feet lengths",
+            "on": "1,200",
+            "style": "accent"
+          }
+        ],
+        "query": "extensive geoglyph scale",
+        "query2": "massive formations",
+        "role": "fact",
+        "text": "Some shapes are 1,200 feet long!"
+      },
+      {
+        "reveal_top": "PURPOSE STILL UNKNOWN",
+        "query": "debate and discussion about Nazca Lines",
+        "query2": "mysterious ancient culture",
+        "role": "reveal",
+        "text": "Yet, their purpose is still debated!"
+      },
+      {
+        "query": "engaging call to action design",
+        "query2": "eye-catching ending",
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night."
+      }
+    ],
+    "description": "The Nazca Lines are one of the most remarkable mysteries of ancient civilizations, featuring massive geoglyphs that provoke endless questions. Join us as we explore the astonishing details of these fascinating creations! #shorts #NazcaLines #mystery #fyp #ancienthistory #geoglyphs",
+    "hashtags": [
+      "#NazcaLines",
+      "#mystery",
+      "#fyp",
+      "#shorts",
+      "#history",
+      "#ancientcivilizations"
+    ]
   }
 ]

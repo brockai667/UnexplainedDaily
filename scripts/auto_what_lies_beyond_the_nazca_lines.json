@@ -1,0 +1,59 @@
+{
+  "title": "What Lies Beyond The Nazca Lines?",
+  "thumb": "MYSTERIOUS NAZCA LINES",
+  "place": "Nazca, Peru",
+  "country": "Peru",
+  "scenes": [
+    {
+      "hook_top": "ANCIENT NAZCA GEOGYLPHS",
+      "query": "drone footage nazca lines",
+      "query2": "aerial view nazca lines",
+      "role": "hook",
+      "text": "Over 800 ancient geoglyphs in the desert!"
+    },
+    {
+      "chips": [
+        {
+          "t": "1,200 FEET",
+          "on": "largest geoglyph",
+          "style": "accent"
+        }
+      ],
+      "punch": "size",
+      "query": "documentary about nazca lines",
+      "query2": "informative about nazca lines",
+      "role": "fact",
+      "text": "The largest geoglyph measures 1,200 feet long."
+    },
+    {
+      "archive_label": "Nazca Lines Aerial View",
+      "archive_query": "Nazca Lines aerial view",
+      "role": "archive",
+      "text": "Wikimedia Commons search: \"Nazca Lines aerial view\""
+    },
+    {
+      "sub": "Theories abound, yet mystery prevails.",
+      "label_on": "Nazca Lines",
+      "role": "callout",
+      "text": "UNEXPLAINED ANCIENT ART",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "query": "ancient mysteries and artifacts",
+      "query2": "unexplained historical sites",
+      "role": "cta",
+      "text": "Follow if you can't stop asking why."
+    }
+  ],
+  "description": "The Nazca Lines have fascinated researchers for decades with their enormous geoglyphs etched into the Peruvian desert. Despite various theories, their purpose remains a mystery. Stay curious and follow for more!",
+  "hashtags": [
+    "#NazcaLines",
+    "#AncientMysteries",
+    "#Archaeology",
+    "#History",
+    "#Peru",
+    "#shorts",
+    "#fyp"
+  ]
+}
