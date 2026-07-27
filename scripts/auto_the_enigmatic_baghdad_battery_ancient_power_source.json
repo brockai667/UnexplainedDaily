@@ -1,0 +1,54 @@
+{
+  "title": "The Enigmatic Baghdad Battery: Ancient Power Source?",
+  "thumb": "ANCIENT POWER SOURCE",
+  "place": "Baghdad",
+  "country": "Iraq",
+  "scenes": [
+    {
+      "hook_top": "ANCIENT ELECTRICITY",
+      "query": "historical artifact displaying ancient battery",
+      "query2": "old battery artifacts",
+      "role": "hook",
+      "text": "Could the Baghdad Battery be the first battery?"
+    },
+    {
+      "label": "Myth: Tomb Electrifier",
+      "query": "ancient artifacts with myths",
+      "query2": "common myths about ancient technology",
+      "role": "myth",
+      "text": "The Baghdad Battery was designed for electrifying tombs."
+    },
+    {
+      "label": "Truth: Electroplating Device",
+      "query": "scientific explanations for ancient artifacts",
+      "query2": "electroplating ancient technology",
+      "role": "truth",
+      "text": "It likely served as a simple electroplating device."
+    },
+    {
+      "label": "What’s the truth?",
+      "sub": "Explore historical mysteries.",
+      "label_on": "Wonders",
+      "role": "callout",
+      "text": "Ancient Wonders!",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if you can't stop asking why.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "Explore the mystery of the Baghdad Battery, believed by some to be an ancient power source. Discover the fascinating truth behind it! #shorts #mysteries #ancientartifacts #BaghdadBattery #history #explained #fyp",
+  "hashtags": [
+    "#shorts",
+    "#mysteries",
+    "#ancientartifacts",
+    "#BaghdadBattery",
+    "#history",
+    "#explained",
+    "#fyp"
+  ]
+}

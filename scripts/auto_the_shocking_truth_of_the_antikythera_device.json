@@ -1,0 +1,64 @@
+{
+  "title": "The Shocking Truth of the Antikythera Device",
+  "thumb": "ANCIENT TECHNOLOGY REVEALED",
+  "place": "Antikythera Shipwreck",
+  "country": "Greece",
+  "scenes": [
+    {
+      "hook_top": "2000YEAROLD MYSTERY",
+      "query": "ancient device close-up",
+      "query2": "antique artifacts",
+      "role": "hook",
+      "text": "A 2,000-year-old device still baffles scientists!"
+    },
+    {
+      "chips": [
+        {
+          "t": "astrology",
+          "on": "predicted",
+          "style": "white"
+        }
+      ],
+      "query": "visual representation of astrological predictions",
+      "query2": "astronomy images",
+      "role": "fact",
+      "text": "It predicted astronomical positions with incredible accuracy."
+    },
+    {
+      "chips": [
+        {
+          "t": "first of its kind",
+          "on": "first",
+          "style": "accent"
+        }
+      ],
+      "query": "ancient technology demonstration",
+      "query2": "historical computing devices",
+      "role": "fact",
+      "text": "Thought to be the world's first analog computer."
+    },
+    {
+      "reveal_top": "FULL PURPOSE UNKNOWN",
+      "query": "surprising ancient device mystery",
+      "query2": "mysteries of history",
+      "role": "reveal",
+      "text": "But its full purpose is still a mystery!"
+    },
+    {
+      "query": "catchy call to action graphic",
+      "query2": "engaging ending",
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night."
+    }
+  ],
+  "description": "The Antikythera Mechanism is a breathtaking ancient device that has captivated researchers for centuries. Discover the astonishing facts that surround this historical enigma and what remains unsolved. #shorts #Antikythera #ancientmystery #technology #history #fyp",
+  "hashtags": [
+    "#Antikythera",
+    "#ancienttechnology",
+    "#mystery",
+    "#history",
+    "#fyp",
+    "#shorts",
+    "#unexplained"
+  ]
+}

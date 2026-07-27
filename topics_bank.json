@@ -7111,5 +7111,189 @@
       "#history",
       "#ancientcivilizations"
     ]
+  },
+  {
+    "title": "The Mysterious Nazca Lines: Who Made Them?",
+    "thumb": "NAZCA LINES MYSTERY",
+    "place": "Nazca Desert",
+    "country": "Peru",
+    "scenes": [
+      {
+        "hook_top": "800 ANCIENT GEOGLYPHS DISCOVERED",
+        "query": "aerial view of Nazca Lines",
+        "query2": "Peru desert landscape",
+        "role": "hook",
+        "text": "Over 800 ancient geoglyphs in Peru remain unexplained."
+      },
+      {
+        "chips": [
+          {
+            "t": "1,200 feet",
+            "on": "largest",
+            "style": "accent"
+          }
+        ],
+        "query": "close-up of Nazca geoglyph",
+        "query2": "history of ancient cultures",
+        "role": "fact",
+        "text": "The largest of these figures stretches over 1,200 feet!"
+      },
+      {
+        "chips": [
+          {
+            "t": "STILL A MYSTERY",
+            "on": "mystery",
+            "style": "white"
+          }
+        ],
+        "query": "theory brainstorming on ancient artifacts",
+        "query2": "mysterious archaeological finds",
+        "role": "fact",
+        "text": "Despite various theories, their purpose is still a mystery."
+      },
+      {
+        "reveal_top": "MESSAGES TO THE GODS",
+        "query": "illustration of ancient rituals",
+        "query2": "spiritual significance of ancient art",
+        "role": "reveal",
+        "text": "Some think they are messages to the gods!"
+      },
+      {
+        "query": "engaging call to action",
+        "query2": "mystical scenery",
+        "role": "cta",
+        "text": "Follow for daily unexplained mysteries."
+      }
+    ],
+    "description": "The Nazca Lines have baffled researchers for decades. What secrets do they hold? Follow for more insights into ancient mysteries!",
+    "hashtags": [
+      "#NazcaLines",
+      "#AncientMysteries",
+      "#Archaeology",
+      "#FascinatingHistory",
+      "#Shorts",
+      "#Mystery",
+      "#Exploration"
+    ]
+  },
+  {
+    "title": "Titan's Unknown Substance: Alien or Natural?",
+    "thumb": "ALIEN SUBSTANCE DETECTED!",
+    "place": "Titan",
+    "country": "Saturn's Moon",
+    "scenes": [
+      {
+        "text": "What did scientists find on Titan's surface?",
+        "hook_top": "ALIEN SUBSTANCE DETECTED",
+        "query": "Titan moon surface discovery",
+        "query2": "Saturn moon strange finding",
+        "role": "hook"
+      },
+      {
+        "text": "Some believe it could signal extraterrestrial life.",
+        "label": "Myth: Proof of Aliens",
+        "query": "alien life Titan mythology",
+        "query2": "extraterrestrial beliefs",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "text": "However, it may actually be a natural hydrocarbon formation.",
+        "label": "Truth: Natural Hydrocarbon",
+        "query": "natural hydrocarbon compounds",
+        "query2": "Titan surface scientific explanation",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "text": "Unravel the mysteries of outer space!",
+        "label": "SPACE MYSTERIES UNVEILED!",
+        "sub": "Explore the truth about Titan!",
+        "label_on": "space mysteries",
+        "role": "fact",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves",
+        "chips": []
+      },
+      {
+        "text": "Follow for a new mystery every day.",
+        "query": "space discoveries unexplained",
+        "query2": "alien research",
+        "role": "cta"
+      }
+    ],
+    "description": "An intriguing substance detected on Titan raises questions about life beyond Earth. Is it natural, or does it hint at aliens? Follow for more cosmic mysteries.",
+    "hashtags": [
+      "#Titan",
+      "#SpaceMysteries",
+      "#ExtraterrestrialLife",
+      "#Astrobiology",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Voynich Manuscript: The Riddle Continues!",
+    "thumb": "UNCRACKED CODE",
+    "place": "Unknown",
+    "country": "Unknown",
+    "scenes": [
+      {
+        "hook_top": "600 YEAROLD MYSTERY",
+        "query": "mysterious ancient manuscript",
+        "query2": "old books archive",
+        "role": "hook",
+        "text": "Over 600 years old, but still unreadable!"
+      },
+      {
+        "chips": [
+          {
+            "t": "NO KNOWN LANGUAGE",
+            "on": "language",
+            "style": "accent"
+          }
+        ],
+        "query": "close-up of cryptic writing",
+        "query2": "historic book analysis",
+        "role": "fact",
+        "text": "Its unique script has no known language."
+      },
+      {
+        "chips": [
+          {
+            "t": "THOUSANDS OF HOURS",
+            "on": "thousands",
+            "style": "white"
+          }
+        ],
+        "query": "team of cryptographers working",
+        "query2": "dedicated researchers",
+        "role": "fact",
+        "text": "Experts estimate thousands of hours spent trying to decode it."
+      },
+      {
+        "reveal_top": "AN ELABORATE HOAX",
+        "query": "mysterious ancient scams",
+        "query2": "artistic deception",
+        "role": "reveal",
+        "text": "Some believe it might be an elaborate hoax!"
+      },
+      {
+        "query": "engaging call to action",
+        "query2": "enigma engaging scene",
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night."
+      }
+    ],
+    "description": "The enigmatic Voynich Manuscript puzzles scholars and adventurers alike. Is it genuine or a clever ruse? Follow for more intriguing tales!",
+    "hashtags": [
+      "#VoynichManuscript",
+      "#UnsolvedMystery",
+      "#Cryptography",
+      "#History",
+      "#Shorts",
+      "#Mystery",
+      "#Curiosity"
+    ]
   }
 ]

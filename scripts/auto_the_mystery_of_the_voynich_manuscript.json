@@ -1,0 +1,63 @@
+{
+  "title": "The Mystery of the Voynich Manuscript",
+  "thumb": "VOYNICH MANUSCRIPT",
+  "place": "Unknown Origin",
+  "country": "Unknown",
+  "scenes": [
+    {
+      "hook_top": "UNDECIPHERED TEXT",
+      "query": "Voynich manuscript overview",
+      "query2": "mysterious book Voynich",
+      "role": "hook",
+      "text": "A 600-year-old book written in an untranslatable language?"
+    },
+    {
+      "chips": [
+        {
+          "t": "240+ Pages",
+          "on": "pages",
+          "style": "accent"
+        }
+      ],
+      "query": "Voynich manuscript pages detail",
+      "query2": "count of pages in Voynich",
+      "role": "fact",
+      "text": "It contains over 240 pages filled with illustrations and text."
+    },
+    {
+      "chips": [
+        {
+          "t": "No Success Yet",
+          "on": "failure",
+          "style": "white"
+        }
+      ],
+      "query": "decoding attempts Voynich",
+      "query2": "Voynich decoding history",
+      "role": "fact",
+      "text": "Linguists and cryptographers have failed to decode it despite extensive analysis."
+    },
+    {
+      "reveal_top": "ORIGINS STILL UNCLEAR",
+      "query": "Voynich manuscript origins",
+      "query2": "research on Voynich origins",
+      "role": "reveal",
+      "text": "Its origins remain a complete enigma!"
+    },
+    {
+      "query": "call to action follow",
+      "query2": "engaging follow message",
+      "role": "cta",
+      "text": "Follow if you can't stop asking why."
+    }
+  ],
+  "description": "The Voynich Manuscript is a captivating puzzle that has intrigued scholars for centuries. What secrets does it hold? Follow us as we try to unlock its mysteries! #shorts #Voynich #mystery #ancientbooks #fyp",
+  "hashtags": [
+    "#shorts",
+    "#Voynich",
+    "#mystery",
+    "#ancientbooks",
+    "#enigma",
+    "#fyp"
+  ]
+}
