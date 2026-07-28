@@ -7295,5 +7295,185 @@
       "#Mystery",
       "#Curiosity"
     ]
+  },
+  {
+    "title": "The Mysterious Baghdad Battery: Ancient Power Source?",
+    "thumb": "ANCIENT POWER SOURCE",
+    "place": "Baghdad",
+    "country": "Iraq",
+    "scenes": [
+      {
+        "hook_top": "BAGHDAD BATTERY MYSTERY",
+        "query": "ancient Baghdad Battery artifact",
+        "query2": "historical Baghdad Battery",
+        "role": "hook",
+        "text": "The Baghdad Battery: An ancient mystery! What was it for?"
+      },
+      {
+        "chips": [
+          {
+            "t": "250 BC",
+            "on": "dates back",
+            "style": "white"
+          }
+        ],
+        "query": "historical artifact discovery",
+        "query2": "ancient artifacts",
+        "role": "fact",
+        "text": "Discovered in 1938, it dates back to 250 BC."
+      },
+      {
+        "chips": [
+          {
+            "t": "electroplating",
+            "on": "used for",
+            "style": "accent"
+          }
+        ],
+        "query": "electroplating ancient technology",
+        "query2": "historical technology debates",
+        "role": "fact",
+        "text": "Some believe it might have been used for electroplating."
+      },
+      {
+        "reveal_top": "PURPOSE STILL A MYSTERY",
+        "query": "mystery of Baghdad Battery",
+        "query2": "unresolved historical mysteries",
+        "role": "reveal",
+        "text": "But its exact purpose remains unknown!"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if you can't stop asking why.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "The Baghdad Battery is an ancient artifact that has puzzled historians for decades. Its potential use as an energy source sparks curiosity and debate. Follow us for more intriguing mysteries!",
+    "hashtags": [
+      "#BaghdadBattery",
+      "#AncientMysteries",
+      "#History",
+      "#Unexplained",
+      "#Shorts",
+      "#FYP"
+    ]
+  },
+  {
+    "title": "The Antikythera Mechanism: Ancient Tech Unraveled?",
+    "thumb": "ANCIENT TECH REVEALED",
+    "place": "Antikythera",
+    "country": "Greece",
+    "scenes": [
+      {
+        "hook_top": "ANCIENT GREEK COMPUTER",
+        "query": "Antikythera Mechanism historical artifact",
+        "query2": "ancient technology disassembly",
+        "role": "hook",
+        "text": "Over 2000 years ago, a device like no other was found!"
+      },
+      {
+        "chips": [
+          {
+            "t": "1901",
+            "on": "discovered",
+            "style": "white"
+          }
+        ],
+        "query": "Antikythera Mechanism shipwreck",
+        "query2": "archaeological discoveries",
+        "role": "fact",
+        "text": "It was discovered in a shipwreck in 1901."
+      },
+      {
+        "chips": [
+          {
+            "t": "predicted eclipses",
+            "on": "predicted",
+            "style": "accent"
+          }
+        ],
+        "query": "astrological predictions ancient device",
+        "query2": "mechanical astronomy",
+        "role": "fact",
+        "text": "This device predicted astronomical positions and eclipses."
+      },
+      {
+        "reveal_top": "FULL COMPLEXITY REMAINS",
+        "query": "complexity of Antikythera Mechanism",
+        "query2": "ancient engineering marvels",
+        "role": "reveal",
+        "text": "Yet, its full complexity is still unraveling!"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "The Antikythera Mechanism is often dubbed the first analog computer. It continues to amaze researchers with its intricate design and unknown features. Follow us for deeper dives into history!",
+    "hashtags": [
+      "#AntikytheraMechanism",
+      "#AncientTech",
+      "#History",
+      "#Unexplained",
+      "#Shorts",
+      "#FYP"
+    ]
+  },
+  {
+    "title": "The Antikythera Mechanism: Ancient Tech or Alien Artifact?",
+    "thumb": "ANCIENT MYSTERY REVEALED",
+    "place": "Antikythera",
+    "country": "Greece",
+    "scenes": [
+      {
+        "hook_top": "ALIEN TECHNOLOGY IN GREECE",
+        "query": "ancient mechanical device",
+        "query2": "historical artifacts",
+        "role": "hook",
+        "text": "Could this ancient device be an alien technology?"
+      },
+      {
+        "label": "Oversimplified device",
+        "query": "simple mechanical calculator",
+        "query2": "ancient Greek inventions",
+        "role": "myth",
+        "text": "It's a simple calculator created by ancient Greeks."
+      },
+      {
+        "label": "Advanced astronomical tool",
+        "query": "astrological prediction device",
+        "query2": "ancient technology",
+        "role": "truth",
+        "text": "It's a complex astronomical calculator used for predicting celestial events."
+      },
+      {
+        "label": "Discover ancient wonders",
+        "sub": "Unravel the secrets of ancient Greece.",
+        "label_on": "secrets",
+        "role": "callout",
+        "text": "Ancient tech mysteries!",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "The Antikythera Mechanism is a stunning artifact that has fascinated scholars. Delve into its true purpose and complexity! Join us in exploring ancient tech! #shorts #Antikythera #ancientlore #mysteries #unexplained #history #Greece",
+    "hashtags": [
+      "#shorts",
+      "#Antikythera",
+      "#ancientlore",
+      "#mysteries",
+      "#unexplained",
+      "#history",
+      "#Greece"
+    ]
   }
 ]

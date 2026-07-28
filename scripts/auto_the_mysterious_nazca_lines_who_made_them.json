@@ -1,0 +1,64 @@
+{
+  "title": "The Mysterious Nazca Lines: Who Made Them?",
+  "thumb": "NAZCA LINES MYSTERY",
+  "place": "Nazca Desert",
+  "country": "Peru",
+  "scenes": [
+    {
+      "hook_top": "800 ANCIENT GEOGLYPHS DISCOVERED",
+      "query": "aerial view of Nazca Lines",
+      "query2": "Peru desert landscape",
+      "role": "hook",
+      "text": "Over 800 ancient geoglyphs in Peru remain unexplained."
+    },
+    {
+      "chips": [
+        {
+          "t": "1,200 feet",
+          "on": "largest",
+          "style": "accent"
+        }
+      ],
+      "query": "close-up of Nazca geoglyph",
+      "query2": "history of ancient cultures",
+      "role": "fact",
+      "text": "The largest of these figures stretches over 1,200 feet!"
+    },
+    {
+      "chips": [
+        {
+          "t": "STILL A MYSTERY",
+          "on": "mystery",
+          "style": "white"
+        }
+      ],
+      "query": "theory brainstorming on ancient artifacts",
+      "query2": "mysterious archaeological finds",
+      "role": "fact",
+      "text": "Despite various theories, their purpose is still a mystery."
+    },
+    {
+      "reveal_top": "MESSAGES TO THE GODS",
+      "query": "illustration of ancient rituals",
+      "query2": "spiritual significance of ancient art",
+      "role": "reveal",
+      "text": "Some think they are messages to the gods!"
+    },
+    {
+      "query": "engaging call to action",
+      "query2": "mystical scenery",
+      "role": "cta",
+      "text": "Follow for daily unexplained mysteries."
+    }
+  ],
+  "description": "The Nazca Lines have baffled researchers for decades. What secrets do they hold? Follow for more insights into ancient mysteries!",
+  "hashtags": [
+    "#NazcaLines",
+    "#AncientMysteries",
+    "#Archaeology",
+    "#FascinatingHistory",
+    "#Shorts",
+    "#Mystery",
+    "#Exploration"
+  ]
+}

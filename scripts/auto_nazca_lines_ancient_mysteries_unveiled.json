@@ -1,0 +1,63 @@
+{
+  "title": "Nazca Lines: Ancient Mysteries Unveiled",
+  "thumb": "MYSTERIOUS GEOGLYPHS REVEALED",
+  "place": "Nazca Desert",
+  "country": "Peru",
+  "scenes": [
+    {
+      "hook_top": "800 GEOGLYPHS DISCOVERED",
+      "query": "Nazca Lines overview",
+      "query2": "geoglyphs aerial view",
+      "role": "hook",
+      "text": "Over 800 geometric shapes etched in the earth!"
+    },
+    {
+      "chips": [
+        {
+          "t": "170 square miles",
+          "on": "170",
+          "style": "white"
+        }
+      ],
+      "query": "massive landscape images",
+      "query2": "vast geographical landscapes",
+      "role": "fact",
+      "text": "They stretch over 170 square miles!"
+    },
+    {
+      "chips": [
+        {
+          "t": "1,200 feet lengths",
+          "on": "1,200",
+          "style": "accent"
+        }
+      ],
+      "query": "extensive geoglyph scale",
+      "query2": "massive formations",
+      "role": "fact",
+      "text": "Some shapes are 1,200 feet long!"
+    },
+    {
+      "reveal_top": "PURPOSE STILL UNKNOWN",
+      "query": "debate and discussion about Nazca Lines",
+      "query2": "mysterious ancient culture",
+      "role": "reveal",
+      "text": "Yet, their purpose is still debated!"
+    },
+    {
+      "query": "engaging call to action design",
+      "query2": "eye-catching ending",
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night."
+    }
+  ],
+  "description": "The Nazca Lines are one of the most remarkable mysteries of ancient civilizations, featuring massive geoglyphs that provoke endless questions. Join us as we explore the astonishing details of these fascinating creations! #shorts #NazcaLines #mystery #fyp #ancienthistory #geoglyphs",
+  "hashtags": [
+    "#NazcaLines",
+    "#mystery",
+    "#fyp",
+    "#shorts",
+    "#history",
+    "#ancientcivilizations"
+  ]
+}
