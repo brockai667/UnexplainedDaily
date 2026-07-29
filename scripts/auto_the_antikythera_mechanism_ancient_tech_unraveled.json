@@ -1,0 +1,63 @@
+{
+  "title": "The Antikythera Mechanism: Ancient Tech Unraveled?",
+  "thumb": "ANCIENT TECH REVEALED",
+  "place": "Antikythera",
+  "country": "Greece",
+  "scenes": [
+    {
+      "hook_top": "ANCIENT GREEK COMPUTER",
+      "query": "Antikythera Mechanism historical artifact",
+      "query2": "ancient technology disassembly",
+      "role": "hook",
+      "text": "Over 2000 years ago, a device like no other was found!"
+    },
+    {
+      "chips": [
+        {
+          "t": "1901",
+          "on": "discovered",
+          "style": "white"
+        }
+      ],
+      "query": "Antikythera Mechanism shipwreck",
+      "query2": "archaeological discoveries",
+      "role": "fact",
+      "text": "It was discovered in a shipwreck in 1901."
+    },
+    {
+      "chips": [
+        {
+          "t": "predicted eclipses",
+          "on": "predicted",
+          "style": "accent"
+        }
+      ],
+      "query": "astrological predictions ancient device",
+      "query2": "mechanical astronomy",
+      "role": "fact",
+      "text": "This device predicted astronomical positions and eclipses."
+    },
+    {
+      "reveal_top": "FULL COMPLEXITY REMAINS",
+      "query": "complexity of Antikythera Mechanism",
+      "query2": "ancient engineering marvels",
+      "role": "reveal",
+      "text": "Yet, its full complexity is still unraveling!"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "The Antikythera Mechanism is often dubbed the first analog computer. It continues to amaze researchers with its intricate design and unknown features. Follow us for deeper dives into history!",
+  "hashtags": [
+    "#AntikytheraMechanism",
+    "#AncientTech",
+    "#History",
+    "#Unexplained",
+    "#Shorts",
+    "#FYP"
+  ]
+}

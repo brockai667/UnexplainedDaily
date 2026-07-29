@@ -7475,5 +7475,188 @@
       "#history",
       "#Greece"
     ]
+  },
+  {
+    "title": "The Enigmatic Voynich Manuscript Explained",
+    "thumb": "UNREADABLE SCRIPT REVEAL",
+    "place": "Unknown",
+    "country": "Unknown",
+    "scenes": [
+      {
+        "text": "This book dates back to the early 15th century.",
+        "hook_top": "15TH CENTURY MYSTERY",
+        "query": "Voynich Manuscript history",
+        "query2": "historical manuscripts",
+        "role": "hook"
+      },
+      {
+        "text": "It features unknown language and bizarre illustrations.",
+        "chips": [
+          {
+            "t": "UNKNOWN LANGUAGE",
+            "on": "unknown",
+            "style": "white"
+          }
+        ],
+        "query": "illustrations in Voynich",
+        "query2": "strange book art",
+        "role": "fact"
+      },
+      {
+        "text": "Experts still can't decipher its writings!",
+        "query": "deciphering Voynich Manuscript",
+        "query2": "linguistic mysteries",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "text": "Many believe it's an elaborate hoax.",
+        "reveal_top": "ELABORATE HOAX THEORY!",
+        "query": "Voynich Manuscript hoax theories",
+        "query2": "hoaxes in history",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "follow manuscript mysteries",
+        "query2": "subscribe for insights",
+        "role": "cta"
+      }
+    ],
+    "description": "The Voynich Manuscript remains one of the most puzzling texts, written in a language no one has ever been able to read. Could it be a sophisticated hoax? #shorts #Voynich #mystery #manuscripts #fyp",
+    "hashtags": [
+      "#shorts",
+      "#Voynich",
+      "#mystery",
+      "#manuscripts",
+      "#history",
+      "#enigmas",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "Lost Signals: The Mystery of the Wow! Signal",
+    "thumb": "WOW! SIGNAL MYSTERY",
+    "place": "Ohio",
+    "country": "USA",
+    "scenes": [
+      {
+        "hook_top": "WOW SIGNAL MYSTERY",
+        "query": "radio telescope operation",
+        "query2": "SETI signal detection",
+        "role": "hook",
+        "text": "A 1977 radio signal still unexplained!"
+      },
+      {
+        "chips": [
+          {
+            "t": "72 seconds",
+            "on": "Wow! Signal",
+            "style": "white"
+          }
+        ],
+        "punch": "bizarre",
+        "query": "scientists analyzing signals",
+        "query2": "radio astronomy",
+        "role": "fact",
+        "text": "It lasted 72 seconds!"
+      },
+      {
+        "archive_query": "Wow! Signal chart",
+        "archive_label": "Wow! Signal Detected",
+        "role": "archive",
+        "text": "https://commons.wikimedia.org/wiki/File:Wow_signal.png"
+      },
+      {
+        "sub": "Was it alien communication?",
+        "label_on": "Wow! Signal",
+        "query": "experts debating Wow! Signal",
+        "query2": "SETI discussions",
+        "role": "callout",
+        "text": "UNEXPLAINED PHENOMENON"
+      },
+      {
+        "query": "SETI research",
+        "query2": "alien signal analysis",
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night."
+      }
+    ],
+    "description": "The Wow! Signal, captured in 1977, remains an enduring mystery in the search for extraterrestrial life. What was its origin? Follow us for more thrilling enigmas.",
+    "hashtags": [
+      "#WowSignal",
+      "#SETI",
+      "#SpaceMystery",
+      "#Astronomy",
+      "#Aliens",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Enigmatic Antikythera Mechanism Revealed",
+    "thumb": "ANCIENT TECH REVEALED",
+    "place": "Antikythera",
+    "country": "Greece",
+    "scenes": [
+      {
+        "text": "This ancient artifact from 150 BC baffled scientists for decades.",
+        "hook_top": "ANCIENT ARTIFACT BAFFLES SCIENCE",
+        "query": "ancient artifact Antikythera",
+        "query2": "ancient devices",
+        "role": "hook"
+      },
+      {
+        "text": "It’s believed to be the world’s first analog computer.",
+        "chips": [
+          {
+            "t": "FIRST COMPUTER",
+            "on": "first",
+            "style": "white"
+          }
+        ],
+        "query": "first computer history",
+        "query2": "historical computing devices",
+        "role": "fact"
+      },
+      {
+        "text": "Over 30 gears were found, indicating advanced engineering.",
+        "chips": [
+          {
+            "t": "30 GEARS DISCOVERED",
+            "on": "30",
+            "style": "accent"
+          }
+        ],
+        "query": "advanced ancient engineering",
+        "query2": "mechanical devices",
+        "role": "fact"
+      },
+      {
+        "text": "But its exact purpose remains a mystery!",
+        "reveal_top": "PURPOSE STILL UNKNOWN!",
+        "query": "mystery of Antikythera",
+        "query2": "historical mysteries",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "text": "Follow for a new mystery every day.",
+        "query": "follow mysteries updates",
+        "query2": "subscribe for more",
+        "role": "cta"
+      }
+    ],
+    "description": "The Antikythera Mechanism is a marvel of ancient engineering that still holds secrets over two millennia later. Discover why its purpose has eluded experts! #shorts #mystery #history #ancientartifacts #Antikythera #engineering #fyp",
+    "hashtags": [
+      "#shorts",
+      "#mystery",
+      "#history",
+      "#ancientartifacts",
+      "#Antikythera",
+      "#engineering",
+      "#fyp"
+    ]
   }
 ]

@@ -1,0 +1,64 @@
+{
+  "title": "The Voynich Manuscript: The Riddle Continues!",
+  "thumb": "UNCRACKED CODE",
+  "place": "Unknown",
+  "country": "Unknown",
+  "scenes": [
+    {
+      "hook_top": "600 YEAROLD MYSTERY",
+      "query": "mysterious ancient manuscript",
+      "query2": "old books archive",
+      "role": "hook",
+      "text": "Over 600 years old, but still unreadable!"
+    },
+    {
+      "chips": [
+        {
+          "t": "NO KNOWN LANGUAGE",
+          "on": "language",
+          "style": "accent"
+        }
+      ],
+      "query": "close-up of cryptic writing",
+      "query2": "historic book analysis",
+      "role": "fact",
+      "text": "Its unique script has no known language."
+    },
+    {
+      "chips": [
+        {
+          "t": "THOUSANDS OF HOURS",
+          "on": "thousands",
+          "style": "white"
+        }
+      ],
+      "query": "team of cryptographers working",
+      "query2": "dedicated researchers",
+      "role": "fact",
+      "text": "Experts estimate thousands of hours spent trying to decode it."
+    },
+    {
+      "reveal_top": "AN ELABORATE HOAX",
+      "query": "mysterious ancient scams",
+      "query2": "artistic deception",
+      "role": "reveal",
+      "text": "Some believe it might be an elaborate hoax!"
+    },
+    {
+      "query": "engaging call to action",
+      "query2": "enigma engaging scene",
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night."
+    }
+  ],
+  "description": "The enigmatic Voynich Manuscript puzzles scholars and adventurers alike. Is it genuine or a clever ruse? Follow for more intriguing tales!",
+  "hashtags": [
+    "#VoynichManuscript",
+    "#UnsolvedMystery",
+    "#Cryptography",
+    "#History",
+    "#Shorts",
+    "#Mystery",
+    "#Curiosity"
+  ]
+}

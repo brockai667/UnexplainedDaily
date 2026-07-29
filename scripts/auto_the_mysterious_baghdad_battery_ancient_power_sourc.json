@@ -1,0 +1,63 @@
+{
+  "title": "The Mysterious Baghdad Battery: Ancient Power Source?",
+  "thumb": "ANCIENT POWER SOURCE",
+  "place": "Baghdad",
+  "country": "Iraq",
+  "scenes": [
+    {
+      "hook_top": "BAGHDAD BATTERY MYSTERY",
+      "query": "ancient Baghdad Battery artifact",
+      "query2": "historical Baghdad Battery",
+      "role": "hook",
+      "text": "The Baghdad Battery: An ancient mystery! What was it for?"
+    },
+    {
+      "chips": [
+        {
+          "t": "250 BC",
+          "on": "dates back",
+          "style": "white"
+        }
+      ],
+      "query": "historical artifact discovery",
+      "query2": "ancient artifacts",
+      "role": "fact",
+      "text": "Discovered in 1938, it dates back to 250 BC."
+    },
+    {
+      "chips": [
+        {
+          "t": "electroplating",
+          "on": "used for",
+          "style": "accent"
+        }
+      ],
+      "query": "electroplating ancient technology",
+      "query2": "historical technology debates",
+      "role": "fact",
+      "text": "Some believe it might have been used for electroplating."
+    },
+    {
+      "reveal_top": "PURPOSE STILL A MYSTERY",
+      "query": "mystery of Baghdad Battery",
+      "query2": "unresolved historical mysteries",
+      "role": "reveal",
+      "text": "But its exact purpose remains unknown!"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if you can't stop asking why.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "The Baghdad Battery is an ancient artifact that has puzzled historians for decades. Its potential use as an energy source sparks curiosity and debate. Follow us for more intriguing mysteries!",
+  "hashtags": [
+    "#BaghdadBattery",
+    "#AncientMysteries",
+    "#History",
+    "#Unexplained",
+    "#Shorts",
+    "#FYP"
+  ]
+}
