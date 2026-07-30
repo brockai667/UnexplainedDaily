@@ -1,0 +1,54 @@
+{
+  "title": "The Antikythera Mechanism: Ancient Tech or Alien Artifact?",
+  "thumb": "ANCIENT MYSTERY REVEALED",
+  "place": "Antikythera",
+  "country": "Greece",
+  "scenes": [
+    {
+      "hook_top": "ALIEN TECHNOLOGY IN GREECE",
+      "query": "ancient mechanical device",
+      "query2": "historical artifacts",
+      "role": "hook",
+      "text": "Could this ancient device be an alien technology?"
+    },
+    {
+      "label": "Oversimplified device",
+      "query": "simple mechanical calculator",
+      "query2": "ancient Greek inventions",
+      "role": "myth",
+      "text": "It's a simple calculator created by ancient Greeks."
+    },
+    {
+      "label": "Advanced astronomical tool",
+      "query": "astrological prediction device",
+      "query2": "ancient technology",
+      "role": "truth",
+      "text": "It's a complex astronomical calculator used for predicting celestial events."
+    },
+    {
+      "label": "Discover ancient wonders",
+      "sub": "Unravel the secrets of ancient Greece.",
+      "label_on": "secrets",
+      "role": "callout",
+      "text": "Ancient tech mysteries!",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "The Antikythera Mechanism is a stunning artifact that has fascinated scholars. Delve into its true purpose and complexity! Join us in exploring ancient tech! #shorts #Antikythera #ancientlore #mysteries #unexplained #history #Greece",
+  "hashtags": [
+    "#shorts",
+    "#Antikythera",
+    "#ancientlore",
+    "#mysteries",
+    "#unexplained",
+    "#history",
+    "#Greece"
+  ]
+}

@@ -7658,5 +7658,187 @@
       "#engineering",
       "#fyp"
     ]
+  },
+  {
+    "title": "The Unexplained Mystery of the Baghdad Battery",
+    "thumb": "BAGHDAD BATTERY",
+    "place": "Baghdad",
+    "country": "Iraq",
+    "scenes": [
+      {
+        "hook_top": "ELECTRICITY IN ANTIQUITY",
+        "query": "archaeological site Baghdad battery",
+        "query2": "historical artifacts discovery",
+        "role": "hook",
+        "text": "1,800 years ago, electricity was harnessed?"
+      },
+      {
+        "chips": [
+          {
+            "t": "1,800 years",
+            "on": "spoke",
+            "style": "white"
+          }
+        ],
+        "query": "Baghdad battery scientific explanation",
+        "query2": "ancient technology theories",
+        "role": "fact",
+        "text": "The Baghdad Battery may have been an ancient galvanic cell."
+      },
+      {
+        "chips": [
+          {
+            "t": "advanced craftsmanship",
+            "on": "electroplating",
+            "style": "accent"
+          }
+        ],
+        "query": "Baghdad battery electroplating",
+        "query2": "ancient craftsmanship",
+        "role": "fact",
+        "text": "Electroplating evidence suggests advanced ancient craftsmanship."
+      },
+      {
+        "reveal_top": "TRUTH REMAINS UNKNOWN",
+        "query": "mystery Baghdad battery purpose",
+        "query2": "ancient electric mystery",
+        "role": "reveal",
+        "text": "But its true purpose remains a mystery!"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "Dating back to the Parthian period, the Baghdad Battery raises questions about ancient technology. What secrets does it still hold? #shorts #fyp",
+    "hashtags": [
+      "#BaghdadBattery",
+      "#AncientTechnology",
+      "#Mystery",
+      "#History",
+      "#Electricity",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "Nazca Lines: Ancient Messages to the Sky?",
+    "thumb": "NAZCA LINES",
+    "place": "Nazca Desert",
+    "country": "Peru",
+    "scenes": [
+      {
+        "hook_top": "LARGEST GEOGLYPHS EVER",
+        "query": "Nazca lines overview",
+        "query2": "Nazca Desert wonders",
+        "role": "hook",
+        "text": "Over 1,000 geoglyphs etched in Peru!"
+      },
+      {
+        "chips": [
+          {
+            "t": "1,200 feet",
+            "on": "length",
+            "style": "white"
+          }
+        ],
+        "query": "Nazca lines length",
+        "query2": "fascinating geoglyphs",
+        "role": "fact",
+        "text": "Some lines stretch up to 1,200 feet long."
+      },
+      {
+        "chips": [
+          {
+            "t": "astronomical alignments",
+            "on": "theories",
+            "style": "accent"
+          }
+        ],
+        "query": "Nazca lines theories",
+        "query2": "ancient purpose theories",
+        "role": "fact",
+        "text": "Theories suggest they served astronomical or ritual purposes."
+      },
+      {
+        "reveal_top": "CREATORS STILL UNKNOWN",
+        "query": "mystery of Nazca creators",
+        "query2": "Nazca origins mystery",
+        "role": "reveal",
+        "text": "But their original creators remain a mystery!"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the cases no one can explain.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "The Nazca Lines are monumental creations that continue to baffle experts about their purpose. What messages were they trying to send? #shorts #fyp",
+    "hashtags": [
+      "#NazcaLines",
+      "#AncientMysteries",
+      "#Geoglyphs",
+      "#History",
+      "#enigmas",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Baffling Nazca Lines Mystery",
+    "thumb": "ANCIENT DESIGNS REVEALED",
+    "place": "Nazca Desert",
+    "country": "Peru",
+    "scenes": [
+      {
+        "hook_top": "GIANT SHAPES IN NASCA DESERT",
+        "query": "Nazca Lines aerial view",
+        "query2": "Nazca Desert landscape",
+        "role": "hook",
+        "text": "Why did ancient people draw giant shapes?"
+      },
+      {
+        "label": "Alien Theory",
+        "query": "Nazca Lines alien theories",
+        "query2": "Nazca Line myths",
+        "role": "myth",
+        "text": "The Nazca Lines were created for aliens."
+      },
+      {
+        "label": "Ritual Use Reality",
+        "query": "Nazca Lines scholarly research",
+        "query2": "Nazca Lines purpose",
+        "role": "truth",
+        "text": "Scholars suggest they were for ritual purposes."
+      },
+      {
+        "label": "Explore their purpose!",
+        "sub": "Are they just art or maps?",
+        "label_on": "Nazca mystery",
+        "role": "callout",
+        "text": "Art or Astronomy?",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if you can't stop asking why.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "The Nazca Lines of Peru have sparked theories about extraterrestrial activity, but their true purpose might be even more intriguing. Dive into the story behind these ancient designs!",
+    "hashtags": [
+      "#NazcaLines",
+      "#AncientMysteries",
+      "#Peru",
+      "#History",
+      "#Art",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]

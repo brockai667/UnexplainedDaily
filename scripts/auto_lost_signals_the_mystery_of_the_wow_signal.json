@@ -1,0 +1,59 @@
+{
+  "title": "Lost Signals: The Mystery of the Wow! Signal",
+  "thumb": "WOW! SIGNAL MYSTERY",
+  "place": "Ohio",
+  "country": "USA",
+  "scenes": [
+    {
+      "hook_top": "WOW SIGNAL MYSTERY",
+      "query": "radio telescope operation",
+      "query2": "SETI signal detection",
+      "role": "hook",
+      "text": "A 1977 radio signal still unexplained!"
+    },
+    {
+      "chips": [
+        {
+          "t": "72 seconds",
+          "on": "Wow! Signal",
+          "style": "white"
+        }
+      ],
+      "punch": "bizarre",
+      "query": "scientists analyzing signals",
+      "query2": "radio astronomy",
+      "role": "fact",
+      "text": "It lasted 72 seconds!"
+    },
+    {
+      "archive_query": "Wow! Signal chart",
+      "archive_label": "Wow! Signal Detected",
+      "role": "archive",
+      "text": "https://commons.wikimedia.org/wiki/File:Wow_signal.png"
+    },
+    {
+      "sub": "Was it alien communication?",
+      "label_on": "Wow! Signal",
+      "query": "experts debating Wow! Signal",
+      "query2": "SETI discussions",
+      "role": "callout",
+      "text": "UNEXPLAINED PHENOMENON"
+    },
+    {
+      "query": "SETI research",
+      "query2": "alien signal analysis",
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night."
+    }
+  ],
+  "description": "The Wow! Signal, captured in 1977, remains an enduring mystery in the search for extraterrestrial life. What was its origin? Follow us for more thrilling enigmas.",
+  "hashtags": [
+    "#WowSignal",
+    "#SETI",
+    "#SpaceMystery",
+    "#Astronomy",
+    "#Aliens",
+    "#shorts",
+    "#fyp"
+  ]
+}

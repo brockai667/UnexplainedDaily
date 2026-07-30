@@ -1,0 +1,59 @@
+{
+  "title": "The Enigmatic Voynich Manuscript Explained",
+  "thumb": "UNREADABLE SCRIPT REVEAL",
+  "place": "Unknown",
+  "country": "Unknown",
+  "scenes": [
+    {
+      "text": "This book dates back to the early 15th century.",
+      "hook_top": "15TH CENTURY MYSTERY",
+      "query": "Voynich Manuscript history",
+      "query2": "historical manuscripts",
+      "role": "hook"
+    },
+    {
+      "text": "It features unknown language and bizarre illustrations.",
+      "chips": [
+        {
+          "t": "UNKNOWN LANGUAGE",
+          "on": "unknown",
+          "style": "white"
+        }
+      ],
+      "query": "illustrations in Voynich",
+      "query2": "strange book art",
+      "role": "fact"
+    },
+    {
+      "text": "Experts still can't decipher its writings!",
+      "query": "deciphering Voynich Manuscript",
+      "query2": "linguistic mysteries",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "text": "Many believe it's an elaborate hoax.",
+      "reveal_top": "ELABORATE HOAX THEORY!",
+      "query": "Voynich Manuscript hoax theories",
+      "query2": "hoaxes in history",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "follow manuscript mysteries",
+      "query2": "subscribe for insights",
+      "role": "cta"
+    }
+  ],
+  "description": "The Voynich Manuscript remains one of the most puzzling texts, written in a language no one has ever been able to read. Could it be a sophisticated hoax? #shorts #Voynich #mystery #manuscripts #fyp",
+  "hashtags": [
+    "#shorts",
+    "#Voynich",
+    "#mystery",
+    "#manuscripts",
+    "#history",
+    "#enigmas",
+    "#fyp"
+  ]
+}
