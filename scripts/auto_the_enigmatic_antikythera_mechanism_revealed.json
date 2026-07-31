@@ -1,0 +1,65 @@
+{
+  "title": "The Enigmatic Antikythera Mechanism Revealed",
+  "thumb": "ANCIENT TECH REVEALED",
+  "place": "Antikythera",
+  "country": "Greece",
+  "scenes": [
+    {
+      "text": "This ancient artifact from 150 BC baffled scientists for decades.",
+      "hook_top": "ANCIENT ARTIFACT BAFFLES SCIENCE",
+      "query": "ancient artifact Antikythera",
+      "query2": "ancient devices",
+      "role": "hook"
+    },
+    {
+      "text": "It’s believed to be the world’s first analog computer.",
+      "chips": [
+        {
+          "t": "FIRST COMPUTER",
+          "on": "first",
+          "style": "white"
+        }
+      ],
+      "query": "first computer history",
+      "query2": "historical computing devices",
+      "role": "fact"
+    },
+    {
+      "text": "Over 30 gears were found, indicating advanced engineering.",
+      "chips": [
+        {
+          "t": "30 GEARS DISCOVERED",
+          "on": "30",
+          "style": "accent"
+        }
+      ],
+      "query": "advanced ancient engineering",
+      "query2": "mechanical devices",
+      "role": "fact"
+    },
+    {
+      "text": "But its exact purpose remains a mystery!",
+      "reveal_top": "PURPOSE STILL UNKNOWN!",
+      "query": "mystery of Antikythera",
+      "query2": "historical mysteries",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "text": "Follow for a new mystery every day.",
+      "query": "follow mysteries updates",
+      "query2": "subscribe for more",
+      "role": "cta"
+    }
+  ],
+  "description": "The Antikythera Mechanism is a marvel of ancient engineering that still holds secrets over two millennia later. Discover why its purpose has eluded experts! #shorts #mystery #history #ancientartifacts #Antikythera #engineering #fyp",
+  "hashtags": [
+    "#shorts",
+    "#mystery",
+    "#history",
+    "#ancientartifacts",
+    "#Antikythera",
+    "#engineering",
+    "#fyp"
+  ]
+}

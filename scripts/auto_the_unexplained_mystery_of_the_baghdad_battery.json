@@ -1,0 +1,64 @@
+{
+  "title": "The Unexplained Mystery of the Baghdad Battery",
+  "thumb": "BAGHDAD BATTERY",
+  "place": "Baghdad",
+  "country": "Iraq",
+  "scenes": [
+    {
+      "hook_top": "ELECTRICITY IN ANTIQUITY",
+      "query": "archaeological site Baghdad battery",
+      "query2": "historical artifacts discovery",
+      "role": "hook",
+      "text": "1,800 years ago, electricity was harnessed?"
+    },
+    {
+      "chips": [
+        {
+          "t": "1,800 years",
+          "on": "spoke",
+          "style": "white"
+        }
+      ],
+      "query": "Baghdad battery scientific explanation",
+      "query2": "ancient technology theories",
+      "role": "fact",
+      "text": "The Baghdad Battery may have been an ancient galvanic cell."
+    },
+    {
+      "chips": [
+        {
+          "t": "advanced craftsmanship",
+          "on": "electroplating",
+          "style": "accent"
+        }
+      ],
+      "query": "Baghdad battery electroplating",
+      "query2": "ancient craftsmanship",
+      "role": "fact",
+      "text": "Electroplating evidence suggests advanced ancient craftsmanship."
+    },
+    {
+      "reveal_top": "TRUTH REMAINS UNKNOWN",
+      "query": "mystery Baghdad battery purpose",
+      "query2": "ancient electric mystery",
+      "role": "reveal",
+      "text": "But its true purpose remains a mystery!"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "Dating back to the Parthian period, the Baghdad Battery raises questions about ancient technology. What secrets does it still hold? #shorts #fyp",
+  "hashtags": [
+    "#BaghdadBattery",
+    "#AncientTechnology",
+    "#Mystery",
+    "#History",
+    "#Electricity",
+    "#shorts",
+    "#fyp"
+  ]
+}

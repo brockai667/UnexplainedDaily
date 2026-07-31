@@ -1,0 +1,64 @@
+{
+  "title": "Nazca Lines: Ancient Messages to the Sky?",
+  "thumb": "NAZCA LINES",
+  "place": "Nazca Desert",
+  "country": "Peru",
+  "scenes": [
+    {
+      "hook_top": "LARGEST GEOGLYPHS EVER",
+      "query": "Nazca lines overview",
+      "query2": "Nazca Desert wonders",
+      "role": "hook",
+      "text": "Over 1,000 geoglyphs etched in Peru!"
+    },
+    {
+      "chips": [
+        {
+          "t": "1,200 feet",
+          "on": "length",
+          "style": "white"
+        }
+      ],
+      "query": "Nazca lines length",
+      "query2": "fascinating geoglyphs",
+      "role": "fact",
+      "text": "Some lines stretch up to 1,200 feet long."
+    },
+    {
+      "chips": [
+        {
+          "t": "astronomical alignments",
+          "on": "theories",
+          "style": "accent"
+        }
+      ],
+      "query": "Nazca lines theories",
+      "query2": "ancient purpose theories",
+      "role": "fact",
+      "text": "Theories suggest they served astronomical or ritual purposes."
+    },
+    {
+      "reveal_top": "CREATORS STILL UNKNOWN",
+      "query": "mystery of Nazca creators",
+      "query2": "Nazca origins mystery",
+      "role": "reveal",
+      "text": "But their original creators remain a mystery!"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the cases no one can explain.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "The Nazca Lines are monumental creations that continue to baffle experts about their purpose. What messages were they trying to send? #shorts #fyp",
+  "hashtags": [
+    "#NazcaLines",
+    "#AncientMysteries",
+    "#Geoglyphs",
+    "#History",
+    "#enigmas",
+    "#shorts",
+    "#fyp"
+  ]
+}
