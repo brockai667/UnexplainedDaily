@@ -1,0 +1,65 @@
+{
+  "title": "The Baffling J’ba Fofi Legend",
+  "thumb": "GIANT SPIDER LEGEND",
+  "place": "Congo Basin",
+  "country": "Democratic Republic of the Congo",
+  "scenes": [
+    {
+      "hook_top": "GIANT SPIDER",
+      "query": "giant spider web",
+      "query2": "large arachnid",
+      "role": "hook",
+      "text": "6-foot mega-arachnid"
+    },
+    {
+      "chips": [
+        {
+          "t": "6",
+          "on": "feet",
+          "style": "white"
+        }
+      ],
+      "punch": "Huge",
+      "query": "large spider species",
+      "query2": "giant arachnid",
+      "role": "fact",
+      "text": "The J’ba Fofi is said to have a leg span of 6 feet"
+    },
+    {
+      "chips": [
+        {
+          "t": "aggressive",
+          "on": "behavior",
+          "style": "accent"
+        }
+      ],
+      "query": "dangerous spider species",
+      "query2": "venomous arachnid",
+      "role": "fact",
+      "text": "It is described as a massive, aggressive spider"
+    },
+    {
+      "reveal_top": "SPIDER MYSTERY",
+      "query": "mysterious spider species",
+      "query2": "unknown arachnid",
+      "role": "reveal",
+      "text": "Despite reports, no conclusive evidence exists"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "Delve into the fascinating world of cryptozoology and explore the legend of the J’ba Fofi, a giant spider said to roam the Congo Basin. Join us as we uncover the truth behind this intriguing creature. Stay tuned for more mysterious legends!",
+  "hashtags": [
+    "#JbaFofi",
+    "#GiantSpider",
+    "#Cryptozoology",
+    "#Legend",
+    "#Mystery",
+    "#Shorts",
+    "#FYP"
+  ]
+}

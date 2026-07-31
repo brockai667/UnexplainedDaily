@@ -1,0 +1,54 @@
+{
+  "title": "The Baffling Nazca Lines Mystery",
+  "thumb": "ANCIENT DESIGNS REVEALED",
+  "place": "Nazca Desert",
+  "country": "Peru",
+  "scenes": [
+    {
+      "hook_top": "GIANT SHAPES IN NASCA DESERT",
+      "query": "Nazca Lines aerial view",
+      "query2": "Nazca Desert landscape",
+      "role": "hook",
+      "text": "Why did ancient people draw giant shapes?"
+    },
+    {
+      "label": "Alien Theory",
+      "query": "Nazca Lines alien theories",
+      "query2": "Nazca Line myths",
+      "role": "myth",
+      "text": "The Nazca Lines were created for aliens."
+    },
+    {
+      "label": "Ritual Use Reality",
+      "query": "Nazca Lines scholarly research",
+      "query2": "Nazca Lines purpose",
+      "role": "truth",
+      "text": "Scholars suggest they were for ritual purposes."
+    },
+    {
+      "label": "Explore their purpose!",
+      "sub": "Are they just art or maps?",
+      "label_on": "Nazca mystery",
+      "role": "callout",
+      "text": "Art or Astronomy?",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if you can't stop asking why.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "The Nazca Lines of Peru have sparked theories about extraterrestrial activity, but their true purpose might be even more intriguing. Dive into the story behind these ancient designs!",
+  "hashtags": [
+    "#NazcaLines",
+    "#AncientMysteries",
+    "#Peru",
+    "#History",
+    "#Art",
+    "#shorts",
+    "#fyp"
+  ]
+}
