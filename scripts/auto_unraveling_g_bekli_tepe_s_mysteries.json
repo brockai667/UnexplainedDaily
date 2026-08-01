@@ -1,0 +1,61 @@
+{
+  "title": "Unraveling Göbekli Tepe's Mysteries",
+  "thumb": "GOBEKLI TEPE",
+  "place": "Göbekli Tepe",
+  "country": "Turkey",
+  "scenes": [
+    {
+      "hook_top": "ANCIENT MYSTERY",
+      "query": "Göbekli Tepe excavation",
+      "query2": "Ancient temple ruins",
+      "role": "hook",
+      "text": "11,000 years old"
+    },
+    {
+      "chips": [
+        {
+          "t": "11,000",
+          "on": "years",
+          "style": "white"
+        }
+      ],
+      "punch": "old",
+      "query": "Göbekli Tepe history",
+      "query2": "Ancient civilizations",
+      "role": "fact",
+      "text": "Göbekli Tepe is considered the oldest known example of monumental architecture"
+    },
+    {
+      "archive_query": "Göbekli Tepe T-shaped pillars",
+      "archive_label": "Ancient Pillars",
+      "query": "Göbekli Tepe artifacts",
+      "query2": "Ancient relics",
+      "role": "archive",
+      "text": "Göbekli Tepe's T-shaped pillars"
+    },
+    {
+      "label": "Ancient Secrets",
+      "sub": "Uncovering the truth",
+      "label_on": "secrets",
+      "query": "Göbekli Tepe mysteries",
+      "query2": "Unsolved enigmas",
+      "role": "callout",
+      "text": "What secrets do these pillars hold?"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if you can't stop asking why.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "Göbekli Tepe is an ancient temple that has mystified researchers for decades. What secrets do its T-shaped pillars hold? Follow us for more archaeological mysteries. #GöbekliTepe #Archaeology #Mysteries",
+  "hashtags": [
+    "#GöbekliTepe",
+    "#Archaeology",
+    "#Mysteries",
+    "#AncientHistory",
+    "#UnsolvedEnigmas",
+    "#Shorts"
+  ]
+}

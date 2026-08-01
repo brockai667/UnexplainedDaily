@@ -1,0 +1,65 @@
+{
+  "title": "Havana Syndrome: The Frey Effect",
+  "thumb": "HAVANA SYNDROME",
+  "place": "Havana",
+  "country": "Cuba",
+  "scenes": [
+    {
+      "hook_top": "MYSTERY ILLNESS",
+      "query": "havana syndrome victims",
+      "query2": "mysterious illness",
+      "role": "hook",
+      "text": "Over 1,000 cases reported"
+    },
+    {
+      "chips": [
+        {
+          "t": "Frey",
+          "on": "Effect",
+          "style": "white"
+        }
+      ],
+      "punch": "Microwave",
+      "query": "microwave radiation effects",
+      "query2": "health effects of microwaves",
+      "role": "fact",
+      "text": "The Frey Effect is a possible cause of Havana Syndrome"
+    },
+    {
+      "chips": [
+        {
+          "t": "microwave",
+          "on": "radiation",
+          "style": "accent"
+        }
+      ],
+      "query": "microwave radiation health risks",
+      "query2": "brain interference",
+      "role": "fact",
+      "text": "It involves microwave radiation and human brain interference"
+    },
+    {
+      "reveal_top": "UNSOLVED MYSTERY",
+      "query": "havana syndrome mystery",
+      "query2": "unsolved medical mystery",
+      "role": "reveal",
+      "text": "The true cause of Havana Syndrome remains unknown"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "Investigate the enigmatic Havana Syndrome, a mysterious illness affecting over 1,000 people. Discover the possible connection to the Frey Effect and microwave radiation. Join us as we delve into the unknown and explore more unexplained phenomena!",
+  "hashtags": [
+    "#HavanaSyndrome",
+    "#FreyEffect",
+    "#MicrowaveRadiation",
+    "#Mystery",
+    "#Unsolved",
+    "#Shorts",
+    "#FYP"
+  ]
+}

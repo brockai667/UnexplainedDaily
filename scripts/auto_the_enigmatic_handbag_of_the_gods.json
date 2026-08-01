@@ -1,0 +1,60 @@
+{
+  "title": "The Enigmatic Handbag of the Gods",
+  "thumb": "GODS BAG",
+  "place": "Sumer",
+  "country": "Iraq",
+  "scenes": [
+    {
+      "hook_top": "GODS SYMBOL",
+      "query": "Sumerian artifacts",
+      "query2": "Ancient relics",
+      "role": "hook",
+      "text": "A symbol from Sumer"
+    },
+    {
+      "chips": [
+        {
+          "t": "3",
+          "on": "cultures",
+          "style": "accent"
+        }
+      ],
+      "query": "Sumerian art",
+      "query2": "Ancient symbolism",
+      "role": "fact",
+      "text": "The handbag is depicted in ancient Sumerian, American, and Göbekli Tepe art"
+    },
+    {
+      "archive_query": "Sumerian handbag symbol",
+      "archive_label": "Ancient Symbol",
+      "query": "Ancient artifacts",
+      "query2": "Museum relics",
+      "role": "archive",
+      "text": "Depictions of the handbag in ancient art"
+    },
+    {
+      "label": "Ancient Symbolism",
+      "sub": "Uncovering the meaning",
+      "label_on": "symbol",
+      "query": "Sumerian symbolism",
+      "query2": "Ancient mysteries",
+      "role": "callout",
+      "text": "What does this symbol represent?"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the cases no one can explain.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "The handbag of the gods is a mysterious symbol that appears in ancient Sumerian, American, and Göbekli Tepe art. What does it represent? Follow us for more mysteries from ancient cultures. #Sumer #AncientMysteries #Symbolism",
+  "hashtags": [
+    "#Sumer",
+    "#AncientMysteries",
+    "#Symbolism",
+    "#GöbekliTepe",
+    "#AncientArt",
+    "#Shorts"
+  ]
+}
