@@ -1,0 +1,54 @@
+{
+  "title": "The Enigmatic Fae Tree Portal",
+  "thumb": "TREE PORTAL",
+  "place": "Various Locations",
+  "country": "Worldwide",
+  "scenes": [
+    {
+      "hook_top": "TREE PORTALS",
+      "role": "hook",
+      "text": "Mysterious tree portals spotted worldwide",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "label": "Natural Formations",
+      "role": "myth",
+      "text": "These portals are just natural formations",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "label": "Unexplained Properties",
+      "role": "truth",
+      "text": "The Fae Tree Portal is a phenomenon with unexplained properties",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "label": "Beyond Portals",
+      "sub": "Mystical Connections",
+      "label_on": "Portals",
+      "role": "callout",
+      "text": "What lies beyond these mystical portals?",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if you can't stop asking why.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "Delve into the mystery of the Fae Tree Portal and its worldwide presence. What secrets do these portals hold? Join us for more.",
+  "hashtags": [
+    "#FaeTreePortal",
+    "#UnexplainedPhenomena",
+    "#MysticalConnections",
+    "#shorts",
+    "#fyp",
+    "#nature",
+    "#mystery"
+  ]
+}
