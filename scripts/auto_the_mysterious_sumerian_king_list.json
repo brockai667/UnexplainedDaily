@@ -1,0 +1,59 @@
+{
+  "title": "The Mysterious Sumerian King List",
+  "thumb": "SUMERIAN TABLET",
+  "place": "Sumer",
+  "country": "Iraq",
+  "scenes": [
+    {
+      "hook_top": "KINGS OF SUMER",
+      "query": "ancient Sumerian tablets",
+      "query2": "vintage Mesopotamian artifacts",
+      "role": "hook",
+      "text": "8 kings ruled for 24120 years"
+    },
+    {
+      "chips": [
+        {
+          "t": "24120",
+          "on": "years",
+          "style": "white"
+        }
+      ],
+      "punch": "years",
+      "query": "old Sumerian script",
+      "query2": "ancient Mesopotamian writing",
+      "role": "fact",
+      "text": "The list includes the lengths of reign for each king"
+    },
+    {
+      "chips": [],
+      "query": "Mesopotamian historical documents",
+      "query2": "ancient Sumerian records",
+      "role": "fact",
+      "text": "The Sumerian King List is one of the oldest and most important sources of information on the history of Mesopotamia"
+    },
+    {
+      "reveal_top": "TIMEKEEPING SECRETS",
+      "query": "ancient timekeeping devices",
+      "query2": "vintage astronomical instruments",
+      "role": "reveal",
+      "text": "But how did the ancient Sumerians keep track of time with such precision?"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "Explore the mysteries of the Sumerian King List, one of the oldest and most important sources of information on the history of Mesopotamia. How did the ancient Sumerians keep track of time with such precision? Follow us for more mysteries of the ancient world",
+  "hashtags": [
+    "#SumerianKingList",
+    "#AncientMysteries",
+    "#Mesopotamia",
+    "#Timekeeping",
+    "#AncientHistory",
+    "#Mystery",
+    "#History"
+  ]
+}

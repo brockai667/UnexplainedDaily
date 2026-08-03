@@ -1,0 +1,64 @@
+{
+  "title": "The Enigmatic Moai Statues of Easter Island",
+  "thumb": "MOAI STATUES",
+  "place": "Easter Island",
+  "country": "Chile",
+  "scenes": [
+    {
+      "hook_top": "MOAI MYSTERY",
+      "query": "Easter Island moai statues",
+      "query2": "vintage Polynesian artifacts",
+      "role": "hook",
+      "text": "900 giant moai statues were built by the early Rapa Nui people"
+    },
+    {
+      "chips": [
+        {
+          "t": "900",
+          "on": "statues",
+          "style": "white"
+        },
+        {
+          "t": "80",
+          "on": "tons",
+          "style": "accent"
+        }
+      ],
+      "punch": "tons",
+      "query": "moai statue construction",
+      "query2": "ancient Polynesian engineering",
+      "role": "fact",
+      "text": "The statues are up to 30 feet tall and weigh over 80 tons"
+    },
+    {
+      "chips": [],
+      "query": "ancient monuments",
+      "query2": "vintage archaeological sites",
+      "role": "fact",
+      "text": "The moai statues are considered some of the most impressive and mysterious ancient monuments in the world"
+    },
+    {
+      "reveal_top": "ANCIENT ENGINEERING",
+      "query": "ancient Polynesian technology",
+      "query2": "vintage construction methods",
+      "role": "reveal",
+      "text": "But how did the early Rapa Nui people manage to build and move such massive statues without modern technology?"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "Explore the enigmatic moai statues of Easter Island, considered some of the most impressive and mysterious ancient monuments in the world. How did the early Rapa Nui people manage to build and move such massive statues without modern technology? Follow us for more mysteries of the ancient world",
+  "hashtags": [
+    "#MoaiStatues",
+    "#EasterIsland",
+    "#AncientMysteries",
+    "#Polynesia",
+    "#Archaeology",
+    "#History",
+    "#Mystery"
+  ]
+}

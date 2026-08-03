@@ -8210,5 +8210,244 @@
       "#nature",
       "#mystery"
     ]
+  },
+  {
+    "title": "The Mysterious Sumerian King List",
+    "thumb": "SUMERIAN TABLET",
+    "place": "Sumer",
+    "country": "Iraq",
+    "scenes": [
+      {
+        "hook_top": "KINGS OF SUMER",
+        "query": "ancient Sumerian tablets",
+        "query2": "vintage Mesopotamian artifacts",
+        "role": "hook",
+        "text": "8 kings ruled for 24120 years"
+      },
+      {
+        "chips": [
+          {
+            "t": "24120",
+            "on": "years",
+            "style": "white"
+          }
+        ],
+        "punch": "years",
+        "query": "old Sumerian script",
+        "query2": "ancient Mesopotamian writing",
+        "role": "fact",
+        "text": "The list includes the lengths of reign for each king"
+      },
+      {
+        "chips": [],
+        "query": "Mesopotamian historical documents",
+        "query2": "ancient Sumerian records",
+        "role": "fact",
+        "text": "The Sumerian King List is one of the oldest and most important sources of information on the history of Mesopotamia"
+      },
+      {
+        "reveal_top": "TIMEKEEPING SECRETS",
+        "query": "ancient timekeeping devices",
+        "query2": "vintage astronomical instruments",
+        "role": "reveal",
+        "text": "But how did the ancient Sumerians keep track of time with such precision?"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "Explore the mysteries of the Sumerian King List, one of the oldest and most important sources of information on the history of Mesopotamia. How did the ancient Sumerians keep track of time with such precision? Follow us for more mysteries of the ancient world",
+    "hashtags": [
+      "#SumerianKingList",
+      "#AncientMysteries",
+      "#Mesopotamia",
+      "#Timekeeping",
+      "#AncientHistory",
+      "#Mystery",
+      "#History"
+    ]
+  },
+  {
+    "title": "Unveiling the Secrets of the Terracotta Army",
+    "thumb": "TERRACOTTA WARRIORS",
+    "place": "Xi'an",
+    "country": "China",
+    "scenes": [
+      {
+        "hook_top": "TERRACOTTA ARMY",
+        "query": "Terracotta Army excavation",
+        "query2": "vintage Chinese artifacts",
+        "role": "hook",
+        "text": "Over 8000 terracotta soldiers were buried with the first emperor"
+      },
+      {
+        "chips": [
+          {
+            "t": "8000",
+            "on": "soldiers",
+            "style": "accent"
+          }
+        ],
+        "punch": "unique",
+        "query": "Terracotta Army faces",
+        "query2": "ancient Chinese art",
+        "role": "fact",
+        "text": "Each soldier is unique, with different facial expressions and clothing"
+      },
+      {
+        "chips": [],
+        "query": "archaeological discoveries",
+        "query2": "vintage excavation sites",
+        "role": "fact",
+        "text": "The Terracotta Army is considered one of the greatest archaeological discoveries of the 20th century"
+      },
+      {
+        "reveal_top": "ANCIENT SECRETS",
+        "query": "ancient Chinese history",
+        "query2": "vintage Chinese culture",
+        "role": "reveal",
+        "text": "But what secrets do the terracotta soldiers still hold, and what can they tell us about ancient Chinese civilization?"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the cases no one can explain.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "Explore the secrets of the Terracotta Army, one of the greatest archaeological discoveries of the 20th century. What secrets do the terracotta soldiers still hold, and what can they tell us about ancient Chinese civilization? Follow us for more mysteries of the ancient world",
+    "hashtags": [
+      "#TerracottaArmy",
+      "#AncientMysteries",
+      "#China",
+      "#Archaeology",
+      "#History",
+      "#Mystery"
+    ]
+  },
+  {
+    "title": "The Enigmatic Moai Statues of Easter Island",
+    "thumb": "MOAI STATUES",
+    "place": "Easter Island",
+    "country": "Chile",
+    "scenes": [
+      {
+        "hook_top": "MOAI MYSTERY",
+        "query": "Easter Island moai statues",
+        "query2": "vintage Polynesian artifacts",
+        "role": "hook",
+        "text": "900 giant moai statues were built by the early Rapa Nui people"
+      },
+      {
+        "chips": [
+          {
+            "t": "900",
+            "on": "statues",
+            "style": "white"
+          },
+          {
+            "t": "80",
+            "on": "tons",
+            "style": "accent"
+          }
+        ],
+        "punch": "tons",
+        "query": "moai statue construction",
+        "query2": "ancient Polynesian engineering",
+        "role": "fact",
+        "text": "The statues are up to 30 feet tall and weigh over 80 tons"
+      },
+      {
+        "chips": [],
+        "query": "ancient monuments",
+        "query2": "vintage archaeological sites",
+        "role": "fact",
+        "text": "The moai statues are considered some of the most impressive and mysterious ancient monuments in the world"
+      },
+      {
+        "reveal_top": "ANCIENT ENGINEERING",
+        "query": "ancient Polynesian technology",
+        "query2": "vintage construction methods",
+        "role": "reveal",
+        "text": "But how did the early Rapa Nui people manage to build and move such massive statues without modern technology?"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "Explore the enigmatic moai statues of Easter Island, considered some of the most impressive and mysterious ancient monuments in the world. How did the early Rapa Nui people manage to build and move such massive statues without modern technology? Follow us for more mysteries of the ancient world",
+    "hashtags": [
+      "#MoaiStatues",
+      "#EasterIsland",
+      "#AncientMysteries",
+      "#Polynesia",
+      "#Archaeology",
+      "#History",
+      "#Mystery"
+    ]
+  },
+  {
+    "title": "The Mystery of the Gobekli Tepe Temple",
+    "thumb": "GOBEKLI TEPE",
+    "place": "Gobekli Tepe",
+    "country": "Turkey",
+    "scenes": [
+      {
+        "hook_top": "OLDEST TEMPLE",
+        "query": "Gobekli Tepe excavation",
+        "query2": "vintage archaeological sites",
+        "role": "hook",
+        "text": "11,000 years old, Gobekli Tepe is the oldest known temple in the world"
+      },
+      {
+        "chips": [
+          {
+            "t": "11000",
+            "on": "years",
+            "style": "accent"
+          }
+        ],
+        "punch": "years",
+        "query": "Gobekli Tepe carvings",
+        "query2": "ancient sculpting techniques",
+        "role": "fact",
+        "text": "The temple features intricate carvings and sculptures of animals and humans"
+      },
+      {
+        "chips": [],
+        "query": "archaeological discoveries",
+        "query2": "vintage excavation sites",
+        "role": "fact",
+        "text": "Gobekli Tepe is considered one of the most important archaeological discoveries of the 21st century"
+      },
+      {
+        "reveal_top": "TEMPLE SECRETS",
+        "query": "ancient temple purposes",
+        "query2": "vintage cultural practices",
+        "role": "reveal",
+        "text": "But what was the purpose of this ancient temple, and what can it tell us about the origins of human civilization?"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "Explore the mystery of the Gobekli Tepe temple, considered one of the most important archaeological discoveries of the 21st century. What was the purpose of this ancient temple, and what can it tell us about the origins of human civilization? Follow us for more mysteries of the ancient world",
+    "hashtags": [
+      "#GobekliTepe",
+      "#AncientMysteries",
+      "#Turkey",
+      "#Archaeology",
+      "#History",
+      "#Mystery"
+    ]
   }
 ]
