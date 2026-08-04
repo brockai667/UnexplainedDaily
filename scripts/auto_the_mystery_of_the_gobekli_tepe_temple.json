@@ -1,0 +1,58 @@
+{
+  "title": "The Mystery of the Gobekli Tepe Temple",
+  "thumb": "GOBEKLI TEPE",
+  "place": "Gobekli Tepe",
+  "country": "Turkey",
+  "scenes": [
+    {
+      "hook_top": "OLDEST TEMPLE",
+      "query": "Gobekli Tepe excavation",
+      "query2": "vintage archaeological sites",
+      "role": "hook",
+      "text": "11,000 years old, Gobekli Tepe is the oldest known temple in the world"
+    },
+    {
+      "chips": [
+        {
+          "t": "11000",
+          "on": "years",
+          "style": "accent"
+        }
+      ],
+      "punch": "years",
+      "query": "Gobekli Tepe carvings",
+      "query2": "ancient sculpting techniques",
+      "role": "fact",
+      "text": "The temple features intricate carvings and sculptures of animals and humans"
+    },
+    {
+      "chips": [],
+      "query": "archaeological discoveries",
+      "query2": "vintage excavation sites",
+      "role": "fact",
+      "text": "Gobekli Tepe is considered one of the most important archaeological discoveries of the 21st century"
+    },
+    {
+      "reveal_top": "TEMPLE SECRETS",
+      "query": "ancient temple purposes",
+      "query2": "vintage cultural practices",
+      "role": "reveal",
+      "text": "But what was the purpose of this ancient temple, and what can it tell us about the origins of human civilization?"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "Explore the mystery of the Gobekli Tepe temple, considered one of the most important archaeological discoveries of the 21st century. What was the purpose of this ancient temple, and what can it tell us about the origins of human civilization? Follow us for more mysteries of the ancient world",
+  "hashtags": [
+    "#GobekliTepe",
+    "#AncientMysteries",
+    "#Turkey",
+    "#Archaeology",
+    "#History",
+    "#Mystery"
+  ]
+}
