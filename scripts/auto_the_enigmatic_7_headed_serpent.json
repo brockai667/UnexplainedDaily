@@ -1,0 +1,65 @@
+{
+  "title": "The Enigmatic 7-Headed Serpent",
+  "thumb": "GLOBAL SERPENT MYSTERY",
+  "place": "Various ancient sites",
+  "country": "Multiple countries",
+  "scenes": [
+    {
+      "hook_top": "SERPENT ICON MYSTERY",
+      "query": "7-headed serpent ancient artifacts",
+      "query2": "global serpent mythology",
+      "role": "hook",
+      "text": "7-Headed Serpent found globally"
+    },
+    {
+      "chips": [
+        {
+          "t": "7-HEADED",
+          "on": "serpent",
+          "style": "accent"
+        }
+      ],
+      "punch": "Serpent",
+      "query": "ancient Mesoamerican art serpent",
+      "query2": "Asian serpent mythology",
+      "role": "fact",
+      "text": "The 7-headed serpent appears in ancient Mesoamerican and Asian art"
+    },
+    {
+      "chips": [
+        {
+          "t": "GLOBAL",
+          "on": "serpent",
+          "style": "white"
+        }
+      ],
+      "query": "global serpent mythology",
+      "query2": "ancient cultural comparisons",
+      "role": "fact",
+      "text": "Similar serpent iconography is found in ancient European and African cultures"
+    },
+    {
+      "reveal_top": "SERPENT MYSTERY REMAINS",
+      "query": "unsolved ancient mysteries",
+      "query2": "global serpent enigma",
+      "role": "reveal",
+      "text": "The meaning behind the 7-headed serpent remains a mystery"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "The 7-headed serpent is an ancient icon found globally, but its meaning remains a mystery. Explore the enigmatic 7-headed serpent and its appearance in various cultures. Follow us for more unexplained mysteries.",
+  "hashtags": [
+    "#mystery",
+    "#serpent",
+    "#ancientart",
+    "#globalmystery",
+    "#unexplained",
+    "#shorts",
+    "#fyp"
+  ]
+}

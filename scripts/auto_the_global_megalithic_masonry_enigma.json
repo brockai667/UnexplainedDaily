@@ -1,0 +1,65 @@
+{
+  "title": "The Global Megalithic Masonry Enigma",
+  "thumb": "MEGALITHIC MYSTERY",
+  "place": "Various megalithic sites",
+  "country": "Multiple countries",
+  "scenes": [
+    {
+      "hook_top": "MEGALITHIC MYSTERY",
+      "query": "megalithic masonry global",
+      "query2": "ancient construction",
+      "role": "hook",
+      "text": "Megalithic masonry found globally"
+    },
+    {
+      "chips": [
+        {
+          "t": "MEGALITHIC",
+          "on": "structures",
+          "style": "accent"
+        }
+      ],
+      "punch": "Structures",
+      "query": "ancient megalithic structures",
+      "query2": "global architectural comparisons",
+      "role": "fact",
+      "text": "Similar megalithic structures are found in ancient European and Asian cultures"
+    },
+    {
+      "chips": [
+        {
+          "t": "ENGINEERING",
+          "on": "mystery",
+          "style": "white"
+        }
+      ],
+      "query": "ancient engineering mysteries",
+      "query2": "megalithic construction",
+      "role": "fact",
+      "text": "The construction of these structures remains an engineering mystery"
+    },
+    {
+      "reveal_top": "MEGALITHIC MYSTERY REMAINS",
+      "query": "unsolved ancient mysteries",
+      "query2": "megalithic enigma",
+      "role": "reveal",
+      "text": "The purpose and meaning behind these global megalithic structures remain unclear"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new mystery every day.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "Megalithic masonry is found globally, with similar structures in ancient European and Asian cultures. Explore the enigmatic megalithic masonry and its engineering mysteries. Follow us for more unexplained mysteries.",
+  "hashtags": [
+    "#megalithic",
+    "#mystery",
+    "#ancientconstruction",
+    "#globalmystery",
+    "#unexplained",
+    "#shorts",
+    "#fyp"
+  ]
+}
