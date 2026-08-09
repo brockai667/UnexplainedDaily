@@ -1,0 +1,65 @@
+{
+  "title": "The Fungus Beneath Our Feet",
+  "thumb": "FUNGI NETWORK",
+  "place": "Global ecosystems",
+  "country": "Multiple countries",
+  "scenes": [
+    {
+      "hook_top": "FUNGI NETWORK",
+      "query": "fungus network global",
+      "query2": "ecosystem connections",
+      "role": "hook",
+      "text": "68 billion miles of fungus beneath Earth's surface"
+    },
+    {
+      "chips": [
+        {
+          "t": "68 BILLION",
+          "on": "miles",
+          "style": "accent"
+        }
+      ],
+      "punch": "Fungus",
+      "query": "fungus ecosystem connections",
+      "query2": "global plant networks",
+      "role": "fact",
+      "text": "Fungus plays a crucial role in global ecosystems, connecting plants and trees"
+    },
+    {
+      "chips": [
+        {
+          "t": "GLOBAL",
+          "on": "network",
+          "style": "white"
+        }
+      ],
+      "query": "global fungus network",
+      "query2": "ecosystem mapping",
+      "role": "fact",
+      "text": "Scientists have mapped the vast network of fungus beneath our feet"
+    },
+    {
+      "reveal_top": "FUNGI NETWORK REVEALED",
+      "query": "new scientific discoveries",
+      "query2": "fungus network exploration",
+      "role": "reveal",
+      "text": "The true extent and impact of this fungus network is still being discovered"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new mystery every day.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "A vast network of fungus spans the globe, connecting plants and trees. Explore the fascinating world of fungus and its role in our ecosystem. Follow us for more unexplained mysteries.",
+  "hashtags": [
+    "#fungi",
+    "#network",
+    "#ecosystem",
+    "#globalconnections",
+    "#unexplained",
+    "#shorts",
+    "#fyp"
+  ]
+}
