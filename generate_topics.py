@@ -241,29 +241,34 @@ def build_prompt(n, existing_titles, existing_places, trending=None):
     )
 
 
+FALLBACK_MODEL = os.environ.get("MODELS_FALLBACK", "llama-3.1-8b-instant")
+
+
 def call_model(user_text, _tries=4):
-    # retry+backoff: vsetky fabriky trafia GitHub Models -> 429; 5xx = docasne
+    # retry+backoff: vsetky fabriky zdielaju Groq kvotu -> 429; po vycerpani retry
+    # prehodime na FALLBACK model (samostatny rate-limit bucket), nech banka nevyschne.
     last = "Models API: neznama chyba"
-    for _i in range(_tries):
-        r = requests.post(
-            BASE.rstrip("/") + "/chat/completions",
-            headers={"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json"},
-            json={"model": MODEL, "temperature": 0.95, "max_tokens": 2000,
-                  "messages": [{"role": "system", "content": SYSTEM},
-                               {"role": "user", "content": user_text}]},
-            timeout=180,
-        )
-        if r.status_code < 400:
-            return r.json()["choices"][0]["message"]["content"]
-        last = f"Models API {r.status_code}: {r.text[:300]}"
-        if r.status_code in (429, 413) or r.status_code >= 500:
-            try:
-                _w = float(r.headers.get("retry-after") or 0)
-            except Exception:
-                _w = 0
-            time.sleep(min(max(_w, 10 * (_i + 1)), 70))
-            continue
-        break
+    for model in (MODEL, FALLBACK_MODEL):
+        for _i in range(_tries):
+            r = requests.post(
+                BASE.rstrip("/") + "/chat/completions",
+                headers={"Authorization": f"Bearer {TOKEN}", "Content-Type": "application/json"},
+                json={"model": model, "temperature": 0.95, "max_tokens": 2000,
+                      "messages": [{"role": "system", "content": SYSTEM},
+                                   {"role": "user", "content": user_text}]},
+                timeout=180,
+            )
+            if r.status_code < 400:
+                return r.json()["choices"][0]["message"]["content"]
+            last = f"Models API {r.status_code}: {r.text[:300]}"
+            if r.status_code in (429, 413) or r.status_code >= 500:
+                try:
+                    _w = float(r.headers.get("retry-after") or 0)
+                except Exception:
+                    _w = 0
+                time.sleep(min(max(_w, 8 * (_i + 1)), 45))
+                continue
+            break
     raise RuntimeError(last)
 
 

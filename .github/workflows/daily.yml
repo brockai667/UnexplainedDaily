@@ -2,7 +2,7 @@ name: MysteryFactory Daily
 
 on:
   schedule:
-    - cron: "27 4 * * *"   # rozhadzane (anti rate-limit GitHub Models)
+    - cron: "23 0 * * *"   # PRVA vo flotile = cerstva denna Groq kvota (predtym 04:27 = vyzrata kvota -> 429)
   workflow_dispatch: {}    # umoznuje rucne spustenie z GitHub UI
 
 permissions:
