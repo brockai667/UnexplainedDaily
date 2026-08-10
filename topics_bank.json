@@ -8709,5 +8709,562 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "Uncovering the 7-Headed Serpent Enigma",
+    "thumb": "SERPENT MYSTERY",
+    "place": "Angkor Wat",
+    "country": "Cambodia",
+    "scenes": [
+      {
+        "hook_top": "SERPENT ICON",
+        "query": "ancient serpent statue",
+        "query2": "mythical serpent artwork",
+        "role": "hook",
+        "text": "7 headed serpent found"
+      },
+      {
+        "chips": [
+          {
+            "t": "7 heads",
+            "on": "serpent",
+            "style": "white"
+          }
+        ],
+        "punch": "mythology",
+        "role": "fact",
+        "text": "The 7-headed serpent is a common motif in ancient Mesoamerican art",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "chips": [
+          {
+            "t": "global",
+            "on": "serpent",
+            "style": "accent"
+          }
+        ],
+        "punch": " symbol",
+        "role": "fact",
+        "text": "Similar serpent iconography has been found in ancient cultures worldwide",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "reveal_top": "SERPENT ENIGMA",
+        "query": "unsolved ancient mystery",
+        "query2": "unexplained serpent symbol",
+        "role": "reveal",
+        "text": "The true meaning behind the 7-headed serpent remains a mystery"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new mystery every day.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "The 7-headed serpent is a fascinating and mysterious symbol found in ancient cultures worldwide. But what does it mean? Join us as we uncover the truth behind this enigmatic icon.",
+    "hashtags": [
+      "#shorts",
+      "#mystery",
+      "#serpent",
+      "#symbolism",
+      "#ancientart",
+      "#mesoamerica",
+      "#unexplained",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Forgotten City of Thonis-Heraklion",
+    "thumb": "LOST CITY",
+    "place": "Thonis-Heraklion",
+    "country": "Egypt",
+    "scenes": [
+      {
+        "hook_top": "LOST CITY FOUND",
+        "query": "ancient city ruins",
+        "query2": "underwater archaeology",
+        "role": "hook",
+        "text": "Thonis-Heraklion discovered"
+      },
+      {
+        "chips": [
+          {
+            "t": "1200 BC",
+            "on": "flooded",
+            "style": "white"
+          }
+        ],
+        "punch": "history",
+        "role": "fact",
+        "text": "Thonis-Heraklion was an ancient city swallowed by the sea",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "chips": [
+          {
+            "t": "Mediterranean",
+            "on": "trade",
+            "style": "accent"
+          }
+        ],
+        "punch": "commerce",
+        "role": "fact",
+        "text": "The city was a major center of trade and culture in the ancient Mediterranean",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "reveal_top": "CITY REVEALED",
+        "query": "archaeological discovery",
+        "query2": "ancient egyptian history",
+        "role": "reveal",
+        "text": "The city's discovery has shed new light on ancient Egyptian history"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for the cases no one can explain.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "Thonis-Heraklion was a thriving city in ancient Egypt, but it was lost to the sands of time. Join us as we explore the history and significance of this fascinating lost city.",
+    "hashtags": [
+      "#shorts",
+      "#lostcity",
+      "#egypt",
+      "#archaeology",
+      "#history",
+      "#mediterranean",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "Unveiling the Secrets of the Voynich Manuscript",
+    "thumb": "VOYNICH MYSTERY",
+    "place": "Beinecke Rare Book Library",
+    "country": "USA",
+    "scenes": [
+      {
+        "hook_top": "SECRET CODE",
+        "query": "ancient manuscript",
+        "query2": "cryptic text",
+        "role": "hook",
+        "text": "Voynich Manuscript decoded"
+      },
+      {
+        "chips": [
+          {
+            "t": "15th century",
+            "on": "manuscript",
+            "style": "white"
+          }
+        ],
+        "punch": "mystery",
+        "role": "fact",
+        "text": "The Voynich Manuscript is a mysterious, undeciphered book from the 15th century",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "chips": [
+          {
+            "t": "illustrations",
+            "on": "script",
+            "style": "accent"
+          }
+        ],
+        "punch": "code",
+        "role": "fact",
+        "text": "The manuscript contains intricate illustrations and unknown scripts",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "reveal_top": "MANUSCRIPT ENIGMA",
+        "query": "unsolved mystery",
+        "query2": "undeciphered text",
+        "role": "reveal",
+        "text": "Despite numerous attempts, the Voynich Manuscript remains one of the most enigmatic books in history"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "The Voynich Manuscript is a mysterious book that has puzzled scholars for centuries. Join us as we delve into the secrets and mysteries of this enigmatic manuscript.",
+    "hashtags": [
+      "#shorts",
+      "#voynichmanuscript",
+      "#mystery",
+      "#code",
+      "#undeciphered",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Global Fungal Network: Uncovering the Truth",
+    "thumb": "FUNGI NETWORK",
+    "place": "Global",
+    "country": "Global",
+    "scenes": [
+      {
+        "hook_top": "FUNGI REVEALED",
+        "query": "fungal network",
+        "query2": "mycoremediation",
+        "role": "hook",
+        "text": "Fungi network discovered"
+      },
+      {
+        "chips": [
+          {
+            "t": "68 billion",
+            "on": "fungal",
+            "style": "white"
+          }
+        ],
+        "punch": "network",
+        "role": "fact",
+        "text": "Scientists have mapped 68 billion miles of fungal hyphae beneath the Earth's surface",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "chips": [
+          {
+            "t": "ecological",
+            "on": "balance",
+            "style": "accent"
+          }
+        ],
+        "punch": "nature",
+        "role": "fact",
+        "text": "The fungal network plays a crucial role in ecological balance and soil health",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "reveal_top": "FUNGI REVOLUTION",
+        "query": "ecological discovery",
+        "query2": "fungal network",
+        "role": "reveal",
+        "text": "The discovery of the global fungal network has revolutionized our understanding of ecosystems"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "The global fungal network is a vast, intricate web of fungi that underlies our planet. Join us as we explore the fascinating world of fungi and their role in shaping our ecosystems.",
+    "hashtags": [
+      "#shorts",
+      "#fungalnetwork",
+      "#ecology",
+      "#nature",
+      "#scientificdiscovery",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "Unveiling the Secrets of the 7-Headed Serpent",
+    "thumb": "SERPENT MYSTERY",
+    "place": "Ancient Mesoamerica",
+    "country": "Mexico",
+    "scenes": [
+      {
+        "hook_top": "SERPENT ENIGMA",
+        "query": "ancient Mesoamerican serpent iconography",
+        "query2": "seven headed serpent mythology",
+        "role": "hook",
+        "text": "7 serpent heads"
+      },
+      {
+        "chips": [
+          {
+            "t": "7",
+            "on": "heads",
+            "style": "white"
+          }
+        ],
+        "punch": "Seven",
+        "role": "fact",
+        "text": "The 7-headed serpent is a common motif in ancient Mesoamerican art",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "archive_query": "Maya serpent iconography",
+        "archive_label": "Maya Serpent",
+        "role": "archive",
+        "text": "Serpent iconography from the ancient Maya civilization"
+      },
+      {
+        "label": "Serpent Mystery",
+        "sub": "Unveiling the truth",
+        "label_on": "Serpent",
+        "role": "callout",
+        "text": "Unlocking the secrets of the 7-headed serpent",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if you can't stop asking why.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "The 7-headed serpent is a mysterious symbol found in ancient Mesoamerican art. What does it represent? Follow us to uncover the truth. Follow us for more ancient mysteries",
+    "hashtags": [
+      "#shorts",
+      "#mystery",
+      "#ancientcivilizations",
+      "#mesoamerica",
+      "#serpent",
+      "#symbolism",
+      "#unveilingthesecrets",
+      "#history"
+    ]
+  },
+  {
+    "title": "The Enigma of Human Sacrifice in Ancient Mesoamerica",
+    "thumb": "HUMAN SACRIFICE",
+    "place": "Tenochtitlán",
+    "country": "Mexico",
+    "scenes": [
+      {
+        "hook_top": "HUMAN SACRIFICE ENIGMA",
+        "query": "ancient Mesoamerican human sacrifice",
+        "query2": "Aztec human sacrifice rituals",
+        "role": "hook",
+        "text": "Thousands of human sacrifices"
+      },
+      {
+        "chips": [
+          {
+            "t": "1000s",
+            "on": "sacrifices",
+            "style": "accent"
+          }
+        ],
+        "punch": "Thousands",
+        "role": "fact",
+        "text": "The Aztecs believed human sacrifice was necessary to save the world",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "archive_query": "Aztec temple human sacrifice",
+        "archive_label": "Aztec Temple",
+        "role": "archive",
+        "text": "Ancient Aztec temple where human sacrifices took place"
+      },
+      {
+        "label": "Sacrifice Enigma",
+        "sub": "Uncovering the truth",
+        "label_on": "Sacrifice",
+        "role": "callout",
+        "text": "Understanding the reasons behind human sacrifice",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if you can't stop asking why.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "Human sacrifice was a brutal practice in ancient Mesoamerica. What drove the Aztecs to commit such atrocities? Follow us to learn more. Follow us for more historical mysteries",
+    "hashtags": [
+      "#shorts",
+      "#history",
+      "#ancientcivilizations",
+      "#mesoamerica",
+      "#aztecs",
+      "#humansacrifice",
+      "#enigma",
+      "#uncoveringthetruth"
+    ]
+  },
+  {
+    "title": "Unraveling the Mystery of Fungal Networks",
+    "thumb": "FUNGI NETWORK",
+    "place": "Global ecosystem",
+    "country": "Worldwide",
+    "scenes": [
+      {
+        "hook_top": "FUNGI ENIGMA",
+        "query": "fungal networks ecosystem",
+        "query2": "mycelium network",
+        "role": "hook",
+        "text": "68 billion miles of fungus"
+      },
+      {
+        "chips": [
+          {
+            "t": "68B",
+            "on": "miles",
+            "style": "white"
+          },
+          {
+            "t": "miles",
+            "on": "fungal",
+            "style": "accent"
+          }
+        ],
+        "punch": "Sixty-eight",
+        "role": "fact",
+        "text": "Scientists have mapped 68 billion miles of fungal networks",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "archive_query": "fungal mycelium network",
+        "archive_label": "Fungal Network",
+        "role": "archive",
+        "text": "Image of fungal mycelium network"
+      },
+      {
+        "label": "Fungi Mystery",
+        "sub": "Unveiling the truth",
+        "label_on": "Fungi",
+        "role": "callout",
+        "text": "Exploring the secrets of fungal networks",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "Fungal networks span over 68 billion miles worldwide. What secrets do they hold? Follow us to learn more. Follow us for more scientific mysteries",
+    "hashtags": [
+      "#shorts",
+      "#science",
+      "#fungalnetworks",
+      "#mycelium",
+      "#ecosystem",
+      "#mystery",
+      "#unveilingthetruth",
+      "#nature"
+    ]
+  },
+  {
+    "title": "What Happens After Death?",
+    "thumb": "LIFE AFTER DEATH",
+    "place": "DMT research facilities",
+    "country": "USA",
+    "scenes": [
+      {
+        "hook_top": "LIFE AFTER DEATH",
+        "query": "DMT research",
+        "query2": "near death experiences",
+        "role": "hook",
+        "text": "DMT researcher explores"
+      },
+      {
+        "label": "Myth: No Explanation",
+        "role": "myth",
+        "text": "There is no scientific explanation for what happens after death",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "label": "Truth: Emerging Research",
+        "role": "truth",
+        "text": "Research on DMT and near-death experiences provides insights into the nature of consciousness and the afterlife",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "label": "Frontier Science",
+        "sub": "What lies beyond?",
+        "label_on": "Explore",
+        "role": "callout",
+        "text": "Exploring the frontiers of human understanding",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if you can't stop asking why.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "Delve into the mysteries of life after death with DMT research and near-death experiences. What do the experts say? Join us for more thought-provoking content.",
+    "hashtags": [
+      "#shorts",
+      "#lifeafterdeath",
+      "#DMT",
+      "#neardeathexperiences",
+      "#consciousness",
+      "#afterlife"
+    ]
+  },
+  {
+    "title": "The Solar Builder's Tragic Fate",
+    "thumb": "SOLAR POWER VISIONARY",
+    "place": "California, USA",
+    "country": "USA",
+    "scenes": [
+      {
+        "hook_top": "SOLAR POWER VISIONARY",
+        "query": "solar power innovation",
+        "query2": "renewable energy pioneers",
+        "role": "hook",
+        "text": "40-year-old Solar Builder"
+      },
+      {
+        "label": "Myth: Accident",
+        "role": "myth",
+        "text": "The Solar Builder's death was a tragic accident",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "label": "Truth: Bigger Questions",
+        "role": "truth",
+        "text": "The Solar Builder's death raises questions about the pursuit of knowledge and power, and the true cost of innovation",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "label": "Truth Revealed",
+        "sub": "What really happened?",
+        "label_on": "Investigate",
+        "role": "callout",
+        "text": "Uncovering the truth behind the Solar Builder's tragic fate",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new mystery every day.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "Discover the story of the Solar Builder, a visionary who believed in the power of knowledge and innovation. What led to his tragic fate? Stay tuned for more captivating stories.",
+    "hashtags": [
+      "#shorts",
+      "#solarpower",
+      "#innovation",
+      "#renewableenergy",
+      "#visionary",
+      "#tragicfate"
+    ]
   }
 ]

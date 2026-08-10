@@ -1,0 +1,67 @@
+{
+  "title": "Uncovering the 7-Headed Serpent Enigma",
+  "thumb": "SERPENT MYSTERY",
+  "place": "Angkor Wat",
+  "country": "Cambodia",
+  "scenes": [
+    {
+      "hook_top": "SERPENT ICON",
+      "query": "ancient serpent statue",
+      "query2": "mythical serpent artwork",
+      "role": "hook",
+      "text": "7 headed serpent found"
+    },
+    {
+      "chips": [
+        {
+          "t": "7 heads",
+          "on": "serpent",
+          "style": "white"
+        }
+      ],
+      "punch": "mythology",
+      "role": "fact",
+      "text": "The 7-headed serpent is a common motif in ancient Mesoamerican art",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "chips": [
+        {
+          "t": "global",
+          "on": "serpent",
+          "style": "accent"
+        }
+      ],
+      "punch": " symbol",
+      "role": "fact",
+      "text": "Similar serpent iconography has been found in ancient cultures worldwide",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "reveal_top": "SERPENT ENIGMA",
+      "query": "unsolved ancient mystery",
+      "query2": "unexplained serpent symbol",
+      "role": "reveal",
+      "text": "The true meaning behind the 7-headed serpent remains a mystery"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new mystery every day.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "The 7-headed serpent is a fascinating and mysterious symbol found in ancient cultures worldwide. But what does it mean? Join us as we uncover the truth behind this enigmatic icon.",
+  "hashtags": [
+    "#shorts",
+    "#mystery",
+    "#serpent",
+    "#symbolism",
+    "#ancientart",
+    "#mesoamerica",
+    "#unexplained",
+    "#fyp"
+  ]
+}

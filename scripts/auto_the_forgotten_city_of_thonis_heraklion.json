@@ -1,0 +1,66 @@
+{
+  "title": "The Forgotten City of Thonis-Heraklion",
+  "thumb": "LOST CITY",
+  "place": "Thonis-Heraklion",
+  "country": "Egypt",
+  "scenes": [
+    {
+      "hook_top": "LOST CITY FOUND",
+      "query": "ancient city ruins",
+      "query2": "underwater archaeology",
+      "role": "hook",
+      "text": "Thonis-Heraklion discovered"
+    },
+    {
+      "chips": [
+        {
+          "t": "1200 BC",
+          "on": "flooded",
+          "style": "white"
+        }
+      ],
+      "punch": "history",
+      "role": "fact",
+      "text": "Thonis-Heraklion was an ancient city swallowed by the sea",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "chips": [
+        {
+          "t": "Mediterranean",
+          "on": "trade",
+          "style": "accent"
+        }
+      ],
+      "punch": "commerce",
+      "role": "fact",
+      "text": "The city was a major center of trade and culture in the ancient Mediterranean",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "reveal_top": "CITY REVEALED",
+      "query": "archaeological discovery",
+      "query2": "ancient egyptian history",
+      "role": "reveal",
+      "text": "The city's discovery has shed new light on ancient Egyptian history"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for the cases no one can explain.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "Thonis-Heraklion was a thriving city in ancient Egypt, but it was lost to the sands of time. Join us as we explore the history and significance of this fascinating lost city.",
+  "hashtags": [
+    "#shorts",
+    "#lostcity",
+    "#egypt",
+    "#archaeology",
+    "#history",
+    "#mediterranean",
+    "#fyp"
+  ]
+}
