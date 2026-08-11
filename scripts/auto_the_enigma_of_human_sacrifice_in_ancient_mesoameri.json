@@ -1,0 +1,61 @@
+{
+  "title": "The Enigma of Human Sacrifice in Ancient Mesoamerica",
+  "thumb": "HUMAN SACRIFICE",
+  "place": "Tenochtitlán",
+  "country": "Mexico",
+  "scenes": [
+    {
+      "hook_top": "HUMAN SACRIFICE ENIGMA",
+      "query": "ancient Mesoamerican human sacrifice",
+      "query2": "Aztec human sacrifice rituals",
+      "role": "hook",
+      "text": "Thousands of human sacrifices"
+    },
+    {
+      "chips": [
+        {
+          "t": "1000s",
+          "on": "sacrifices",
+          "style": "accent"
+        }
+      ],
+      "punch": "Thousands",
+      "role": "fact",
+      "text": "The Aztecs believed human sacrifice was necessary to save the world",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "archive_query": "Aztec temple human sacrifice",
+      "archive_label": "Aztec Temple",
+      "role": "archive",
+      "text": "Ancient Aztec temple where human sacrifices took place"
+    },
+    {
+      "label": "Sacrifice Enigma",
+      "sub": "Uncovering the truth",
+      "label_on": "Sacrifice",
+      "role": "callout",
+      "text": "Understanding the reasons behind human sacrifice",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if you can't stop asking why.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "Human sacrifice was a brutal practice in ancient Mesoamerica. What drove the Aztecs to commit such atrocities? Follow us to learn more. Follow us for more historical mysteries",
+  "hashtags": [
+    "#shorts",
+    "#history",
+    "#ancientcivilizations",
+    "#mesoamerica",
+    "#aztecs",
+    "#humansacrifice",
+    "#enigma",
+    "#uncoveringthetruth"
+  ]
+}

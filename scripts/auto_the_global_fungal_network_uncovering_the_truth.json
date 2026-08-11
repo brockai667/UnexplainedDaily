@@ -1,0 +1,65 @@
+{
+  "title": "The Global Fungal Network: Uncovering the Truth",
+  "thumb": "FUNGI NETWORK",
+  "place": "Global",
+  "country": "Global",
+  "scenes": [
+    {
+      "hook_top": "FUNGI REVEALED",
+      "query": "fungal network",
+      "query2": "mycoremediation",
+      "role": "hook",
+      "text": "Fungi network discovered"
+    },
+    {
+      "chips": [
+        {
+          "t": "68 billion",
+          "on": "fungal",
+          "style": "white"
+        }
+      ],
+      "punch": "network",
+      "role": "fact",
+      "text": "Scientists have mapped 68 billion miles of fungal hyphae beneath the Earth's surface",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "chips": [
+        {
+          "t": "ecological",
+          "on": "balance",
+          "style": "accent"
+        }
+      ],
+      "punch": "nature",
+      "role": "fact",
+      "text": "The fungal network plays a crucial role in ecological balance and soil health",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "reveal_top": "FUNGI REVOLUTION",
+      "query": "ecological discovery",
+      "query2": "fungal network",
+      "role": "reveal",
+      "text": "The discovery of the global fungal network has revolutionized our understanding of ecosystems"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "The global fungal network is a vast, intricate web of fungi that underlies our planet. Join us as we explore the fascinating world of fungi and their role in shaping our ecosystems.",
+  "hashtags": [
+    "#shorts",
+    "#fungalnetwork",
+    "#ecology",
+    "#nature",
+    "#scientificdiscovery",
+    "#fyp"
+  ]
+}
