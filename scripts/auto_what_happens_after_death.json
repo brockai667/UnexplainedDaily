@@ -1,0 +1,53 @@
+{
+  "title": "What Happens After Death?",
+  "thumb": "LIFE AFTER DEATH",
+  "place": "DMT research facilities",
+  "country": "USA",
+  "scenes": [
+    {
+      "hook_top": "LIFE AFTER DEATH",
+      "query": "DMT research",
+      "query2": "near death experiences",
+      "role": "hook",
+      "text": "DMT researcher explores"
+    },
+    {
+      "label": "Myth: No Explanation",
+      "role": "myth",
+      "text": "There is no scientific explanation for what happens after death",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "label": "Truth: Emerging Research",
+      "role": "truth",
+      "text": "Research on DMT and near-death experiences provides insights into the nature of consciousness and the afterlife",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "label": "Frontier Science",
+      "sub": "What lies beyond?",
+      "label_on": "Explore",
+      "role": "callout",
+      "text": "Exploring the frontiers of human understanding",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if you can't stop asking why.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "Delve into the mysteries of life after death with DMT research and near-death experiences. What do the experts say? Join us for more thought-provoking content.",
+  "hashtags": [
+    "#shorts",
+    "#lifeafterdeath",
+    "#DMT",
+    "#neardeathexperiences",
+    "#consciousness",
+    "#afterlife"
+  ]
+}

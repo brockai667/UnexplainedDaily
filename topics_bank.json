@@ -9390,5 +9390,379 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "The Mysterious Great Attractor",
+    "thumb": "GALACTIC ENIGMA",
+    "place": "The Great Attractor region",
+    "country": "Australia",
+    "scenes": [
+      {
+        "hook_top": "COSMIC ENIGMA",
+        "query": "galaxy cluster",
+        "query2": "space mystery",
+        "role": "hook",
+        "text": "Mystery in the cosmos"
+      },
+      {
+        "role": "map",
+        "text": "Located near the Shapley Supercluster in the vicinity of the Centaurus constellation"
+      },
+      {
+        "chips": [
+          {
+            "t": "22M km/h",
+            "on": "speed",
+            "style": "accent"
+          }
+        ],
+        "punch": "Fast",
+        "role": "fact",
+        "text": "The Great Attractor is pulling our galaxy, the Milky Way, and many others towards it at a rate of about 22 million kilometers per hour",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "archive_query": "Great Attractor Hubble",
+        "archive_label": "Hubble View",
+        "role": "archive",
+        "text": "The Great Attractor region as seen by the Hubble Space Telescope"
+      },
+      {
+        "label": "Galactic Secret",
+        "sub": "Still unknown",
+        "label_on": "Mystery",
+        "role": "callout",
+        "text": "What could be the cause of this phenomenon?",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if you can't stop asking why.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "The Great Attractor is a region of space that is pulling our galaxy and many others towards it. What could be the cause of this phenomenon? Follow us for more space mysteries.",
+    "hashtags": [
+      "#space",
+      "#mystery",
+      "#galaxy",
+      "#GreatAttractor",
+      "#cosmos",
+      "#unexplained"
+    ]
+  },
+  {
+    "title": "Unveiling the Secrets of the Taos Hum",
+    "thumb": "UNSOLVED HUM",
+    "place": "Taos, New Mexico",
+    "country": "USA",
+    "scenes": [
+      {
+        "hook_top": "MYSTERY HUM",
+        "query": "sound wave",
+        "query2": "unexplained noise",
+        "role": "hook",
+        "text": "Low-frequency humming noise"
+      },
+      {
+        "role": "map",
+        "text": "Located in Taos, New Mexico, USA"
+      },
+      {
+        "chips": [
+          {
+            "t": "1990s",
+            "on": "start",
+            "style": "white"
+          }
+        ],
+        "role": "fact",
+        "text": "The Taos Hum has been reported by residents and visitors since the 1990s, with no clear explanation",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "archive_query": "Taos Hum diagram",
+        "archive_label": "Hum Sources",
+        "role": "archive",
+        "text": "A diagram of the possible sources of the Taos Hum"
+      },
+      {
+        "label": "Unexplained",
+        "sub": "Still a mystery",
+        "label_on": "Hum",
+        "role": "callout",
+        "text": "What could be the source of this mysterious noise?",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "The Taos Hum is a low-frequency humming noise that has been reported in Taos, New Mexico, since the 1990s. What could be the source of this mysterious noise? Follow us for more unexplained phenomena.",
+    "hashtags": [
+      "#TaosHum",
+      "#unexplained",
+      "#mystery",
+      "#noise",
+      "#NewMexico",
+      "#unsolved"
+    ]
+  },
+  {
+    "title": "The Bloop: The Mysterious Low-Frequency Sound",
+    "thumb": "MYSTERY BLOOP",
+    "place": "The Pacific Ocean, off the coast of Chile",
+    "country": "Chile",
+    "scenes": [
+      {
+        "hook_top": "BLOOP DETECTED",
+        "query": "ocean sound",
+        "query2": "mystery noise",
+        "role": "hook",
+        "text": "Mysterious sound detected in 1997"
+      },
+      {
+        "role": "map",
+        "text": "Located in the Pacific Ocean, off the coast of Chile"
+      },
+      {
+        "chips": [
+          {
+            "t": "1997",
+            "on": "year",
+            "style": "white"
+          }
+        ],
+        "role": "fact",
+        "text": "The Bloop is a low-frequency sound that is louder than any known earthly sound, and was detected by the National Oceanic and Atmospheric Administration (NOAA) in 1997",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "archive_query": "NOAA hydrophone array",
+        "archive_label": "Bloop Detection",
+        "role": "archive",
+        "text": "A diagram of the NOAA's Equatorial Pacific Ocean autonomous hydrophone array"
+      },
+      {
+        "label": "Unexplained",
+        "sub": "Still a mystery",
+        "label_on": "Bloop",
+        "role": "callout",
+        "text": "What could be the source of this mysterious sound?",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "The Bloop is a mysterious low-frequency sound that was detected in 1997. What could be the source of this sound? Follow us for more ocean mysteries.",
+    "hashtags": [
+      "#TheBloop",
+      "#ocean",
+      "#mystery",
+      "#sound",
+      "#Chile",
+      "#NOAA"
+    ]
+  },
+  {
+    "title": "The Enigma of the Fast Radio Bursts",
+    "thumb": "FAST RADIO ENIGMA",
+    "place": "The Parkes Radio Telescope in Australia",
+    "country": "Australia",
+    "scenes": [
+      {
+        "hook_top": "COSMIC ENIGMA",
+        "query": "radio telescope",
+        "query2": "space mystery",
+        "role": "hook",
+        "text": "Brief, intense pulses of radio energy"
+      },
+      {
+        "role": "map",
+        "text": "Located at the Parkes Radio Telescope in Australia"
+      },
+      {
+        "chips": [
+          {
+            "t": "distant",
+            "on": "galaxies",
+            "style": "accent"
+          }
+        ],
+        "role": "fact",
+        "text": "Fast Radio Bursts (FRBs) are brief, intense pulses of radio energy that have been detected coming from distant galaxies",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "archive_query": "Parkes Radio Telescope",
+        "archive_label": "FRB Detection",
+        "role": "archive",
+        "text": "The Parkes Radio Telescope in Australia, where the first FRB was detected"
+      },
+      {
+        "label": "Cosmic Secret",
+        "sub": "Still unknown",
+        "label_on": "FRB",
+        "role": "callout",
+        "text": "What could be the cause of these mysterious pulses?",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "Fast Radio Bursts are brief, intense pulses of radio energy that have been detected coming from distant galaxies. What could be the cause of these mysterious pulses? Follow us for more space mysteries.",
+    "hashtags": [
+      "#FRB",
+      "#space",
+      "#mystery",
+      "#radio",
+      "#astronomy",
+      "#cosmos"
+    ]
+  },
+  {
+    "title": "The Bloop's Source",
+    "thumb": "OCEAN MYSTERY",
+    "place": "Pacific Ocean",
+    "country": "USA",
+    "scenes": [
+      {
+        "hook_top": "OCEAN ENIGMA",
+        "query": "ocean sounds",
+        "query2": "mystery noise",
+        "role": "hook",
+        "text": "50 times louder than a blue whale"
+      },
+      {
+        "chips": [
+          {
+            "t": "1997",
+            "on": "year",
+            "style": "white"
+          }
+        ],
+        "query": "ocean sound waves",
+        "query2": "sonar detection",
+        "role": "fact",
+        "text": "The Bloop is a low-frequency sound detected in 1997"
+      },
+      {
+        "chips": [
+          {
+            "t": "3,000 mi",
+            "on": "distance",
+            "style": "accent"
+          }
+        ],
+        "query": "ocean monitoring",
+        "query2": "sensor technology",
+        "role": "fact",
+        "text": "It was picked up by sensors over 3,000 miles apart"
+      },
+      {
+        "reveal_top": "OCEAN ENIGMA",
+        "query": "unexplained phenomenon",
+        "query2": "ocean mystery",
+        "role": "reveal",
+        "text": "And the source of the sound remains a mystery"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "The Bloop is a mysterious low-frequency sound that was detected in the Pacific Ocean. But what's causing it? Join us as we dive into the unknown.",
+    "hashtags": [
+      "#ocean",
+      "#mystery",
+      "#sound",
+      "#unexplained",
+      "#science",
+      "#marinebiology",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "68 Billion Miles of Fungus",
+    "thumb": "FUNGI NETWORK",
+    "place": "Global",
+    "country": "Various",
+    "scenes": [
+      {
+        "hook_top": "FUNGI EVERYWHERE",
+        "role": "hook",
+        "text": "Fungus spans 68 billion miles",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "chips": [
+          {
+            "t": "68 billion",
+            "on": "miles of fungus",
+            "style": "white"
+          }
+        ],
+        "punch": "miles",
+        "query": "underground fungal networks",
+        "query2": "global mycelium",
+        "role": "fact",
+        "text": "Scientists mapped 68,000,000,000,000 miles of fungus"
+      },
+      {
+        "archive_query": "File:Fungal mycelium.jpg",
+        "archive_label": "Fungus Network",
+        "role": "archive",
+        "text": "Fungal mycelium in various ecosystems"
+      },
+      {
+        "label": "Fungal Power",
+        "sub": "Uncovering secrets",
+        "label_on": "fungus",
+        "query": "fungi in forest ecosystems",
+        "query2": "mycelium in nature",
+        "role": "callout",
+        "text": "What does this vast network do?"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "Discover the massive fungal network beneath our feet. What secrets does it hold? Follow for more on the natural world.",
+    "hashtags": [
+      "#fungi",
+      "#mycelium",
+      "#nature",
+      "#environment",
+      "#science",
+      "#shorts",
+      "#fyp"
+    ]
   }
 ]

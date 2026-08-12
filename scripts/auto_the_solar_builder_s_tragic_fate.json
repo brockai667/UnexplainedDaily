@@ -1,0 +1,53 @@
+{
+  "title": "The Solar Builder's Tragic Fate",
+  "thumb": "SOLAR POWER VISIONARY",
+  "place": "California, USA",
+  "country": "USA",
+  "scenes": [
+    {
+      "hook_top": "SOLAR POWER VISIONARY",
+      "query": "solar power innovation",
+      "query2": "renewable energy pioneers",
+      "role": "hook",
+      "text": "40-year-old Solar Builder"
+    },
+    {
+      "label": "Myth: Accident",
+      "role": "myth",
+      "text": "The Solar Builder's death was a tragic accident",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "label": "Truth: Bigger Questions",
+      "role": "truth",
+      "text": "The Solar Builder's death raises questions about the pursuit of knowledge and power, and the true cost of innovation",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "label": "Truth Revealed",
+      "sub": "What really happened?",
+      "label_on": "Investigate",
+      "role": "callout",
+      "text": "Uncovering the truth behind the Solar Builder's tragic fate",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new mystery every day.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "Discover the story of the Solar Builder, a visionary who believed in the power of knowledge and innovation. What led to his tragic fate? Stay tuned for more captivating stories.",
+  "hashtags": [
+    "#shorts",
+    "#solarpower",
+    "#innovation",
+    "#renewableenergy",
+    "#visionary",
+    "#tragicfate"
+  ]
+}
