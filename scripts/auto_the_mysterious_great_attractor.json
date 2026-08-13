@@ -1,0 +1,63 @@
+{
+  "title": "The Mysterious Great Attractor",
+  "thumb": "GALACTIC ENIGMA",
+  "place": "The Great Attractor region",
+  "country": "Australia",
+  "scenes": [
+    {
+      "hook_top": "COSMIC ENIGMA",
+      "query": "galaxy cluster",
+      "query2": "space mystery",
+      "role": "hook",
+      "text": "Mystery in the cosmos"
+    },
+    {
+      "role": "map",
+      "text": "Located near the Shapley Supercluster in the vicinity of the Centaurus constellation"
+    },
+    {
+      "chips": [
+        {
+          "t": "22M km/h",
+          "on": "speed",
+          "style": "accent"
+        }
+      ],
+      "punch": "Fast",
+      "role": "fact",
+      "text": "The Great Attractor is pulling our galaxy, the Milky Way, and many others towards it at a rate of about 22 million kilometers per hour",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "archive_query": "Great Attractor Hubble",
+      "archive_label": "Hubble View",
+      "role": "archive",
+      "text": "The Great Attractor region as seen by the Hubble Space Telescope"
+    },
+    {
+      "label": "Galactic Secret",
+      "sub": "Still unknown",
+      "label_on": "Mystery",
+      "role": "callout",
+      "text": "What could be the cause of this phenomenon?",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if you can't stop asking why.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "The Great Attractor is a region of space that is pulling our galaxy and many others towards it. What could be the cause of this phenomenon? Follow us for more space mysteries.",
+  "hashtags": [
+    "#space",
+    "#mystery",
+    "#galaxy",
+    "#GreatAttractor",
+    "#cosmos",
+    "#unexplained"
+  ]
+}

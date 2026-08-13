@@ -1,0 +1,62 @@
+{
+  "title": "Deja Vu: A System Error?",
+  "thumb": "DEJA VU",
+  "place": "Various locations",
+  "country": "Global",
+  "scenes": [
+    {
+      "hook_top": "DEJA VU",
+      "query": "deja vu phenomenon",
+      "query2": "mysterious experiences",
+      "role": "hook",
+      "text": "Deja vu: a system error?"
+    },
+    {
+      "role": "map",
+      "text": "Global, various locations"
+    },
+    {
+      "chips": [
+        {
+          "t": "Deja",
+          "on": "vu",
+          "style": "white"
+        }
+      ],
+      "query": "deja vu research",
+      "query2": "human brain",
+      "role": "fact",
+      "text": "Deja vu might be the closest thing to catching a system error"
+    },
+    {
+      "archive_query": "brain scan",
+      "archive_label": "Human Brain",
+      "role": "archive",
+      "text": "Brain scan"
+    },
+    {
+      "label": "Deja Vu",
+      "sub": "System error?",
+      "label_on": "deja vu",
+      "query": "human experience",
+      "query2": "mysterious phenomena",
+      "role": "callout",
+      "text": "Explore the mystery of deja vu"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new mystery every day.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "What is deja vu? Is it a system error? Explore the mystery of this phenomenon. Follow us for more mind-blowing topics and unexplained phenomena.",
+  "hashtags": [
+    "#dejaVu",
+    "#systemerror",
+    "#humanbrain",
+    "#mystery",
+    "#shorts",
+    "#fyp"
+  ]
+}
