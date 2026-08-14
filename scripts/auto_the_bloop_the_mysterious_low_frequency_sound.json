@@ -1,0 +1,62 @@
+{
+  "title": "The Bloop: The Mysterious Low-Frequency Sound",
+  "thumb": "MYSTERY BLOOP",
+  "place": "The Pacific Ocean, off the coast of Chile",
+  "country": "Chile",
+  "scenes": [
+    {
+      "hook_top": "BLOOP DETECTED",
+      "query": "ocean sound",
+      "query2": "mystery noise",
+      "role": "hook",
+      "text": "Mysterious sound detected in 1997"
+    },
+    {
+      "role": "map",
+      "text": "Located in the Pacific Ocean, off the coast of Chile"
+    },
+    {
+      "chips": [
+        {
+          "t": "1997",
+          "on": "year",
+          "style": "white"
+        }
+      ],
+      "role": "fact",
+      "text": "The Bloop is a low-frequency sound that is louder than any known earthly sound, and was detected by the National Oceanic and Atmospheric Administration (NOAA) in 1997",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "archive_query": "NOAA hydrophone array",
+      "archive_label": "Bloop Detection",
+      "role": "archive",
+      "text": "A diagram of the NOAA's Equatorial Pacific Ocean autonomous hydrophone array"
+    },
+    {
+      "label": "Unexplained",
+      "sub": "Still a mystery",
+      "label_on": "Bloop",
+      "role": "callout",
+      "text": "What could be the source of this mysterious sound?",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "The Bloop is a mysterious low-frequency sound that was detected in 1997. What could be the source of this sound? Follow us for more ocean mysteries.",
+  "hashtags": [
+    "#TheBloop",
+    "#ocean",
+    "#mystery",
+    "#sound",
+    "#Chile",
+    "#NOAA"
+  ]
+}

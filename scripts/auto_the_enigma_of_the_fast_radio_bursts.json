@@ -1,0 +1,62 @@
+{
+  "title": "The Enigma of the Fast Radio Bursts",
+  "thumb": "FAST RADIO ENIGMA",
+  "place": "The Parkes Radio Telescope in Australia",
+  "country": "Australia",
+  "scenes": [
+    {
+      "hook_top": "COSMIC ENIGMA",
+      "query": "radio telescope",
+      "query2": "space mystery",
+      "role": "hook",
+      "text": "Brief, intense pulses of radio energy"
+    },
+    {
+      "role": "map",
+      "text": "Located at the Parkes Radio Telescope in Australia"
+    },
+    {
+      "chips": [
+        {
+          "t": "distant",
+          "on": "galaxies",
+          "style": "accent"
+        }
+      ],
+      "role": "fact",
+      "text": "Fast Radio Bursts (FRBs) are brief, intense pulses of radio energy that have been detected coming from distant galaxies",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "archive_query": "Parkes Radio Telescope",
+      "archive_label": "FRB Detection",
+      "role": "archive",
+      "text": "The Parkes Radio Telescope in Australia, where the first FRB was detected"
+    },
+    {
+      "label": "Cosmic Secret",
+      "sub": "Still unknown",
+      "label_on": "FRB",
+      "role": "callout",
+      "text": "What could be the cause of these mysterious pulses?",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "Fast Radio Bursts are brief, intense pulses of radio energy that have been detected coming from distant galaxies. What could be the cause of these mysterious pulses? Follow us for more space mysteries.",
+  "hashtags": [
+    "#FRB",
+    "#space",
+    "#mystery",
+    "#radio",
+    "#astronomy",
+    "#cosmos"
+  ]
+}

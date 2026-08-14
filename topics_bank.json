@@ -9887,5 +9887,320 @@
       "#shorts",
       "#fyp"
     ]
+  },
+  {
+    "title": "Mystery of the Derinkuyu Underground",
+    "thumb": "UNDERGROUND CITY",
+    "place": "Derinkuyu",
+    "country": "Turkey",
+    "scenes": [
+      {
+        "hook_top": "SUBTERRANEAN CITY",
+        "query": "ancient underground cities",
+        "query2": "hidden tunnels",
+        "role": "hook",
+        "text": "18 stories below"
+      },
+      {
+        "role": "map",
+        "text": "Derinkuyu, Turkey"
+      },
+      {
+        "chips": [
+          {
+            "t": "20,000",
+            "on": "inhabitants",
+            "style": "white"
+          }
+        ],
+        "punch": "inhabitants",
+        "query": "ancient population density",
+        "query2": "historical city planning",
+        "role": "fact",
+        "text": "Could accommodate 20,000 people"
+      },
+      {
+        "archive_query": "Derinkuyu underground city",
+        "archive_label": "Ancient Entrance",
+        "role": "archive",
+        "text": "Derinkuyu underground city entrance"
+      },
+      {
+        "label": "The Big Question",
+        "sub": "Discover the truth",
+        "label_on": "big",
+        "query": "ancient mysteries",
+        "query2": "unexplained phenomena",
+        "role": "callout",
+        "text": "What was it used for?"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "Explore the mysterious Derinkuyu underground city in Turkey. What secrets lie beneath the surface? Follow for more unexplained phenomena.",
+    "hashtags": [
+      "#shorts",
+      "#mystery",
+      "#undergroundcity",
+      "#Derinkuyu",
+      "#Turkey",
+      "#ancienthistory"
+    ]
+  },
+  {
+    "title": "The Enigma of the Lycurgus Cup",
+    "thumb": "ANCIENT ROMAN GLASS",
+    "place": "British Museum",
+    "country": "United Kingdom",
+    "scenes": [
+      {
+        "hook_top": "ROMAN GLASS",
+        "query": "ancient roman artifacts",
+        "query2": "historical glassmaking",
+        "role": "hook",
+        "text": "1,600 years old"
+      },
+      {
+        "role": "map",
+        "text": "British Museum, London"
+      },
+      {
+        "chips": [
+          {
+            "t": "4th",
+            "on": "century",
+            "style": "accent"
+          }
+        ],
+        "punch": "century",
+        "query": "ancient roman technology",
+        "query2": "historical scientific discoveries",
+        "role": "fact",
+        "text": "Changes color when lit"
+      },
+      {
+        "archive_query": "Lycurgus Cup British Museum",
+        "archive_label": "Roman Glass",
+        "role": "archive",
+        "text": "Lycurgus Cup"
+      },
+      {
+        "label": "The Big Mystery",
+        "sub": "Uncover the secrets",
+        "label_on": "big",
+        "query": "ancient mysteries",
+        "query2": "unexplained phenomena",
+        "role": "callout",
+        "text": "How was it made?"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new mystery every day.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "Discover the mysterious Lycurgus Cup, an ancient Roman glass artifact that changes color when lit. Follow for more enigmas and unexplained phenomena.",
+    "hashtags": [
+      "#shorts",
+      "#mystery",
+      "#romanglass",
+      "#lycurguscup",
+      "#britishmuseum",
+      "#ancientrome"
+    ]
+  },
+  {
+    "title": "What Lies Beyond the Taos Hum?",
+    "thumb": "TAOS HUM",
+    "place": "Taos",
+    "country": "USA",
+    "scenes": [
+      {
+        "hook_top": "MYSTERY NOISE",
+        "query": "abandoned street at night",
+        "query2": "deserted road",
+        "role": "hook",
+        "text": "2 decades of noise"
+      },
+      {
+        "chips": [
+          {
+            "t": "2,000",
+            "on": "incidents",
+            "style": "accent"
+          }
+        ],
+        "punch": "incidents",
+        "query": "news report on TV",
+        "query2": "newspaper headlines",
+        "role": "fact",
+        "text": "Over 2,000 reported incidents"
+      },
+      {
+        "chips": [
+          {
+            "t": "low hum",
+            "on": "noise",
+            "style": "white"
+          }
+        ],
+        "query": "sound wave animation",
+        "query2": "audio equalizer",
+        "role": "fact",
+        "text": "Noise described as a low hum"
+      },
+      {
+        "reveal_top": "SOURCE UNKNOWN",
+        "query": "question mark symbol",
+        "query2": "mystery box",
+        "role": "reveal",
+        "text": "Source still unknown after years"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "The Taos Hum is a mysterious noise that has been reported by residents and visitors in Taos, New Mexico. Despite numerous investigations, the source of the hum remains unknown. Follow for more on this and other unexplained phenomena.",
+    "hashtags": [
+      "#TaosHum",
+      "#UnexplainedPhenomena",
+      "#MysteryNoise",
+      "#shorts",
+      "#fyp",
+      "#unsolved"
+    ]
+  },
+  {
+    "title": "Uncovering the Secrets of the Gobekli Tepe",
+    "thumb": "GOBEKLI TEPE",
+    "place": "Gobekli Tepe",
+    "country": "Turkey",
+    "scenes": [
+      {
+        "hook_top": "ANCIENT WONDER",
+        "query": "ancient temple ruins",
+        "query2": "historical landmark",
+        "role": "hook",
+        "text": "11,000 years old"
+      },
+      {
+        "chips": [
+          {
+            "t": "1963",
+            "on": "discovered",
+            "style": "white"
+          }
+        ],
+        "punch": "discovered",
+        "query": "archaeologist at work",
+        "query2": "excavation site",
+        "role": "fact",
+        "text": "Discovered in 1963 by Peter Benedict"
+      },
+      {
+        "chips": [
+          {
+            "t": "20 tons",
+            "on": "pillars",
+            "style": "accent"
+          }
+        ],
+        "query": "stone pillar animation",
+        "query2": "ancient construction",
+        "role": "fact",
+        "text": "Features T-shaped pillars weighing up to 20 tons"
+      },
+      {
+        "reveal_top": "SECRETS REMAIN",
+        "query": "question mark symbol",
+        "query2": "mystery box",
+        "role": "reveal",
+        "text": "Purpose and construction methods still debated"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "Gobekli Tepe is an ancient temple in Turkey that has been shrouded in mystery for thousands of years. Despite being discovered over 50 years ago, the purpose and construction methods of this ancient wonder remain debated. Follow for more on this and other ancient mysteries.",
+    "hashtags": [
+      "#GobekliTepe",
+      "#AncientMysteries",
+      "#Archaeology",
+      "#shorts",
+      "#fyp",
+      "#history"
+    ]
+  },
+  {
+    "title": "The 7-Headed Serpent of Angkor Wat",
+    "thumb": "SERPENT MYSTERY",
+    "place": "Angkor Wat",
+    "country": "Cambodia",
+    "description": "Uncover the secrets of the 7-Headed Serpent in Angkor Wat, a mysterious ancient symbol. Follow us for more on the world's most fascinating enigmas. #shorts #fyp #mystery #angkorwat",
+    "scenes": [
+      {
+        "hook_top": "SERPENT ENIGMA",
+        "query": "Angkor Wat ruins",
+        "query2": "ancient temple carvings",
+        "role": "hook",
+        "text": "7 heads, one mystery"
+      },
+      {
+        "chips": [
+          {
+            "t": "7",
+            "on": "seven",
+            "style": "white"
+          }
+        ],
+        "punch": "mythical",
+        "query": "ancient Khmer art",
+        "query2": "Cambodian mythology",
+        "role": "fact",
+        "text": "The 7-Headed Serpent is a common symbol in ancient Khmer art"
+      },
+      {
+        "archive_query": "Angkor Wat bas-relief",
+        "archive_label": "Ancient Carving",
+        "query": "Angkor Wat carvings",
+        "query2": "ancient stone carvings",
+        "role": "archive",
+        "text": "The 7-Headed Serpent is depicted in ancient carvings at Angkor Wat"
+      },
+      {
+        "label": "Serpent Mystery",
+        "sub": "Uncover the truth",
+        "label_on": "symbolism",
+        "query": "mysterious symbols",
+        "query2": "ancient mysteries",
+        "role": "callout",
+        "text": "What does the 7-Headed Serpent represent?"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for a new mystery every day.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#mystery",
+      "#angkorwat",
+      "#cambodia",
+      "# ancienthistory"
+    ]
   }
 ]
