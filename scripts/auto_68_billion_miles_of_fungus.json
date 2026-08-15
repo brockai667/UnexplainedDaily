@@ -1,0 +1,60 @@
+{
+  "title": "68 Billion Miles of Fungus",
+  "thumb": "FUNGI NETWORK",
+  "place": "Global",
+  "country": "Various",
+  "scenes": [
+    {
+      "hook_top": "FUNGI EVERYWHERE",
+      "role": "hook",
+      "text": "Fungus spans 68 billion miles",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "chips": [
+        {
+          "t": "68 billion",
+          "on": "miles of fungus",
+          "style": "white"
+        }
+      ],
+      "punch": "miles",
+      "query": "underground fungal networks",
+      "query2": "global mycelium",
+      "role": "fact",
+      "text": "Scientists mapped 68,000,000,000,000 miles of fungus"
+    },
+    {
+      "archive_query": "File:Fungal mycelium.jpg",
+      "archive_label": "Fungus Network",
+      "role": "archive",
+      "text": "Fungal mycelium in various ecosystems"
+    },
+    {
+      "label": "Fungal Power",
+      "sub": "Uncovering secrets",
+      "label_on": "fungus",
+      "query": "fungi in forest ecosystems",
+      "query2": "mycelium in nature",
+      "role": "callout",
+      "text": "What does this vast network do?"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "Discover the massive fungal network beneath our feet. What secrets does it hold? Follow for more on the natural world.",
+  "hashtags": [
+    "#fungi",
+    "#mycelium",
+    "#nature",
+    "#environment",
+    "#science",
+    "#shorts",
+    "#fyp"
+  ]
+}

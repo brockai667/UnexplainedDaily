@@ -1,0 +1,65 @@
+{
+  "title": "The Bloop's Source",
+  "thumb": "OCEAN MYSTERY",
+  "place": "Pacific Ocean",
+  "country": "USA",
+  "scenes": [
+    {
+      "hook_top": "OCEAN ENIGMA",
+      "query": "ocean sounds",
+      "query2": "mystery noise",
+      "role": "hook",
+      "text": "50 times louder than a blue whale"
+    },
+    {
+      "chips": [
+        {
+          "t": "1997",
+          "on": "year",
+          "style": "white"
+        }
+      ],
+      "query": "ocean sound waves",
+      "query2": "sonar detection",
+      "role": "fact",
+      "text": "The Bloop is a low-frequency sound detected in 1997"
+    },
+    {
+      "chips": [
+        {
+          "t": "3,000 mi",
+          "on": "distance",
+          "style": "accent"
+        }
+      ],
+      "query": "ocean monitoring",
+      "query2": "sensor technology",
+      "role": "fact",
+      "text": "It was picked up by sensors over 3,000 miles apart"
+    },
+    {
+      "reveal_top": "OCEAN ENIGMA",
+      "query": "unexplained phenomenon",
+      "query2": "ocean mystery",
+      "role": "reveal",
+      "text": "And the source of the sound remains a mystery"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "The Bloop is a mysterious low-frequency sound that was detected in the Pacific Ocean. But what's causing it? Join us as we dive into the unknown.",
+  "hashtags": [
+    "#ocean",
+    "#mystery",
+    "#sound",
+    "#unexplained",
+    "#science",
+    "#marinebiology",
+    "#shorts",
+    "#fyp"
+  ]
+}

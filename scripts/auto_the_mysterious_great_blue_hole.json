@@ -1,0 +1,65 @@
+{
+  "title": "The Mysterious Great Blue Hole",
+  "thumb": "GREAT BLUE HOLE",
+  "place": "The Great Blue Hole",
+  "country": "Belize",
+  "scenes": [
+    {
+      "hook_top": "OCEAN ENIGMA",
+      "query": "ocean sinkhole",
+      "query2": "underwater landscape",
+      "role": "hook",
+      "text": "The world's largest submarine sinkhole"
+    },
+    {
+      "role": "map",
+      "text": "The Great Blue Hole is located in the center of the Lighthouse Reef Atoll"
+    },
+    {
+      "chips": [
+        {
+          "t": "300m",
+          "on": "depth",
+          "style": "white"
+        }
+      ],
+      "punch": "deep",
+      "role": "fact",
+      "text": "The Great Blue Hole is over 300 meters deep",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "archive_query": "Great Blue Hole underwater",
+      "archive_label": "Ocean Sinkhole",
+      "role": "archive",
+      "text": "The Great Blue Hole's stunning underwater scenery"
+    },
+    {
+      "label": "Ocean Enigma",
+      "sub": "Unexplained formation",
+      "label_on": "Hole",
+      "role": "callout",
+      "text": "What is The Great Blue Hole?",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "The Great Blue Hole is a massive submarine sinkhole that has fascinated scientists and explorers for decades. But how was it formed? Follow us for more ocean mysteries. The Mysterious Great Blue Hole is still an enigma.",
+  "hashtags": [
+    "#TheGreatBlueHole",
+    "#OceanMysteries",
+    "#Sinkhole",
+    "#Underwater",
+    "#Belize",
+    "#Science",
+    "#shorts",
+    "#fyp"
+  ]
+}

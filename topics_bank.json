@@ -10202,5 +10202,186 @@
       "#cambodia",
       "# ancienthistory"
     ]
+  },
+  {
+    "title": "Unlocking the Secrets of the Lycurgus Cup",
+    "thumb": "LYCURGUS CUP",
+    "place": "British Museum",
+    "country": "United Kingdom",
+    "scenes": [
+      {
+        "hook_top": "ANCIENT CUP",
+        "query": "Roman glassware",
+        "query2": "ancient artifacts",
+        "role": "hook",
+        "text": "1 ancient cup"
+      },
+      {
+        "role": "map",
+        "text": "Located in the British Museum, London"
+      },
+      {
+        "chips": [
+          {
+            "t": "4th",
+            "on": "century",
+            "style": "white"
+          }
+        ],
+        "punch": "century",
+        "role": "fact",
+        "text": "Made in the 4th century",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "archive_query": "Lycurgus Cup British Museum",
+        "archive_label": "Lycurgus Cup",
+        "role": "archive",
+        "text": "A photo of the Lycurgus Cup"
+      },
+      {
+        "label": "The Cup",
+        "sub": "A 4th-century mystery",
+        "label_on": "cup",
+        "role": "callout",
+        "text": "What is its secret?",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if you can't stop asking why.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "The Lycurgus Cup is a 4th-century Roman glass cup that changes color depending on the lighting. What is its secret? Follow us for more mysteries.",
+    "hashtags": [
+      "#shorts",
+      "#mystery",
+      "#ancientart",
+      "#LycurgusCup",
+      "#RomanGlass",
+      "#BritishMuseum"
+    ]
+  },
+  {
+    "title": "What Lies Beyond the Great Attractor?",
+    "thumb": "GALAXY MYSTERY",
+    "place": "The Great Attractor region",
+    "country": "Australia",
+    "scenes": [
+      {
+        "hook_top": "COSMIC ANOMALY",
+        "query": "galaxy cluster in space",
+        "query2": "cosmic event",
+        "role": "hook",
+        "text": "A region 250 million light-years away"
+      },
+      {
+        "chips": [
+          {
+            "t": "600 km/s",
+            "on": "speed",
+            "style": "white"
+          }
+        ],
+        "punch": "Fast",
+        "query": "galaxy movement animation",
+        "query2": "space velocity",
+        "role": "fact",
+        "text": "The Great Attractor is pulling our galaxy at 600 km/s"
+      },
+      {
+        "chips": [
+          {
+            "t": "1970s",
+            "on": "decade",
+            "style": "accent"
+          }
+        ],
+        "query": "vintage telescope observations",
+        "query2": "astronomy history",
+        "role": "fact",
+        "text": "This phenomenon was first observed in the 1970s"
+      },
+      {
+        "reveal_top": "GRAVITY ENIGMA",
+        "query": "mysterious space phenomenon",
+        "query2": "unexplained astronomy",
+        "role": "reveal",
+        "text": "But what's causing this massive gravitational pull?"
+      },
+      {
+        "role": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "The Great Attractor is a region of space that's pulling our galaxy and many others towards it. But what's behind this massive gravitational force? Join us as we explore one of the universe's biggest mysteries.",
+    "hashtags": [
+      "#space",
+      "#mystery",
+      "#galaxy",
+      "#cosmos",
+      "#unexplained",
+      "#astronomy",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Mysterious Taos Hum",
+    "thumb": "TAOS HUM",
+    "place": "Taos",
+    "country": "USA",
+    "scenes": [
+      {
+        "hook_top": "TAOS HUM",
+        "role": "hook",
+        "text": "1 town, 1 mysterious sound",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "label": "Alien Myth",
+        "role": "myth",
+        "text": "The hum is caused by aliens",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "label": "Unknown Cause",
+        "role": "truth",
+        "text": "The cause of the hum remains unknown, but scientists suspect it may be related to natural geological activity or human-made noise",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "label": "Uncovered",
+        "sub": "Taos Hum mystery",
+        "label_on": "Discover",
+        "role": "callout",
+        "text": "The truth is still out there, waiting to be uncovered",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if you can't stop asking why.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "The Taos Hum is a mysterious and unexplained low-frequency sound that has been heard in Taos, New Mexico, for decades. Despite numerous investigations, the cause of the hum remains unknown. Join us as we delve into the mystery of the Taos Hum and explore the possible explanations behind this baffling phenomenon. Follow us for more unexplained mysteries",
+    "hashtags": [
+      "#TaosHum",
+      "#UnexplainedMystery",
+      "#Mystery",
+      "#Shorts",
+      "#FYP"
+    ]
   }
 ]
