@@ -1,0 +1,63 @@
+{
+  "title": "The Enigma of the Lycurgus Cup",
+  "thumb": "ANCIENT ROMAN GLASS",
+  "place": "British Museum",
+  "country": "United Kingdom",
+  "scenes": [
+    {
+      "hook_top": "ROMAN GLASS",
+      "query": "ancient roman artifacts",
+      "query2": "historical glassmaking",
+      "role": "hook",
+      "text": "1,600 years old"
+    },
+    {
+      "role": "map",
+      "text": "British Museum, London"
+    },
+    {
+      "chips": [
+        {
+          "t": "4th",
+          "on": "century",
+          "style": "accent"
+        }
+      ],
+      "punch": "century",
+      "query": "ancient roman technology",
+      "query2": "historical scientific discoveries",
+      "role": "fact",
+      "text": "Changes color when lit"
+    },
+    {
+      "archive_query": "Lycurgus Cup British Museum",
+      "archive_label": "Roman Glass",
+      "role": "archive",
+      "text": "Lycurgus Cup"
+    },
+    {
+      "label": "The Big Mystery",
+      "sub": "Uncover the secrets",
+      "label_on": "big",
+      "query": "ancient mysteries",
+      "query2": "unexplained phenomena",
+      "role": "callout",
+      "text": "How was it made?"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new mystery every day.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "Discover the mysterious Lycurgus Cup, an ancient Roman glass artifact that changes color when lit. Follow for more enigmas and unexplained phenomena.",
+  "hashtags": [
+    "#shorts",
+    "#mystery",
+    "#romanglass",
+    "#lycurguscup",
+    "#britishmuseum",
+    "#ancientrome"
+  ]
+}

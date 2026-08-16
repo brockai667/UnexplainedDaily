@@ -10383,5 +10383,123 @@
       "#Shorts",
       "#FYP"
     ]
+  },
+  {
+    "title": "Unveiling the Secrets of the Great Attractor",
+    "thumb": "GREAT ATTRACTOR",
+    "place": "The Great Attractor region",
+    "country": "Australia",
+    "scenes": [
+      {
+        "hook_top": "COSMIC ENIGMA",
+        "query": "galaxy cluster",
+        "query2": "space landscape",
+        "role": "hook",
+        "text": "A region 250 million light-years away"
+      },
+      {
+        "chips": [
+          {
+            "t": "2M km/h",
+            "on": "speed",
+            "style": "white"
+          }
+        ],
+        "punch": "Whoa",
+        "query": "galaxy movement",
+        "query2": "space velocity",
+        "role": "fact",
+        "text": "The Great Attractor is pulling our galaxy at 2 million km/h"
+      },
+      {
+        "chips": [
+          {
+            "t": "1970s",
+            "on": "era",
+            "style": "accent"
+          }
+        ],
+        "query": "old astronomy equipment",
+        "query2": "vintage space research",
+        "role": "fact",
+        "text": "This phenomenon was discovered in the 1970s"
+      },
+      {
+        "reveal_top": "UNKNOWN FORCE",
+        "query": "mysterious space",
+        "query2": "cosmic wonder",
+        "role": "reveal",
+        "text": "It's still unknown what's causing this attraction"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "The Great Attractor is a region of space that's pulling our galaxy towards it. But what's causing this phenomenon? Join us as we unveil the secrets of the Great Attractor. Follow us for more space mysteries! #space #mystery #GreatAttractor",
+    "hashtags": [
+      "#space",
+      "#mystery",
+      "#GreatAttractor",
+      "#cosmic",
+      "#unexplained",
+      "#shorts",
+      "#fyp"
+    ]
+  },
+  {
+    "title": "The Enigmatic Bronze Age Disc",
+    "thumb": "MYSTERY DISC",
+    "place": "Nebra",
+    "country": "Germany",
+    "scenes": [
+      {
+        "hook_top": "NEBRA DISC",
+        "query": "ancient bronze disc",
+        "query2": "mysterious artifacts",
+        "role": "hook",
+        "text": "1600 BC mystery"
+      },
+      {
+        "label": "Simple Calendar",
+        "query": "ancient astronomical instruments",
+        "query2": "old celestial maps",
+        "role": "myth",
+        "text": "A simple calendar"
+      },
+      {
+        "label": "Astronomical Clock",
+        "query": "ancient advanced technology",
+        "query2": "historical scientific discoveries",
+        "role": "truth",
+        "text": "A complex astronomical clock"
+      },
+      {
+        "label": "Discover More",
+        "sub": "Explore the unknown",
+        "label_on": "Learn",
+        "query": "mysterious ancient artifacts",
+        "query2": "unexplained historical objects",
+        "role": "callout",
+        "text": "Uncover more mysteries like this"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if you can't stop asking why.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "Explore the mysterious Nebra Bronze Age disc, an ancient astronomical instrument. Follow for more unexplained phenomena.",
+    "hashtags": [
+      "#shorts",
+      "#mystery",
+      "#NebraDisc",
+      "#ancientartifacts",
+      "#unexplained",
+      "#history"
+    ]
   }
 ]

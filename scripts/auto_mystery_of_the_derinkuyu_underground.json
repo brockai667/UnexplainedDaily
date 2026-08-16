@@ -1,0 +1,63 @@
+{
+  "title": "Mystery of the Derinkuyu Underground",
+  "thumb": "UNDERGROUND CITY",
+  "place": "Derinkuyu",
+  "country": "Turkey",
+  "scenes": [
+    {
+      "hook_top": "SUBTERRANEAN CITY",
+      "query": "ancient underground cities",
+      "query2": "hidden tunnels",
+      "role": "hook",
+      "text": "18 stories below"
+    },
+    {
+      "role": "map",
+      "text": "Derinkuyu, Turkey"
+    },
+    {
+      "chips": [
+        {
+          "t": "20,000",
+          "on": "inhabitants",
+          "style": "white"
+        }
+      ],
+      "punch": "inhabitants",
+      "query": "ancient population density",
+      "query2": "historical city planning",
+      "role": "fact",
+      "text": "Could accommodate 20,000 people"
+    },
+    {
+      "archive_query": "Derinkuyu underground city",
+      "archive_label": "Ancient Entrance",
+      "role": "archive",
+      "text": "Derinkuyu underground city entrance"
+    },
+    {
+      "label": "The Big Question",
+      "sub": "Discover the truth",
+      "label_on": "big",
+      "query": "ancient mysteries",
+      "query2": "unexplained phenomena",
+      "role": "callout",
+      "text": "What was it used for?"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "Explore the mysterious Derinkuyu underground city in Turkey. What secrets lie beneath the surface? Follow for more unexplained phenomena.",
+  "hashtags": [
+    "#shorts",
+    "#mystery",
+    "#undergroundcity",
+    "#Derinkuyu",
+    "#Turkey",
+    "#ancienthistory"
+  ]
+}
