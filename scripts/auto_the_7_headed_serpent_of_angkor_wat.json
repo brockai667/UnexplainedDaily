@@ -1,0 +1,61 @@
+{
+  "title": "The 7-Headed Serpent of Angkor Wat",
+  "thumb": "SERPENT MYSTERY",
+  "place": "Angkor Wat",
+  "country": "Cambodia",
+  "description": "Uncover the secrets of the 7-Headed Serpent in Angkor Wat, a mysterious ancient symbol. Follow us for more on the world's most fascinating enigmas. #shorts #fyp #mystery #angkorwat",
+  "scenes": [
+    {
+      "hook_top": "SERPENT ENIGMA",
+      "query": "Angkor Wat ruins",
+      "query2": "ancient temple carvings",
+      "role": "hook",
+      "text": "7 heads, one mystery"
+    },
+    {
+      "chips": [
+        {
+          "t": "7",
+          "on": "seven",
+          "style": "white"
+        }
+      ],
+      "punch": "mythical",
+      "query": "ancient Khmer art",
+      "query2": "Cambodian mythology",
+      "role": "fact",
+      "text": "The 7-Headed Serpent is a common symbol in ancient Khmer art"
+    },
+    {
+      "archive_query": "Angkor Wat bas-relief",
+      "archive_label": "Ancient Carving",
+      "query": "Angkor Wat carvings",
+      "query2": "ancient stone carvings",
+      "role": "archive",
+      "text": "The 7-Headed Serpent is depicted in ancient carvings at Angkor Wat"
+    },
+    {
+      "label": "Serpent Mystery",
+      "sub": "Uncover the truth",
+      "label_on": "symbolism",
+      "query": "mysterious symbols",
+      "query2": "ancient mysteries",
+      "role": "callout",
+      "text": "What does the 7-Headed Serpent represent?"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new mystery every day.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#mystery",
+    "#angkorwat",
+    "#cambodia",
+    "# ancienthistory"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "title": "What Lies Beyond the Taos Hum?",
+  "thumb": "TAOS HUM",
+  "place": "Taos",
+  "country": "USA",
+  "scenes": [
+    {
+      "hook_top": "MYSTERY NOISE",
+      "query": "abandoned street at night",
+      "query2": "deserted road",
+      "role": "hook",
+      "text": "2 decades of noise"
+    },
+    {
+      "chips": [
+        {
+          "t": "2,000",
+          "on": "incidents",
+          "style": "accent"
+        }
+      ],
+      "punch": "incidents",
+      "query": "news report on TV",
+      "query2": "newspaper headlines",
+      "role": "fact",
+      "text": "Over 2,000 reported incidents"
+    },
+    {
+      "chips": [
+        {
+          "t": "low hum",
+          "on": "noise",
+          "style": "white"
+        }
+      ],
+      "query": "sound wave animation",
+      "query2": "audio equalizer",
+      "role": "fact",
+      "text": "Noise described as a low hum"
+    },
+    {
+      "reveal_top": "SOURCE UNKNOWN",
+      "query": "question mark symbol",
+      "query2": "mystery box",
+      "role": "reveal",
+      "text": "Source still unknown after years"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "The Taos Hum is a mysterious noise that has been reported by residents and visitors in Taos, New Mexico. Despite numerous investigations, the source of the hum remains unknown. Follow for more on this and other unexplained phenomena.",
+  "hashtags": [
+    "#TaosHum",
+    "#UnexplainedPhenomena",
+    "#MysteryNoise",
+    "#shorts",
+    "#fyp",
+    "#unsolved"
+  ]
+}
