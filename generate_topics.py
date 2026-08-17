@@ -245,7 +245,7 @@ def build_prompt(n, existing_titles, existing_places, trending=None):
     )
 
 
-FALLBACK_MODEL = os.environ.get("MODELS_FALLBACK", "llama-3.1-8b-instant")
+FALLBACK_MODEL = os.environ.get("MODELS_FALLBACK", "openai/gpt-oss-20b")
 
 
 def call_model(user_text, _tries=4):
