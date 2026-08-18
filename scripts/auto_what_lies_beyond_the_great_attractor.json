@@ -1,0 +1,66 @@
+{
+  "title": "What Lies Beyond the Great Attractor?",
+  "thumb": "GALAXY MYSTERY",
+  "place": "The Great Attractor region",
+  "country": "Australia",
+  "scenes": [
+    {
+      "hook_top": "COSMIC ANOMALY",
+      "query": "galaxy cluster in space",
+      "query2": "cosmic event",
+      "role": "hook",
+      "text": "A region 250 million light-years away"
+    },
+    {
+      "chips": [
+        {
+          "t": "600 km/s",
+          "on": "speed",
+          "style": "white"
+        }
+      ],
+      "punch": "Fast",
+      "query": "galaxy movement animation",
+      "query2": "space velocity",
+      "role": "fact",
+      "text": "The Great Attractor is pulling our galaxy at 600 km/s"
+    },
+    {
+      "chips": [
+        {
+          "t": "1970s",
+          "on": "decade",
+          "style": "accent"
+        }
+      ],
+      "query": "vintage telescope observations",
+      "query2": "astronomy history",
+      "role": "fact",
+      "text": "This phenomenon was first observed in the 1970s"
+    },
+    {
+      "reveal_top": "GRAVITY ENIGMA",
+      "query": "mysterious space phenomenon",
+      "query2": "unexplained astronomy",
+      "role": "reveal",
+      "text": "But what's causing this massive gravitational pull?"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "The Great Attractor is a region of space that's pulling our galaxy and many others towards it. But what's behind this massive gravitational force? Join us as we explore one of the universe's biggest mysteries.",
+  "hashtags": [
+    "#space",
+    "#mystery",
+    "#galaxy",
+    "#cosmos",
+    "#unexplained",
+    "#astronomy",
+    "#shorts",
+    "#fyp"
+  ]
+}
