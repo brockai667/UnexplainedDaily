@@ -1,0 +1,52 @@
+{
+  "title": "The Mysterious Taos Hum",
+  "thumb": "TAOS HUM",
+  "place": "Taos",
+  "country": "USA",
+  "scenes": [
+    {
+      "hook_top": "TAOS HUM",
+      "role": "hook",
+      "text": "1 town, 1 mysterious sound",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "label": "Alien Myth",
+      "role": "myth",
+      "text": "The hum is caused by aliens",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "label": "Unknown Cause",
+      "role": "truth",
+      "text": "The cause of the hum remains unknown, but scientists suspect it may be related to natural geological activity or human-made noise",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "label": "Uncovered",
+      "sub": "Taos Hum mystery",
+      "label_on": "Discover",
+      "role": "callout",
+      "text": "The truth is still out there, waiting to be uncovered",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if you can't stop asking why.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "The Taos Hum is a mysterious and unexplained low-frequency sound that has been heard in Taos, New Mexico, for decades. Despite numerous investigations, the cause of the hum remains unknown. Join us as we delve into the mystery of the Taos Hum and explore the possible explanations behind this baffling phenomenon. Follow us for more unexplained mysteries",
+  "hashtags": [
+    "#TaosHum",
+    "#UnexplainedMystery",
+    "#Mystery",
+    "#Shorts",
+    "#FYP"
+  ]
+}
