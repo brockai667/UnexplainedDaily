@@ -1,0 +1,62 @@
+{
+  "title": "The Mysterious Gobekli Tepe",
+  "thumb": "GOBEKLI TEPE",
+  "place": "Gobekli Tepe",
+  "country": "Turkey",
+  "scenes": [
+    {
+      "hook_top": "ANCIENT MYSTERY",
+      "query": "ancient temple ruins",
+      "query2": "stone structures",
+      "role": "hook",
+      "text": "11,000 years old"
+    },
+    {
+      "chips": [
+        {
+          "t": "11,000",
+          "on": "years old",
+          "style": "white"
+        }
+      ],
+      "punch": "old",
+      "query": "historic monument",
+      "query2": "ancient stones",
+      "role": "fact",
+      "text": "Gobekli Tepe is the oldest known example of monumental architecture"
+    },
+    {
+      "archive_query": "Gobekli Tepe T-shaped pillars",
+      "archive_label": "T-shaped",
+      "query": "ancient artifact",
+      "query2": "museum exhibit",
+      "role": "archive",
+      "text": "Gobekli Tepe's T-shaped pillars"
+    },
+    {
+      "label": "Unknown Purpose",
+      "sub": "still a mystery",
+      "label_on": "purpose",
+      "query": "abandoned temple",
+      "query2": "deserted monument",
+      "role": "callout",
+      "text": "What was its purpose?"
+    },
+    {
+      "role": "cta",
+      "text": "Follow for a new mystery every day.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "Explore the mysterious Gobekli Tepe, the oldest known example of monumental architecture. What was its purpose? Follow us for more unexplained mysteries.",
+  "hashtags": [
+    "#GobekliTepe",
+    "#AncientMystery",
+    "#Unexplained",
+    "#MysteriousMonuments",
+    "#HistoricWonders",
+    "#Shorts",
+    "#FYP"
+  ]
+}

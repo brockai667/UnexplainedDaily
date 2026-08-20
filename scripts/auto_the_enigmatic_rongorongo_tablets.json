@@ -1,0 +1,63 @@
+{
+  "title": "The Enigmatic Rongorongo Tablets",
+  "thumb": "ISLAND MYSTERY",
+  "place": "Easter Island",
+  "country": "Chile",
+  "scenes": [
+    {
+      "hook_top": "ONGORONGO TABLETS",
+      "role": "hook",
+      "text": "15 undeciphered tablets",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "role": "map",
+      "text": "Easter Island, Chile"
+    },
+    {
+      "chips": [
+        {
+          "t": "1600",
+          "on": "created",
+          "style": "white"
+        }
+      ],
+      "role": "fact",
+      "text": "Created between 1600 and 1900 AD",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "archive_query": "Rongorongo tablet British Museum",
+      "archive_label": "Mysterious Tablet",
+      "role": "archive",
+      "text": "Rongorongo tablet at the British Museum"
+    },
+    {
+      "label": "Rongorongo Mystery",
+      "sub": "Still unsolved",
+      "label_on": "symbols",
+      "role": "callout",
+      "text": "What do these symbols mean?",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if you can't stop asking why.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "The Rongorongo tablets are a set of undeciphered tablets from Easter Island. Discover the mystery behind these ancient artifacts.",
+  "hashtags": [
+    "#Rongorongo",
+    "#EasterIsland",
+    "#Mystery",
+    "#AncientArtifacts",
+    "#Undeciphered",
+    "#Shorts",
+    "#FYP"
+  ]
+}
