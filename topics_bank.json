@@ -10626,5 +10626,455 @@
       "#Shorts",
       "#FYP"
     ]
+  },
+  {
+    "title": "The Bloop: Ocean's Deep‑Sound Mystery",
+    "thumb": "OCEAN WHISPERS",
+    "place": "Pacific Ocean",
+    "country": "International Waters",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "An unheard‑of 200‑m sound erupted off the coast in 1997.",
+        "hook_top": "UNSEEN OCEAN WHISPER",
+        "query": "underwater acoustic anomaly 1997 Pacific Ocean",
+        "query2": "deep sea sound recording",
+        "archive_query": "underwater sound archive",
+        "role": "hook"
+      },
+      {
+        "type": "fact",
+        "text": "The signal lasted 4 minutes and matched the profile of a very large creature.",
+        "chips": [
+          {
+            "t": "4 MINUTES",
+            "on": "lasting",
+            "style": "accent"
+          }
+        ],
+        "punch": "LONG",
+        "query": "underwater audio 4 minute marine life",
+        "query2": "deep sea creature sound",
+        "role": "fact"
+      },
+      {
+        "type": "fact",
+        "text": "Scientists ruled out whales and submarines, leaving the origin still unknown.",
+        "chips": [
+          {
+            "t": "UNKNOWN ORIGIN",
+            "on": "origin",
+            "style": "white"
+          }
+        ],
+        "punch": "MYSTERY",
+        "query": "marine biology research Bloop unknown",
+        "query2": "ocean anomaly study",
+        "role": "fact"
+      },
+      {
+        "type": "reveal",
+        "text": "The most plausible explanation points to a massive icequake, not a creature.",
+        "reveal_top": "ICEQUAKE EXPLANATION",
+        "query": "icequake ocean acoustic event",
+        "query2": "undersea ice collapse sound",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "ocean exploration footage",
+        "query2": "deep sea documentary",
+        "role": "cta"
+      }
+    ],
+    "description": "The Bloop sounded like a giant creature, but science now favors a massive icequake. Dive into the ocean’s deepest secrets and hit follow for more mysteries!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#oceanmystery",
+      "#Bloop",
+      "#deepsea",
+      "#science"
+    ]
+  },
+  {
+    "title": "Derinkuyu: Turkey’s 5‑Story Underground City",
+    "thumb": "UNSEEN CAVES",
+    "place": "Derinkuyu",
+    "country": "Turkey",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "An underground city 60 meters below ground shelters 20,000 people.",
+        "hook_top": "UNDERTOWN SURVIVAL",
+        "query": "Derinkuyu underground city 60m depth",
+        "query2": "ancient underground city Turkey",
+        "archive_query": "Derinkuyu archaeological site",
+        "role": "hook"
+      },
+      {
+        "type": "fact",
+        "text": "The tunnels are 1.2 meters wide, enough for a person to walk through.",
+        "chips": [
+          {
+            "t": "1.2 M",
+            "on": "wide",
+            "style": "accent"
+          }
+        ],
+        "punch": "WIDE",
+        "query": "ancient tunnel dimensions",
+        "query2": "underground passage size",
+        "role": "fact"
+      },
+      {
+        "type": "fact",
+        "text": "Historical records show the city was expanded during the Hellenistic period.",
+        "chips": [
+          {
+            "t": "Hellenistic",
+            "on": "expanded",
+            "style": "white"
+          }
+        ],
+        "punch": "HISTORY",
+        "query": "Derinkuyu Hellenistic expansion",
+        "query2": "ancient Turkish city history",
+        "role": "fact"
+      },
+      {
+        "type": "reveal",
+        "text": "The city’s deepest chambers are sealed, suggesting they were never used for habitation.",
+        "reveal_top": "UNUSED CHAMBERS",
+        "query": "Derinkuyu sealed chambers",
+        "query2": "underground city archaeology",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow for a new mystery every day.",
+        "query": "underground city exploration",
+        "query2": "ancient site footage",
+        "role": "cta"
+      }
+    ],
+    "description": "Derinkuyu’s vast tunnels once housed 20,000 people, yet the deepest rooms were never opened. Discover why and follow for more lost cities!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#Derinkuyu",
+      "#ancientcity",
+      "#turkey",
+      "#mystery"
+    ]
+  },
+  {
+    "title": "Did the Wow! Signal Come From an Alien Beacon?",
+    "thumb": "WOW SIGNAL",
+    "place": "Big Ear Radio Telescope, Ohio",
+    "country": "USA",
+    "scenes": [
+      {
+        "hook_top": "72SECOND RADIO BURST",
+        "query": "vintage radio telescope dish at dusk",
+        "query2": "radio antenna under night sky",
+        "role": "hook",
+        "text": "August 15, 1977: a 72‑second radio burst baffled scientists"
+      },
+      {
+        "label": "Alien contact proof?",
+        "query": "old radio console with blinking lights",
+        "query2": "analog signal monitor equipment",
+        "role": "myth",
+        "text": "Many believe the Wow! signal proves extraterrestrial contact"
+      },
+      {
+        "label": "Natural one‑off event",
+        "query": "comet tail over starry sky",
+        "query2": "satellite glinting in atmosphere",
+        "role": "truth",
+        "text": "Scientists now think it was a natural, one‑off event—perhaps a comet or satellite reflection"
+      },
+      {
+        "label": "Unexplained, not alien",
+        "sub": "Science leans toward natural causes",
+        "label_on": "Signal",
+        "query": "mysterious glowing point in night sky",
+        "query2": "radio waves visualized as lines",
+        "role": "callout",
+        "text": "The signal remains unexplained, but not alien"
+      },
+      {
+        "query": "starry night with telescope silhouette",
+        "query2": "space background with question mark",
+        "role": "cta",
+        "text": "Follow for a new mystery every day."
+      }
+    ],
+    "description": "The Wow! Signal still sparks debate. Learn what the data really shows and why aliens are unlikely. Follow for more space enigmas.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#WowSignal",
+      "#SpaceMystery",
+      "#Astronomy",
+      "#Aliens",
+      "#Science"
+    ]
+  },
+  {
+    "title": "Is Stonehenge a Lost Ancient Calendar?",
+    "thumb": "STONEHENGE MYSTERY",
+    "place": "Stonehenge",
+    "country": "United Kingdom",
+    "scenes": [
+      {
+        "hook_top": "SOLSTICE SUN ALIGNMENT",
+        "query": "sunrise over ancient stone circle",
+        "query2": "light casting through stone monoliths",
+        "role": "hook",
+        "text": "Summer solstice: the sunrise aligns perfectly with Stonehenge’s Heel Stone"
+      },
+      {
+        "label": "Only a burial site",
+        "query": "ancient burial mound earthworks",
+        "query2": "grave goods scattered on stone",
+        "role": "myth",
+        "text": "People think Stonehenge was built solely as a burial site"
+      },
+      {
+        "label": "Astronomical observatory",
+        "query": "stone circle with shadow markers",
+        "query2": "ancient calendar stone markings",
+        "role": "truth",
+        "text": "Archaeologists view it as a complex astronomical observatory and calendar"
+      },
+      {
+        "label": "Tracks cycles",
+        "sub": "Solar, lunar, and stellar observations",
+        "label_on": "Calendar",
+        "query": "stone circle with marked horizon line",
+        "query2": "ancient sun dial on stone",
+        "role": "callout",
+        "text": "It tracks solar and lunar cycles, not just graves"
+      },
+      {
+        "query": "misty stone circle at dawn",
+        "query2": "ancient monument silhouette",
+        "role": "cta",
+        "text": "Follow for daily unexplained mysteries."
+      }
+    ],
+    "description": "Stonehenge’s true purpose goes beyond tombs. Discover how its stones map the sky. Follow for more ancient tech mysteries.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#Stonehenge",
+      "#AncientAstronomy",
+      "#History",
+      "#Archaeology",
+      "#Mystery"
+    ]
+  },
+  {
+    "title": "What Really Caused the 1908 Tunguska Blast?",
+    "thumb": "TUNGUSKA BLAST",
+    "place": "Siberian Taiga, Tunguska",
+    "country": "Russia",
+    "scenes": [
+      {
+        "hook_top": "5MEGATON FLASH",
+        "query": "charred forest from above",
+        "query2": "aerial view of scorched taiga",
+        "role": "hook",
+        "text": "June 30, 1908: a 5‑megaton flash flattened 2,000 km² of forest"
+      },
+      {
+        "label": "Alien crash theory",
+        "query": "silhouette of UFO over forest",
+        "query2": "mysterious metal debris in woods",
+        "role": "myth",
+        "text": "Many claim a crashed alien spacecraft caused the explosion"
+      },
+      {
+        "label": "Meteoroid airburst",
+        "query": "bolide streaking across sky",
+        "query2": "exploding fireball over wilderness",
+        "role": "truth",
+        "text": "Current consensus: an airburst of a meteoroid or comet fragment, no impact crater"
+      },
+      {
+        "label": "Shockwave only",
+        "sub": "Evidence points to an atmospheric explosion",
+        "label_on": "Airburst",
+        "query": "tree rings with shock damage",
+        "query2": "ground pattern of radial felling",
+        "role": "callout",
+        "text": "No wreckage found—just a massive shockwave"
+      },
+      {
+        "query": "night sky with shooting star",
+        "query2": "cosmic phenomenon illustration",
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night."
+      }
+    ],
+    "description": "The Tunguska event remains one of Earth’s biggest mysteries. Learn why scientists favor a meteoroid airburst over alien tech. Follow for more cosmic mysteries.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#Tunguska",
+      "#Meteoroid",
+      "#Science",
+      "#Mystery",
+      "#Space"
+    ]
+  },
+  {
+    "title": "Great Blue Hole: The Abyssal Dragon’s Den",
+    "thumb": "BLUE DRAGON",
+    "place": "Cozumel",
+    "country": "Mexico",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "A 300‑meter hole plunges 125 meters into the sea.",
+        "hook_top": "SEA DRAGON CAVERN",
+        "query": "Great Blue Hole Cozumel 300m depth",
+        "query2": "blue hole diving",
+        "archive_query": "Great Blue Hole map",
+        "role": "hook"
+      },
+      {
+        "type": "fact",
+        "text": "The cavity’s walls are carved by volcanic activity 50,000 years ago.",
+        "chips": [
+          {
+            "t": "50,000 YRS",
+            "on": "ago",
+            "style": "accent"
+          }
+        ],
+        "punch": "VOLCANIC",
+        "query": "volcanic crater underwater Mexico",
+        "query2": "underwater volcanic formation",
+        "role": "fact"
+      },
+      {
+        "type": "fact",
+        "text": "Scientists found no evidence of a collapsed cave system, only a sinkhole.",
+        "chips": [
+          {
+            "t": "SINKHOLE ONLY",
+            "on": "cave",
+            "style": "white"
+          }
+        ],
+        "punch": "SINKHOLE",
+        "query": "underwater sinkhole study",
+        "query2": "marine geology sinkhole",
+        "role": "fact"
+      },
+      {
+        "type": "reveal",
+        "text": "The hole is actually a massive sinkhole formed by coral reef collapse, not an ancient dragon’s lair.",
+        "reveal_top": "CORAL COLLAPSE",
+        "query": "coral reef collapse sinkhole",
+        "query2": "marine reef sinkhole formation",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow for a new mystery every day.",
+        "query": "deep sea exploration footage",
+        "query2": "underwater adventure",
+        "role": "cta"
+      }
+    ],
+    "description": "The Great Blue Hole looks like a dragon’s mouth, but it’s a colossal sinkhole from coral collapse. Explore the deep and follow for more ocean mysteries!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#GreatBlueHole",
+      "#deepsea",
+      "#science",
+      "#mystery"
+    ]
+  },
+  {
+    "title": "The 7‑Headed Serpent of Angkor Wat",
+    "thumb": "SEVEN HEADS",
+    "place": "Angkor Wat",
+    "country": "Cambodia",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "A statue of a serpent with seven heads guards the temple’s entrance.",
+        "hook_top": "SEVENHEADED GUARDIAN",
+        "query": "Angkor Wat serpent statue 7 heads",
+        "query2": "Cambodian temple guardian",
+        "archive_query": "Angkor Wat sculpture",
+        "role": "hook"
+      },
+      {
+        "type": "fact",
+        "text": "Each head holds a different weapon, symbolizing protection.",
+        "chips": [
+          {
+            "t": "7 WEAPONS",
+            "on": "weapon",
+            "style": "accent"
+          }
+        ],
+        "punch": "PROTECTION",
+        "query": "Angkor Wat weapons symbolism",
+        "query2": "Cambodian temple art",
+        "role": "fact"
+      },
+      {
+        "type": "fact",
+        "text": "Historical texts describe the serpent as a guardian of the Khmer Empire’s secrets.",
+        "chips": [
+          {
+            "t": "Khmer Empire",
+            "on": "guardian",
+            "style": "white"
+          }
+        ],
+        "punch": "SECRETS",
+        "query": "Khmer Empire guardian myths",
+        "query2": "ancient Cambodian legends",
+        "role": "fact"
+      },
+      {
+        "type": "reveal",
+        "text": "Recent studies show the statue was carved from a single block of sandstone, an engineering feat of its time.",
+        "reveal_top": "SINGLE BLOCK",
+        "query": "Angkor Wat sandstone block sculpture",
+        "query2": "stone carving ancient Cambodia",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow if you can't stop asking why.",
+        "query": "Angkor Wat temple footage",
+        "query2": "Cambodian heritage tour",
+        "role": "cta"
+      }
+    ],
+    "description": "The 7‑headed serpent of Angkor Wat guards secrets, but it was also a marvel of single‑block stone carving. Unveil the art and follow for more ancient enigmas!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#AngkorWat",
+      "#Cambodia",
+      "#stonecarving",
+      "#mystery"
+    ]
   }
 ]

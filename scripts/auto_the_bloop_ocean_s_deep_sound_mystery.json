@@ -1,0 +1,72 @@
+{
+  "title": "The Bloop: Ocean's Deep‑Sound Mystery",
+  "thumb": "OCEAN WHISPERS",
+  "place": "Pacific Ocean",
+  "country": "International Waters",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "An unheard‑of 200‑m sound erupted off the coast in 1997.",
+      "hook_top": "UNSEEN OCEAN WHISPER",
+      "query": "underwater acoustic anomaly 1997 Pacific Ocean",
+      "query2": "deep sea sound recording",
+      "archive_query": "underwater sound archive",
+      "role": "hook"
+    },
+    {
+      "type": "fact",
+      "text": "The signal lasted 4 minutes and matched the profile of a very large creature.",
+      "chips": [
+        {
+          "t": "4 MINUTES",
+          "on": "lasting",
+          "style": "accent"
+        }
+      ],
+      "punch": "LONG",
+      "query": "underwater audio 4 minute marine life",
+      "query2": "deep sea creature sound",
+      "role": "fact"
+    },
+    {
+      "type": "fact",
+      "text": "Scientists ruled out whales and submarines, leaving the origin still unknown.",
+      "chips": [
+        {
+          "t": "UNKNOWN ORIGIN",
+          "on": "origin",
+          "style": "white"
+        }
+      ],
+      "punch": "MYSTERY",
+      "query": "marine biology research Bloop unknown",
+      "query2": "ocean anomaly study",
+      "role": "fact"
+    },
+    {
+      "type": "reveal",
+      "text": "The most plausible explanation points to a massive icequake, not a creature.",
+      "reveal_top": "ICEQUAKE EXPLANATION",
+      "query": "icequake ocean acoustic event",
+      "query2": "undersea ice collapse sound",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "ocean exploration footage",
+      "query2": "deep sea documentary",
+      "role": "cta"
+    }
+  ],
+  "description": "The Bloop sounded like a giant creature, but science now favors a massive icequake. Dive into the ocean’s deepest secrets and hit follow for more mysteries!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#oceanmystery",
+    "#Bloop",
+    "#deepsea",
+    "#science"
+  ]
+}

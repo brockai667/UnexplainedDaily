@@ -1,0 +1,72 @@
+{
+  "title": "Derinkuyu: Turkey’s 5‑Story Underground City",
+  "thumb": "UNSEEN CAVES",
+  "place": "Derinkuyu",
+  "country": "Turkey",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "An underground city 60 meters below ground shelters 20,000 people.",
+      "hook_top": "UNDERTOWN SURVIVAL",
+      "query": "Derinkuyu underground city 60m depth",
+      "query2": "ancient underground city Turkey",
+      "archive_query": "Derinkuyu archaeological site",
+      "role": "hook"
+    },
+    {
+      "type": "fact",
+      "text": "The tunnels are 1.2 meters wide, enough for a person to walk through.",
+      "chips": [
+        {
+          "t": "1.2 M",
+          "on": "wide",
+          "style": "accent"
+        }
+      ],
+      "punch": "WIDE",
+      "query": "ancient tunnel dimensions",
+      "query2": "underground passage size",
+      "role": "fact"
+    },
+    {
+      "type": "fact",
+      "text": "Historical records show the city was expanded during the Hellenistic period.",
+      "chips": [
+        {
+          "t": "Hellenistic",
+          "on": "expanded",
+          "style": "white"
+        }
+      ],
+      "punch": "HISTORY",
+      "query": "Derinkuyu Hellenistic expansion",
+      "query2": "ancient Turkish city history",
+      "role": "fact"
+    },
+    {
+      "type": "reveal",
+      "text": "The city’s deepest chambers are sealed, suggesting they were never used for habitation.",
+      "reveal_top": "UNUSED CHAMBERS",
+      "query": "Derinkuyu sealed chambers",
+      "query2": "underground city archaeology",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow for a new mystery every day.",
+      "query": "underground city exploration",
+      "query2": "ancient site footage",
+      "role": "cta"
+    }
+  ],
+  "description": "Derinkuyu’s vast tunnels once housed 20,000 people, yet the deepest rooms were never opened. Discover why and follow for more lost cities!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#Derinkuyu",
+    "#ancientcity",
+    "#turkey",
+    "#mystery"
+  ]
+}

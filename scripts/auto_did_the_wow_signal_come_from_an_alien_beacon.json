@@ -1,0 +1,54 @@
+{
+  "title": "Did the Wow! Signal Come From an Alien Beacon?",
+  "thumb": "WOW SIGNAL",
+  "place": "Big Ear Radio Telescope, Ohio",
+  "country": "USA",
+  "scenes": [
+    {
+      "hook_top": "72SECOND RADIO BURST",
+      "query": "vintage radio telescope dish at dusk",
+      "query2": "radio antenna under night sky",
+      "role": "hook",
+      "text": "August 15, 1977: a 72‑second radio burst baffled scientists"
+    },
+    {
+      "label": "Alien contact proof?",
+      "query": "old radio console with blinking lights",
+      "query2": "analog signal monitor equipment",
+      "role": "myth",
+      "text": "Many believe the Wow! signal proves extraterrestrial contact"
+    },
+    {
+      "label": "Natural one‑off event",
+      "query": "comet tail over starry sky",
+      "query2": "satellite glinting in atmosphere",
+      "role": "truth",
+      "text": "Scientists now think it was a natural, one‑off event—perhaps a comet or satellite reflection"
+    },
+    {
+      "label": "Unexplained, not alien",
+      "sub": "Science leans toward natural causes",
+      "label_on": "Signal",
+      "query": "mysterious glowing point in night sky",
+      "query2": "radio waves visualized as lines",
+      "role": "callout",
+      "text": "The signal remains unexplained, but not alien"
+    },
+    {
+      "query": "starry night with telescope silhouette",
+      "query2": "space background with question mark",
+      "role": "cta",
+      "text": "Follow for a new mystery every day."
+    }
+  ],
+  "description": "The Wow! Signal still sparks debate. Learn what the data really shows and why aliens are unlikely. Follow for more space enigmas.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#WowSignal",
+    "#SpaceMystery",
+    "#Astronomy",
+    "#Aliens",
+    "#Science"
+  ]
+}
