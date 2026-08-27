@@ -1,0 +1,72 @@
+{
+  "title": "Great Blue Hole: The Abyssal Dragon’s Den",
+  "thumb": "BLUE DRAGON",
+  "place": "Cozumel",
+  "country": "Mexico",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "A 300‑meter hole plunges 125 meters into the sea.",
+      "hook_top": "SEA DRAGON CAVERN",
+      "query": "Great Blue Hole Cozumel 300m depth",
+      "query2": "blue hole diving",
+      "archive_query": "Great Blue Hole map",
+      "role": "hook"
+    },
+    {
+      "type": "fact",
+      "text": "The cavity’s walls are carved by volcanic activity 50,000 years ago.",
+      "chips": [
+        {
+          "t": "50,000 YRS",
+          "on": "ago",
+          "style": "accent"
+        }
+      ],
+      "punch": "VOLCANIC",
+      "query": "volcanic crater underwater Mexico",
+      "query2": "underwater volcanic formation",
+      "role": "fact"
+    },
+    {
+      "type": "fact",
+      "text": "Scientists found no evidence of a collapsed cave system, only a sinkhole.",
+      "chips": [
+        {
+          "t": "SINKHOLE ONLY",
+          "on": "cave",
+          "style": "white"
+        }
+      ],
+      "punch": "SINKHOLE",
+      "query": "underwater sinkhole study",
+      "query2": "marine geology sinkhole",
+      "role": "fact"
+    },
+    {
+      "type": "reveal",
+      "text": "The hole is actually a massive sinkhole formed by coral reef collapse, not an ancient dragon’s lair.",
+      "reveal_top": "CORAL COLLAPSE",
+      "query": "coral reef collapse sinkhole",
+      "query2": "marine reef sinkhole formation",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow for a new mystery every day.",
+      "query": "deep sea exploration footage",
+      "query2": "underwater adventure",
+      "role": "cta"
+    }
+  ],
+  "description": "The Great Blue Hole looks like a dragon’s mouth, but it’s a colossal sinkhole from coral collapse. Explore the deep and follow for more ocean mysteries!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#GreatBlueHole",
+    "#deepsea",
+    "#science",
+    "#mystery"
+  ]
+}

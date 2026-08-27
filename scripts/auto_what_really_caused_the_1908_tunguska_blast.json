@@ -1,0 +1,54 @@
+{
+  "title": "What Really Caused the 1908 Tunguska Blast?",
+  "thumb": "TUNGUSKA BLAST",
+  "place": "Siberian Taiga, Tunguska",
+  "country": "Russia",
+  "scenes": [
+    {
+      "hook_top": "5MEGATON FLASH",
+      "query": "charred forest from above",
+      "query2": "aerial view of scorched taiga",
+      "role": "hook",
+      "text": "June 30, 1908: a 5‑megaton flash flattened 2,000 km² of forest"
+    },
+    {
+      "label": "Alien crash theory",
+      "query": "silhouette of UFO over forest",
+      "query2": "mysterious metal debris in woods",
+      "role": "myth",
+      "text": "Many claim a crashed alien spacecraft caused the explosion"
+    },
+    {
+      "label": "Meteoroid airburst",
+      "query": "bolide streaking across sky",
+      "query2": "exploding fireball over wilderness",
+      "role": "truth",
+      "text": "Current consensus: an airburst of a meteoroid or comet fragment, no impact crater"
+    },
+    {
+      "label": "Shockwave only",
+      "sub": "Evidence points to an atmospheric explosion",
+      "label_on": "Airburst",
+      "query": "tree rings with shock damage",
+      "query2": "ground pattern of radial felling",
+      "role": "callout",
+      "text": "No wreckage found—just a massive shockwave"
+    },
+    {
+      "query": "night sky with shooting star",
+      "query2": "cosmic phenomenon illustration",
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night."
+    }
+  ],
+  "description": "The Tunguska event remains one of Earth’s biggest mysteries. Learn why scientists favor a meteoroid airburst over alien tech. Follow for more cosmic mysteries.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#Tunguska",
+    "#Meteoroid",
+    "#Science",
+    "#Mystery",
+    "#Space"
+  ]
+}

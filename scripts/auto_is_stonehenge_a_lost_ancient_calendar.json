@@ -1,0 +1,54 @@
+{
+  "title": "Is Stonehenge a Lost Ancient Calendar?",
+  "thumb": "STONEHENGE MYSTERY",
+  "place": "Stonehenge",
+  "country": "United Kingdom",
+  "scenes": [
+    {
+      "hook_top": "SOLSTICE SUN ALIGNMENT",
+      "query": "sunrise over ancient stone circle",
+      "query2": "light casting through stone monoliths",
+      "role": "hook",
+      "text": "Summer solstice: the sunrise aligns perfectly with Stonehenge’s Heel Stone"
+    },
+    {
+      "label": "Only a burial site",
+      "query": "ancient burial mound earthworks",
+      "query2": "grave goods scattered on stone",
+      "role": "myth",
+      "text": "People think Stonehenge was built solely as a burial site"
+    },
+    {
+      "label": "Astronomical observatory",
+      "query": "stone circle with shadow markers",
+      "query2": "ancient calendar stone markings",
+      "role": "truth",
+      "text": "Archaeologists view it as a complex astronomical observatory and calendar"
+    },
+    {
+      "label": "Tracks cycles",
+      "sub": "Solar, lunar, and stellar observations",
+      "label_on": "Calendar",
+      "query": "stone circle with marked horizon line",
+      "query2": "ancient sun dial on stone",
+      "role": "callout",
+      "text": "It tracks solar and lunar cycles, not just graves"
+    },
+    {
+      "query": "misty stone circle at dawn",
+      "query2": "ancient monument silhouette",
+      "role": "cta",
+      "text": "Follow for daily unexplained mysteries."
+    }
+  ],
+  "description": "Stonehenge’s true purpose goes beyond tombs. Discover how its stones map the sky. Follow for more ancient tech mysteries.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#Stonehenge",
+    "#AncientAstronomy",
+    "#History",
+    "#Archaeology",
+    "#Mystery"
+  ]
+}

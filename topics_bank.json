@@ -11076,5 +11076,210 @@
       "#stonecarving",
       "#mystery"
     ]
+  },
+  {
+    "title": "The Lubbock Lights: Unexplained Nighttime Orbs",
+    "thumb": "LUBBOCK LIGHTS",
+    "place": "Lubbock, Texas",
+    "country": "USA",
+    "scenes": [
+      {
+        "hook_top": "ORBS OVER TEXAS",
+        "query": "night sky over prairie",
+        "query2": "dark landscape with stars",
+        "role": "hook",
+        "text": "Five orange orbs over Texas skies baffled pilots in 1951"
+      },
+      {
+        "query": "map of Lubbock Texas marker",
+        "query2": "Texas city map zoom",
+        "role": "map",
+        "text": "Sightings reported above Lubbock, Texas, USA"
+      },
+      {
+        "chips": [
+          {
+            "t": "12 FRAMES",
+            "on": "captured",
+            "style": "white"
+          }
+        ],
+        "punch": "captured",
+        "query": "vintage film camera reel",
+        "query2": "old 35mm film strip",
+        "role": "fact",
+        "text": "Air Force pilots captured 12 clear frames on 35 mm film"
+      },
+      {
+        "archive_query": "Lubbock Lights 1951 photograph",
+        "archive_label": "Lubbock Lights Photo",
+        "query": "archival black and white sky photo",
+        "query2": "historic aerial photograph night",
+        "role": "archive",
+        "text": "One of the original Lubbock Lights photographs released to the public"
+      },
+      {
+        "label": "UNSOLVED ORBS",
+        "sub": "Scientists still debate atmospheric vs. unknown origin",
+        "label_on": "unsolved",
+        "query": "glowing orbs in night sky",
+        "query2": "light balls over desert",
+        "role": "callout",
+        "text": "MYSTERIOUS ORBS"
+      },
+      {
+        "query": "text animation follow us",
+        "query2": "call to action graphic",
+        "role": "cta",
+        "text": "Follow for the cases no one can explain."
+      }
+    ],
+    "description": "In the early 1950s, pilots and civilians reported strange glowing orbs moving silently over Lubbock. Decades later the cause is still debated. Follow for more.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#LubbockLights",
+      "#UFO",
+      "#Unexplained",
+      "#SkyMystery"
+    ]
+  },
+  {
+    "title": "Hessdalen Lights: Norway’s Never‑Ending Glow",
+    "thumb": "HESSDALEN GLOW",
+    "place": "Hessdalen Valley",
+    "country": "Norway",
+    "scenes": [
+      {
+        "hook_top": "NIGHTLY BLUE BALLS",
+        "query": "mountain valley night sky Norway",
+        "query2": "remote forest under stars",
+        "role": "hook",
+        "text": "Since 1981, blue‑white balls appear nightly in a Norwegian valley"
+      },
+      {
+        "query": "map of Hessdalen Norway marker",
+        "query2": "Norway topographic map zoom",
+        "role": "map",
+        "text": "Phenomenon occurs in the Hessdalen valley, near Holtålen, Trøndelag, Norway"
+      },
+      {
+        "chips": [
+          {
+            "t": "1,000+ EVENTS",
+            "on": "recorded",
+            "style": "accent"
+          }
+        ],
+        "punch": "recorded",
+        "query": "research station equipment night",
+        "query2": "scientists monitoring lights",
+        "role": "fact",
+        "text": "Scientists recorded over 1 000 events using a dedicated research station"
+      },
+      {
+        "archive_query": "Hessdalen lights 1995 photograph",
+        "archive_label": "1995 Light Capture",
+        "query": "archival night photo glowing orb",
+        "query2": "historic light phenomenon image",
+        "role": "archive",
+        "text": "Image of a Hessdalen light captured by the research team in 1995"
+      },
+      {
+        "label": "MYSTERY LIGHT",
+        "sub": "Explanations range from ionized dust to unknown plasma phenomena",
+        "label_on": "mystery",
+        "query": "glowing orb over valley",
+        "query2": "blue light hovering forest",
+        "role": "callout",
+        "text": "ENIGMA OF LIGHTS"
+      },
+      {
+        "query": "text animation follow us",
+        "query2": "call to action graphic",
+        "role": "cta",
+        "text": "Follow for the cases no one can explain."
+      }
+    ],
+    "description": "The Hessdalen lights have puzzled researchers for four decades, with no consensus on their origin. Dive deeper with us. ",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#HessdalenLights",
+      "#Norway",
+      "#NaturalMystery",
+      "#Science"
+    ]
+  },
+  {
+    "title": "Dyatlov Pass: What Really Happened on Those Frozen Slopes?",
+    "thumb": "FROZEN MYSTERY",
+    "place": "Dyatlov Pass, Ural Mountains",
+    "country": "Russia",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "Nine hikers vanished on a Russian mountain in 1959",
+        "hook_top": "VANISHED HIKERS",
+        "query": "snowy mountain ridge, abandoned tent, winter night",
+        "query2": "snow covered alpine landscape, empty campsite",
+        "role": "hook"
+      },
+      {
+        "type": "fact",
+        "text": "Their tent was found ripped open from the inside, shoes missing",
+        "chips": [
+          {
+            "t": "RIPPED TENT",
+            "on": "tent",
+            "style": "white"
+          }
+        ],
+        "punch": "shred",
+        "query": "open canvas tent in deep snow, close-up of torn fabric",
+        "query2": "snow-covered tent interior, torn edges",
+        "role": "fact"
+      },
+      {
+        "type": "fact",
+        "text": "Three bodies were discovered with severe internal injuries but no external wounds",
+        "chips": [
+          {
+            "t": "INTERNAL TRAUMA",
+            "on": "injury",
+            "style": "accent"
+          }
+        ],
+        "punch": "shock",
+        "query": "medical illustration of internal organ damage, no external cuts",
+        "query2": "autopsy diagram, internal injuries highlighted",
+        "role": "fact"
+      },
+      {
+        "type": "reveal",
+        "text": "The most accepted theory today points to a sudden avalanche that forced them out in panic",
+        "reveal_top": "AVALANCHE THEORY",
+        "query": "avalanche simulation, mountain slope, snow movement",
+        "query2": "snow slide illustration, backcountry hikers fleeing",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "animated text overlay, call to action graphics",
+        "query2": "stylized subscribe button animation",
+        "role": "cta"
+      }
+    ],
+    "description": "Explore the chilling facts behind the Dyatlov Pass incident and why scientists now favor the avalanche explanation. Stay curious and follow for more mysteries.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#DyatlovPass",
+      "#Mystery",
+      "#Unexplained",
+      "#History"
+    ]
   }
 ]
