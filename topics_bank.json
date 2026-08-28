@@ -11281,5 +11281,212 @@
       "#Unexplained",
       "#History"
     ]
+  },
+  {
+    "title": "Tunguska Blast: Was a Comet Fragment the Culprit?",
+    "thumb": "SKY FIRE",
+    "place": "Siberian Taiga",
+    "country": "Russia",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "In 1908, a 15‑km wide forest was flattened in a flash",
+        "hook_top": "15KM FLASH",
+        "query": "tunguska blast forest devastation aerial",
+        "query2": "1908 Siberia explosion view",
+        "role": "hook"
+      },
+      {
+        "type": "fact",
+        "text": "No impact crater was ever found, despite extensive surveys",
+        "chips": [
+          {
+            "t": "no crater",
+            "on": "crater",
+            "style": "white"
+          }
+        ],
+        "punch": "mystery",
+        "query": "tunguska area satellite terrain",
+        "query2": "ground-penetrating radar tunguska",
+        "role": "fact"
+      },
+      {
+        "type": "fact",
+        "text": "Geochemical analysis of soil shows elevated iridium and nickel levels",
+        "chips": [
+          {
+            "t": "iridium, nickel",
+            "on": "elements",
+            "style": "accent"
+          }
+        ],
+        "query": "tunguska soil iridium sample",
+        "query2": "metallic residue Siberian blast",
+        "role": "fact"
+      },
+      {
+        "type": "reveal",
+        "text": "New 2024 modeling suggests a low‑density comet fragment exploded mid‑air, matching all data",
+        "reveal_top": "COMET FRAGMENT",
+        "query": "tunguska comet explosion simulation",
+        "query2": "airburst comet model",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow for a new mystery every day.",
+        "query": "night sky mystery illustration",
+        "query2": "celestial phenomenon graphic",
+        "role": "cta"
+      }
+    ],
+    "description": "The Tunguska event remains one of Earth’s biggest puzzles, but fresh computer models point to a comet airburst. Stay tuned for more cosmic mysteries.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#tunguska",
+      "#mystery",
+      "#space",
+      "#science",
+      "#unexplained"
+    ]
+  },
+  {
+    "title": "Tunguska Blast: The 1908 Explosion Still Defies Scientists",
+    "thumb": "TUNGUSKA BLAST",
+    "place": "Siberian Taiga",
+    "country": "Russia",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "A 2,000‑acre forest vanished in a flash on June 30, 1908",
+        "hook_top": "FOREST VANISHED 1908",
+        "query": "historical forest with a massive blast radius",
+        "query2": "empty clearing in Siberian taiga after explosion",
+        "role": "hook"
+      },
+      {
+        "type": "fact",
+        "text": "Seismic records show a 5‑magnitude blast without any crater.",
+        "chips": [
+          {
+            "t": "5‑MAGNITUDE",
+            "on": "seismic",
+            "style": "white"
+          }
+        ],
+        "query": "old seismograph reading with spike line",
+        "query2": "graph showing sudden seismic event",
+        "role": "fact"
+      },
+      {
+        "type": "archive",
+        "text": "Contemporary newspaper illustration of the Tunguska event.",
+        "archive_query": "Tunguska 1908 newspaper illustration site:wikimedia.org",
+        "archive_label": "1908 Illustration",
+        "query": "vintage newspaper art of exploding forest",
+        "query2": "historical sketch of Tunguska blast",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "callout",
+        "text": "Leading theory: an airburst comet, but no fragments found.",
+        "label": "AIRBURST THEORY",
+        "sub": "Comet or asteroid exploded mid‑air, leaving no crater",
+        "label_on": "theory",
+        "query": "artist rendering of comet exploding over forest",
+        "query2": "animation of atmospheric airburst",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow for the cases no one can explain.",
+        "query": "bold text overlay with follow prompt",
+        "query2": "animated follow button",
+        "role": "cta"
+      }
+    ],
+    "description": "The Tunguska event flattened trees across Siberia, yet no impact crater remains. Scientists still argue over the exact cause. Join us for the next cosmic puzzle.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#Tunguska",
+      "#Russia",
+      "#Unexplained",
+      "#SpaceMystery",
+      "#Science"
+    ]
+  },
+  {
+    "title": "Lubbock Lights: The 1950s UFO Lights That Still Puzzle Researchers",
+    "thumb": "LUCKY LIGHTS",
+    "place": "Lubbock, Texas",
+    "country": "United States",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "Hundreds witnessed V‑shaped lights over Lubbock in 1951",
+        "hook_top": "VSHAPED LIGHTS 1951",
+        "query": "night sky with V formation lights over plains",
+        "query2": "silhouette of mysterious lights in rural night",
+        "role": "hook"
+      },
+      {
+        "type": "fact",
+        "text": "Air Force investigators recorded the lights on film on August 25, 1951.",
+        "chips": [
+          {
+            "t": "FILMED 1951",
+            "on": "film",
+            "style": "accent"
+          }
+        ],
+        "query": "black‑and‑white 1950s film reel of mysterious lights",
+        "query2": "vintage UFO footage grainy sky",
+        "role": "fact"
+      },
+      {
+        "type": "archive",
+        "text": "Original 1951 Lubbock Lights film frame released to the public.",
+        "archive_query": "Lubbock Lights 1951 film frame site:wikimedia.org",
+        "archive_label": "1951 Film Frame",
+        "query": "archival still from Lubbock Lights footage",
+        "query2": "historic UFO film snapshot",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "callout",
+        "text": "Explanations range from meteors to secret aircraft – none confirmed.",
+        "label": "NO CONSENSUS",
+        "sub": "Scientists still can’t agree on a definitive source",
+        "label_on": "consensus",
+        "query": "scientists at conference debating UFO footage",
+        "query2": "researchers analyzing grainy night‑sky video",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow if you can't stop asking why.",
+        "query": "dynamic follow prompt with night sky background",
+        "query2": "animated subscribe icon over stars",
+        "role": "cta"
+      }
+    ],
+    "description": "In 1951, a formation of glowing lights streaked across Texas skies, baffling witnesses and investigators. The case remains open. Subscribe for more aerial enigmas.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#LubbockLights",
+      "#USA",
+      "#UFO",
+      "#Mystery",
+      "#Unexplained"
+    ]
   }
 ]

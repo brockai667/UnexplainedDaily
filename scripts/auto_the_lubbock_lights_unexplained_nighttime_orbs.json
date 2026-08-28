@@ -1,0 +1,67 @@
+{
+  "title": "The Lubbock Lights: Unexplained Nighttime Orbs",
+  "thumb": "LUBBOCK LIGHTS",
+  "place": "Lubbock, Texas",
+  "country": "USA",
+  "scenes": [
+    {
+      "hook_top": "ORBS OVER TEXAS",
+      "query": "night sky over prairie",
+      "query2": "dark landscape with stars",
+      "role": "hook",
+      "text": "Five orange orbs over Texas skies baffled pilots in 1951"
+    },
+    {
+      "query": "map of Lubbock Texas marker",
+      "query2": "Texas city map zoom",
+      "role": "map",
+      "text": "Sightings reported above Lubbock, Texas, USA"
+    },
+    {
+      "chips": [
+        {
+          "t": "12 FRAMES",
+          "on": "captured",
+          "style": "white"
+        }
+      ],
+      "punch": "captured",
+      "query": "vintage film camera reel",
+      "query2": "old 35mm film strip",
+      "role": "fact",
+      "text": "Air Force pilots captured 12 clear frames on 35 mm film"
+    },
+    {
+      "archive_query": "Lubbock Lights 1951 photograph",
+      "archive_label": "Lubbock Lights Photo",
+      "query": "archival black and white sky photo",
+      "query2": "historic aerial photograph night",
+      "role": "archive",
+      "text": "One of the original Lubbock Lights photographs released to the public"
+    },
+    {
+      "label": "UNSOLVED ORBS",
+      "sub": "Scientists still debate atmospheric vs. unknown origin",
+      "label_on": "unsolved",
+      "query": "glowing orbs in night sky",
+      "query2": "light balls over desert",
+      "role": "callout",
+      "text": "MYSTERIOUS ORBS"
+    },
+    {
+      "query": "text animation follow us",
+      "query2": "call to action graphic",
+      "role": "cta",
+      "text": "Follow for the cases no one can explain."
+    }
+  ],
+  "description": "In the early 1950s, pilots and civilians reported strange glowing orbs moving silently over Lubbock. Decades later the cause is still debated. Follow for more.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#LubbockLights",
+    "#UFO",
+    "#Unexplained",
+    "#SkyMystery"
+  ]
+}

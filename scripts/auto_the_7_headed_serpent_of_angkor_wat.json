@@ -1,61 +1,72 @@
 {
-  "title": "The 7-Headed Serpent of Angkor Wat",
-  "thumb": "SERPENT MYSTERY",
+  "title": "The 7‑Headed Serpent of Angkor Wat",
+  "thumb": "SEVEN HEADS",
   "place": "Angkor Wat",
   "country": "Cambodia",
-  "description": "Uncover the secrets of the 7-Headed Serpent in Angkor Wat, a mysterious ancient symbol. Follow us for more on the world's most fascinating enigmas. #shorts #fyp #mystery #angkorwat",
   "scenes": [
     {
-      "hook_top": "SERPENT ENIGMA",
-      "query": "Angkor Wat ruins",
-      "query2": "ancient temple carvings",
-      "role": "hook",
-      "text": "7 heads, one mystery"
+      "type": "hook",
+      "text": "A statue of a serpent with seven heads guards the temple’s entrance.",
+      "hook_top": "SEVENHEADED GUARDIAN",
+      "query": "Angkor Wat serpent statue 7 heads",
+      "query2": "Cambodian temple guardian",
+      "archive_query": "Angkor Wat sculpture",
+      "role": "hook"
     },
     {
+      "type": "fact",
+      "text": "Each head holds a different weapon, symbolizing protection.",
       "chips": [
         {
-          "t": "7",
-          "on": "seven",
+          "t": "7 WEAPONS",
+          "on": "weapon",
+          "style": "accent"
+        }
+      ],
+      "punch": "PROTECTION",
+      "query": "Angkor Wat weapons symbolism",
+      "query2": "Cambodian temple art",
+      "role": "fact"
+    },
+    {
+      "type": "fact",
+      "text": "Historical texts describe the serpent as a guardian of the Khmer Empire’s secrets.",
+      "chips": [
+        {
+          "t": "Khmer Empire",
+          "on": "guardian",
           "style": "white"
         }
       ],
-      "punch": "mythical",
-      "query": "ancient Khmer art",
-      "query2": "Cambodian mythology",
+      "punch": "SECRETS",
+      "query": "Khmer Empire guardian myths",
+      "query2": "ancient Cambodian legends",
+      "role": "fact"
+    },
+    {
+      "type": "reveal",
+      "text": "Recent studies show the statue was carved from a single block of sandstone, an engineering feat of its time.",
+      "reveal_top": "SINGLE BLOCK",
+      "query": "Angkor Wat sandstone block sculpture",
+      "query2": "stone carving ancient Cambodia",
       "role": "fact",
-      "text": "The 7-Headed Serpent is a common symbol in ancient Khmer art"
+      "chips": []
     },
     {
-      "archive_query": "Angkor Wat bas-relief",
-      "archive_label": "Ancient Carving",
-      "query": "Angkor Wat carvings",
-      "query2": "ancient stone carvings",
-      "role": "archive",
-      "text": "The 7-Headed Serpent is depicted in ancient carvings at Angkor Wat"
-    },
-    {
-      "label": "Serpent Mystery",
-      "sub": "Uncover the truth",
-      "label_on": "symbolism",
-      "query": "mysterious symbols",
-      "query2": "ancient mysteries",
-      "role": "callout",
-      "text": "What does the 7-Headed Serpent represent?"
-    },
-    {
-      "role": "cta",
-      "text": "Follow for a new mystery every day.",
-      "query": "foggy forest night mist",
-      "query2": "dark ocean night waves"
+      "type": "cta",
+      "text": "Follow if you can't stop asking why.",
+      "query": "Angkor Wat temple footage",
+      "query2": "Cambodian heritage tour",
+      "role": "cta"
     }
   ],
+  "description": "The 7‑headed serpent of Angkor Wat guards secrets, but it was also a marvel of single‑block stone carving. Unveil the art and follow for more ancient enigmas!",
   "hashtags": [
     "#shorts",
     "#fyp",
-    "#mystery",
-    "#angkorwat",
-    "#cambodia",
-    "# ancienthistory"
+    "#AngkorWat",
+    "#Cambodia",
+    "#stonecarving",
+    "#mystery"
   ]
 }
