@@ -1,0 +1,71 @@
+{
+  "title": "Dyatlov Pass: What Really Happened on Those Frozen Slopes?",
+  "thumb": "FROZEN MYSTERY",
+  "place": "Dyatlov Pass, Ural Mountains",
+  "country": "Russia",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "Nine hikers vanished on a Russian mountain in 1959",
+      "hook_top": "VANISHED HIKERS",
+      "query": "snowy mountain ridge, abandoned tent, winter night",
+      "query2": "snow covered alpine landscape, empty campsite",
+      "role": "hook"
+    },
+    {
+      "type": "fact",
+      "text": "Their tent was found ripped open from the inside, shoes missing",
+      "chips": [
+        {
+          "t": "RIPPED TENT",
+          "on": "tent",
+          "style": "white"
+        }
+      ],
+      "punch": "shred",
+      "query": "open canvas tent in deep snow, close-up of torn fabric",
+      "query2": "snow-covered tent interior, torn edges",
+      "role": "fact"
+    },
+    {
+      "type": "fact",
+      "text": "Three bodies were discovered with severe internal injuries but no external wounds",
+      "chips": [
+        {
+          "t": "INTERNAL TRAUMA",
+          "on": "injury",
+          "style": "accent"
+        }
+      ],
+      "punch": "shock",
+      "query": "medical illustration of internal organ damage, no external cuts",
+      "query2": "autopsy diagram, internal injuries highlighted",
+      "role": "fact"
+    },
+    {
+      "type": "reveal",
+      "text": "The most accepted theory today points to a sudden avalanche that forced them out in panic",
+      "reveal_top": "AVALANCHE THEORY",
+      "query": "avalanche simulation, mountain slope, snow movement",
+      "query2": "snow slide illustration, backcountry hikers fleeing",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "animated text overlay, call to action graphics",
+      "query2": "stylized subscribe button animation",
+      "role": "cta"
+    }
+  ],
+  "description": "Explore the chilling facts behind the Dyatlov Pass incident and why scientists now favor the avalanche explanation. Stay curious and follow for more mysteries.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#DyatlovPass",
+    "#Mystery",
+    "#Unexplained",
+    "#History"
+  ]
+}

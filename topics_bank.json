@@ -11488,5 +11488,228 @@
       "#Mystery",
       "#Unexplained"
     ]
+  },
+  {
+    "title": "The Dyatlov Pass Incident: 9 Hikers, 1959, Unsolved Clues",
+    "thumb": "DYATLOV PASS",
+    "place": "Dyatlov Pass",
+    "country": "Russia",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "Nine hikers vanished on a Russian mountain, leaving bizarre clues",
+        "hook_top": "9 HIKERS VANISHED",
+        "query": "snowy mountain campsite abandoned",
+        "query2": "empty tent in winter forest",
+        "role": "hook"
+      },
+      {
+        "type": "map",
+        "text": "The tragedy unfolded on the slopes of Kholat Syakhl, known as Dyatlov Pass, in the Ural Mountains, Russia.",
+        "query": "map of Dyatlov Pass Ural Mountains Russia",
+        "query2": "topographic map of Kholat Syakhl",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "fact",
+        "text": "Investigators found the hikers' tent ripped open from the inside.",
+        "chips": [
+          {
+            "t": "tent ripped",
+            "on": "ripped",
+            "style": "white"
+          }
+        ],
+        "query": "empty canvas tent torn open in snow",
+        "query2": "abandoned winter tent damage",
+        "role": "fact"
+      },
+      {
+        "type": "archive",
+        "text": "Original 1959 Soviet newspaper illustration of the disaster site.",
+        "archive_query": "Dyatlov Pass 1959 newspaper illustration site:wikimedia.org",
+        "archive_label": "1959 Illustration",
+        "query": "vintage newspaper drawing mountain tragedy",
+        "query2": "historical newspaper illustration disaster",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "callout",
+        "text": "Avalanche, military tests, or unknown forces? No definitive answer.",
+        "label": "NO CONSENSUS",
+        "sub": "Multiple theories still debated",
+        "label_on": "no",
+        "query": "snow avalanche illustration",
+        "query2": "military exercise in mountains",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow for the cases no one can explain.",
+        "query": "stylized follow button with icy texture",
+        "query2": "social media follow graphic snow",
+        "role": "cta"
+      }
+    ],
+    "description": "The 1959 Dyatlov Pass incident remains one of the most chilling unsolved mysteries, with strange injuries and inexplicable footprints. Explore the evidence and the leading theories.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#DyatlovPass",
+      "#Russia",
+      "#Unsolved",
+      "#Mystery",
+      "#Adventure"
+    ]
+  },
+  {
+    "title": "Antikythera's Lost Gear: Why a Key Piece Is Missing?",
+    "thumb": "MISSING GEAR",
+    "place": "Antikythera, Greece",
+    "country": "Greece",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "A 2,000‑year‑old computer lost a crucial gear.",
+        "hook_top": "MISSING GEAR",
+        "query": "ancient bronze mechanism closeup",
+        "query2": "archaeological artifact museum",
+        "role": "hook"
+      },
+      {
+        "type": "fact",
+        "text": "The mechanism contains at least 30 bronze gears discovered in 1902.",
+        "chips": [
+          {
+            "t": "30 bronze gears",
+            "on": "gears",
+            "style": "white"
+          }
+        ],
+        "query": "ancient bronze gears museum",
+        "query2": "archaeology exhibit gears",
+        "role": "fact"
+      },
+      {
+        "type": "fact",
+        "text": "One gear with 38 teeth, essential for predicting eclipses, has never been found.",
+        "chips": [
+          {
+            "t": "38‑tooth gear",
+            "on": "gear",
+            "style": "accent"
+          }
+        ],
+        "query": "antikythera missing gear illustration",
+        "query2": "ancient mechanism diagram",
+        "role": "fact"
+      },
+      {
+        "type": "reveal",
+        "text": "Scientists think the missing gear was deliberately removed centuries ago.",
+        "reveal_top": "DELIBERATE REMOVAL",
+        "query": "historical artifact theft illustration",
+        "query2": "ancient sabotage concept",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow if you can't stop asking why.",
+        "query": "mysterious ancient tech graphic",
+        "query2": "science mystery call to action",
+        "role": "cta"
+      }
+    ],
+    "description": "The Antikythera Mechanism still hides a crucial piece. Could ancient thieves have taken it? Stay tuned for more ancient tech mysteries.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#antikythera",
+      "#ancienttech",
+      "#mystery",
+      "#history",
+      "#science"
+    ]
+  },
+  {
+    "title": "The Lubbock Lights: 1950s UFO Orbs That Still Puzzle Researchers",
+    "thumb": "LUBBOCK LIGHTS",
+    "place": "Lubbock",
+    "country": "United States",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "Three mysterious lights over Lubbock in 1951 baffled scientists",
+        "hook_top": "MYSTERIOUS LIGHTS 1951",
+        "query": "night sky with glowing orbs over desert",
+        "query2": "empty Texas sky with lights",
+        "role": "hook"
+      },
+      {
+        "type": "map",
+        "text": "The sightings occurred over the city of Lubbock, Texas, USA.",
+        "query": "map of Lubbock Texas satellite view",
+        "query2": "aerial view of Lubbock Texas",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "fact",
+        "text": "University of Texas physics professor H.P. Lovelace documented 17 separate sightings.",
+        "chips": [
+          {
+            "t": "17 sightings",
+            "on": "seventeen",
+            "style": "accent"
+          }
+        ],
+        "punch": "seventeen",
+        "query": "old scientific notebook pages",
+        "query2": "vintage research notes",
+        "role": "fact"
+      },
+      {
+        "type": "archive",
+        "text": "Original newspaper photo of the bright orbs captured by a local reporter.",
+        "archive_query": "Lubbock Lights 1951 newspaper photograph site:wikimedia.org",
+        "archive_label": "Lubbock Lights Photo",
+        "query": "archival newspaper photo bright lights",
+        "query2": "vintage newspaper UFO image",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "callout",
+        "text": "No consensus yet – atmospheric, military, or unknown?",
+        "label": "UNSOLVED",
+        "sub": "Scientists still debate the cause",
+        "label_on": "unsolved",
+        "query": "storm clouds over desert landscape",
+        "query2": "empty desert horizon at dusk",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow for a new mystery every day.",
+        "query": "stylized follow button animation",
+        "query2": "social media follow graphic",
+        "role": "cta"
+      }
+    ],
+    "description": "In 1951, dozens reported glowing orbs streaking across the night sky over Lubbock. Decades later, experts still can’t agree on what caused them. Dive into the evidence and the theories.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#LubbockLights",
+      "#UFO",
+      "#Unexplained",
+      "#Mystery",
+      "#SkyPhenomena"
+    ]
   }
 ]

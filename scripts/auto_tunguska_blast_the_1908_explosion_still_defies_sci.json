@@ -1,0 +1,68 @@
+{
+  "title": "Tunguska Blast: The 1908 Explosion Still Defies Scientists",
+  "thumb": "TUNGUSKA BLAST",
+  "place": "Siberian Taiga",
+  "country": "Russia",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "A 2,000‑acre forest vanished in a flash on June 30, 1908",
+      "hook_top": "FOREST VANISHED 1908",
+      "query": "historical forest with a massive blast radius",
+      "query2": "empty clearing in Siberian taiga after explosion",
+      "role": "hook"
+    },
+    {
+      "type": "fact",
+      "text": "Seismic records show a 5‑magnitude blast without any crater.",
+      "chips": [
+        {
+          "t": "5‑MAGNITUDE",
+          "on": "seismic",
+          "style": "white"
+        }
+      ],
+      "query": "old seismograph reading with spike line",
+      "query2": "graph showing sudden seismic event",
+      "role": "fact"
+    },
+    {
+      "type": "archive",
+      "text": "Contemporary newspaper illustration of the Tunguska event.",
+      "archive_query": "Tunguska 1908 newspaper illustration site:wikimedia.org",
+      "archive_label": "1908 Illustration",
+      "query": "vintage newspaper art of exploding forest",
+      "query2": "historical sketch of Tunguska blast",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "callout",
+      "text": "Leading theory: an airburst comet, but no fragments found.",
+      "label": "AIRBURST THEORY",
+      "sub": "Comet or asteroid exploded mid‑air, leaving no crater",
+      "label_on": "theory",
+      "query": "artist rendering of comet exploding over forest",
+      "query2": "animation of atmospheric airburst",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow for the cases no one can explain.",
+      "query": "bold text overlay with follow prompt",
+      "query2": "animated follow button",
+      "role": "cta"
+    }
+  ],
+  "description": "The Tunguska event flattened trees across Siberia, yet no impact crater remains. Scientists still argue over the exact cause. Join us for the next cosmic puzzle.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#Tunguska",
+    "#Russia",
+    "#Unexplained",
+    "#SpaceMystery",
+    "#Science"
+  ]
+}

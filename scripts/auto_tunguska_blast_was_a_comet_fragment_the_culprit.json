@@ -1,0 +1,71 @@
+{
+  "title": "Tunguska Blast: Was a Comet Fragment the Culprit?",
+  "thumb": "SKY FIRE",
+  "place": "Siberian Taiga",
+  "country": "Russia",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "In 1908, a 15‑km wide forest was flattened in a flash",
+      "hook_top": "15KM FLASH",
+      "query": "tunguska blast forest devastation aerial",
+      "query2": "1908 Siberia explosion view",
+      "role": "hook"
+    },
+    {
+      "type": "fact",
+      "text": "No impact crater was ever found, despite extensive surveys",
+      "chips": [
+        {
+          "t": "no crater",
+          "on": "crater",
+          "style": "white"
+        }
+      ],
+      "punch": "mystery",
+      "query": "tunguska area satellite terrain",
+      "query2": "ground-penetrating radar tunguska",
+      "role": "fact"
+    },
+    {
+      "type": "fact",
+      "text": "Geochemical analysis of soil shows elevated iridium and nickel levels",
+      "chips": [
+        {
+          "t": "iridium, nickel",
+          "on": "elements",
+          "style": "accent"
+        }
+      ],
+      "query": "tunguska soil iridium sample",
+      "query2": "metallic residue Siberian blast",
+      "role": "fact"
+    },
+    {
+      "type": "reveal",
+      "text": "New 2024 modeling suggests a low‑density comet fragment exploded mid‑air, matching all data",
+      "reveal_top": "COMET FRAGMENT",
+      "query": "tunguska comet explosion simulation",
+      "query2": "airburst comet model",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow for a new mystery every day.",
+      "query": "night sky mystery illustration",
+      "query2": "celestial phenomenon graphic",
+      "role": "cta"
+    }
+  ],
+  "description": "The Tunguska event remains one of Earth’s biggest puzzles, but fresh computer models point to a comet airburst. Stay tuned for more cosmic mysteries.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#tunguska",
+    "#mystery",
+    "#space",
+    "#science",
+    "#unexplained"
+  ]
+}
