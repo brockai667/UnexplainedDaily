@@ -11422,6 +11422,291 @@
     ]
   },
   {
+    "title": "Antikythera's Lost Gear: Why a Key Piece Is Missing?",
+    "thumb": "MISSING GEAR",
+    "place": "Antikythera, Greece",
+    "country": "Greece",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "A 2,000‑year‑old computer lost a crucial gear.",
+        "hook_top": "MISSING GEAR",
+        "query": "ancient bronze mechanism closeup",
+        "query2": "archaeological artifact museum",
+        "role": "hook"
+      },
+      {
+        "type": "fact",
+        "text": "The mechanism contains at least 30 bronze gears discovered in 1902.",
+        "chips": [
+          {
+            "t": "30 bronze gears",
+            "on": "gears",
+            "style": "white"
+          }
+        ],
+        "query": "ancient bronze gears museum",
+        "query2": "archaeology exhibit gears",
+        "role": "fact"
+      },
+      {
+        "type": "fact",
+        "text": "One gear with 38 teeth, essential for predicting eclipses, has never been found.",
+        "chips": [
+          {
+            "t": "38‑tooth gear",
+            "on": "gear",
+            "style": "accent"
+          }
+        ],
+        "query": "antikythera missing gear illustration",
+        "query2": "ancient mechanism diagram",
+        "role": "fact"
+      },
+      {
+        "type": "reveal",
+        "text": "Scientists think the missing gear was deliberately removed centuries ago.",
+        "reveal_top": "DELIBERATE REMOVAL",
+        "query": "historical artifact theft illustration",
+        "query2": "ancient sabotage concept",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow if you can't stop asking why.",
+        "query": "mysterious ancient tech graphic",
+        "query2": "science mystery call to action",
+        "role": "cta"
+      }
+    ],
+    "description": "The Antikythera Mechanism still hides a crucial piece. Could ancient thieves have taken it? Stay tuned for more ancient tech mysteries.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#antikythera",
+      "#ancienttech",
+      "#mystery",
+      "#history",
+      "#science"
+    ]
+  },
+  {
+    "title": "The 1970s Green Flash Phenomenon: Why Does the Sun Turn Emerald?",
+    "thumb": "GREEN FLASH",
+    "place": "Pacific Ocean horizon",
+    "country": "Global",
+    "scenes": [
+      {
+        "hook_top": "ELDER GREEN FLASH",
+        "query": "sunset ocean horizon",
+        "query2": "sea sunset silhouette",
+        "role": "hook",
+        "text": "A fleeting green flash appears at sunset over the Pacific"
+      },
+      {
+        "query": "pacific ocean map view",
+        "query2": "world ocean outline pacific",
+        "role": "map",
+        "text": "Most commonly observed over the clear horizons of the Pacific Ocean"
+      },
+      {
+        "chips": [
+          {
+            "t": "2‑SECOND FLASH",
+            "on": "seconds",
+            "style": "accent"
+          }
+        ],
+        "punch": "seconds",
+        "query": "light refraction diagram",
+        "query2": "atmospheric optics illustration",
+        "role": "fact",
+        "text": "The flash lasts less than 2 seconds and is caused by atmospheric refraction"
+      },
+      {
+        "archive_query": "green flash illustration 1950s site:wikimedia.org",
+        "archive_label": "Green flash art",
+        "query": "vintage scientific drawing",
+        "query2": "old atmospheric diagram",
+        "role": "archive",
+        "text": "1950s scientific illustration of the green flash effect"
+      },
+      {
+        "label": "REAL PHENOMENON",
+        "sub": "Explained by physics, yet still awe‑inspiring",
+        "label_on": "real",
+        "query": "sunlight prism over water",
+        "query2": "light bending over sea",
+        "role": "callout",
+        "text": "Rare but real"
+      },
+      {
+        "query": "timelapse sunset sky",
+        "query2": "slow sunrise to sunset transition",
+        "role": "cta",
+        "text": "Follow if you can't stop asking why."
+      }
+    ],
+    "description": "The green flash is a genuine optical event that turns the setting sun emerald for a heartbeat. Learn the science behind this brief marvel. Follow for more sky mysteries.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#GreenFlash",
+      "#Astronomy",
+      "#Phenomenon",
+      "#Science"
+    ]
+  },
+  {
+    "title": "What Secret Lies Inside the Great Sphinx’s Hidden Chamber?",
+    "thumb": "SECRET SPHINX CHAMBER",
+    "place": "Giza Plateau, Giza",
+    "country": "Egypt",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "A 2019 scan revealed a previously unknown void inside the Great Sphinx",
+        "hook_top": "NEW SPHINX VOID",
+        "query": "ancient stone monument sunrise",
+        "query2": "Giza plateau desert light",
+        "role": "hook"
+      },
+      {
+        "type": "fact",
+        "text": "Ground‑penetrating radar detected a cavity about 15 meters long behind the Sphinx’s body",
+        "chips": [
+          {
+            "t": "15 m cavity",
+            "on": "cavity",
+            "style": "white"
+          },
+          {
+            "t": "2019 scan",
+            "on": "scan",
+            "style": "accent"
+          }
+        ],
+        "punch": "cavity",
+        "query": "radar imaging overlay on stone",
+        "query2": "geophysical scan graphics",
+        "role": "fact"
+      },
+      {
+        "type": "archive",
+        "text": "Egyptian antiquities ministry releases the radar image to the public",
+        "archive_query": "Great Sphinx radar image 2019 site:wikimedia.org",
+        "archive_label": "Radar image 2019",
+        "query": "historic archaeological document scan",
+        "query2": "archival Egyptian research paper",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "callout",
+        "text": "Is it a hidden burial chamber or a natural fissure?",
+        "label": "CHAMBER MYSTERY",
+        "sub": "Experts disagree on its purpose",
+        "label_on": "mystery",
+        "query": "mysterious stone doorway silhouette",
+        "query2": "dark ancient tunnel entrance",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow for the cases no one can explain.",
+        "query": "sunlit desert horizon",
+        "query2": "golden hour pyramids",
+        "role": "cta"
+      }
+    ],
+    "description": "Modern technology has uncovered a puzzling void inside the world‑famous Sphinx, reigniting debates over ancient Egyptian secrets. Follow for more hidden histories revealed.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#Sphinx",
+      "#Egypt",
+      "#archaeology",
+      "#unsolved",
+      "#ancientmystery"
+    ]
+  },
+  {
+    "title": "Who Really Made the 2‑Billion‑Year‑Old Klerksdorp Spheres?",
+    "thumb": "MYSTERIOUS METAL SPHERES",
+    "place": "Klerksdorp, Gauteng Province",
+    "country": "South Africa",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "Perfectly round iron spheres found in 3‑billion‑year‑old rock",
+        "hook_top": "IRON SPHERES 3B YRS",
+        "query": "ancient iron ore outcrop",
+        "query2": "weathered rock surface",
+        "role": "hook"
+      },
+      {
+        "type": "fact",
+        "text": "The spheres measure up to 7 cm and show no tool marks, baffling scientists since 1930",
+        "chips": [
+          {
+            "t": "7 cm",
+            "on": "size",
+            "style": "white"
+          },
+          {
+            "t": "1930 discovery",
+            "on": "year",
+            "style": "accent"
+          }
+        ],
+        "punch": "perfect",
+        "query": "close‑up of metallic sphere on rock",
+        "query2": "glossy iron ball in shale",
+        "role": "fact"
+      },
+      {
+        "type": "archive",
+        "text": "Museum of Evolution displays the original Klerksdorp spheres",
+        "archive_query": "Klerksdorp spheres museum display site:wikimedia.org",
+        "archive_label": "Museum display",
+        "query": "museum exhibit ancient artifact lighting",
+        "query2": "glass case with metal spheres",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "callout",
+        "text": "Natural concretion or ancient metallurgy?",
+        "label": "NATURAL OR MAN‑MADE",
+        "sub": "Geologists still debate their origin",
+        "label_on": "origin",
+        "query": "rock formation with mineral veins",
+        "query2": "geological cross‑section illustration",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow for a new mystery every day.",
+        "query": "sunset over South African landscape",
+        "query2": "open sky over desert horizon",
+        "role": "cta"
+      }
+    ],
+    "description": "The Klerksdorp spheres challenge our understanding of early Earth, appearing too perfect for natural formation yet predating known metallurgy. Follow for more ancient enigmas decoded.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#Klerksdorp",
+      "#geology",
+      "#mystery",
+      "#ancient",
+      "#science"
+    ]
+  },
+  {
     "title": "Lubbock Lights: The 1950s UFO Lights That Still Puzzle Researchers",
     "thumb": "LUCKY LIGHTS",
     "place": "Lubbock, Texas",
@@ -11563,76 +11848,6 @@
       "#Unsolved",
       "#Mystery",
       "#Adventure"
-    ]
-  },
-  {
-    "title": "Antikythera's Lost Gear: Why a Key Piece Is Missing?",
-    "thumb": "MISSING GEAR",
-    "place": "Antikythera, Greece",
-    "country": "Greece",
-    "scenes": [
-      {
-        "type": "hook",
-        "text": "A 2,000‑year‑old computer lost a crucial gear.",
-        "hook_top": "MISSING GEAR",
-        "query": "ancient bronze mechanism closeup",
-        "query2": "archaeological artifact museum",
-        "role": "hook"
-      },
-      {
-        "type": "fact",
-        "text": "The mechanism contains at least 30 bronze gears discovered in 1902.",
-        "chips": [
-          {
-            "t": "30 bronze gears",
-            "on": "gears",
-            "style": "white"
-          }
-        ],
-        "query": "ancient bronze gears museum",
-        "query2": "archaeology exhibit gears",
-        "role": "fact"
-      },
-      {
-        "type": "fact",
-        "text": "One gear with 38 teeth, essential for predicting eclipses, has never been found.",
-        "chips": [
-          {
-            "t": "38‑tooth gear",
-            "on": "gear",
-            "style": "accent"
-          }
-        ],
-        "query": "antikythera missing gear illustration",
-        "query2": "ancient mechanism diagram",
-        "role": "fact"
-      },
-      {
-        "type": "reveal",
-        "text": "Scientists think the missing gear was deliberately removed centuries ago.",
-        "reveal_top": "DELIBERATE REMOVAL",
-        "query": "historical artifact theft illustration",
-        "query2": "ancient sabotage concept",
-        "role": "fact",
-        "chips": []
-      },
-      {
-        "type": "cta",
-        "text": "Follow if you can't stop asking why.",
-        "query": "mysterious ancient tech graphic",
-        "query2": "science mystery call to action",
-        "role": "cta"
-      }
-    ],
-    "description": "The Antikythera Mechanism still hides a crucial piece. Could ancient thieves have taken it? Stay tuned for more ancient tech mysteries.",
-    "hashtags": [
-      "#shorts",
-      "#fyp",
-      "#antikythera",
-      "#ancienttech",
-      "#mystery",
-      "#history",
-      "#science"
     ]
   },
   {

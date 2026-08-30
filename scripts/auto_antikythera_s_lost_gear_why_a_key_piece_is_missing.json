@@ -1,0 +1,70 @@
+{
+  "title": "Antikythera's Lost Gear: Why a Key Piece Is Missing?",
+  "thumb": "MISSING GEAR",
+  "place": "Antikythera, Greece",
+  "country": "Greece",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "A 2,000‑year‑old computer lost a crucial gear.",
+      "hook_top": "MISSING GEAR",
+      "query": "ancient bronze mechanism closeup",
+      "query2": "archaeological artifact museum",
+      "role": "hook"
+    },
+    {
+      "type": "fact",
+      "text": "The mechanism contains at least 30 bronze gears discovered in 1902.",
+      "chips": [
+        {
+          "t": "30 bronze gears",
+          "on": "gears",
+          "style": "white"
+        }
+      ],
+      "query": "ancient bronze gears museum",
+      "query2": "archaeology exhibit gears",
+      "role": "fact"
+    },
+    {
+      "type": "fact",
+      "text": "One gear with 38 teeth, essential for predicting eclipses, has never been found.",
+      "chips": [
+        {
+          "t": "38‑tooth gear",
+          "on": "gear",
+          "style": "accent"
+        }
+      ],
+      "query": "antikythera missing gear illustration",
+      "query2": "ancient mechanism diagram",
+      "role": "fact"
+    },
+    {
+      "type": "reveal",
+      "text": "Scientists think the missing gear was deliberately removed centuries ago.",
+      "reveal_top": "DELIBERATE REMOVAL",
+      "query": "historical artifact theft illustration",
+      "query2": "ancient sabotage concept",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow if you can't stop asking why.",
+      "query": "mysterious ancient tech graphic",
+      "query2": "science mystery call to action",
+      "role": "cta"
+    }
+  ],
+  "description": "The Antikythera Mechanism still hides a crucial piece. Could ancient thieves have taken it? Stay tuned for more ancient tech mysteries.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#antikythera",
+    "#ancienttech",
+    "#mystery",
+    "#history",
+    "#science"
+  ]
+}

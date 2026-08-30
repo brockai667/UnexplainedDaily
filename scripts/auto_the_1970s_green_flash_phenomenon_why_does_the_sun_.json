@@ -1,0 +1,67 @@
+{
+  "title": "The 1970s Green Flash Phenomenon: Why Does the Sun Turn Emerald?",
+  "thumb": "GREEN FLASH",
+  "place": "Pacific Ocean horizon",
+  "country": "Global",
+  "scenes": [
+    {
+      "hook_top": "ELDER GREEN FLASH",
+      "query": "sunset ocean horizon",
+      "query2": "sea sunset silhouette",
+      "role": "hook",
+      "text": "A fleeting green flash appears at sunset over the Pacific"
+    },
+    {
+      "query": "pacific ocean map view",
+      "query2": "world ocean outline pacific",
+      "role": "map",
+      "text": "Most commonly observed over the clear horizons of the Pacific Ocean"
+    },
+    {
+      "chips": [
+        {
+          "t": "2‑SECOND FLASH",
+          "on": "seconds",
+          "style": "accent"
+        }
+      ],
+      "punch": "seconds",
+      "query": "light refraction diagram",
+      "query2": "atmospheric optics illustration",
+      "role": "fact",
+      "text": "The flash lasts less than 2 seconds and is caused by atmospheric refraction"
+    },
+    {
+      "archive_query": "green flash illustration 1950s site:wikimedia.org",
+      "archive_label": "Green flash art",
+      "query": "vintage scientific drawing",
+      "query2": "old atmospheric diagram",
+      "role": "archive",
+      "text": "1950s scientific illustration of the green flash effect"
+    },
+    {
+      "label": "REAL PHENOMENON",
+      "sub": "Explained by physics, yet still awe‑inspiring",
+      "label_on": "real",
+      "query": "sunlight prism over water",
+      "query2": "light bending over sea",
+      "role": "callout",
+      "text": "Rare but real"
+    },
+    {
+      "query": "timelapse sunset sky",
+      "query2": "slow sunrise to sunset transition",
+      "role": "cta",
+      "text": "Follow if you can't stop asking why."
+    }
+  ],
+  "description": "The green flash is a genuine optical event that turns the setting sun emerald for a heartbeat. Learn the science behind this brief marvel. Follow for more sky mysteries.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#GreenFlash",
+    "#Astronomy",
+    "#Phenomenon",
+    "#Science"
+  ]
+}
