@@ -1,0 +1,68 @@
+{
+  "title": "The Taos Hum: New Mexico’s Low‑Frequency Mystery",
+  "thumb": "TAOS HUM",
+  "place": "Taos",
+  "country": "United States",
+  "scenes": [
+    {
+      "hook_top": "50DB HUM",
+      "query": "empty mountain town with sound wave visual",
+      "query2": "quiet street with subtle vibration effect",
+      "role": "hook",
+      "text": "A 50‑decibel hum haunts over 2,000 residents of Taos, NM"
+    },
+    {
+      "query": "topographic map of Taos New Mexico",
+      "query2": "satellite view of Taos town",
+      "role": "map",
+      "text": "The hum is reported throughout Taos, a high‑altitude town in northern New Mexico, USA"
+    },
+    {
+      "chips": [
+        {
+          "t": "56 dB",
+          "on": "decibels",
+          "style": "accent"
+        }
+      ],
+      "punch": "measured",
+      "query": "EPA study Taos hum 1993 PDF",
+      "query2": "scientific report Taos hum measurement",
+      "role": "fact",
+      "text": "A 1993 EPA study measured the hum at 56 dB, comparable to a refrigerator motor."
+    },
+    {
+      "archive_query": "Taos hum EPA 1993 field notes",
+      "archive_label": "EPA field notes",
+      "query": "archival EPA document Taos hum",
+      "query2": "historical sound level chart Taos",
+      "role": "archive",
+      "text": "Original 1993 EPA field‑notes showing sound level graphs"
+    },
+    {
+      "label": "UNEXPLAINED",
+      "sub": "Even experts can’t locate its origin",
+      "label_on": "unexplained",
+      "query": "abstract low‑frequency wave animation",
+      "query2": "sound wave ripple over landscape",
+      "role": "callout",
+      "text": "Sound without source"
+    },
+    {
+      "query": "animated follow button with sound icon",
+      "query2": "social media call to action graphic",
+      "role": "cta",
+      "text": "Follow if you can't stop asking why."
+    }
+  ],
+  "description": "Residents of Taos hear a persistent low‑frequency hum that no one can pinpoint. Scientific studies have measured it, yet the source remains hidden. Follow for more strange sounds!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#TaosHum",
+    "#Unexplained",
+    "#Mystery",
+    "#NewMexico",
+    "#Sound"
+  ]
+}

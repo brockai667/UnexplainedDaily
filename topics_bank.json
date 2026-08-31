@@ -11707,6 +11707,275 @@
     ]
   },
   {
+    "title": "The Marfa Lights: Texas Desert Ghostly Glows",
+    "thumb": "MARFA LIGHTS",
+    "place": "Marfa",
+    "country": "United States",
+    "scenes": [
+      {
+        "hook_top": "500 GHOST LIGHTS",
+        "query": "night desert sky with floating lights",
+        "query2": "glowing orbs over desert",
+        "role": "hook",
+        "text": "Over 500 sightings of floating lights in Marfa, Texas"
+      },
+      {
+        "query": "satellite view of Marfa Texas desert",
+        "query2": "map of West Texas Marfa area",
+        "role": "map",
+        "text": "The phenomenon occurs near the town of Marfa, West Texas, USA"
+      },
+      {
+        "chips": [
+          {
+            "t": "1973",
+            "on": "year",
+            "style": "white"
+          }
+        ],
+        "punch": "recorded",
+        "query": "military report 1973 Marfa lights",
+        "query2": "historical document Marfa lights investigation",
+        "role": "fact",
+        "text": "The US Army documented the lights in 1973 as “unidentified aerial phenomena”."
+      },
+      {
+        "archive_query": "Marfa lights 1975 newspaper archive",
+        "archive_label": "1975 Army report",
+        "query": "archival newspaper Marfa lights 1975",
+        "query2": "historical newspaper Texas desert lights",
+        "role": "archive",
+        "text": "A 1975 newspaper clipping showing the Army’s investigation"
+      },
+      {
+        "label": "MYSTERY",
+        "sub": "Scientists still can’t agree on the cause",
+        "label_on": "mystery",
+        "query": "desert night sky with mystery aura",
+        "query2": "empty road under starry sky",
+        "role": "callout",
+        "text": "Unsolved aerial mystery"
+      },
+      {
+        "query": "animated follow button graphic",
+        "query2": "social media call to action icon",
+        "role": "cta",
+        "text": "Follow if you can't stop asking why."
+      }
+    ],
+    "description": "For decades travelers report glowing orbs dancing over the West Texas desert. The US Army even logged them, yet no consensus explains the lights. Dive into the eerie Marfa mystery. Follow for more baffling phenomena!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#MarfaLights",
+      "#Unexplained",
+      "#Mysteries",
+      "#Texas",
+      "#GhostLights"
+    ]
+  },
+  {
+    "title": "The Taos Hum: New Mexico’s Low‑Frequency Mystery",
+    "thumb": "TAOS HUM",
+    "place": "Taos",
+    "country": "United States",
+    "scenes": [
+      {
+        "hook_top": "50DB HUM",
+        "query": "empty mountain town with sound wave visual",
+        "query2": "quiet street with subtle vibration effect",
+        "role": "hook",
+        "text": "A 50‑decibel hum haunts over 2,000 residents of Taos, NM"
+      },
+      {
+        "query": "topographic map of Taos New Mexico",
+        "query2": "satellite view of Taos town",
+        "role": "map",
+        "text": "The hum is reported throughout Taos, a high‑altitude town in northern New Mexico, USA"
+      },
+      {
+        "chips": [
+          {
+            "t": "56 dB",
+            "on": "decibels",
+            "style": "accent"
+          }
+        ],
+        "punch": "measured",
+        "query": "EPA study Taos hum 1993 PDF",
+        "query2": "scientific report Taos hum measurement",
+        "role": "fact",
+        "text": "A 1993 EPA study measured the hum at 56 dB, comparable to a refrigerator motor."
+      },
+      {
+        "archive_query": "Taos hum EPA 1993 field notes",
+        "archive_label": "EPA field notes",
+        "query": "archival EPA document Taos hum",
+        "query2": "historical sound level chart Taos",
+        "role": "archive",
+        "text": "Original 1993 EPA field‑notes showing sound level graphs"
+      },
+      {
+        "label": "UNEXPLAINED",
+        "sub": "Even experts can’t locate its origin",
+        "label_on": "unexplained",
+        "query": "abstract low‑frequency wave animation",
+        "query2": "sound wave ripple over landscape",
+        "role": "callout",
+        "text": "Sound without source"
+      },
+      {
+        "query": "animated follow button with sound icon",
+        "query2": "social media call to action graphic",
+        "role": "cta",
+        "text": "Follow if you can't stop asking why."
+      }
+    ],
+    "description": "Residents of Taos hear a persistent low‑frequency hum that no one can pinpoint. Scientific studies have measured it, yet the source remains hidden. Follow for more strange sounds!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#TaosHum",
+      "#Unexplained",
+      "#Mystery",
+      "#NewMexico",
+      "#Sound"
+    ]
+  },
+  {
+    "title": "What Really Stalked Point Pleasant?",
+    "thumb": "MOTHMAN SIGHTINGS",
+    "place": "Point Pleasant",
+    "country": "United States",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "1970s Point Pleasant reported 12 winged sightings in just 2 years",
+        "hook_top": "WINGED MYSTERY",
+        "query": "foggy West Virginia bridge night sky",
+        "query2": "dark riverbank silhouette",
+        "role": "hook"
+      },
+      {
+        "type": "fact",
+        "text": "The first report came on November 15 1970, when two young couples saw a 10‑foot creature with glowing red eyes",
+        "chips": [
+          {
+            "t": "Nov 15 1970",
+            "on": "date",
+            "style": "white"
+          }
+        ],
+        "punch": "first",
+        "query": "old newspaper clipping point pleasant 1970",
+        "query2": "vintage news article silhouette",
+        "role": "fact"
+      },
+      {
+        "type": "fact",
+        "text": "Over 400 eyewitnesses described the creature, and a local bridge collapsed the same month, sparking a legend",
+        "chips": [
+          {
+            "t": "400+ witnesses",
+            "on": "witnesses",
+            "style": "accent"
+          }
+        ],
+        "punch": "crowd",
+        "query": "abandoned steel bridge night fog",
+        "query2": "rusty bridge under moon",
+        "role": "fact"
+      },
+      {
+        "type": "reveal",
+        "text": "Scientists now think the sightings were misidentified large owls and a mass‑hysteria wave, but the legend persists",
+        "reveal_top": "OWL HYSTERIA THEORY",
+        "query": "great horned owl perched night",
+        "query2": "owl silhouette moonlight",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "mysterious foggy road ambience",
+        "query2": "empty highway at dusk",
+        "role": "cta"
+      }
+    ],
+    "description": "The Point Pleasant Mothman case sparked a nationwide frenzy. Learn the real facts and why experts lean toward a natural explanation.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#mothman",
+      "#pointpleasant",
+      "#mystery",
+      "#unexplained",
+      "#folklore"
+    ]
+  },
+  {
+    "title": "Bimini Road: Ancient Road or Natural Formation?",
+    "thumb": "BIMINI ROAD RIDDLE",
+    "place": "Bimini",
+    "country": "Bahamas",
+    "scenes": [
+      {
+        "hook_top": "STONE ROAD DISCOVERED",
+        "query": "aerial view of Bimini Road at sunrise",
+        "query2": "satellite image limestone formation sea",
+        "role": "hook",
+        "text": "A 2‑km stone road appears off the Bahamas shore."
+      },
+      {
+        "chips": [
+          {
+            "t": "2.2 KM",
+            "on": "length",
+            "style": "accent"
+          }
+        ],
+        "punch": "vast",
+        "query": "close‑up of rectangular limestone blocks underwater",
+        "query2": "marine stone pattern seabed",
+        "role": "fact",
+        "text": "The formation is 2.2 km long and consists of roughly rectangular stones."
+      },
+      {
+        "archive_query": "Bimini Road sonar 1978 Wikimedia Commons",
+        "archive_label": "1978 Sonar Scan",
+        "query": "historic sonar graphic ocean floor",
+        "query2": "naval survey underwater image",
+        "role": "archive",
+        "text": "1978 US Navy sonar image of the Bimini Road."
+      },
+      {
+        "label": "NATURE VS HUMAN",
+        "sub": "Scientists debate whether currents shaped the stones or ancient engineers laid them.",
+        "label_on": "debate",
+        "query": "waves hitting coral reef underwater",
+        "query2": "ancient stone pathway desert",
+        "role": "callout",
+        "text": "Man‑made or reef?"
+      },
+      {
+        "query": "compass rose on old maritime chart",
+        "query2": "ancient map sea route",
+        "role": "cta",
+        "text": "Follow for a new mystery every day."
+      }
+    ],
+    "description": "The Bimini Road has puzzled archaeologists and geologists for decades. Is it a forgotten Atlantean highway or a natural reef? Explore the evidence.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#BiminiRoad",
+      "#Bahamas",
+      "#OceanMystery",
+      "#AncientTech"
+    ]
+  },
+  {
     "title": "Lubbock Lights: The 1950s UFO Lights That Still Puzzle Researchers",
     "thumb": "LUCKY LIGHTS",
     "place": "Lubbock, Texas",
@@ -11848,83 +12117,6 @@
       "#Unsolved",
       "#Mystery",
       "#Adventure"
-    ]
-  },
-  {
-    "title": "The Lubbock Lights: 1950s UFO Orbs That Still Puzzle Researchers",
-    "thumb": "LUBBOCK LIGHTS",
-    "place": "Lubbock",
-    "country": "United States",
-    "scenes": [
-      {
-        "type": "hook",
-        "text": "Three mysterious lights over Lubbock in 1951 baffled scientists",
-        "hook_top": "MYSTERIOUS LIGHTS 1951",
-        "query": "night sky with glowing orbs over desert",
-        "query2": "empty Texas sky with lights",
-        "role": "hook"
-      },
-      {
-        "type": "map",
-        "text": "The sightings occurred over the city of Lubbock, Texas, USA.",
-        "query": "map of Lubbock Texas satellite view",
-        "query2": "aerial view of Lubbock Texas",
-        "role": "fact",
-        "chips": []
-      },
-      {
-        "type": "fact",
-        "text": "University of Texas physics professor H.P. Lovelace documented 17 separate sightings.",
-        "chips": [
-          {
-            "t": "17 sightings",
-            "on": "seventeen",
-            "style": "accent"
-          }
-        ],
-        "punch": "seventeen",
-        "query": "old scientific notebook pages",
-        "query2": "vintage research notes",
-        "role": "fact"
-      },
-      {
-        "type": "archive",
-        "text": "Original newspaper photo of the bright orbs captured by a local reporter.",
-        "archive_query": "Lubbock Lights 1951 newspaper photograph site:wikimedia.org",
-        "archive_label": "Lubbock Lights Photo",
-        "query": "archival newspaper photo bright lights",
-        "query2": "vintage newspaper UFO image",
-        "role": "fact",
-        "chips": []
-      },
-      {
-        "type": "callout",
-        "text": "No consensus yet – atmospheric, military, or unknown?",
-        "label": "UNSOLVED",
-        "sub": "Scientists still debate the cause",
-        "label_on": "unsolved",
-        "query": "storm clouds over desert landscape",
-        "query2": "empty desert horizon at dusk",
-        "role": "fact",
-        "chips": []
-      },
-      {
-        "type": "cta",
-        "text": "Follow for a new mystery every day.",
-        "query": "stylized follow button animation",
-        "query2": "social media follow graphic",
-        "role": "cta"
-      }
-    ],
-    "description": "In 1951, dozens reported glowing orbs streaking across the night sky over Lubbock. Decades later, experts still can’t agree on what caused them. Dive into the evidence and the theories.",
-    "hashtags": [
-      "#shorts",
-      "#fyp",
-      "#LubbockLights",
-      "#UFO",
-      "#Unexplained",
-      "#Mystery",
-      "#SkyPhenomena"
     ]
   }
 ]

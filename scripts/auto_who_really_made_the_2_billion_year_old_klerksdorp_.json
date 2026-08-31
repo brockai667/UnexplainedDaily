@@ -1,0 +1,74 @@
+{
+  "title": "Who Really Made the 2‑Billion‑Year‑Old Klerksdorp Spheres?",
+  "thumb": "MYSTERIOUS METAL SPHERES",
+  "place": "Klerksdorp, Gauteng Province",
+  "country": "South Africa",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "Perfectly round iron spheres found in 3‑billion‑year‑old rock",
+      "hook_top": "IRON SPHERES 3B YRS",
+      "query": "ancient iron ore outcrop",
+      "query2": "weathered rock surface",
+      "role": "hook"
+    },
+    {
+      "type": "fact",
+      "text": "The spheres measure up to 7 cm and show no tool marks, baffling scientists since 1930",
+      "chips": [
+        {
+          "t": "7 cm",
+          "on": "size",
+          "style": "white"
+        },
+        {
+          "t": "1930 discovery",
+          "on": "year",
+          "style": "accent"
+        }
+      ],
+      "punch": "perfect",
+      "query": "close‑up of metallic sphere on rock",
+      "query2": "glossy iron ball in shale",
+      "role": "fact"
+    },
+    {
+      "type": "archive",
+      "text": "Museum of Evolution displays the original Klerksdorp spheres",
+      "archive_query": "Klerksdorp spheres museum display site:wikimedia.org",
+      "archive_label": "Museum display",
+      "query": "museum exhibit ancient artifact lighting",
+      "query2": "glass case with metal spheres",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "callout",
+      "text": "Natural concretion or ancient metallurgy?",
+      "label": "NATURAL OR MAN‑MADE",
+      "sub": "Geologists still debate their origin",
+      "label_on": "origin",
+      "query": "rock formation with mineral veins",
+      "query2": "geological cross‑section illustration",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow for a new mystery every day.",
+      "query": "sunset over South African landscape",
+      "query2": "open sky over desert horizon",
+      "role": "cta"
+    }
+  ],
+  "description": "The Klerksdorp spheres challenge our understanding of early Earth, appearing too perfect for natural formation yet predating known metallurgy. Follow for more ancient enigmas decoded.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#Klerksdorp",
+    "#geology",
+    "#mystery",
+    "#ancient",
+    "#science"
+  ]
+}

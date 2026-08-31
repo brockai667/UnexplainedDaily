@@ -1,0 +1,68 @@
+{
+  "title": "The Marfa Lights: Texas Desert Ghostly Glows",
+  "thumb": "MARFA LIGHTS",
+  "place": "Marfa",
+  "country": "United States",
+  "scenes": [
+    {
+      "hook_top": "500 GHOST LIGHTS",
+      "query": "night desert sky with floating lights",
+      "query2": "glowing orbs over desert",
+      "role": "hook",
+      "text": "Over 500 sightings of floating lights in Marfa, Texas"
+    },
+    {
+      "query": "satellite view of Marfa Texas desert",
+      "query2": "map of West Texas Marfa area",
+      "role": "map",
+      "text": "The phenomenon occurs near the town of Marfa, West Texas, USA"
+    },
+    {
+      "chips": [
+        {
+          "t": "1973",
+          "on": "year",
+          "style": "white"
+        }
+      ],
+      "punch": "recorded",
+      "query": "military report 1973 Marfa lights",
+      "query2": "historical document Marfa lights investigation",
+      "role": "fact",
+      "text": "The US Army documented the lights in 1973 as “unidentified aerial phenomena”."
+    },
+    {
+      "archive_query": "Marfa lights 1975 newspaper archive",
+      "archive_label": "1975 Army report",
+      "query": "archival newspaper Marfa lights 1975",
+      "query2": "historical newspaper Texas desert lights",
+      "role": "archive",
+      "text": "A 1975 newspaper clipping showing the Army’s investigation"
+    },
+    {
+      "label": "MYSTERY",
+      "sub": "Scientists still can’t agree on the cause",
+      "label_on": "mystery",
+      "query": "desert night sky with mystery aura",
+      "query2": "empty road under starry sky",
+      "role": "callout",
+      "text": "Unsolved aerial mystery"
+    },
+    {
+      "query": "animated follow button graphic",
+      "query2": "social media call to action icon",
+      "role": "cta",
+      "text": "Follow if you can't stop asking why."
+    }
+  ],
+  "description": "For decades travelers report glowing orbs dancing over the West Texas desert. The US Army even logged them, yet no consensus explains the lights. Dive into the eerie Marfa mystery. Follow for more baffling phenomena!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#MarfaLights",
+    "#Unexplained",
+    "#Mysteries",
+    "#Texas",
+    "#GhostLights"
+  ]
+}
