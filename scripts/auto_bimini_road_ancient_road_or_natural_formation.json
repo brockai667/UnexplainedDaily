@@ -1,0 +1,61 @@
+{
+  "title": "Bimini Road: Ancient Road or Natural Formation?",
+  "thumb": "BIMINI ROAD RIDDLE",
+  "place": "Bimini",
+  "country": "Bahamas",
+  "scenes": [
+    {
+      "hook_top": "STONE ROAD DISCOVERED",
+      "query": "aerial view of Bimini Road at sunrise",
+      "query2": "satellite image limestone formation sea",
+      "role": "hook",
+      "text": "A 2‑km stone road appears off the Bahamas shore."
+    },
+    {
+      "chips": [
+        {
+          "t": "2.2 KM",
+          "on": "length",
+          "style": "accent"
+        }
+      ],
+      "punch": "vast",
+      "query": "close‑up of rectangular limestone blocks underwater",
+      "query2": "marine stone pattern seabed",
+      "role": "fact",
+      "text": "The formation is 2.2 km long and consists of roughly rectangular stones."
+    },
+    {
+      "archive_query": "Bimini Road sonar 1978 Wikimedia Commons",
+      "archive_label": "1978 Sonar Scan",
+      "query": "historic sonar graphic ocean floor",
+      "query2": "naval survey underwater image",
+      "role": "archive",
+      "text": "1978 US Navy sonar image of the Bimini Road."
+    },
+    {
+      "label": "NATURE VS HUMAN",
+      "sub": "Scientists debate whether currents shaped the stones or ancient engineers laid them.",
+      "label_on": "debate",
+      "query": "waves hitting coral reef underwater",
+      "query2": "ancient stone pathway desert",
+      "role": "callout",
+      "text": "Man‑made or reef?"
+    },
+    {
+      "query": "compass rose on old maritime chart",
+      "query2": "ancient map sea route",
+      "role": "cta",
+      "text": "Follow for a new mystery every day."
+    }
+  ],
+  "description": "The Bimini Road has puzzled archaeologists and geologists for decades. Is it a forgotten Atlantean highway or a natural reef? Explore the evidence.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#BiminiRoad",
+    "#Bahamas",
+    "#OceanMystery",
+    "#AncientTech"
+  ]
+}

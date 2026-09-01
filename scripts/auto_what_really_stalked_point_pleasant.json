@@ -1,0 +1,72 @@
+{
+  "title": "What Really Stalked Point Pleasant?",
+  "thumb": "MOTHMAN SIGHTINGS",
+  "place": "Point Pleasant",
+  "country": "United States",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "1970s Point Pleasant reported 12 winged sightings in just 2 years",
+      "hook_top": "WINGED MYSTERY",
+      "query": "foggy West Virginia bridge night sky",
+      "query2": "dark riverbank silhouette",
+      "role": "hook"
+    },
+    {
+      "type": "fact",
+      "text": "The first report came on November 15 1970, when two young couples saw a 10‑foot creature with glowing red eyes",
+      "chips": [
+        {
+          "t": "Nov 15 1970",
+          "on": "date",
+          "style": "white"
+        }
+      ],
+      "punch": "first",
+      "query": "old newspaper clipping point pleasant 1970",
+      "query2": "vintage news article silhouette",
+      "role": "fact"
+    },
+    {
+      "type": "fact",
+      "text": "Over 400 eyewitnesses described the creature, and a local bridge collapsed the same month, sparking a legend",
+      "chips": [
+        {
+          "t": "400+ witnesses",
+          "on": "witnesses",
+          "style": "accent"
+        }
+      ],
+      "punch": "crowd",
+      "query": "abandoned steel bridge night fog",
+      "query2": "rusty bridge under moon",
+      "role": "fact"
+    },
+    {
+      "type": "reveal",
+      "text": "Scientists now think the sightings were misidentified large owls and a mass‑hysteria wave, but the legend persists",
+      "reveal_top": "OWL HYSTERIA THEORY",
+      "query": "great horned owl perched night",
+      "query2": "owl silhouette moonlight",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "mysterious foggy road ambience",
+      "query2": "empty highway at dusk",
+      "role": "cta"
+    }
+  ],
+  "description": "The Point Pleasant Mothman case sparked a nationwide frenzy. Learn the real facts and why experts lean toward a natural explanation.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#mothman",
+    "#pointpleasant",
+    "#mystery",
+    "#unexplained",
+    "#folklore"
+  ]
+}

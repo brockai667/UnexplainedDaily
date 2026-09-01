@@ -12118,5 +12118,181 @@
       "#Mystery",
       "#Adventure"
     ]
+  },
+  {
+    "title": "Why Did the Roanoke Colony Vanish Without a Trace?",
+    "thumb": "ROANOKE MYSTERY",
+    "place": "Roanoke Island",
+    "country": "United States",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "In 1590 only the word “CROATOAN” was left behind",
+        "hook_top": "CROATOAN WORD LEFT",
+        "query": "abandoned 16th century settlement ruins",
+        "query2": "colonial wooden fort overgrown",
+        "role": "hook"
+      },
+      {
+        "type": "fact",
+        "text": "Over 115 settlers disappeared after the supply ship failed to return.",
+        "chips": [
+          {
+            "t": "115 SETTLERS",
+            "on": "settlers",
+            "style": "accent"
+          }
+        ],
+        "punch": "vanish",
+        "query": "historic map Roanoke Island 1587",
+        "query2": "colonial era settlement diagram",
+        "role": "fact"
+      },
+      {
+        "type": "archive",
+        "text": "John White’s 1585 sketch of the Roanoke settlement.",
+        "archive_query": "John White Roanoke sketch site:commons.wikimedia.org",
+        "archive_label": "White's sketch",
+        "query": "old parchment settlement drawing",
+        "query2": "16th century colonial sketch",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "callout",
+        "text": "Was it disease, attack, or relocation?",
+        "label": "Possible Causes",
+        "sub": "Historians weigh native conflict, starvation, or integration with Croatoan.",
+        "label_on": "causes",
+        "query": "stormy Atlantic coast shoreline",
+        "query2": "dense coastal forest mist",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "ancient scroll unfurling animation",
+        "query2": "mystery reveal graphic",
+        "role": "cta"
+      }
+    ],
+    "description": "The Lost Colony of Roanoke remains one of America’s oldest unsolved puzzles. Dive into the clues and theories that still intrigue scholars.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#Roanoke",
+      "#LostColony",
+      "#HistoryMystery",
+      "#Unsolved"
+    ]
+  },
+  {
+    "title": "The Sailing Stones: Gravity‑Defying Mystery of Death Valley",
+    "thumb": "MOVING ROCKS",
+    "place": "Racetrack Playa",
+    "country": "United States",
+    "scenes": [
+      {
+        "hook_top": "MOVING STONES MYSTERY",
+        "query": "dry lake surface wind swirl dust devil Death Valley",
+        "query2": "empty playa with tracks in sand",
+        "role": "hook",
+        "text": "Why do 100‑ton stones glide across Death Valley’s dry lake?"
+      },
+      {
+        "label": "Hidden motors myth",
+        "query": "mechanical gears rusted on desert floor illustration",
+        "query2": "science fiction device concept",
+        "role": "myth",
+        "text": "People think the stones move because of hidden underground motors."
+      },
+      {
+        "label": "Ice‑wind explanation",
+        "query": "time‑lapse footage of rocks moving on icy playa",
+        "query2": "scientific experiment with ice and wind on sand",
+        "role": "truth",
+        "text": "Scientists proved a thin layer of ice plus light winds can push the rocks, leaving measurable tracks."
+      },
+      {
+        "label": "Nature moves rocks",
+        "sub": "Thin ice + wind = sliding stones",
+        "label_on": "Slide",
+        "query": "close‑up of shallow ice crust on desert ground",
+        "query2": "cracked ice surface in cold desert",
+        "role": "callout",
+        "text": "Nature can move massive objects without any tech."
+      },
+      {
+        "query": "animated subscribe button with mystery icons",
+        "query2": "social media follow prompt graphic",
+        "role": "cta",
+        "text": "Follow for a new mystery every day."
+      }
+    ],
+    "description": "The eerie tracks across Racetrack Playa have baffled observers for decades. Discover how simple physics finally solved the puzzle. Stay tuned for more untold truths.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#mysteries",
+      "#deathvalley",
+      "#sailingstones",
+      "#science",
+      "#unexplained"
+    ]
+  },
+  {
+    "title": "Cicada 3301: The Internet’s Most Elaborate Recruitment Puzzle",
+    "thumb": "CODE CRACKED",
+    "place": "Global (online)",
+    "country": "International",
+    "scenes": [
+      {
+        "hook_top": "GLOBAL CODE PUZZLE",
+        "query": "computer screen with cryptic text overlay",
+        "query2": "abstract digital code animation",
+        "role": "hook",
+        "text": "In 2012 a cryptic message appeared on 4 different websites worldwide."
+      },
+      {
+        "label": "Alien agency myth",
+        "query": "mysterious cult symbols glowing in darkness",
+        "query2": "science‑fiction conspiracy illustration",
+        "role": "myth",
+        "text": "Many claim it’s a secret society recruiting alien agents."
+      },
+      {
+        "label": "Recruitment for coders",
+        "query": "open‑source cryptography tools on laptop",
+        "query2": "stealthy code fragments on black background",
+        "role": "truth",
+        "text": "Investigations show the puzzle used publicly available cryptography and steganography, likely a recruitment for skilled programmers."
+      },
+      {
+        "label": "Just clever hackers",
+        "sub": "Advanced crypto, no aliens",
+        "label_on": "Decode",
+        "query": "close‑up of QR code being scanned on a screen",
+        "query2": "digital fingerprint analysis animation",
+        "role": "callout",
+        "text": "No evidence of supernatural links – just clever hackers."
+      },
+      {
+        "query": "animated subscribe button with binary code effect",
+        "query2": "social media follow prompt with tech motif",
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night."
+      }
+    ],
+    "description": "Cicada 3301 sparked wild theories, but the facts point to a sophisticated online recruitment. Get the real story behind the code. Follow for more myth‑busting content.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#cicada3301",
+      "#cryptography",
+      "#internetmystery",
+      "#tech",
+      "#unexplained"
+    ]
   }
 ]

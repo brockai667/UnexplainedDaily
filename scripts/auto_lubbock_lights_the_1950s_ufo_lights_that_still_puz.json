@@ -1,0 +1,68 @@
+{
+  "title": "Lubbock Lights: The 1950s UFO Lights That Still Puzzle Researchers",
+  "thumb": "LUCKY LIGHTS",
+  "place": "Lubbock, Texas",
+  "country": "United States",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "Hundreds witnessed V‑shaped lights over Lubbock in 1951",
+      "hook_top": "VSHAPED LIGHTS 1951",
+      "query": "night sky with V formation lights over plains",
+      "query2": "silhouette of mysterious lights in rural night",
+      "role": "hook"
+    },
+    {
+      "type": "fact",
+      "text": "Air Force investigators recorded the lights on film on August 25, 1951.",
+      "chips": [
+        {
+          "t": "FILMED 1951",
+          "on": "film",
+          "style": "accent"
+        }
+      ],
+      "query": "black‑and‑white 1950s film reel of mysterious lights",
+      "query2": "vintage UFO footage grainy sky",
+      "role": "fact"
+    },
+    {
+      "type": "archive",
+      "text": "Original 1951 Lubbock Lights film frame released to the public.",
+      "archive_query": "Lubbock Lights 1951 film frame site:wikimedia.org",
+      "archive_label": "1951 Film Frame",
+      "query": "archival still from Lubbock Lights footage",
+      "query2": "historic UFO film snapshot",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "callout",
+      "text": "Explanations range from meteors to secret aircraft – none confirmed.",
+      "label": "NO CONSENSUS",
+      "sub": "Scientists still can’t agree on a definitive source",
+      "label_on": "consensus",
+      "query": "scientists at conference debating UFO footage",
+      "query2": "researchers analyzing grainy night‑sky video",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow if you can't stop asking why.",
+      "query": "dynamic follow prompt with night sky background",
+      "query2": "animated subscribe icon over stars",
+      "role": "cta"
+    }
+  ],
+  "description": "In 1951, a formation of glowing lights streaked across Texas skies, baffling witnesses and investigators. The case remains open. Subscribe for more aerial enigmas.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#LubbockLights",
+    "#USA",
+    "#UFO",
+    "#Mystery",
+    "#Unexplained"
+  ]
+}
