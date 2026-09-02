@@ -12044,82 +12044,6 @@
     ]
   },
   {
-    "title": "The Dyatlov Pass Incident",
-    "thumb": "DYATLOV PASS",
-    "place": "Dyatlov Pass",
-    "country": "Russia",
-    "scenes": [
-      {
-        "type": "hook",
-        "text": "Nine hikers vanished on a Russian mountain, leaving bizarre clues",
-        "hook_top": "9 HIKERS VANISHED",
-        "query": "snowy mountain campsite abandoned",
-        "query2": "empty tent in winter forest",
-        "role": "hook"
-      },
-      {
-        "type": "map",
-        "text": "The tragedy unfolded on the slopes of Kholat Syakhl, known as Dyatlov Pass, in the Ural Mountains, Russia.",
-        "query": "map of Dyatlov Pass Ural Mountains Russia",
-        "query2": "topographic map of Kholat Syakhl",
-        "role": "fact",
-        "chips": []
-      },
-      {
-        "type": "fact",
-        "text": "Investigators found the hikers' tent ripped open from the inside.",
-        "chips": [
-          {
-            "t": "tent ripped",
-            "on": "ripped",
-            "style": "white"
-          }
-        ],
-        "query": "empty canvas tent torn open in snow",
-        "query2": "abandoned winter tent damage",
-        "role": "fact"
-      },
-      {
-        "type": "archive",
-        "text": "Original 1959 Soviet newspaper illustration of the disaster site.",
-        "archive_query": "Dyatlov Pass 1959 newspaper illustration site:wikimedia.org",
-        "archive_label": "1959 Illustration",
-        "query": "vintage newspaper drawing mountain tragedy",
-        "query2": "historical newspaper illustration disaster",
-        "role": "fact",
-        "chips": []
-      },
-      {
-        "type": "callout",
-        "text": "Avalanche, military tests, or unknown forces? No definitive answer.",
-        "label": "NO CONSENSUS",
-        "sub": "Multiple theories still debated",
-        "label_on": "no",
-        "query": "snow avalanche illustration",
-        "query2": "military exercise in mountains",
-        "role": "fact",
-        "chips": []
-      },
-      {
-        "type": "cta",
-        "text": "Follow for the cases no one can explain.",
-        "query": "stylized follow button with icy texture",
-        "query2": "social media follow graphic snow",
-        "role": "cta"
-      }
-    ],
-    "description": "The 1959 Dyatlov Pass incident remains one of the most chilling unsolved mysteries, with strange injuries and inexplicable footprints. Explore the evidence and the leading theories.",
-    "hashtags": [
-      "#shorts",
-      "#fyp",
-      "#DyatlovPass",
-      "#Russia",
-      "#Unsolved",
-      "#Mystery",
-      "#Adventure"
-    ]
-  },
-  {
     "title": "Why Did the Roanoke Colony Vanish Without a Trace?",
     "thumb": "ROANOKE MYSTERY",
     "place": "Roanoke Island",
@@ -12293,6 +12217,267 @@
       "#internetmystery",
       "#tech",
       "#unexplained"
+    ]
+  },
+  {
+    "title": "Klerksdorp Spheres Ancient Enigma",
+    "thumb": "MILLION YEAR SPHERES",
+    "place": "Klerksdorp",
+    "country": "South Africa",
+    "scenes": [
+      {
+        "hook_top": "ANCIENT SPHERES FOUND",
+        "query": "close‑up of polished stone sphere on desert floor",
+        "query2": "geological specimen shining in sunlight",
+        "role": "hook",
+        "text": "Spherical stones dating 2.8 billion years were found intact"
+      },
+      {
+        "query": "map of Witwatersrand gold mining area South Africa",
+        "query2": "satellite view of Klerksdorp region",
+        "role": "map",
+        "text": "They were discovered in the Witwatersrand gold fields near Klerksdorp, South Africa"
+      },
+      {
+        "chips": [
+          {
+            "t": "pyrophyllite concretion",
+            "on": "classified",
+            "style": "accent"
+          }
+        ],
+        "punch": "natural",
+        "query": "rock scientist examining mineral specimen",
+        "query2": "geologist with handheld microscope on stone",
+        "role": "fact",
+        "text": "Scientists classify them as pyrophyllite concretions formed naturally"
+      },
+      {
+        "archive_query": "Klerksdorp spheres 1930s Wikimedia Commons",
+        "archive_label": "1930s mining site",
+        "query": "historical mining photo South Africa 1930s",
+        "query2": "black‑and‑white image of gold mine shafts",
+        "role": "archive",
+        "text": "Early 1930s mining photographs showing the spheres in situ"
+      },
+      {
+        "label": "Geological Process",
+        "sub": "Slow mineral precipitation over millions of years explains their shape",
+        "label_on": "process",
+        "query": "time‑lapse of mineral crystals growing in water",
+        "query2": "animation of stone formation underground",
+        "role": "callout",
+        "text": "Natural wonder"
+      },
+      {
+        "query": "sunset over South African plateau",
+        "query2": "wide shot of African savanna at dusk",
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night."
+      }
+    ],
+    "description": "The Klerksdorp spheres have sparked speculation for decades, but modern geology offers a clear natural formation story. Discover the evidence behind the 2.8 billion‑year mystery.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#Klerksdorp",
+      "#Spheres",
+      "#Geology",
+      "#Mystery",
+      "#Science"
+    ]
+  },
+  {
+    "title": "Oak Island Hidden Treasure Mystery",
+    "thumb": "MONEY PIT",
+    "place": "Oak Island",
+    "country": "Canada",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "In 1790 a 10‑meter shaft vanished into Oak Island’s Money Pit",
+        "hook_top": "VANISHING SHAFT DISCOVERED",
+        "query": "old wooden shaft oak island pit",
+        "query2": "historic excavation wooden beam",
+        "role": "hook"
+      },
+      {
+        "type": "fact",
+        "text": "The pit’s flood tunnel fills with seawater within seconds of digging",
+        "chips": [
+          {
+            "t": "seconds",
+            "on": "seconds",
+            "style": "accent"
+          }
+        ],
+        "punch": "fast",
+        "query": "flood tunnel water rush oak island",
+        "query2": "water flooding ancient pit",
+        "role": "fact"
+      },
+      {
+        "type": "fact",
+        "text": "A stone triangle discovered in 1850 aligns with the pit’s layout",
+        "chips": [
+          {
+            "t": "1850",
+            "on": "1850",
+            "style": "white"
+          }
+        ],
+        "query": "stone triangle oak island 1850",
+        "query2": "triangular stone artifact oak island",
+        "role": "fact"
+      },
+      {
+        "type": "reveal",
+        "text": "Scientists now think the pit was a 19th‑century mining trap, not a pirate hoard",
+        "reveal_top": "TRAP NOT TREASURE",
+        "query": "mining trap oak island theory",
+        "query2": "archaeology pit trap explanation",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow if you can't stop asking why.",
+        "query": "mysterious old map background",
+        "query2": "ancient parchment overlay",
+        "role": "cta"
+      }
+    ],
+    "description": "Decades of digging have turned Oak Island into legend. Recent research suggests a clever mining trap explains the baffling floodings. Stay tuned for more mysteries uncovered.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#oakisland",
+      "#treasurehunt",
+      "#archaeology",
+      "#mystery"
+    ]
+  },
+  {
+    "title": "Rongorongo Script Still Unread",
+    "thumb": "MYSTERIOUS TEXT",
+    "place": "Easter Island",
+    "country": "Chile",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "Only 24 wooden tablets hold Easter Island’s undeciphered Rongorongo glyphs",
+        "hook_top": "DECIPHERING ANCIENT GLYPHS",
+        "query": "Rongorongo wooden tablet closeup",
+        "query2": "ancient glyphs wood surface",
+        "role": "hook"
+      },
+      {
+        "type": "fact",
+        "text": "The tablets date between 1200 and 1700 CE, based on carbon testing",
+        "chips": [
+          {
+            "t": "1200‑1700 CE",
+            "on": "centuries",
+            "style": "white"
+          }
+        ],
+        "query": "carbon dating laboratory wood sample",
+        "query2": "radiocarbon dating equipment",
+        "role": "fact"
+      },
+      {
+        "type": "fact",
+        "text": "All known examples were collected by missionaries in the 19th century",
+        "chips": [
+          {
+            "t": "19th century",
+            "on": "missionaries",
+            "style": "accent"
+          }
+        ],
+        "query": "19th century missionary archive",
+        "query2": "old museum collection wooden tablets",
+        "role": "fact"
+      },
+      {
+        "type": "reveal",
+        "text": "Linguists now believe the script records chants, not a hidden language",
+        "reveal_top": "CHANTS NOT CODE",
+        "query": "researcher studying glyph patterns",
+        "query2": "scholarly notes rongorongo analysis",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "ancient parchment background",
+        "query2": "old scroll texture",
+        "role": "cta"
+      }
+    ],
+    "description": "Rongorongo remains one of the world’s few undeciphered writing systems. New linguistic work points to a ceremonial purpose rather than secret code. Follow for the next cryptic revelation.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#rongorongo",
+      "#easterisland",
+      "#linguistics",
+      "#mystery"
+    ]
+  },
+  {
+    "title": "The Mystery of Moving Rocks",
+    "thumb": "MOVING STONES",
+    "place": "Racetrack Playa",
+    "country": "United States",
+    "scenes": [
+      {
+        "hook_top": "SLIDING ROCKS MYSTERY",
+        "query": "lonely desert rocks on dry lake bed",
+        "query2": "isolated stones in barren playa",
+        "role": "hook",
+        "text": "Why do rocks slide alone across Racetrack Playa in California?"
+      },
+      {
+        "label": "Invisible force myth",
+        "query": "sunset over desert with mysterious footprints",
+        "query2": "wind‑blown dust on a dry lake",
+        "role": "myth",
+        "text": "People think the rocks are pushed by an invisible hand or secret underground forces."
+      },
+      {
+        "label": "Ice‑wind glide explanation",
+        "query": "ice formation cracking on a shallow playa",
+        "query2": "wind blowing across a frozen mud flat",
+        "role": "truth",
+        "text": "Scientists showed that a thin sheet of ice, wind, and a bit of water let the rocks glide across the mud when the playa briefly freezes."
+      },
+      {
+        "label": "Natural sliding",
+        "sub": "Ice, wind, and a flat surface move the stones.",
+        "label_on": "Glide",
+        "query": "close‑up of a rock moving on a slick surface",
+        "query2": "slow‑motion slab of ice on mud",
+        "role": "callout",
+        "text": "Nature’s perfect sliding trick"
+      },
+      {
+        "query": "abstract mystery symbols floating over desert landscape",
+        "query2": "mystery icons on a dark background",
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night."
+      }
+    ],
+    "description": "The desert’s moving stones have a perfectly scientific explanation—no ghosts needed. Discover the icy formula that makes the rocks slide. Hit follow for more truth‑busting mysteries.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#mysteries",
+      "#RacetrackPlaya",
+      "#science",
+      "#nature",
+      "#bustingmyths"
     ]
   }
 ]

@@ -1,0 +1,54 @@
+{
+  "title": "The Sailing Stones",
+  "thumb": "MOVING ROCKS",
+  "place": "Racetrack Playa",
+  "country": "United States",
+  "scenes": [
+    {
+      "hook_top": "MOVING STONES MYSTERY",
+      "query": "dry lake surface wind swirl dust devil Death Valley",
+      "query2": "empty playa with tracks in sand",
+      "role": "hook",
+      "text": "Why do 100‑ton stones glide across Death Valley’s dry lake?"
+    },
+    {
+      "label": "Hidden motors myth",
+      "query": "mechanical gears rusted on desert floor illustration",
+      "query2": "science fiction device concept",
+      "role": "myth",
+      "text": "People think the stones move because of hidden underground motors."
+    },
+    {
+      "label": "Ice‑wind explanation",
+      "query": "time‑lapse footage of rocks moving on icy playa",
+      "query2": "scientific experiment with ice and wind on sand",
+      "role": "truth",
+      "text": "Scientists proved a thin layer of ice plus light winds can push the rocks, leaving measurable tracks."
+    },
+    {
+      "label": "Nature moves rocks",
+      "sub": "Thin ice + wind = sliding stones",
+      "label_on": "Slide",
+      "query": "close‑up of shallow ice crust on desert ground",
+      "query2": "cracked ice surface in cold desert",
+      "role": "callout",
+      "text": "Nature can move massive objects without any tech."
+    },
+    {
+      "query": "animated subscribe button with mystery icons",
+      "query2": "social media follow prompt graphic",
+      "role": "cta",
+      "text": "Follow for a new mystery every day."
+    }
+  ],
+  "description": "The eerie tracks across Racetrack Playa have baffled observers for decades. Discover how simple physics finally solved the puzzle. Stay tuned for more untold truths.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#mysteries",
+    "#deathvalley",
+    "#sailingstones",
+    "#science",
+    "#unexplained"
+  ]
+}

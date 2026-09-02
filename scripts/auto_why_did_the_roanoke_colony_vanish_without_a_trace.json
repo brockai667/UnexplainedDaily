@@ -1,0 +1,68 @@
+{
+  "title": "Why Did the Roanoke Colony Vanish Without a Trace?",
+  "thumb": "ROANOKE MYSTERY",
+  "place": "Roanoke Island",
+  "country": "United States",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "In 1590 only the word “CROATOAN” was left behind",
+      "hook_top": "CROATOAN WORD LEFT",
+      "query": "abandoned 16th century settlement ruins",
+      "query2": "colonial wooden fort overgrown",
+      "role": "hook"
+    },
+    {
+      "type": "fact",
+      "text": "Over 115 settlers disappeared after the supply ship failed to return.",
+      "chips": [
+        {
+          "t": "115 SETTLERS",
+          "on": "settlers",
+          "style": "accent"
+        }
+      ],
+      "punch": "vanish",
+      "query": "historic map Roanoke Island 1587",
+      "query2": "colonial era settlement diagram",
+      "role": "fact"
+    },
+    {
+      "type": "archive",
+      "text": "John White’s 1585 sketch of the Roanoke settlement.",
+      "archive_query": "John White Roanoke sketch site:commons.wikimedia.org",
+      "archive_label": "White's sketch",
+      "query": "old parchment settlement drawing",
+      "query2": "16th century colonial sketch",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "callout",
+      "text": "Was it disease, attack, or relocation?",
+      "label": "Possible Causes",
+      "sub": "Historians weigh native conflict, starvation, or integration with Croatoan.",
+      "label_on": "causes",
+      "query": "stormy Atlantic coast shoreline",
+      "query2": "dense coastal forest mist",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "ancient scroll unfurling animation",
+      "query2": "mystery reveal graphic",
+      "role": "cta"
+    }
+  ],
+  "description": "The Lost Colony of Roanoke remains one of America’s oldest unsolved puzzles. Dive into the clues and theories that still intrigue scholars.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#Roanoke",
+    "#LostColony",
+    "#HistoryMystery",
+    "#Unsolved"
+  ]
+}

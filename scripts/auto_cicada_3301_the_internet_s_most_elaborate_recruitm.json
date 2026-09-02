@@ -1,0 +1,54 @@
+{
+  "title": "Cicada 3301: The Internet’s Most Elaborate Recruitment Puzzle",
+  "thumb": "CODE CRACKED",
+  "place": "Global (online)",
+  "country": "International",
+  "scenes": [
+    {
+      "hook_top": "GLOBAL CODE PUZZLE",
+      "query": "computer screen with cryptic text overlay",
+      "query2": "abstract digital code animation",
+      "role": "hook",
+      "text": "In 2012 a cryptic message appeared on 4 different websites worldwide."
+    },
+    {
+      "label": "Alien agency myth",
+      "query": "mysterious cult symbols glowing in darkness",
+      "query2": "science‑fiction conspiracy illustration",
+      "role": "myth",
+      "text": "Many claim it’s a secret society recruiting alien agents."
+    },
+    {
+      "label": "Recruitment for coders",
+      "query": "open‑source cryptography tools on laptop",
+      "query2": "stealthy code fragments on black background",
+      "role": "truth",
+      "text": "Investigations show the puzzle used publicly available cryptography and steganography, likely a recruitment for skilled programmers."
+    },
+    {
+      "label": "Just clever hackers",
+      "sub": "Advanced crypto, no aliens",
+      "label_on": "Decode",
+      "query": "close‑up of QR code being scanned on a screen",
+      "query2": "digital fingerprint analysis animation",
+      "role": "callout",
+      "text": "No evidence of supernatural links – just clever hackers."
+    },
+    {
+      "query": "animated subscribe button with binary code effect",
+      "query2": "social media follow prompt with tech motif",
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night."
+    }
+  ],
+  "description": "Cicada 3301 sparked wild theories, but the facts point to a sophisticated online recruitment. Get the real story behind the code. Follow for more myth‑busting content.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#cicada3301",
+    "#cryptography",
+    "#internetmystery",
+    "#tech",
+    "#unexplained"
+  ]
+}
