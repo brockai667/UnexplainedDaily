@@ -1,0 +1,70 @@
+{
+  "title": "Oak Island Hidden Treasure Mystery",
+  "thumb": "MONEY PIT",
+  "place": "Oak Island",
+  "country": "Canada",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "In 1790 a 10‑meter shaft vanished into Oak Island’s Money Pit",
+      "hook_top": "VANISHING SHAFT DISCOVERED",
+      "query": "old wooden shaft oak island pit",
+      "query2": "historic excavation wooden beam",
+      "role": "hook"
+    },
+    {
+      "type": "fact",
+      "text": "The pit’s flood tunnel fills with seawater within seconds of digging",
+      "chips": [
+        {
+          "t": "seconds",
+          "on": "seconds",
+          "style": "accent"
+        }
+      ],
+      "punch": "fast",
+      "query": "flood tunnel water rush oak island",
+      "query2": "water flooding ancient pit",
+      "role": "fact"
+    },
+    {
+      "type": "fact",
+      "text": "A stone triangle discovered in 1850 aligns with the pit’s layout",
+      "chips": [
+        {
+          "t": "1850",
+          "on": "1850",
+          "style": "white"
+        }
+      ],
+      "query": "stone triangle oak island 1850",
+      "query2": "triangular stone artifact oak island",
+      "role": "fact"
+    },
+    {
+      "type": "reveal",
+      "text": "Scientists now think the pit was a 19th‑century mining trap, not a pirate hoard",
+      "reveal_top": "TRAP NOT TREASURE",
+      "query": "mining trap oak island theory",
+      "query2": "archaeology pit trap explanation",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow if you can't stop asking why.",
+      "query": "mysterious old map background",
+      "query2": "ancient parchment overlay",
+      "role": "cta"
+    }
+  ],
+  "description": "Decades of digging have turned Oak Island into legend. Recent research suggests a clever mining trap explains the baffling floodings. Stay tuned for more mysteries uncovered.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#oakisland",
+    "#treasurehunt",
+    "#archaeology",
+    "#mystery"
+  ]
+}

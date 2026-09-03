@@ -12479,5 +12479,452 @@
       "#nature",
       "#bustingmyths"
     ]
+  },
+  {
+    "title": "The Costa Rican Stone Spheres",
+    "thumb": "MYSTERIOUS STONES",
+    "place": "Darién Province",
+    "country": "Costa Rica",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "Over 300 perfectly round stones were found in a jungle",
+        "hook_top": "ROUND STONES FOUND",
+        "query": "jungle landscape sunrise",
+        "query2": "dense forest mist",
+        "role": "hook"
+      },
+      {
+        "type": "map",
+        "text": "They were discovered throughout the Darién rain‑forest near the town of Palenque",
+        "query": "satellite view rainforest darien",
+        "query2": "aerial map costa rica darien",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "fact",
+        "text": "The largest sphere measures 2.2 meters in diameter and weighs about 15 tons",
+        "chips": [
+          {
+            "t": "2.2 m diameter",
+            "on": "largest",
+            "style": "white"
+          },
+          {
+            "t": "15 tons",
+            "on": "weighs",
+            "style": "accent"
+          }
+        ],
+        "punch": "massive",
+        "query": "close‑up stone sphere texture",
+        "query2": "granite boulder surface",
+        "role": "fact"
+      },
+      {
+        "type": "archive",
+        "text": "Early 20th‑century photos document the spheres before they were moved",
+        "archive_query": "Darién stone spheres 1930s site:commons.wikimedia.org",
+        "archive_label": "1930s field photo",
+        "query": "vintage archaeological photo",
+        "query2": "black‑white field documentation",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "callout",
+        "text": "No consensus on how they were carved or why they were placed",
+        "label": "UNSOLVED PURPOSE",
+        "sub": "Ancient engineering or natural formation?",
+        "label_on": "unsolved",
+        "query": "mysterious artifact display",
+        "query2": "ancient stone exhibit",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "glowing text overlay",
+        "query2": "animated follow button",
+        "role": "cta"
+      }
+    ],
+    "description": "The enigmatic stone spheres of Costa Rica have baffled researchers for a century. Their perfect shape and unknown purpose keep the mystery alive. Stay tuned for more puzzling artifacts.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#mystery",
+      "#ancient",
+      "#stones",
+      "#archaeology",
+      "#unexplained"
+    ]
+  },
+  {
+    "title": "The Singing Sand Dunes of Qatar",
+    "thumb": "SINGING SAND",
+    "place": "Khor Al Adaid",
+    "country": "Qatar",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "Visitors hear dunes humming up to 105 decibels",
+        "hook_top": "DUNES THAT HUM",
+        "query": "vast desert sunrise",
+        "query2": "sand dunes horizon",
+        "role": "hook"
+      },
+      {
+        "type": "map",
+        "text": "The phenomenon occurs in the Khor Al Adaid desert, a protected area near the southern coast of Qatar",
+        "query": "satellite view desert qatar",
+        "query2": "aerial map khor al adaid",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "fact",
+        "text": "Researchers measured frequencies between 70 Hz and 110 Hz during the sound events",
+        "chips": [
+          {
+            "t": "70‑110 Hz",
+            "on": "frequencies",
+            "style": "white"
+          }
+        ],
+        "punch": "vibrant",
+        "query": "audio waveform visualization",
+        "query2": "sound frequency graphic",
+        "role": "fact"
+      },
+      {
+        "type": "archive",
+        "text": "Early 1970s film footage captures the dunes' resonant tones",
+        "archive_query": "Khor Al Adaid singing dunes 1970s site:commons.wikimedia.org",
+        "archive_label": "1970s dune footage",
+        "query": "vintage desert film reel",
+        "query2": "old documentary sand dunes",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "callout",
+        "text": "Scientists attribute the sound to sand grain size and movement, but exact mechanics stay debated",
+        "label": "MYSTERY SOUND",
+        "sub": "Granular physics still not fully understood",
+        "label_on": "physics",
+        "query": "close‑up moving sand",
+        "query2": "wind sweeping dunes",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow for a new mystery every day.",
+        "query": "soft glowing text overlay",
+        "query2": "subtle animated follow cue",
+        "role": "cta"
+      }
+    ],
+    "description": "The singing sands of Qatar produce a deep, humming tone that mystifies scientists. Learn why the desert can become a giant instrument. Stay tuned for more wonders of nature.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#sand",
+      "#qatar",
+      "#nature",
+      "#mystery",
+      "#science"
+    ]
+  },
+  {
+    "title": "Marfa Lights Unveiled",
+    "thumb": "MYSTERIOUS LIGHTS",
+    "place": "Marfa",
+    "country": "United States",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "Over 5,000 sightings reported near Marfa, Texas since 1883",
+        "hook_top": "MYSTERIOUS SKY GLOW",
+        "query": "desert night sky with floating lights",
+        "query2": "Texas desert horizon glowing orbs",
+        "role": "hook"
+      },
+      {
+        "type": "fact",
+        "text": "Scientists recorded bright orbs moving erratically at 1‑2 km altitude",
+        "chips": [
+          {
+            "t": "1‑2 km altitude",
+            "on": "altitude",
+            "style": "white"
+          }
+        ],
+        "query": "nighttime desert with glowing orbs over horizon",
+        "query2": "remote desert sky strange lights",
+        "role": "fact"
+      },
+      {
+        "type": "fact",
+        "text": "Local radar once detected the lights traveling faster than sound",
+        "chips": [
+          {
+            "t": "faster than sound",
+            "on": "speed",
+            "style": "accent"
+          }
+        ],
+        "query": "radar screen showing fast moving blips over desert",
+        "query2": "military radar detecting unknown aerial phenomena",
+        "role": "fact"
+      },
+      {
+        "type": "reveal",
+        "text": "The most plausible explanation is a combination of temperature inversions and distant car headlights, yet many still see them as something else",
+        "reveal_top": "NATURAL ILLUSION?",
+        "query": "desert temperature inversion diagram with light paths",
+        "query2": "optical illusion atmospheric phenomenon illustration",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow if you can't stop asking why.",
+        "query": "mystery symbols overlay on night sky",
+        "query2": "glowing question mark over desert",
+        "role": "cta"
+      }
+    ],
+    "description": "The Marfa Lights have baffled observers for over a century. Discover the leading scientific view and why the debate still burns.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#marfalights",
+      "#unexplained",
+      "#mysteries",
+      "#sky",
+      "#science"
+    ]
+  },
+  {
+    "title": "Hessdalen Glow Mystery",
+    "thumb": "NORWAY GLOW",
+    "place": "Hessdalen Valley",
+    "country": "Norway",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "More than 8,000 reports of glowing orbs in Norway’s Hessdalen Valley",
+        "hook_top": "NORWEGIAN SKY PHENOMENON",
+        "query": "Norwegian valley night sky with luminous orbs",
+        "query2": "Hessdalen valley mysterious lights",
+        "role": "hook"
+      },
+      {
+        "type": "fact",
+        "text": "A 1998 study measured the orbs emitting up to 10 kW of power",
+        "chips": [
+          {
+            "t": "10 kW power",
+            "on": "power",
+            "style": "white"
+          }
+        ],
+        "query": "scientists with equipment measuring bright light source",
+        "query2": "research lab night with glowing sphere",
+        "role": "fact"
+      },
+      {
+        "type": "fact",
+        "text": "The lights sometimes hover, then accelerate to 100 m/s before vanishing",
+        "chips": [
+          {
+            "t": "100 m/s",
+            "on": "speed",
+            "style": "accent"
+          }
+        ],
+        "query": "animation of light orb accelerating over valley",
+        "query2": "fast moving luminous sphere over forest",
+        "role": "fact"
+      },
+      {
+        "type": "reveal",
+        "text": "Current consensus points to ionized dust particles ignited by piezoelectric rocks, though the exact trigger remains unknown",
+        "reveal_top": "IONIZED DUST THEORY",
+        "query": "rock formation with electric discharge illustration",
+        "query2": "ionized dust particles glowing in night",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "night sky with subtle glowing particles",
+        "query2": "mystery icons over Norwegian landscape",
+        "role": "cta"
+      }
+    ],
+    "description": "Hessdalen’s eerie lights have sparked decades of research. Learn what scientists think creates them and why the mystery persists.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#hessdalen",
+      "#norway",
+      "#lights",
+      "#science",
+      "#unexplained"
+    ]
+  },
+  {
+    "title": "Bimini Road Underwater Puzzle",
+    "thumb": "UNDERWATER ENIGMA",
+    "place": "Bimini",
+    "country": "Bahamas",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "Bimini Road spans 0.5 km of stone blocks in the Atlantic",
+        "hook_top": "BIMINI ROAD MYSTERY",
+        "query": "clear turquoise ocean floor stones",
+        "query2": "underwater reef with large rocks",
+        "role": "hook"
+      },
+      {
+        "type": "fact",
+        "text": "Scientists measured the formation as a natural limestone reef in 1968",
+        "chips": [
+          {
+            "t": "0.5 km",
+            "on": "length",
+            "style": "white"
+          },
+          {
+            "t": "1968",
+            "on": "year",
+            "style": "accent"
+          }
+        ],
+        "punch": "reef",
+        "query": "marine geologists measuring reef",
+        "query2": "sonar equipment on boat",
+        "role": "fact"
+      },
+      {
+        "type": "archive",
+        "text": "A 1970s aerial view captures the straight alignment of the stones",
+        "archive_query": "Bimini Road aerial photo 1970 site:commons.wikimedia.org",
+        "archive_label": "Aerial View 1970",
+        "query": "historic aerial photograph ocean",
+        "query2": "old satellite image sea",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "callout",
+        "text": "While some claim Atlantis, most geologists see natural sedimentary processes",
+        "label": "NATURAL FORMATION",
+        "sub": "Science points to reef growth",
+        "label_on": "natural",
+        "query": "rocky seabed with marine life",
+        "query2": "underwater limestone formations",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "deep ocean blue light",
+        "query2": "mystic underwater glow",
+        "role": "cta"
+      }
+    ],
+    "description": "The Bimini Road’s straight stone formation fuels legends of lost civilizations. Learn the scientific perspective behind the underwater puzzle.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#BiminiRoad",
+      "#Atlantis",
+      "#OceanMysteries",
+      "#Science",
+      "#DeepDive"
+    ]
+  },
+  {
+    "title": "Marfa Lights Unexplained Glow",
+    "thumb": "GHOST LIGHTS",
+    "place": "Marfa",
+    "country": "United States",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "Marfa Lights have been seen nightly for over 100 years in West Texas",
+        "hook_top": "MARFA LIGHTS MYSTERY",
+        "query": "desert night sky stars",
+        "query2": "open plain under moon",
+        "role": "hook"
+      },
+      {
+        "type": "fact",
+        "text": "The first documented sighting was recorded by the US Army in 1883",
+        "chips": [
+          {
+            "t": "1883",
+            "on": "year",
+            "style": "white"
+          },
+          {
+            "t": "100+ years",
+            "on": "duration",
+            "style": "accent"
+          }
+        ],
+        "punch": "first",
+        "query": "old military camp desert 1880s",
+        "query2": "historic fort ruins desert",
+        "role": "fact"
+      },
+      {
+        "type": "archive",
+        "text": "A 1960s newspaper clipping shows a sketch of the luminous orbs above the horizon",
+        "archive_query": "Marfa Lights newspaper 1960 site:commons.wikimedia.org",
+        "archive_label": "1960s Newspaper Sketch",
+        "query": "vintage newspaper front page desert",
+        "query2": "old newspaper illustration lights",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "callout",
+        "text": "Scientists suggest atmospheric reflections, but no definitive cause is proven",
+        "label": "UNSOLVED PHENOMENON",
+        "sub": "Atmospheric optics remain the leading theory",
+        "label_on": "unsolved",
+        "query": "mirage heat shimmer desert",
+        "query2": "light refraction over sand",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "nighttime desert with faint lights",
+        "query2": "silhouette of hills under aurora",
+        "role": "cta"
+      }
+    ],
+    "description": "For over a century, travelers report glowing orbs dancing over the West Texas desert. Dive into the science and folklore behind the Marfa Lights.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#MarfaLights",
+      "#Phenomena",
+      "#Unexplained",
+      "#Science",
+      "#Mystery"
+    ]
   }
 ]

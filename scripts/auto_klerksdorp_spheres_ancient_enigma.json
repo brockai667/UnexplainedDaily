@@ -1,0 +1,68 @@
+{
+  "title": "Klerksdorp Spheres Ancient Enigma",
+  "thumb": "MILLION YEAR SPHERES",
+  "place": "Klerksdorp",
+  "country": "South Africa",
+  "scenes": [
+    {
+      "hook_top": "ANCIENT SPHERES FOUND",
+      "query": "close‑up of polished stone sphere on desert floor",
+      "query2": "geological specimen shining in sunlight",
+      "role": "hook",
+      "text": "Spherical stones dating 2.8 billion years were found intact"
+    },
+    {
+      "query": "map of Witwatersrand gold mining area South Africa",
+      "query2": "satellite view of Klerksdorp region",
+      "role": "map",
+      "text": "They were discovered in the Witwatersrand gold fields near Klerksdorp, South Africa"
+    },
+    {
+      "chips": [
+        {
+          "t": "pyrophyllite concretion",
+          "on": "classified",
+          "style": "accent"
+        }
+      ],
+      "punch": "natural",
+      "query": "rock scientist examining mineral specimen",
+      "query2": "geologist with handheld microscope on stone",
+      "role": "fact",
+      "text": "Scientists classify them as pyrophyllite concretions formed naturally"
+    },
+    {
+      "archive_query": "Klerksdorp spheres 1930s Wikimedia Commons",
+      "archive_label": "1930s mining site",
+      "query": "historical mining photo South Africa 1930s",
+      "query2": "black‑and‑white image of gold mine shafts",
+      "role": "archive",
+      "text": "Early 1930s mining photographs showing the spheres in situ"
+    },
+    {
+      "label": "Geological Process",
+      "sub": "Slow mineral precipitation over millions of years explains their shape",
+      "label_on": "process",
+      "query": "time‑lapse of mineral crystals growing in water",
+      "query2": "animation of stone formation underground",
+      "role": "callout",
+      "text": "Natural wonder"
+    },
+    {
+      "query": "sunset over South African plateau",
+      "query2": "wide shot of African savanna at dusk",
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night."
+    }
+  ],
+  "description": "The Klerksdorp spheres have sparked speculation for decades, but modern geology offers a clear natural formation story. Discover the evidence behind the 2.8 billion‑year mystery.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#Klerksdorp",
+    "#Spheres",
+    "#Geology",
+    "#Mystery",
+    "#Science"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "title": "Rongorongo Script Still Unread",
+  "thumb": "MYSTERIOUS TEXT",
+  "place": "Easter Island",
+  "country": "Chile",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "Only 24 wooden tablets hold Easter Island’s undeciphered Rongorongo glyphs",
+      "hook_top": "DECIPHERING ANCIENT GLYPHS",
+      "query": "Rongorongo wooden tablet closeup",
+      "query2": "ancient glyphs wood surface",
+      "role": "hook"
+    },
+    {
+      "type": "fact",
+      "text": "The tablets date between 1200 and 1700 CE, based on carbon testing",
+      "chips": [
+        {
+          "t": "1200‑1700 CE",
+          "on": "centuries",
+          "style": "white"
+        }
+      ],
+      "query": "carbon dating laboratory wood sample",
+      "query2": "radiocarbon dating equipment",
+      "role": "fact"
+    },
+    {
+      "type": "fact",
+      "text": "All known examples were collected by missionaries in the 19th century",
+      "chips": [
+        {
+          "t": "19th century",
+          "on": "missionaries",
+          "style": "accent"
+        }
+      ],
+      "query": "19th century missionary archive",
+      "query2": "old museum collection wooden tablets",
+      "role": "fact"
+    },
+    {
+      "type": "reveal",
+      "text": "Linguists now believe the script records chants, not a hidden language",
+      "reveal_top": "CHANTS NOT CODE",
+      "query": "researcher studying glyph patterns",
+      "query2": "scholarly notes rongorongo analysis",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "ancient parchment background",
+      "query2": "old scroll texture",
+      "role": "cta"
+    }
+  ],
+  "description": "Rongorongo remains one of the world’s few undeciphered writing systems. New linguistic work points to a ceremonial purpose rather than secret code. Follow for the next cryptic revelation.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#rongorongo",
+    "#easterisland",
+    "#linguistics",
+    "#mystery"
+  ]
+}
