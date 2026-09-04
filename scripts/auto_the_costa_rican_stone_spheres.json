@@ -1,0 +1,82 @@
+{
+  "title": "The Costa Rican Stone Spheres",
+  "thumb": "MYSTERIOUS STONES",
+  "place": "Darién Province",
+  "country": "Costa Rica",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "Over 300 perfectly round stones were found in a jungle",
+      "hook_top": "ROUND STONES FOUND",
+      "query": "jungle landscape sunrise",
+      "query2": "dense forest mist",
+      "role": "hook"
+    },
+    {
+      "type": "map",
+      "text": "They were discovered throughout the Darién rain‑forest near the town of Palenque",
+      "query": "satellite view rainforest darien",
+      "query2": "aerial map costa rica darien",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "fact",
+      "text": "The largest sphere measures 2.2 meters in diameter and weighs about 15 tons",
+      "chips": [
+        {
+          "t": "2.2 m diameter",
+          "on": "largest",
+          "style": "white"
+        },
+        {
+          "t": "15 tons",
+          "on": "weighs",
+          "style": "accent"
+        }
+      ],
+      "punch": "massive",
+      "query": "close‑up stone sphere texture",
+      "query2": "granite boulder surface",
+      "role": "fact"
+    },
+    {
+      "type": "archive",
+      "text": "Early 20th‑century photos document the spheres before they were moved",
+      "archive_query": "Darién stone spheres 1930s site:commons.wikimedia.org",
+      "archive_label": "1930s field photo",
+      "query": "vintage archaeological photo",
+      "query2": "black‑white field documentation",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "callout",
+      "text": "No consensus on how they were carved or why they were placed",
+      "label": "UNSOLVED PURPOSE",
+      "sub": "Ancient engineering or natural formation?",
+      "label_on": "unsolved",
+      "query": "mysterious artifact display",
+      "query2": "ancient stone exhibit",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "glowing text overlay",
+      "query2": "animated follow button",
+      "role": "cta"
+    }
+  ],
+  "description": "The enigmatic stone spheres of Costa Rica have baffled researchers for a century. Their perfect shape and unknown purpose keep the mystery alive. Stay tuned for more puzzling artifacts.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#mystery",
+    "#ancient",
+    "#stones",
+    "#archaeology",
+    "#unexplained"
+  ]
+}

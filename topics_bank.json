@@ -12926,5 +12926,267 @@
       "#Science",
       "#Mystery"
     ]
+  },
+  {
+    "title": "The Unexplained Hessdalen Lights",
+    "thumb": "HESSDALEN GLOW",
+    "place": "Hessdalen Valley",
+    "country": "Norway",
+    "scenes": [
+      {
+        "hook_top": "ORBS OVER NORWAY",
+        "query": "night sky orange lights valley",
+        "query2": "aerial night footage mysterious lights",
+        "role": "hook",
+        "text": "Bright orange orbs appear over a Norwegian valley for minutes"
+      },
+      {
+        "query": "map of Hessdalen Valley Norway",
+        "query2": "satellite view central Norway valley",
+        "role": "map",
+        "text": "Phenomena occur in the remote Hessdalen Valley of central Norway"
+      },
+      {
+        "chips": [
+          {
+            "t": "1981 start",
+            "on": "recorded",
+            "style": "white"
+          }
+        ],
+        "punch": "recorded",
+        "query": "historical footage Hessdalen lights 1980s",
+        "query2": "archival video orange orbs Norway",
+        "role": "fact",
+        "text": "The lights have been recorded on video since 1981"
+      },
+      {
+        "archive_query": "Hessdalen lights 1995 research footage Wikimedia Commons",
+        "archive_label": "1995 research footage",
+        "query": "archival scientific video lights",
+        "query2": "research team night lights Norway",
+        "role": "archive",
+        "text": "Official Norwegian research team filmed a bright pulse in 1995"
+      },
+      {
+        "label": "UNSOLVED CAUSE",
+        "sub": "Atmospheric plasma, piezoelectric rocks, or unknown",
+        "label_on": "cause",
+        "query": "scientist analyzing light phenomenon graphics",
+        "query2": "illustrated plasma theory",
+        "role": "callout",
+        "text": "Science still debates cause"
+      },
+      {
+        "query": "mystery sky title animation",
+        "query2": "night phenomenon intro",
+        "role": "cta",
+        "text": "Follow for a new mystery every day."
+      }
+    ],
+    "description": "Since the 1980s, glowing orbs have haunted the Hessdalen Valley, drawing scientists and skeptics alike. Their origin remains a heated debate.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#Hessdalen",
+      "#lights",
+      "#Norway",
+      "#phenomena",
+      "#science"
+    ]
+  },
+  {
+    "title": "Baltic Sea Anomaly Mystery",
+    "thumb": "DEEP OCEAN OBJECT",
+    "place": "Baltic Sea",
+    "country": "Sweden",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "A 60‑foot disc was spotted deep in the Baltic Sea in 2011",
+        "hook_top": "DEEP SEA DISC",
+        "query": "sonar image of mysterious ocean floor object",
+        "query2": "underwater sonar scan of circular formation",
+        "role": "hook"
+      },
+      {
+        "type": "fact",
+        "text": "Swedish divers recovered a rock that was unusually smooth and metallic‑looking",
+        "chips": [
+          {
+            "t": "METALLIC ROCK",
+            "on": "rock",
+            "style": "white"
+          }
+        ],
+        "query": "divers holding strange smooth stone underwater",
+        "query2": "underwater object with metallic sheen",
+        "role": "fact"
+      },
+      {
+        "type": "fact",
+        "text": "Scientists note the object's shape matches no known natural formations in the area",
+        "chips": [
+          {
+            "t": "UNUSUAL SHAPE",
+            "on": "shape",
+            "style": "accent"
+          }
+        ],
+        "query": "geological map of Baltic Sea floor anomalies",
+        "query2": "underwater terrain with odd circular feature",
+        "role": "fact"
+      },
+      {
+        "type": "reveal",
+        "text": "Most experts now think it is a glacial erratic, not an alien craft",
+        "reveal_top": "GLACIAL ROCK THEORY",
+        "query": "glacial erratic explanation diagram",
+        "query2": "scientist discussing rock formation",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "mysterious ocean waves background",
+        "query2": "calm sea surface at sunset",
+        "role": "cta"
+      }
+    ],
+    "description": "The Baltic Sea Anomaly sparked UFO hype, but geology offers a grounded answer. Dive into the evidence and the prevailing glacial‑rock theory. Follow for more unexplained wonders.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#mystery",
+      "#ocean",
+      "#balticsea",
+      "#unexplained",
+      "#science"
+    ]
+  },
+  {
+    "title": "Piri Reis Map Enigma",
+    "thumb": "MYSTERIOUS MAP",
+    "place": "İstanbul",
+    "country": "Turkey",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "A 1513 world map shows Antarctica before it was discovered.",
+        "hook_top": "ANTARCTICA ON MAP",
+        "query": "old parchment world map close up",
+        "query2": "historical map illustration",
+        "role": "hook"
+      },
+      {
+        "type": "myth",
+        "text": "Many claim the map proves ancient civilizations had advanced global knowledge.",
+        "label": "Ancients knew Antarctica",
+        "query": "ancient map myth illustration",
+        "query2": "historical conspiracy graphics",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "truth",
+        "text": "Scholars say the coastline is a misinterpretation of South America and artistic embellishment.",
+        "label": "Cartographic error, not proof",
+        "query": "scholarly analysis map desk",
+        "query2": "historian examining parchment",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "callout",
+        "text": "Maps reflect the knowledge of their time, not lost technology.",
+        "label": "Map limits",
+        "sub": "Old maps often guessed unknown lands",
+        "label_on": "Reality",
+        "query": "old atlas pages turning",
+        "query2": "vintage map pages",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "compass rose animation",
+        "query2": "navigation icons",
+        "role": "cta"
+      }
+    ],
+    "description": "The Piri Reis map sparks wild theories, but experts see simple cartographic mistakes. Dive into the real story behind this famous chart. Follow for more myth‑busting mysteries.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#mystery",
+      "#history",
+      "#maps",
+      "#PiriReis",
+      "#ancient"
+    ]
+  },
+  {
+    "title": "Saqqara Bird Ancient Puzzle",
+    "thumb": "BIRD MYSTERY",
+    "place": "Saqqara",
+    "country": "Egypt",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "A wooden bird from 300 BC looks like a modern airplane.",
+        "hook_top": "ANCIENT AIRPLANE",
+        "query": "ancient wooden bird artifact close up",
+        "query2": "Saqqara bird museum display",
+        "role": "hook"
+      },
+      {
+        "type": "myth",
+        "text": "Some say it proves ancient Egyptians built flying machines.",
+        "label": "Egyptians flew",
+        "query": "ancient Egyptian flight illustration",
+        "query2": "pseudoscience diagram bird",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "truth",
+        "text": "Archaeologists view it as a ceremonial object, possibly a falcon‑shaped model.",
+        "label": "Ceremonial model",
+        "query": "archaeologist examining wooden bird",
+        "query2": "museum curator artifact study",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "callout",
+        "text": "Artifacts often reflect symbolism, not technology.",
+        "label": "Symbolic, not technical",
+        "sub": "The bird likely served a ritual purpose",
+        "label_on": "Fact",
+        "query": "ancient Egyptian symbols stone relief",
+        "query2": "hieroglyphic art close up",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow for the cases no one can explain.",
+        "query": "ancient scrolls animation",
+        "query2": "dusty artifact rotation",
+        "role": "cta"
+      }
+    ],
+    "description": "The Saqqara Bird fuels speculation of prehistoric flight, yet scholars explain its ritual origins. Uncover the real meaning behind this curious relic. Follow for more artifact truths.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#ancient",
+      "#Egypt",
+      "#archaeology",
+      "#SaqqaraBird",
+      "#mysteries"
+    ]
   }
 ]

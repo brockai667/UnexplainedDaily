@@ -1,0 +1,77 @@
+{
+  "title": "The Singing Sand Dunes of Qatar",
+  "thumb": "SINGING SAND",
+  "place": "Khor Al Adaid",
+  "country": "Qatar",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "Visitors hear dunes humming up to 105 decibels",
+      "hook_top": "DUNES THAT HUM",
+      "query": "vast desert sunrise",
+      "query2": "sand dunes horizon",
+      "role": "hook"
+    },
+    {
+      "type": "map",
+      "text": "The phenomenon occurs in the Khor Al Adaid desert, a protected area near the southern coast of Qatar",
+      "query": "satellite view desert qatar",
+      "query2": "aerial map khor al adaid",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "fact",
+      "text": "Researchers measured frequencies between 70 Hz and 110 Hz during the sound events",
+      "chips": [
+        {
+          "t": "70‑110 Hz",
+          "on": "frequencies",
+          "style": "white"
+        }
+      ],
+      "punch": "vibrant",
+      "query": "audio waveform visualization",
+      "query2": "sound frequency graphic",
+      "role": "fact"
+    },
+    {
+      "type": "archive",
+      "text": "Early 1970s film footage captures the dunes' resonant tones",
+      "archive_query": "Khor Al Adaid singing dunes 1970s site:commons.wikimedia.org",
+      "archive_label": "1970s dune footage",
+      "query": "vintage desert film reel",
+      "query2": "old documentary sand dunes",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "callout",
+      "text": "Scientists attribute the sound to sand grain size and movement, but exact mechanics stay debated",
+      "label": "MYSTERY SOUND",
+      "sub": "Granular physics still not fully understood",
+      "label_on": "physics",
+      "query": "close‑up moving sand",
+      "query2": "wind sweeping dunes",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow for a new mystery every day.",
+      "query": "soft glowing text overlay",
+      "query2": "subtle animated follow cue",
+      "role": "cta"
+    }
+  ],
+  "description": "The singing sands of Qatar produce a deep, humming tone that mystifies scientists. Learn why the desert can become a giant instrument. Stay tuned for more wonders of nature.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#sand",
+    "#qatar",
+    "#nature",
+    "#mystery",
+    "#science"
+  ]
+}

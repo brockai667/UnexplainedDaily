@@ -1,0 +1,54 @@
+{
+  "title": "The Mystery of Moving Rocks",
+  "thumb": "MOVING STONES",
+  "place": "Racetrack Playa",
+  "country": "United States",
+  "scenes": [
+    {
+      "hook_top": "SLIDING ROCKS MYSTERY",
+      "query": "lonely desert rocks on dry lake bed",
+      "query2": "isolated stones in barren playa",
+      "role": "hook",
+      "text": "Why do rocks slide alone across Racetrack Playa in California?"
+    },
+    {
+      "label": "Invisible force myth",
+      "query": "sunset over desert with mysterious footprints",
+      "query2": "wind‑blown dust on a dry lake",
+      "role": "myth",
+      "text": "People think the rocks are pushed by an invisible hand or secret underground forces."
+    },
+    {
+      "label": "Ice‑wind glide explanation",
+      "query": "ice formation cracking on a shallow playa",
+      "query2": "wind blowing across a frozen mud flat",
+      "role": "truth",
+      "text": "Scientists showed that a thin sheet of ice, wind, and a bit of water let the rocks glide across the mud when the playa briefly freezes."
+    },
+    {
+      "label": "Natural sliding",
+      "sub": "Ice, wind, and a flat surface move the stones.",
+      "label_on": "Glide",
+      "query": "close‑up of a rock moving on a slick surface",
+      "query2": "slow‑motion slab of ice on mud",
+      "role": "callout",
+      "text": "Nature’s perfect sliding trick"
+    },
+    {
+      "query": "abstract mystery symbols floating over desert landscape",
+      "query2": "mystery icons on a dark background",
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night."
+    }
+  ],
+  "description": "The desert’s moving stones have a perfectly scientific explanation—no ghosts needed. Discover the icy formula that makes the rocks slide. Hit follow for more truth‑busting mysteries.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#mysteries",
+    "#RacetrackPlaya",
+    "#science",
+    "#nature",
+    "#bustingmyths"
+  ]
+}
