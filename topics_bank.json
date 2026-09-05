@@ -13188,5 +13188,143 @@
       "#SaqqaraBird",
       "#mysteries"
     ]
+  },
+  {
+    "title": "Great Zimbabwe Stone Enigma",
+    "thumb": "STONE CITY",
+    "place": "Great Zimbabwe",
+    "country": "Zimbabwe",
+    "scenes": [
+      {
+        "hook_top": "MORTARLESS MONUMENTS",
+        "query": "drone footage of stone walls",
+        "query2": "aerial view of ancient ruins",
+        "role": "hook",
+        "text": "Thousands of stone walls rise without mortar"
+      },
+      {
+        "role": "map",
+        "text": "The ruins sit on a hilltop near the town of Masvingo in southeastern Zimbabwe."
+      },
+      {
+        "chips": [
+          {
+            "t": "11th‑15th",
+            "on": "centuries",
+            "style": "white"
+          },
+          {
+            "t": "granite",
+            "on": "stone",
+            "style": "accent"
+          }
+        ],
+        "punch": "precise",
+        "query": "close‑up of interlocking stone blocks",
+        "query2": "granite wall detail",
+        "role": "fact",
+        "text": "Construction dates to the 11th–15th centuries, using precisely cut granite blocks."
+      },
+      {
+        "archive_query": "Great Zimbabwe sketch early expedition Wikimedia Commons",
+        "archive_label": "Great Enclosure Sketch",
+        "role": "archive",
+        "text": "Early 20th‑century expedition sketch of the Great Enclosure."
+      },
+      {
+        "label": "Architectural Puzzle",
+        "sub": "How were the massive walls built without mortar?",
+        "label_on": "question",
+        "query": "3D reconstruction of stone wall building",
+        "query2": "animation of ancient construction",
+        "role": "callout",
+        "text": "Architectural Puzzle"
+      },
+      {
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "foggy forest night mist",
+        "query2": "dark ocean night waves"
+      }
+    ],
+    "description": "Great Zimbabwe’s towering stone structures were erected centuries ago without mortar, baffling archaeologists. What techniques allowed such precision? Follow for more unsolved histories!",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#archaeology",
+      "#greatzimbabwe",
+      "#mystery",
+      "#ancient",
+      "#unexplained"
+    ]
+  },
+  {
+    "title": "Green Flash Mystery Explained",
+    "thumb": "GREEN FLASH",
+    "place": "Maui, Hawaii",
+    "country": "USA",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "Why does the sun vanish in a flash over Hawaii?",
+        "hook_top": "SUN VANISHES QUICKLY",
+        "query": "sunset over ocean horizon",
+        "query2": "sun setting over sea with vibrant colors",
+        "role": "hook"
+      },
+      {
+        "type": "fact",
+        "text": "The green flash lasts only 1‑2 seconds at sunset.",
+        "chips": [
+          {
+            "t": "1‑2 seconds",
+            "on": "seconds",
+            "style": "white"
+          }
+        ],
+        "query": "close-up of sun edge green flash",
+        "query2": "green flash phenomenon on horizon",
+        "role": "fact"
+      },
+      {
+        "type": "fact",
+        "text": "It appears when clear horizons let atmospheric refraction separate colors.",
+        "chips": [
+          {
+            "t": "clear horizon",
+            "on": "horizon",
+            "style": "accent"
+          }
+        ],
+        "query": "illustration of atmospheric refraction layers",
+        "query2": "diagram showing light bending in atmosphere",
+        "role": "fact"
+      },
+      {
+        "type": "reveal",
+        "text": "Scientists say it's a refraction trick, not a hidden signal.",
+        "reveal_top": "REFRACTION TRICK",
+        "query": "scientist diagram explaining refraction",
+        "query2": "educational animation of light refraction",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "text overlay animation follow us",
+        "query2": "call to action graphic",
+        "role": "cta"
+      }
+    ],
+    "description": "The fleeting green flash dazzles watchers worldwide, but science has a clear answer. Stay tuned for more unexplained sky phenomena.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#mysteries",
+      "#greenflash",
+      "#astronomy",
+      "#science"
+    ]
   }
 ]

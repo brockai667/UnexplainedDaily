@@ -1,0 +1,74 @@
+{
+  "title": "Bimini Road Underwater Puzzle",
+  "thumb": "UNDERWATER ENIGMA",
+  "place": "Bimini",
+  "country": "Bahamas",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "Bimini Road spans 0.5 km of stone blocks in the Atlantic",
+      "hook_top": "BIMINI ROAD MYSTERY",
+      "query": "clear turquoise ocean floor stones",
+      "query2": "underwater reef with large rocks",
+      "role": "hook"
+    },
+    {
+      "type": "fact",
+      "text": "Scientists measured the formation as a natural limestone reef in 1968",
+      "chips": [
+        {
+          "t": "0.5 km",
+          "on": "length",
+          "style": "white"
+        },
+        {
+          "t": "1968",
+          "on": "year",
+          "style": "accent"
+        }
+      ],
+      "punch": "reef",
+      "query": "marine geologists measuring reef",
+      "query2": "sonar equipment on boat",
+      "role": "fact"
+    },
+    {
+      "type": "archive",
+      "text": "A 1970s aerial view captures the straight alignment of the stones",
+      "archive_query": "Bimini Road aerial photo 1970 site:commons.wikimedia.org",
+      "archive_label": "Aerial View 1970",
+      "query": "historic aerial photograph ocean",
+      "query2": "old satellite image sea",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "callout",
+      "text": "While some claim Atlantis, most geologists see natural sedimentary processes",
+      "label": "NATURAL FORMATION",
+      "sub": "Science points to reef growth",
+      "label_on": "natural",
+      "query": "rocky seabed with marine life",
+      "query2": "underwater limestone formations",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "deep ocean blue light",
+      "query2": "mystic underwater glow",
+      "role": "cta"
+    }
+  ],
+  "description": "The Bimini Road’s straight stone formation fuels legends of lost civilizations. Learn the scientific perspective behind the underwater puzzle.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#BiminiRoad",
+    "#Atlantis",
+    "#OceanMysteries",
+    "#Science",
+    "#DeepDive"
+  ]
+}

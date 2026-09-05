@@ -1,0 +1,70 @@
+{
+  "title": "Hessdalen Glow Mystery",
+  "thumb": "NORWAY GLOW",
+  "place": "Hessdalen Valley",
+  "country": "Norway",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "More than 8,000 reports of glowing orbs in Norway’s Hessdalen Valley",
+      "hook_top": "NORWEGIAN SKY PHENOMENON",
+      "query": "Norwegian valley night sky with luminous orbs",
+      "query2": "Hessdalen valley mysterious lights",
+      "role": "hook"
+    },
+    {
+      "type": "fact",
+      "text": "A 1998 study measured the orbs emitting up to 10 kW of power",
+      "chips": [
+        {
+          "t": "10 kW power",
+          "on": "power",
+          "style": "white"
+        }
+      ],
+      "query": "scientists with equipment measuring bright light source",
+      "query2": "research lab night with glowing sphere",
+      "role": "fact"
+    },
+    {
+      "type": "fact",
+      "text": "The lights sometimes hover, then accelerate to 100 m/s before vanishing",
+      "chips": [
+        {
+          "t": "100 m/s",
+          "on": "speed",
+          "style": "accent"
+        }
+      ],
+      "query": "animation of light orb accelerating over valley",
+      "query2": "fast moving luminous sphere over forest",
+      "role": "fact"
+    },
+    {
+      "type": "reveal",
+      "text": "Current consensus points to ionized dust particles ignited by piezoelectric rocks, though the exact trigger remains unknown",
+      "reveal_top": "IONIZED DUST THEORY",
+      "query": "rock formation with electric discharge illustration",
+      "query2": "ionized dust particles glowing in night",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "night sky with subtle glowing particles",
+      "query2": "mystery icons over Norwegian landscape",
+      "role": "cta"
+    }
+  ],
+  "description": "Hessdalen’s eerie lights have sparked decades of research. Learn what scientists think creates them and why the mystery persists.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#hessdalen",
+    "#norway",
+    "#lights",
+    "#science",
+    "#unexplained"
+  ]
+}

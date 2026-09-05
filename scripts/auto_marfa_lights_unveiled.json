@@ -1,0 +1,70 @@
+{
+  "title": "Marfa Lights Unveiled",
+  "thumb": "MYSTERIOUS LIGHTS",
+  "place": "Marfa",
+  "country": "United States",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "Over 5,000 sightings reported near Marfa, Texas since 1883",
+      "hook_top": "MYSTERIOUS SKY GLOW",
+      "query": "desert night sky with floating lights",
+      "query2": "Texas desert horizon glowing orbs",
+      "role": "hook"
+    },
+    {
+      "type": "fact",
+      "text": "Scientists recorded bright orbs moving erratically at 1‑2 km altitude",
+      "chips": [
+        {
+          "t": "1‑2 km altitude",
+          "on": "altitude",
+          "style": "white"
+        }
+      ],
+      "query": "nighttime desert with glowing orbs over horizon",
+      "query2": "remote desert sky strange lights",
+      "role": "fact"
+    },
+    {
+      "type": "fact",
+      "text": "Local radar once detected the lights traveling faster than sound",
+      "chips": [
+        {
+          "t": "faster than sound",
+          "on": "speed",
+          "style": "accent"
+        }
+      ],
+      "query": "radar screen showing fast moving blips over desert",
+      "query2": "military radar detecting unknown aerial phenomena",
+      "role": "fact"
+    },
+    {
+      "type": "reveal",
+      "text": "The most plausible explanation is a combination of temperature inversions and distant car headlights, yet many still see them as something else",
+      "reveal_top": "NATURAL ILLUSION?",
+      "query": "desert temperature inversion diagram with light paths",
+      "query2": "optical illusion atmospheric phenomenon illustration",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow if you can't stop asking why.",
+      "query": "mystery symbols overlay on night sky",
+      "query2": "glowing question mark over desert",
+      "role": "cta"
+    }
+  ],
+  "description": "The Marfa Lights have baffled observers for over a century. Discover the leading scientific view and why the debate still burns.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#marfalights",
+    "#unexplained",
+    "#mysteries",
+    "#sky",
+    "#science"
+  ]
+}
