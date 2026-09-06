@@ -1,0 +1,68 @@
+{
+  "title": "The Unexplained Hessdalen Lights",
+  "thumb": "HESSDALEN GLOW",
+  "place": "Hessdalen Valley",
+  "country": "Norway",
+  "scenes": [
+    {
+      "hook_top": "ORBS OVER NORWAY",
+      "query": "night sky orange lights valley",
+      "query2": "aerial night footage mysterious lights",
+      "role": "hook",
+      "text": "Bright orange orbs appear over a Norwegian valley for minutes"
+    },
+    {
+      "query": "map of Hessdalen Valley Norway",
+      "query2": "satellite view central Norway valley",
+      "role": "map",
+      "text": "Phenomena occur in the remote Hessdalen Valley of central Norway"
+    },
+    {
+      "chips": [
+        {
+          "t": "1981 start",
+          "on": "recorded",
+          "style": "white"
+        }
+      ],
+      "punch": "recorded",
+      "query": "historical footage Hessdalen lights 1980s",
+      "query2": "archival video orange orbs Norway",
+      "role": "fact",
+      "text": "The lights have been recorded on video since 1981"
+    },
+    {
+      "archive_query": "Hessdalen lights 1995 research footage Wikimedia Commons",
+      "archive_label": "1995 research footage",
+      "query": "archival scientific video lights",
+      "query2": "research team night lights Norway",
+      "role": "archive",
+      "text": "Official Norwegian research team filmed a bright pulse in 1995"
+    },
+    {
+      "label": "UNSOLVED CAUSE",
+      "sub": "Atmospheric plasma, piezoelectric rocks, or unknown",
+      "label_on": "cause",
+      "query": "scientist analyzing light phenomenon graphics",
+      "query2": "illustrated plasma theory",
+      "role": "callout",
+      "text": "Science still debates cause"
+    },
+    {
+      "query": "mystery sky title animation",
+      "query2": "night phenomenon intro",
+      "role": "cta",
+      "text": "Follow for a new mystery every day."
+    }
+  ],
+  "description": "Since the 1980s, glowing orbs have haunted the Hessdalen Valley, drawing scientists and skeptics alike. Their origin remains a heated debate.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#Hessdalen",
+    "#lights",
+    "#Norway",
+    "#phenomena",
+    "#science"
+  ]
+}

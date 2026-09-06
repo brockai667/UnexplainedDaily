@@ -1,0 +1,74 @@
+{
+  "title": "Marfa Lights Unexplained Glow",
+  "thumb": "GHOST LIGHTS",
+  "place": "Marfa",
+  "country": "United States",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "Marfa Lights have been seen nightly for over 100 years in West Texas",
+      "hook_top": "MARFA LIGHTS MYSTERY",
+      "query": "desert night sky stars",
+      "query2": "open plain under moon",
+      "role": "hook"
+    },
+    {
+      "type": "fact",
+      "text": "The first documented sighting was recorded by the US Army in 1883",
+      "chips": [
+        {
+          "t": "1883",
+          "on": "year",
+          "style": "white"
+        },
+        {
+          "t": "100+ years",
+          "on": "duration",
+          "style": "accent"
+        }
+      ],
+      "punch": "first",
+      "query": "old military camp desert 1880s",
+      "query2": "historic fort ruins desert",
+      "role": "fact"
+    },
+    {
+      "type": "archive",
+      "text": "A 1960s newspaper clipping shows a sketch of the luminous orbs above the horizon",
+      "archive_query": "Marfa Lights newspaper 1960 site:commons.wikimedia.org",
+      "archive_label": "1960s Newspaper Sketch",
+      "query": "vintage newspaper front page desert",
+      "query2": "old newspaper illustration lights",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "callout",
+      "text": "Scientists suggest atmospheric reflections, but no definitive cause is proven",
+      "label": "UNSOLVED PHENOMENON",
+      "sub": "Atmospheric optics remain the leading theory",
+      "label_on": "unsolved",
+      "query": "mirage heat shimmer desert",
+      "query2": "light refraction over sand",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "nighttime desert with faint lights",
+      "query2": "silhouette of hills under aurora",
+      "role": "cta"
+    }
+  ],
+  "description": "For over a century, travelers report glowing orbs dancing over the West Texas desert. Dive into the science and folklore behind the Marfa Lights.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#MarfaLights",
+    "#Phenomena",
+    "#Unexplained",
+    "#Science",
+    "#Mystery"
+  ]
+}

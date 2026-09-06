@@ -1,0 +1,70 @@
+{
+  "title": "Baltic Sea Anomaly Mystery",
+  "thumb": "DEEP OCEAN OBJECT",
+  "place": "Baltic Sea",
+  "country": "Sweden",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "A 60‑foot disc was spotted deep in the Baltic Sea in 2011",
+      "hook_top": "DEEP SEA DISC",
+      "query": "sonar image of mysterious ocean floor object",
+      "query2": "underwater sonar scan of circular formation",
+      "role": "hook"
+    },
+    {
+      "type": "fact",
+      "text": "Swedish divers recovered a rock that was unusually smooth and metallic‑looking",
+      "chips": [
+        {
+          "t": "METALLIC ROCK",
+          "on": "rock",
+          "style": "white"
+        }
+      ],
+      "query": "divers holding strange smooth stone underwater",
+      "query2": "underwater object with metallic sheen",
+      "role": "fact"
+    },
+    {
+      "type": "fact",
+      "text": "Scientists note the object's shape matches no known natural formations in the area",
+      "chips": [
+        {
+          "t": "UNUSUAL SHAPE",
+          "on": "shape",
+          "style": "accent"
+        }
+      ],
+      "query": "geological map of Baltic Sea floor anomalies",
+      "query2": "underwater terrain with odd circular feature",
+      "role": "fact"
+    },
+    {
+      "type": "reveal",
+      "text": "Most experts now think it is a glacial erratic, not an alien craft",
+      "reveal_top": "GLACIAL ROCK THEORY",
+      "query": "glacial erratic explanation diagram",
+      "query2": "scientist discussing rock formation",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "mysterious ocean waves background",
+      "query2": "calm sea surface at sunset",
+      "role": "cta"
+    }
+  ],
+  "description": "The Baltic Sea Anomaly sparked UFO hype, but geology offers a grounded answer. Dive into the evidence and the prevailing glacial‑rock theory. Follow for more unexplained wonders.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#mystery",
+    "#ocean",
+    "#balticsea",
+    "#unexplained",
+    "#science"
+  ]
+}
