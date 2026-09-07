@@ -1,0 +1,62 @@
+{
+  "title": "Piri Reis Map Enigma",
+  "thumb": "MYSTERIOUS MAP",
+  "place": "İstanbul",
+  "country": "Turkey",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "A 1513 world map shows Antarctica before it was discovered.",
+      "hook_top": "ANTARCTICA ON MAP",
+      "query": "old parchment world map close up",
+      "query2": "historical map illustration",
+      "role": "hook"
+    },
+    {
+      "type": "myth",
+      "text": "Many claim the map proves ancient civilizations had advanced global knowledge.",
+      "label": "Ancients knew Antarctica",
+      "query": "ancient map myth illustration",
+      "query2": "historical conspiracy graphics",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "truth",
+      "text": "Scholars say the coastline is a misinterpretation of South America and artistic embellishment.",
+      "label": "Cartographic error, not proof",
+      "query": "scholarly analysis map desk",
+      "query2": "historian examining parchment",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "callout",
+      "text": "Maps reflect the knowledge of their time, not lost technology.",
+      "label": "Map limits",
+      "sub": "Old maps often guessed unknown lands",
+      "label_on": "Reality",
+      "query": "old atlas pages turning",
+      "query2": "vintage map pages",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "compass rose animation",
+      "query2": "navigation icons",
+      "role": "cta"
+    }
+  ],
+  "description": "The Piri Reis map sparks wild theories, but experts see simple cartographic mistakes. Dive into the real story behind this famous chart. Follow for more myth‑busting mysteries.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#mystery",
+    "#history",
+    "#maps",
+    "#PiriReis",
+    "#ancient"
+  ]
+}

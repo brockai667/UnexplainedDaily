@@ -1,0 +1,69 @@
+{
+  "title": "Great Zimbabwe Stone Enigma",
+  "thumb": "STONE CITY",
+  "place": "Great Zimbabwe",
+  "country": "Zimbabwe",
+  "scenes": [
+    {
+      "hook_top": "MORTARLESS MONUMENTS",
+      "query": "drone footage of stone walls",
+      "query2": "aerial view of ancient ruins",
+      "role": "hook",
+      "text": "Thousands of stone walls rise without mortar"
+    },
+    {
+      "role": "map",
+      "text": "The ruins sit on a hilltop near the town of Masvingo in southeastern Zimbabwe."
+    },
+    {
+      "chips": [
+        {
+          "t": "11th‑15th",
+          "on": "centuries",
+          "style": "white"
+        },
+        {
+          "t": "granite",
+          "on": "stone",
+          "style": "accent"
+        }
+      ],
+      "punch": "precise",
+      "query": "close‑up of interlocking stone blocks",
+      "query2": "granite wall detail",
+      "role": "fact",
+      "text": "Construction dates to the 11th–15th centuries, using precisely cut granite blocks."
+    },
+    {
+      "archive_query": "Great Zimbabwe sketch early expedition Wikimedia Commons",
+      "archive_label": "Great Enclosure Sketch",
+      "role": "archive",
+      "text": "Early 20th‑century expedition sketch of the Great Enclosure."
+    },
+    {
+      "label": "Architectural Puzzle",
+      "sub": "How were the massive walls built without mortar?",
+      "label_on": "question",
+      "query": "3D reconstruction of stone wall building",
+      "query2": "animation of ancient construction",
+      "role": "callout",
+      "text": "Architectural Puzzle"
+    },
+    {
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "foggy forest night mist",
+      "query2": "dark ocean night waves"
+    }
+  ],
+  "description": "Great Zimbabwe’s towering stone structures were erected centuries ago without mortar, baffling archaeologists. What techniques allowed such precision? Follow for more unsolved histories!",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#archaeology",
+    "#greatzimbabwe",
+    "#mystery",
+    "#ancient",
+    "#unexplained"
+  ]
+}

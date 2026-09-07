@@ -13326,5 +13326,232 @@
       "#astronomy",
       "#science"
     ]
+  },
+  {
+    "title": "Bimini Road Enigma",
+    "thumb": "UNDERWATER ROAD LEGEND",
+    "place": "Bimini Islands",
+    "country": "Bahamas",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "A submerged stone formation resembling a road was photographed in 1968",
+        "hook_top": "STONE ROAD 1968",
+        "query": "underwater stone road Bimini",
+        "query2": "submerged pavement aerial",
+        "role": "hook"
+      },
+      {
+        "type": "fact",
+        "text": "The structure stretches roughly 0.5 km and consists of over 30 limestone blocks",
+        "chips": [
+          {
+            "t": "0.5 KM",
+            "on": "length",
+            "style": "accent"
+          },
+          {
+            "t": "30 BLOCKS",
+            "on": "blocks",
+            "style": "white"
+          }
+        ],
+        "punch": "length",
+        "query": "aerial view stone formation",
+        "query2": "map overlay underwater stones",
+        "role": "fact"
+      },
+      {
+        "type": "archive",
+        "text": "Original 1968 photograph taken by a local diver",
+        "archive_query": "Bimini Road 1968 photograph",
+        "archive_label": "First Photo",
+        "query": "vintage underwater photo",
+        "query2": "historic diver image",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "callout",
+        "text": "Geologists suggest it’s a natural reef; others claim an ancient Atlantean road",
+        "label": "Natural or Ancient?",
+        "sub": "The alignment and flatness fuel the debate, but no consensus exists",
+        "label_on": "reef",
+        "query": "coral reef underwater",
+        "query2": "natural stone reef",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "ancient map overlay sea",
+        "query2": "mysterious coastline animation",
+        "role": "cta"
+      }
+    ],
+    "description": "Bimini Road has intrigued explorers for decades, sitting at the crossroads of geology and legend. Discover why its origin remains unresolved.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#bimini",
+      "#mystery",
+      "#ancient",
+      "#underwater"
+    ]
+  },
+  {
+    "title": "Mystery of Costa Rican Spheres",
+    "thumb": "STONE PUZZLE",
+    "place": "Guanacaste Province",
+    "country": "Costa Rica",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "Why do 300 stone balls line a rainforest road?",
+        "hook_top": "WHY 300 STONE BALLS",
+        "query": "ancient stone spheres in rainforest",
+        "query2": "mysterious stone monoliths outdoors",
+        "role": "hook"
+      },
+      {
+        "type": "map",
+        "text": "They were discovered scattered across the Diquís region of Guanacaste, Costa Rica.",
+        "query": "map of Diquís archaeological zone",
+        "query2": "Costa Rica satellite view Diquís",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "fact",
+        "text": "Scientists dated the spheres to between 1,000 and 1,500 years old.",
+        "chips": [
+          {
+            "t": "1‑1500 YEARS",
+            "on": "dated",
+            "style": "accent"
+          }
+        ],
+        "punch": "ancient",
+        "query": "radiocarbon dating laboratory equipment",
+        "query2": "archaeologists examining stone artifacts",
+        "role": "fact"
+      },
+      {
+        "type": "archive",
+        "text": "Early 20th‑century photos show locals moving the spheres on wooden rollers.",
+        "archive_query": "Costa Rica Diquís stone spheres early photographs",
+        "archive_label": "1910s stone sphere transport",
+        "query": "historic black‑white photograph stone spheres",
+        "query2": "vintage archaeological field photo",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "callout",
+        "text": "No consensus on their purpose – ritual, marker, or ancient art?",
+        "label": "UNSOLVED PURPOSE",
+        "sub": "Scholars still debate why they were placed.",
+        "label_on": "purpose",
+        "query": "ancient stone circles misty landscape",
+        "query2": "enigmatic stone arrangement sunrise",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow for daily unexplained mysteries.",
+        "query": "mysterious ancient artifact silhouette",
+        "query2": "enigmatic stone outline",
+        "role": "cta"
+      }
+    ],
+    "description": "Thousands of perfect stone spheres lie hidden in a Costa Rican rainforest, their age known but their purpose a mystery. Dive into the clues scientists have uncovered.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#mysteries",
+      "#archaeology",
+      "#stoneSpheres",
+      "#ancientTech",
+      "#unexplained"
+    ]
+  },
+  {
+    "title": "Oak Island Money Pit Secrets",
+    "thumb": "HIDDEN TREASURE",
+    "place": "Oak Island",
+    "country": "Canada",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "What 90‑foot shaft hides a centuries‑old treasure?",
+        "hook_top": "90FOOT SECRET SHAFT",
+        "query": "old wooden pit shaft underground",
+        "query2": "mysterious deep pit stone walls",
+        "role": "hook"
+      },
+      {
+        "type": "map",
+        "text": "The pit sits on Oak Island in Nova Scotia’s Halifax County, Canada.",
+        "query": "map Oak Island Nova Scotia",
+        "query2": "satellite view Halifax County island",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "fact",
+        "text": "Excavations have uncovered more than 20 layers of wooden platforms.",
+        "chips": [
+          {
+            "t": "20+ PLATFORMS",
+            "on": "layers",
+            "style": "accent"
+          }
+        ],
+        "punch": "layers",
+        "query": "cross‑section of deep earth excavation",
+        "query2": "archaeological shaft with wooden beams",
+        "role": "fact"
+      },
+      {
+        "type": "archive",
+        "text": "Early 20th‑century newsreels show the original trench being dug.",
+        "archive_query": "Oak Island Money Pit 1900 newsreel footage",
+        "archive_label": "1900s trench dig",
+        "query": "vintage black‑white footage excavation",
+        "query2": "historic trench digging film",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "callout",
+        "text": "Despite countless digs, no definitive treasure has been verified.",
+        "label": "NO CONFIRMED FIND",
+        "sub": "All artifacts so far are mundane tools.",
+        "label_on": "find",
+        "query": "old rusted metal tools in soil",
+        "query2": "archaeological debris wooden planks",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow for a new mystery every day.",
+        "query": "mysterious chest silhouette on sand",
+        "query2": "ancient treasure icon",
+        "role": "cta"
+      }
+    ],
+    "description": "For over two centuries treasure hunters have chased a deep pit on Oak Island, uncovering layers of wood but no clear loot. See what the evidence really shows.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#mysteries",
+      "#OakIsland",
+      "#treasureHunt",
+      "#archaeology",
+      "#lostGold"
+    ]
   }
 ]

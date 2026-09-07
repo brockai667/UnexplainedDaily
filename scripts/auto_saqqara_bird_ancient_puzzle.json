@@ -1,0 +1,62 @@
+{
+  "title": "Saqqara Bird Ancient Puzzle",
+  "thumb": "BIRD MYSTERY",
+  "place": "Saqqara",
+  "country": "Egypt",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "A wooden bird from 300 BC looks like a modern airplane.",
+      "hook_top": "ANCIENT AIRPLANE",
+      "query": "ancient wooden bird artifact close up",
+      "query2": "Saqqara bird museum display",
+      "role": "hook"
+    },
+    {
+      "type": "myth",
+      "text": "Some say it proves ancient Egyptians built flying machines.",
+      "label": "Egyptians flew",
+      "query": "ancient Egyptian flight illustration",
+      "query2": "pseudoscience diagram bird",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "truth",
+      "text": "Archaeologists view it as a ceremonial object, possibly a falcon‑shaped model.",
+      "label": "Ceremonial model",
+      "query": "archaeologist examining wooden bird",
+      "query2": "museum curator artifact study",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "callout",
+      "text": "Artifacts often reflect symbolism, not technology.",
+      "label": "Symbolic, not technical",
+      "sub": "The bird likely served a ritual purpose",
+      "label_on": "Fact",
+      "query": "ancient Egyptian symbols stone relief",
+      "query2": "hieroglyphic art close up",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow for the cases no one can explain.",
+      "query": "ancient scrolls animation",
+      "query2": "dusty artifact rotation",
+      "role": "cta"
+    }
+  ],
+  "description": "The Saqqara Bird fuels speculation of prehistoric flight, yet scholars explain its ritual origins. Uncover the real meaning behind this curious relic. Follow for more artifact truths.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#ancient",
+    "#Egypt",
+    "#archaeology",
+    "#SaqqaraBird",
+    "#mysteries"
+  ]
+}
