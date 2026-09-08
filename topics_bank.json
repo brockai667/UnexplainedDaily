@@ -13553,5 +13553,245 @@
       "#archaeology",
       "#lostGold"
     ]
+  },
+  {
+    "title": "Ancient Map Shows Ice‑Free Antarctica",
+    "thumb": "FROZEN MYSTERY",
+    "place": "Antarctica",
+    "country": "Antarctica",
+    "scenes": [
+      {
+        "hook_top": "1513 MAP ICEFREE",
+        "query": "old parchment world map close up",
+        "query2": "historical map illustration zoom",
+        "chips": [
+          {
+            "t": "1513",
+            "on": "year",
+            "style": "accent"
+          }
+        ],
+        "role": "hook",
+        "text": "A 1513 map sketches a coastline without ice"
+      },
+      {
+        "query": "Piri Reis map parchment detail",
+        "query2": "ancient navigation chart closeup",
+        "chips": [
+          {
+            "t": "Ottoman",
+            "on": "creator",
+            "style": "white"
+          }
+        ],
+        "punch": "creator",
+        "role": "fact",
+        "text": "The Piri Reis map was drawn by an Ottoman admiral in 1513."
+      },
+      {
+        "query": "Antarctic coastline on old map",
+        "query2": "southern continent outline parchment",
+        "chips": [
+          {
+            "t": "Antarctica",
+            "on": "continent",
+            "style": "accent"
+          }
+        ],
+        "punch": "continent",
+        "role": "fact",
+        "text": "It accurately depicts parts of the southern coast of Antarctica, long before modern explorers recorded it."
+      },
+      {
+        "reveal_top": "UNKNOWN SOURCE",
+        "query": "ancient map speculation illustration",
+        "query2": "mysterious cartography concept art",
+        "chips": [
+          {
+            "t": "unknown",
+            "on": "origin",
+            "style": "white"
+          }
+        ],
+        "role": "reveal",
+        "text": "Scientists think the map used ancient sources that pre‑date known voyages, but the exact origin remains unknown."
+      },
+      {
+        "query": "mystery graphic call to action",
+        "query2": "animated follow button overlay",
+        "role": "cta",
+        "text": "Follow for a new mystery every day."
+      }
+    ],
+    "description": "The Piri Reis map hints at an ice‑free Antarctic coast centuries before it was officially discovered. Could ancient sailors have known more than we think? Follow for deeper dives.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#mystery",
+      "#ancientmap",
+      "#antartica",
+      "#history",
+      "#unexplained"
+    ]
+  },
+  {
+    "title": "Mysterious Metal Disc Beneath Baltic Sea",
+    "thumb": "DEEP DISC",
+    "place": "Baltic Sea",
+    "country": "Sweden",
+    "scenes": [
+      {
+        "hook_top": "60METER METAL DISC",
+        "query": "underwater sonar image circular object",
+        "query2": "sonar scan of sea floor disc",
+        "chips": [
+          {
+            "t": "60 m",
+            "on": "size",
+            "style": "accent"
+          }
+        ],
+        "role": "hook",
+        "text": "A 60‑meter metal disc rests on the seafloor"
+      },
+      {
+        "query": "divers boat Baltic Sea anomaly",
+        "query2": "underwater exploration vessel",
+        "chips": [
+          {
+            "t": "2011",
+            "on": "year",
+            "style": "white"
+          }
+        ],
+        "punch": "year",
+        "role": "fact",
+        "text": "The Baltic Sea Anomaly was discovered by a Swedish diver team in 2011."
+      },
+      {
+        "query": "sonar image of circular anomaly",
+        "query2": "metallic underwater object sonar",
+        "chips": [
+          {
+            "t": "circular",
+            "on": "shape",
+            "style": "accent"
+          }
+        ],
+        "punch": "shape",
+        "role": "fact",
+        "text": "Side‑scan sonar shows a perfectly round shape with raised edges and strange metallic reflections."
+      },
+      {
+        "reveal_top": "DEBATED NATURE",
+        "query": "geological formation comparison diagram",
+        "query2": "natural underwater rock formation",
+        "chips": [
+          {
+            "t": "natural",
+            "on": "explanation",
+            "style": "white"
+          }
+        ],
+        "role": "reveal",
+        "text": "Scientists consider it a natural geological formation, yet its exact nature is still debated."
+      },
+      {
+        "query": "ocean wave graphic call to action",
+        "query2": "underwater mystery overlay",
+        "role": "cta",
+        "text": "Follow for a new mystery every day."
+      }
+    ],
+    "description": "The Baltic Sea Anomaly looks like a massive metallic disc, sparking UFO and ancient‑technology theories. Current research leans toward a rare rock formation, but the debate continues. Follow for more deep‑sea mysteries.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#mystery",
+      "#ocean",
+      "#unexplained",
+      "#science",
+      "#BalticSea"
+    ]
+  },
+  {
+    "title": "Glowing Stones of Costa Rica",
+    "thumb": "GLOWING STONES",
+    "place": "Guanacaste Province",
+    "country": "Costa Rica",
+    "scenes": [
+      {
+        "hook_top": "STONE SPHERES FIELD",
+        "query": "aerial view of stone spheres field",
+        "query2": "drone footage stone ball arrangement",
+        "chips": [
+          {
+            "t": "hundreds",
+            "on": "count",
+            "style": "accent"
+          }
+        ],
+        "role": "hook",
+        "text": "Hundreds of perfectly round stone spheres line a field"
+      },
+      {
+        "query": "ancient Costa Rican stone spheres closeup",
+        "query2": "prehistoric stone ball detail",
+        "chips": [
+          {
+            "t": "700‑1500 AD",
+            "on": "period",
+            "style": "white"
+          }
+        ],
+        "punch": "period",
+        "role": "fact",
+        "text": "The Diquís Spheres were carved by pre‑Columbian peoples between 700 and 1500 AD."
+      },
+      {
+        "query": "wet stone spheres glowing light",
+        "query2": "rainy field stone balls luminescence",
+        "chips": [
+          {
+            "t": "granodiorite",
+            "on": "material",
+            "style": "accent"
+          }
+        ],
+        "punch": "material",
+        "role": "fact",
+        "text": "Many of the spheres are made of granodiorite and glow faintly when wet after rain."
+      },
+      {
+        "reveal_top": "PURPOSE UNKNOWN",
+        "query": "archaeologist examining stone sphere",
+        "query2": "research lab stone artifact",
+        "chips": [
+          {
+            "t": "unknown",
+            "on": "purpose",
+            "style": "white"
+          }
+        ],
+        "role": "reveal",
+        "text": "Archaeologists attribute the glow to mineral reactions, but the purpose of the perfectly balanced spheres remains unknown."
+      },
+      {
+        "query": "mystery symbol call to action graphic",
+        "query2": "animated subscribe button overlay",
+        "role": "cta",
+        "text": "Follow for daily unexplained mysteries."
+      }
+    ],
+    "description": "Costa Rica’s Diquís Spheres are perfectly round, evenly sized, and sometimes emit a faint glow after rain. Their cultural role is still a mystery. Subscribe for more ancient enigmas.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#mystery",
+      "#ancient",
+      "#archaeology",
+      "#CostaRica",
+      "#unexplained"
+    ]
   }
 ]

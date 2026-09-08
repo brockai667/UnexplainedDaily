@@ -1,0 +1,77 @@
+{
+  "title": "Mystery of Costa Rican Spheres",
+  "thumb": "STONE PUZZLE",
+  "place": "Guanacaste Province",
+  "country": "Costa Rica",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "Why do 300 stone balls line a rainforest road?",
+      "hook_top": "WHY 300 STONE BALLS",
+      "query": "ancient stone spheres in rainforest",
+      "query2": "mysterious stone monoliths outdoors",
+      "role": "hook"
+    },
+    {
+      "type": "map",
+      "text": "They were discovered scattered across the Diquís region of Guanacaste, Costa Rica.",
+      "query": "map of Diquís archaeological zone",
+      "query2": "Costa Rica satellite view Diquís",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "fact",
+      "text": "Scientists dated the spheres to between 1,000 and 1,500 years old.",
+      "chips": [
+        {
+          "t": "1‑1500 YEARS",
+          "on": "dated",
+          "style": "accent"
+        }
+      ],
+      "punch": "ancient",
+      "query": "radiocarbon dating laboratory equipment",
+      "query2": "archaeologists examining stone artifacts",
+      "role": "fact"
+    },
+    {
+      "type": "archive",
+      "text": "Early 20th‑century photos show locals moving the spheres on wooden rollers.",
+      "archive_query": "Costa Rica Diquís stone spheres early photographs",
+      "archive_label": "1910s stone sphere transport",
+      "query": "historic black‑white photograph stone spheres",
+      "query2": "vintage archaeological field photo",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "callout",
+      "text": "No consensus on their purpose – ritual, marker, or ancient art?",
+      "label": "UNSOLVED PURPOSE",
+      "sub": "Scholars still debate why they were placed.",
+      "label_on": "purpose",
+      "query": "ancient stone circles misty landscape",
+      "query2": "enigmatic stone arrangement sunrise",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "mysterious ancient artifact silhouette",
+      "query2": "enigmatic stone outline",
+      "role": "cta"
+    }
+  ],
+  "description": "Thousands of perfect stone spheres lie hidden in a Costa Rican rainforest, their age known but their purpose a mystery. Dive into the clues scientists have uncovered.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#mysteries",
+    "#archaeology",
+    "#stoneSpheres",
+    "#ancientTech",
+    "#unexplained"
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "title": "Bimini Road Enigma",
+  "thumb": "UNDERWATER ROAD LEGEND",
+  "place": "Bimini Islands",
+  "country": "Bahamas",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "A submerged stone formation resembling a road was photographed in 1968",
+      "hook_top": "STONE ROAD 1968",
+      "query": "underwater stone road Bimini",
+      "query2": "submerged pavement aerial",
+      "role": "hook"
+    },
+    {
+      "type": "fact",
+      "text": "The structure stretches roughly 0.5 km and consists of over 30 limestone blocks",
+      "chips": [
+        {
+          "t": "0.5 KM",
+          "on": "length",
+          "style": "accent"
+        },
+        {
+          "t": "30 BLOCKS",
+          "on": "blocks",
+          "style": "white"
+        }
+      ],
+      "punch": "length",
+      "query": "aerial view stone formation",
+      "query2": "map overlay underwater stones",
+      "role": "fact"
+    },
+    {
+      "type": "archive",
+      "text": "Original 1968 photograph taken by a local diver",
+      "archive_query": "Bimini Road 1968 photograph",
+      "archive_label": "First Photo",
+      "query": "vintage underwater photo",
+      "query2": "historic diver image",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "callout",
+      "text": "Geologists suggest it’s a natural reef; others claim an ancient Atlantean road",
+      "label": "Natural or Ancient?",
+      "sub": "The alignment and flatness fuel the debate, but no consensus exists",
+      "label_on": "reef",
+      "query": "coral reef underwater",
+      "query2": "natural stone reef",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow if the unknown keeps you up at night.",
+      "query": "ancient map overlay sea",
+      "query2": "mysterious coastline animation",
+      "role": "cta"
+    }
+  ],
+  "description": "Bimini Road has intrigued explorers for decades, sitting at the crossroads of geology and legend. Discover why its origin remains unresolved.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#bimini",
+    "#mystery",
+    "#ancient",
+    "#underwater"
+  ]
+}

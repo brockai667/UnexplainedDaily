@@ -1,0 +1,69 @@
+{
+  "title": "Green Flash Mystery Explained",
+  "thumb": "GREEN FLASH",
+  "place": "Maui, Hawaii",
+  "country": "USA",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "Why does the sun vanish in a flash over Hawaii?",
+      "hook_top": "SUN VANISHES QUICKLY",
+      "query": "sunset over ocean horizon",
+      "query2": "sun setting over sea with vibrant colors",
+      "role": "hook"
+    },
+    {
+      "type": "fact",
+      "text": "The green flash lasts only 1‑2 seconds at sunset.",
+      "chips": [
+        {
+          "t": "1‑2 seconds",
+          "on": "seconds",
+          "style": "white"
+        }
+      ],
+      "query": "close-up of sun edge green flash",
+      "query2": "green flash phenomenon on horizon",
+      "role": "fact"
+    },
+    {
+      "type": "fact",
+      "text": "It appears when clear horizons let atmospheric refraction separate colors.",
+      "chips": [
+        {
+          "t": "clear horizon",
+          "on": "horizon",
+          "style": "accent"
+        }
+      ],
+      "query": "illustration of atmospheric refraction layers",
+      "query2": "diagram showing light bending in atmosphere",
+      "role": "fact"
+    },
+    {
+      "type": "reveal",
+      "text": "Scientists say it's a refraction trick, not a hidden signal.",
+      "reveal_top": "REFRACTION TRICK",
+      "query": "scientist diagram explaining refraction",
+      "query2": "educational animation of light refraction",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "text overlay animation follow us",
+      "query2": "call to action graphic",
+      "role": "cta"
+    }
+  ],
+  "description": "The fleeting green flash dazzles watchers worldwide, but science has a clear answer. Stay tuned for more unexplained sky phenomena.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#mysteries",
+    "#greenflash",
+    "#astronomy",
+    "#science"
+  ]
+}
