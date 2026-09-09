@@ -1,0 +1,80 @@
+{
+  "title": "Mysterious Metal Disc Beneath Baltic Sea",
+  "thumb": "DEEP DISC",
+  "place": "Baltic Sea",
+  "country": "Sweden",
+  "scenes": [
+    {
+      "hook_top": "60METER METAL DISC",
+      "query": "underwater sonar image circular object",
+      "query2": "sonar scan of sea floor disc",
+      "chips": [
+        {
+          "t": "60 m",
+          "on": "size",
+          "style": "accent"
+        }
+      ],
+      "role": "hook",
+      "text": "A 60‑meter metal disc rests on the seafloor"
+    },
+    {
+      "query": "divers boat Baltic Sea anomaly",
+      "query2": "underwater exploration vessel",
+      "chips": [
+        {
+          "t": "2011",
+          "on": "year",
+          "style": "white"
+        }
+      ],
+      "punch": "year",
+      "role": "fact",
+      "text": "The Baltic Sea Anomaly was discovered by a Swedish diver team in 2011."
+    },
+    {
+      "query": "sonar image of circular anomaly",
+      "query2": "metallic underwater object sonar",
+      "chips": [
+        {
+          "t": "circular",
+          "on": "shape",
+          "style": "accent"
+        }
+      ],
+      "punch": "shape",
+      "role": "fact",
+      "text": "Side‑scan sonar shows a perfectly round shape with raised edges and strange metallic reflections."
+    },
+    {
+      "reveal_top": "DEBATED NATURE",
+      "query": "geological formation comparison diagram",
+      "query2": "natural underwater rock formation",
+      "chips": [
+        {
+          "t": "natural",
+          "on": "explanation",
+          "style": "white"
+        }
+      ],
+      "role": "reveal",
+      "text": "Scientists consider it a natural geological formation, yet its exact nature is still debated."
+    },
+    {
+      "query": "ocean wave graphic call to action",
+      "query2": "underwater mystery overlay",
+      "role": "cta",
+      "text": "Follow for a new mystery every day."
+    }
+  ],
+  "description": "The Baltic Sea Anomaly looks like a massive metallic disc, sparking UFO and ancient‑technology theories. Current research leans toward a rare rock formation, but the debate continues. Follow for more deep‑sea mysteries.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#mystery",
+    "#ocean",
+    "#unexplained",
+    "#science",
+    "#BalticSea"
+  ]
+}

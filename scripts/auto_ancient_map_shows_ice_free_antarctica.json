@@ -1,0 +1,80 @@
+{
+  "title": "Ancient Map Shows Ice‑Free Antarctica",
+  "thumb": "FROZEN MYSTERY",
+  "place": "Antarctica",
+  "country": "Antarctica",
+  "scenes": [
+    {
+      "hook_top": "1513 MAP ICEFREE",
+      "query": "old parchment world map close up",
+      "query2": "historical map illustration zoom",
+      "chips": [
+        {
+          "t": "1513",
+          "on": "year",
+          "style": "accent"
+        }
+      ],
+      "role": "hook",
+      "text": "A 1513 map sketches a coastline without ice"
+    },
+    {
+      "query": "Piri Reis map parchment detail",
+      "query2": "ancient navigation chart closeup",
+      "chips": [
+        {
+          "t": "Ottoman",
+          "on": "creator",
+          "style": "white"
+        }
+      ],
+      "punch": "creator",
+      "role": "fact",
+      "text": "The Piri Reis map was drawn by an Ottoman admiral in 1513."
+    },
+    {
+      "query": "Antarctic coastline on old map",
+      "query2": "southern continent outline parchment",
+      "chips": [
+        {
+          "t": "Antarctica",
+          "on": "continent",
+          "style": "accent"
+        }
+      ],
+      "punch": "continent",
+      "role": "fact",
+      "text": "It accurately depicts parts of the southern coast of Antarctica, long before modern explorers recorded it."
+    },
+    {
+      "reveal_top": "UNKNOWN SOURCE",
+      "query": "ancient map speculation illustration",
+      "query2": "mysterious cartography concept art",
+      "chips": [
+        {
+          "t": "unknown",
+          "on": "origin",
+          "style": "white"
+        }
+      ],
+      "role": "reveal",
+      "text": "Scientists think the map used ancient sources that pre‑date known voyages, but the exact origin remains unknown."
+    },
+    {
+      "query": "mystery graphic call to action",
+      "query2": "animated follow button overlay",
+      "role": "cta",
+      "text": "Follow for a new mystery every day."
+    }
+  ],
+  "description": "The Piri Reis map hints at an ice‑free Antarctic coast centuries before it was officially discovered. Could ancient sailors have known more than we think? Follow for deeper dives.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#mystery",
+    "#ancientmap",
+    "#antartica",
+    "#history",
+    "#unexplained"
+  ]
+}
