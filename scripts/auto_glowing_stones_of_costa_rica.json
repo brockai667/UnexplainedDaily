@@ -1,0 +1,80 @@
+{
+  "title": "Glowing Stones of Costa Rica",
+  "thumb": "GLOWING STONES",
+  "place": "Guanacaste Province",
+  "country": "Costa Rica",
+  "scenes": [
+    {
+      "hook_top": "STONE SPHERES FIELD",
+      "query": "aerial view of stone spheres field",
+      "query2": "drone footage stone ball arrangement",
+      "chips": [
+        {
+          "t": "hundreds",
+          "on": "count",
+          "style": "accent"
+        }
+      ],
+      "role": "hook",
+      "text": "Hundreds of perfectly round stone spheres line a field"
+    },
+    {
+      "query": "ancient Costa Rican stone spheres closeup",
+      "query2": "prehistoric stone ball detail",
+      "chips": [
+        {
+          "t": "700‑1500 AD",
+          "on": "period",
+          "style": "white"
+        }
+      ],
+      "punch": "period",
+      "role": "fact",
+      "text": "The Diquís Spheres were carved by pre‑Columbian peoples between 700 and 1500 AD."
+    },
+    {
+      "query": "wet stone spheres glowing light",
+      "query2": "rainy field stone balls luminescence",
+      "chips": [
+        {
+          "t": "granodiorite",
+          "on": "material",
+          "style": "accent"
+        }
+      ],
+      "punch": "material",
+      "role": "fact",
+      "text": "Many of the spheres are made of granodiorite and glow faintly when wet after rain."
+    },
+    {
+      "reveal_top": "PURPOSE UNKNOWN",
+      "query": "archaeologist examining stone sphere",
+      "query2": "research lab stone artifact",
+      "chips": [
+        {
+          "t": "unknown",
+          "on": "purpose",
+          "style": "white"
+        }
+      ],
+      "role": "reveal",
+      "text": "Archaeologists attribute the glow to mineral reactions, but the purpose of the perfectly balanced spheres remains unknown."
+    },
+    {
+      "query": "mystery symbol call to action graphic",
+      "query2": "animated subscribe button overlay",
+      "role": "cta",
+      "text": "Follow for daily unexplained mysteries."
+    }
+  ],
+  "description": "Costa Rica’s Diquís Spheres are perfectly round, evenly sized, and sometimes emit a faint glow after rain. Their cultural role is still a mystery. Subscribe for more ancient enigmas.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#mystery",
+    "#ancient",
+    "#archaeology",
+    "#CostaRica",
+    "#unexplained"
+  ]
+}

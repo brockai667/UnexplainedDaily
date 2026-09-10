@@ -13994,5 +13994,213 @@
       "#science",
       "#unexplained"
     ]
+  },
+  {
+    "title": "Bristol Hum Unexplained Noise",
+    "thumb": "BRISTOL HUM",
+    "place": "Bristol",
+    "country": "United Kingdom",
+    "scenes": [
+      {
+        "hook_top": "ENDLESS LOW HUM",
+        "query": "audio wave low frequency city",
+        "query2": "sound wave visualisation urban",
+        "role": "hook",
+        "text": "Residents hear a low‑frequency hum that never stops"
+      },
+      {
+        "query": "map of Bristol UK city centre",
+        "query2": "Bristol urban map",
+        "role": "map",
+        "text": "The phenomenon is reported throughout the city of Bristol, England"
+      },
+      {
+        "chips": [
+          {
+            "t": "58 Hz",
+            "on": "frequency",
+            "style": "accent"
+          },
+          {
+            "t": "250 Hz",
+            "on": "tone",
+            "style": "white"
+          }
+        ],
+        "punch": "frequency",
+        "query": "audio spectrum analyser display",
+        "query2": "sound frequency graph",
+        "role": "fact",
+        "text": "Measurements show the hum at about 58 Hz with a 250 Hz second tone"
+      },
+      {
+        "archive_query": "Bristol hum BBC documentary still",
+        "archive_label": "Bristol hum report",
+        "query": "historic TV documentary frame",
+        "query2": "archive video screenshot",
+        "role": "archive",
+        "text": "BBC documentary still of a resident pointing to a vibrating window"
+      },
+      {
+        "label": "UNSOLVED SOURCE",
+        "sub": "Theories range from industrial equipment to geological activity, but none proven",
+        "label_on": "source",
+        "query": "industrial plant silhouette foggy",
+        "query2": "geological fault line illustration",
+        "role": "callout",
+        "text": "No consensus"
+      },
+      {
+        "query": "sound wave icon animation",
+        "query2": "audio mystery graphic",
+        "role": "cta",
+        "text": "Follow if you can't stop asking why."
+      }
+    ],
+    "description": "A persistent low‑frequency hum haunts Bristol, measured at 58 Hz, yet scientists cannot pinpoint its origin. Is it machines, the earth, or something else? Follow for more strange sound stories.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#BristolHum",
+      "#mystery",
+      "#audio",
+      "#unexplained",
+      "#UK"
+    ]
+  },
+  {
+    "title": "Costa Rica Stone Spheres Mystery",
+    "thumb": "STONE SPHERES",
+    "place": "Guanacaste Province",
+    "country": "Costa Rica",
+    "scenes": [
+      {
+        "hook_top": "PERFECT STONE BALLS",
+        "query": "mysterious stone spheres landscape",
+        "query2": "ancient stone artifacts desert",
+        "role": "hook",
+        "text": "Hundreds of perfect stone balls lie scattered across Costa Rica"
+      },
+      {
+        "query": "map of Diquís region Costa Rica",
+        "query2": "Costa Rica geographic map",
+        "role": "map",
+        "text": "They are found in the Diquís region of Guanacaste, Costa Rica"
+      },
+      {
+        "chips": [
+          {
+            "t": "500‑2000 yrs",
+            "on": "age",
+            "style": "accent"
+          }
+        ],
+        "punch": "age",
+        "query": "radiocarbon dating lab equipment",
+        "query2": "archaeology dating tools",
+        "role": "fact",
+        "text": "Scientists date the spheres to between 500 and 2,000 years old"
+      },
+      {
+        "archive_query": "Costa Rica Diquís stone spheres 1930s site photo",
+        "archive_label": "1930s sphere field",
+        "query": "historic black‑and‑white photo landscape",
+        "query2": "archive aerial view stone circles",
+        "role": "archive",
+        "text": "A 1930s expedition photograph showing dozens of spheres on a grassy field"
+      },
+      {
+        "label": "UNSOLVED ORIGIN",
+        "sub": "Scientists still debate natural vs. human creation",
+        "label_on": "origin",
+        "query": "rock formation close‑up texture",
+        "query2": "weathered stone surface",
+        "role": "callout",
+        "text": "No consensus"
+      },
+      {
+        "query": "mystery icons animation",
+        "query2": "question mark graphic",
+        "role": "cta",
+        "text": "Follow for the cases no one can explain."
+      }
+    ],
+    "description": "Perfectly round stone spheres dot Costa Rica's landscape, baffling researchers for decades. Their purpose remains a mystery. Follow for more untold ancient puzzles.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#mystery",
+      "#archaeology",
+      "#CostaRica",
+      "#stoneballs",
+      "#ancient"
+    ]
+  },
+  {
+    "title": "Costa Rica Stone Spheres Puzzle",
+    "thumb": "PERFECT STONE PUZZLE",
+    "place": "Diquís Delta",
+    "country": "Costa Rica",
+    "scenes": [
+      {
+        "hook_top": "PERFECT STONE PUZZLE",
+        "query": "jungle stone spheres aerial",
+        "query2": "forest stone sphere layout",
+        "role": "hook",
+        "text": "Hundreds of perfectly round stones, from 5 cm to 2 m, dot a jungle valley."
+      },
+      {
+        "chips": [
+          {
+            "t": "5 cm",
+            "on": "small",
+            "style": "white"
+          },
+          {
+            "t": "2 m",
+            "on": "large",
+            "style": "accent"
+          }
+        ],
+        "punch": "precise",
+        "query": "close‑up stone sphere texture",
+        "query2": "granodiorite sphere macro",
+        "role": "fact",
+        "text": "The spheres range from 5 cm to 2 m in diameter and were carved from local granodiorite."
+      },
+      {
+        "archive_query": "Diquís stone spheres early photograph",
+        "archive_label": "Lothrop 1930s photo",
+        "query": "historic stone sphere photo",
+        "query2": "archival jungle artifact image",
+        "role": "archive",
+        "text": "Early 20th‑century photograph taken by archaeologist Samuel Kirkland Lothrop."
+      },
+      {
+        "label": "STATUS SYMBOLS",
+        "sub": "Possibly markers of power or astronomy.",
+        "label_on": "symbols",
+        "query": "archaeological illustration of spheres",
+        "query2": "researcher discussing stone spheres",
+        "role": "callout",
+        "text": "Current theories link them to status symbols of the extinct Diquís culture."
+      },
+      {
+        "query": "animated follow button graphic",
+        "query2": "call‑to‑action overlay",
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night."
+      }
+    ],
+    "description": "The mysterious stone spheres of Costa Rica are flawless, varied, and still unexplained. Explore the facts, the leading theories, and the ongoing research.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#archaeology",
+      "#mystery",
+      "#stones",
+      "#ancient",
+      "#unexplained"
+    ]
   }
 ]

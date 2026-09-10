@@ -1,0 +1,67 @@
+{
+  "title": "Great Zimbabwe Stone Walls",
+  "thumb": "MYSTIC STONE CITY",
+  "place": "Masvingo",
+  "country": "Zimbabwe",
+  "scenes": [
+    {
+      "hook_top": "HIDDEN STONE CITY",
+      "query": "vast stone wall aerial view",
+      "query2": "ancient ruins landscape",
+      "role": "hook",
+      "text": "Over 150,000 stone blocks form a hidden city"
+    },
+    {
+      "query": "satellite view of Great Zimbabwe plateau",
+      "query2": "aerial terrain of Zimbabwe plateau",
+      "role": "map",
+      "text": "Great Zimbabwe rises near modern Masvingo, Zimbabwe, on a granite plateau."
+    },
+    {
+      "chips": [
+        {
+          "t": "11 m Height",
+          "on": "height",
+          "style": "accent"
+        }
+      ],
+      "query": "close‑up of towering stone wall",
+      "query2": "dry stone masonry height",
+      "role": "fact",
+      "text": "The walls stand up to 11 meters tall without mortar."
+    },
+    {
+      "archive_query": "Great Zimbabwe Enclosure early photograph Wikimedia Commons",
+      "archive_label": "Great Enclosure",
+      "query": "historic black‑and‑white ruins photo",
+      "query2": "archival image of stone city",
+      "role": "archive",
+      "text": "Early 20th‑century photograph of the Great Enclosure."
+    },
+    {
+      "label": "UNKNOWN CRAFTSMEN",
+      "sub": "Archaeologists agree it was constructed by Shona peoples, but exact purpose remains debated.",
+      "label_on": "builders",
+      "query": "empty stone corridor sunrise",
+      "query2": "ancient stone passageway light",
+      "role": "callout",
+      "text": "Who built it?"
+    },
+    {
+      "query": "slow zoom on stone texture",
+      "query2": "panning over ancient masonry",
+      "role": "cta",
+      "text": "Follow for the cases no one can explain."
+    }
+  ],
+  "description": "Great Zimbabwe’s massive dry‑stone walls tower over the landscape, yet their builders and purpose are still debated. Explore the clues left in stone. ",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#GreatZimbabwe",
+    "#archaeology",
+    "#mystery",
+    "#history",
+    "#unexplained"
+  ]
+}
