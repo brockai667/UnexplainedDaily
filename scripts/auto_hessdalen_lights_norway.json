@@ -1,0 +1,67 @@
+{
+  "title": "Hessdalen Lights Norway",
+  "thumb": "NORWEGIAN SKY GLOW",
+  "place": "Hessdalen Valley",
+  "country": "Norway",
+  "scenes": [
+    {
+      "hook_top": "VALLEY LIGHT ORBS",
+      "query": "glowing orbs over forest at night",
+      "query2": "mysterious lights in mountain valley",
+      "role": "hook",
+      "text": "Blue‑white orbs hover over a Norwegian valley nightly"
+    },
+    {
+      "query": "topographic map of Hessdalen valley Norway",
+      "query2": "satellite view of central Norway valley",
+      "role": "map",
+      "text": "The phenomenon occurs in Hessdalen, a remote valley in central Norway."
+    },
+    {
+      "chips": [
+        {
+          "t": "600+ Events",
+          "on": "events",
+          "style": "accent"
+        }
+      ],
+      "query": "scientists with equipment monitoring lights",
+      "query2": "research station night sky instruments",
+      "role": "fact",
+      "text": "Researchers recorded over 600 events between 1998 and 2005."
+    },
+    {
+      "archive_query": "Hessdalen lights documentary frame Wikimedia Commons",
+      "archive_label": "Documented Light",
+      "query": "archival video screenshot of glowing orb",
+      "query2": "historical footage of sky lights",
+      "role": "archive",
+      "text": "Video frame from the 2006 documentary showing a Hessdalen light."
+    },
+    {
+      "label": "UNSOLVED ENERGY",
+      "sub": "Proposed explanations range from ionized gases to piezoelectric effects, but no consensus exists.",
+      "label_on": "energy",
+      "query": "electric discharge in mountain air",
+      "query2": "atmospheric plasma glow",
+      "role": "callout",
+      "text": "What powers them?"
+    },
+    {
+      "query": "timelapse of night sky with subtle glow",
+      "query2": "starry sky with faint light trails",
+      "role": "cta",
+      "text": "Follow for daily unexplained mysteries."
+    }
+  ],
+  "description": "Every few minutes, bright orbs appear over Norway’s Hessdalen Valley, baffling scientists for decades. Multiple theories exist, yet the lights remain unexplained. ",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#HessdalenLights",
+    "#norway",
+    "#mystery",
+    "#science",
+    "#unexplained"
+  ]
+}

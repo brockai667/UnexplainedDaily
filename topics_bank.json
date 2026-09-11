@@ -14202,5 +14202,255 @@
       "#ancient",
       "#unexplained"
     ]
+  },
+  {
+    "title": "The Enigmatic Saqqara Bird",
+    "thumb": "ANCIENT FLIGHT PUZZLE",
+    "place": "Saqqara",
+    "country": "Egypt",
+    "scenes": [
+      {
+        "hook_top": "ANCIENT PLANE DISCOVERED",
+        "query": "ancient wooden bird close up",
+        "query2": "Egyptian artifact bird detail",
+        "role": "hook",
+        "text": "A 1,800‑year‑old wooden bird resembling a modern plane"
+      },
+      {
+        "query": "Saqqara map archaeological site",
+        "query2": "Egypt necropolis satellite view",
+        "role": "map",
+        "text": "Unearthed in the Saqqara necropolis, Egypt, in 1898"
+      },
+      {
+        "chips": [
+          {
+            "t": "Straight wings",
+            "on": "wings",
+            "style": "accent"
+          }
+        ],
+        "punch": "wings",
+        "query": "close up bird artifact wings",
+        "query2": "wooden bird museum display",
+        "role": "fact",
+        "text": "The bird’s wings are straight and lack feathers, prompting aviation speculation"
+      },
+      {
+        "archive_query": "Saqqara Bird Egyptian Museum photo",
+        "archive_label": "Museum photograph",
+        "query": "museum lighting bird artifact",
+        "query2": "Egyptian museum exhibit close up",
+        "role": "archive",
+        "text": "Photograph of the Saqqara Bird in the Egyptian Museum, Cairo"
+      },
+      {
+        "label": "Ceremonial Model",
+        "sub": "Most scholars see a religious symbol",
+        "label_on": "model",
+        "query": "ancient Egyptian model artifact",
+        "query2": "ritual object close up",
+        "role": "callout",
+        "text": "Probably a ceremonial model"
+      },
+      {
+        "query": "text follow subscribe ancient theme",
+        "query2": "call to action stylized scroll",
+        "role": "cta",
+        "text": "Follow for the cases no one can explain."
+      }
+    ],
+    "description": "The Saqqara Bird fuels debate between engineers and Egyptologists. Join us as we explore its true purpose.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#saqqarabird",
+      "#ancientegypt",
+      "#mysteries",
+      "#unexplained",
+      "#history"
+    ]
+  },
+  {
+    "title": "Yonaguni Underwater Enigma",
+    "thumb": "MYSTERIOUS SUBMERGED CITY",
+    "place": "Yonaguni Island",
+    "country": "Japan",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "A sunken mountain off Japan holds step-like walls",
+        "hook_top": "SUBMERGED MOUNTAIN MYSTERY",
+        "query": "underwater rock formations Japan",
+        "query2": "submerged stone terraces sea floor",
+        "role": "hook"
+      },
+      {
+        "type": "fact",
+        "text": "Divers first photographed the structures in 1985 at a depth of 25 meters",
+        "chips": [
+          {
+            "t": "1985",
+            "on": "year",
+            "style": "white"
+          },
+          {
+            "t": "25 m",
+            "on": "depth",
+            "style": "accent"
+          }
+        ],
+        "punch": "deep",
+        "query": "diving expedition Yonaguni 1985",
+        "query2": "underwater exploration documentary",
+        "role": "fact"
+      },
+      {
+        "type": "fact",
+        "text": "The formation spans about 150 meters and includes rectangular steps and a platform resembling a pyramid",
+        "chips": [
+          {
+            "t": "150 m",
+            "on": "size",
+            "style": "white"
+          }
+        ],
+        "query": "Yonaguni rectangular steps aerial view",
+        "query2": "underwater pyramid like structure",
+        "role": "fact"
+      },
+      {
+        "type": "reveal",
+        "text": "Scientists still debate whether the shapes are natural erosion or an ancient human-built monument",
+        "reveal_top": "NATURAL OR MAN‑MADE?",
+        "query": "geological analysis Yonaguni",
+        "query2": "archaeology underwater Japan",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow for the cases no one can explain.",
+        "query": "ocean mystery subtitle",
+        "query2": "deep sea intrigue text overlay",
+        "role": "cta"
+      }
+    ],
+    "description": "The Yonaguni Monument challenges our understanding of prehistoric engineering. Is it nature’s art or a lost civilization’s legacy? Dive deeper with us.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#mystery",
+      "#underwater",
+      "#Japan",
+      "#archaeology",
+      "#unexplained"
+    ]
+  },
+  {
+    "title": "Missing Gear of Ancient Clock",
+    "thumb": "ANCIENT GEAR MYSTERY",
+    "place": "Antikythera Island",
+    "country": "Greece",
+    "scenes": [
+      {
+        "hook_top": "LOST GEAR DISCOVERED",
+        "query": "ancient bronze mechanism close up",
+        "query2": "old astronomical clock parts",
+        "role": "hook",
+        "text": "What 2,000‑year‑old device lost a crucial gear?"
+      },
+      {
+        "label": "It was complete",
+        "query": "museum display of Antikythera fragments",
+        "query2": "archaeological bronze gears",
+        "role": "myth",
+        "text": "People think the Antikythera Mechanism was fully intact when found."
+      },
+      {
+        "label": "Gear missing",
+        "query": "scientists examining fragmented gears",
+        "query2": "researchers studying ancient mechanism",
+        "role": "truth",
+        "text": "Only 30 of the original 30‑plus gears survived; a missing gear explains why parts of the calendar are unreadable."
+      },
+      {
+        "label": "Incomplete Artifact",
+        "sub": "Lost piece limits full decoding",
+        "label_on": "Missing",
+        "query": "close‑up of corroded bronze surface",
+        "query2": "weathered ancient metal",
+        "role": "callout",
+        "text": "The mystery isn’t alien tech – it’s incomplete preservation."
+      },
+      {
+        "query": "ancient scrolls on table",
+        "query2": "old parchment texture",
+        "role": "cta",
+        "text": "Follow for the cases no one can explain."
+      }
+    ],
+    "description": "The Antikythera Mechanism dazzles us, but a missing gear still hides parts of its function. Discover what scholars really know.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#antikythera",
+      "#ancienttech",
+      "#archaeology",
+      "#mysteries"
+    ]
+  },
+  {
+    "title": "Eternal Light of Hessdalen",
+    "thumb": "NORWAY GLOW MYSTERY",
+    "place": "Hessdalen Valley",
+    "country": "Norway",
+    "scenes": [
+      {
+        "hook_top": "VALLEY GLOWS NIGHTLY",
+        "query": "night sky over remote valley with lights",
+        "query2": "mountain valley aurora like glow",
+        "role": "hook",
+        "text": "Why does the Hessdalen valley glow every summer night?"
+      },
+      {
+        "label": "UFOs cause lights",
+        "query": "silhouette of unidentified flying object over forest",
+        "query2": "dark night with bright orbs",
+        "role": "myth",
+        "text": "Many claim the lights are UFOs or secret military drones."
+      },
+      {
+        "label": "Ionized air phenomenon",
+        "query": "scientists measuring atmospheric gases in valley",
+        "query2": "laboratory equipment monitoring ionization",
+        "role": "truth",
+        "text": "Scientific studies link the glow to ionized air from mineral-rich groundwater venting under temperature inversions."
+      },
+      {
+        "label": "Geological cause",
+        "sub": "Mineral gases create plasma",
+        "label_on": "Plasma",
+        "query": "steam venting from rocky ground at dusk",
+        "query2": "mist rising from valley floor",
+        "role": "callout",
+        "text": "Natural geology, not alien tech, fuels the nightly show."
+      },
+      {
+        "query": "starry sky over remote landscape",
+        "query2": "silhouette of mountains at night",
+        "role": "cta",
+        "text": "Follow if you can't stop asking why."
+      }
+    ],
+    "description": "The Hessdalen lights have puzzled observers for decades. Learn the leading scientific explanation behind the eerie glow.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#hessdalen",
+      "#norway",
+      "#naturalmystery",
+      "#science"
+    ]
   }
 ]

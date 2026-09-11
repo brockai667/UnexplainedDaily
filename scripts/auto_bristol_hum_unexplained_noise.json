@@ -1,0 +1,73 @@
+{
+  "title": "Bristol Hum Unexplained Noise",
+  "thumb": "BRISTOL HUM",
+  "place": "Bristol",
+  "country": "United Kingdom",
+  "scenes": [
+    {
+      "hook_top": "ENDLESS LOW HUM",
+      "query": "audio wave low frequency city",
+      "query2": "sound wave visualisation urban",
+      "role": "hook",
+      "text": "Residents hear a low‑frequency hum that never stops"
+    },
+    {
+      "query": "map of Bristol UK city centre",
+      "query2": "Bristol urban map",
+      "role": "map",
+      "text": "The phenomenon is reported throughout the city of Bristol, England"
+    },
+    {
+      "chips": [
+        {
+          "t": "58 Hz",
+          "on": "frequency",
+          "style": "accent"
+        },
+        {
+          "t": "250 Hz",
+          "on": "tone",
+          "style": "white"
+        }
+      ],
+      "punch": "frequency",
+      "query": "audio spectrum analyser display",
+      "query2": "sound frequency graph",
+      "role": "fact",
+      "text": "Measurements show the hum at about 58 Hz with a 250 Hz second tone"
+    },
+    {
+      "archive_query": "Bristol hum BBC documentary still",
+      "archive_label": "Bristol hum report",
+      "query": "historic TV documentary frame",
+      "query2": "archive video screenshot",
+      "role": "archive",
+      "text": "BBC documentary still of a resident pointing to a vibrating window"
+    },
+    {
+      "label": "UNSOLVED SOURCE",
+      "sub": "Theories range from industrial equipment to geological activity, but none proven",
+      "label_on": "source",
+      "query": "industrial plant silhouette foggy",
+      "query2": "geological fault line illustration",
+      "role": "callout",
+      "text": "No consensus"
+    },
+    {
+      "query": "sound wave icon animation",
+      "query2": "audio mystery graphic",
+      "role": "cta",
+      "text": "Follow if you can't stop asking why."
+    }
+  ],
+  "description": "A persistent low‑frequency hum haunts Bristol, measured at 58 Hz, yet scientists cannot pinpoint its origin. Is it machines, the earth, or something else? Follow for more strange sound stories.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#BristolHum",
+    "#mystery",
+    "#audio",
+    "#unexplained",
+    "#UK"
+  ]
+}
