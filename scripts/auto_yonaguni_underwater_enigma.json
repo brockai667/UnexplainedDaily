@@ -1,0 +1,76 @@
+{
+  "title": "Yonaguni Underwater Enigma",
+  "thumb": "MYSTERIOUS SUBMERGED CITY",
+  "place": "Yonaguni Island",
+  "country": "Japan",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "A sunken mountain off Japan holds step-like walls",
+      "hook_top": "SUBMERGED MOUNTAIN MYSTERY",
+      "query": "underwater rock formations Japan",
+      "query2": "submerged stone terraces sea floor",
+      "role": "hook"
+    },
+    {
+      "type": "fact",
+      "text": "Divers first photographed the structures in 1985 at a depth of 25 meters",
+      "chips": [
+        {
+          "t": "1985",
+          "on": "year",
+          "style": "white"
+        },
+        {
+          "t": "25 m",
+          "on": "depth",
+          "style": "accent"
+        }
+      ],
+      "punch": "deep",
+      "query": "diving expedition Yonaguni 1985",
+      "query2": "underwater exploration documentary",
+      "role": "fact"
+    },
+    {
+      "type": "fact",
+      "text": "The formation spans about 150 meters and includes rectangular steps and a platform resembling a pyramid",
+      "chips": [
+        {
+          "t": "150 m",
+          "on": "size",
+          "style": "white"
+        }
+      ],
+      "query": "Yonaguni rectangular steps aerial view",
+      "query2": "underwater pyramid like structure",
+      "role": "fact"
+    },
+    {
+      "type": "reveal",
+      "text": "Scientists still debate whether the shapes are natural erosion or an ancient human-built monument",
+      "reveal_top": "NATURAL OR MAN‑MADE?",
+      "query": "geological analysis Yonaguni",
+      "query2": "archaeology underwater Japan",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow for the cases no one can explain.",
+      "query": "ocean mystery subtitle",
+      "query2": "deep sea intrigue text overlay",
+      "role": "cta"
+    }
+  ],
+  "description": "The Yonaguni Monument challenges our understanding of prehistoric engineering. Is it nature’s art or a lost civilization’s legacy? Dive deeper with us.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#mystery",
+    "#underwater",
+    "#Japan",
+    "#archaeology",
+    "#unexplained"
+  ]
+}

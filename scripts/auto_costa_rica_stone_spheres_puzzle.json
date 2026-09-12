@@ -1,0 +1,67 @@
+{
+  "title": "Costa Rica Stone Spheres Puzzle",
+  "thumb": "PERFECT STONE PUZZLE",
+  "place": "Diquís Delta",
+  "country": "Costa Rica",
+  "scenes": [
+    {
+      "hook_top": "PERFECT STONE PUZZLE",
+      "query": "jungle stone spheres aerial",
+      "query2": "forest stone sphere layout",
+      "role": "hook",
+      "text": "Hundreds of perfectly round stones, from 5 cm to 2 m, dot a jungle valley."
+    },
+    {
+      "chips": [
+        {
+          "t": "5 cm",
+          "on": "small",
+          "style": "white"
+        },
+        {
+          "t": "2 m",
+          "on": "large",
+          "style": "accent"
+        }
+      ],
+      "punch": "precise",
+      "query": "close‑up stone sphere texture",
+      "query2": "granodiorite sphere macro",
+      "role": "fact",
+      "text": "The spheres range from 5 cm to 2 m in diameter and were carved from local granodiorite."
+    },
+    {
+      "archive_query": "Diquís stone spheres early photograph",
+      "archive_label": "Lothrop 1930s photo",
+      "query": "historic stone sphere photo",
+      "query2": "archival jungle artifact image",
+      "role": "archive",
+      "text": "Early 20th‑century photograph taken by archaeologist Samuel Kirkland Lothrop."
+    },
+    {
+      "label": "STATUS SYMBOLS",
+      "sub": "Possibly markers of power or astronomy.",
+      "label_on": "symbols",
+      "query": "archaeological illustration of spheres",
+      "query2": "researcher discussing stone spheres",
+      "role": "callout",
+      "text": "Current theories link them to status symbols of the extinct Diquís culture."
+    },
+    {
+      "query": "animated follow button graphic",
+      "query2": "call‑to‑action overlay",
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night."
+    }
+  ],
+  "description": "The mysterious stone spheres of Costa Rica are flawless, varied, and still unexplained. Explore the facts, the leading theories, and the ongoing research.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#archaeology",
+    "#mystery",
+    "#stones",
+    "#ancient",
+    "#unexplained"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "title": "The Enigmatic Saqqara Bird",
+  "thumb": "ANCIENT FLIGHT PUZZLE",
+  "place": "Saqqara",
+  "country": "Egypt",
+  "scenes": [
+    {
+      "hook_top": "ANCIENT PLANE DISCOVERED",
+      "query": "ancient wooden bird close up",
+      "query2": "Egyptian artifact bird detail",
+      "role": "hook",
+      "text": "A 1,800‑year‑old wooden bird resembling a modern plane"
+    },
+    {
+      "query": "Saqqara map archaeological site",
+      "query2": "Egypt necropolis satellite view",
+      "role": "map",
+      "text": "Unearthed in the Saqqara necropolis, Egypt, in 1898"
+    },
+    {
+      "chips": [
+        {
+          "t": "Straight wings",
+          "on": "wings",
+          "style": "accent"
+        }
+      ],
+      "punch": "wings",
+      "query": "close up bird artifact wings",
+      "query2": "wooden bird museum display",
+      "role": "fact",
+      "text": "The bird’s wings are straight and lack feathers, prompting aviation speculation"
+    },
+    {
+      "archive_query": "Saqqara Bird Egyptian Museum photo",
+      "archive_label": "Museum photograph",
+      "query": "museum lighting bird artifact",
+      "query2": "Egyptian museum exhibit close up",
+      "role": "archive",
+      "text": "Photograph of the Saqqara Bird in the Egyptian Museum, Cairo"
+    },
+    {
+      "label": "Ceremonial Model",
+      "sub": "Most scholars see a religious symbol",
+      "label_on": "model",
+      "query": "ancient Egyptian model artifact",
+      "query2": "ritual object close up",
+      "role": "callout",
+      "text": "Probably a ceremonial model"
+    },
+    {
+      "query": "text follow subscribe ancient theme",
+      "query2": "call to action stylized scroll",
+      "role": "cta",
+      "text": "Follow for the cases no one can explain."
+    }
+  ],
+  "description": "The Saqqara Bird fuels debate between engineers and Egyptologists. Join us as we explore its true purpose.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#saqqarabird",
+    "#ancientegypt",
+    "#mysteries",
+    "#unexplained",
+    "#history"
+  ]
+}

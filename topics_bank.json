@@ -14452,5 +14452,135 @@
       "#naturalmystery",
       "#science"
     ]
+  },
+  {
+    "title": "Nazca Lines Alien Runways",
+    "thumb": "SKY RUNWAYS",
+    "place": "Nazca Desert",
+    "country": "Peru",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "Over 300 giant lines stretch across 80 km of desert",
+        "hook_top": "GIANT DESERT LINES",
+        "query": "aerial view of Nazca lines from above",
+        "query2": "drone footage desert geoglyphs",
+        "role": "hook"
+      },
+      {
+        "type": "myth",
+        "text": "Many believe the designs are landing strips for UFOs",
+        "label": "UFO Landing Strips",
+        "query": "illustration of UFO over desert",
+        "query2": "science fiction landing pad concept",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "truth",
+        "text": "Archaeologists attribute them to pre‑Columbian cultures for religious ceremonies and water‑related rituals",
+        "label": "Ceremonial Geoglyph Theory",
+        "query": "researcher studying Nazca geoglyphs on site",
+        "query2": "archaeological field notes desert",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "callout",
+        "text": "Lines were made for people, not pilots",
+        "label": "Human Purpose",
+        "sub": "Cultural rituals explain the designs",
+        "label_on": "lines",
+        "query": "ancient Peruvian pottery depicting rituals",
+        "query2": "cultural symbols desert artwork",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "spinning globe highlighting Peru",
+        "query2": "mystery map animation",
+        "role": "cta"
+      }
+    ],
+    "description": "The Nazca Lines spark alien runway rumors, yet evidence points to sacred, community‑driven creations. Uncover the real reasons behind these desert masterpieces.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#NazcaLines",
+      "#ancientmystery",
+      "#archaeology",
+      "#history",
+      "#unexplained"
+    ]
+  },
+  {
+    "title": "Antikythera Mechanism Missing Gear",
+    "thumb": "ANCIENT GEAR MYSTERY",
+    "place": "Antikythera Island",
+    "country": "Greece",
+    "scenes": [
+      {
+        "hook_top": "VANISHED GEAR MYSTERY",
+        "query": "ancient bronze gear closeup",
+        "query2": "metal artifact macro",
+        "role": "hook",
+        "text": "A bronze gear vanished from an ancient computer"
+      },
+      {
+        "query": "map of Antikythera Island",
+        "query2": "Aegean Sea island outline",
+        "role": "map",
+        "text": "Found on Antikythera Island in the Aegean Sea"
+      },
+      {
+        "chips": [
+          {
+            "t": "30 Gears",
+            "on": "gears",
+            "style": "white"
+          }
+        ],
+        "punch": "only",
+        "query": "ancient gear fragments",
+        "query2": "museum gear display",
+        "role": "fact",
+        "text": "Only 30 of the original 30‑plus gears remain"
+      },
+      {
+        "archive_query": "National Archaeological Museum Athens Antikythera gears",
+        "archive_label": "Surviving gears",
+        "query": "museum exhibit ancient gears",
+        "query2": "historical artifact display",
+        "role": "archive",
+        "text": "The surviving gears displayed at the National Archaeological Museum"
+      },
+      {
+        "label": "Missing Piece",
+        "sub": "Scholars still debate its function",
+        "label_on": "missing",
+        "query": "ancient mechanism diagram",
+        "query2": "mechanical illustration",
+        "role": "callout",
+        "text": "What was lost?"
+      },
+      {
+        "query": "mysterious ancient device animation",
+        "query2": "historical tech visual",
+        "role": "cta",
+        "text": "Follow if the unknown keeps you up at night."
+      }
+    ],
+    "description": "The Antikythera mechanism is the world’s first known computer, yet a crucial gear is missing. Discover what experts think it could have done.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#antikythera",
+      "#ancienttechnology",
+      "#mystery",
+      "#history",
+      "#archaeology"
+    ]
   }
 ]
