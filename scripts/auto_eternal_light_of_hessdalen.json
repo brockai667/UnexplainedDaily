@@ -1,0 +1,53 @@
+{
+  "title": "Eternal Light of Hessdalen",
+  "thumb": "NORWAY GLOW MYSTERY",
+  "place": "Hessdalen Valley",
+  "country": "Norway",
+  "scenes": [
+    {
+      "hook_top": "VALLEY GLOWS NIGHTLY",
+      "query": "night sky over remote valley with lights",
+      "query2": "mountain valley aurora like glow",
+      "role": "hook",
+      "text": "Why does the Hessdalen valley glow every summer night?"
+    },
+    {
+      "label": "UFOs cause lights",
+      "query": "silhouette of unidentified flying object over forest",
+      "query2": "dark night with bright orbs",
+      "role": "myth",
+      "text": "Many claim the lights are UFOs or secret military drones."
+    },
+    {
+      "label": "Ionized air phenomenon",
+      "query": "scientists measuring atmospheric gases in valley",
+      "query2": "laboratory equipment monitoring ionization",
+      "role": "truth",
+      "text": "Scientific studies link the glow to ionized air from mineral-rich groundwater venting under temperature inversions."
+    },
+    {
+      "label": "Geological cause",
+      "sub": "Mineral gases create plasma",
+      "label_on": "Plasma",
+      "query": "steam venting from rocky ground at dusk",
+      "query2": "mist rising from valley floor",
+      "role": "callout",
+      "text": "Natural geology, not alien tech, fuels the nightly show."
+    },
+    {
+      "query": "starry sky over remote landscape",
+      "query2": "silhouette of mountains at night",
+      "role": "cta",
+      "text": "Follow if you can't stop asking why."
+    }
+  ],
+  "description": "The Hessdalen lights have puzzled observers for decades. Learn the leading scientific explanation behind the eerie glow.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#hessdalen",
+    "#norway",
+    "#naturalmystery",
+    "#science"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "title": "Missing Gear of Ancient Clock",
+  "thumb": "ANCIENT GEAR MYSTERY",
+  "place": "Antikythera Island",
+  "country": "Greece",
+  "scenes": [
+    {
+      "hook_top": "LOST GEAR DISCOVERED",
+      "query": "ancient bronze mechanism close up",
+      "query2": "old astronomical clock parts",
+      "role": "hook",
+      "text": "What 2,000‑year‑old device lost a crucial gear?"
+    },
+    {
+      "label": "It was complete",
+      "query": "museum display of Antikythera fragments",
+      "query2": "archaeological bronze gears",
+      "role": "myth",
+      "text": "People think the Antikythera Mechanism was fully intact when found."
+    },
+    {
+      "label": "Gear missing",
+      "query": "scientists examining fragmented gears",
+      "query2": "researchers studying ancient mechanism",
+      "role": "truth",
+      "text": "Only 30 of the original 30‑plus gears survived; a missing gear explains why parts of the calendar are unreadable."
+    },
+    {
+      "label": "Incomplete Artifact",
+      "sub": "Lost piece limits full decoding",
+      "label_on": "Missing",
+      "query": "close‑up of corroded bronze surface",
+      "query2": "weathered ancient metal",
+      "role": "callout",
+      "text": "The mystery isn’t alien tech – it’s incomplete preservation."
+    },
+    {
+      "query": "ancient scrolls on table",
+      "query2": "old parchment texture",
+      "role": "cta",
+      "text": "Follow for the cases no one can explain."
+    }
+  ],
+  "description": "The Antikythera Mechanism dazzles us, but a missing gear still hides parts of its function. Discover what scholars really know.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#antikythera",
+    "#ancienttech",
+    "#archaeology",
+    "#mysteries"
+  ]
+}
