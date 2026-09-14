@@ -1,0 +1,69 @@
+{
+  "title": "The Silent Stones of Carnac",
+  "thumb": "MYSTERIOUS STONES",
+  "place": "Carnac",
+  "country": "France",
+  "scenes": [
+    {
+      "hook_top": "THOUSANDS OF STONES",
+      "query": "aerial view of ancient stone rows",
+      "query2": "drone footage of stone alignments",
+      "role": "hook",
+      "text": "Over 3,000 standing stones line a Breton beach"
+    },
+    {
+      "query": "map of Carnac stone sites",
+      "query2": "satellite view of Carnac coastline",
+      "role": "map",
+      "text": "The rows stretch across the sands near Carnac, Brittany"
+    },
+    {
+      "chips": [
+        {
+          "t": "4,500 BC",
+          "on": "date",
+          "style": "white"
+        }
+      ],
+      "punch": "ancient",
+      "query": "close‑up of weathered prehistoric stone",
+      "query2": "textured surface of megalith",
+      "role": "fact",
+      "text": "The oldest stones date to about 4,500 BC"
+    },
+    {
+      "archive_query": "Carnac stones 1900 site:commons.wikimedia.org",
+      "archive_label": "1900 Carnac Stones",
+      "query": "historical photo of stone rows",
+      "query2": "black‑and‑white image of Carnac",
+      "role": "archive",
+      "text": "Early 20th‑century photograph of the Carnac alignments"
+    },
+    {
+      "label": "Why built?",
+      "sub": "Archeologists still debate ritual vs. astronomical function",
+      "label_on": "purpose",
+      "query": "sunrise over stone rows",
+      "query2": "shadow play on megaliths",
+      "role": "callout",
+      "text": "UNSOLVED PURPOSE"
+    },
+    {
+      "query": "animated text follow prompt",
+      "query2": "simple motion graphics call to action",
+      "role": "cta",
+      "text": "Follow for a new mystery every day."
+    }
+  ],
+  "description": "The Carnac stone rows are a massive, organized field of monoliths that have baffled researchers for centuries. Discover what we know and what still remains a mystery. Follow for more ancient puzzles.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#mysteries",
+    "#ancient",
+    "#carnac",
+    "#stones",
+    "#archaeology",
+    "#unexplained"
+  ]
+}

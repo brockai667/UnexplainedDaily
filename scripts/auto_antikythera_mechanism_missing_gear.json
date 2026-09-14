@@ -1,0 +1,68 @@
+{
+  "title": "Antikythera Mechanism Missing Gear",
+  "thumb": "ANCIENT GEAR MYSTERY",
+  "place": "Antikythera Island",
+  "country": "Greece",
+  "scenes": [
+    {
+      "hook_top": "VANISHED GEAR MYSTERY",
+      "query": "ancient bronze gear closeup",
+      "query2": "metal artifact macro",
+      "role": "hook",
+      "text": "A bronze gear vanished from an ancient computer"
+    },
+    {
+      "query": "map of Antikythera Island",
+      "query2": "Aegean Sea island outline",
+      "role": "map",
+      "text": "Found on Antikythera Island in the Aegean Sea"
+    },
+    {
+      "chips": [
+        {
+          "t": "30 Gears",
+          "on": "gears",
+          "style": "white"
+        }
+      ],
+      "punch": "only",
+      "query": "ancient gear fragments",
+      "query2": "museum gear display",
+      "role": "fact",
+      "text": "Only 30 of the original 30‑plus gears remain"
+    },
+    {
+      "archive_query": "National Archaeological Museum Athens Antikythera gears",
+      "archive_label": "Surviving gears",
+      "query": "museum exhibit ancient gears",
+      "query2": "historical artifact display",
+      "role": "archive",
+      "text": "The surviving gears displayed at the National Archaeological Museum"
+    },
+    {
+      "label": "Missing Piece",
+      "sub": "Scholars still debate its function",
+      "label_on": "missing",
+      "query": "ancient mechanism diagram",
+      "query2": "mechanical illustration",
+      "role": "callout",
+      "text": "What was lost?"
+    },
+    {
+      "query": "mysterious ancient device animation",
+      "query2": "historical tech visual",
+      "role": "cta",
+      "text": "Follow if the unknown keeps you up at night."
+    }
+  ],
+  "description": "The Antikythera mechanism is the world’s first known computer, yet a crucial gear is missing. Discover what experts think it could have done.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#antikythera",
+    "#ancienttechnology",
+    "#mystery",
+    "#history",
+    "#archaeology"
+  ]
+}

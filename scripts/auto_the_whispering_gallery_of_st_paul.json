@@ -1,0 +1,74 @@
+{
+  "title": "The Whispering Gallery of St Paul",
+  "thumb": "WHISPERING GALLERY",
+  "place": "St Paul's Cathedral",
+  "country": "United Kingdom",
+  "scenes": [
+    {
+      "hook_top": "SOUND TRAVELS FAR",
+      "query": "interior of dome with acoustic effect",
+      "query2": "wide shot of cathedral dome interior",
+      "role": "hook",
+      "text": "A single word travels 30 metres without echo"
+    },
+    {
+      "query": "map pinpoint London St Paul's Cathedral",
+      "query2": "satellite view of St Paul's site",
+      "role": "map",
+      "text": "Located beneath the dome of St Paul's Cathedral in London"
+    },
+    {
+      "chips": [
+        {
+          "t": "30 m wide",
+          "on": "width",
+          "style": "white"
+        },
+        {
+          "t": "13 m high",
+          "on": "height",
+          "style": "accent"
+        }
+      ],
+      "punch": "massive",
+      "query": "measurement lines over cathedral dome",
+      "query2": "scale overlay on interior shot",
+      "role": "fact",
+      "text": "The gallery is 30 m wide and 13 m high"
+    },
+    {
+      "archive_query": "St Paul's Whispering Gallery James Wyatt site:commons.wikimedia.org",
+      "archive_label": "Wyatt’s Drawing",
+      "query": "old architectural drawing of dome interior",
+      "query2": "hand‑drawn plan of gallery",
+      "role": "archive",
+      "text": "Historic drawing of the gallery by James Wyatt, 1800s"
+    },
+    {
+      "label": "Acoustic oddity",
+      "sub": "Scientists explain it with a perfect curvature that focuses sound",
+      "label_on": "acoustic",
+      "query": "sound wave visualization inside dome",
+      "query2": "animation of echo‑free zone",
+      "role": "callout",
+      "text": "AN UNUSUAL ACOUSTIC"
+    },
+    {
+      "query": "text overlay follow animation",
+      "query2": "simple motion graphic CTA",
+      "role": "cta",
+      "text": "Follow if you can't stop asking why."
+    }
+  ],
+  "description": "Inside St Paul's Cathedral lies a dome that lets whispers travel across the space as if by magic. Learn the physics behind the phenomenon and why it still amazes visitors. Follow for more sound mysteries.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#mysteries",
+    "#acoustics",
+    "#stpauls",
+    "#london",
+    "#science",
+    "#unexplained"
+  ]
+}
