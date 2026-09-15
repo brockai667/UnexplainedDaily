@@ -1,0 +1,74 @@
+{
+  "title": "The Vanishing Lake of Sarychev",
+  "thumb": "VANISHING LAKE",
+  "place": "Lake Sarychev",
+  "country": "Russia",
+  "scenes": [
+    {
+      "hook_top": "LAKE VANISHED QUICKLY",
+      "query": "dry lakebed after flood receded",
+      "query2": "satellite view of empty lake basin",
+      "role": "hook",
+      "text": "A lake disappeared overnight in 2022"
+    },
+    {
+      "query": "map of Kamchatka showing lake location",
+      "query2": "regional map of eastern Russia lakes",
+      "role": "map",
+      "text": "Lake Sarychev lies in the Kamchatka Peninsula, far east Russia"
+    },
+    {
+      "chips": [
+        {
+          "t": "2 km²",
+          "on": "size",
+          "style": "white"
+        },
+        {
+          "t": "48 hours",
+          "on": "time",
+          "style": "accent"
+        }
+      ],
+      "punch": "rapid",
+      "query": "before‑after satellite images of lake",
+      "query2": "time‑lapse of water retreat",
+      "role": "fact",
+      "text": "Satellite images show a 2 km² water body gone in 48 hours"
+    },
+    {
+      "archive_query": "Lake Sarychev NASA Earth Observatory site:commons.wikimedia.org",
+      "archive_label": "Before Disappearance",
+      "query": "historical satellite image of lake",
+      "query2": "NASA photo of Sarychev water",
+      "role": "archive",
+      "text": "NASA Earth Observatory image of the lake before disappearance"
+    },
+    {
+      "label": "Why vanished?",
+      "sub": "Scientists cite possible underground drainage or rapid permafrost melt, but no consensus",
+      "label_on": "cause",
+      "query": "geological cross‑section illustration",
+      "query2": "animation of underground water flow",
+      "role": "callout",
+      "text": "CAUSE UNKNOWN"
+    },
+    {
+      "query": "CTA text with glitch effect",
+      "query2": "simple follow animation",
+      "role": "cta",
+      "text": "Follow for a new mystery every day."
+    }
+  ],
+  "description": "In 2022, a remote lake in Kamchatka vanished within two days, leaving a barren basin. Explore the evidence and the competing theories that still leave researchers baffled. Follow for more disappearing phenomena.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#mysteries",
+    "#lake",
+    "#russia",
+    "#satellite",
+    "#unexplained",
+    "#geology"
+  ]
+}

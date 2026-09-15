@@ -1,0 +1,73 @@
+{
+  "title": "Mystery of the Antikythera Gear",
+  "thumb": "LOST GEAR",
+  "place": "Antikythera Island",
+  "country": "Greece",
+  "scenes": [
+    {
+      "type": "hook",
+      "text": "A missing gear could rewrite ancient tech",
+      "hook_top": "MISSING GEAR REWRITES",
+      "query": "ancient bronze gear close-up",
+      "query2": "museum artifact metal detail",
+      "role": "hook"
+    },
+    {
+      "type": "fact",
+      "text": "Scientists found a 2 mm bronze gear absent from the restored mechanism",
+      "chips": [
+        {
+          "t": "2 mm",
+          "on": "size",
+          "style": "white"
+        },
+        {
+          "t": "bronze",
+          "on": "material",
+          "style": "accent"
+        }
+      ],
+      "punch": "tiny",
+      "query": "close-up of bronze gear fragment",
+      "query2": "ancient metal piece macro",
+      "role": "fact"
+    },
+    {
+      "type": "archive",
+      "text": "The original Antikythera Mechanism displayed at the National Archaeological Museum",
+      "archive_query": "Antikythera Mechanism National Archaeological Museum Greece",
+      "archive_label": "Original mechanism",
+      "query": "museum display ancient mechanism",
+      "query2": "archaeological exhibit bronze gears",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "callout",
+      "text": "Why was this gear lost?",
+      "label": "GEAR MYSTERY",
+      "sub": "Could it hide a function we still don't understand",
+      "label_on": "mystery",
+      "query": "ancient device mystery illustration",
+      "query2": "historical puzzle concept art",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "type": "cta",
+      "text": "Follow for daily unexplained mysteries.",
+      "query": "animated follow button overlay",
+      "query2": "call to action graphic",
+      "role": "cta"
+    }
+  ],
+  "description": "A tiny bronze gear vanished from the Antikythera Mechanism, hinting at unknown functions. Stay tuned for more ancient tech mysteries.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#antikythera",
+    "#ancienttech",
+    "#archaeology",
+    "#mystery"
+  ]
+}

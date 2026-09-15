@@ -1,0 +1,64 @@
+{
+  "title": "Nazca Lines Hidden Water Theory",
+  "thumb": "UNDERGROUND RIVERS",
+  "place": "Nazca Desert",
+  "country": "Peru",
+  "scenes": [
+    {
+      "text": "Over 800 giant geoglyphs stretch across Peru’s desert.",
+      "hook_top": "GIANT DESERT DRAWINGS",
+      "query": "aerial view of Nazca Lines sunrise",
+      "query2": "satellite image desert geoglyphs",
+      "role": "hook"
+    },
+    {
+      "text": "Recent LiDAR scans show subtle depressions beneath many lines.",
+      "chips": [
+        {
+          "t": "LiDAR reveal",
+          "on": "LiDAR",
+          "style": "white"
+        }
+      ],
+      "query": "LiDAR scan of desert terrain",
+      "query2": "thermal imaging ground scan",
+      "role": "fact"
+    },
+    {
+      "text": "Scientists found a correlation between line clusters and ancient aquifer locations.",
+      "chips": [
+        {
+          "t": "aquifer link",
+          "on": "water",
+          "style": "accent"
+        }
+      ],
+      "query": "underground water map Nazca region",
+      "query2": "hydrogeology diagram desert",
+      "role": "fact"
+    },
+    {
+      "text": "The twist: the lines may have been a massive water‑management map, not just ceremonial art.",
+      "reveal_top": "WATER MAP THEORY",
+      "query": "close‑up of Nazca line intersecting riverbed",
+      "query2": "overlay of ancient map on desert",
+      "role": "fact",
+      "chips": []
+    },
+    {
+      "text": "Follow for a new mystery every day.",
+      "query": "weathered stone texture background",
+      "query2": "sandstorm blurred backdrop",
+      "role": "cta"
+    }
+  ],
+  "description": "The Nazca Lines have baffled researchers for centuries. New data suggests they could be ancient guides to underground water sources. Dive deeper into this fresh perspective and more unsolved wonders.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#nazca",
+    "#peru",
+    "#archaeology",
+    "#mystery"
+  ]
+}

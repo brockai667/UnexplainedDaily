@@ -15004,5 +15004,209 @@
       "#Mystery",
       "#Science"
     ]
+  },
+  {
+    "title": "Antikythera Missing Gear Mystery",
+    "thumb": "LOST GEAR",
+    "place": "Antikythera Island",
+    "country": "Greece",
+    "scenes": [
+      {
+        "hook_top": "BRONZE GEAR VANISHED",
+        "query": "ancient bronze gear closeup",
+        "query2": "old metal mechanism macro",
+        "role": "hook",
+        "text": "A bronze gear vanished from the ancient computer"
+      },
+      {
+        "query": "satellite view of Antikythera Island",
+        "query2": "Greek island coastline aerial",
+        "role": "map",
+        "text": "Found on a shipwreck off Antikythera Island, Greece"
+      },
+      {
+        "chips": [
+          {
+            "t": "Metonic cycle",
+            "on": "metonic",
+            "style": "accent"
+          }
+        ],
+        "punch": "lost",
+        "query": "antikythera mechanism gear detail",
+        "query2": "ancient Greek astronomical device",
+        "role": "fact",
+        "text": "Scientists still cannot locate the lost bronze tooth that should drive the Metonic cycle"
+      },
+      {
+        "archive_query": "Antikythera Mechanism 1902 excavation site Wikimedia Commons",
+        "archive_label": "1902 excavation shot",
+        "query": "historic black and white excavation photo",
+        "query2": "early 20th century archaeological dig",
+        "role": "archive",
+        "text": "The 1902 excavation photograph of the Antikythera Mechanism"
+      },
+      {
+        "label": "MISSING GEAR",
+        "sub": "The tooth that should turn the 19‑year cycle remains unfound",
+        "label_on": "missing",
+        "query": "closeup of ancient gear tooth missing",
+        "query2": "mechanical part gap macro",
+        "role": "callout",
+        "text": "Gear Still Missing"
+      },
+      {
+        "query": "animated text follow subscribe",
+        "query2": "call to action graphic",
+        "role": "cta",
+        "text": "Follow for a new mystery every day."
+      }
+    ],
+    "description": "The Antikythera Mechanism is the world’s oldest known computer, yet a crucial gear tooth is still absent. Could it be lost forever? Follow for more ancient tech puzzles.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#antikythera",
+      "#ancienttech",
+      "#mystery",
+      "#history",
+      "#unexplained"
+    ]
+  },
+  {
+    "title": "Baghdad Battery Controversy",
+    "thumb": "ANCIENT POWER",
+    "place": "Karbala Museum",
+    "country": "Iraq",
+    "scenes": [
+      {
+        "hook_top": "CLAY JAR BATTERY",
+        "query": "ancient clay jar copper rod closeup",
+        "query2": "historic metal rod in pottery",
+        "role": "hook",
+        "text": "Could a 2,000‑year‑old clay jar be a battery?"
+      },
+      {
+        "query": "exterior view of Karbala Museum",
+        "query2": "Iraq museum building facade",
+        "role": "map",
+        "text": "The artifact resides in the Karbala Museum, Iraq"
+      },
+      {
+        "chips": [
+          {
+            "t": "1.5 volts",
+            "on": "volts",
+            "style": "accent"
+          }
+        ],
+        "punch": "produce",
+        "query": "experimental setup measuring voltage ancient jar",
+        "query2": "science lab ancient battery test",
+        "role": "fact",
+        "text": "Laboratory tests show the jar can produce about 1.5 volts when filled with acidic liquid"
+      },
+      {
+        "archive_query": "Baghdad Battery photograph early 1900s Wikimedia Commons",
+        "archive_label": "Historic battery photo",
+        "query": "black and white museum artifact photo",
+        "query2": "old image of clay jar with rod",
+        "role": "archive",
+        "text": "Early 20th‑century photograph of the Baghdad Battery"
+      },
+      {
+        "label": "UNSOLVED USE",
+        "sub": "Scholars argue it may have been a storage vessel, not a power source",
+        "label_on": "debated",
+        "query": "closeup of jar interior with rod",
+        "query2": "artifact cross‑section illustration",
+        "role": "callout",
+        "text": "Purpose Still Debated"
+      },
+      {
+        "query": "animated text follow subscribe",
+        "query2": "call to action graphic",
+        "role": "cta",
+        "text": "Follow for the cases no one can explain."
+      }
+    ],
+    "description": "The so‑called Baghdad Battery can generate a modest voltage, yet its true function remains disputed among archaeologists. Follow for more ancient tech debates.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#baghdadbattery",
+      "#iraq",
+      "#archaeology",
+      "#mystery",
+      "#unexplained"
+    ]
+  },
+  {
+    "title": "Piri Reis Map Ice Mystery",
+    "thumb": "ICE‑FREE MAP",
+    "place": "İstanbul Library",
+    "country": "Turkey",
+    "scenes": [
+      {
+        "hook_top": "ICEFREE ANTARCTICA",
+        "query": "closeup of Piri Reis map coastline",
+        "query2": "historical map Antarctica detail",
+        "role": "hook",
+        "text": "A 1513 map shows Antarctica without ice"
+      },
+      {
+        "query": "exterior of Topkapi Palace Library",
+        "query2": "Istanbul historic library facade",
+        "role": "map",
+        "text": "The map is kept at the Topkapi Palace Library in Istanbul, Turkey"
+      },
+      {
+        "chips": [
+          {
+            "t": "Antarctica",
+            "on": "antarctica",
+            "style": "white"
+          }
+        ],
+        "punch": "traced",
+        "query": "overlay of map coastline onto modern Antarctica",
+        "query2": "comparative map Antarctica then",
+        "role": "fact",
+        "text": "Cartographers traced the southern outline to a continent later identified as Antarctica"
+      },
+      {
+        "archive_query": "Piri Reis map page 1513 Wikimedia Commons",
+        "archive_label": "Map page detail",
+        "query": "high resolution scan ancient map page",
+        "query2": "digital archive of Piri Reis",
+        "role": "archive",
+        "text": "Digitized page of the Piri Reis map showing the southern coast"
+      },
+      {
+        "label": "NO CONSENSUS",
+        "sub": "Scientists argue the coast may be a mythic representation, not real ice‑free land",
+        "label_on": "consensus",
+        "query": "scholars discussing map overlay",
+        "query2": "academic conference map debate",
+        "role": "callout",
+        "text": "No Consensus"
+      },
+      {
+        "query": "animated text follow subscribe",
+        "query2": "call to action graphic",
+        "role": "cta",
+        "text": "Follow for the cases no one can explain."
+      }
+    ],
+    "description": "The Piri Reis map’s southern coastline matches Antarctica, yet experts disagree whether it depicts a real ice‑free shore. Follow for more cartographic riddles.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#piriReis",
+      "#mapmystery",
+      "#antarctica",
+      "#history",
+      "#unexplained"
+    ]
   }
 ]
