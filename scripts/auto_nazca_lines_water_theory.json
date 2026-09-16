@@ -1,0 +1,68 @@
+{
+  "title": "Nazca Lines Water Theory",
+  "thumb": "HIDDEN WATER",
+  "place": "Nazca Desert",
+  "country": "Peru",
+  "scenes": [
+    {
+      "hook_top": "WATER PATHS REVEALED",
+      "query": "desert aerial view patterns",
+      "query2": "satellite image geoglyphs",
+      "role": "hook",
+      "text": "Hundreds of lines may have guided ancient irrigation"
+    },
+    {
+      "query": "Nazca Desert map overlay",
+      "query2": "Peruvian coastal desert outline",
+      "role": "map",
+      "text": "The geoglyphs stretch across the Nazca Desert in southern Peru"
+    },
+    {
+      "chips": [
+        {
+          "t": "2015 Survey",
+          "on": "survey",
+          "style": "accent"
+        }
+      ],
+      "punch": "detected",
+      "query": "LIDAR terrain scan visualization",
+      "query2": "digital elevation model desert",
+      "role": "fact",
+      "text": "A 2015 LIDAR survey detected subtle channels beneath several lines"
+    },
+    {
+      "archive_query": "Nazca Lines 1973 aerial photograph",
+      "archive_label": "1973 aerial view",
+      "query": "black and white aerial photo texture",
+      "query2": "vintage aerial landscape",
+      "role": "archive",
+      "text": "A 1973 aerial photograph showing the full Nazca geoglyphs network"
+    },
+    {
+      "label": "WATER THEORY",
+      "sub": "Researchers suggest the lines marked underground aquifers",
+      "label_on": "theory",
+      "query": "ancient irrigation channels illustration",
+      "query2": "underground water flow diagram",
+      "role": "callout",
+      "text": "Irrigation clue?"
+    },
+    {
+      "query": "simple follow button animation",
+      "query2": "call to action graphic",
+      "role": "cta",
+      "text": "Follow if you can't stop asking why."
+    }
+  ],
+  "description": "While the Nazca Lines are famous for their giant drawings, new data hints they could have been a massive water‑management system. Dive into the evidence.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#NazcaLines",
+    "#Peru",
+    "#Archaeology",
+    "#Mystery",
+    "#Science"
+  ]
+}

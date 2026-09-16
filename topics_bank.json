@@ -15208,5 +15208,223 @@
       "#history",
       "#unexplained"
     ]
+  },
+  {
+    "title": "Baltic Sea Anomaly Puzzle",
+    "thumb": "DEEP OBJECT",
+    "place": "Baltic Sea",
+    "country": "Sweden",
+    "scenes": [
+      {
+        "hook_top": "UNDERWATER DISC FOUND",
+        "query": "underwater sonar image disc shape",
+        "query2": "sonar scan mysterious object sea",
+        "role": "hook",
+        "text": "A 60‑meter disc‑shaped object rests 90 m underwater"
+      },
+      {
+        "query": "Baltic Sea map Gotland area",
+        "query2": "Swedish sea satellite view",
+        "role": "map",
+        "text": "Spotted near the island of Gotland in the Baltic Sea, Sweden"
+      },
+      {
+        "chips": [
+          {
+            "t": "2011 sonar",
+            "on": "sonar",
+            "style": "white"
+          },
+          {
+            "t": "metallic echo",
+            "on": "echo",
+            "style": "accent"
+          }
+        ],
+        "punch": "metal",
+        "query": "navy sonar screen with echo",
+        "query2": "underwater radar display",
+        "role": "fact",
+        "text": "Swedish Navy sonar recorded a metallic echo in 2011"
+      },
+      {
+        "archive_query": "Baltic Sea Anomaly sonar video frame Wikimedia Commons",
+        "archive_label": "Sonar Frame",
+        "query": "historic sonar video frame",
+        "query2": "archival underwater scan",
+        "role": "archive",
+        "text": "Video frame from the original 2011 sonar expedition"
+      },
+      {
+        "label": "Mystery Shape",
+        "sub": "Natural formation or unknown craft?",
+        "label_on": "shape",
+        "query": "rock formation resembling disc underwater",
+        "query2": "submerged concrete disc silhouette",
+        "role": "callout",
+        "text": "Mystery Shape"
+      },
+      {
+        "query": "deep sea light beams",
+        "query2": "ocean twilight ambience",
+        "role": "cta",
+        "text": "Follow for a new mystery every day."
+      }
+    ],
+    "description": "The Baltic Sea Anomaly remains a baffling underwater sighting. Experts debate whether it’s a geological oddity or something else.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#balticsea",
+      "#anomaly",
+      "#oceanmystery",
+      "#unexplained",
+      "#deepsea"
+    ]
+  },
+  {
+    "title": "The Wow Signal Mystery",
+    "thumb": "WOW SIGNAL",
+    "place": "Big Ear Radio Telescope",
+    "country": "United States",
+    "scenes": [
+      {
+        "hook_top": "72SECOND RADIO BURST",
+        "query": "radio telescope dish night sky",
+        "query2": "large radio antenna under stars",
+        "role": "hook",
+        "text": "A 72‑second radio burst from Sagittarius 2"
+      },
+      {
+        "query": "Ohio map Big Ear location",
+        "query2": "Delaware Ohio satellite view",
+        "role": "map",
+        "text": "Detected on August 15 1977 by Ohio State’s Big Ear telescope in Delaware, Ohio, USA"
+      },
+      {
+        "chips": [
+          {
+            "t": "30 janskys",
+            "on": "janskys",
+            "style": "white"
+          },
+          {
+            "t": "background low",
+            "on": "background",
+            "style": "accent"
+          }
+        ],
+        "punch": "strong",
+        "query": "spectral line graph radio signal",
+        "query2": "radio frequency plot",
+        "role": "fact",
+        "text": "Signal intensity measured at 30 janskys, far above background noise"
+      },
+      {
+        "archive_query": "Wow! signal chart recorder image Wikimedia Commons",
+        "archive_label": "Wow! Printout",
+        "query": "old analog chart recorder paper",
+        "query2": "historic data printout radio",
+        "role": "archive",
+        "text": "Original printout of the Wow! signal on a chart recorder"
+      },
+      {
+        "label": "Unexplained Burst",
+        "sub": "No repeat signal ever recorded",
+        "label_on": "burst",
+        "query": "empty sky with static overlay",
+        "query2": "radio static over stars",
+        "role": "callout",
+        "text": "Unexplained Burst"
+      },
+      {
+        "query": "star field with subtle glow",
+        "query2": "night sky timelapse",
+        "role": "cta",
+        "text": "Follow for the cases no one can explain."
+      }
+    ],
+    "description": "The Wow! Signal remains the strongest candidate for an extraterrestrial transmission. Learn why it still haunts scientists.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#wowsignal",
+      "#seti",
+      "#space",
+      "#mystery",
+      "#unexplained"
+    ]
+  },
+  {
+    "title": "Ancient Gear Mystery",
+    "thumb": "LOST GEAR",
+    "place": "Antikythera Island",
+    "country": "Greece",
+    "scenes": [
+      {
+        "type": "hook",
+        "text": "A 2,000‑year‑old calculator lost a crucial gear",
+        "hook_top": "LOST GEAR DISCOVERED",
+        "query": "ancient bronze gear mechanism close‑up",
+        "query2": "archaeological metal artifact macro",
+        "role": "hook"
+      },
+      {
+        "type": "fact",
+        "text": "The bronze device dates to around 100 BC and predicts eclipses",
+        "chips": [
+          {
+            "t": "100 BC",
+            "on": "eclipses",
+            "style": "white"
+          }
+        ],
+        "punch": "eclipse",
+        "query": "antikythera mechanism close‑up view",
+        "query2": "ancient astronomical device details",
+        "role": "fact"
+      },
+      {
+        "type": "fact",
+        "text": "Scientists found a missing tooth‑shaped gear in a nearby wreck in 2014",
+        "chips": [
+          {
+            "t": "2014",
+            "on": "gear",
+            "style": "accent"
+          }
+        ],
+        "punch": "found",
+        "query": "underwater excavation Antikythera wreck",
+        "query2": "divers recovering ancient metal gear",
+        "role": "fact"
+      },
+      {
+        "type": "reveal",
+        "text": "The gear proves the Greeks built a true analog computer",
+        "reveal_top": "ANCIENT ANALOG COMPUTER",
+        "query": "antikythera mechanism gear reconstruction illustration",
+        "query2": "ancient analog computer diagram",
+        "role": "fact",
+        "chips": []
+      },
+      {
+        "type": "cta",
+        "text": "Follow if the unknown keeps you up at night.",
+        "query": "ancient scrolls texture background",
+        "query2": "old parchment ambience",
+        "role": "cta"
+      }
+    ],
+    "description": "A missing piece of the Antikythera Mechanism finally emerged, confirming its status as the world’s earliest analog computer. Dive into the details and stay tuned for more hidden histories.",
+    "hashtags": [
+      "#shorts",
+      "#fyp",
+      "#ancienttechnology",
+      "#antikythera",
+      "#mysteries",
+      "#history",
+      "#archaeology"
+    ]
   }
 ]

@@ -1,0 +1,68 @@
+{
+  "title": "Baghdad Battery Controversy",
+  "thumb": "ANCIENT POWER",
+  "place": "Karbala Museum",
+  "country": "Iraq",
+  "scenes": [
+    {
+      "hook_top": "CLAY JAR BATTERY",
+      "query": "ancient clay jar copper rod closeup",
+      "query2": "historic metal rod in pottery",
+      "role": "hook",
+      "text": "Could a 2,000‑year‑old clay jar be a battery?"
+    },
+    {
+      "query": "exterior view of Karbala Museum",
+      "query2": "Iraq museum building facade",
+      "role": "map",
+      "text": "The artifact resides in the Karbala Museum, Iraq"
+    },
+    {
+      "chips": [
+        {
+          "t": "1.5 volts",
+          "on": "volts",
+          "style": "accent"
+        }
+      ],
+      "punch": "produce",
+      "query": "experimental setup measuring voltage ancient jar",
+      "query2": "science lab ancient battery test",
+      "role": "fact",
+      "text": "Laboratory tests show the jar can produce about 1.5 volts when filled with acidic liquid"
+    },
+    {
+      "archive_query": "Baghdad Battery photograph early 1900s Wikimedia Commons",
+      "archive_label": "Historic battery photo",
+      "query": "black and white museum artifact photo",
+      "query2": "old image of clay jar with rod",
+      "role": "archive",
+      "text": "Early 20th‑century photograph of the Baghdad Battery"
+    },
+    {
+      "label": "UNSOLVED USE",
+      "sub": "Scholars argue it may have been a storage vessel, not a power source",
+      "label_on": "debated",
+      "query": "closeup of jar interior with rod",
+      "query2": "artifact cross‑section illustration",
+      "role": "callout",
+      "text": "Purpose Still Debated"
+    },
+    {
+      "query": "animated text follow subscribe",
+      "query2": "call to action graphic",
+      "role": "cta",
+      "text": "Follow for the cases no one can explain."
+    }
+  ],
+  "description": "The so‑called Baghdad Battery can generate a modest voltage, yet its true function remains disputed among archaeologists. Follow for more ancient tech debates.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#baghdadbattery",
+    "#iraq",
+    "#archaeology",
+    "#mystery",
+    "#unexplained"
+  ]
+}

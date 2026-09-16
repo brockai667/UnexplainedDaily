@@ -1,0 +1,68 @@
+{
+  "title": "Antikythera Missing Gear Mystery",
+  "thumb": "LOST GEAR",
+  "place": "Antikythera Island",
+  "country": "Greece",
+  "scenes": [
+    {
+      "hook_top": "BRONZE GEAR VANISHED",
+      "query": "ancient bronze gear closeup",
+      "query2": "old metal mechanism macro",
+      "role": "hook",
+      "text": "A bronze gear vanished from the ancient computer"
+    },
+    {
+      "query": "satellite view of Antikythera Island",
+      "query2": "Greek island coastline aerial",
+      "role": "map",
+      "text": "Found on a shipwreck off Antikythera Island, Greece"
+    },
+    {
+      "chips": [
+        {
+          "t": "Metonic cycle",
+          "on": "metonic",
+          "style": "accent"
+        }
+      ],
+      "punch": "lost",
+      "query": "antikythera mechanism gear detail",
+      "query2": "ancient Greek astronomical device",
+      "role": "fact",
+      "text": "Scientists still cannot locate the lost bronze tooth that should drive the Metonic cycle"
+    },
+    {
+      "archive_query": "Antikythera Mechanism 1902 excavation site Wikimedia Commons",
+      "archive_label": "1902 excavation shot",
+      "query": "historic black and white excavation photo",
+      "query2": "early 20th century archaeological dig",
+      "role": "archive",
+      "text": "The 1902 excavation photograph of the Antikythera Mechanism"
+    },
+    {
+      "label": "MISSING GEAR",
+      "sub": "The tooth that should turn the 19‑year cycle remains unfound",
+      "label_on": "missing",
+      "query": "closeup of ancient gear tooth missing",
+      "query2": "mechanical part gap macro",
+      "role": "callout",
+      "text": "Gear Still Missing"
+    },
+    {
+      "query": "animated text follow subscribe",
+      "query2": "call to action graphic",
+      "role": "cta",
+      "text": "Follow for a new mystery every day."
+    }
+  ],
+  "description": "The Antikythera Mechanism is the world’s oldest known computer, yet a crucial gear tooth is still absent. Could it be lost forever? Follow for more ancient tech puzzles.",
+  "hashtags": [
+    "#shorts",
+    "#fyp",
+    "#antikythera",
+    "#ancienttech",
+    "#mystery",
+    "#history",
+    "#unexplained"
+  ]
+}
