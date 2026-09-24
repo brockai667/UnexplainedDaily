@@ -1,0 +1,96 @@
+{
+ "title": "The Lake of Skeletons",
+ "topic": "Roopkund, the lake of skeletons",
+ "facts": [
+  "Roopkund is a high‑altitude glacial lake in the Himalayas at 5,020 m (16,470 ft) elevation in Chamoli District, Uttarakhand, India.",
+  "The lake is seldom more than 40 m in diameter, covering about 1,000‑1,500 m², and is about three metres deep.",
+  "Skeletons were rediscovered in 1942 by forest ranger Hari Kishan Madhwal of Nanda Devi National Park.",
+  "Radiocarbon dating shows one group of remains dates to around 800 CE (±30 years) and another to around 1800 CE.",
+  "Genomic analysis identified three ancestry groups: ~23 individuals with South‑Asian ancestry (~800 CE), one individual with Southeast‑Asian ancestry (~1800 CE), and 14 individuals with eastern‑Mediterranean ancestry (~1800 CE).",
+  "Local legend attributes the deaths to a sudden hailstorm that killed a pilgrimage party led by Raja Jasdhaval and Rani Balampa in the 9th century.",
+  "When the ice melts for about one month each year, the skeletal remains become visible in the clear water of the shallow lake.",
+  "Tourists have been removing bones, prompting district officials to call for protection of the site."
+ ],
+ "lines": [
+  {
+   "say": "In 1942, a ranger discovers a frozen lake.",
+   "shot": "walk_in",
+   "gold": {
+    "text": "1942"
+   },
+   "cue": "1942"
+  },
+  {
+   "say": "Clear water reveals skeletal remains.",
+   "shot": "spot",
+   "cue": "skeletal"
+  },
+  {
+   "say": "Radiocarbon dates one group to 800 CE.",
+   "shot": "dig",
+   "gold": {
+    "text": "800"
+   },
+   "cue": "800"
+  },
+  {
+   "say": "Another group dates to 1800 CE.",
+   "shot": "descend",
+   "gold": {
+    "text": "1800"
+   },
+   "cue": "1800"
+  },
+  {
+   "say": "Genomic analysis shows South‑Asian, Southeast‑Asian, and eastern‑Mediterranean ancestries.",
+   "shot": "scale_measure",
+   "cue": "ancestries"
+  },
+  {
+   "say": "Legend speaks of a hailstorm killing pilgrims.",
+   "shot": "human_stack",
+   "cue": "hailstorm"
+  },
+  {
+   "say": "Its discoverer believed the storm caused the deaths.",
+   "shot": "wide_reveal",
+   "cue": "believed"
+  },
+  {
+   "say": "The lake sits at 5,020 m, a high‑altitude basin.",
+   "shot": "timeline_compare",
+   "gold": {
+    "count": 5020,
+    "unit": "m"
+   },
+   "cue": "5,020"
+  },
+  {
+   "say": "Tourists remove bones, prompting officials to protect the site.",
+   "shot": "no_list",
+   "gold": {
+    "items": [
+     "NO METAL",
+     "NO WHEEL",
+     "NO WRITING"
+    ]
+   },
+   "cue": "officials"
+  },
+  {
+   "say": "Skeletons are older than pyramids, yet no metal, no wheel, no writing.",
+   "shot": "action_crowd",
+   "cue": "metal"
+  },
+  {
+   "say": "And nobody knows why.",
+   "shot": "punch",
+   "cue": "nobody"
+  },
+  {
+   "say": "What explains these mysterious remains?",
+   "shot": "loop_close",
+   "cue": "what"
+  }
+ ]
+}

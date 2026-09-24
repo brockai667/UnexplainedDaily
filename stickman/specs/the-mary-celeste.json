@@ -1,0 +1,101 @@
+{
+ "title": "The Ghost Ship Mystery",
+ "topic": "The Mary Celeste",
+ "facts": [
+  "The Canadian brigantine Dei Gratia found the Mary Celeste adrift off the Azores on 4 December 1872.",
+  "The ship was built on Spencers Island, Nova Scotia and launched as Amazon on 18 May 1861.",
+  "Its original dimensions were 99.3 ft length, 25.5 ft breadth, 11.7 ft depth and 198.42 gross tons.",
+  "After a 1872 refit its length was 103 ft, breadth 25.7 ft, depth 16.2 ft and displacement 282.28 tonnes.",
+  "The vessel left New York for Genoa on 7 November 1872, was still fully provisioned and its cargo of alcohol was intact when found.",
+  "The crew's personal belongings were undisturbed and the lifeboat was missing when the ship was discovered.",
+  "In 1885 the captain deliberately wrecked Mary Celeste off Haiti in an attempted insurance fraud.",
+  "The abandonment of the ship in 1872 remains unexplained; theories such as alcohol fumes, waterspouts, or paranormal causes are only interpretations."
+ ],
+ "world": "sea",
+ "hero": "sailor",
+ "lines": [
+  {
+   "say": "In 1872, Dei Gratia finds Mary Celeste.",
+   "shot": "walk_in",
+   "era": "historic",
+   "gold": {
+    "text": "1872"
+   },
+   "cue": "1872"
+  },
+  {
+   "say": "She drifts silent near the Azores.",
+   "shot": "punch",
+   "era": "historic",
+   "cue": "near"
+  },
+  {
+   "say": "Built on Spencers Island, launched as Amazon.",
+   "shot": "punch",
+   "era": "historic",
+   "cue": "Island"
+  },
+  {
+   "say": "Hull measures 103 ft after refit.",
+   "shot": "scale_measure",
+   "era": "historic",
+   "gold": {
+    "count": 103.0,
+    "unit": "ft",
+    "axis": "v"
+   },
+   "cue": "103"
+  },
+  {
+   "say": "Crew still left New York fully provisioned.",
+   "shot": "spot",
+   "era": "historic",
+   "cue": "York"
+  },
+  {
+   "say": "Cargo of alcohol stays sealed.",
+   "shot": "object_reveal",
+   "era": "historic",
+   "cue": "alcohol"
+  },
+  {
+   "say": "Personal items remain untouched in cabins.",
+   "shot": "spot",
+   "era": "historic",
+   "cue": "untouched"
+  },
+  {
+   "say": "Lifeboat disappears, leaving deck empty.",
+   "shot": "object_reveal",
+   "era": "historic",
+   "cue": "leaving"
+  },
+  {
+   "say": "Some think fumes frightened sailors.",
+   "shot": "theory",
+   "era": "historic",
+   "cue": "fumes",
+   "bubble": "fumes"
+  },
+  {
+   "say": "Others suggest waterspouts lifted it.",
+   "shot": "theory",
+   "era": "historic",
+   "cue": "waterspouts",
+   "bubble": "waterspouts"
+  },
+  {
+   "say": "And nobody knows why.",
+   "shot": "spot",
+   "era": "historic",
+   "cue": "knows"
+  },
+  {
+   "say": "What mystery still haunts this ghost ship?",
+   "shot": "loop_close",
+   "era": "historic",
+   "cue": "haunts"
+  }
+ ],
+ "speed": 1.12
+}

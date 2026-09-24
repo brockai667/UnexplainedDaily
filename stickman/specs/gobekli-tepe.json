@@ -1,0 +1,87 @@
+{
+ "title": "The Hidden Hill",
+ "lines": [
+  {
+   "say": "In 1994 an archaeologist walks onto a hill near Şanlıurfa.",
+   "shot": "walk_in",
+   "gold": {
+    "text": "1994"
+   },
+   "cue": "1994"
+  },
+  {
+   "say": "He spots a massive stone circle.",
+   "shot": "spot",
+   "cue": "massive"
+  },
+  {
+   "say": "He digs and uncovers a T‑shaped pillar.",
+   "shot": "dig",
+   "cue": "uncovers"
+  },
+  {
+   "say": "He descends and finds another standing stone.",
+   "shot": "descend",
+   "cue": "finds"
+  },
+  {
+   "say": "The pillar measures five point five metres tall.",
+   "shot": "scale_measure",
+   "gold": {
+    "count": 5.5,
+    "unit": "m"
+   },
+   "cue": "five"
+  },
+  {
+   "say": "Three workers stack stones without tools.",
+   "shot": "human_stack",
+   "cue": "stones"
+  },
+  {
+   "say": "A wide view reveals twelve enclosures across the plateau.",
+   "shot": "wide_reveal",
+   "cue": "twelve"
+  },
+  {
+   "say": "The site predates Stonehenge by six thousand years.",
+   "shot": "timeline_compare",
+   "cue": "thousand"
+  },
+  {
+   "say": "Builders had no metal, no wheel, no writing.",
+   "shot": "no_list",
+   "gold": {
+    "items": [
+     "NO METAL",
+     "NO WHEEL",
+     "NO WRITING"
+    ]
+   },
+   "cue": "metal"
+  },
+  {
+   "say": "He watches a crowd burying the stones around 8000 BC.",
+   "shot": "action_crowd",
+   "cue": "stones"
+  },
+  {
+   "say": "And nobody knows why.",
+   "shot": "loop_close",
+   "cue": "knows"
+  }
+ ],
+ "topic": "Gobekli Tepe",
+ "facts": [
+  "Göbekli Tepe was discovered in 1994 by German archaeologist Klaus Schmidt.",
+  "It is located on a limestone plateau in southeastern Turkey, near the city of Şanlıurfa, at an elevation of about 760 m.",
+  "The site consists of at least 12 circular and oval stone enclosures, the largest measuring roughly 20 m in diameter.",
+  "The central pillars are T‑shaped limestone monoliths up to 5.5 m tall and weighing up to 10 t each.",
+  "Radiocarbon dates place the earliest construction phase around 9600 BC, making it about 11,600 years old – older than Stonehenge by roughly 6,000 years.",
+  "The builders had no metal tools, wheel, or written language, and they did not practice agriculture at the time of construction.",
+  "Göbekli Tepe was deliberately backfilled and abandoned around 8000 BC, likely for unknown ritual reasons.",
+  "The purpose of the monumental carvings and the enclosures remains unknown; interpretations range from a ceremonial center to an early astronomical observatory.\"]",
+  "Some claims suggest Göbekli Tepe was a \"world's first temple,\" but this label is interpretive rather than proven.",
+  "The idea that the site marks a transition from hunter‑gatherer to settled societies is widely discussed but not definitively established."
+ ]
+}

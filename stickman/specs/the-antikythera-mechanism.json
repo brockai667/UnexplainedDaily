@@ -1,0 +1,104 @@
+{
+ "title": "The Lost Bronze Computer",
+ "topic": "The Antikythera mechanism",
+ "facts": [
+  "The Antikythera mechanism was retrieved from a Roman cargo ship wreck off the Greek island Antikythera in 1901, probably in July.",
+  "Greek politician Spyridon Stais noticed a gear in the artifact in 1902 during a museum visit, prompting study by his cousin Valerios Stais.",
+  "The device is housed in a wooden‑framed case measuring about 34 cm × 18 cm × 9 cm (13.4 in × 7.1 in × 3.5 in).",
+  "The largest gear is roughly 13 cm (5 in) in diameter and originally had 223 teeth.",
+  "Imaging in 2005 revealed the mechanism contained 35 meshing bronze gears, 30 of which are still visible.",
+  "It could predict astronomical positions, eclipses, and track the four‑year cycle of the ancient Olympic Games.",
+  "All fragments are kept at the National Archaeological Museum in Athens, displayed with reconstructions and replicas.",
+  "The shipwreck that carried the mechanism dates to approximately 70–60 BC, so the device must be older than that.",
+  "Its construction is dated variously to about 87 BC, between 150 and 100 BC, or 205 BC, making it centuries older than any known medieval analogue computer.",
+  "Machines of comparable complexity did not reappear until the 14th century in western Europe."
+ ],
+ "world": "shore",
+ "hero": "diver",
+ "lines": [
+  {
+   "say": "In 1901, a diver pulls a bronze box.",
+   "shot": "walk_in",
+   "gold": {
+    "text": "1901"
+   },
+   "cue": "1901",
+   "era": "ancient"
+  },
+  {
+   "say": "He lifts the wooden case measuring 34 cm × 18 cm × 9 cm.",
+   "shot": "scale_measure",
+   "gold": {
+    "count": 34.0,
+    "unit": "cm"
+   },
+   "cue": "34",
+   "era": "modern"
+  },
+  {
+   "say": "Spyridon Stais spots a gear and calls his cousin.",
+   "shot": "spot",
+   "cue": "gear",
+   "era": "ancient"
+  },
+  {
+   "say": "Valerios Stais opens the device and sees bronze teeth.",
+   "shot": "spot",
+   "cue": "device",
+   "era": "ancient"
+  },
+  {
+   "say": "Imaging in 2005 shows thirty visible gears interlocking.",
+   "shot": "detail_compare",
+   "gold": {
+    "text": "2005"
+   },
+   "cue": "2005",
+   "era": "modern"
+  },
+  {
+   "say": "Archaeologists think it predicts eclipses and Olympic cycles.",
+   "shot": "punch",
+   "cue": "eclipses",
+   "era": "ancient"
+  },
+  {
+   "say": "The largest gear holds two hundred twenty‑three teeth.",
+   "shot": "detail_compare",
+   "cue": "hundred",
+   "era": "ancient"
+  },
+  {
+   "say": "Its age predates Gutenberg's press by centuries.",
+   "shot": "timeline_compare",
+   "cue": "Gutenberg's",
+   "era": "ancient",
+   "vs": "gutenberg press"
+  },
+  {
+   "say": "All fragments rest in the National Archaeological Museum.",
+   "shot": "exhibit",
+   "cue": "National",
+   "era": "modern"
+  },
+  {
+   "say": "The device sits in a wooden‑framed case for viewers.",
+   "shot": "exhibit",
+   "cue": "wooden‑framed",
+   "era": "modern"
+  },
+  {
+   "say": "And nobody knows why it vanished from history.",
+   "shot": "action_crowd",
+   "cue": "vanished",
+   "era": "ancient"
+  },
+  {
+   "say": "Could this ancient computer outsmart modern machines?",
+   "shot": "loop_close",
+   "cue": "computer",
+   "era": "modern"
+  }
+ ],
+ "speed": 1.44
+}

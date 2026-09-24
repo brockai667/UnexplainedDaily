@@ -8,3 +8,14 @@ assets/broll/
 bin/
 __pycache__/
 *.pyc
+
+# stickman engine: pracovne subory, nie do repa
+stickman/work/
+stickman/out/
+stickman/renders/
+stickman/snapshots/
+stickman/index.html
+stickman/assets/audio/
+stickman/assets/img/
+stickman/__pycache__/
+kokoro/

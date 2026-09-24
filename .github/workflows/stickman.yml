@@ -1,0 +1,117 @@
+name: UnexplainedDaily Stickman
+
+on:
+  schedule:
+    - cron: "10 5 * * *"     # 05:10 UTC; beh trva ~15-30 min, prispevok sa planuje na 06-11 UTC
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Len vyrobit video a ulozit artefakt (nepublikovat)"
+        type: boolean
+        default: true
+      topic:
+        description: "Konkretna tema (prazdne = prva nepouzita z banky)"
+        type: string
+        default: ""
+
+permissions:
+  contents: write            # commit stavu (topics.json, specs/, published.json) + GitHub Release hosting
+
+concurrency:
+  group: stickman
+  cancel-in-progress: false
+
+jobs:
+  episode:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install FFmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Install Python deps
+        run: pip install requests cloudinary kokoro-onnx soundfile faster-whisper numpy scipy Pillow
+
+      # Kokoro (~350 MB) + faster-whisper model: bez cache sa tahaju kazdy den
+      - name: Cache Kokoro + Whisper modely
+        uses: actions/cache@v4
+        with:
+          path: |
+            kokoro
+            ~/.cache/huggingface
+          key: stickman-models-v1
+
+      # hyperframes stahuje Chromium (~150 MB) pri prvom spusteni
+      - name: Cache npx + Chromium
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.npm
+            ~/.cache/puppeteer
+            ~/.cache/ms-playwright
+          key: stickman-npx-v1
+
+      - name: Warm up hyperframes (stiahne Chromium do cache)
+        working-directory: stickman
+        run: npx --yes hyperframes --version
+
+      - name: Prepare config
+        run: cp config.example.json config.json
+
+      - name: Build episode
+        env:
+          MODELS_TOKEN: ${{ secrets.MODELS_TOKEN }}
+          MODELS_BASE_URL: https://api.groq.com/openai/v1
+          MODELS_MODEL: openai/gpt-oss-120b
+          MODELS_FALLBACK: openai/gpt-oss-20b
+          BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN }}
+          CLOUDINARY_CLOUD_NAME: ${{ secrets.CLOUDINARY_CLOUD_NAME }}
+          CLOUDINARY_API_KEY: ${{ secrets.CLOUDINARY_API_KEY }}
+          CLOUDINARY_API_SECRET: ${{ secrets.CLOUDINARY_API_SECRET }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # GitHub Release hosting videa
+          # SwiftShader namiesto GPU; `check` uz presiel lokalne, v cloude len zdrzuje
+          STICKMAN_SKIP_CHECK: "1"
+        run: |
+          ARGS=""
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.dry_run }}" = "true" ]; then
+            ARGS="--dry-run"
+          fi
+          if [ -n "${{ inputs.topic }}" ]; then
+            ARGS="$ARGS --topic \"${{ inputs.topic }}\""
+          fi
+          echo "run_daily.py $ARGS"
+          eval python stickman/run_daily.py $ARGS
+
+      - name: Upload episode artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: stickman-episode
+          path: |
+            stickman/out/*.mp4
+            stickman/out/*.jpg
+            stickman/out/*.txt
+            stickman/specs/*.json
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Persist state
+        if: success() && !(github.event_name == 'workflow_dispatch' && inputs.dry_run)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          rm -f config.json
+          git add stickman/topics.json stickman/specs stickman/published.json pushed.json 2>/dev/null || true
+          git commit -m "stickman: $(date -u +%F)" || { echo "nic na commit"; exit 0; }
+          git pull --rebase --autostash
+          git push
