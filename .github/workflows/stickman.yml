@@ -1,12 +1,15 @@
 name: UnexplainedDaily Stickman
 
+# POZOR: cron je zamerne VYPNUTY. Engine kresli archetyp a nahodnu rekvizitu,
+# nie obsah vety (sud pri "crew belongings", zvon pri "no sign of struggle"),
+# takze epizody sa zatial NEPUBLIKUJU. Az po prerobeni na katalog scen sem vrat:
+#   schedule:
+#     - cron: "10 5 * * *"   # 05:10 UTC; prispevok sa planuje na 06-11 UTC
 on:
-  schedule:
-    - cron: "10 5 * * *"     # 05:10 UTC; beh trva ~15-30 min, prispevok sa planuje na 06-11 UTC
   workflow_dispatch:
     inputs:
       dry_run:
-        description: "Len vyrobit video a ulozit artefakt (nepublikovat)"
+        description: "Len vyrobit video a ulozit artefakt (publikovanie je zatial zakazane)"
         type: boolean
         default: true
       topic:
