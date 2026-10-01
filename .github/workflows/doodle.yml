@@ -64,9 +64,10 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
 
       # sp.py: pyyaml numpy soundfile Pillow + voice (kokoro-onnx, faster-whisper); qa.py: numpy Pillow playwright;
+      # verzie hlasu pripnute na tie z vyvojoveho PC: novsi PyAV (av) rozbil faster-whisper (open() bez metadata_errors, 1.10.2026)
       # publishing (stickman/run_daily.py -> push_to_buffer.py): requests, cloudinary (hosting fallback)
       - name: Install Python deps
-        run: pip install requests cloudinary kokoro-onnx soundfile faster-whisper numpy scipy Pillow pyyaml playwright
+        run: pip install requests cloudinary kokoro-onnx==0.4.7 soundfile faster-whisper==1.2.1 av==17.1.0 numpy scipy Pillow pyyaml playwright
 
       # Kokoro (~350 MB) lands in <repo>/kokoro (doodle/engine/tts_kokoro.py), faster-whisper base.en in the HF cache:
       # without the cache both are downloaded on every run
