@@ -1,0 +1,144 @@
+# Captain of Koepenick 1906 - self-test of custom shapes, parts, carrying, bursts, follow cam (python sp.py episodes/koepenick)
+title: Captain of Koepenick
+voice: {voice: am_michael, speed: 1.10, pause: 0.30}
+tail: 1.2
+
+sentences:
+  s1: In 1906, a poor shoemaker bought an old army captain's uniform.
+  s2: He stopped ten real soldiers in the street, and they obeyed him.
+  s3: They marched to the town hall, and he walked out with the city's cash.
+
+gold:
+  - {word: "1906", label: "1906", kind: stamp, top: 120, size: 120}
+  - {word: ten, label: "10", kind: counter, top: 110, size: 130}
+
+styles:
+  wood: {fill: "#b08968", width: 6}
+  cloth: {fill: "#3d5a80", width: 6}
+  brass: {fill: "#ffd166", width: 4}
+  wall: {fill: "#e9d8a6", width: 7}
+  roof: {fill: "#9c6644", width: 7}
+  glass: {fill: "#8ecae6", width: 5}
+
+shapes:
+  counter:                                   # origin = bottom centre
+    - {rect: [-150, -110, 300, 110, 6], style: wood}
+    - {line: [[-150, -82], [150, -82]], width: 5}
+  uniform:                                   # coat on a hanger, origin = hook
+    - {path: "M0,8 Q0,-10 12,-10", width: 5}
+    - {line: [[-60, 30], [0, 8], [60, 30]], width: 6}
+    - {group: sleeve, pivot: [-56, 34], items: [{poly: [[-58, 32], [-86, 150], [-64, 158], [-44, 62]], style: cloth}]}
+    - {poly: [[58, 32], [86, 150], [64, 158], [44, 62]], style: cloth}
+    - {poly: [[-58, 30], [58, 30], [66, 190], [-66, 190]], style: cloth}
+    - {line: [[0, 34], [0, 188]], width: 4}
+    - {circle: [-12, 76, 6], style: brass}
+    - {circle: [-12, 116, 6], style: brass}
+    - {circle: [-12, 156, 6], style: brass}
+    - {rect: [-66, 26, 30, 12, 4], style: brass}
+    - {rect: [36, 26, 30, 12, 4], style: brass}
+  coin:
+    - {circle: [0, 0, 15], style: brass}
+    - {text: [0, 1, "$"], size: 20}
+  townhall:                                  # origin = bottom centre
+    - {rect: [-60, -470, 120, 220, 4], style: wall}
+    - {poly: [[-75, -470], [0, -545], [75, -470]], style: roof}
+    - {circle: [0, -405, 38], fill: white}
+    - {group: hand, pivot: [0, -405], items: [{line: [[0, -405], [0, -432]], width: 6}]}
+    - {rect: [-230, -260, 460, 260, 4], style: wall}
+    - {poly: [[-250, -258], [0, -330], [250, -258]], style: roof}
+    - {rect: [-40, -120, 80, 120, 4], fill: "#8d6e63"}
+    - {rect: [-190, -215, 60, 70, 4], style: glass}
+    - {rect: [130, -215, 60, 70, 4], style: glass}
+    - {rect: [-190, -115, 60, 70, 4], style: glass}
+    - {rect: [130, -115, 60, 70, 4], style: glass}
+  cashbox:                                   # origin = centre of the box
+    - {rect: [-40, -18, 80, 46, 6], fill: "#6d6875"}
+    - {group: lid, pivot: [-40, -18], items: [{rect: [-42, -32, 84, 16, 5], fill: "#8d8a99"}]}
+    - {circle: [0, 6, 6], style: brass}
+
+scenes:
+  - id: shop
+    sents: [s1]
+    set:
+      - {kind: ground, y: 860, tufts: [60, 660]}
+      - {kind: line, points: [[400, 540], [650, 540]], width: 7}
+      - {id: coat, kind: shape, shape: uniform, x: 525, y: 548}
+      - {id: counter, kind: shape, shape: counter, x: 525, y: 860}
+    props:
+      - {id: coin, kind: shape, shape: coin, x: 0, y: 0, hidden: true, layer: top}
+    cast:
+      - {id: shoe, x: 230, gy: 862, k: 1.5, hair: "#6d4c41", face: ok}
+    beats:
+      - {at: 0, who: shoe, do: enter, from: left, to: 230, dur: 1.3}
+      - {at: 0, who: coat.sleeve, do: rock, amp: 4, freq: 0.9, until: "word:uniform"}
+      - {at: "word:shoemaker", who: shoe, do: look, target: coat}
+      - {at: "word:bought-0.45", who: shoe, do: pose, name: reach}
+      - {at: prev, who: coin, do: attach, to: shoe}
+      - {at: prev, who: coin, do: pop}
+      - {at: "word:bought+0.1", who: coin, do: detach}
+      - {at: prev, who: coin, do: move, to: [470, 742], dur: 0.45, ease: power2.in, sfx: tick}
+      - {at: "word:army", who: shoe, do: point, target: coat}
+      - {at: prev, who: shoe, do: face, name: wow}
+      - {at: "word:uniform", who: coat, do: jiggle, amp: 0.08}
+      - {at: prev, who: coat.sleeve, do: rock, amp: 7, freq: 1.4}
+      - {at: "word:uniform+0.1", who: cam, do: push, zoom: 1.25, target: [480, 640], screen: [420, 640], dur: 0.8}
+
+  - id: street
+    sents: [s2]
+    in: {type: slide}
+    set:
+      - {kind: sky, clouds: [[110, 260, 130], [590, 330, 110]], drift: 6}
+      - {kind: house, x: 110, y: 860, w: 140, h: 110, wall: "#e9c46a"}
+      - {kind: house, x: 620, y: 860, w: 130, h: 104, wall: "#f4a261"}
+      - {kind: ground, y: 860}
+    props:
+      - {id: dust, kind: emitter, emitter: dust, on: s2, anchor: feet}
+    cast:
+      - {id: capt, x: 170, gy: 902, k: 1.35, cap: navy, coat: "#3d5a80", coat_len: 30, hair: "#9e9e9e", face: flat}
+      - {id: s1, x: 360, gy: 902, k: 1.15, cap: "#264653", coat: "#52796f", coat_len: 14, face: flat}
+      - {id: s2, x: 440, gy: 902, k: 1.15, cap: "#264653", coat: "#52796f", coat_len: 14, face: flat}
+      - {id: s3, x: 520, gy: 902, k: 1.15, cap: "#264653", coat: "#52796f", coat_len: 14, face: flat}
+      - {id: s4, x: 600, gy: 902, k: 1.15, cap: "#264653", coat: "#52796f", coat_len: 14, face: flat}
+    beats:
+      - {at: scene, who: s1, do: enter, from: right, to: 360, until: "word:street"}
+      - {at: "scene+0.12", who: s2, do: enter, from: right, to: 440, until: "word:street+0.1"}
+      - {at: "scene+0.24", who: s3, do: enter, from: right, to: 520, until: "word:street+0.2"}
+      - {at: "scene+0.36", who: s4, do: enter, from: right, to: 600, until: "word:street+0.3"}
+      - {at: scene, who: dust, do: emit, until: "word:street"}
+      - {at: "word:stopped", who: capt, do: pose, name: stop}
+      - {at: prev, who: capt, do: face, name: shout}
+      - {at: "word:obeyed", who: capt, do: pose, name: stand}
+      - {at: prev, who: capt, do: face, name: happy}
+      - {at: "word:obeyed", who: s1, do: nod, until: "word:obeyed+0.9"}
+      - {at: "word:obeyed+0.08", who: s2, do: nod, until: "word:obeyed+0.9"}
+      - {at: "word:obeyed+0.16", who: s3, do: nod, until: "word:obeyed+0.9"}
+      - {at: "word:obeyed+0.24", who: s4, do: nod, until: "word:obeyed+0.9"}
+      - {at: "word:obeyed", who: cam, do: push, zoom: 1.15, target: [360, 720], screen: [360, 700], dur: 0.7}
+
+  - id: hall
+    sents: [s3]
+    in: {type: whip, target: "capt:head", from: [360, 640]}
+    set:
+      - {kind: sky, clouds: [[100, 200, 120], [620, 260, 110]], drift: 5}
+      - {kind: ground, y: 900, x0: -300, x1: 1100}
+      - {id: hall, kind: shape, shape: townhall, x: 360, y: 900}
+      - {kind: text, x: 360, y: 700, text: TOWN HALL, size: 34}
+    props:
+      - {id: box, kind: shape, shape: cashbox, x: 360, y: 860, hidden: true, layer: top}
+      - {id: coins, kind: emitter, emitter: sparks, shape: coin, on: box, anchor: center, n: 9, layer: top}
+    cast:
+      - {id: s1, x: 180, gy: 902, k: 1.1, cap: "#264653", coat: "#52796f", coat_len: 14, face: flat}
+      - {id: s2, x: 250, gy: 902, k: 1.1, cap: "#264653", coat: "#52796f", coat_len: 14, face: flat}
+      - {id: capt, x: 360, gy: 902, k: 1.25, cap: navy, coat: "#3d5a80", coat_len: 30, hair: "#9e9e9e", face: happy, hidden: true}
+    beats:
+      - {at: scene, who: hall.hand, do: spin, speed: 140}
+      - {at: scene, who: s1, do: enter, from: left, to: 180, until: "word:hall"}
+      - {at: "scene+0.15", who: s2, do: enter, from: left, to: 250, until: "word:hall+0.15"}
+      - {at: "word:walked-0.3", who: capt, do: show}
+      - {at: prev, who: box, do: attach, to: capt, offset: [8, 0]}
+      - {at: prev, who: box, do: show}
+      - {at: "word:walked", who: capt, do: walk_to, to: 600, dur: 1.4}
+      - {at: prev, who: cam, do: follow, target: capt, dur: 1.9, zoom: 1.2}
+      - {at: "word:cash", who: box.lid, do: rotate, to: -55, dur: 0.25, ease: back.out(2)}
+      - {at: prev, who: coins, do: burst, sfx: [tick, 0.5]}
+      - {at: "word:cash+0.1", who: capt, do: face, name: wow}

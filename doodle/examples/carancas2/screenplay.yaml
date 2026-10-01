@@ -1,0 +1,246 @@
+# Carancas 2007 - the whole episode as data (compiled by: python sp.py episodes/carancas2)
+title: Carancas 2007
+voice: {voice: am_michael, speed: 1.10, pause: 0.30}
+tail: 2.0
+music: C:\Users\damia\RiddleFactory\music\sneaky_snitch.mp3
+loop: {at: "s10.end+0.55", dur: 1.3}
+
+sentences:
+  s1: September 2007. A fireball tears across the sky over a village in Peru.
+  s2: The blast shatters windows a kilometre away.
+  s3: It leaves a crater thirteen metres wide, filled with boiling water.
+  s4: Six hundred villagers come to look.
+  s5: Soon two hundred of them are sick.
+  s6: Officials warn everyone to stay away from the rock.
+  s7: But the rock is an ordinary meteorite. The poison was already there.
+  s8: The groundwater is full of arsenic, and the hot stone turned it into steam.
+  s9: "One doctor blamed something else: fear."
+  s10: "So what made them sick: poison, or panic?"
+
+gold:
+  - {word: "2007", label: "2007", kind: stamp, top: 128, size: 120, stamp: {from: 2.4, r0: -14, r1: -4}}
+  - {word: thirteen, label: "13 m", kind: measure, points: [[244, 684], [476, 684]], label_at: [360, 645], size: 37, until: "word:Six-0.4"}
+  - {word: Six, label: "600", kind: counter, top: 112, size: 124, until: "word:two-0.1"}
+  - {word: two, label: "200", kind: stamp, top: 112, size: 124, until: "word:Officials-0.1"}
+  - {word: s10/poison, label: "POISON|OR PANIC?", kind: stamp, top: 96, size: 86, stamp: {from: 2.0, r0: -8, r1: -3}}
+
+scenes:
+  # ---------------------------------------------------------------- A: the fireball over the village
+  - id: village
+    sents: [s1, s2]
+    set:
+      - {kind: sky, clouds: [[62, 250, 112], [606, 476, 112]], drift: 9}
+      - {kind: mountains, base: 860}
+      - {id: fireball, kind: meteor, path: [[-70, 366], [220, 316], [520, 398], [615, 778]], smoke: 26}
+      - {id: boom, kind: impact, at: [612, 690], clip: 852}
+      - {kind: hill, x0: 380, x1: 780, top: 684, base: 860, peak: 612}
+      - {kind: ground, y: 856}
+      - {id: clinic, kind: building, type: clinic, x: 107, y: 856, w: 178, h: 140}
+      - {id: house, kind: house, x: 286, y: 856, w: 128, h: 102, wall: "#f4a261"}
+      - {id: wave, kind: shockwave, at: [615, 856], speed: 390}
+      - {kind: ground, y: 905, x0: -40, x1: 560, tufts: [470, 525]}
+    cast:
+      - {id: man, x: 400, gy: 904, k: 1.55, hat: [red, yellow]}
+      - {id: cyclist, kind: rider, x: -150, gy: 903, k: 0.92, bike: teal, hat: [teal, yellow]}
+    props:
+      - {id: stars, kind: emitter, emitter: stars, on: cyclist}
+      - {id: birds, kind: emitter, emitter: birds, at: [286, 690]}
+    beats:
+      - {at: 0, who: man, do: enter, from: -80, to: 400, dur: 1.55, dec: 0.4}
+      - {at: 1.62, who: man, do: look, target: up}
+      - {at: "word:fireball", who: fireball, do: fly, until: "word:Peru+0.29", acc: 0.34}
+      - {at: "word:fireball+0.08", who: man, do: turn, facing: l}
+      - {at: "word:fireball+0.1", who: man, do: face, name: wow}
+      - {at: "word:fireball+0.14", who: man, do: point, target: fireball}
+      - {at: "word:fireball+0.14", who: man, do: look, target: fireball}
+      - {at: "word:over", who: man, do: turn, facing: r}
+      - {at: "word:Peru+0.29", who: boom, do: explode}
+      - {at: prev, who: wave, do: go}
+      - {at: prev, who: cam, do: shake, amp: 14, dur: 0.34}
+      - {at: prev, who: fx, do: flash, peak: 0.62}
+      - {at: prev, who: man, do: pose, name: cover, dur: 0.1}
+      - {at: prev, who: man, do: face, name: shout}
+      - {at: 3.0, who: cyclist, do: ride, from: -150, to: 167, until: "hit:wave@x=267"}
+      - {at: "hit:wave@house", who: birds, do: burst}
+      - {at: "hit:wave@man", who: man, do: jump_back}
+      - {at: prev, who: cam, do: shake, amp: 7, dur: 0.2}
+      - {at: "hit:wave@man+0.42", who: man, do: point, target: "boom", dur: 0.26}
+      - {at: "hit:wave@man+0.42", who: man, do: look, target: boom}
+      - {at: "hit:wave@man+0.7", who: man, do: tremble, amount: 0.9}
+      - {at: "hit:wave@house", who: house, do: jiggle, amp: 0.11}
+      - {at: "hit:wave@x=267", who: cyclist, do: wobble}
+      - {at: "prev+0.38", who: cyclist, do: tip_over, dur: 0.34}
+      - {at: "prev.end+0.05", who: stars, do: emit}
+      - {at: "prev+0.5", who: cyclist, do: wave}
+      - {at: "hit:wave@x=156", who: clinic, do: shatter, window: 1}
+      - {at: "hit:wave@x=58", who: clinic, do: shatter, window: 0}
+      - {at: "hit:wave@clinic", who: clinic, do: jiggle, amp: 0.06, freq: 7, decay: 7}
+      - {at: 6.2, who: cam, do: push, zoom: 1.2, target: [200, 800], screen: [200, 800], dur: 0.55}
+
+  # ---------------------------------------------------------------- B-D: crater, crowd, warning (one camera)
+  - id: crater
+    sents: [s3, s4, s5, s6]
+    in: {type: whip, target: [612, 690], from: [360, 845]}
+    camera: {zoom: 2.381, at: [360, 700], screen: [360, 440]}
+    fixed_strokes: true
+    set:
+      - {kind: sky, clouds: [[96, 250, 140], [612, 236, 118]], drift: 4}
+      - {kind: mountains, base: 700, peaks: [[150, 700], [215, 640], [290, 578], [355, 612], [430, 556], [505, 628], [570, 700]]}
+      - {kind: ground, y: 700, x0: -240, x1: 980, gaps: [[240, 480]], tufts: [20, 150, 560, 680]}
+      - {id: tent, kind: tent, x: 62, y: 692, scale: 0.9, hidden: true}
+      - {id: crater, kind: crater, x: 360, y: 700, scale: 0.42, level: empty}
+      - {id: fumesL, kind: emitter, emitter: fumes, at: [330, 690], drift: -230, rise: 170, n: 5, color: "#edf5d8"}
+      - {id: fumesR, kind: emitter, emitter: fumes, at: [390, 690], drift: 230, rise: 170, n: 5, color: "#edf5d8"}
+      - {id: tape, kind: tape, x0: 232, x1: 488, y: 704}
+      - {id: sign, kind: sign, x: 462, y: 716, scale: 0.62}
+    props:
+      - {id: shout, kind: emitter, emitter: sound, on: official}
+    cast:
+      - {id: v1, x: 200, gy: 718, k: 0.95, hat: [red, yellow]}
+      - {id: v2, x: 132, gy: 718, k: 0.95, hat: [teal, "#e9c46a"]}
+      - {id: v3, x: -8, gy: 718, k: 0.95, hat: [purple, "#ffbe0b"]}
+      - {id: v7, x: 640, gy: 692, k: 0.78, facing: l, hat: [pink, white]}
+      - {id: v4, x: 510, gy: 718, k: 0.95, facing: l, hat: [orange, cream]}
+      - {id: v5, x: 570, gy: 718, k: 0.95, facing: l, hat: [red, yellow]}
+      - {id: v6, x: 640, gy: 718, k: 0.95, facing: l, hat: [teal, "#e9c46a"]}
+      - {id: nurse, x: 62, gy: 692, k: 0.8, nurse: true, coat: true, coat_len: 30, hair: "#6d4c41", hidden: true, face: flat}
+      - {id: official, x: 650, gy: 842, k: 1.12, facing: l, cap: navy, coat: "#3d5a80", coat_len: 14, hair: "#3b2a1e", face: flat}
+    beats:
+      - {at: "word:filled-0.08", who: crater, do: water_level, to: full, dur: 0.63}
+      - {at: "word:boiling-0.05", who: crater, do: boil}
+      - {at: "word:boiling+0.02", who: crater, do: splash}
+      - {at: "word:water+0.05", who: crater, do: splash}
+      - {at: "word:Six-0.4", who: cam, do: pull, zoom: 1.1, target: [360, 650], screen: [360, 620], dur: 0.62}
+      # the crowd walks in from both sides
+      - {at: "word:Six-0.25", who: v1, do: enter, from: left, to: 200, until: "word:look-0.25"}
+      - {at: "word:Six-0.12", who: v2, do: enter, from: left, to: 132, until: "word:look-0.16"}
+      - {at: "word:Six+0.01", who: v3, do: enter, from: left, to: -8, until: "word:look-0.07"}
+      - {at: "word:Six-0.25", who: v4, do: enter, from: right, to: 510, until: "word:look-0.25"}
+      - {at: "word:Six-0.12", who: v5, do: enter, from: right, to: 570, until: "word:look-0.16"}
+      - {at: "word:Six+0.01", who: v6, do: enter, from: right, to: 640, until: "word:look-0.07"}
+      - {at: "word:Six+0.14", who: v7, do: enter, from: right, to: 640, until: "word:look-0.01"}
+      - {at: "word:look-0.2", who: v1, do: face, name: curious}
+      - {at: "word:look-0.15", who: v4, do: face, name: curious}
+      - {at: "word:look-0.1", who: v2, do: face, name: curious}
+      - {at: "word:look", who: v6, do: pose, name: lean_in}
+      # two hundred get sick (one by one); the camera leans in on the left group
+      - {at: "word:two-0.45", who: cam, do: push, zoom: 1.35, target: [175, 660], screen: [360, 600], dur: 0.6}
+      - {at: "word:sick-1.5", who: fumesL, do: emit}
+      - {at: prev, who: fumesR, do: emit}
+      - {at: "word:two-0.1", who: v1, do: get_sick, style: belly}
+      - {at: "word:two+0.07", who: v2, do: get_sick, style: sit}
+      - {at: "word:two+0.24", who: v5, do: get_sick, style: sit}
+      - {at: "word:two+0.5", who: v6, do: exit, to: right, dur: 1.4}
+      - {at: "word:two+0.62", who: v7, do: exit, to: right, dur: 1.4}
+      - {at: "word:two+0.45", who: tent, do: pop}
+      - {at: "word:two+0.73", who: nurse, do: show}
+      - {at: prev, who: nurse, do: walk_to, to: 168, dur: 0.55, stride: 150, lift: 22}
+      - {at: "prev.end", who: nurse, do: pose, name: help}
+      - {at: prev, who: nurse, do: face, name: worried}
+      # the officials
+      - {at: "word:Officials-0.7", who: official, do: enter, from: 890, to: 650, dur: 1.0}
+      - {at: "word:Officials-0.35", who: cam, do: pan, zoom: 1.2, target: [505, 660], screen: [360, 610], dur: 0.65}
+      - {at: "word:Officials+0.2", who: official, do: hold, prop: megaphone}
+      - {at: prev, who: official, do: pose, name: megaphone}
+      - {at: "word:Officials+0.4", who: official, do: face, name: shout}
+      - {at: "word:Officials+0.45", who: shout, do: emit, until: "word:stay+0.75"}
+      - {at: "word:Officials+0.55", who: tape, do: unroll, dur: 0.7}
+      - {at: "word:stay-0.1", who: sign, do: hammer, hits: 3, every: 0.2}
+      - {at: "word:stay-0.04", who: v4, do: step_back}
+      - {at: prev, who: v3, do: step_back}
+      - {at: "word:stay+0.1", who: official, do: pose, name: stop}
+      - {at: "word:stay+0.07", who: cam, do: shake, amp: 4, dur: 0.12}
+      - {at: "word:stay+0.27", who: cam, do: shake, amp: 4, dur: 0.12}
+      - {at: "word:stay+0.47", who: cam, do: shake, amp: 5, dur: 0.12}
+
+  # ---------------------------------------------------------------- E-F: ordinary rock, groundwater, steam
+  - id: under
+    sents: [s7, s8]
+    in: {type: slide}
+    camera: {zoom: 1.25, at: [440, 560], screen: [360, 560]}
+    set:
+      - {kind: sky, clouds: [[120, 250, 140], [610, 200, 112]], drift: 5}
+      - {kind: mountains, base: 640, peaks: [[-40, 640], [60, 560], [150, 600], [250, 520], [350, 590], [450, 540], [560, 600], [660, 530], [780, 600]]}
+      - {kind: underground, top: 640, water: 1292, pit: [470, 144], crack: [[470, 652], [458, 720], [484, 800], [462, 880], [488, 960], [464, 1050], [486, 1140], [470, 1292]]}
+      - {id: arsenic, kind: emitter, emitter: particles, box: [30, 1350, 660, 330], label: As, n: 24, r: [16, 26]}
+      - {id: stone, kind: rock, x: 470, y: 616, glow: false}
+    props:
+      - {id: tick, kind: shape, shape: check, x: 478, y: 598, hidden: true}
+      - {id: hissB, kind: emitter, emitter: bubbles, at: [470, 1330], rise: 110, spread: 140}
+      - {id: hissS, kind: emitter, emitter: steam, at: [470, 1300], rise: 70, spread: 110, r: [26, 36], period: 1.0}
+      - {id: green, kind: emitter, emitter: fumes, n: 12, period: 1.5, r: [32, 44], s0: 0.6, s1: 1.15,
+         path: [[470, 1290], [486, 1140], [464, 1050], [488, 960], [462, 880], [484, 800], [458, 720], [470, 646], [540, 520], [596, 404]]}
+    cast:
+      - {id: res, x: 320, gy: 640, k: 1.4, coat: true, glasses: true, hair: "#a3a3a3", face: flat}
+      - {id: w1, x: 598, gy: 640, k: 1.15, facing: l, hat: [blue, "#ffd166"]}
+      - {id: w2, x: 668, gy: 640, k: 1.2, facing: l, hat: [pink, white]}
+    beats:
+      - {at: scene, who: res, do: pose, name: kneel, target: [376, 580], dur: 0.01}
+      - {at: scene, who: res, do: hold, prop: magnifier}
+      - {at: scene, who: res, do: look, target: stone}
+      - {at: "word:ordinary", who: tick, do: stamp, sfx: thud}
+      - {at: prev, who: res, do: face, name: ok}
+      - {at: "word:ordinary+0.35", who: res, do: nod, until: "word:poison-0.05"}
+      - {at: "word:ordinary-0.1", who: w1, do: pose, name: lean_in}
+      - {at: "word:ordinary", who: w2, do: point, target: stone}
+      - {at: "word:ordinary+0.25", who: cam, do: push, zoom: 1.36, target: [450, 572], screen: [360, 575], until: "word:poison-0.05", ease: sine.inOut}
+      - {at: "word:poison+0.2", who: tick, do: fade, to: 0, dur: 0.3}
+      - {at: "word:poison-0.05", who: cam, do: tilt, zoom: 1.0, target: [360, 1420], screen: [360, 600], until: "word:there+0.1"}
+      - {at: "word:arsenic", who: arsenic, do: pulse}
+      - {at: "word:hot-0.1", who: stone, do: move, to: [470, 1340], until: "word:stone+0.1", ease: power2.in, sfx: [whoosh, 0.3]}
+      - {at: prev, who: stone, do: rotate, to: 160, until: "word:stone+0.1", ease: power2.in}
+      - {at: "word:stone+0.1", who: hissB, do: emit, until: "word:stone+1.0", sfx: [hiss, 0.6]}
+      - {at: "word:stone+0.2", who: hissS, do: emit, until: "word:stone+0.6"}
+      - {at: "word:turned-0.15", who: green, do: emit, until: "word:turned+1.05"}
+      - {at: "word:turned-0.02", who: cam, do: tilt, zoom: 1.25, target: [440, 560], screen: [360, 560], until: "word:steam+0.3"}
+      - {at: "word:steam+0.3", who: w1, do: sniff}
+      - {at: "word:steam+0.4", who: w2, do: sniff}
+      - {at: "word:steam+0.2", who: res, do: face, name: sick}
+      - {at: prev, who: res, do: pose, name: recoil}
+
+  # ---------------------------------------------------------------- G: the doctor
+  - id: doctor
+    sents: [s9]
+    in: {type: drop}
+    set:
+      - {kind: sky, clouds: [[120, 230, 140]], drift: 6}
+      - {kind: tent, x: 610, y: 806, scale: 0.7}
+      - {kind: ground, y: 862, tufts: [60, 330, 640]}
+    cast:
+      - {id: doc, x: 185, gy: 866, k: 1.6, coat: true, stetho: true, mirror: true, hair: "#3b2a1e", face: flat}
+      - {id: vil, x: 500, gy: 866, k: 1.55, facing: l, hat: [orange, cream], face: scared}
+    props:
+      - {id: cloud, kind: thought, on: vil}
+      - {id: sweat, kind: emitter, emitter: sweat, on: vil}
+    beats:
+      - {at: scene, who: vil, do: pose, name: clasp, dur: 0.01}
+      - {at: scene, who: vil, do: tremble, amount: 1.4}
+      - {at: "scene+0.3", who: sweat, do: emit}
+      - {at: "word:doctor-0.05", who: doc, do: pose, name: think}
+      - {at: prev, who: doc, do: look, target: vil}
+      - {at: "word:blamed+0.05", who: doc, do: pose, name: shrug, dur: 0.3}
+      - {at: prev, who: doc, do: face, name: think}
+      - {at: "word:something-0.1", who: cloud, do: pop}
+      - {at: "word:something", who: vil, do: look, target: up}
+      - {at: "word:fear-0.1", who: doc, do: pose, name: stand, dur: 0.2}
+      - {at: prev, who: doc, do: point, target: cloud}
+      - {at: prev, who: doc, do: face, name: shout}
+      - {at: "word:fear-0.05", who: cloud, do: grow, to: 1.35}
+      - {at: prev, who: cloud, do: darken}
+      - {at: prev, who: vil, do: pose, name: cower}
+      - {at: prev, who: vil, do: tremble, amount: 4}
+      - {at: "word:fear", who: cloud, do: bolt}
+
+  # ---------------------------------------------------------------- H: poison or panic + loop home
+  - id: finale
+    sents: [s10]
+    in: {type: zoom, target: "vil:head", from: [540, 600]}
+    props:
+      - {id: divider, kind: line, points: [[360, 318], [354, 520], [363, 720], [358, 906]], width: 8}
+      - {id: bottle, kind: flask, x: 180, y: 600, label: As}
+      - {id: face, kind: bigface, x: 540, y: 600, r: 150, hat: [orange, cream]}
+    beats:
+      - {at: "word:So+0.05", who: divider, do: draw_line, dur: 0.35}
+      - {at: "word:sick", who: bottle, do: jiggle, amp: 0.05}
+      - {at: "word:poison", who: bottle, do: jiggle, amp: 0.12, freq: 4, decay: 5}
+      - {at: "word:panic", who: face, do: bump}

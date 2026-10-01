@@ -1,0 +1,763 @@
+# The Devil's Footprints, Devon 1855 (compiled by: python sp.py episodes/devon1855)
+title: The Devil's Footprints
+voice: {voice: am_michael, speed: 1.10, pause: 0.30}
+tail: 2.0
+music: sneaky_snitch.mp3
+loop: {at: "s10.end+0.55", dur: 1.3}
+
+sentences:
+  s1: February 1855. Devon, England. Overnight, heavy snow covers the county.
+  s2: In the morning people find a trail of hoof prints in the snow.
+  s3: Each print is four inches long, and they run in a single line.
+  s4: The trail climbs onto roofs, over high walls and haystacks, and comes down the other side.
+  s5: It even goes in and out of a drainpipe four inches wide.
+  s6: "Town after town reports the same marks: Exmouth, Topsham, Dawlish, Teignmouth."
+  s7: In one night the trail covers up to one hundred miles.
+  s8: Villagers with guns follow it for miles. It leads nowhere.
+  s9: A vicar blames a kangaroo. Others say badgers, mice, or a runaway balloon.
+  s10: The creature is never found. The Devil's Footprints remain unexplained.
+
+gold:
+  - {word: "1855", label: "1855", kind: stamp, top: 128, size: 120, until: "word:heavy", stamp: {from: 2.4, r0: -14, r1: -4}}
+  - {word: s3/four, label: "4 IN", kind: measure, points: [[192, 736], [254, 736]], label_at: [223, 716], size: 15}
+  - {word: up, label: "100 MILES", kind: counter, top: 112, size: 100, dur: 0.6, until: "s7.end"}
+  - {word: kangaroo, label: "KANGAROO?", kind: stamp, top: 118, size: 96, until: "word:badgers", stamp: {from: 2.2, r0: -10, r1: -4}}
+  - {word: unexplained, label: "UNEXPLAINED", kind: stamp, top: 118, size: 88, until: "s10.end+0.6", stamp: {from: 2.2, r0: -10, r1: -4}}
+
+styles:
+  snow: {fill: white, width: 5}
+  wall: {fill: "#f4a261", width: 6}
+  roof: {fill: "#8d5524", width: 6}
+  brick: {fill: "#b5651d", width: 5}
+  wood: {fill: "#8d6e63", width: 5}
+  stone: {fill: "#b8b8aa", width: 6}
+  slate: {fill: "#6c757d", width: 6}
+  lamp: {fill: "#ffd166", width: 5}
+  glass: {fill: "#a8dadc", width: 5}
+  fur: {fill: "#d4a373", width: 5}
+  print: {fill: "#5f7391", stroke: "#16212e", width: 4}
+
+shapes:
+  dusk:                                      # absolute coords: dusk sky, low sun, far hills
+    - {rect: [-700, -700, 2100, 1050, 0], fill: "#f4a261", stroke: none}
+    - {rect: [-700, 330, 2100, 200, 0], fill: "#f6bd60", stroke: none}
+    - {circle: [540, 506, 62], fill: "#e76f51", width: 5}
+    - {path: "M-700,520 Q-350,430 0,500 Q260,440 520,508 Q800,430 1400,520 L1400,600 L-700,600 Z", fill: "#8e7dbe", width: 5}
+  hoofv:                                     # hoof print foreshortened (low angle), toe away from the viewer
+    - {ellipse: [0, -1, 28, 17], fill: "#d5dfea", stroke: none}
+    - {path: "M-20,11 C-26,0 -20,-13 0,-13 C20,-13 26,0 20,11 L9,11 C13,1 9,-6.6 0,-6.6 C-9,-6.6 -13,1 -9,11 Z", style: print}
+  crow:                                      # side view facing left, origin = feet
+    - {line: [[-4, -26], [-8, 0]], width: 4}
+    - {line: [[6, -26], [8, 0]], width: 4}
+    - {poly: [[20, -40], [56, -30], [52, -22], [18, -30]], fill: "#212529", width: 4}
+    - {ellipse: [0, -38, 26, 16], fill: "#212529", width: 4}
+    - {group: head, pivot: [-18, -46], items: [{circle: [-24, -54, 12], fill: "#212529", width: 4}, {poly: [[-34, -58], [-52, -52], [-34, -48]], fill: "#f4a261", width: 3}, {circle: [-27, -57, 2.5], fill: white, stroke: none}]}
+    - {group: wing, pivot: [2, -44], items: [{path: "M2,-44 Q24,-62 40,-44 Q20,-34 2,-44 Z", fill: "#343a40", width: 4}]}
+  bubble:                                    # thought bubble, origin = centre of the cloud; tail circles lead down-left
+    - {path: "M-110,10 Q-130,-40 -80,-60 Q-60,-100 -10,-84 Q30,-110 70,-80 Q120,-78 116,-30 Q140,10 100,40 Q80,76 30,62 Q-10,86 -50,62 Q-100,70 -110,10 Z", fill: white, width: 6}
+    - {circle: [-70, 92, 14], fill: white, width: 5}
+    - {circle: [-96, 124, 9], fill: white, width: 4}
+  kangaroo:                                  # side view facing left, origin = feet (about 190 w x 230 h)
+    - {poly: [[22, -66], [134, -8], [130, 4], [16, -36]], fill: "#c68642", width: 5}
+    - {poly: [[-8, -52], [30, -50], [16, 0], [-58, 0], [-58, -10], [-10, -18]], fill: "#c68642", width: 5}
+    - {path: "M-34,-34 C-56,-94 -46,-152 -10,-164 C28,-168 46,-110 38,-40 Z", fill: "#c68642", width: 5}
+    - {line: [[-30, -124], [-52, -102], [-60, -106]], width: 6}
+    - {ellipse: [-26, -182, 22, 17], fill: "#c68642", width: 5}
+    - {poly: [[-40, -192], [-74, -180], [-70, -168], [-36, -170]], fill: "#c68642", width: 5}
+    - {poly: [[-20, -194], [-16, -230], [-6, -196]], fill: "#c68642", width: 5}
+    - {poly: [[-8, -194], [2, -226], [8, -192]], fill: "#c68642", width: 5}
+    - {circle: [-34, -186, 3.5], fill: black}
+    - {circle: [-73, -175, 3], fill: black}
+  badger:                                    # side view facing right, origin = feet
+    - {line: [[-30, -10], [-30, 0]], width: 9}
+    - {line: [[-12, -10], [-12, 0]], width: 9}
+    - {line: [[18, -10], [18, 0]], width: 9}
+    - {line: [[34, -10], [34, 0]], width: 9}
+    - {ellipse: [0, -30, 56, 26], fill: "#6c757d", width: 5}
+    - {path: "M36,-46 Q70,-46 86,-22 L64,-12 Q48,-10 36,-16 Z", fill: white, width: 5}
+    - {path: "M42,-42 Q64,-40 78,-24", width: 8, stroke: "#212529"}
+    - {circle: [86, -22, 5], fill: black}
+  mouse:                                     # side view facing left, origin = feet
+    - {path: "M20,-8 Q44,-4 50,-24", width: 4}
+    - {path: "M-24,0 Q-26,-26 0,-28 Q24,-28 24,0 Z", fill: "#adb5bd", width: 4}
+    - {poly: [[-24, -6], [-40, -8], [-24, -18]], fill: "#adb5bd", width: 4}
+    - {circle: [-8, -30, 8], fill: "#ffc2d1", width: 4}
+    - {circle: [-26, -14, 2.5], fill: black}
+  balloon:                                   # runaway balloon with a trailing rope, origin = envelope centre
+    - {path: "M0,120 Q-30,170 -80,190 T-160,240", width: 4}
+    - {line: [[-30, 50], [-14, 96]], width: 3}
+    - {line: [[30, 50], [14, 96]], width: 3}
+    - {rect: [-18, 94, 36, 26, 4], style: wood}
+    - {path: "M0,-80 C60,-80 80,-20 50,40 L30,58 L-30,58 L-50,40 C-80,-20 -60,-80 0,-80 Z", fill: "#e63946", width: 6}
+    - {path: "M0,-80 C24,-60 26,20 16,58 M0,-80 C-24,-60 -26,20 -16,58", width: 4}
+  pulpit:                                    # wooden pulpit on a stone step, origin = bottom centre
+    - {rect: [-100, -40, 200, 40, 3], style: stone}
+    - {poly: [[-80, -40], [80, -40], [92, -230], [-92, -230]], style: wood}
+    - {rect: [-104, -250, 208, 24, 5], style: wood}
+    - {poly: [[-40, -226], [40, -226], [30, -120], [-30, -120]], fill: "#9d0208", width: 5}
+    - {line: [[0, -210], [0, -150]], width: 6, stroke: "#ffd166"}
+    - {line: [[-18, -190], [18, -190]], width: 6, stroke: "#ffd166"}
+  dogr:                                      # dog on a lead (the lead runs back up to the handler's hand), facing right
+    - {group: rope, pivot: [40, -66], items: [{path: "M40,-66 Q-30,-64 -112,-132", width: 4, stroke: "#6d4c41"}]}
+    - {group: tail, pivot: [-38, -50], items: [{path: "M-38,-50 Q-58,-64 -56,-86", width: 7}]}
+    - {group: legb, pivot: [-18, -42], items: [{line: [[-24, -42], [-28, 0]], width: 8}, {line: [[-12, -42], [-8, 0]], width: 8}]}
+    - {group: legf, pivot: [28, -42], items: [{line: [[22, -42], [18, 0]], width: 8}, {line: [[34, -42], [38, 0]], width: 8}]}
+    - {ellipse: [0, -50, 44, 19], style: fur}
+    - {circle: [46, -72, 18], style: fur}
+    - {ellipse: [64, -66, 13, 9], style: fur}
+    - {circle: [75, -69, 4.5], fill: black}
+    - {circle: [49, -78, 3.5], fill: black, stroke: none}
+    - {path: "M36,-84 Q30,-102 42,-104 Q48,-94 44,-82", style: fur}
+    - {line: [[34, -62], [40, -52]], width: 5, stroke: "#d62828"}
+  gun:                                       # musket, origin = the grip (hand)
+    - {line: [[-8, 8], [84, -48]], width: 7}
+    - {poly: [[-8, 8], [-34, 20], [-28, 32], [2, 16]], fill: "#8d6e63", width: 4}
+  hedge:                                     # snowy hedge, origin = bottom centre, 180 x 100
+    - {path: "M-88,0 Q-98,-62 -62,-82 Q-40,-104 -10,-92 Q16,-110 42,-90 Q82,-94 90,-52 Q98,-20 88,0 Z", fill: "#52796f", width: 6}
+    - {path: "M-68,-80 Q-40,-106 -10,-94 Q16,-112 42,-92 Q68,-96 78,-76 Q52,-82 30,-74 Q0,-86 -30,-76 Q-50,-84 -68,-80 Z", style: snow}
+  moon:                                      # moon with a few stars around it
+    - {circle: [0, 0, 46], fill: "#fff3c4", width: 5}
+    - {circle: [-14, -10, 9], fill: "#f1e3a8", stroke: none}
+    - {circle: [14, 12, 7], fill: "#f1e3a8", stroke: none}
+    - {circle: [-250, -120, 4], fill: "#fff3c4", stroke: none}
+    - {circle: [-150, 40, 3], fill: "#fff3c4", stroke: none}
+    - {circle: [120, -140, 4], fill: "#fff3c4", stroke: none}
+    - {circle: [-300, 60, 3], fill: "#fff3c4", stroke: none}
+    - {circle: [-60, -150, 3], fill: "#fff3c4", stroke: none}
+  hillsG:                                    # absolute coords: rolling moonlit snow hills
+    - {path: "M-500,830 Q-200,560 150,830 Q450,610 750,830 Q1050,550 1350,830 Q1650,610 1950,830 Q2250,560 2550,830 Q2850,620 3150,830 L3150,1000 L-500,1000 Z", fill: "#dfe8f3", width: 6}
+  fence:                                     # paddock fence, origin = left post foot, 480 wide
+    - {line: [[0, -44], [480, -44]], width: 6}
+    - {line: [[0, -20], [480, -20]], width: 6}
+    - {rect: [-5, -60, 10, 60, 2], style: wood}
+    - {rect: [115, -60, 10, 60, 2], style: wood}
+    - {rect: [235, -60, 10, 60, 2], style: wood}
+    - {rect: [355, -60, 10, 60, 2], style: wood}
+    - {rect: [475, -60, 10, 60, 2], style: wood}
+  horse:                                     # side view facing right, origin = hind feet
+    - {group: tail, pivot: [-6, -112], items: [{path: "M-6,-112 Q-34,-96 -30,-44", width: 9}]}
+    - {group: legsb, pivot: [22, -80], items: [{line: [[12, -80], [6, 0]], width: 9}, {line: [[32, -80], [34, 0]], width: 9}]}
+    - {group: legsf, pivot: [112, -80], items: [{line: [[102, -80], [98, 0]], width: 9}, {line: [[122, -80], [126, 0]], width: 9}]}
+    - {ellipse: [62, -98, 74, 34], fill: "#bc8a5f", width: 6}
+    - {group: head, pivot: [118, -118], items: [{poly: [[100, -122], [128, -132], [166, -196], [140, -206]], fill: "#bc8a5f", width: 6}, {poly: [[138, -210], [192, -204], [204, -184], [162, -178]], fill: "#bc8a5f", width: 6}, {poly: [[146, -208], [150, -228], [158, -207]], fill: "#bc8a5f", width: 4}, {circle: [166, -198, 3.5], fill: black}, {path: "M128,-140 Q146,-170 150,-204", width: 7, stroke: "#4e342e"}]}
+  hoof4:
+    - {use: hoofp, at: [0, 0]}
+    - {use: hoofp, at: [80, 0]}
+    - {use: hoofp, at: [160, 0]}
+    - {use: hoofp, at: [240, 0]}
+  trailrun:                                  # 32 prints, 80 px apart (0 .. 2480)
+    - {use: hoof4, at: [0, 0]}
+    - {use: hoof4, at: [320, 0]}
+    - {use: hoof4, at: [640, 0]}
+    - {use: hoof4, at: [960, 0]}
+    - {use: hoof4, at: [1280, 0]}
+    - {use: hoof4, at: [1600, 0]}
+    - {use: hoof4, at: [1920, 0]}
+    - {use: hoof4, at: [2240, 0]}
+  cover:                                     # snow-coloured band that hides the trail ahead of its left edge
+    - {rect: [0, -32, 2900, 64, 0], fill: white, stroke: none}
+  devonmap:                                  # absolute coords (object at 0,0): parchment, sea, Exe estuary
+    - {poly: [[34, 158], [200, 150], [380, 160], [560, 150], [688, 160], [684, 520], [690, 896], [34, 896], [28, 520]], fill: "#f3e3c3", width: 6}
+    - {path: "M468,318 Q450,262 470,212 T452,164", width: 5, stroke: "#5fa8d3"}
+    - {path: "M100,600 L132,556 L164,600 M150,600 L184,550 L218,600 M210,380 L236,346 L262,380", width: 4}
+    - {poly: [[684, 520], [610, 548], [548, 584], [514, 606], [502, 540], [497, 450], [486, 372], [468, 318], [454, 360], [449, 450], [447, 540], [458, 614], [430, 650], [392, 686], [346, 722], [302, 766], [264, 808], [232, 840], [196, 868], [160, 896], [690, 896]], fill: "#9bd0e8", width: 5}
+    - {text: [560, 812, "ENGLISH CHANNEL"], size: 24, fill: "#1d3557", stroke: none}
+    - {group: waves, pivot: [560, 760], items: [{path: "M520,716 Q530,706 540,716 T560,716", width: 4, stroke: "#1d3557"}, {path: "M612,766 Q622,756 632,766 T652,766", width: 4, stroke: "#1d3557"}, {path: "M400,852 Q410,842 420,852 T440,852", width: 4, stroke: "#1d3557"}, {path: "M560,862 Q570,852 580,862 T600,862", width: 4, stroke: "#1d3557"}]}
+    - {group: rose, pivot: [110, 262], items: [{circle: [110, 262, 36], fill: "#fdf0d5", width: 4}, {poly: [[110, 228], [120, 262], [110, 296], [100, 262]], fill: "#d62828", width: 3}, {text: [110, 212, "N"], size: 22}]}
+    - {text: [370, 222, "DEVON"], size: 46}
+  dot:
+    - {circle: [0, 0, 11], fill: "#2b2d42", width: 4}
+  tophat:                                    # origin = bottom of the brim
+    - {rect: [-26, -8, 52, 8, 3], fill: "#2b2d42", width: 4}
+    - {rect: [-17, -46, 34, 40, 3], fill: "#2b2d42", width: 4}
+    - {rect: [-17, -18, 34, 7, 0], fill: "#8d0801", width: 3}
+  pipewall:                                  # low wall with a drainpipe along its base; origin = ground centre; mouths at x -150 / +150
+    - {rect: [-100, -170, 200, 170, 2], style: stone}
+    - {rect: [-108, -184, 216, 20, 6], style: snow}
+    - {line: [[-100, -120], [100, -120]], width: 3}
+    - {line: [[-100, -72], [100, -72]], width: 3}
+    - {line: [[-30, -164], [-30, -120]], width: 3}
+    - {line: [[40, -120], [40, -72]], width: 3}
+    - {line: [[-60, -72], [-60, -40]], width: 3}
+    - {group: pipe, pivot: [0, -20], items: [{rect: [-150, -40, 300, 40, 0], fill: "#8d99ae", width: 6}, {line: [[-146, -31], [146, -31]], width: 3, stroke: "#dfe7ef"}, {ellipse: [-150, -20, 11, 20], fill: "#2b2d42", width: 5}, {ellipse: [150, -20, 11, 20], fill: "#2b2d42", width: 5}]}
+  stonewall:                                 # high garden wall, origin = bottom left, 130 x 300
+    - {rect: [0, -300, 130, 300, 2], style: stone}
+    - {rect: [-8, -316, 146, 22, 5], style: snow}
+    - {line: [[0, -240], [130, -240]], width: 3}
+    - {line: [[0, -180], [130, -180]], width: 3}
+    - {line: [[0, -120], [130, -120]], width: 3}
+    - {line: [[0, -60], [130, -60]], width: 3}
+    - {line: [[50, -294], [50, -240]], width: 3}
+    - {line: [[95, -240], [95, -180]], width: 3}
+    - {line: [[40, -180], [40, -120]], width: 3}
+    - {line: [[85, -120], [85, -60]], width: 3}
+    - {line: [[45, -60], [45, 0]], width: 3}
+  haystack:                                  # origin = bottom centre, 260 x 230
+    - {path: "M-130,0 C-130,-150 -80,-230 0,-230 C80,-230 130,-150 130,0 Z", fill: "#e9c46a", width: 6}
+    - {path: "M-90,-20 Q-80,-120 -40,-190 M-40,-10 Q-30,-110 0,-200 M30,-15 Q40,-120 50,-190 M85,-20 Q95,-100 90,-150", width: 3, stroke: "#9c7a2c"}
+    - {path: "M-86,-176 C-60,-240 60,-240 86,-176 Q62,-158 42,-174 Q20,-156 0,-176 Q-20,-156 -42,-174 Q-62,-158 -86,-176 Z", style: snow}
+  ladder:                                    # leaning ladder, origin = foot centre, top leans 30 px left
+    - {line: [[-22, 0], [-52, -300]], width: 7}
+    - {line: [[22, 0], [-8, -300]], width: 7}
+    - {line: [[-25, -30], [19, -30]], width: 5}
+    - {line: [[-29, -72], [15, -72]], width: 5}
+    - {line: [[-33, -114], [11, -114]], width: 5}
+    - {line: [[-38, -156], [6, -156]], width: 5}
+    - {line: [[-42, -198], [2, -198]], width: 5}
+    - {line: [[-46, -240], [-2, -240]], width: 5}
+    - {line: [[-50, -282], [-6, -282]], width: 5}
+  hoof:                                      # hoof print seen from above, toe up; origin = centre
+    - {ellipse: [0, -2, 27, 30], fill: "#d5dfea", stroke: none}
+    - {path: "M-20,20 C-26,0 -20,-24 0,-24 C20,-24 26,0 20,20 L9,20 C13,2 9,-12 0,-12 C-9,-12 -13,2 -9,20 Z", style: print}
+  ruler:                                     # 15.5 px per inch; origin = the 0 mark on the top edge
+    - {rect: [-8, 0, 112, 20, 3], fill: "#e9c46a", width: 5}
+    - {line: [[0, 0], [0, 9]], width: 4}
+    - {line: [[15.5, 0], [15.5, 6]], width: 3}
+    - {line: [[31, 0], [31, 9]], width: 4}
+    - {line: [[46.5, 0], [46.5, 6]], width: 3}
+    - {line: [[62, 0], [62, 9]], width: 4}
+    - {line: [[77.5, 0], [77.5, 6]], width: 3}
+    - {line: [[93, 0], [93, 9]], width: 4}
+    - {text: [31, 15, "2"], size: 8}
+    - {text: [62, 15, "4"], size: 8}
+    - {text: [93, 15, "6"], size: 8}
+  daysky:
+    - {rect: [-1200, -900, 3600, 2000, 0], fill: "#cfe9f6", stroke: none}
+  sun:
+    - {group: rays, pivot: [0, 0], items: [{line: [[0, -60], [0, -84]], width: 6}, {line: [[0, 60], [0, 84]], width: 6}, {line: [[-60, 0], [-84, 0]], width: 6}, {line: [[60, 0], [84, 0]], width: 6}, {line: [[42, 42], [60, 60]], width: 6}, {line: [[-42, 42], [-60, 60]], width: 6}, {line: [[42, -42], [60, -60]], width: 6}, {line: [[-42, -42], [-60, -60]], width: 6}]}
+    - {circle: [0, 0, 44], fill: "#ffd166", width: 6}
+  hoofp:                                     # hoof print lying on the ground (side view), toe to the right
+    - {ellipse: [1, 0, 32, 15], fill: "#d5dfea", stroke: none}
+    - {path: "M-24,-11 C2,-16 26,-12 26,0 C26,12 2,16 -24,11 L-24,5 C-2,8 12,5 12,0 C12,-5 -2,-8 -24,-5 Z", style: print, width: 3}
+  bucket:                                    # origin = the hand on the handle
+    - {path: "M-17,12 Q0,-10 17,12", width: 4}
+    - {poly: [[-19, 12], [19, 12], [15, 46], [-15, 46]], fill: "#90a4ae", width: 5}
+    - {line: [[-19, 22], [19, 22]], width: 3}
+  nightsky:
+    - {rect: [-1200, -900, 3600, 2000, 0], fill: "#1d2b4f", stroke: none}
+  snowland:                                  # origin = snow surface at the left; fills downwards
+    - {path: "M-1200,0 Q-1000,-16 -800,0 T-400,0 T0,0 T400,0 T800,0 T1200,0 T1600,0 T2000,0 T2400,0 L2400,900 L-1200,900 Z", style: snow}
+  cottage:                                   # origin = bottom centre; door x -100..-36, window centre (59,-110)
+    - {rect: [62, -318, 36, 100, 3], style: brick}
+    - {rect: [55, -334, 50, 20, 9], style: snow}
+    - {rect: [-130, -180, 260, 180, 4], style: wall}
+    - {poly: [[-160, -174], [0, -300], [160, -174]], style: roof}
+    - {line: [[-104, -196], [104, -196]], width: 3}
+    - {line: [[-70, -222], [70, -222]], width: 3}
+    - {line: [[-38, -248], [38, -248]], width: 3}
+    - {group: cap, pivot: [0, -300], items: [{path: "M-170,-166 Q-90,-250 0,-310 Q90,-250 170,-166 Q158,-146 146,-160 Q130,-150 116,-180 L0,-274 L-116,-180 Q-130,-150 -146,-160 Q-158,-146 -170,-166 Z", style: snow}]}
+    - {rect: [-100, -116, 64, 116, 4], fill: "#2b1d14"}
+    - {group: door, pivot: [-100, -58], items: [{rect: [-100, -116, 64, 116, 4], style: wood}, {line: [[-68, -108], [-68, -8]], width: 3}, {circle: [-46, -58, 5], fill: black}]}
+    - {rect: [22, -142, 74, 64, 4], style: glass}
+    - {line: [[59, -142], [59, -78]], width: 4}
+    - {line: [[22, -110], [96, -110]], width: 4}
+    - {group: sill, pivot: [59, -78], items: [{path: "M16,-77 Q18,-88 34,-86 Q59,-93 84,-86 Q100,-88 102,-77 Z", style: snow}]}
+  lampwin:                                   # night window, origin = window centre
+    - {rect: [-37, -32, 74, 64, 4], fill: "#22333b"}
+    - {group: glow, pivot: [0, 0], items: [{circle: [0, 0, 72], fill: "#ffd166", stroke: none, opacity: 0.3}, {rect: [-37, -32, 74, 64, 4], style: lamp}]}
+    - {line: [[0, -32], [0, 32]], width: 4}
+    - {line: [[-37, 0], [37, 0]], width: 4}
+  church:                                    # origin = bottom centre of the tower
+    - {rect: [-160, -150, 124, 150, 2], style: stone}
+    - {poly: [[-170, -146], [-98, -212], [-26, -146]], style: slate}
+    - {path: "M-176,-142 Q-140,-190 -98,-218 Q-56,-190 -20,-142 Q-40,-134 -60,-150 L-98,-190 L-136,-150 Q-156,-134 -176,-142 Z", style: snow}
+    - {path: "M-112,-50 L-112,-96 Q-98,-114 -84,-96 L-84,-50 Z", fill: "#22333b"}
+    - {rect: [-40, -340, 80, 340, 2], style: stone}
+    - {poly: [[-50, -336], [0, -432], [50, -336]], style: slate}
+    - {path: "M-54,-332 L0,-440 L54,-332 Q40,-322 28,-340 L0,-396 L-28,-340 Q-40,-322 -54,-332 Z", style: snow}
+    - {line: [[0, -440], [0, -478]], width: 5}
+    - {line: [[-13, -464], [13, -464]], width: 5}
+    - {circle: [0, -290, 17], fill: "#fdf0d5", width: 4}
+    - {path: "M-15,-190 L-15,-226 Q0,-246 15,-226 L15,-190 Z", fill: "#22333b"}
+  tree:                                      # bare tree, origin = foot of the trunk
+    - {group: crown, pivot: [0, 0], items: [
+        {poly: [[-13, 0], [-5, -205], [5, -205], [13, 0]], fill: "#4e342e", width: 5},
+        {line: [[-3, -110], [-50, -160], [-82, -168]], width: 7},
+        {line: [[-50, -160], [-58, -204]], width: 6},
+        {line: [[3, -140], [46, -192], [80, -198]], width: 7},
+        {line: [[46, -192], [50, -236]], width: 6},
+        {line: [[0, -200], [-24, -256]], width: 6},
+        {line: [[0, -200], [22, -268]], width: 6},
+        {path: "M-90,-170 Q-70,-184 -50,-164 Z", style: snow},
+        {path: "M40,-198 Q62,-212 86,-200 Z", style: snow}]}
+  dog:                                       # side view facing right, origin = feet
+    - {group: tail, pivot: [-38, -50], items: [{path: "M-38,-50 Q-58,-64 -56,-86", width: 7}]}
+    - {group: legb, pivot: [-18, -42], items: [{line: [[-24, -42], [-28, 0]], width: 8}, {line: [[-12, -42], [-8, 0]], width: 8}]}
+    - {group: legf, pivot: [28, -42], items: [{line: [[22, -42], [18, 0]], width: 8}, {line: [[34, -42], [38, 0]], width: 8}]}
+    - {ellipse: [0, -50, 44, 19], style: fur}
+    - {group: head, pivot: [36, -60], items: [
+        {circle: [46, -72, 18], style: fur},
+        {ellipse: [64, -66, 13, 9], style: fur},
+        {circle: [75, -69, 4.5], fill: black},
+        {circle: [49, -78, 3.5], fill: black, stroke: none},
+        {path: "M36,-84 Q30,-102 42,-104 Q48,-94 44,-82", style: fur}]}
+
+scenes:
+  # ------------------------------------------------ A (s1): snowy night, the dog goes home, the lamp goes out
+  - id: night
+    sents: [s1]
+    set:
+      - {kind: shape, shape: nightsky, x: 0, y: 0}
+      - {kind: shape, shape: nightsky, x: 2400, y: 0}
+      - {kind: shape, shape: snowland, x: 0, y: 822}
+      - {id: church, kind: shape, shape: church, x: 350, y: 826, scale: 0.8}
+      - {id: cotL, kind: shape, shape: cottage, x: 170, y: 874, scale: 0.72}
+      - {id: cotR, kind: shape, shape: cottage, x: 505, y: 888, scale: 1.12}
+      - {id: lamp, kind: shape, shape: lampwin, x: 571, y: 765, scale: 1.12}
+      - {kind: shape, shape: snowland, x: 0, y: 898}
+      - {id: tree, kind: shape, shape: tree, x: 44, y: 904, scale: 1.1}
+    props:
+      - {id: dog, kind: shape, shape: dog, x: -90, y: 912, scale: 0.9}
+      - {id: snow1, kind: emitter, emitter: dust, at: [380, -120], n: 70, r: [3, 7], color: white, period: 5, rise: -1150, drift: 90, spread: 980, s0: 1, s1: 1, opacity: 0.95, prewarm: true, layer: top}
+      - {id: snow2, kind: emitter, emitter: dust, at: [460, 330], n: 50, r: [3, 6], color: white, period: 3.2, rise: -700, drift: 70, spread: 640, s0: 0.4, s1: 1, opacity: 0.95, layer: top}
+    beats:
+      - {at: 0, who: tree.crown, do: rotate, to: 6, dur: 0.55, ease: sine.inOut, repeat: {every: 0.55, until: "scene.end", cycle: [{to: 6}, {to: 1}, {to: 13}, {to: 3}]}}
+      - {at: 0, who: dog, do: move, to: [300, 912], until: "word:Devon", ease: none}
+      - {at: 0, who: dog.legf, do: rotate, to: 26, dur: 0.11, repeat: {every: 0.11, until: "word:England", alt: {to: -26}}}
+      - {at: 0, who: dog.legb, do: rotate, to: -26, dur: 0.11, repeat: {every: 0.11, until: "word:England", alt: {to: 26}}}
+      - {at: 0, who: dog.tail, do: rotate, to: 24, dur: 0.16, repeat: {every: 0.16, until: "word:England+0.3", alt: {to: -12}}}
+      - {at: 1.2, who: cam, do: push, zoom: 1.3, target: [460, 770], until: "word:Overnight", ease: sine.inOut}
+      - {at: "word:Devon", who: dog, do: move, to: [430, 890], until: "word:England", ease: none}
+      - {at: "word:England-0.25", who: cotR.door, do: fade, to: 0, dur: 0.12, sfx: [thud, 0.3]}
+      - {at: "word:England+0.02", who: dog, do: scale, to: 0.55, dur: 0.28}
+      - {at: prev, who: dog, do: fade, to: 0, dur: 0.28}
+      - {at: "prev.end+0.12", who: cotR.door, do: fade, to: 1, dur: 0.1, sfx: [thud, 0.45]}
+      - {at: "word:Overnight", who: lamp.glow, do: fade, to: 0, dur: 0.35}
+      - {at: "word:Overnight", who: cam, do: push, zoom: 1.85, target: [450, 790], until: "scene.end", ease: sine.inOut}
+      - {at: "word:heavy-0.15", who: snow2, do: emit}
+      - {at: "word:heavy", who: cotR.cap, do: scale, to: 1.14, until: "word:county", ease: sine.inOut}
+      - {at: prev, who: cotL.cap, do: scale, to: 1.14, until: "word:county", ease: sine.inOut}
+      - {at: "word:snow", who: cotR.sill, do: scale, to: 1.2, until: "word:county", ease: sine.inOut}
+
+  # ------------------------------------------------ B (s2): bright morning, the woman finds the prints
+  - id: yard
+    sents: [s2]
+    in: {type: flash}
+    camera: {zoom: 1.12, at: [320, 700]}
+    set:
+      - {kind: shape, shape: daysky, x: 0, y: 0}
+      - {id: sun, kind: shape, shape: sun, x: 560, y: 300}
+      - {kind: shape, shape: snowland, x: 0, y: 872}
+      - {id: cot, kind: shape, shape: cottage, x: 250, y: 880, scale: 2.0}
+      - {kind: shape, shape: snowland, x: -40, y: 896}
+    props:
+      - {id: p1, kind: shape, shape: hoofp, x: 180, y: 902, hidden: true}
+      - {id: p2, kind: shape, shape: hoofp, x: 236, y: 902, hidden: true}
+      - {id: p3, kind: shape, shape: hoofp, x: 292, y: 902, hidden: true}
+      - {id: p4, kind: shape, shape: hoofp, x: 348, y: 902, hidden: true}
+      - {id: p5, kind: shape, shape: hoofp, x: 404, y: 902, hidden: true}
+      - {id: p6, kind: shape, shape: hoofp, x: 460, y: 902, hidden: true}
+      - {id: p7, kind: shape, shape: hoofp, x: 516, y: 902, hidden: true}
+      - {id: p8, kind: shape, shape: hoofp, x: 572, y: 902, hidden: true}
+      - {id: p9, kind: shape, shape: hoofp, x: 628, y: 902, hidden: true}
+      - {id: bucket, kind: shape, shape: bucket, x: 0, y: 0, on: wom, anchor: hand, hidden: true, layer: top}
+      - {id: call, kind: emitter, emitter: sound, on: wom, dir: -20}
+    cast:
+      - {id: nb, x: 505, gy: 900, k: 1.0, facing: l, cap: "#5d4037", coat: "#52796f", coat_len: 14, hair: "#3b2a1e", hidden: true}
+      - {id: wom, x: 114, gy: 890, k: 0.95, hair: "#6d4c41", coat: "#b56576", coat_len: 36, face: sleep, hidden: true}
+    beats:
+      - {at: scene, who: sun.rays, do: spin, speed: 35}
+      - {at: "scene+0.08", who: cot.door, do: fade, to: 0, dur: 0.12, sfx: [thud, 0.35]}
+      - {at: "scene+0.14", who: wom, do: show}
+      - {at: prev, who: bucket, do: show}
+      - {at: prev, who: wom, do: walk_to, to: 232, dur: 0.4}
+      - {at: "word:the", who: cam, do: push, zoom: 1.75, target: [330, 760], screen: [360, 600], dur: 0.6, ease: power2.inOut}
+      - {at: "word:morning+0.16", who: wom, do: pose, name: hands_up, dur: 0.2}
+      - {at: prev, who: wom, do: face, name: happy}
+      - {at: "word:people+0.09", who: wom, do: pose, name: stand, dur: 0.12}
+      - {at: "prev.end", who: wom, do: walk_to, to: 348, dur: 0.36}
+      - {at: "word:trail-0.12", who: wom, do: look, target: down}
+      - {at: prev, who: wom, do: face, name: curious}
+      - {at: "word:trail-0.24", who: p1, do: pop, dur: 0.14, sfx: [tick, 0.4], repeat: {every: 0.085, n: 9, cycle: [{who: p1}, {who: p2}, {who: p3}, {who: p4}, {who: p5}, {who: p6}, {who: p7}, {who: p8}, {who: p9}]}}
+      - {at: "word:hoof", who: wom, do: face, name: wow}
+      - {at: prev, who: wom, do: pose, name: cheeks, dur: 0.15}
+      - {at: prev, who: bucket, do: detach}
+      - {at: prev, who: bucket, do: move, to: [300, 884], dur: 0.25, ease: power2.in}
+      - {at: prev, who: bucket, do: rotate, to: -95, dur: 0.25, sfx: clatter}
+      - {at: "word:prints", who: wom, do: pose, name: wave, dur: 0.12}
+      - {at: prev, who: wom, do: face, name: shout}
+      - {at: prev, who: call, do: emit, until: "word:snow"}
+      - {at: "word:hoof+0.05", who: nb, do: show}
+      - {at: prev, who: nb, do: enter, from: right, to: 505, until: "word:the#2+0.05", stride: 150, lift: 26}
+      - {at: "word:snow-0.1", who: nb, do: bend_over}
+      - {at: prev, who: wom, do: bend_over}
+      - {at: prev, who: nb, do: face, name: wow}
+      - {at: prev, who: cam, do: push, zoom: 2.5, target: [410, 880], screen: [360, 640], until: "scene.end", ease: sine.inOut}
+
+  # ------------------------------------------------ C (s3): extreme close-up + ruler, then the single line
+  - id: measure
+    sents: [s3]
+    in: {type: zoom, target: [410, 900], from: [220, 780]}
+    camera: {zoom: 3.2, at: [220, 780], screen: [360, 560]}
+    fixed_strokes: true
+    set:
+      - {kind: shape, shape: daysky, x: 0, y: 0}
+      - {kind: shape, shape: tree, x: 60, y: 568, scale: 0.42}
+      - {kind: shape, shape: cottage, x: 470, y: 566, scale: 0.3}
+      - {kind: shape, shape: tree, x: 800, y: 564, scale: 0.36}
+      - {kind: shape, shape: snowland, x: -200, y: 560}
+      - {kind: shape, shape: hoof, x: 0, y: 780, scale: 1.4, rot: 90}
+      - {kind: shape, shape: hoof, x: 110, y: 780, scale: 1.4, rot: 90}
+      - {id: pr, kind: shape, shape: hoof, x: 220, y: 780, scale: 1.4, rot: 90}
+      - {kind: shape, shape: hoof, x: 330, y: 780, scale: 1.4, rot: 90}
+      - {kind: shape, shape: hoof, x: 440, y: 780, scale: 1.4, rot: 90}
+      - {kind: shape, shape: hoof, x: 550, y: 780, scale: 1.4, rot: 90}
+    props:
+      - {id: q1, kind: shape, shape: hoof, x: 660, y: 780, scale: 1.4, rot: 90, hidden: true}
+      - {id: q2, kind: shape, shape: hoof, x: 770, y: 780, scale: 1.4, rot: 90, hidden: true}
+      - {id: q3, kind: shape, shape: hoof, x: 880, y: 780, scale: 1.4, rot: 90, hidden: true}
+      - {id: q4, kind: shape, shape: hoof, x: 990, y: 780, scale: 1.4, rot: 90, hidden: true}
+      - {id: q5, kind: shape, shape: hoof, x: 1100, y: 780, scale: 1.4, rot: 90, hidden: true}
+      - {id: q6, kind: shape, shape: hoof, x: 1210, y: 780, scale: 1.4, rot: 90, hidden: true}
+      - {id: ruler, kind: shape, shape: ruler, x: -150, y: 820}
+    cast:
+      - {id: man, x: 560, gy: 758, k: 1.5, cap: "#5d4037", coat: "#6b705c", coat_len: 18, hair: "#3b2a1e", face: curious, hidden: true}
+    beats:
+      - {at: "word:print", who: ruler, do: move, to: [192, 820], dur: 0.4, ease: back.out(1.4), sfx: [whoosh, 0.3]}
+      - {at: "word:four-0.1", who: cam, do: push, zoom: 3.45, target: [222, 782], screen: [360, 560], until: "word:and-0.1", ease: sine.inOut}
+      - {at: "word:long", who: pr, do: pulse, amp: 0.06, freq: 3, until: "word:and"}
+      - {at: "word:long+0.2", who: ruler, do: jiggle, amp: 0.08}
+      - {at: "word:and-0.08", who: cam, do: pull, zoom: 1.15, target: [330, 690], screen: [360, 640], dur: 0.6, ease: power2.inOut, sfx: [whoosh, 0.4]}
+      - {at: "word:and-0.1", who: man, do: show}
+      - {at: prev, who: man, do: enter, from: -90, to: 560, until: "scene.end-0.05"}
+      - {at: "word:in+0.05", who: cam, do: pan, zoom: 1.15, target: [720, 690], screen: [360, 640], until: "scene.end", ease: sine.inOut}
+      - {at: "word:single-0.1", who: man, do: point, target: [1000, 790]}
+      - {at: prev, who: man, do: face, name: wow}
+      - {at: "word:single-0.12", who: q1, do: pop, dur: 0.12, sfx: [tick, 0.35], repeat: {every: 0.14, n: 6, cycle: [{who: q1}, {who: q2}, {who: q3}, {who: q4}, {who: q5}, {who: q6}]}}
+
+  # ------------------------------------------------ D (s4): up the wall, over the roof, the wall and the haystack
+  - id: roofs
+    sents: [s4]
+    in: {type: slide}
+    camera: {zoom: 1.5, at: [190, 760], screen: [360, 640]}
+    set:
+      - {kind: shape, shape: daysky, x: 0, y: 0}
+      - {kind: shape, shape: snowland, x: 0, y: 884}
+      - {id: cot, kind: shape, shape: cottage, x: 330, y: 900, scale: 1.7}
+      - {kind: shape, shape: stonewall, x: 740, y: 902}
+      - {kind: shape, shape: haystack, x: 1110, y: 902}
+      - {kind: shape, shape: ladder, x: 262, y: 904}
+      - {kind: shape, shape: snowland, x: -60, y: 904}
+    props:
+      - {id: d1, kind: shape, shape: hoofp, x: 20, y: 910, scale: 0.9, hidden: true}
+      - {id: d2, kind: shape, shape: hoofp, x: 82, y: 910, scale: 0.9, hidden: true}
+      - {id: d3, kind: shape, shape: hoof, x: 150, y: 850, scale: 0.8, hidden: true}
+      - {id: d4, kind: shape, shape: hoof, x: 150, y: 785, scale: 0.8, hidden: true}
+      - {id: d5, kind: shape, shape: hoof, x: 150, y: 720, scale: 0.8, hidden: true}
+      - {id: d6, kind: shape, shape: hoof, x: 150, y: 655, scale: 0.8, hidden: true}
+      - {id: d7, kind: shape, shape: hoof, x: 143, y: 558, scale: 0.8, rot: 52, hidden: true}
+      - {id: d8, kind: shape, shape: hoof, x: 211, y: 502, scale: 0.8, rot: 52, hidden: true}
+      - {id: d9, kind: shape, shape: hoof, x: 279, y: 446, scale: 0.8, rot: 52, hidden: true}
+      - {id: d10, kind: shape, shape: hoof, x: 381, y: 446, scale: 0.8, rot: 128, hidden: true}
+      - {id: d11, kind: shape, shape: hoof, x: 449, y: 502, scale: 0.8, rot: 128, hidden: true}
+      - {id: d12, kind: shape, shape: hoof, x: 517, y: 558, scale: 0.8, rot: 128, hidden: true}
+      - {id: d13, kind: shape, shape: hoof, x: 520, y: 650, scale: 0.8, rot: 180, hidden: true}
+      - {id: d14, kind: shape, shape: hoof, x: 520, y: 720, scale: 0.8, rot: 180, hidden: true}
+      - {id: d15, kind: shape, shape: hoof, x: 520, y: 790, scale: 0.8, rot: 180, hidden: true}
+      - {id: d16, kind: shape, shape: hoofp, x: 604, y: 912, scale: 0.9, hidden: true}
+      - {id: d17, kind: shape, shape: hoofp, x: 672, y: 912, scale: 0.9, hidden: true}
+      - {id: d18, kind: shape, shape: hoof, x: 765, y: 830, scale: 0.8, hidden: true}
+      - {id: d19, kind: shape, shape: hoof, x: 765, y: 715, scale: 0.8, hidden: true}
+      - {id: d20, kind: shape, shape: hoof, x: 805, y: 591, scale: 0.8, rot: 90, hidden: true}
+      - {id: d21, kind: shape, shape: hoof, x: 845, y: 715, scale: 0.8, rot: 180, hidden: true}
+      - {id: d22, kind: shape, shape: hoof, x: 845, y: 830, scale: 0.8, rot: 180, hidden: true}
+      - {id: d23, kind: shape, shape: hoof, x: 1008, y: 791, scale: 0.8, rot: 17, hidden: true}
+      - {id: d24, kind: shape, shape: hoof, x: 1051, y: 711, scale: 0.8, rot: 43, hidden: true}
+      - {id: d25, kind: shape, shape: hoof, x: 1110, y: 684, scale: 0.8, rot: 90, hidden: true}
+      - {id: d26, kind: shape, shape: hoof, x: 1169, y: 711, scale: 0.8, rot: 137, hidden: true}
+      - {id: d27, kind: shape, shape: hoof, x: 1212, y: 791, scale: 0.8, rot: 163, hidden: true}
+      - {id: d28, kind: shape, shape: hoofp, x: 1292, y: 912, scale: 0.9, hidden: true}
+      - {id: d29, kind: shape, shape: hoofp, x: 1362, y: 912, scale: 0.9, hidden: true}
+      - {id: d30, kind: shape, shape: hoofp, x: 1432, y: 912, scale: 0.9, hidden: true}
+    cast:
+      - {id: boy, x: 262, gy: 900, k: 0.85, facing: l, hair: "#e9c46a", coat: "#457b9d", coat_len: 14, face: curious}
+    beats:
+      - {at: "scene+0.04", who: d1, do: pop, dur: 0.12, sfx: [tick, 0.3], repeat: {every: 0.16, n: 6, cycle: [{who: d1}, {who: d2}, {who: d3}, {who: d4}, {who: d5}, {who: d6}]}}
+      - {at: "word:onto", who: d7, do: pop, dur: 0.12, sfx: [tick, 0.3], repeat: {every: 0.16, n: 6, cycle: [{who: d7}, {who: d8}, {who: d9}, {who: d10}, {who: d11}, {who: d12}]}}
+      - {at: "word:roofs+0.55", who: d13, do: pop, dur: 0.1, sfx: [tick, 0.3], repeat: {every: 0.08, n: 5, cycle: [{who: d13}, {who: d14}, {who: d15}, {who: d16}, {who: d17}]}}
+      - {at: "word:over+0.1", who: d18, do: pop, dur: 0.1, sfx: [tick, 0.3], repeat: {every: 0.12, n: 5, cycle: [{who: d18}, {who: d19}, {who: d20}, {who: d21}, {who: d22}]}}
+      - {at: "word:haystacks-0.25", who: d23, do: pop, dur: 0.1, sfx: [tick, 0.3], repeat: {every: 0.13, n: 5, cycle: [{who: d23}, {who: d24}, {who: d25}, {who: d26}, {who: d27}]}}
+      - {at: "word:comes", who: d28, do: pop, dur: 0.1, sfx: [tick, 0.3], repeat: {every: 0.15, n: 3, cycle: [{who: d28}, {who: d29}, {who: d30}]}}
+      - {at: "scene+0.1", who: boy, do: pose, name: reach, dur: 0.1, repeat: {every: 0.24, n: 5, alt: {name: hands_up}}}
+      - {at: "scene+0.12", who: boy, do: move, dx: -4, dy: -42, dur: 0.2, ease: power2.out, repeat: {every: 0.24, n: 4}}
+      - {at: "word:roofs-0.1", who: boy, do: look, target: [279, 446]}
+      - {at: prev, who: boy, do: face, name: wow}
+      - {at: "word:roofs+0.3", who: boy, do: move, dy: 48, dur: 0.12, ease: power2.in, sfx: [clatter, 0.5]}
+      - {at: prev, who: boy, do: pose, name: hands_up, dur: 0.08}
+      - {at: prev, who: boy, do: face, name: scared}
+      - {at: "prev.end+0.05", who: boy, do: tremble, amount: 1.5}
+      - {at: "word:climbs-0.1", who: cam, do: tilt, zoom: 1.5, target: [215, 600], screen: [360, 640], until: "word:roofs", ease: sine.inOut}
+      - {at: "word:roofs", who: cam, do: pan, zoom: 1.45, target: [390, 530], screen: [360, 640], until: "word:over-0.05", ease: sine.inOut}
+      - {at: "word:over", who: cam, do: pan, zoom: 1.4, target: [770, 700], screen: [360, 640], until: "word:walls+0.2", ease: power2.inOut}
+      - {at: "word:haystacks-0.3", who: cam, do: pan, zoom: 1.4, target: [1110, 740], screen: [360, 640], until: "word:haystacks+0.35", ease: power2.inOut}
+      - {at: "word:comes-0.1", who: cam, do: pan, zoom: 1.4, target: [1320, 790], screen: [360, 640], until: "word:the#2", ease: power2.inOut}
+      - {at: "word:other-0.1", who: cam, do: pull, zoom: 0.62, target: [700, 640], screen: [360, 560], until: "scene.end", ease: power2.inOut}
+
+  # ------------------------------------------------ E (s5): in one end of a drainpipe and out of the other
+  - id: pipe
+    sents: [s5]
+    in: {type: zoom, target: [1362, 905], from: [160, 850]}
+    camera: {zoom: 1.8, at: [120, 800], screen: [360, 640]}
+    set:
+      - {kind: shape, shape: daysky, x: 0, y: 0}
+      - {kind: shape, shape: tree, x: 560, y: 700, scale: 0.55}
+      - {kind: shape, shape: snowland, x: -300, y: 880}
+      - {id: pw, kind: shape, shape: pipewall, x: 330, y: 880}
+      - {kind: shape, shape: snowland, x: -340, y: 900}
+    props:
+      - {id: e1, kind: shape, shape: hoofp, x: -50, y: 903, hidden: true}
+      - {id: e2, kind: shape, shape: hoofp, x: 12, y: 903, hidden: true}
+      - {id: e3, kind: shape, shape: hoofp, x: 74, y: 903, hidden: true}
+      - {id: e4, kind: shape, shape: hoofp, x: 136, y: 903, hidden: true}
+      - {id: f1, kind: shape, shape: hoofp, x: 530, y: 903, hidden: true}
+      - {id: f2, kind: shape, shape: hoofp, x: 592, y: 903, hidden: true}
+      - {id: f3, kind: shape, shape: hoofp, x: 654, y: 903, hidden: true}
+      - {id: f4, kind: shape, shape: hoofp, x: 716, y: 903, hidden: true}
+      - {id: gauge, kind: line, points: [[504, 838], [504, 882]], style: ink, width: 5, arrows: both}
+      - {id: gtext, kind: text, x: 550, y: 860, text: "4 in", size: 28, hidden: true}
+      - {id: qm, kind: shape, shape: question, x: 165, y: 590, hidden: true}
+      - {id: hat, kind: shape, shape: tophat, x: 0, y: 0, scale: 1.25, on: man, anchor: top, layer: top}
+    cast:
+      - {id: man, x: 110, gy: 884, k: 1.2, coat: "#6b705c", coat_len: 22, hair: "#3b2a1e", face: curious, hidden: true}
+    beats:
+      - {at: "scene+0.02", who: e1, do: pop, dur: 0.1, sfx: [tick, 0.3], repeat: {every: 0.13, n: 4, cycle: [{who: e1}, {who: e2}, {who: e3}, {who: e4}]}}
+      - {at: "scene+0.05", who: man, do: show}
+      - {at: prev, who: man, do: enter, from: -120, to: 110, dur: 0.55}
+      - {at: "word:goes", who: man, do: kneel_down, target: [180, 860]}
+      - {at: "word:in-0.1", who: pw.pipe, do: jiggle, amp: 0.05, sfx: [whoosh, 0.35]}
+      - {at: "word:in+0.12", who: hat, do: detach}
+      - {at: prev, who: hat, do: move, dx: 50, dy: 175, dur: 0.45, ease: bounce.out, sfx: [thud, 0.4]}
+      - {at: prev, who: hat, do: rotate, to: 95, dur: 0.4}
+      - {at: prev, who: man, do: face, name: wow}
+      - {at: "word:out-0.1", who: cam, do: pan, zoom: 1.8, target: [470, 820], screen: [360, 640], dur: 0.45, ease: power2.inOut}
+      - {at: "word:out", who: pw.pipe, do: jiggle, amp: 0.05}
+      - {at: "word:out", who: f1, do: pop, dur: 0.1, sfx: [tick, 0.3], repeat: {every: 0.12, n: 4, cycle: [{who: f1}, {who: f2}, {who: f3}, {who: f4}]}}
+      - {at: "word:drainpipe", who: cam, do: pull, zoom: 1.2, target: [320, 740], screen: [360, 640], dur: 0.55, ease: power2.inOut}
+      - {at: "word:drainpipe+0.2", who: man, do: look, target: [650, 880]}
+      - {at: "word:four", who: gauge, do: draw_line, dur: 0.3}
+      - {at: "word:four+0.1", who: gtext, do: pop}
+      - {at: "word:inches", who: man, do: pose, name: scratch, dur: 0.2}
+      - {at: prev, who: man, do: face, name: think}
+      - {at: "word:wide", who: qm, do: pop, sfx: [tick, 0.4]}
+      - {at: "word:wide+0.2", who: qm, do: rock, amp: 10, freq: 2}
+
+  # ------------------------------------------------ F (s6): the map, town after town
+  - id: map
+    sents: [s6]
+    in: {type: drop}
+    set:
+      - {id: map, kind: shape, shape: devonmap, x: 0, y: 0}
+    props:
+      - {id: tdA, kind: shape, shape: dot, x: 540, y: 562, hidden: true}
+      - {id: tdB, kind: shape, shape: dot, x: 600, y: 420, hidden: true}
+      - {id: tdC, kind: shape, shape: dot, x: 500, y: 336, hidden: true}
+      - {id: tdD, kind: shape, shape: dot, x: 190, y: 450, hidden: true}
+      - {id: tdE, kind: shape, shape: dot, x: 358, y: 688, hidden: true}
+      - {id: tdF, kind: shape, shape: dot, x: 256, y: 786, hidden: true}
+      - {id: t1, kind: line, points: [[540, 562], [530, 480], [522, 400], [500, 336]], style: dash, width: 6, color: "#d62828"}
+      - {id: t2, kind: line, points: [[500, 336], [430, 380], [400, 560], [358, 688]], style: dash, width: 6, color: "#d62828"}
+      - {id: t3, kind: line, points: [[358, 688], [320, 712], [290, 750], [256, 786]], style: dash, width: 6, color: "#d62828"}
+      - {id: bighoof, kind: shape, shape: hoof, x: 330, y: 480, scale: 3.4, rot: -14, hidden: true}
+      - {id: hE, kind: shape, shape: hoof, x: 540, y: 562, scale: 0.7, rot: -10, hidden: true}
+      - {id: hT, kind: shape, shape: hoof, x: 500, y: 336, scale: 0.7, rot: -20, hidden: true}
+      - {id: hD, kind: shape, shape: hoof, x: 358, y: 688, scale: 0.7, rot: 20, hidden: true}
+      - {id: hTe, kind: shape, shape: hoof, x: 256, y: 786, scale: 0.7, rot: 30, hidden: true}
+      - {id: lE, kind: text, x: 600, y: 512, text: EXMOUTH, size: 30, hidden: true}
+      - {id: lT, kind: text, x: 594, y: 318, text: TOPSHAM, size: 30, hidden: true}
+      - {id: lD, kind: text, x: 240, y: 662, text: DAWLISH, size: 30, hidden: true}
+      - {id: lTe, kind: text, x: 160, y: 752, text: TEIGNMOUTH, size: 30, hidden: true}
+    beats:
+      - {at: scene, who: map.waves, do: bob, amp: 5, freq: 1.2}
+      - {at: scene, who: map.rose, do: rock, amp: 12, freq: 0.8}
+      - {at: "word:Town", who: tdA, do: pop, dur: 0.12, sfx: [tick, 0.35], repeat: {every: 0.13, n: 6, cycle: [{who: tdA}, {who: tdB}, {who: tdC}, {who: tdD}, {who: tdE}, {who: tdF}]}}
+      - {at: "word:reports", who: cam, do: push, zoom: 1.12, target: [360, 520], screen: [360, 500], until: "word:Exmouth-0.3", ease: sine.inOut}
+      - {at: "word:same", who: bighoof, do: stamp, from: 2.4, r0: -30, r1: -14}
+      - {at: "word:same+0.05", who: cam, do: shake, amp: 9, dur: 0.25}
+      - {at: "word:marks+0.2", who: bighoof, do: pulse, amp: 0.05, freq: 3, until: "word:Exmouth-0.4"}
+      - {at: "word:Exmouth-0.4", who: bighoof, do: fade, to: 0, dur: 0.3}
+      - {at: "word:Exmouth-0.25", who: cam, do: push, zoom: 1.35, target: [540, 520], screen: [360, 560], dur: 0.45, ease: power2.inOut}
+      - {at: "word:Exmouth", who: lE, do: pop}
+      - {at: "word:Exmouth+0.08", who: hE, do: stamp}
+      - {at: "word:Topsham-0.35", who: t1, do: draw_line, dur: 0.35}
+      - {at: "word:Topsham-0.35", who: cam, do: pan, zoom: 1.35, target: [510, 380], screen: [360, 560], dur: 0.4, ease: power2.inOut}
+      - {at: "word:Topsham", who: lT, do: pop}
+      - {at: "word:Topsham+0.08", who: hT, do: stamp}
+      - {at: "word:Dawlish-0.45", who: t2, do: draw_line, dur: 0.45}
+      - {at: "word:Dawlish-0.45", who: cam, do: pan, zoom: 1.3, target: [380, 600], screen: [360, 560], dur: 0.45, ease: power2.inOut}
+      - {at: "word:Dawlish", who: lD, do: pop}
+      - {at: "word:Dawlish+0.08", who: hD, do: stamp}
+      - {at: "word:Teignmouth-0.2", who: t3, do: draw_line, dur: 0.25}
+      - {at: "word:Teignmouth", who: lTe, do: pop}
+      - {at: "word:Teignmouth+0.08", who: hTe, do: stamp}
+      - {at: "word:Teignmouth+0.15", who: cam, do: pull, zoom: 1.0, target: [360, 540], screen: [360, 540], until: "scene.end", ease: power2.inOut}
+
+  # ------------------------------------------------ G (s7): night, the trail races a hundred miles
+  - id: race
+    sents: [s7]
+    in: {type: whip, target: [256, 786], from: [200, 862]}
+    camera: {zoom: 1.15, at: [300, 700], screen: [360, 640]}
+    set:
+      - {kind: shape, shape: nightsky, x: 0, y: 0}
+      - {kind: shape, shape: nightsky, x: 2400, y: 0}
+      - {id: moon, kind: shape, shape: moon, x: 420, y: 360}
+      - {kind: shape, shape: hillsG, x: 0, y: 0}
+      - {id: horse, kind: shape, shape: horse, x: 1300, y: 800, scale: 1.2}
+      - {kind: shape, shape: fence, x: 1180, y: 806}
+      - {kind: shape, shape: snowland, x: -300, y: 812}
+      - {kind: shape, shape: snowland, x: 2900, y: 812}
+      - {kind: shape, shape: trailrun, x: 80, y: 862}
+      - {id: cover, kind: shape, shape: cover, x: 120, y: 862}
+      - {id: miles, kind: text, x: 2029.5, y: 361, text: MILES, size: 58, style: gold, hidden: true}
+    beats:
+      - {at: "scene+0.05", who: cover, do: move, to: [2640, 862], until: "word:miles-0.1", ease: sine.inOut}
+      - {at: "scene+0.05", who: cam, do: pan, zoom: 1.15, target: [2350, 700], screen: [360, 640], until: "word:miles-0.1", ease: sine.inOut}
+      - {at: "scene+0.05", who: moon, do: move, to: [2470, 360], until: "word:miles-0.1", ease: sine.inOut}
+      - {at: "word:trail", who: fx, do: lines, dur: 0.9, target: [360, 860]}
+      - {at: scene, who: horse.tail, do: rotate, to: 12, dur: 0.3, repeat: {every: 0.3, until: 28.6, alt: {to: -4}}}
+      - {at: 28.55, who: horse.head, do: rotate, to: -10, dur: 0.15}
+      - {at: 28.68, who: horse, do: rotate, to: -34, dur: 0.25, ease: back.out(1.5), sfx: [whoosh, 0.4]}
+      - {at: prev, who: cam, do: shake, amp: 6, dur: 0.2}
+      - {at: 28.7, who: horse.legsf, do: rotate, to: -55, dur: 0.1, repeat: {every: 0.12, until: 29.1, alt: {to: -20}}}
+      - {at: 29.1, who: horse, do: rotate, to: 0, dur: 0.15}
+      - {at: 29.2, who: horse, do: move, dx: 1150, dur: 1.2, ease: power2.in}
+      - {at: 29.2, who: horse.legsf, do: rotate, to: 35, dur: 0.08, repeat: {every: 0.08, until: "scene.end", alt: {to: -30}}}
+      - {at: 29.2, who: horse.legsb, do: rotate, to: -30, dur: 0.08, repeat: {every: 0.08, until: "scene.end", alt: {to: 30}}}
+      - {at: 29.2, who: horse.tail, do: rotate, to: -40, dur: 0.2}
+      - {at: "word:hundred+0.05", who: miles, do: pop}
+      - {at: prev, who: miles, do: move, to: [2324, 361], until: "word:miles-0.1", ease: sine.out}
+
+  # ------------------------------------------------ H (s8): the armed hunt along the trail, and it leads nowhere
+  - id: hunt
+    sents: [s8]
+    in: {type: slide}
+    camera: {zoom: 1.3, at: [-370, 750], screen: [360, 640]}
+    set:
+      - {kind: shape, shape: daysky, x: 0, y: 0}
+      - {kind: sky, clouds: [[-300, 330, 130], [300, 290, 120], [900, 340, 140], [1400, 300, 120]], drift: 12}
+      - {kind: shape, shape: tree, x: 1560, y: 872, scale: 0.8}
+      - {kind: shape, shape: snowland, x: -1200, y: 868}
+      - {kind: shape, shape: snowland, x: 2000, y: 868}
+      - {id: hedge, kind: shape, shape: hedge, x: 520, y: 900}
+      - {kind: shape, shape: trailrun, x: -1190, y: 912}
+    props:
+      - {id: dog, kind: shape, shape: dogr, x: 0, y: 0, on: v1, anchor: feet, offset: [130, 0]}
+      - {id: gun2, kind: shape, shape: gun, x: 0, y: 0, on: v2, anchor: hand, layer: top}
+      - {id: gun3, kind: shape, shape: gun, x: 0, y: 0, on: v3, anchor: hand, layer: top}
+    cast:
+      - {id: v3, x: 940, gy: 900, k: 1.25, cap: "#264653", coat: "#6c584c", coat_len: 18, hair: "#3b2a1e", face: angry}
+      - {id: v2, x: 1060, gy: 900, k: 1.25, cap: "#582f0e", coat: "#386641", coat_len: 18, hair: "#6d4c41", face: angry}
+      - {id: v1, x: 1180, gy: 900, k: 1.3, cap: "#6d4c41", coat: "#7f5539", coat_len: 18, hair: "#3b2a1e", face: angry}
+    beats:
+      - {at: "scene+0.05", who: v1, do: enter, from: -330, to: 1180, until: 33.1, stride: 170, lift: 30}
+      - {at: "scene+0.1", who: v2, do: enter, from: -470, to: 1060, until: 33.15, stride: 170, lift: 30}
+      - {at: "scene+0.15", who: v3, do: enter, from: -610, to: 940, until: 33.2, stride: 170, lift: 30}
+      - {at: "scene+0.08", who: cam, do: pan, zoom: 1.3, target: [1160, 750], screen: [360, 640], until: 33.15, ease: none}
+      - {at: "scene+0.1", who: dog.legf, do: rotate, to: 30, dur: 0.09, repeat: {every: 0.09, until: 33.1, alt: {to: -30}}}
+      - {at: "scene+0.1", who: dog.legb, do: rotate, to: -30, dur: 0.09, repeat: {every: 0.09, until: 33.1, alt: {to: 30}}}
+      - {at: "scene+0.1", who: dog, do: rotate, to: -7, dur: 0.1, repeat: {every: 0.22, until: 33.1, alt: {to: 3}}}
+      - {at: 31.42, who: dog, do: move, dy: -60, dur: 0.14, ease: power2.out, repeat: {every: 0.14, n: 2, alt: {dy: 60, ease: power2.in}}}
+      - {at: 31.6, who: v1, do: move, dy: -75, dur: 0.15, ease: power2.out, repeat: {every: 0.15, n: 2, alt: {dy: 75, ease: power2.in}}}
+      - {at: 31.83, who: v2, do: move, dy: -75, dur: 0.15, ease: power2.out, repeat: {every: 0.15, n: 2, alt: {dy: 75, ease: power2.in}}}
+      - {at: 32.06, who: v3, do: move, dy: -75, dur: 0.15, ease: power2.out, repeat: {every: 0.15, n: 2, alt: {dy: 75, ease: power2.in}}}
+      - {at: "word:guns", who: v2, do: face, name: shout}
+      - {at: "word:It#2-0.1", who: v1, do: face, name: worried}
+      - {at: "word:It#2", who: v1, do: turn, facing: l, repeat: {every: 0.25, n: 3, alt: {facing: r}}}
+      - {at: "word:leads", who: v2, do: look, target: [1450, 820]}
+      - {at: "word:nowhere-0.05", who: v1, do: pose, name: shrug, dur: 0.2}
+      - {at: "word:nowhere+0.05", who: v2, do: pose, name: shrug, dur: 0.2}
+      - {at: prev, who: v2, do: face, name: flat}
+      - {at: "word:nowhere+0.15", who: v3, do: pose, name: shrug, dur: 0.2}
+      - {at: prev, who: v3, do: face, name: flat}
+      - {at: "word:It#2+0.05", who: dog, do: detach}
+      - {at: prev, who: dog.rope, do: fade, to: 0, dur: 0.1}
+      - {at: prev, who: dog, do: rotate, to: 0, dur: 0.1}
+      - {at: "prev.end", who: dog, do: move, to: [1012, 900], dur: 0.35, ease: power2.out}
+      - {at: "prev.end", who: dog, do: shake, amp: 3, dur: 0.8}
+      - {at: "word:leads", who: cam, do: pull, zoom: 1.2, target: [1120, 730], screen: [360, 640], until: "scene.end", ease: sine.inOut}
+
+  # ------------------------------------------------ I (s9): the vicar blames a kangaroo; others say badgers, mice, a balloon
+  - id: vicar
+    sents: [s9]
+    in: {type: whip, target: [1180, 760], from: [230, 560]}
+    camera: {zoom: 1.4, at: [260, 610], screen: [360, 640]}
+    set:
+      - {kind: shape, shape: daysky, x: 0, y: 0}
+      - {kind: shape, shape: church, x: 610, y: 870, scale: 1.05}
+      - {kind: shape, shape: snowland, x: -300, y: 870}
+    props:
+      - {id: bub, kind: shape, shape: bubble, x: 350, y: 380, hidden: true}
+      - {id: minroo, kind: shape, shape: kangaroo, x: 356, y: 440, scale: 0.42, hidden: true}
+      - {id: balloon, kind: shape, shape: balloon, x: -200, y: 430, scale: 0.8}
+      - {id: roo, kind: shape, shape: kangaroo, x: 860, y: 892, scale: 1.25, layer: top}
+      - {id: badger, kind: shape, shape: badger, x: -140, y: 900, scale: 1.3, layer: top}
+      - {id: mouse, kind: shape, shape: mouse, x: 790, y: 900, scale: 1.4, layer: top}
+      - {id: pulpit, kind: shape, shape: pulpit, x: 200, y: 900, layer: top}
+    cast:
+      - {id: vA, x: 480, gy: 896, k: 1.15, facing: l, cap: "#582f0e", coat: "#386641", coat_len: 18, hair: "#6d4c41", face: curious}
+      - {id: vB, x: 600, gy: 896, k: 1.1, facing: l, hair: "#e9c46a", coat: "#b56576", coat_len: 36, face: curious}
+      - {id: vicar, x: 196, gy: 830, k: 1.5, coat: "#2b2d42", coat_len: 40, hair: "#9e9e9e", glasses: true, face: flat}
+    beats:
+      - {at: "scene+0.05", who: cam, do: push, zoom: 1.5, target: [240, 580], screen: [360, 640], until: "word:kangaroo-0.12", ease: sine.inOut}
+      - {at: "word:vicar", who: vicar, do: point, target: up}
+      - {at: prev, who: vicar, do: face, name: happy}
+      - {at: "word:blames-0.05", who: bub, do: pop, sfx: [tick, 0.4]}
+      - {at: "word:blames+0.15", who: minroo, do: pop}
+      - {at: "word:blames+0.35", who: minroo, do: move, dy: -18, dur: 0.12, repeat: {every: 0.12, n: 4, alt: {dy: 18}}}
+      - {at: "word:kangaroo-0.12", who: cam, do: pull, zoom: 1.02, target: [360, 640], screen: [360, 640], dur: 0.5, ease: power2.inOut}
+      - {at: "word:kangaroo-0.1", who: roo, do: move, dx: -70, dy: -95, dur: 0.1, ease: power1.out, sfx: [whoosh, 0.25], repeat: {every: 0.1, n: 14, alt: {dy: 95, ease: power1.in}}}
+      - {at: "word:kangaroo+0.2", who: vicar, do: point, target: roo}
+      - {at: prev, who: vicar, do: face, name: wow}
+      - {at: "word:kangaroo+0.3", who: vA, do: jump_back, dist: 30}
+      - {at: prev, who: vA, do: face, name: scared}
+      - {at: "word:kangaroo+0.35", who: vB, do: startle}
+      - {at: "word:kangaroo+0.6", who: bub, do: fade, to: 0, dur: 0.3}
+      - {at: prev, who: minroo, do: fade, to: 0, dur: 0.3}
+      - {at: "word:Others", who: vA, do: turn, facing: r, repeat: {every: 0.18, n: 4, alt: {facing: l}}}
+      - {at: prev, who: vA, do: face, name: flat}
+      - {at: "word:Others+0.08", who: vB, do: turn, facing: r, repeat: {every: 0.18, n: 4, alt: {facing: l}}}
+      - {at: prev, who: vB, do: face, name: flat}
+      - {at: "word:badgers-0.2", who: badger, do: move, to: [840, 900], dur: 1.7, ease: none}
+      - {at: prev, who: badger, do: rock, amp: 7, freq: 5, until: "word:balloon"}
+      - {at: "word:mice-0.1", who: mouse, do: move, dx: -62, dy: -42, dur: 0.09, ease: power1.out, repeat: {every: 0.09, n: 16, alt: {dy: 42, ease: power1.in}}}
+      - {at: "word:mice", who: vicar, do: pose, name: shrug, dur: 0.2}
+      - {at: prev, who: vicar, do: face, name: think}
+      - {at: "word:or-0.2", who: balloon, do: path, points: [[-200, 430], [150, 330], [450, 400], [880, 300]], until: "scene.end", ease: none}
+      - {at: prev, who: balloon, do: rock, amp: 6, freq: 1.2}
+      - {at: "word:runaway", who: cam, do: tilt, zoom: 1.05, target: [360, 600], screen: [360, 640], until: "scene.end", ease: sine.inOut}
+      - {at: "word:balloon", who: vA, do: pose, name: head, dur: 0.2}
+      - {at: "word:balloon", who: vB, do: turn, facing: r, repeat: {every: 0.18, n: 4, alt: {facing: l}}}
+
+  # ------------------------------------------------ J (s10): dusk, the trail fades into the distance - unexplained
+  - id: dusk
+    sents: [s10]
+    in: {type: slide}
+    camera: {zoom: 1.3, at: [360, 760], screen: [360, 640]}
+    set:
+      - {kind: shape, shape: dusk, x: 0, y: 0}
+      - {kind: shape, shape: snowland, x: -300, y: 512}
+    props:
+      - {id: j1, kind: shape, shape: hoofv, x: 330, y: 880, scale: 1.6, hidden: true}
+      - {id: j2, kind: shape, shape: hoofv, x: 345, y: 800, scale: 1.35, hidden: true}
+      - {id: j3, kind: shape, shape: hoofv, x: 358, y: 734, scale: 1.13, hidden: true}
+      - {id: j4, kind: shape, shape: hoofv, x: 369, y: 680, scale: 0.94, hidden: true}
+      - {id: j5, kind: shape, shape: hoofv, x: 378, y: 636, scale: 0.78, hidden: true}
+      - {id: j6, kind: shape, shape: hoofv, x: 386, y: 601, scale: 0.64, hidden: true}
+      - {id: j7, kind: shape, shape: hoofv, x: 392, y: 574, scale: 0.52, hidden: true}
+      - {id: j8, kind: shape, shape: hoofv, x: 397, y: 553, scale: 0.42, hidden: true}
+      - {id: j9, kind: shape, shape: hoofv, x: 401, y: 538, scale: 0.33, hidden: true}
+      - {id: j10, kind: shape, shape: hoofv, x: 404, y: 528, scale: 0.26, hidden: true}
+      - {id: j11, kind: shape, shape: hoofv, x: 406, y: 521, scale: 0.2, hidden: true}
+      - {id: j12, kind: shape, shape: hoofv, x: 408, y: 516, scale: 0.15, hidden: true}
+      - {id: drift, kind: emitter, emitter: dust, at: [-120, 790], n: 26, r: [3, 7], color: white, period: 2.2, rise: 70, drift: 950, spread: 260, s0: 1, s1: 0.6, opacity: 0.95, prewarm: true, layer: top}
+      - {id: crow, kind: shape, shape: crow, x: 800, y: 360, scale: 1.4, layer: top}
+    beats:
+      - {at: "scene+0.1", who: cam, do: push, zoom: 1.75, target: [400, 600], screen: [360, 600], until: "word:remain", ease: sine.inOut}
+      - {at: "scene+0.15", who: j1, do: pop, dur: 0.1, sfx: [tick, 0.25], repeat: {every: 0.09, n: 12, cycle: [{who: j1}, {who: j2}, {who: j3}, {who: j4}, {who: j5}, {who: j6}, {who: j7}, {who: j8}, {who: j9}, {who: j10}, {who: j11}, {who: j12}]}}
+      - {at: "word:never", who: j12, do: fade, to: 0, dur: 0.3, repeat: {every: 0.12, n: 6, cycle: [{who: j12}, {who: j11}, {who: j10}, {who: j9}, {who: j8}, {who: j7}]}}
+      - {at: "word:never", who: crow, do: path, points: [[800, 360], [650, 520], [530, 660], [452, 732]], dur: 0.7, ease: power2.out}
+      - {at: "word:never", who: crow.wing, do: rotate, to: -60, dur: 0.08, repeat: {every: 0.08, until: "word:never+0.7", alt: {to: 10}}}
+      - {at: "word:never+0.75", who: crow.wing, do: rotate, to: 0, dur: 0.1}
+      - {at: "word:found+0.2", who: crow.head, do: rotate, to: -35, dur: 0.1, repeat: {every: 0.2, n: 6, alt: {to: 0}}}
+      - {at: "word:Footprints", who: crow, do: path, points: [[452, 732], [400, 600], [250, 470], [-120, 300]], dur: 0.9, ease: power2.in, sfx: [whoosh, 0.3]}
+      - {at: prev, who: crow.wing, do: rotate, to: -60, dur: 0.08, repeat: {every: 0.08, until: "word:Footprints+0.9", alt: {to: 10}}}
+      - {at: "word:unexplained-0.1", who: cam, do: pull, zoom: 1.15, target: [380, 660], screen: [360, 640], until: "s10.end+1.2", ease: sine.inOut}

@@ -1,0 +1,147 @@
+name: UnexplainedDaily Doodle
+
+# The cron is deliberately NOT enabled: the first runs are manual (workflow_dispatch, dry_run is on by default).
+# Planned schedule - add it under `on:` after a good dry run on the runner:
+#   schedule:
+#     - cron: "30 9 * * *"   # 09:30 UTC; rendering takes a while, the post is scheduled for the slot (default 12:00 UTC)
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Only render + QA and upload the artifact (publishes nothing, the queue stays untouched)"
+        type: boolean
+        default: true
+      name:
+        description: "Queue folder to render, e.g. 001-devon1855 (empty = the first one in doodle/queue)"
+        type: string
+        default: ""
+      slot:
+        description: "Post time HH:MM in UTC (its next occurrence); only used when dry_run is off"
+        type: string
+        default: "12:00"
+
+permissions:
+  contents: write            # commit of the state (doodle/queue, done, published.json) + GitHub Release hosting of the video
+
+concurrency:
+  group: doodle
+  cancel-in-progress: false
+
+jobs:
+  episode:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      # first, so a missing secret or a typo in the slot fails in seconds, not after the render
+      - name: Check secrets and inputs
+        env:
+          BUFFER_TOKEN: ${{ secrets.BUFFER_TOKEN }}
+          SLOT: ${{ inputs.slot }}
+        run: |
+          echo "BUFFER_TOKEN length: ${#BUFFER_TOKEN}"
+          if [ "${{ inputs.dry_run }}" != "true" ]; then
+            if [ -z "$BUFFER_TOKEN" ]; then
+              echo "::error::secret BUFFER_TOKEN is empty - cannot publish (run with dry_run on, or add the secret)"
+              exit 1
+            fi
+            if ! echo "${SLOT:-12:00}" | grep -Eq '^([01][0-9]|2[0-3]):[0-5][0-9]$'; then
+              echo "::error::slot must be HH:MM in UTC, got '$SLOT'"
+              exit 1
+            fi
+          fi
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"      # hyperframes needs Node >= 22
+
+      - name: Install FFmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      # sp.py: pyyaml numpy soundfile Pillow + voice (kokoro-onnx, faster-whisper); qa.py: numpy Pillow playwright;
+      # publishing (stickman/run_daily.py -> push_to_buffer.py): requests, cloudinary (hosting fallback)
+      - name: Install Python deps
+        run: pip install requests cloudinary kokoro-onnx soundfile faster-whisper numpy scipy Pillow pyyaml playwright
+
+      # Kokoro (~350 MB) lands in <repo>/kokoro (doodle/engine/tts_kokoro.py), faster-whisper base.en in the HF cache:
+      # without the cache both are downloaded on every run
+      - name: Cache Kokoro + Whisper models
+        uses: actions/cache@v4
+        with:
+          path: |
+            kokoro
+            ~/.cache/huggingface
+          key: doodle-models-v1
+
+      # hyperframes keeps its Chrome in ~/.cache/hyperframes (or puppeteer's); qa.py's DOM check uses Playwright's Chromium
+      - name: Cache npx + Chrome
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.npm
+            ~/.cache/hyperframes
+            ~/.cache/puppeteer
+            ~/.cache/ms-playwright
+          key: doodle-npx-v1
+
+      - name: Warm up hyperframes + Playwright Chromium
+        run: |
+          HF=$(sed -n 's/^HF = "\(.*\)"$/\1/p' doodle/qa.py)     # the version qa.py runs (single source of truth)
+          test -n "$HF"
+          echo "hyperframes: $HF"
+          npx --yes "$HF" browser ensure
+          npx --yes "$HF" doctor || true
+          python -m playwright install --with-deps chromium
+
+      - name: Prepare config
+        run: cp config.example.json config.json
+
+      # secrets are handed to the step only when publishing: a dry run cannot post even if something goes wrong
+      - name: Run factory
+        env:
+          BUFFER_TOKEN: ${{ !inputs.dry_run && secrets.BUFFER_TOKEN || '' }}
+          CLOUDINARY_CLOUD_NAME: ${{ !inputs.dry_run && secrets.CLOUDINARY_CLOUD_NAME || '' }}
+          CLOUDINARY_API_KEY: ${{ !inputs.dry_run && secrets.CLOUDINARY_API_KEY || '' }}
+          CLOUDINARY_API_SECRET: ${{ !inputs.dry_run && secrets.CLOUDINARY_API_SECRET || '' }}
+          GITHUB_TOKEN: ${{ !inputs.dry_run && secrets.GITHUB_TOKEN || '' }}   # GitHub Release hosting of the video
+          DOODLE_SLOT: ${{ inputs.slot }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          EPISODE: ${{ inputs.name }}
+        run: |
+          ARGS=()
+          if [ "$DRY_RUN" = "true" ]; then ARGS+=(--dry-run); fi
+          if [ -n "$EPISODE" ]; then ARGS+=(--name "$EPISODE"); fi
+          echo "factory.py ${ARGS[*]}"
+          python doodle/factory.py "${ARGS[@]}"
+
+      - name: Upload episode artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: doodle-episode
+          path: doodle/out/*
+          if-no-files-found: warn
+          retention-days: 14
+
+      # published, so the state MUST get into the repo (otherwise the next run posts the same episode again): retry the push
+      - name: Persist state
+        if: success() && !inputs.dry_run
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          rm -f config.json
+          git checkout -- pushed.json || true     # publish() also notes the video in the shared pushed.json; doodle/published.json is the log here
+          mkdir -p doodle/queue doodle/done
+          git add -A -- doodle/queue doodle/done doodle/published.json
+          git commit -m "doodle: $(date -u +%F)" || { echo "nothing to commit"; exit 0; }
+          for i in 1 2 3; do
+            git pull --rebase --autostash && git push && exit 0
+            echo "push failed (attempt $i), retrying"
+            sleep 5
+          done
+          exit 1

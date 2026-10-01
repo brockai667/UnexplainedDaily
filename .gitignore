@@ -19,3 +19,11 @@ stickman/assets/audio/
 stickman/assets/img/
 stickman/__pycache__/
 kokoro/
+
+# doodle engine: pracovne subory a vystupy (doodle/queue, doodle/done, doodle/published.json sa commitujut)
+doodle/work/
+doodle/out/
+doodle/**/__pycache__/
+# model weights (Kokoro sa stiahne do kokoro/ vyssie; faster-whisper do ~/.cache/huggingface, mimo repa)
+*.onnx
+voices-*.bin

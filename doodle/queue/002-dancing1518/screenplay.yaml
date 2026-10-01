@@ -1,0 +1,2126 @@
+# The Dancing Plague of 1518 - the whole episode as data (python sp.py episodes/dancing1518)
+title: The Dancing Plague of 1518
+voice: {voice: am_michael, speed: 1.10, pause: 0.30}
+tail: 2.0
+music: sneaky_snitch.mp3
+loop: {at: "s10.end+0.55", dur: 1.3}
+
+sentences:
+  s1: July 1518. In Strasbourg, a woman called Frau Troffea starts to dance in the street.
+  s2: There is no music. She dances for a week and cannot stop.
+  s3: Her husband joins her. Soon more than thirty people are dancing.
+  s4: By August the dancers number in the hundreds.
+  s5: "The doctors order a cure: more dancing."
+  s6: The city opens its guild halls and hires musicians.
+  s7: It makes things worse, so the council bans dancing and music.
+  s8: The dancers are led to a shrine in red shoes.
+  s9: In September it simply stops.
+  s10: Mass hysteria, or poisoned bread? Nobody knows.
+
+gold:
+  - {word: "1518", label: "1518", kind: stamp, top: 128, size: 120, until: "word:woman+0.3", stamp: {from: 2.4, r0: -14, r1: -4}}
+  - {word: thirty, label: "30", kind: counter, top: 112, size: 124, dur: 1.1}
+  - {word: hundreds, label: "400?", kind: stamp, top: 112, size: 124, until: "word:doctors+0.7", stamp: {from: 2.4, r0: -10, r1: -3}}
+  - {word: s10/hysteria, label: "HYSTERIA|OR BREAD?", kind: stamp, top: 96, size: 86, stamp: {from: 2.0, r0: -8, r1: -3}}
+
+styles:
+  plaster: {fill: "#f1e3c6", width: 6}
+  plaster2: {fill: "#e3b98f", width: 5}
+  roofR: {fill: "#c0583f", width: 7}
+  glass: {fill: "#bfe3f0", width: 5}
+  stone: {fill: "#d8c7a3", width: 6}
+
+shapes:
+  frame:                                     # half-timbered house, origin = bottom centre
+    - {rect: [70, -520, 30, 90, 2], style: plaster2}
+    - {rect: [-135, -400, 270, 400, 3], style: plaster}
+    - {poly: [[-165, -400], [0, -560], [165, -400]], style: roofR}
+    - {line: [[-135, -200], [135, -200]], width: 8}
+    - {line: [[-135, -400], [135, -400]], width: 8}
+    - {line: [[-135, -400], [-135, 0]], width: 8}
+    - {line: [[135, -400], [135, 0]], width: 8}
+    - {line: [[0, -400], [0, -200]], width: 8}
+    - {line: [[-135, -200], [0, -400]], width: 6}
+    - {line: [[135, -200], [0, -400]], width: 6}
+    - {rect: [-105, -370, 66, 100, 3], style: glass}
+    - {rect: [39, -370, 66, 100, 3], style: glass}
+    - {line: [[-72, -370], [-72, -270]], width: 4}
+    - {line: [[72, -370], [72, -270]], width: 4}
+    - {rect: [-105, -150, 66, 80, 3], style: glass}
+  houseL:
+    - {use: frame, at: [0, 0], scale: 1}
+    - {rect: [38, -190, 62, 190, 4], fill: "#2b2118"}
+    - {group: door, pivot: [38, -95], items: [{rect: [38, -190, 62, 190, 4], fill: "#8d6e63"}, {line: [[50, -150], [50, -40]], width: 4}, {circle: [90, -95, 4], fill: yellow}]}
+  houseR:
+    - {use: frame, at: [0, 0], scale: 1}
+    - {rect: [38, -190, 62, 190, 4], fill: "#8d6e63"}
+    - {circle: [90, -95, 4], fill: yellow}
+  minster:                                   # Strasbourg spire, origin = bottom centre
+    - {rect: [-38, -230, 76, 230, 3], fill: "#d9a08a"}
+    - {poly: [[-38, -230], [0, -390], [38, -230]], fill: "#d9a08a"}
+    - {line: [[0, -390], [0, -425]], width: 5}
+    - {rect: [-12, -200, 24, 54, 10], fill: "#6c4a3a"}
+    - {rect: [-12, -120, 24, 54, 10], fill: "#6c4a3a"}
+    - {line: [[-38, -150], [38, -150]], width: 4}
+  street:                                    # origin = bottom centre (360, 930)
+    - {rect: [-400, -90, 800, 90], style: stone}
+    - {poly: [[-128, -90], [128, -90], [34, -190], [-34, -190]], fill: "#cdb991"}
+    - {line: [[-92, -120], [92, -120]], width: 4, dash: "16 10"}
+    - {line: [[-60, -152], [60, -152]], width: 3, dash: "12 8"}
+    - {line: [[-400, -66], [400, -66]], width: 4, dash: "26 14"}
+    - {line: [[-400, -40], [400, -40]], width: 4, dash: "20 18"}
+    - {line: [[-400, -15], [400, -15]], width: 4, dash: "32 12"}
+
+  sun:                                       # origin = centre
+    - {path: "M58,0 L80,0 M41,41 L57,57 M0,58 L0,80 M-41,41 L-57,57 M-58,0 L-80,0 M-41,-41 L-57,-57 M0,-58 L0,-80 M41,-41 L57,-57", width: 7}
+    - {circle: [0, 0, 46], fill: "#ffd23f"}
+    - {circle: [-16, -8, 4], fill: black, width: 2}
+    - {circle: [16, -8, 4], fill: black, width: 2}
+    - {path: "M-18,12 Q0,30 18,12", width: 5}
+  moon:
+    - {path: "M13.2,-39.9 A42,42 0 1 0 36.1,21.3 A34,34 0 1 1 13.2,-39.9 Z", fill: "#fff3b0", width: 6}
+  veil:                                      # night tint
+    - {rect: [-800, -900, 1600, 2200], fill: "#1b2a49", stroke: "#1b2a49", width: 1}
+  nomusic:                                   # crossed-out note, origin = centre
+    - {ellipse: [-34, 40, 20, 14], fill: black}
+    - {ellipse: [34, 26, 20, 14], fill: black}
+    - {line: [[-16, 38], [-16, -40]], width: 8}
+    - {line: [[50, 24], [50, -54]], width: 8}
+    - {poly: [[-16, -40], [50, -54], [50, -28], [-16, -14]], fill: black}
+    - {line: [[-80, -72], [84, 84]], stroke: "#e63946", width: 16}
+    - {line: [[84, -72], [-80, 84]], stroke: "#e63946", width: 16}
+  basket:                                    # origin = grip
+    - {poly: [[-34, 14], [34, 14], [24, 58], [-24, 58]], fill: "#c08a4f", width: 5}
+    - {line: [[-30, 30], [30, 30]], width: 3}
+    - {line: [[-27, 44], [27, 44]], width: 3}
+    - {circle: [-14, 10, 11], fill: "#d62828", width: 4}
+    - {circle: [10, 8, 11], fill: "#d62828", width: 4}
+    - {path: "M-26,14 Q0,-34 26,14", width: 6}
+  apple:
+    - {circle: [0, 0, 11], fill: "#d62828", width: 4}
+    - {line: [[0, -10], [3, -18]], width: 3}
+
+  plaza:                                     # wide square, origin = bottom centre (400, 930)
+    - {rect: [-800, -150, 1600, 150], style: stone}
+    - {line: [[-800, -118], [800, -118]], width: 4, dash: "30 16"}
+    - {line: [[-800, -86], [800, -86]], width: 4, dash: "22 20"}
+    - {line: [[-800, -54], [800, -54]], width: 4, dash: "36 12"}
+    - {line: [[-800, -22], [800, -22]], width: 4, dash: "26 18"}
+
+  guildhall:                                 # origin = bottom centre
+    - {rect: [-240, -300, 480, 300, 3], style: plaster}
+    - {poly: [[-270, -300], [0, -440], [270, -300]], style: roofR}
+    - {line: [[-240, -150], [240, -150]], width: 8}
+    - {line: [[-240, -300], [240, -300]], width: 8}
+    - {line: [[-240, -300], [-240, 0]], width: 8}
+    - {line: [[240, -300], [240, 0]], width: 8}
+    - {line: [[-150, -300], [-150, -150]], width: 7}
+    - {line: [[150, -300], [150, -150]], width: 7}
+    - {rect: [-222, -120, 54, 70, 3], style: glass}
+    - {rect: [168, -120, 54, 70, 3], style: glass}
+    - {rect: [-100, -292, 200, 46, 6], fill: "#f4d35e", width: 5}
+    - {text: [0, -268, "GUILD HALL"], size: 26}
+    - {rect: [-80, -200, 160, 200, 4], fill: "#ffcf70"}
+    - {group: dl, pivot: [-80, -100], items: [{rect: [-80, -200, 80, 200, 4], fill: "#8d6e63"}, {line: [[-60, -170], [-60, -30]], width: 4}, {circle: [-14, -100, 5], fill: yellow}]}
+    - {group: dr, pivot: [80, -100], items: [{rect: [0, -200, 80, 200, 4], fill: "#8d6e63"}, {line: [[60, -170], [60, -30]], width: 4}, {circle: [14, -100, 5], fill: yellow}]}
+  note:
+    - {ellipse: [0, 0, 11, 8], fill: black, width: 3}
+    - {line: [[10, -2], [10, -38]], width: 5}
+    - {path: "M10,-38 Q28,-30 24,-14", width: 5}
+  drum:
+    - {rect: [-32, -8, 64, 46, 6], fill: "#c0583f", width: 5}
+    - {ellipse: [0, -8, 32, 10], fill: "#f1e3c6", width: 5}
+    - {line: [[-30, 2], [-15, 34], [0, 2], [15, 34], [30, 2]], width: 3}
+  pipe:
+    - {rect: [-2, -4, 78, 9, 3], fill: "#c08a4f", width: 4}
+    - {circle: [22, 0, 2], fill: black, width: 1}
+    - {circle: [40, 0, 2], fill: black, width: 1}
+    - {circle: [58, 0, 2], fill: black, width: 1}
+  fiddle:
+    - {ellipse: [0, 20, 24, 20], fill: "#a0522d", width: 5}
+    - {ellipse: [0, -2, 17, 15], fill: "#a0522d", width: 5}
+    - {line: [[0, -14], [0, -52]], width: 6}
+    - {circle: [0, -56, 6], fill: "#a0522d", width: 4}
+  bow:
+    - {line: [[-46, 0], [46, 0]], width: 4}
+    - {line: [[-46, 0], [-46, 8]], width: 4}
+
+  ban:                                       # red prohibition sign, origin = centre
+    - {circle: [0, 0, 90], stroke: "#e63946", width: 24}
+    - {line: [[-64, -64], [64, 64]], stroke: "#e63946", width: 24}
+  bignote:
+    - {ellipse: [-34, 40, 20, 14], fill: black}
+    - {ellipse: [34, 26, 20, 14], fill: black}
+    - {line: [[-16, 38], [-16, -40]], width: 8}
+    - {line: [[50, 24], [50, -54]], width: 8}
+    - {poly: [[-16, -40], [50, -54], [50, -28], [-16, -14]], fill: black}
+
+  hillslope:                                 # world coordinates, origin (0, 0)
+    - {poly: [[-200, 930], [-200, 908], [40, 890], [560, 600], [900, 600], [900, 930]], fill: "#b7d58a", width: 6}
+    - {line: [[0, 905], [560, 614]], stroke: "#e9d8a6", width: 30}
+    - {line: [[560, 614], [900, 614]], stroke: "#e9d8a6", width: 30}
+  chapel:                                    # origin = bottom centre
+    - {rect: [-60, -110, 120, 110, 3], style: plaster}
+    - {poly: [[-74, -110], [0, -172], [74, -110]], style: roofR}
+    - {line: [[0, -172], [0, -222]], width: 7}
+    - {line: [[-16, -200], [16, -200]], width: 7}
+    - {rect: [-17, -72, 34, 72, 14], fill: "#8d6e63"}
+    - {rect: [-48, -96, 22, 30, 3], style: glass}
+    - {rect: [26, -96, 22, 30, 3], style: glass}
+  shoes:
+    - {ellipse: [-16, 0, 16, 8], fill: "#e63946", width: 4}
+    - {ellipse: [16, 0, 16, 8], fill: "#e63946", width: 4}
+  redshoes:
+    - {poly: [[-110, 26], [-110, -6], [-78, -24], [-54, -20], [-36, 0], [-2, 8], [0, 26]], fill: "#e63946", width: 7}
+    - {poly: [[14, 26], [14, -6], [46, -24], [70, -20], [88, 0], [122, 8], [124, 26]], fill: "#e63946", width: 7}
+  crossstaff:                                # origin = hand
+    - {line: [[0, 40], [0, -260]], stroke: "#8d6e63", width: 8}
+    - {line: [[-34, -224], [34, -224]], stroke: "#8d6e63", width: 8}
+
+  panels:                                    # the split picture, world coordinates
+    - {rect: [0, 330, 356, 576, 10], fill: "#e3f0cf", width: 6}
+    - {rect: [364, 330, 356, 576, 10], fill: "#f7dede", width: 6}
+  table:                                     # origin = top centre
+    - {rect: [-150, 0, 300, 24, 6], fill: "#b08968"}
+    - {line: [[-120, 24], [-120, 110]], width: 8}
+    - {line: [[120, 24], [120, 110]], width: 8}
+  loaf:                                      # sickly green bread, origin = bottom centre
+    - {path: "M-120,0 Q-135,-90 -60,-112 Q0,-130 60,-112 Q135,-90 120,0 Z", fill: "#d9a05b", width: 7}
+    - {ellipse: [-40, -72, 40, 22], fill: "#7cb342", opacity: 0.6, stroke: "#7cb342", width: 1}
+    - {ellipse: [52, -58, 32, 18], fill: "#7cb342", opacity: 0.6, stroke: "#7cb342", width: 1}
+    - {path: "M-58,-96 Q-46,-64 -64,-36", stroke: "#8a5a25", width: 6}
+    - {path: "M-8,-106 Q2,-74 -10,-44", stroke: "#8a5a25", width: 6}
+    - {path: "M40,-98 Q50,-68 36,-42", stroke: "#8a5a25", width: 6}
+    - {circle: [-84, -38, 7], fill: "#558b2f", width: 3}
+    - {circle: [80, -26, 6], fill: "#558b2f", width: 3}
+  halo:
+    - {ellipse: [0, -60, 170, 120], fill: "#b5e08a", opacity: 0.4, stroke: "#b5e08a", width: 1}
+  shimmer:
+    - {path: "M-70,0 Q-55,-25 -70,-50 Q-85,-75 -70,-100", stroke: "#7cb342", width: 7}
+    - {path: "M0,-10 Q15,-35 0,-60 Q-15,-85 0,-110", stroke: "#7cb342", width: 7}
+    - {path: "M70,0 Q85,-25 70,-50 Q55,-75 70,-100", stroke: "#7cb342", width: 7}
+  sface:                                     # frightened face with huge eyes, origin = centre
+    - {circle: [0, 0, 46], fill: "#f6e7cb", width: 6}
+    - {path: "M-40,-22 Q0,-78 40,-22 Z", fill: "#f4a261", width: 5}
+    - {circle: [0, -62, 7], fill: "#e63946", width: 4}
+    - {circle: [-17, -2, 15], fill: white, width: 4}
+    - {circle: [17, -2, 15], fill: white, width: 4}
+    - {circle: [-15, 0, 5], fill: black, width: 1}
+    - {circle: [15, 0, 5], fill: black, width: 1}
+    - {line: [[-34, -26], [-8, -22]], width: 5}
+    - {line: [[34, -26], [8, -22]], width: 5}
+    - {ellipse: [0, 28, 8, 11], fill: black, width: 2}
+  crowdfaces:
+    - {use: sface, at: [-92, 30], scale: 0.95}
+    - {use: sface, at: [10, 55], scale: 1.1}
+    - {use: sface, at: [100, 20], scale: 0.9}
+    - {use: sface, at: [-45, -62], scale: 0.85}
+    - {use: sface, at: [58, -58], scale: 0.9}
+
+scenes:
+  # ---------------------------------------------------------------- A: the street, Frau Troffea dances alone
+  - id: street
+    sents: [s1, s2]
+    set:
+      - {kind: sky, clouds: [[120, 330, 110], [600, 300, 100]], drift: 8}
+      - {id: minster, kind: shape, shape: minster, x: 360, y: 748}
+      - {kind: house, x: 292, y: 750, w: 96, h: 78, wall: "#e9c46a"}
+      - {kind: house, x: 432, y: 750, w: 96, h: 78, wall: "#a8dadc"}
+      - {kind: shape, shape: street, x: 360, y: 930}
+      - {id: homeL, kind: shape, shape: houseL, x: 100, y: 842}
+      - {id: homeR, kind: shape, shape: houseR, x: 628, y: 842, scale: 0.94}
+      - {id: night, kind: shape, shape: veil, x: 360, y: 460, opacity: 0}
+      - {id: sun, kind: shape, shape: sun, x: -110, y: 340}
+      - {id: moon, kind: shape, shape: moon, x: -110, y: 340}
+    props:
+      - {id: smoke, kind: emitter, emitter: smoke, at: [185, 318], rise: 70, r: [12, 20], opacity: 0.55, prewarm: true}
+      - {id: birds, kind: emitter, emitter: birds, at: [560, 330], n: 3, dir: -1}
+      - {id: basket, kind: shape, shape: basket, on: p1, anchor: hand, offset: [0, 4], layer: top}
+      - {id: apples, kind: emitter, emitter: sparks, shape: apple, on: basket, anchor: center, n: 6, spread: 110, dir: -90, vmin: 160, vmax: 340, life: 1.0, floor: 40, layer: top}
+      - {id: sw, kind: emitter, emitter: sweat, on: fra, layer: top}
+      - {id: dazed, kind: emitter, emitter: stars, on: fra, layer: top}
+      - {id: nomus, kind: shape, shape: nomusic, x: 360, y: 345, scale: 1.45, hidden: true, layer: top}
+    cast:
+      - {id: p2, x: 92, gy: 892, k: 1.1, hat: [teal, "#e9c46a"], coat: "#52796f", coat_len: 30, face: ok}
+      - {id: p1, x: 590, gy: 892, k: 1.2, facing: l, hat: [orange, cream], face: ok}
+      - {id: fra, x: 169, gy: 894, k: 1.55, coat: "#9d4edd", coat_len: 40, hat: [cream, pink], face: ok, hidden: true}
+    beats:
+      # opening: chimney smoke, birds, slow push; a passer-by strolls in from the left
+      - {at: 0, who: smoke, do: emit}
+      - {at: 0.2, who: birds, do: burst}
+      - {at: 0, who: cam, do: push, zoom: 1.1, target: [360, 690], screen: [360, 650], dur: 5.5, ease: sine.inOut}
+      - {at: 0, who: p2, do: enter, from: left, to: 92, until: "word:called+0.2", stride: 110, lift: 14}
+      # the door bangs open and Frau Troffea walks out
+      - {at: "word:Strasbourg-0.1", who: homeL.door, do: fade, to: 0, dur: 0.12}
+      - {at: prev, who: homeL, do: jiggle, amp: 0.02}
+      - {at: prev, who: cam, do: shake, amp: 5, dur: 0.2}
+      - {at: "word:Strasbourg-0.1", who: fra, do: show}
+      - {at: "word:Strasbourg", who: fra, do: walk_to, to: 312, dur: 1.68, stride: 120, lift: 16}
+      - {at: "word:Troffea-0.3", who: p1, do: enter, from: right, to: 590, until: "word:starts+0.3", stride: 125, lift: 15}
+      # she stops and listens ... then bursts into dance
+      - {at: "word:Troffea", who: fra, do: face, name: curious}
+      - {at: prev, who: fra, do: look, target: up}
+      - {at: "word:starts", who: fra, do: face, name: happy}
+      - {at: "word:starts+0.25", who: p2, do: face, name: wow}
+      - {at: prev, who: p2, do: pose, name: cover}
+      - {at: "word:starts+0.25", who: p1, do: startle}
+      - {at: prev, who: p1, do: face, name: wow}
+      - {at: "word:dance", who: cam, do: shake, amp: 6, dur: 0.25}
+      - {at: "word:starts+0.00", who: fra, do: bob, amp: 8, freq: 1.8, until: "word:starts+0.55"}
+      - {at: "word:starts+0.00", who: fra, do: rock, amp: 4, freq: 1.0, until: "word:starts+0.55"}
+      - {at: "word:starts+0.14", who: fra, do: pose, name: wave, dur: 0.1}
+      - {at: "word:dance+0.00", who: fra, do: bob, amp: 18, freq: 2.9, until: "word:dance+1.30"}
+      - {at: "word:dance+0.00", who: fra, do: rock, amp: 8, freq: 1.6, until: "word:dance+1.30"}
+      - {at: "word:dance+0.15", who: fra, do: pose, name: shrug, dur: 0.1}
+      - {at: "word:dance+0.44", who: fra, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:dance+0.75", who: fra, do: pose, name: wave, dur: 0.1}
+      - {at: "word:dance+1.00", who: fra, do: pose, name: reach, dur: 0.1}
+      - {at: "word:dance+0.58", who: fra, do: turn, facing: l}
+      - {at: "word:dance+1.14", who: fra, do: turn, facing: r}
+      - {at: "word:dance+0.18", who: fra, do: walk_to, to: 357, dur: 0.41, stride: 150, lift: 28}
+      - {at: "word:dance+0.63", who: fra, do: walk_to, to: 267, dur: 0.41, stride: 150, lift: 28}
+      - {at: "word:dance+1.08", who: fra, do: walk_to, to: 357, dur: 0.41, stride: 150, lift: 28}
+      # the basket falls, apples roll
+      - {at: "word:dance", who: basket, do: detach}
+      - {at: prev, who: basket, do: move, to: [548, 838], dur: 0.4, ease: power2.in}
+      - {at: prev, who: basket, do: rotate, to: 75, dur: 0.4, ease: power2.in}
+      - {at: "word:dance+0.4", who: apples, do: burst}
+      - {at: prev, who: cam, do: shake, amp: 5, dur: 0.18}
+      # "no music": the crossed-out note slams in, the onlookers flinch
+      - {at: "word:no", who: nomus, do: stamp, from: 2.2, r0: -14, r1: -5}
+      - {at: prev, who: cam, do: shake, amp: 7, dur: 0.22}
+      - {at: "word:no+0.05", who: p1, do: jump_back, dist: 26}
+      - {at: "word:no+0.1", who: p2, do: tremble, amount: 1.2, until: "word:She"}
+      - {at: "word:She", who: nomus, do: fade, to: 0, dur: 0.25}
+      # sun and moon chase each other: a week flies by, she keeps dancing and tires
+      - {at: "word:She", who: p1, do: look, target: up}
+      - {at: prev, who: p2, do: look, target: up}
+      - {at: "word:She", who: sw, do: emit, until: "word:week+1.4"}
+      - {at: "word:week", who: fra, do: face, name: worried}
+      - {at: "word:cannot-0.1", who: fra, do: face, name: dizzy}
+      - {at: "word:cannot", who: fra, do: pose, name: kneel, dur: 0.25}
+      - {at: "word:cannot", who: dazed, do: emit, until: "word:stop"}
+      - {at: "word:cannot", who: p1, do: point, target: fra}
+      - {at: prev, who: p2, do: point, target: fra}
+      - {at: "word:stop", who: fra, do: pose, name: hands_up, dur: 0.12}
+      - {at: prev, who: fra, do: face, name: shout}
+      - {at: prev, who: cam, do: shake, amp: 7, dur: 0.25}
+      - {at: "word:She-0.02", who: sun, do: move, to: [-110, 340], dur: 0.01}
+      - {at: "word:She+0.00", who: sun, do: path, points: [[-110, 340], [150, 150], [570, 150], [830, 340]], dur: 0.72, ease: none}
+      - {at: "word:She+0.58", who: sun, do: move, to: [-110, 340], dur: 0.01}
+      - {at: "word:She+0.60", who: sun, do: path, points: [[-110, 340], [150, 150], [570, 150], [830, 340]], dur: 0.72, ease: none}
+      - {at: "word:She+1.18", who: sun, do: move, to: [-110, 340], dur: 0.01}
+      - {at: "word:She+1.20", who: sun, do: path, points: [[-110, 340], [150, 150], [570, 150], [830, 340]], dur: 0.72, ease: none}
+      - {at: "word:She+0.28", who: moon, do: move, to: [-110, 340], dur: 0.01}
+      - {at: "word:She+0.30", who: moon, do: path, points: [[-110, 340], [150, 150], [570, 150], [830, 340]], dur: 0.72, ease: none}
+      - {at: "word:She+0.88", who: moon, do: move, to: [-110, 340], dur: 0.01}
+      - {at: "word:She+0.90", who: moon, do: path, points: [[-110, 340], [150, 150], [570, 150], [830, 340]], dur: 0.72, ease: none}
+      - {at: "word:She+1.48", who: moon, do: move, to: [-110, 340], dur: 0.01}
+      - {at: "word:She+1.50", who: moon, do: path, points: [[-110, 340], [150, 150], [570, 150], [830, 340]], dur: 0.72, ease: none}
+      - {at: "word:She+0.25", who: night, do: fade, to: 0.42, dur: 0.25}
+      - {at: "word:She+0.55", who: night, do: fade, to: 0.0, dur: 0.25}
+      - {at: "word:She+0.85", who: night, do: fade, to: 0.42, dur: 0.25}
+      - {at: "word:She+1.15", who: night, do: fade, to: 0.0, dur: 0.25}
+      - {at: "word:She+1.45", who: night, do: fade, to: 0.42, dur: 0.25}
+      - {at: "word:She+1.75", who: night, do: fade, to: 0.05, dur: 0.25}
+      - {at: "word:There+0.00", who: fra, do: bob, amp: 18, freq: 2.9, until: "word:There+1.86"}
+      - {at: "word:There+0.00", who: fra, do: rock, amp: 8, freq: 1.6, until: "word:There+1.86"}
+      - {at: "word:dance+1.45", who: fra, do: pose, name: shrug, dur: 0.1}
+      - {at: "word:dance+1.74", who: fra, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:dance+2.05", who: fra, do: pose, name: wave, dur: 0.1}
+      - {at: "word:dance+2.30", who: fra, do: pose, name: reach, dur: 0.1}
+      - {at: "word:dance+2.65", who: fra, do: pose, name: clasp, dur: 0.1}
+      - {at: "word:dance+2.88", who: fra, do: pose, name: shrug, dur: 0.1}
+      - {at: "word:dance+3.09", who: fra, do: pose, name: wave, dur: 0.1}
+      - {at: "word:dance+1.58", who: fra, do: turn, facing: l}
+      - {at: "word:dance+2.14", who: fra, do: turn, facing: r}
+      - {at: "word:dance+2.63", who: fra, do: turn, facing: l}
+      - {at: "word:dance+3.12", who: fra, do: turn, facing: r}
+      - {at: "word:dance+1.48", who: fra, do: walk_to, to: 357, dur: 0.41, stride: 150, lift: 28}
+      - {at: "word:dance+1.93", who: fra, do: walk_to, to: 267, dur: 0.41, stride: 150, lift: 28}
+      - {at: "word:dance+2.38", who: fra, do: walk_to, to: 357, dur: 0.41, stride: 150, lift: 28}
+      - {at: "word:dance+2.83", who: fra, do: walk_to, to: 267, dur: 0.41, stride: 150, lift: 28}
+      - {at: "word:week+0.00", who: fra, do: bob, amp: 8, freq: 1.6, until: "word:week+0.77"}
+      - {at: "word:week+0.00", who: fra, do: rock, amp: 4, freq: 0.9, until: "word:week+0.77"}
+      - {at: "word:week+0.09", who: fra, do: walk_to, to: 330, dur: 0.63, stride: 150, lift: 28}
+      - {at: "word:stop+0.00", who: fra, do: bob, amp: 14, freq: 2.6, until: "word:stop+0.65"}
+      - {at: "word:stop+0.00", who: fra, do: rock, amp: 7, freq: 1.5, until: "word:stop+0.65"}
+      - {at: "word:stop+0.36", who: fra, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:stop+0.61", who: fra, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:stop+0.15", who: fra, do: walk_to, to: 347, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:stop+0.55", who: fra, do: walk_to, to: 277, dur: 0.36, stride: 150, lift: 28}
+
+  # ---------------------------------------------------------------- B: the husband joins, people run in, counter to 30
+  - id: join
+    sents: [s3]
+    camera: {zoom: 1.3, at: [300, 690], screen: [360, 600]}
+    set:
+      - {kind: sky, clouds: [[120, 330, 110], [600, 300, 100]], drift: 8}
+      - {id: minster, kind: shape, shape: minster, x: 360, y: 748}
+      - {kind: house, x: 292, y: 750, w: 96, h: 78, wall: "#e9c46a"}
+      - {kind: house, x: 432, y: 750, w: 96, h: 78, wall: "#a8dadc"}
+      - {kind: shape, shape: street, x: 360, y: 930}
+      - {id: homeL, kind: shape, shape: houseL, x: 100, y: 842}
+      - {id: homeR, kind: shape, shape: houseR, x: 628, y: 842, scale: 0.94}
+    props:
+      - {id: smoke, kind: emitter, emitter: smoke, at: [185, 318], rise: 70, r: [12, 20], opacity: 0.55, prewarm: true}
+      - {id: dust, kind: emitter, emitter: dust, on: hus, anchor: feet}
+    cast:
+      - {id: bl1, x: 40, gy: 866, k: 0.95, facing: r, hat: [orange, cream]}
+      - {id: br1, x: 430, gy: 866, k: 0.95, facing: l, hat: [teal, "#e9c46a"], coat: "#52796f", coat_len: 30}
+      - {id: br3, x: 690, gy: 866, k: 0.95, facing: l, hat: [purple, "#ffbe0b"]}
+      - {id: bl2, x: 210, gy: 868, k: 0.95, facing: r, hat: [pink, white], coat: "#bc6c25", coat_len: 30}
+      - {id: br2, x: 600, gy: 868, k: 0.95, facing: l, hat: [red, yellow]}
+      - {id: fl2, x: 150, gy: 892, k: 1.15, facing: r, hat: [blue, "#ffd166"], coat: "#457b9d", coat_len: 30}
+      - {id: fr3, x: 650, gy: 892, k: 1.2, facing: l, hat: [green, cream]}
+      - {id: fr1, x: 470, gy: 894, k: 1.2, facing: l, hat: [navy, pink], coat: "#6d597a", coat_len: 30}
+      - {id: fl1, x: 70, gy: 896, k: 1.2, facing: r, hat: [yellow, red]}
+      - {id: fr2, x: 560, gy: 896, k: 1.15, facing: l, hat: [cream, teal], coat: "#e07a5f", coat_len: 30}
+      - {id: hus, x: 250, gy: 894, k: 1.45, hair: "#6d4c41", coat: "#3d5a80", coat_len: 18, face: worried}
+      - {id: fra, x: 340, gy: 894, k: 1.55, coat: "#9d4edd", coat_len: 40, hat: [cream, pink], face: shout}
+    beats:
+      - {at: scene, who: smoke, do: emit}
+      - {at: scene, who: homeL.door, do: fade, to: 0, dur: 0.05}
+      - {at: scene, who: fra, do: pose, name: hands_up, dur: 0.01}
+      - {at: scene, who: cam, do: push, zoom: 1.4, target: [310, 690], screen: [360, 590], dur: 1.4, ease: sine.inOut}
+      # her husband runs out of the house, tries to hold her ...
+      - {at: "word:Her-0.05", who: hus, do: enter, from: 169, to: 250, dur: 0.5, stride: 190, lift: 26}
+      - {at: prev, who: dust, do: emit, until: "word:Her+0.6"}
+      - {at: "word:husband+0.4", who: hus, do: pose, name: reach, dur: 0.15}
+      - {at: "word:joins+0.15", who: hus, do: walk_to, to: 292, dur: 0.25, stride: 110, lift: 16}
+      - {at: prev, who: cam, do: shake, amp: 6, dur: 0.22}
+      - {at: "word:joins+0.4", who: hus, do: jump_back, dist: 34}
+      - {at: prev, who: hus, do: face, name: wow}
+      # ... and then dances himself
+      - {at: "word:joins+0.62", who: hus, do: face, name: happy}
+      - {at: prev, who: cam, do: shake, amp: 5, dur: 0.2}
+      # the crowd runs in; the camera pulls back to fit them
+      - {at: "word:Soon-0.3", who: cam, do: pull, zoom: 0.92, target: [360, 640], screen: [360, 660], dur: 1.5, ease: sine.inOut}
+      - {at: "word:Soon-0.40", who: fl2, do: enter, from: left, to: 150, dur: 0.9, stride: 200, lift: 26}
+      - {at: "word:Soon+0.53", who: fl2, do: bob, amp: 12.4, freq: 2.67, until: "word:Soon+2.08"}
+      - {at: "word:Soon+0.53", who: fl2, do: rock, amp: 5.2, freq: 1.53, until: "word:Soon+2.08"}
+      - {at: "word:Soon+0.75", who: fl2, do: pose, name: reach, dur: 0.1}
+      - {at: "word:Soon+1.14", who: fl2, do: pose, name: clasp, dur: 0.1}
+      - {at: "word:Soon+1.57", who: fl2, do: pose, name: shrug, dur: 0.1}
+      - {at: "word:Soon+1.91", who: fl2, do: pose, name: wave, dur: 0.1}
+      - {at: "word:Soon+0.97", who: fl2, do: turn, facing: l}
+      - {at: "word:Soon+1.83", who: fl2, do: turn, facing: r}
+      - {at: "word:Soon+0.57", who: fl2, do: walk_to, to: 172, dur: 0.45, stride: 150, lift: 28}
+      - {at: "word:Soon+1.07", who: fl2, do: walk_to, to: 128, dur: 0.45, stride: 150, lift: 28}
+      - {at: "word:Soon+1.57", who: fl2, do: walk_to, to: 172, dur: 0.45, stride: 150, lift: 28}
+      - {at: "word:Soon+2.07", who: fl2, do: walk_to, to: 128, dur: 0.45, stride: 150, lift: 28}
+      - {at: "word:Soon-0.30", who: fr1, do: enter, from: right, to: 470, dur: 0.87, stride: 200, lift: 26}
+      - {at: "word:Soon+0.60", who: fr1, do: bob, amp: 8.0, freq: 1.95, until: "word:Soon+2.08"}
+      - {at: "word:Soon+0.60", who: fr1, do: rock, amp: 5.4, freq: 0.97, until: "word:Soon+2.08"}
+      - {at: "word:Soon+0.58", who: fr1, do: pose, name: head, dur: 0.1}
+      - {at: "word:Soon+0.90", who: fr1, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:Soon+1.21", who: fr1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:Soon+1.66", who: fr1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:Soon+1.42", who: fr1, do: turn, facing: l}
+      - {at: "word:Soon+0.77", who: fr1, do: walk_to, to: 492, dur: 0.45, stride: 150, lift: 28}
+      - {at: "word:Soon+1.27", who: fr1, do: walk_to, to: 448, dur: 0.45, stride: 150, lift: 28}
+      - {at: "word:Soon+1.77", who: fr1, do: walk_to, to: 492, dur: 0.45, stride: 150, lift: 28}
+      - {at: "word:Soon-0.05", who: bl2, do: enter, from: left, to: 210, dur: 0.95, stride: 200, lift: 26}
+      - {at: "word:Soon+0.97", who: bl2, do: bob, amp: 14.4, freq: 3.21, until: "word:Soon+2.08"}
+      - {at: "word:Soon+0.97", who: bl2, do: rock, amp: 7.8, freq: 1.64, until: "word:Soon+2.08"}
+      - {at: "word:Soon+1.14", who: bl2, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:Soon+1.60", who: bl2, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:Soon+1.22", who: bl2, do: turn, facing: l}
+      - {at: "word:Soon+1.83", who: bl2, do: turn, facing: r}
+      - {at: "word:Soon+0.05", who: br1, do: enter, from: right, to: 430, dur: 0.86, stride: 200, lift: 26}
+      - {at: "word:Soon+1.01", who: br1, do: bob, amp: 15.2, freq: 2.12, until: "word:Soon+2.08"}
+      - {at: "word:Soon+1.01", who: br1, do: rock, amp: 5.9, freq: 0.9, until: "word:Soon+2.08"}
+      - {at: "word:Soon+1.34", who: br1, do: pose, name: shrug, dur: 0.1}
+      - {at: "word:Soon+1.80", who: br1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:Soon+1.72", who: br1, do: turn, facing: l}
+      - {at: "word:Soon+0.25", who: fl1, do: enter, from: left, to: 70, dur: 0.93, stride: 200, lift: 26}
+      - {at: "word:Soon+1.22", who: fl1, do: bob, amp: 8.5, freq: 1.82, until: "word:Soon+2.08"}
+      - {at: "word:Soon+1.22", who: fl1, do: rock, amp: 6.9, freq: 1.44, until: "word:Soon+2.08"}
+      - {at: "word:Soon+1.48", who: fl1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:Soon+1.96", who: fl1, do: pose, name: head, dur: 0.1}
+      - {at: "word:Soon+1.89", who: fl1, do: turn, facing: l}
+      - {at: "word:Soon+1.36", who: fl1, do: walk_to, to: 92, dur: 0.45, stride: 150, lift: 28}
+      - {at: "word:Soon+1.86", who: fl1, do: walk_to, to: 48, dur: 0.45, stride: 150, lift: 28}
+      - {at: "word:Soon+0.35", who: fr2, do: enter, from: right, to: 560, dur: 0.9, stride: 200, lift: 26}
+      - {at: "word:Soon+1.28", who: fr2, do: bob, amp: 16.6, freq: 2.83, until: "word:Soon+2.08"}
+      - {at: "word:Soon+1.28", who: fr2, do: rock, amp: 3.8, freq: 0.99, until: "word:Soon+2.08"}
+      - {at: "word:Soon+1.40", who: fr2, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:Soon+1.83", who: fr2, do: pose, name: clasp, dur: 0.1}
+      - {at: "word:Soon+1.55", who: fr2, do: turn, facing: l}
+      - {at: "word:Soon+1.26", who: fr2, do: walk_to, to: 582, dur: 0.45, stride: 150, lift: 28}
+      - {at: "word:Soon+1.76", who: fr2, do: walk_to, to: 538, dur: 0.45, stride: 150, lift: 28}
+      - {at: "word:Soon+0.55", who: bl1, do: enter, from: left, to: 40, dur: 0.86, stride: 200, lift: 26}
+      - {at: "word:Soon+1.47", who: bl1, do: bob, amp: 10.7, freq: 3.09, until: "word:Soon+2.08"}
+      - {at: "word:Soon+1.47", who: bl1, do: rock, amp: 3.8, freq: 0.91, until: "word:Soon+2.08"}
+      - {at: "word:Soon+1.74", who: bl1, do: pose, name: reach, dur: 0.1}
+      - {at: "word:Soon+1.76", who: bl1, do: turn, facing: l}
+      - {at: "word:Soon+0.65", who: br2, do: enter, from: right, to: 600, dur: 0.93, stride: 200, lift: 26}
+      - {at: "word:Soon+1.65", who: br2, do: bob, amp: 11.3, freq: 2.03, until: "word:Soon+2.08"}
+      - {at: "word:Soon+1.65", who: br2, do: rock, amp: 6.5, freq: 1.71, until: "word:Soon+2.08"}
+      - {at: "word:Soon+1.99", who: br2, do: pose, name: reach, dur: 0.1}
+      - {at: "word:Soon+0.85", who: fr3, do: enter, from: right, to: 650, dur: 0.86, stride: 200, lift: 26}
+      - {at: "word:Soon+1.76", who: fr3, do: bob, amp: 12.6, freq: 2.45, until: "word:Soon+2.08"}
+      - {at: "word:Soon+1.76", who: fr3, do: rock, amp: 8.5, freq: 1.41, until: "word:Soon+2.08"}
+      - {at: "word:Soon+1.78", who: fr3, do: pose, name: clasp, dur: 0.1}
+      - {at: "word:Soon+1.90", who: fr3, do: walk_to, to: 672, dur: 0.45, stride: 150, lift: 28}
+      - {at: "word:Soon+0.95", who: br3, do: enter, from: right, to: 690, dur: 0.92, stride: 200, lift: 26}
+      - {at: "word:Soon+1.93", who: br3, do: bob, amp: 13.6, freq: 1.93, until: "word:Soon+2.08"}
+      - {at: "word:Soon+1.93", who: br3, do: rock, amp: 7.0, freq: 0.91, until: "word:Soon+2.08"}
+      - {at: "word:Her-0.22", who: fra, do: bob, amp: 18, freq: 2.9, until: "word:Her+3.50"}
+      - {at: "word:Her-0.22", who: fra, do: rock, amp: 8, freq: 1.6, until: "word:Her+3.50"}
+      - {at: "word:Her-0.11", who: fra, do: pose, name: wave, dur: 0.1}
+      - {at: "word:Her+0.21", who: fra, do: pose, name: head, dur: 0.1}
+      - {at: "word:Her+0.49", who: fra, do: pose, name: reach, dur: 0.1}
+      - {at: "word:Her+0.75", who: fra, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:Her+1.05", who: fra, do: pose, name: clasp, dur: 0.1}
+      - {at: "word:Her+1.32", who: fra, do: pose, name: shrug, dur: 0.1}
+      - {at: "word:Her+1.60", who: fra, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:Her+1.88", who: fra, do: pose, name: wave, dur: 0.1}
+      - {at: "word:Her+2.12", who: fra, do: pose, name: reach, dur: 0.1}
+      - {at: "word:Her+2.35", who: fra, do: pose, name: clasp, dur: 0.1}
+      - {at: "word:Her+2.67", who: fra, do: pose, name: shrug, dur: 0.1}
+      - {at: "word:Her+3.00", who: fra, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:Her+3.28", who: fra, do: pose, name: wave, dur: 0.1}
+      - {at: "word:Her+0.75", who: fra, do: turn, facing: l}
+      - {at: "word:Her+1.15", who: fra, do: turn, facing: r}
+      - {at: "word:Her+1.79", who: fra, do: turn, facing: l}
+      - {at: "word:Her+2.37", who: fra, do: turn, facing: r}
+      - {at: "word:Her+2.96", who: fra, do: turn, facing: l}
+      - {at: "word:Her+3.36", who: fra, do: turn, facing: r}
+      - {at: "word:Her-0.13", who: fra, do: walk_to, to: 380, dur: 0.41, stride: 150, lift: 28}
+      - {at: "word:Her+0.32", who: fra, do: walk_to, to: 300, dur: 0.41, stride: 150, lift: 28}
+      - {at: "word:Her+0.77", who: fra, do: walk_to, to: 380, dur: 0.41, stride: 150, lift: 28}
+      - {at: "word:Her+1.22", who: fra, do: walk_to, to: 300, dur: 0.41, stride: 150, lift: 28}
+      - {at: "word:Her+1.67", who: fra, do: walk_to, to: 380, dur: 0.41, stride: 150, lift: 28}
+      - {at: "word:Her+2.12", who: fra, do: walk_to, to: 300, dur: 0.41, stride: 150, lift: 28}
+      - {at: "word:Her+2.57", who: fra, do: walk_to, to: 380, dur: 0.41, stride: 150, lift: 28}
+      - {at: "word:Her+3.02", who: fra, do: walk_to, to: 300, dur: 0.41, stride: 150, lift: 28}
+      - {at: "word:Her+3.47", who: fra, do: walk_to, to: 380, dur: 0.41, stride: 150, lift: 28}
+      - {at: "word:joins+0.45", who: hus, do: bob, amp: 15, freq: 2.5, until: "word:joins+3.20"}
+      - {at: "word:joins+0.45", who: hus, do: rock, amp: 7, freq: 1.4, until: "word:joins+3.20"}
+      - {at: "word:joins+0.59", who: hus, do: pose, name: clasp, dur: 0.1}
+      - {at: "word:joins+0.89", who: hus, do: pose, name: shrug, dur: 0.1}
+      - {at: "word:joins+1.21", who: hus, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:joins+1.45", who: hus, do: pose, name: wave, dur: 0.1}
+      - {at: "word:joins+1.82", who: hus, do: pose, name: reach, dur: 0.1}
+      - {at: "word:joins+2.12", who: hus, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:joins+2.38", who: hus, do: pose, name: clasp, dur: 0.1}
+      - {at: "word:joins+2.69", who: hus, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:joins+3.00", who: hus, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:joins+0.95", who: hus, do: turn, facing: l}
+      - {at: "word:joins+1.61", who: hus, do: turn, facing: r}
+      - {at: "word:joins+2.25", who: hus, do: turn, facing: l}
+      - {at: "word:joins+3.03", who: hus, do: turn, facing: r}
+      - {at: "word:joins+0.48", who: hus, do: walk_to, to: 284, dur: 0.45, stride: 150, lift: 28}
+      - {at: "word:joins+0.98", who: hus, do: walk_to, to: 216, dur: 0.45, stride: 150, lift: 28}
+      - {at: "word:joins+1.48", who: hus, do: walk_to, to: 284, dur: 0.45, stride: 150, lift: 28}
+      - {at: "word:joins+1.98", who: hus, do: walk_to, to: 216, dur: 0.45, stride: 150, lift: 28}
+      - {at: "word:joins+2.48", who: hus, do: walk_to, to: 284, dur: 0.45, stride: 150, lift: 28}
+      - {at: "word:joins+2.98", who: hus, do: walk_to, to: 216, dur: 0.45, stride: 150, lift: 28}
+
+  # ---------------------------------------------------------------- C: the square packed with dancers, camera pans along them
+  - id: square
+    sents: [s4]
+    in: {type: slide}
+    camera: {zoom: 1.0, at: [120, 640], screen: [360, 640]}
+    set:
+      - {kind: sky, clouds: [[-100, 330, 120], [250, 300, 100], [650, 340, 130], [960, 300, 110]], drift: 8}
+      - {id: minster, kind: shape, shape: minster, x: 480, y: 786, scale: 1.3}
+      - {kind: shape, shape: houseR, x: -260, y: 784, scale: 0.55}
+      - {kind: shape, shape: frame, x: -120, y: 784, scale: 0.65}
+      - {kind: shape, shape: houseR, x: 20, y: 784, scale: 0.55}
+      - {kind: shape, shape: frame, x: 160, y: 784, scale: 0.65}
+      - {kind: shape, shape: houseR, x: 300, y: 784, scale: 0.55}
+      - {kind: shape, shape: frame, x: 440, y: 784, scale: 0.65}
+      - {kind: shape, shape: houseR, x: 580, y: 784, scale: 0.55}
+      - {kind: shape, shape: frame, x: 720, y: 784, scale: 0.65}
+      - {kind: shape, shape: houseR, x: 860, y: 784, scale: 0.55}
+      - {kind: shape, shape: frame, x: 1000, y: 784, scale: 0.65}
+      - {kind: shape, shape: plaza, x: 400, y: 930}
+    props:
+      - {id: birds, kind: emitter, emitter: birds, at: [820, 430], n: 5, dir: -1}
+    cast:
+      - {id: a0, x: -170, gy: 812, k: 0.75, facing: r, hair: "#6d4c41"}
+      - {id: a1, x: -70, gy: 812, k: 0.75, facing: l, hat: [teal, "#e9c46a"], coat: "#52796f", coat_len: 28}
+      - {id: a2, x: 21, gy: 816, k: 0.75, facing: r, hat: [purple, "#ffbe0b"]}
+      - {id: a3, x: 136, gy: 813, k: 0.75, facing: l, hair: "#3b2a1e", coat: "#bc6c25", coat_len: 14}
+      - {id: a4, x: 219, gy: 811, k: 0.75, facing: r, hat: [red, yellow]}
+      - {id: a5, x: 320, gy: 805, k: 0.75, facing: l, hat: [blue, "#ffd166"], coat: "#457b9d", coat_len: 42}
+      - {id: a6, x: 435, gy: 810, k: 0.75, facing: r, hair: "#a3a3a3"}
+      - {id: a7, x: 536, gy: 815, k: 0.75, facing: l, hat: [navy, pink], coat: "#6d597a", coat_len: 28}
+      - {id: a8, x: 635, gy: 804, k: 0.75, facing: l, hat: [yellow, red]}
+      - {id: a9, x: 717, gy: 804, k: 0.75, facing: l, hair: "#c08a4f", coat: "#e07a5f", coat_len: 14}
+      - {id: a10, x: 844, gy: 807, k: 0.75, facing: l, hat: [orange, cream]}
+      - {id: a11, x: 940, gy: 811, k: 0.75, facing: r, hat: [teal, "#e9c46a"], coat: "#52796f", coat_len: 42}
+      - {id: b0, x: -120, gy: 858, k: 0.95, facing: l, hair: "#6d4c41"}
+      - {id: b1, x: -3, gy: 852, k: 0.95, facing: r, hat: [pink, white], coat: "#bc6c25", coat_len: 28}
+      - {id: b2, x: 111, gy: 849, k: 0.95, facing: l, hat: [red, yellow]}
+      - {id: b3, x: 225, gy: 859, k: 0.95, facing: r, hair: "#3b2a1e", coat: "#457b9d", coat_len: 14}
+      - {id: b4, x: 339, gy: 857, k: 0.95, facing: l, hat: [green, cream]}
+      - {id: b5, x: 463, gy: 853, k: 0.95, facing: r, hat: [navy, pink], coat: "#6d597a", coat_len: 42}
+      - {id: b6, x: 580, gy: 852, k: 0.95, facing: r, hair: "#a3a3a3"}
+      - {id: b7, x: 671, gy: 850, k: 0.95, facing: l, hat: [cream, teal], coat: "#e07a5f", coat_len: 28}
+      - {id: b8, x: 798, gy: 850, k: 0.95, facing: r, hat: [orange, cream]}
+      - {id: b9, x: 913, gy: 850, k: 0.95, facing: l, hair: "#c08a4f", coat: "#52796f", coat_len: 14}
+      - {id: c0, x: -47, gy: 900, k: 1.25, facing: l, hat: [purple, "#ffbe0b"]}
+      - {id: c1, x: 82, gy: 893, k: 1.25, facing: l, hat: [pink, white], coat: "#bc6c25", coat_len: 42}
+      - {id: c2, x: 241, gy: 896, k: 1.25, facing: r, hair: "#6d4c41"}
+      - {id: c3, x: 389, gy: 891, k: 1.25, facing: l, hat: [blue, "#ffd166"], coat: "#457b9d", coat_len: 28}
+      - {id: c4, x: 550, gy: 900, k: 1.25, facing: r, hat: [green, cream]}
+      - {id: c5, x: 686, gy: 891, k: 1.25, facing: r, hair: "#3b2a1e", coat: "#6d597a", coat_len: 14}
+      - {id: c6, x: 836, gy: 890, k: 1.25, facing: r, hat: [yellow, red]}
+      - {id: c7, x: 1000, gy: 891, k: 1.25, facing: l, hat: [cream, teal], coat: "#e07a5f", coat_len: 42}
+    beats:
+      - {at: "scene+0.10", who: a0, do: bob, amp: 12.3, freq: 2.11, until: "scene+2.85"}
+      - {at: "scene+0.10", who: a0, do: rock, amp: 4.8, freq: 1.41, until: "scene+2.85"}
+      - {at: "scene+0.01", who: a0, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+0.64", who: a0, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+1.42", who: a0, do: pose, name: clasp, dur: 0.1}
+      - {at: "scene+2.23", who: a0, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+2.76", who: a0, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+0.35", who: a0, do: turn, facing: l}
+      - {at: "scene+1.20", who: a0, do: turn, facing: r}
+      - {at: "scene+1.87", who: a0, do: turn, facing: l}
+      - {at: "scene+2.54", who: a0, do: turn, facing: r}
+      - {at: "scene+0.02", who: a1, do: bob, amp: 12.9, freq: 2.11, until: "scene+2.85"}
+      - {at: "scene+0.02", who: a1, do: rock, amp: 6.2, freq: 1.4, until: "scene+2.85"}
+      - {at: "scene+0.27", who: a1, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+1.03", who: a1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.80", who: a1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+2.57", who: a1, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+0.48", who: a1, do: turn, facing: l}
+      - {at: "scene+1.45", who: a1, do: turn, facing: r}
+      - {at: "scene+2.49", who: a1, do: turn, facing: l}
+      - {at: "scene+0.11", who: a2, do: bob, amp: 13.6, freq: 1.84, until: "scene+2.85"}
+      - {at: "scene+0.11", who: a2, do: rock, amp: 3.2, freq: 1.74, until: "scene+2.85"}
+      - {at: "scene+0.74", who: a2, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.49", who: a2, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+2.34", who: a2, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+0.63", who: a2, do: turn, facing: l}
+      - {at: "scene+1.32", who: a2, do: turn, facing: r}
+      - {at: "scene+2.09", who: a2, do: turn, facing: l}
+      - {at: "scene+0.03", who: a3, do: bob, amp: 10.8, freq: 2.67, until: "scene+2.85"}
+      - {at: "scene+0.03", who: a3, do: rock, amp: 4.6, freq: 1.53, until: "scene+2.85"}
+      - {at: "scene+0.25", who: a3, do: pose, name: head, dur: 0.1}
+      - {at: "scene+0.91", who: a3, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+1.57", who: a3, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+1.98", who: a3, do: pose, name: clasp, dur: 0.1}
+      - {at: "scene+2.49", who: a3, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+0.41", who: a3, do: turn, facing: l}
+      - {at: "scene+1.36", who: a3, do: turn, facing: r}
+      - {at: "scene+2.10", who: a3, do: turn, facing: l}
+      - {at: "scene+0.03", who: a4, do: bob, amp: 7.7, freq: 1.95, until: "scene+0.15"}
+      - {at: "scene+0.03", who: a4, do: rock, amp: 4.7, freq: 0.97, until: "scene+0.15"}
+      - {at: "scene+0.06", who: a4, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+0.20", who: a4, do: pose, name: kneel, dur: 0.3}
+      - {at: "scene+0.20", who: a4, do: face, name: sick}
+      - {at: "scene+0.20", who: a4, do: bob, amp: 3, freq: 1.2, until: "scene+1.00"}
+      - {at: "scene+0.20", who: a4, do: rock, amp: 2, freq: 0.7, until: "scene+1.00"}
+      - {at: "scene+1.00", who: a4, do: pose, name: hands_up, dur: 0.15}
+      - {at: "scene+1.00", who: a4, do: face, name: worried}
+      - {at: "scene+1.23", who: a4, do: bob, amp: 8.0, freq: 2.47, until: "scene+2.85"}
+      - {at: "scene+1.23", who: a4, do: rock, amp: 5.3, freq: 1.86, until: "scene+2.85"}
+      - {at: "scene+1.30", who: a4, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+1.97", who: a4, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+2.75", who: a4, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+0.07", who: a5, do: bob, amp: 12.2, freq: 3.21, until: "scene+2.85"}
+      - {at: "scene+0.07", who: a5, do: rock, amp: 6.3, freq: 1.64, until: "scene+2.85"}
+      - {at: "scene+0.09", who: a5, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+0.93", who: a5, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.92", who: a5, do: pose, name: head, dur: 0.1}
+      - {at: "scene+2.70", who: a5, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+0.46", who: a5, do: turn, facing: l}
+      - {at: "scene+1.24", who: a5, do: turn, facing: r}
+      - {at: "scene+2.16", who: a5, do: turn, facing: l}
+      - {at: "scene+0.10", who: a6, do: bob, amp: 12.8, freq: 2.12, until: "scene+2.85"}
+      - {at: "scene+0.10", who: a6, do: rock, amp: 5.0, freq: 0.9, until: "scene+2.85"}
+      - {at: "scene+0.10", who: a6, do: pose, name: head, dur: 0.1}
+      - {at: "scene+0.72", who: a6, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+1.62", who: a6, do: pose, name: clasp, dur: 0.1}
+      - {at: "scene+2.32", who: a6, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+1.08", who: a6, do: turn, facing: l}
+      - {at: "scene+2.12", who: a6, do: turn, facing: r}
+      - {at: "scene+0.04", who: a7, do: bob, amp: 8.1, freq: 1.82, until: "scene+2.85"}
+      - {at: "scene+0.04", who: a7, do: rock, amp: 5.7, freq: 1.44, until: "scene+2.85"}
+      - {at: "scene+0.46", who: a7, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.20", who: a7, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+1.88", who: a7, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+2.45", who: a7, do: pose, name: head, dur: 0.1}
+      - {at: "scene+0.64", who: a7, do: turn, facing: l}
+      - {at: "scene+1.51", who: a7, do: turn, facing: r}
+      - {at: "scene+2.67", who: a7, do: turn, facing: l}
+      - {at: "scene+0.03", who: a8, do: bob, amp: 13.7, freq: 2.83, until: "scene+1.85"}
+      - {at: "scene+0.03", who: a8, do: rock, amp: 3.5, freq: 0.99, until: "scene+1.85"}
+      - {at: "scene+0.40", who: a8, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.03", who: a8, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.50", who: a8, do: pose, name: head, dur: 0.1}
+      - {at: "scene+1.90", who: a8, do: pose, name: kneel, dur: 0.3}
+      - {at: "scene+1.90", who: a8, do: face, name: sick}
+      - {at: "scene+1.90", who: a8, do: bob, amp: 3, freq: 1.2, until: "scene+2.70"}
+      - {at: "scene+1.90", who: a8, do: rock, amp: 2, freq: 0.7, until: "scene+2.70"}
+      - {at: "scene+2.70", who: a8, do: pose, name: hands_up, dur: 0.15}
+      - {at: "scene+2.70", who: a8, do: face, name: worried}
+      - {at: "scene+2.89", who: a8, do: bob, amp: 8.4, freq: 3.21, until: "scene+2.85"}
+      - {at: "scene+2.89", who: a8, do: rock, amp: 5.7, freq: 0.94, until: "scene+2.85"}
+      - {at: "scene+0.06", who: a9, do: bob, amp: 9.6, freq: 3.09, until: "scene+2.85"}
+      - {at: "scene+0.06", who: a9, do: rock, amp: 3.6, freq: 0.91, until: "scene+2.85"}
+      - {at: "scene+0.48", who: a9, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+1.17", who: a9, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+1.98", who: a9, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+2.83", who: a9, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+0.52", who: a9, do: turn, facing: l}
+      - {at: "scene+1.23", who: a9, do: turn, facing: r}
+      - {at: "scene+2.40", who: a9, do: turn, facing: l}
+      - {at: "scene+0.07", who: a10, do: bob, amp: 10.0, freq: 2.03, until: "scene+2.85"}
+      - {at: "scene+0.07", who: a10, do: rock, amp: 5.4, freq: 1.71, until: "scene+2.85"}
+      - {at: "scene+0.39", who: a10, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+1.21", who: a10, do: pose, name: clasp, dur: 0.1}
+      - {at: "scene+2.01", who: a10, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+2.75", who: a10, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+0.76", who: a10, do: turn, facing: l}
+      - {at: "scene+1.61", who: a10, do: turn, facing: r}
+      - {at: "scene+2.53", who: a10, do: turn, facing: l}
+      - {at: "scene+0.05", who: a11, do: bob, amp: 10.9, freq: 2.45, until: "scene+2.85"}
+      - {at: "scene+0.05", who: a11, do: rock, amp: 6.9, freq: 1.41, until: "scene+2.85"}
+      - {at: "scene+0.07", who: a11, do: pose, name: clasp, dur: 0.1}
+      - {at: "scene+0.81", who: a11, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.61", who: a11, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+2.24", who: a11, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+2.83", who: a11, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+0.48", who: a11, do: turn, facing: l}
+      - {at: "scene+1.19", who: a11, do: turn, facing: r}
+      - {at: "scene+1.99", who: a11, do: turn, facing: l}
+      - {at: "scene+2.77", who: a11, do: turn, facing: r}
+      - {at: "scene+0.06", who: b0, do: bob, amp: 13.6, freq: 1.93, until: "scene+2.85"}
+      - {at: "scene+0.06", who: b0, do: rock, amp: 7.0, freq: 0.91, until: "scene+2.85"}
+      - {at: "scene+0.44", who: b0, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+0.89", who: b0, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+1.35", who: b0, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+1.86", who: b0, do: pose, name: clasp, dur: 0.1}
+      - {at: "scene+2.45", who: b0, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+0.49", who: b0, do: turn, facing: l}
+      - {at: "scene+1.55", who: b0, do: turn, facing: r}
+      - {at: "scene+2.65", who: b0, do: turn, facing: l}
+      - {at: "scene+0.03", who: b1, do: bob, amp: 13.9, freq: 3.06, until: "scene+2.85"}
+      - {at: "scene+0.03", who: b1, do: rock, amp: 7.1, freq: 1.09, until: "scene+2.85"}
+      - {at: "scene+0.02", who: b1, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+0.40", who: b1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+0.78", who: b1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.31", who: b1, do: pose, name: head, dur: 0.1}
+      - {at: "scene+1.71", who: b1, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+2.14", who: b1, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+2.53", who: b1, do: pose, name: clasp, dur: 0.1}
+      - {at: "scene+0.56", who: b1, do: turn, facing: l}
+      - {at: "scene+1.28", who: b1, do: turn, facing: r}
+      - {at: "scene+2.18", who: b1, do: turn, facing: l}
+      - {at: "scene+0.01", who: b2, do: bob, amp: 14.0, freq: 3.2, until: "scene+2.85"}
+      - {at: "scene+0.01", who: b2, do: rock, amp: 6.9, freq: 1.17, until: "scene+2.85"}
+      - {at: "scene+0.18", who: b2, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+0.75", who: b2, do: pose, name: clasp, dur: 0.1}
+      - {at: "scene+1.32", who: b2, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.89", who: b2, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+2.28", who: b2, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+2.68", who: b2, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+0.72", who: b2, do: turn, facing: l}
+      - {at: "scene+1.46", who: b2, do: turn, facing: r}
+      - {at: "scene+2.40", who: b2, do: turn, facing: l}
+      - {at: "scene+0.12", who: b3, do: bob, amp: 7.1, freq: 1.95, until: "scene+0.35"}
+      - {at: "scene+0.12", who: b3, do: rock, amp: 7.4, freq: 1.89, until: "scene+0.35"}
+      - {at: "scene+0.30", who: b3, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+0.40", who: b3, do: pose, name: kneel, dur: 0.3}
+      - {at: "scene+0.40", who: b3, do: face, name: sick}
+      - {at: "scene+0.40", who: b3, do: bob, amp: 3, freq: 1.2, until: "scene+1.30"}
+      - {at: "scene+0.40", who: b3, do: rock, amp: 2, freq: 0.7, until: "scene+1.30"}
+      - {at: "scene+1.30", who: b3, do: pose, name: hands_up, dur: 0.15}
+      - {at: "scene+1.30", who: b3, do: face, name: worried}
+      - {at: "scene+1.47", who: b3, do: bob, amp: 9.9, freq: 2.41, until: "scene+2.85"}
+      - {at: "scene+1.47", who: b3, do: rock, amp: 8.1, freq: 1.43, until: "scene+2.85"}
+      - {at: "scene+1.94", who: b3, do: pose, name: head, dur: 0.1}
+      - {at: "scene+2.41", who: b3, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+0.04", who: b4, do: bob, amp: 11.8, freq: 2.41, until: "scene+2.85"}
+      - {at: "scene+0.04", who: b4, do: rock, amp: 5.5, freq: 1.31, until: "scene+2.85"}
+      - {at: "scene+0.04", who: b4, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+0.65", who: b4, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.15", who: b4, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+1.77", who: b4, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+2.28", who: b4, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+2.81", who: b4, do: pose, name: head, dur: 0.1}
+      - {at: "scene+1.00", who: b4, do: turn, facing: l}
+      - {at: "scene+1.96", who: b4, do: turn, facing: r}
+      - {at: "scene+0.06", who: b5, do: bob, amp: 15.1, freq: 2.16, until: "scene+1.25"}
+      - {at: "scene+0.06", who: b5, do: rock, amp: 8.8, freq: 1.67, until: "scene+1.25"}
+      - {at: "scene+0.56", who: b5, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+1.05", who: b5, do: pose, name: head, dur: 0.1}
+      - {at: "scene+1.30", who: b5, do: pose, name: kneel, dur: 0.3}
+      - {at: "scene+1.30", who: b5, do: face, name: sick}
+      - {at: "scene+1.30", who: b5, do: bob, amp: 3, freq: 1.2, until: "scene+2.20"}
+      - {at: "scene+1.30", who: b5, do: rock, amp: 2, freq: 0.7, until: "scene+2.20"}
+      - {at: "scene+2.20", who: b5, do: pose, name: hands_up, dur: 0.15}
+      - {at: "scene+2.20", who: b5, do: face, name: worried}
+      - {at: "scene+2.33", who: b5, do: bob, amp: 14.7, freq: 2.36, until: "scene+2.85"}
+      - {at: "scene+2.33", who: b5, do: rock, amp: 8.8, freq: 1.84, until: "scene+2.85"}
+      - {at: "scene+2.37", who: b5, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+0.02", who: b6, do: bob, amp: 13.6, freq: 2.02, until: "scene+2.85"}
+      - {at: "scene+0.02", who: b6, do: rock, amp: 5.0, freq: 1.39, until: "scene+2.85"}
+      - {at: "scene+0.46", who: b6, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+0.99", who: b6, do: pose, name: clasp, dur: 0.1}
+      - {at: "scene+1.56", who: b6, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+1.96", who: b6, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+2.49", who: b6, do: pose, name: head, dur: 0.1}
+      - {at: "scene+0.88", who: b6, do: turn, facing: l}
+      - {at: "scene+1.89", who: b6, do: turn, facing: r}
+      - {at: "scene+0.08", who: b7, do: bob, amp: 14.8, freq: 2.52, until: "scene+2.85"}
+      - {at: "scene+0.08", who: b7, do: rock, amp: 6.1, freq: 1.29, until: "scene+2.85"}
+      - {at: "scene+0.49", who: b7, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+1.17", who: b7, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.92", who: b7, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+2.50", who: b7, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+0.38", who: b7, do: turn, facing: l}
+      - {at: "scene+1.43", who: b7, do: turn, facing: r}
+      - {at: "scene+2.37", who: b7, do: turn, facing: l}
+      - {at: "scene+0.11", who: b8, do: bob, amp: 13.9, freq: 3.15, until: "scene+2.85"}
+      - {at: "scene+0.11", who: b8, do: rock, amp: 7.6, freq: 1.16, until: "scene+2.85"}
+      - {at: "scene+0.50", who: b8, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+1.03", who: b8, do: pose, name: clasp, dur: 0.1}
+      - {at: "scene+1.55", who: b8, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+2.16", who: b8, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+2.83", who: b8, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+1.06", who: b8, do: turn, facing: l}
+      - {at: "scene+1.93", who: b8, do: turn, facing: r}
+      - {at: "scene+2.66", who: b8, do: turn, facing: l}
+      - {at: "scene+0.02", who: b9, do: bob, amp: 13.9, freq: 2.47, until: "scene+2.85"}
+      - {at: "scene+0.02", who: b9, do: rock, amp: 6.8, freq: 1.12, until: "scene+2.85"}
+      - {at: "scene+0.34", who: b9, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+0.83", who: b9, do: pose, name: head, dur: 0.1}
+      - {at: "scene+1.40", who: b9, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+2.12", who: b9, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+2.80", who: b9, do: pose, name: clasp, dur: 0.1}
+      - {at: "scene+0.70", who: b9, do: turn, facing: l}
+      - {at: "scene+1.70", who: b9, do: turn, facing: r}
+      - {at: "scene+2.63", who: b9, do: turn, facing: l}
+      - {at: "scene+0.11", who: c0, do: bob, amp: 8.4, freq: 3.3, until: "scene+2.85"}
+      - {at: "scene+0.11", who: c0, do: rock, amp: 3.1, freq: 1.08, until: "scene+2.85"}
+      - {at: "scene+0.18", who: c0, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+0.48", who: c0, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+0.84", who: c0, do: pose, name: head, dur: 0.1}
+      - {at: "scene+1.15", who: c0, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+1.54", who: c0, do: pose, name: clasp, dur: 0.1}
+      - {at: "scene+1.84", who: c0, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+2.21", who: c0, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+2.49", who: c0, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+2.84", who: c0, do: pose, name: clasp, dur: 0.1}
+      - {at: "scene+0.68", who: c0, do: turn, facing: l}
+      - {at: "scene+1.32", who: c0, do: turn, facing: r}
+      - {at: "scene+2.37", who: c0, do: turn, facing: l}
+      - {at: "scene+0.07", who: c0, do: walk_to, to: -25, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+0.57", who: c0, do: walk_to, to: -69, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+1.07", who: c0, do: walk_to, to: -25, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+1.57", who: c0, do: walk_to, to: -69, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+2.07", who: c0, do: walk_to, to: -25, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+2.57", who: c0, do: walk_to, to: -69, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+0.11", who: c1, do: bob, amp: 16.5, freq: 1.83, until: "scene+2.85"}
+      - {at: "scene+0.11", who: c1, do: rock, amp: 8.4, freq: 1.49, until: "scene+2.85"}
+      - {at: "scene+0.09", who: c1, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+0.55", who: c1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+0.90", who: c1, do: pose, name: head, dur: 0.1}
+      - {at: "scene+1.31", who: c1, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+1.66", who: c1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.98", who: c1, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+2.40", who: c1, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+0.45", who: c1, do: turn, facing: l}
+      - {at: "scene+1.30", who: c1, do: turn, facing: r}
+      - {at: "scene+1.96", who: c1, do: turn, facing: l}
+      - {at: "scene+0.14", who: c1, do: walk_to, to: 104, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+0.64", who: c1, do: walk_to, to: 60, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+1.14", who: c1, do: walk_to, to: 104, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+1.64", who: c1, do: walk_to, to: 60, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+2.14", who: c1, do: walk_to, to: 104, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+2.64", who: c1, do: walk_to, to: 60, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+0.09", who: c2, do: bob, amp: 15.4, freq: 3.3, until: "scene+0.85"}
+      - {at: "scene+0.09", who: c2, do: rock, amp: 4.1, freq: 1.09, until: "scene+0.85"}
+      - {at: "scene+0.26", who: c2, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+0.70", who: c2, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+0.90", who: c2, do: pose, name: kneel, dur: 0.3}
+      - {at: "scene+0.90", who: c2, do: face, name: sick}
+      - {at: "scene+0.90", who: c2, do: bob, amp: 3, freq: 1.2, until: "scene+1.80"}
+      - {at: "scene+0.90", who: c2, do: rock, amp: 2, freq: 0.7, until: "scene+1.80"}
+      - {at: "scene+1.80", who: c2, do: pose, name: hands_up, dur: 0.15}
+      - {at: "scene+1.80", who: c2, do: face, name: worried}
+      - {at: "scene+2.02", who: c2, do: bob, amp: 12.2, freq: 1.89, until: "scene+2.85"}
+      - {at: "scene+2.02", who: c2, do: rock, amp: 3.7, freq: 1.21, until: "scene+2.85"}
+      - {at: "scene+2.24", who: c2, do: pose, name: head, dur: 0.1}
+      - {at: "scene+2.70", who: c2, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+0.05", who: c3, do: bob, amp: 16.3, freq: 2.04, until: "scene+2.85"}
+      - {at: "scene+0.05", who: c3, do: rock, amp: 8.1, freq: 1.77, until: "scene+2.85"}
+      - {at: "scene+0.16", who: c3, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+0.62", who: c3, do: pose, name: head, dur: 0.1}
+      - {at: "scene+1.17", who: c3, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+1.66", who: c3, do: pose, name: clasp, dur: 0.1}
+      - {at: "scene+2.08", who: c3, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+2.64", who: c3, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+0.69", who: c3, do: turn, facing: l}
+      - {at: "scene+1.79", who: c3, do: turn, facing: r}
+      - {at: "scene+2.68", who: c3, do: turn, facing: l}
+      - {at: "scene+0.05", who: c3, do: walk_to, to: 411, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+0.55", who: c3, do: walk_to, to: 367, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+1.05", who: c3, do: walk_to, to: 411, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+1.55", who: c3, do: walk_to, to: 367, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+2.05", who: c3, do: walk_to, to: 411, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+2.55", who: c3, do: walk_to, to: 367, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+0.09", who: c4, do: bob, amp: 9.0, freq: 2.66, until: "scene+2.85"}
+      - {at: "scene+0.09", who: c4, do: rock, amp: 4.2, freq: 0.96, until: "scene+2.85"}
+      - {at: "scene+0.37", who: c4, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+0.83", who: c4, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+1.33", who: c4, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.70", who: c4, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+2.27", who: c4, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+2.74", who: c4, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+0.70", who: c4, do: turn, facing: l}
+      - {at: "scene+1.71", who: c4, do: turn, facing: r}
+      - {at: "scene+2.58", who: c4, do: turn, facing: l}
+      - {at: "scene+0.13", who: c4, do: walk_to, to: 572, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+0.63", who: c4, do: walk_to, to: 528, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+1.13", who: c4, do: walk_to, to: 572, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+1.63", who: c4, do: walk_to, to: 528, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+2.13", who: c4, do: walk_to, to: 572, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+2.63", who: c4, do: walk_to, to: 528, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+0.08", who: c5, do: bob, amp: 14.0, freq: 2.01, until: "scene+1.75"}
+      - {at: "scene+0.08", who: c5, do: rock, amp: 8.7, freq: 0.97, until: "scene+1.75"}
+      - {at: "scene+0.10", who: c5, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+0.56", who: c5, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+1.07", who: c5, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+1.57", who: c5, do: pose, name: head, dur: 0.1}
+      - {at: "scene+1.80", who: c5, do: pose, name: kneel, dur: 0.3}
+      - {at: "scene+1.80", who: c5, do: face, name: sick}
+      - {at: "scene+1.80", who: c5, do: bob, amp: 3, freq: 1.2, until: "scene+2.60"}
+      - {at: "scene+1.80", who: c5, do: rock, amp: 2, freq: 0.7, until: "scene+2.60"}
+      - {at: "scene+2.60", who: c5, do: pose, name: hands_up, dur: 0.15}
+      - {at: "scene+2.60", who: c5, do: face, name: worried}
+      - {at: "scene+2.82", who: c5, do: bob, amp: 10.3, freq: 3.02, until: "scene+2.85"}
+      - {at: "scene+2.82", who: c5, do: rock, amp: 4.4, freq: 1.02, until: "scene+2.85"}
+      - {at: "scene+2.73", who: c5, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+0.01", who: c6, do: bob, amp: 8.3, freq: 1.98, until: "scene+2.85"}
+      - {at: "scene+0.01", who: c6, do: rock, amp: 6.6, freq: 1.03, until: "scene+2.85"}
+      - {at: "scene+0.13", who: c6, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+0.65", who: c6, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.01", who: c6, do: pose, name: head, dur: 0.1}
+      - {at: "scene+1.34", who: c6, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+1.85", who: c6, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+2.24", who: c6, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+2.71", who: c6, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+0.91", who: c6, do: turn, facing: l}
+      - {at: "scene+1.70", who: c6, do: turn, facing: r}
+      - {at: "scene+2.82", who: c6, do: turn, facing: l}
+      - {at: "scene+0.06", who: c6, do: walk_to, to: 858, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+0.56", who: c6, do: walk_to, to: 814, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+1.06", who: c6, do: walk_to, to: 858, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+1.56", who: c6, do: walk_to, to: 814, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+2.06", who: c6, do: walk_to, to: 858, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+2.56", who: c6, do: walk_to, to: 814, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+0.07", who: c7, do: bob, amp: 10.5, freq: 2.16, until: "scene+2.85"}
+      - {at: "scene+0.07", who: c7, do: rock, amp: 8.1, freq: 1.41, until: "scene+2.85"}
+      - {at: "scene+0.38", who: c7, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+0.79", who: c7, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+1.19", who: c7, do: pose, name: head, dur: 0.1}
+      - {at: "scene+1.51", who: c7, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+1.91", who: c7, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+2.24", who: c7, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+2.72", who: c7, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.04", who: c7, do: turn, facing: l}
+      - {at: "scene+1.68", who: c7, do: turn, facing: r}
+      - {at: "scene+2.42", who: c7, do: turn, facing: l}
+      - {at: "scene+0.16", who: c7, do: walk_to, to: 1022, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+0.66", who: c7, do: walk_to, to: 978, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+1.16", who: c7, do: walk_to, to: 1022, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+1.66", who: c7, do: walk_to, to: 978, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+2.16", who: c7, do: walk_to, to: 1022, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+2.66", who: c7, do: walk_to, to: 978, dur: 0.45, stride: 150, lift: 28}
+      - {at: scene, who: cam, do: pan, zoom: 1.0, target: [640, 640], screen: [360, 640], dur: 2.85, ease: sine.inOut}
+      - {at: "word:hundreds", who: cam, do: shake, amp: 6, dur: 0.3}
+      - {at: prev, who: fx, do: lines, dur: 0.5, target: [360, 640]}
+      - {at: "word:hundreds", who: birds, do: burst}
+
+  # ---------------------------------------------------------------- D: the doctors examine a dancer, confer, prescribe more dancing
+  - id: doctors
+    sents: [s5]
+    in: {type: zoom, target: [640, 850], from: [360, 760]}
+    camera: {zoom: 1.25, at: [360, 700], screen: [360, 640]}
+    set:
+      - {kind: sky, clouds: [[-100, 330, 120], [250, 300, 100], [650, 340, 130], [960, 300, 110]], drift: 8}
+      - {id: minster, kind: shape, shape: minster, x: 480, y: 786, scale: 1.3}
+      - {kind: shape, shape: houseR, x: -260, y: 784, scale: 0.55}
+      - {kind: shape, shape: frame, x: -120, y: 784, scale: 0.65}
+      - {kind: shape, shape: houseR, x: 20, y: 784, scale: 0.55}
+      - {kind: shape, shape: frame, x: 160, y: 784, scale: 0.65}
+      - {kind: shape, shape: houseR, x: 300, y: 784, scale: 0.55}
+      - {kind: shape, shape: frame, x: 440, y: 784, scale: 0.65}
+      - {kind: shape, shape: houseR, x: 580, y: 784, scale: 0.55}
+      - {kind: shape, shape: frame, x: 720, y: 784, scale: 0.65}
+      - {kind: shape, shape: houseR, x: 860, y: 784, scale: 0.55}
+      - {kind: shape, shape: frame, x: 1000, y: 784, scale: 0.65}
+      - {kind: shape, shape: plaza, x: 400, y: 930}
+    cast:
+      - {id: d1, x: 30, gy: 812, k: 0.8, facing: r, hat: [orange, cream]}
+      - {id: d2, x: 140, gy: 812, k: 0.8, facing: l, hat: [teal, "#e9c46a"]}
+      - {id: d3, x: 250, gy: 812, k: 0.8, facing: r, hat: [purple, "#ffbe0b"]}
+      - {id: d4, x: 480, gy: 812, k: 0.8, facing: l, hat: [pink, white]}
+      - {id: d5, x: 590, gy: 812, k: 0.8, facing: r, hat: [red, yellow]}
+      - {id: d6, x: 690, gy: 812, k: 0.8, facing: l, hat: [blue, "#ffd166"]}
+      - {id: pt, x: 360, gy: 896, k: 1.4, hair: "#c08a4f", coat: "#e07a5f", coat_len: 30, face: happy}
+      - {id: doc1, x: 200, gy: 896, k: 1.5, facing: r, coat: "#1d1d2b", coat_len: 40, glasses: true, mirror: true, hair: "#9e9e9e", face: flat}
+      - {id: doc2, x: 520, gy: 896, k: 1.5, facing: l, coat: "#7b2d26", coat_len: 40, glasses: true, stetho: true, hair: "#3b2a1e", face: flat}
+    beats:
+      # the doctors run in and examine the dancer
+      - {at: scene, who: doc1, do: enter, from: left, to: 200, dur: 0.6, stride: 190, lift: 24}
+      - {at: scene, who: doc2, do: enter, from: right, to: 520, dur: 0.6, stride: 190, lift: 24}
+      - {at: "word:doctors+0.35", who: doc1, do: hold, prop: magnifier}
+      - {at: prev, who: doc1, do: pose, name: lean_in, dur: 0.2}
+      - {at: prev, who: doc1, do: look, target: pt}
+      - {at: "word:doctors+0.35", who: doc2, do: pose, name: lean_in, dur: 0.2}
+      - {at: prev, who: doc2, do: look, target: pt}
+      # they confer
+      - {at: "word:order+0.2", who: doc1, do: pose, name: think, dur: 0.2}
+      - {at: prev, who: doc1, do: face, name: think}
+      - {at: "word:order+0.25", who: doc2, do: pose, name: think, dur: 0.2}
+      - {at: prev, who: doc2, do: face, name: think}
+      - {at: "word:order+0.25", who: doc1, do: nod, until: "word:cure-0.12"}
+      - {at: "word:order+0.3", who: doc2, do: nod, until: "word:cure-0.12"}
+      # one raises a finger ...
+      - {at: "word:cure-0.15", who: doc1, do: drop}
+      - {at: "word:cure-0.12", who: doc1, do: point, target: up}
+      - {at: prev, who: doc1, do: face, name: shout}
+      - {at: "word:cure-0.12", who: doc2, do: face, name: wow}
+      - {at: "word:cure-0.1", who: cam, do: push, zoom: 1.3, target: [360, 700], screen: [360, 640], dur: 0.5}
+      - {at: "word:cure+0.1", who: cam, do: shake, amp: 5, dur: 0.2}
+      # ... and points at the dancers
+      - {at: "word:more-0.1", who: doc1, do: point, target: pt}
+      - {at: prev, who: doc1, do: look, target: pt}
+      - {at: "word:more", who: doc2, do: point, target: pt}
+      - {at: prev, who: doc2, do: face, name: happy}
+      - {at: "scene+0.11", who: d1, do: bob, amp: 12.5, freq: 3.15, until: "scene+2.85"}
+      - {at: "scene+0.11", who: d1, do: rock, amp: 6.7, freq: 1.16, until: "scene+2.85"}
+      - {at: "scene+0.37", who: d1, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+0.94", who: d1, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+1.45", who: d1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.95", who: d1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+2.40", who: d1, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+0.02", who: d2, do: bob, amp: 12.5, freq: 2.47, until: "scene+2.85"}
+      - {at: "scene+0.02", who: d2, do: rock, amp: 6.0, freq: 1.12, until: "scene+2.85"}
+      - {at: "scene+0.14", who: d2, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+0.80", who: d2, do: pose, name: head, dur: 0.1}
+      - {at: "scene+1.50", who: d2, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+2.03", who: d2, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+2.62", who: d2, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+0.11", who: d3, do: bob, amp: 8.1, freq: 3.3, until: "scene+2.85"}
+      - {at: "scene+0.11", who: d3, do: rock, amp: 3.1, freq: 1.08, until: "scene+2.85"}
+      - {at: "scene+0.29", who: d3, do: pose, name: clasp, dur: 0.1}
+      - {at: "scene+0.82", who: d3, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.31", who: d3, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.76", who: d3, do: pose, name: head, dur: 0.1}
+      - {at: "scene+2.18", who: d3, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+2.56", who: d3, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+0.11", who: d4, do: bob, amp: 14.6, freq: 1.83, until: "scene+2.85"}
+      - {at: "scene+0.11", who: d4, do: rock, amp: 7.3, freq: 1.49, until: "scene+2.85"}
+      - {at: "scene+0.23", who: d4, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+0.63", who: d4, do: pose, name: clasp, dur: 0.1}
+      - {at: "scene+1.09", who: d4, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+1.58", who: d4, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+2.15", who: d4, do: pose, name: head, dur: 0.1}
+      - {at: "scene+2.55", who: d4, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+0.09", who: d5, do: bob, amp: 13.7, freq: 3.3, until: "scene+2.85"}
+      - {at: "scene+0.09", who: d5, do: rock, amp: 3.9, freq: 1.09, until: "scene+2.85"}
+      - {at: "scene+0.30", who: d5, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+0.83", who: d5, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.51", who: d5, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+2.21", who: d5, do: pose, name: head, dur: 0.1}
+      - {at: "scene+2.77", who: d5, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+0.05", who: d6, do: bob, amp: 14.4, freq: 2.04, until: "scene+2.85"}
+      - {at: "scene+0.05", who: d6, do: rock, amp: 7.0, freq: 1.77, until: "scene+2.85"}
+      - {at: "scene+0.05", who: d6, do: pose, name: clasp, dur: 0.1}
+      - {at: "scene+0.48", who: d6, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+0.97", who: d6, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.47", who: d6, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+1.97", who: d6, do: pose, name: head, dur: 0.1}
+      - {at: "scene+2.54", who: d6, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:dancing+0.00", who: doc1, do: pose, name: clasp, dur: 0.06, sfx: [tick, 0.4]}
+      - {at: "word:dancing+0.23", who: doc1, do: pose, name: hands_up, dur: 0.06, sfx: [tick, 0.4]}
+      - {at: "word:dancing+0.46", who: doc1, do: pose, name: clasp, dur: 0.06, sfx: [tick, 0.4]}
+      - {at: "word:dancing+0.69", who: doc1, do: pose, name: hands_up, dur: 0.06, sfx: [tick, 0.4]}
+      - {at: "word:dancing+0.00", who: doc1, do: bob, amp: 9, freq: 3.0, until: "word:dancing+0.95"}
+      - {at: "word:dancing+0.00", who: doc1, do: rock, amp: 4, freq: 1.5, until: "word:dancing+0.95"}
+      - {at: "word:dancing+0.05", who: doc2, do: pose, name: clasp, dur: 0.06}
+      - {at: "word:dancing+0.28", who: doc2, do: pose, name: hands_up, dur: 0.06}
+      - {at: "word:dancing+0.51", who: doc2, do: pose, name: clasp, dur: 0.06}
+      - {at: "word:dancing+0.74", who: doc2, do: pose, name: hands_up, dur: 0.06}
+      - {at: "word:dancing+0.00", who: doc2, do: bob, amp: 9, freq: 3.0, until: "word:dancing+0.95"}
+      - {at: "word:dancing+0.00", who: doc2, do: rock, amp: 4, freq: 1.5, until: "word:dancing+0.95"}
+      - {at: "scene+0.00", who: pt, do: bob, amp: 16, freq: 2.8, until: "scene+2.85"}
+      - {at: "scene+0.00", who: pt, do: rock, amp: 8, freq: 1.5, until: "scene+2.85"}
+      - {at: "scene+0.02", who: pt, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+0.32", who: pt, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+0.58", who: pt, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+0.81", who: pt, do: pose, name: head, dur: 0.1}
+      - {at: "scene+1.07", who: pt, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+1.36", who: pt, do: pose, name: clasp, dur: 0.1}
+      - {at: "scene+1.65", who: pt, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+1.97", who: pt, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+2.33", who: pt, do: pose, name: head, dur: 0.1}
+      - {at: "scene+2.63", who: pt, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+0.72", who: pt, do: turn, facing: l}
+      - {at: "scene+1.19", who: pt, do: turn, facing: r}
+      - {at: "scene+1.88", who: pt, do: turn, facing: l}
+      - {at: "scene+2.47", who: pt, do: turn, facing: r}
+      - {at: "scene+0.12", who: pt, do: walk_to, to: 398, dur: 0.41, stride: 150, lift: 28}
+      - {at: "scene+0.57", who: pt, do: walk_to, to: 322, dur: 0.41, stride: 150, lift: 28}
+      - {at: "scene+1.02", who: pt, do: walk_to, to: 398, dur: 0.41, stride: 150, lift: 28}
+      - {at: "scene+1.47", who: pt, do: walk_to, to: 322, dur: 0.41, stride: 150, lift: 28}
+      - {at: "scene+1.92", who: pt, do: walk_to, to: 398, dur: 0.41, stride: 150, lift: 28}
+      - {at: "scene+2.37", who: pt, do: walk_to, to: 322, dur: 0.41, stride: 150, lift: 28}
+      - {at: "scene+2.82", who: pt, do: walk_to, to: 398, dur: 0.41, stride: 150, lift: 28}
+
+  # ---------------------------------------------------------------- E: guild hall doors fly open, dancers stream in, musicians march in
+  - id: hall
+    sents: [s6]
+    in: {type: slide}
+    camera: {zoom: 1.0, at: [360, 640], screen: [360, 640]}
+    set:
+      - {kind: sky, clouds: [[-60, 300, 110], [300, 260, 100], [700, 320, 120]], drift: 8}
+      - {id: minster, kind: shape, shape: minster, x: 650, y: 786, scale: 1.1}
+      - {kind: shape, shape: houseR, x: -90, y: 784, scale: 0.55}
+      - {kind: shape, shape: frame, x: 60, y: 784, scale: 0.65}
+      - {kind: shape, shape: frame, x: 760, y: 784, scale: 0.6}
+      - {kind: shape, shape: plaza, x: 400, y: 930}
+      - {id: hall, kind: shape, shape: guildhall, x: 360, y: 782}
+    props:
+      - {id: drum, kind: shape, shape: drum, on: m1, anchor: hand, offset: [0, 8], layer: top}
+      - {id: pipe, kind: shape, shape: pipe, on: m2, anchor: mouth, offset: [2, 4], layer: top}
+      - {id: fid, kind: shape, shape: fiddle, on: m3, anchor: mouth, offset: [8, 34], layer: top}
+      - {id: bow, kind: shape, shape: bow, on: m3, anchor: hand, offset: [0, 0], layer: top}
+      - {id: ea0, kind: shape, shape: note, x: 0, y: 0, hidden: true, scale: 1.4, layer: top}
+      - {id: ea1, kind: shape, shape: note, x: 0, y: 0, hidden: true, scale: 1.4, layer: top}
+      - {id: ea2, kind: shape, shape: note, x: 0, y: 0, hidden: true, scale: 1.4, layer: top}
+      - {id: eb0, kind: shape, shape: note, x: 0, y: 0, hidden: true, scale: 1.4, layer: top}
+      - {id: eb1, kind: shape, shape: note, x: 0, y: 0, hidden: true, scale: 1.4, layer: top}
+      - {id: eb2, kind: shape, shape: note, x: 0, y: 0, hidden: true, scale: 1.4, layer: top}
+      - {id: ec0, kind: shape, shape: note, x: 0, y: 0, hidden: true, scale: 1.4, layer: top}
+      - {id: ec1, kind: shape, shape: note, x: 0, y: 0, hidden: true, scale: 1.4, layer: top}
+      - {id: ec2, kind: shape, shape: note, x: 0, y: 0, hidden: true, scale: 1.4, layer: top}
+    cast:
+      - {id: e1, x: 40, gy: 830, k: 0.85, facing: r, hat: [orange, cream]}
+      - {id: e2, x: 105, gy: 832, k: 0.85, facing: r, hat: [teal, "#e9c46a"]}
+      - {id: e3, x: 620, gy: 830, k: 0.85, facing: l, hat: [purple, "#ffbe0b"]}
+      - {id: e4, x: 690, gy: 832, k: 0.85, facing: l, hat: [pink, white]}
+      - {id: q1, x: 60, gy: 896, k: 1.2, facing: r, hat: [red, yellow]}
+      - {id: q2, x: 165, gy: 898, k: 1.2, facing: r, hat: [blue, "#ffd166"]}
+      - {id: q3, x: 560, gy: 896, k: 1.2, facing: l, hat: [green, cream]}
+      - {id: q4, x: 660, gy: 898, k: 1.2, facing: l, hat: [navy, pink]}
+      - {id: g1, x: 330, gy: 892, k: 1.1, facing: r, hat: [yellow, red]}
+      - {id: g2, x: 392, gy: 892, k: 1.1, facing: l, hat: [cream, teal]}
+      - {id: g3, x: 352, gy: 892, k: 1.1, facing: r, hat: [teal, pink]}
+      - {id: g4, x: 372, gy: 892, k: 1.1, facing: l, hat: [orange, navy]}
+      - {id: g5, x: 340, gy: 892, k: 1.1, facing: r, hat: [purple, cream]}
+      - {id: g6, x: 384, gy: 892, k: 1.1, facing: l, hat: [red, white]}
+      - {id: m1, x: 470, gy: 900, k: 1.35, facing: r, hat: [red, yellow], coat: "#3d5a80", coat_len: 18}
+      - {id: m2, x: 360, gy: 902, k: 1.35, facing: r, hat: [green, cream], coat: "#bc6c25", coat_len: 18}
+      - {id: m3, x: 250, gy: 900, k: 1.35, facing: r, hair: "#3b2a1e", coat: "#6d597a", coat_len: 30}
+    beats:
+      # the doors are flung open
+      - {at: "word:opens-0.05", who: hall.dl, do: move, dx: -66, dur: 0.35, ease: back.out(1.8)}
+      - {at: prev, who: hall.dl, do: rotate, to: -14, dur: 0.35, ease: back.out(1.8)}
+      - {at: "word:opens-0.05", who: hall.dr, do: move, dx: 66, dur: 0.35, ease: back.out(1.8)}
+      - {at: prev, who: hall.dr, do: rotate, to: 14, dur: 0.35, ease: back.out(1.8)}
+      - {at: "word:opens", who: fx, do: flash, peak: 0.5}
+      - {at: prev, who: cam, do: shake, amp: 8, dur: 0.3}
+      - {at: prev, who: hall, do: jiggle, amp: 0.02}
+      - {at: "word:guild-0.3", who: cam, do: push, zoom: 1.15, target: [360, 720], screen: [360, 660], dur: 1.3, ease: sine.inOut}
+      # three musicians march in, playing
+      - {at: "word:halls+0.25", who: m1, do: enter, from: left, to: 470, dur: 1.5, stride: 160, lift: 22}
+      - {at: "word:halls+0.4", who: m2, do: enter, from: left, to: 360, dur: 1.5, stride: 160, lift: 22}
+      - {at: "word:halls+0.55", who: m3, do: enter, from: left, to: 250, dur: 1.5, stride: 160, lift: 22}
+      # the dancing gets wilder
+      - {at: "word:musicians", who: cam, do: shake, amp: 6, dur: 0.4}
+      - {at: prev, who: fx, do: lines, dur: 0.6, target: [360, 700]}
+      - {at: "word:opens+0.10", who: g1, do: enter, from: left, to: 330, dur: 0.95, stride: 200, lift: 26}
+      - {at: "word:opens+1.05", who: g1, do: move, dx: 0, dy: -105, dur: 0.4, ease: power2.in}
+      - {at: "word:opens+1.05", who: g1, do: scale, to: 0.72, dur: 0.4}
+      - {at: "word:opens+1.15", who: g1, do: fade, to: 0, dur: 0.3}
+      - {at: "word:opens+0.25", who: g2, do: enter, from: right, to: 392, dur: 0.95, stride: 200, lift: 26}
+      - {at: "word:opens+1.20", who: g2, do: move, dx: 0, dy: -105, dur: 0.4, ease: power2.in}
+      - {at: "word:opens+1.20", who: g2, do: scale, to: 0.72, dur: 0.4}
+      - {at: "word:opens+1.30", who: g2, do: fade, to: 0, dur: 0.3}
+      - {at: "word:opens+0.50", who: g3, do: enter, from: left, to: 352, dur: 0.95, stride: 200, lift: 26}
+      - {at: "word:opens+1.45", who: g3, do: move, dx: 0, dy: -105, dur: 0.4, ease: power2.in}
+      - {at: "word:opens+1.45", who: g3, do: scale, to: 0.72, dur: 0.4}
+      - {at: "word:opens+1.55", who: g3, do: fade, to: 0, dur: 0.3}
+      - {at: "word:opens+0.65", who: g4, do: enter, from: right, to: 372, dur: 0.95, stride: 200, lift: 26}
+      - {at: "word:opens+1.60", who: g4, do: move, dx: 0, dy: -105, dur: 0.4, ease: power2.in}
+      - {at: "word:opens+1.60", who: g4, do: scale, to: 0.72, dur: 0.4}
+      - {at: "word:opens+1.70", who: g4, do: fade, to: 0, dur: 0.3}
+      - {at: "word:opens+0.90", who: g5, do: enter, from: left, to: 340, dur: 0.95, stride: 200, lift: 26}
+      - {at: "word:opens+1.85", who: g5, do: move, dx: 0, dy: -105, dur: 0.4, ease: power2.in}
+      - {at: "word:opens+1.85", who: g5, do: scale, to: 0.72, dur: 0.4}
+      - {at: "word:opens+1.95", who: g5, do: fade, to: 0, dur: 0.3}
+      - {at: "word:opens+1.05", who: g6, do: enter, from: right, to: 384, dur: 0.95, stride: 200, lift: 26}
+      - {at: "word:opens+2.00", who: g6, do: move, dx: 0, dy: -105, dur: 0.4, ease: power2.in}
+      - {at: "word:opens+2.00", who: g6, do: scale, to: 0.72, dur: 0.4}
+      - {at: "word:opens+2.10", who: g6, do: fade, to: 0, dur: 0.3}
+      - {at: "scene+0.06", who: e1, do: bob, amp: 15.8, freq: 2.15, until: "scene+2.55"}
+      - {at: "scene+0.06", who: e1, do: rock, amp: 3.2, freq: 1.86, until: "scene+2.55"}
+      - {at: "scene+0.37", who: e1, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+0.98", who: e1, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+1.40", who: e1, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+1.92", who: e1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+2.47", who: e1, do: pose, name: shrug, dur: 0.1}
+      - {at: "word:musicians-0.03", who: e1, do: bob, amp: 8.8, freq: 2.64, until: "word:musicians+1.05"}
+      - {at: "word:musicians-0.03", who: e1, do: rock, amp: 10.5, freq: 1.53, until: "word:musicians+1.05"}
+      - {at: "word:musicians+0.23", who: e1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:musicians+0.51", who: e1, do: pose, name: shrug, dur: 0.1}
+      - {at: "word:musicians+0.77", who: e1, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+0.38", who: e1, do: turn, facing: l}
+      - {at: "scene+1.16", who: e1, do: turn, facing: r}
+      - {at: "scene+1.95", who: e1, do: turn, facing: l}
+      - {at: "scene+2.44", who: e1, do: turn, facing: r}
+      - {at: "scene+2.95", who: e1, do: turn, facing: l}
+      - {at: "scene+0.05", who: e2, do: bob, amp: 9.3, freq: 3.16, until: "scene+2.55"}
+      - {at: "scene+0.05", who: e2, do: rock, amp: 4.0, freq: 1.48, until: "scene+2.55"}
+      - {at: "scene+0.07", who: e2, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+0.47", who: e2, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.00", who: e2, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+1.40", who: e2, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+1.92", who: e2, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+2.32", who: e2, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:musicians-0.04", who: e2, do: bob, amp: 10.3, freq: 1.96, until: "word:musicians+1.05"}
+      - {at: "word:musicians-0.04", who: e2, do: rock, amp: 10.8, freq: 1.85, until: "word:musicians+1.05"}
+      - {at: "word:musicians+0.04", who: e2, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:musicians+0.45", who: e2, do: pose, name: head, dur: 0.1}
+      - {at: "word:musicians+0.90", who: e2, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+0.34", who: e2, do: turn, facing: l}
+      - {at: "scene+0.91", who: e2, do: turn, facing: r}
+      - {at: "scene+1.66", who: e2, do: turn, facing: l}
+      - {at: "scene+2.51", who: e2, do: turn, facing: r}
+      - {at: "scene+3.36", who: e2, do: turn, facing: l}
+      - {at: "scene+0.08", who: e3, do: bob, amp: 7.3, freq: 2.06, until: "scene+2.55"}
+      - {at: "scene+0.08", who: e3, do: rock, amp: 4.7, freq: 1.64, until: "scene+2.55"}
+      - {at: "scene+0.51", who: e3, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+1.04", who: e3, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+1.43", who: e3, do: pose, name: clasp, dur: 0.1}
+      - {at: "scene+2.03", who: e3, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+2.53", who: e3, do: pose, name: wave, dur: 0.1}
+      - {at: "word:musicians+0.00", who: e3, do: bob, amp: 17.7, freq: 2.64, until: "word:musicians+1.05"}
+      - {at: "word:musicians+0.00", who: e3, do: rock, amp: 9.4, freq: 1.7, until: "word:musicians+1.05"}
+      - {at: "word:musicians+0.12", who: e3, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:musicians+0.49", who: e3, do: pose, name: wave, dur: 0.1}
+      - {at: "word:musicians+0.93", who: e3, do: pose, name: head, dur: 0.1}
+      - {at: "scene+0.34", who: e3, do: turn, facing: l}
+      - {at: "scene+0.98", who: e3, do: turn, facing: r}
+      - {at: "scene+1.69", who: e3, do: turn, facing: l}
+      - {at: "scene+2.56", who: e3, do: turn, facing: r}
+      - {at: "scene+3.32", who: e3, do: turn, facing: l}
+      - {at: "scene+0.00", who: e4, do: bob, amp: 14.0, freq: 2.44, until: "scene+2.55"}
+      - {at: "scene+0.00", who: e4, do: rock, amp: 3.9, freq: 1.57, until: "scene+2.55"}
+      - {at: "scene+0.20", who: e4, do: pose, name: clasp, dur: 0.1}
+      - {at: "scene+0.85", who: e4, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+1.44", who: e4, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+2.05", who: e4, do: pose, name: head, dur: 0.1}
+      - {at: "word:musicians+0.06", who: e4, do: bob, amp: 16.4, freq: 2.27, until: "word:musicians+1.05"}
+      - {at: "word:musicians+0.06", who: e4, do: rock, amp: 9.5, freq: 1.01, until: "word:musicians+1.05"}
+      - {at: "word:musicians+0.21", who: e4, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:musicians+0.57", who: e4, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:musicians+0.85", who: e4, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+0.55", who: e4, do: turn, facing: l}
+      - {at: "scene+1.07", who: e4, do: turn, facing: r}
+      - {at: "scene+1.82", who: e4, do: turn, facing: l}
+      - {at: "scene+2.36", who: e4, do: turn, facing: r}
+      - {at: "scene+2.89", who: e4, do: turn, facing: l}
+      - {at: "scene+0.05", who: q1, do: bob, amp: 12.4, freq: 1.98, until: "scene+2.55"}
+      - {at: "scene+0.05", who: q1, do: rock, amp: 8.2, freq: 1.13, until: "scene+2.55"}
+      - {at: "scene+0.32", who: q1, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+0.74", who: q1, do: pose, name: head, dur: 0.1}
+      - {at: "scene+1.13", who: q1, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+1.48", who: q1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.78", who: q1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+2.13", who: q1, do: pose, name: head, dur: 0.1}
+      - {at: "word:musicians+0.02", who: q1, do: bob, amp: 9.4, freq: 2.39, until: "word:musicians+1.05"}
+      - {at: "word:musicians+0.02", who: q1, do: rock, amp: 6.2, freq: 0.92, until: "word:musicians+1.05"}
+      - {at: "word:musicians+0.20", who: q1, do: pose, name: reach, dur: 0.1}
+      - {at: "word:musicians+0.47", who: q1, do: pose, name: clasp, dur: 0.1}
+      - {at: "word:musicians+0.73", who: q1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:musicians+1.03", who: q1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+0.16", who: q1, do: walk_to, to: 82, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+0.66", who: q1, do: walk_to, to: 38, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+1.16", who: q1, do: walk_to, to: 82, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+1.66", who: q1, do: walk_to, to: 38, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+2.16", who: q1, do: walk_to, to: 82, dur: 0.45, stride: 150, lift: 28}
+      - {at: "word:musicians+0.11", who: q1, do: walk_to, to: 98, dur: 0.32, stride: 150, lift: 28}
+      - {at: "word:musicians+0.47", who: q1, do: walk_to, to: 22, dur: 0.32, stride: 150, lift: 28}
+      - {at: "word:musicians+0.83", who: q1, do: walk_to, to: 98, dur: 0.32, stride: 150, lift: 28}
+      - {at: "scene+0.45", who: q1, do: turn, facing: l}
+      - {at: "scene+1.19", who: q1, do: turn, facing: r}
+      - {at: "scene+2.07", who: q1, do: turn, facing: l}
+      - {at: "scene+2.89", who: q1, do: turn, facing: r}
+      - {at: "scene+3.46", who: q1, do: turn, facing: l}
+      - {at: "scene+0.03", who: q2, do: bob, amp: 11.9, freq: 2.24, until: "scene+2.55"}
+      - {at: "scene+0.03", who: q2, do: rock, amp: 3.5, freq: 0.97, until: "scene+2.55"}
+      - {at: "scene+0.16", who: q2, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+0.53", who: q2, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+0.86", who: q2, do: pose, name: clasp, dur: 0.1}
+      - {at: "scene+1.18", who: q2, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+1.48", who: q2, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.91", who: q2, do: pose, name: head, dur: 0.1}
+      - {at: "scene+2.24", who: q2, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:musicians+0.04", who: q2, do: bob, amp: 16.8, freq: 2.56, until: "word:musicians+1.05"}
+      - {at: "word:musicians+0.04", who: q2, do: rock, amp: 14.4, freq: 1.84, until: "word:musicians+1.05"}
+      - {at: "word:musicians+0.06", who: q2, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:musicians+0.37", who: q2, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:musicians+0.61", who: q2, do: pose, name: shrug, dur: 0.1}
+      - {at: "word:musicians+0.94", who: q2, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+0.09", who: q2, do: walk_to, to: 187, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+0.59", who: q2, do: walk_to, to: 143, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+1.09", who: q2, do: walk_to, to: 187, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+1.59", who: q2, do: walk_to, to: 143, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+2.09", who: q2, do: walk_to, to: 187, dur: 0.45, stride: 150, lift: 28}
+      - {at: "word:musicians+0.11", who: q2, do: walk_to, to: 203, dur: 0.32, stride: 150, lift: 28}
+      - {at: "word:musicians+0.47", who: q2, do: walk_to, to: 127, dur: 0.32, stride: 150, lift: 28}
+      - {at: "word:musicians+0.83", who: q2, do: walk_to, to: 203, dur: 0.32, stride: 150, lift: 28}
+      - {at: "scene+0.77", who: q2, do: turn, facing: l}
+      - {at: "scene+1.56", who: q2, do: turn, facing: r}
+      - {at: "scene+2.17", who: q2, do: turn, facing: l}
+      - {at: "scene+2.92", who: q2, do: turn, facing: r}
+      - {at: "scene+3.52", who: q2, do: turn, facing: l}
+      - {at: "scene+0.11", who: q3, do: bob, amp: 11.0, freq: 3.08, until: "scene+2.55"}
+      - {at: "scene+0.11", who: q3, do: rock, amp: 6.5, freq: 1.13, until: "scene+2.55"}
+      - {at: "scene+0.11", who: q3, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+0.57", who: q3, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+1.11", who: q3, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.67", who: q3, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+2.05", who: q3, do: pose, name: head, dur: 0.1}
+      - {at: "scene+2.43", who: q3, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:musicians-0.01", who: q3, do: bob, amp: 24.2, freq: 2.03, until: "word:musicians+1.05"}
+      - {at: "word:musicians-0.01", who: q3, do: rock, amp: 7.5, freq: 1.72, until: "word:musicians+1.05"}
+      - {at: "word:musicians+0.21", who: q3, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:musicians+0.61", who: q3, do: pose, name: wave, dur: 0.1}
+      - {at: "word:musicians+0.94", who: q3, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+0.06", who: q3, do: walk_to, to: 582, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+0.56", who: q3, do: walk_to, to: 538, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+1.06", who: q3, do: walk_to, to: 582, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+1.56", who: q3, do: walk_to, to: 538, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+2.06", who: q3, do: walk_to, to: 582, dur: 0.45, stride: 150, lift: 28}
+      - {at: "word:musicians+0.02", who: q3, do: walk_to, to: 598, dur: 0.32, stride: 150, lift: 28}
+      - {at: "word:musicians+0.38", who: q3, do: walk_to, to: 522, dur: 0.32, stride: 150, lift: 28}
+      - {at: "word:musicians+0.74", who: q3, do: walk_to, to: 598, dur: 0.32, stride: 150, lift: 28}
+      - {at: "scene+0.81", who: q3, do: turn, facing: l}
+      - {at: "scene+1.65", who: q3, do: turn, facing: r}
+      - {at: "scene+2.44", who: q3, do: turn, facing: l}
+      - {at: "scene+3.22", who: q3, do: turn, facing: r}
+      - {at: "scene+0.04", who: q4, do: bob, amp: 11.3, freq: 2.25, until: "scene+2.55"}
+      - {at: "scene+0.04", who: q4, do: rock, amp: 5.7, freq: 1.41, until: "scene+2.55"}
+      - {at: "scene+0.16", who: q4, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+0.55", who: q4, do: pose, name: clasp, dur: 0.1}
+      - {at: "scene+0.93", who: q4, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.47", who: q4, do: pose, name: shrug, dur: 0.1}
+      - {at: "scene+2.00", who: q4, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+2.53", who: q4, do: pose, name: head, dur: 0.1}
+      - {at: "word:musicians-0.03", who: q4, do: bob, amp: 22.3, freq: 3.05, until: "word:musicians+1.05"}
+      - {at: "word:musicians-0.03", who: q4, do: rock, amp: 7.2, freq: 1.7, until: "word:musicians+1.05"}
+      - {at: "word:musicians+0.27", who: q4, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:musicians+0.66", who: q4, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:musicians+0.98", who: q4, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+0.10", who: q4, do: walk_to, to: 682, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+0.60", who: q4, do: walk_to, to: 638, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+1.10", who: q4, do: walk_to, to: 682, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+1.60", who: q4, do: walk_to, to: 638, dur: 0.45, stride: 150, lift: 28}
+      - {at: "scene+2.10", who: q4, do: walk_to, to: 682, dur: 0.45, stride: 150, lift: 28}
+      - {at: "word:musicians+0.07", who: q4, do: walk_to, to: 698, dur: 0.32, stride: 150, lift: 28}
+      - {at: "word:musicians+0.43", who: q4, do: walk_to, to: 622, dur: 0.32, stride: 150, lift: 28}
+      - {at: "word:musicians+0.79", who: q4, do: walk_to, to: 698, dur: 0.32, stride: 150, lift: 28}
+      - {at: "scene+0.66", who: q4, do: turn, facing: l}
+      - {at: "scene+1.57", who: q4, do: turn, facing: r}
+      - {at: "scene+2.29", who: q4, do: turn, facing: l}
+      - {at: "scene+3.11", who: q4, do: turn, facing: r}
+      - {at: "word:halls+0.30", who: m1, do: bob, amp: 8, freq: 2.4, until: "word:halls+2.50"}
+      - {at: "word:halls+0.30", who: m1, do: rock, amp: 4, freq: 1.4, until: "word:halls+2.50"}
+      - {at: "word:hires+0.92", who: m1, do: walk_to, to: 480, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:hires+1.32", who: m1, do: walk_to, to: 460, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:hires+1.72", who: m1, do: walk_to, to: 480, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:hires+2.12", who: m1, do: walk_to, to: 460, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:halls+0.30", who: m2, do: bob, amp: 8, freq: 2.4, until: "word:halls+2.50"}
+      - {at: "word:halls+0.30", who: m2, do: rock, amp: 4, freq: 1.4, until: "word:halls+2.50"}
+      - {at: "word:hires+0.90", who: m2, do: walk_to, to: 370, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:hires+1.30", who: m2, do: walk_to, to: 350, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:hires+1.70", who: m2, do: walk_to, to: 370, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:hires+2.10", who: m2, do: walk_to, to: 350, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:halls+0.30", who: m3, do: bob, amp: 8, freq: 2.4, until: "word:halls+2.50"}
+      - {at: "word:halls+0.30", who: m3, do: rock, amp: 4, freq: 1.4, until: "word:halls+2.50"}
+      - {at: "word:hires+1.07", who: m3, do: walk_to, to: 260, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:hires+1.47", who: m3, do: walk_to, to: 240, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:hires+1.87", who: m3, do: walk_to, to: 260, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:hires+2.27", who: m3, do: walk_to, to: 240, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:hires-0.30", who: m1, do: pose, name: reach, dur: 0.08}
+      - {at: "word:hires-0.03", who: m1, do: pose, name: clasp, dur: 0.08}
+      - {at: "word:hires+0.24", who: m1, do: pose, name: reach, dur: 0.08}
+      - {at: "word:hires+0.51", who: m1, do: pose, name: clasp, dur: 0.08}
+      - {at: "word:hires+0.78", who: m1, do: pose, name: reach, dur: 0.08}
+      - {at: "word:hires+1.05", who: m1, do: pose, name: clasp, dur: 0.08}
+      - {at: "word:hires-0.30", who: bow, do: rock, amp: 16, freq: 3.4, until: "word:hires+1.9"}
+
+      - {at: "word:hires-0.45", who: ea0, do: fade, to: 1, dur: 0.01}
+      - {at: "word:hires-0.45", who: ea0, do: attach, to: m1, anchor: hand, offset: [0, -10]}
+      - {at: "word:hires-0.42", who: ea0, do: show}
+      - {at: "word:hires-0.40", who: ea0, do: detach}
+      - {at: "word:hires-0.39", who: ea0, do: move, dx: 40, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:hires-0.39", who: ea0, do: rotate, to: 18, dur: 0.95}
+      - {at: "word:hires+0.00", who: ea0, do: fade, to: 0, dur: 0.5}
+      - {at: "word:hires-0.03", who: ea1, do: fade, to: 1, dur: 0.01}
+      - {at: "word:hires-0.03", who: ea1, do: attach, to: m1, anchor: hand, offset: [0, -10]}
+      - {at: "word:hires-0.00", who: ea1, do: show}
+      - {at: "word:hires+0.02", who: ea1, do: detach}
+      - {at: "word:hires+0.03", who: ea1, do: move, dx: -70, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:hires+0.03", who: ea1, do: rotate, to: 30, dur: 0.95}
+      - {at: "word:hires+0.42", who: ea1, do: fade, to: 0, dur: 0.5}
+      - {at: "word:hires+0.39", who: ea2, do: fade, to: 1, dur: 0.01}
+      - {at: "word:hires+0.39", who: ea2, do: attach, to: m1, anchor: hand, offset: [0, -10]}
+      - {at: "word:hires+0.42", who: ea2, do: show}
+      - {at: "word:hires+0.44", who: ea2, do: detach}
+      - {at: "word:hires+0.45", who: ea2, do: move, dx: -40, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:hires+0.45", who: ea2, do: rotate, to: -30, dur: 0.95}
+      - {at: "word:hires+0.84", who: ea2, do: fade, to: 0, dur: 0.5}
+      - {at: "word:hires+0.81", who: ea0, do: fade, to: 1, dur: 0.01}
+      - {at: "word:hires+0.81", who: ea0, do: attach, to: m1, anchor: hand, offset: [0, -10]}
+      - {at: "word:hires+0.84", who: ea0, do: show}
+      - {at: "word:hires+0.86", who: ea0, do: detach}
+      - {at: "word:hires+0.87", who: ea0, do: move, dx: -40, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:hires+0.87", who: ea0, do: rotate, to: -30, dur: 0.95}
+      - {at: "word:hires+1.26", who: ea0, do: fade, to: 0, dur: 0.5}
+      - {at: "word:hires+1.23", who: ea1, do: fade, to: 1, dur: 0.01}
+      - {at: "word:hires+1.23", who: ea1, do: attach, to: m1, anchor: hand, offset: [0, -10]}
+      - {at: "word:hires+1.26", who: ea1, do: show}
+      - {at: "word:hires+1.28", who: ea1, do: detach}
+      - {at: "word:hires+1.29", who: ea1, do: move, dx: 40, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:hires+1.29", who: ea1, do: rotate, to: 30, dur: 0.95}
+      - {at: "word:hires+1.68", who: ea1, do: fade, to: 0, dur: 0.5}
+      - {at: "word:hires-0.31", who: eb0, do: fade, to: 1, dur: 0.01}
+      - {at: "word:hires-0.31", who: eb0, do: attach, to: m2, anchor: mouth, offset: [10, -16]}
+      - {at: "word:hires-0.28", who: eb0, do: show}
+      - {at: "word:hires-0.26", who: eb0, do: detach}
+      - {at: "word:hires-0.25", who: eb0, do: move, dx: -40, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:hires-0.25", who: eb0, do: rotate, to: 30, dur: 0.95}
+      - {at: "word:hires+0.14", who: eb0, do: fade, to: 0, dur: 0.5}
+      - {at: "word:hires+0.11", who: eb1, do: fade, to: 1, dur: 0.01}
+      - {at: "word:hires+0.11", who: eb1, do: attach, to: m2, anchor: mouth, offset: [10, -16]}
+      - {at: "word:hires+0.14", who: eb1, do: show}
+      - {at: "word:hires+0.16", who: eb1, do: detach}
+      - {at: "word:hires+0.17", who: eb1, do: move, dx: -70, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:hires+0.17", who: eb1, do: rotate, to: -18, dur: 0.95}
+      - {at: "word:hires+0.56", who: eb1, do: fade, to: 0, dur: 0.5}
+      - {at: "word:hires+0.53", who: eb2, do: fade, to: 1, dur: 0.01}
+      - {at: "word:hires+0.53", who: eb2, do: attach, to: m2, anchor: mouth, offset: [10, -16]}
+      - {at: "word:hires+0.56", who: eb2, do: show}
+      - {at: "word:hires+0.58", who: eb2, do: detach}
+      - {at: "word:hires+0.59", who: eb2, do: move, dx: -70, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:hires+0.59", who: eb2, do: rotate, to: -18, dur: 0.95}
+      - {at: "word:hires+0.98", who: eb2, do: fade, to: 0, dur: 0.5}
+      - {at: "word:hires+0.95", who: eb0, do: fade, to: 1, dur: 0.01}
+      - {at: "word:hires+0.95", who: eb0, do: attach, to: m2, anchor: mouth, offset: [10, -16]}
+      - {at: "word:hires+0.98", who: eb0, do: show}
+      - {at: "word:hires+1.00", who: eb0, do: detach}
+      - {at: "word:hires+1.01", who: eb0, do: move, dx: 70, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:hires+1.01", who: eb0, do: rotate, to: 18, dur: 0.95}
+      - {at: "word:hires+1.40", who: eb0, do: fade, to: 0, dur: 0.5}
+      - {at: "word:hires-0.17", who: ec0, do: fade, to: 1, dur: 0.01}
+      - {at: "word:hires-0.17", who: ec0, do: attach, to: m3, anchor: mouth, offset: [6, -30]}
+      - {at: "word:hires-0.14", who: ec0, do: show}
+      - {at: "word:hires-0.12", who: ec0, do: detach}
+      - {at: "word:hires-0.11", who: ec0, do: move, dx: -40, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:hires-0.11", who: ec0, do: rotate, to: 30, dur: 0.95}
+      - {at: "word:hires+0.28", who: ec0, do: fade, to: 0, dur: 0.5}
+      - {at: "word:hires+0.25", who: ec1, do: fade, to: 1, dur: 0.01}
+      - {at: "word:hires+0.25", who: ec1, do: attach, to: m3, anchor: mouth, offset: [6, -30]}
+      - {at: "word:hires+0.28", who: ec1, do: show}
+      - {at: "word:hires+0.30", who: ec1, do: detach}
+      - {at: "word:hires+0.31", who: ec1, do: move, dx: -40, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:hires+0.31", who: ec1, do: rotate, to: -30, dur: 0.95}
+      - {at: "word:hires+0.70", who: ec1, do: fade, to: 0, dur: 0.5}
+      - {at: "word:hires+0.67", who: ec2, do: fade, to: 1, dur: 0.01}
+      - {at: "word:hires+0.67", who: ec2, do: attach, to: m3, anchor: mouth, offset: [6, -30]}
+      - {at: "word:hires+0.70", who: ec2, do: show}
+      - {at: "word:hires+0.72", who: ec2, do: detach}
+      - {at: "word:hires+0.73", who: ec2, do: move, dx: -40, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:hires+0.73", who: ec2, do: rotate, to: 30, dur: 0.95}
+      - {at: "word:hires+1.12", who: ec2, do: fade, to: 0, dur: 0.5}
+      - {at: "word:hires+1.09", who: ec0, do: fade, to: 1, dur: 0.01}
+      - {at: "word:hires+1.09", who: ec0, do: attach, to: m3, anchor: mouth, offset: [6, -30]}
+      - {at: "word:hires+1.12", who: ec0, do: show}
+      - {at: "word:hires+1.14", who: ec0, do: detach}
+      - {at: "word:hires+1.15", who: ec0, do: move, dx: -40, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:hires+1.15", who: ec0, do: rotate, to: -18, dur: 0.95}
+      - {at: "word:hires+1.54", who: ec0, do: fade, to: 0, dur: 0.5}
+  # ---------------------------------------------------------------- F: it gets worse, the council rushes in and bans dancing and music
+  - id: ban
+    sents: [s7]
+    in: {type: whip, target: [470, 780], from: [500, 760]}
+    camera: {zoom: 1.0, at: [360, 640], screen: [360, 640]}
+    set:
+      - {kind: sky, clouds: [[-60, 300, 110], [300, 260, 100], [700, 320, 120]], drift: 8}
+      - {id: minster, kind: shape, shape: minster, x: 650, y: 786, scale: 1.1}
+      - {kind: shape, shape: houseR, x: -90, y: 784, scale: 0.55}
+      - {kind: shape, shape: frame, x: 60, y: 784, scale: 0.65}
+      - {kind: shape, shape: frame, x: 760, y: 784, scale: 0.6}
+      - {kind: shape, shape: plaza, x: 400, y: 930}
+      - {id: hall, kind: shape, shape: guildhall, x: 360, y: 782}
+    props:
+      - {id: drum, kind: shape, shape: drum, on: m1, anchor: hand, offset: [0, 8], layer: top}
+      - {id: pipe, kind: shape, shape: pipe, on: m2, anchor: mouth, offset: [2, 4], layer: top}
+      - {id: fid, kind: shape, shape: fiddle, on: m3, anchor: mouth, offset: [8, 34], layer: top}
+      - {id: bow, kind: shape, shape: bow, on: m3, anchor: hand, offset: [0, 0], layer: top}
+      - {id: ban1, kind: shape, shape: ban, x: 560, y: 740, scale: 1.3, hidden: true, layer: top}
+      - {id: bnote, kind: shape, shape: bignote, x: 360, y: 400, scale: 1.7, hidden: true, layer: top}
+      - {id: ban2, kind: shape, shape: ban, x: 360, y: 400, scale: 1.6, hidden: true, layer: top}
+      - {id: fa0, kind: shape, shape: note, x: 0, y: 0, hidden: true, scale: 1.4, layer: top}
+      - {id: fa1, kind: shape, shape: note, x: 0, y: 0, hidden: true, scale: 1.4, layer: top}
+      - {id: fa2, kind: shape, shape: note, x: 0, y: 0, hidden: true, scale: 1.4, layer: top}
+      - {id: fb0, kind: shape, shape: note, x: 0, y: 0, hidden: true, scale: 1.4, layer: top}
+      - {id: fb1, kind: shape, shape: note, x: 0, y: 0, hidden: true, scale: 1.4, layer: top}
+      - {id: fb2, kind: shape, shape: note, x: 0, y: 0, hidden: true, scale: 1.4, layer: top}
+      - {id: fc0, kind: shape, shape: note, x: 0, y: 0, hidden: true, scale: 1.4, layer: top}
+      - {id: fc1, kind: shape, shape: note, x: 0, y: 0, hidden: true, scale: 1.4, layer: top}
+      - {id: fc2, kind: shape, shape: note, x: 0, y: 0, hidden: true, scale: 1.4, layer: top}
+    cast:
+      - {id: e1, x: 40, gy: 830, k: 0.85, facing: r, hat: [orange, cream]}
+      - {id: e2, x: 105, gy: 832, k: 0.85, facing: r, hat: [teal, "#e9c46a"]}
+      - {id: e3, x: 620, gy: 830, k: 0.85, facing: l, hat: [purple, "#ffbe0b"]}
+      - {id: e4, x: 690, gy: 832, k: 0.85, facing: l, hat: [pink, white]}
+      - {id: q1, x: 60, gy: 896, k: 1.2, facing: r, hat: [red, yellow]}
+      - {id: q2, x: 165, gy: 898, k: 1.2, facing: r, hat: [blue, "#ffd166"]}
+      - {id: dz, x: 560, gy: 896, k: 1.2, facing: l, hat: [green, cream]}
+      - {id: q4, x: 660, gy: 898, k: 1.2, facing: l, hat: [navy, pink]}
+      - {id: m1, x: 470, gy: 900, k: 1.35, facing: r, hat: [red, yellow], coat: "#3d5a80", coat_len: 18}
+      - {id: m2, x: 360, gy: 902, k: 1.35, facing: r, hat: [green, cream], coat: "#bc6c25", coat_len: 18}
+      - {id: m3, x: 250, gy: 900, k: 1.35, facing: r, hair: "#3b2a1e", coat: "#6d597a", coat_len: 30}
+      - {id: c1, x: 110, gy: 906, k: 1.4, facing: r, cap: "#1d1d2b", coat: "#8d2b2b", coat_len: 40, glasses: true}
+      - {id: c3, x: 175, gy: 908, k: 1.35, facing: r, cap: "#22333b", coat: "#2d6a4f", coat_len: 40}
+      - {id: c2, x: 665, gy: 906, k: 1.4, facing: l, cap: "#3a1f5d", coat: "#1d3557", coat_len: 40, glasses: true}
+    beats:
+      # it gets worse
+      - {at: "word:worse-0.1", who: cam, do: shake, amp: 8, dur: 0.5}
+      # the council rushes in
+      - {at: "word:so", who: c1, do: enter, from: left, to: 110, dur: 0.85, stride: 230, lift: 34}
+      - {at: "word:so+0.05", who: c3, do: enter, from: left, to: 175, dur: 0.85, stride: 230, lift: 34}
+      - {at: "word:so+0.1", who: c2, do: enter, from: right, to: 665, dur: 0.85, stride: 230, lift: 34}
+      # the ban slams over a dancer ...
+      - {at: "word:dancing", who: ban1, do: stamp, from: 2.4, r0: -12, r1: -4}
+      - {at: prev, who: cam, do: shake, amp: 9, dur: 0.25}
+      - {at: "word:dancing+0.1", who: dz, do: pose, name: stand, dur: 0.1}
+      - {at: prev, who: dz, do: face, name: sad}
+      - {at: "word:dancing+0.15", who: c1, do: pose, name: stop, dur: 0.1}
+      - {at: prev, who: c3, do: pose, name: stop, dur: 0.1}
+      - {at: prev, who: c2, do: pose, name: stop, dur: 0.1}
+      - {at: prev, who: c1, do: face, name: angry}
+      - {at: prev, who: c3, do: face, name: angry}
+      - {at: prev, who: c2, do: face, name: angry}
+      # ... and over the music; the musicians lower their instruments
+      - {at: "word:music-0.2", who: bnote, do: pop}
+      - {at: "word:music", who: ban2, do: stamp, from: 2.4, r0: 10, r1: 4}
+      - {at: prev, who: cam, do: shake, amp: 10, dur: 0.28}
+      - {at: "word:music+0.1", who: m1, do: pose, name: stand, dur: 0.15}
+      - {at: prev, who: m2, do: pose, name: stand, dur: 0.15}
+      - {at: prev, who: m3, do: pose, name: stand, dur: 0.15}
+      - {at: prev, who: pipe, do: attach, to: m2, anchor: hand, offset: [0, 10]}
+      - {at: prev, who: fid, do: attach, to: m3, anchor: hand, offset: [0, 30]}
+      - {at: prev, who: m1, do: face, name: sad}
+      - {at: prev, who: m2, do: face, name: sad}
+      - {at: prev, who: m3, do: face, name: sad}
+      - {at: "word:It-0.21", who: e1, do: bob, amp: 17.4, freq: 2.99, until: "word:It+3.55"}
+      - {at: "word:It-0.21", who: e1, do: rock, amp: 5.9, freq: 1.37, until: "word:It+3.55"}
+      - {at: "word:It+0.00", who: e1, do: pose, name: shrug, dur: 0.1}
+      - {at: "word:It+0.28", who: e1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:It+0.58", who: e1, do: pose, name: wave, dur: 0.1}
+      - {at: "word:It+0.83", who: e1, do: pose, name: reach, dur: 0.1}
+      - {at: "word:It+1.14", who: e1, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:It+1.42", who: e1, do: pose, name: clasp, dur: 0.1}
+      - {at: "word:It+1.67", who: e1, do: pose, name: shrug, dur: 0.1}
+      - {at: "word:It+1.87", who: e1, do: pose, name: wave, dur: 0.1}
+      - {at: "word:It+2.19", who: e1, do: pose, name: head, dur: 0.1}
+      - {at: "word:It+2.42", who: e1, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:It+2.64", who: e1, do: pose, name: clasp, dur: 0.1}
+      - {at: "word:It+2.93", who: e1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:It+3.21", who: e1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:It+3.53", who: e1, do: pose, name: wave, dur: 0.1}
+      - {at: "word:It+0.16", who: e1, do: turn, facing: l}
+      - {at: "word:It+0.79", who: e1, do: turn, facing: r}
+      - {at: "word:It+1.41", who: e1, do: turn, facing: l}
+      - {at: "word:It+1.87", who: e1, do: turn, facing: r}
+      - {at: "word:It+2.29", who: e1, do: turn, facing: l}
+      - {at: "word:It+2.77", who: e1, do: turn, facing: r}
+      - {at: "word:It+3.28", who: e1, do: turn, facing: l}
+      - {at: "word:It-0.19", who: e2, do: bob, amp: 17.0, freq: 2.21, until: "word:It+3.55"}
+      - {at: "word:It-0.19", who: e2, do: rock, amp: 11.7, freq: 1.22, until: "word:It+3.55"}
+      - {at: "word:It-0.09", who: e2, do: pose, name: reach, dur: 0.1}
+      - {at: "word:It+0.21", who: e2, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:It+0.54", who: e2, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:It+0.79", who: e2, do: pose, name: shrug, dur: 0.1}
+      - {at: "word:It+1.07", who: e2, do: pose, name: wave, dur: 0.1}
+      - {at: "word:It+1.44", who: e2, do: pose, name: reach, dur: 0.1}
+      - {at: "word:It+1.73", who: e2, do: pose, name: clasp, dur: 0.1}
+      - {at: "word:It+2.12", who: e2, do: pose, name: shrug, dur: 0.1}
+      - {at: "word:It+2.44", who: e2, do: pose, name: wave, dur: 0.1}
+      - {at: "word:It+2.69", who: e2, do: pose, name: reach, dur: 0.1}
+      - {at: "word:It+2.96", who: e2, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:It+3.30", who: e2, do: pose, name: clasp, dur: 0.1}
+      - {at: "word:It+0.29", who: e2, do: turn, facing: l}
+      - {at: "word:It+0.87", who: e2, do: turn, facing: r}
+      - {at: "word:It+1.58", who: e2, do: turn, facing: l}
+      - {at: "word:It+2.17", who: e2, do: turn, facing: r}
+      - {at: "word:It+2.75", who: e2, do: turn, facing: l}
+      - {at: "word:It+3.23", who: e2, do: turn, facing: r}
+      - {at: "word:It-0.14", who: e3, do: bob, amp: 10.1, freq: 2.08, until: "word:It+3.55"}
+      - {at: "word:It-0.14", who: e3, do: rock, amp: 13.5, freq: 1.36, until: "word:It+3.55"}
+      - {at: "word:It-0.08", who: e3, do: pose, name: wave, dur: 0.1}
+      - {at: "word:It+0.27", who: e3, do: pose, name: head, dur: 0.1}
+      - {at: "word:It+0.62", who: e3, do: pose, name: reach, dur: 0.1}
+      - {at: "word:It+1.04", who: e3, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:It+1.31", who: e3, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:It+1.63", who: e3, do: pose, name: shrug, dur: 0.1}
+      - {at: "word:It+2.00", who: e3, do: pose, name: wave, dur: 0.1}
+      - {at: "word:It+2.34", who: e3, do: pose, name: head, dur: 0.1}
+      - {at: "word:It+2.68", who: e3, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:It+3.02", who: e3, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:It+3.41", who: e3, do: pose, name: shrug, dur: 0.1}
+      - {at: "word:It+0.41", who: e3, do: turn, facing: l}
+      - {at: "word:It+1.04", who: e3, do: turn, facing: r}
+      - {at: "word:It+1.51", who: e3, do: turn, facing: l}
+      - {at: "word:It+2.24", who: e3, do: turn, facing: r}
+      - {at: "word:It+3.01", who: e3, do: turn, facing: l}
+      - {at: "word:It-0.20", who: e4, do: bob, amp: 12.3, freq: 2.47, until: "word:It+3.55"}
+      - {at: "word:It-0.20", who: e4, do: rock, amp: 12.8, freq: 0.99, until: "word:It+3.55"}
+      - {at: "word:It+0.08", who: e4, do: pose, name: wave, dur: 0.1}
+      - {at: "word:It+0.41", who: e4, do: pose, name: reach, dur: 0.1}
+      - {at: "word:It+0.78", who: e4, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:It+1.19", who: e4, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:It+1.45", who: e4, do: pose, name: shrug, dur: 0.1}
+      - {at: "word:It+1.78", who: e4, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:It+2.05", who: e4, do: pose, name: wave, dur: 0.1}
+      - {at: "word:It+2.42", who: e4, do: pose, name: head, dur: 0.1}
+      - {at: "word:It+2.72", who: e4, do: pose, name: reach, dur: 0.1}
+      - {at: "word:It+3.03", who: e4, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:It+3.42", who: e4, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:It+0.38", who: e4, do: turn, facing: l}
+      - {at: "word:It+0.86", who: e4, do: turn, facing: r}
+      - {at: "word:It+1.38", who: e4, do: turn, facing: l}
+      - {at: "word:It+2.06", who: e4, do: turn, facing: r}
+      - {at: "word:It+2.49", who: e4, do: turn, facing: l}
+      - {at: "word:It+3.20", who: e4, do: turn, facing: r}
+      - {at: "word:It-0.19", who: q1, do: bob, amp: 18.3, freq: 3.17, until: "word:It+3.55"}
+      - {at: "word:It-0.19", who: q1, do: rock, amp: 7.4, freq: 0.92, until: "word:It+3.55"}
+      - {at: "word:It+0.11", who: q1, do: pose, name: reach, dur: 0.1}
+      - {at: "word:It+0.52", who: q1, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:It+0.82", who: q1, do: pose, name: clasp, dur: 0.1}
+      - {at: "word:It+1.21", who: q1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:It+1.51", who: q1, do: pose, name: shrug, dur: 0.1}
+      - {at: "word:It+1.95", who: q1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:It+2.35", who: q1, do: pose, name: wave, dur: 0.1}
+      - {at: "word:It+2.65", who: q1, do: pose, name: reach, dur: 0.1}
+      - {at: "word:It+3.10", who: q1, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:It+3.46", who: q1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:It+0.33", who: q1, do: turn, facing: l}
+      - {at: "word:It+1.07", who: q1, do: turn, facing: r}
+      - {at: "word:It+1.63", who: q1, do: turn, facing: l}
+      - {at: "word:It+2.23", who: q1, do: turn, facing: r}
+      - {at: "word:It+2.88", who: q1, do: turn, facing: l}
+      - {at: "word:It+3.55", who: q1, do: turn, facing: r}
+      - {at: "word:It-0.08", who: q1, do: walk_to, to: 94, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+0.32", who: q1, do: walk_to, to: 26, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+0.72", who: q1, do: walk_to, to: 94, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+1.12", who: q1, do: walk_to, to: 26, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+1.52", who: q1, do: walk_to, to: 94, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+1.92", who: q1, do: walk_to, to: 26, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+2.32", who: q1, do: walk_to, to: 94, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+2.72", who: q1, do: walk_to, to: 26, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+3.12", who: q1, do: walk_to, to: 94, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+3.52", who: q1, do: walk_to, to: 26, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It-0.20", who: q2, do: bob, amp: 12.2, freq: 2.41, until: "word:It+0.40"}
+      - {at: "word:It-0.20", who: q2, do: rock, amp: 12.1, freq: 1.43, until: "word:It+0.40"}
+      - {at: "word:It+0.01", who: q2, do: pose, name: head, dur: 0.1}
+      - {at: "word:It+0.33", who: q2, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:It+0.45", who: q2, do: pose, name: kneel, dur: 0.3}
+      - {at: "word:It+0.45", who: q2, do: face, name: sick}
+      - {at: "word:It+0.45", who: q2, do: bob, amp: 3, freq: 1.2, until: "word:It+1.15"}
+      - {at: "word:It+0.45", who: q2, do: rock, amp: 2, freq: 0.7, until: "word:It+1.15"}
+      - {at: "word:It+1.15", who: q2, do: pose, name: hands_up, dur: 0.15}
+      - {at: "word:It+1.15", who: q2, do: face, name: worried}
+      - {at: "word:It+1.32", who: q2, do: bob, amp: 14.9, freq: 2.93, until: "word:It+3.55"}
+      - {at: "word:It+1.32", who: q2, do: rock, amp: 3.4, freq: 1.57, until: "word:It+3.55"}
+      - {at: "word:It+1.46", who: q2, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:It+1.71", who: q2, do: pose, name: wave, dur: 0.1}
+      - {at: "word:It+2.05", who: q2, do: pose, name: head, dur: 0.1}
+      - {at: "word:It+2.40", who: q2, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:It+2.77", who: q2, do: pose, name: clasp, dur: 0.1}
+      - {at: "word:It+3.10", who: q2, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:It+3.45", who: q2, do: pose, name: shrug, dur: 0.1}
+      - {at: "word:It-0.24", who: dz, do: bob, amp: 14.8, freq: 2.41, until: "word:It+2.10"}
+      - {at: "word:It-0.24", who: dz, do: rock, amp: 5.7, freq: 1.16, until: "word:It+2.10"}
+      - {at: "word:It-0.18", who: dz, do: pose, name: reach, dur: 0.1}
+      - {at: "word:It+0.09", who: dz, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:It+0.43", who: dz, do: pose, name: clasp, dur: 0.1}
+      - {at: "word:It+0.78", who: dz, do: pose, name: shrug, dur: 0.1}
+      - {at: "word:It+1.09", who: dz, do: pose, name: wave, dur: 0.1}
+      - {at: "word:It+1.44", who: dz, do: pose, name: reach, dur: 0.1}
+      - {at: "word:It+1.70", who: dz, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:It+1.99", who: dz, do: pose, name: clasp, dur: 0.1}
+      - {at: "word:It+0.24", who: dz, do: turn, facing: l}
+      - {at: "word:It+0.86", who: dz, do: turn, facing: r}
+      - {at: "word:It+1.52", who: dz, do: turn, facing: l}
+      - {at: "word:It-0.24", who: dz, do: walk_to, to: 594, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+0.16", who: dz, do: walk_to, to: 526, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+0.56", who: dz, do: walk_to, to: 594, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+0.96", who: dz, do: walk_to, to: 526, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+1.36", who: dz, do: walk_to, to: 594, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+1.76", who: dz, do: walk_to, to: 526, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It-0.24", who: q4, do: bob, amp: 20.8, freq: 2.36, until: "word:It+0.95"}
+      - {at: "word:It-0.24", who: q4, do: rock, amp: 13.5, freq: 1.84, until: "word:It+0.95"}
+      - {at: "word:It-0.18", who: q4, do: pose, name: shrug, dur: 0.1}
+      - {at: "word:It+0.07", who: q4, do: pose, name: wave, dur: 0.1}
+      - {at: "word:It+0.32", who: q4, do: pose, name: head, dur: 0.1}
+      - {at: "word:It+0.54", who: q4, do: pose, name: reach, dur: 0.1}
+      - {at: "word:It+0.79", who: q4, do: pose, name: clasp, dur: 0.1}
+      - {at: "word:It+1.00", who: q4, do: pose, name: kneel, dur: 0.3}
+      - {at: "word:It+1.00", who: q4, do: face, name: sick}
+      - {at: "word:It+1.00", who: q4, do: bob, amp: 3, freq: 1.2, until: "word:It+1.70"}
+      - {at: "word:It+1.00", who: q4, do: rock, amp: 2, freq: 0.7, until: "word:It+1.70"}
+      - {at: "word:It+1.70", who: q4, do: pose, name: hands_up, dur: 0.15}
+      - {at: "word:It+1.70", who: q4, do: face, name: worried}
+      - {at: "word:It+1.92", who: q4, do: bob, amp: 12.9, freq: 3.02, until: "word:It+3.55"}
+      - {at: "word:It+1.92", who: q4, do: rock, amp: 5.6, freq: 1.02, until: "word:It+3.55"}
+      - {at: "word:It+1.95", who: q4, do: pose, name: head, dur: 0.1}
+      - {at: "word:It+2.27", who: q4, do: pose, name: reach, dur: 0.1}
+      - {at: "word:It+2.49", who: q4, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:It+2.82", who: q4, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:It+3.12", who: q4, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:It+3.42", who: q4, do: pose, name: head, dur: 0.1}
+      - {at: "word:It-0.25", who: m1, do: bob, amp: 8, freq: 2.6, until: "word:It+3.05"}
+      - {at: "word:It-0.25", who: m1, do: rock, amp: 4, freq: 1.4, until: "word:It+3.05"}
+      - {at: "word:It-0.05", who: m1, do: walk_to, to: 480, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+0.35", who: m1, do: walk_to, to: 460, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+0.75", who: m1, do: walk_to, to: 480, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+1.15", who: m1, do: walk_to, to: 460, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+1.55", who: m1, do: walk_to, to: 480, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+1.95", who: m1, do: walk_to, to: 460, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+2.35", who: m1, do: walk_to, to: 480, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+2.75", who: m1, do: walk_to, to: 460, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It-0.25", who: m2, do: bob, amp: 8, freq: 2.6, until: "word:It+3.05"}
+      - {at: "word:It-0.25", who: m2, do: rock, amp: 4, freq: 1.4, until: "word:It+3.05"}
+      - {at: "word:It-0.16", who: m2, do: walk_to, to: 370, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+0.24", who: m2, do: walk_to, to: 350, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+0.64", who: m2, do: walk_to, to: 370, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+1.04", who: m2, do: walk_to, to: 350, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+1.44", who: m2, do: walk_to, to: 370, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+1.84", who: m2, do: walk_to, to: 350, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+2.24", who: m2, do: walk_to, to: 370, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+2.64", who: m2, do: walk_to, to: 350, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It-0.25", who: m3, do: bob, amp: 8, freq: 2.6, until: "word:It+3.05"}
+      - {at: "word:It-0.25", who: m3, do: rock, amp: 4, freq: 1.4, until: "word:It+3.05"}
+      - {at: "word:It-0.09", who: m3, do: walk_to, to: 260, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+0.31", who: m3, do: walk_to, to: 240, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+0.71", who: m3, do: walk_to, to: 260, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+1.11", who: m3, do: walk_to, to: 240, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+1.51", who: m3, do: walk_to, to: 260, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+1.91", who: m3, do: walk_to, to: 240, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+2.31", who: m3, do: walk_to, to: 260, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It+2.71", who: m3, do: walk_to, to: 240, dur: 0.36, stride: 150, lift: 28}
+      - {at: "word:It-0.20", who: m1, do: pose, name: reach, dur: 0.08}
+      - {at: "word:It+0.07", who: m1, do: pose, name: clasp, dur: 0.08}
+      - {at: "word:It+0.34", who: m1, do: pose, name: reach, dur: 0.08}
+      - {at: "word:It+0.61", who: m1, do: pose, name: clasp, dur: 0.08}
+      - {at: "word:It+0.88", who: m1, do: pose, name: reach, dur: 0.08}
+      - {at: "word:It+1.15", who: m1, do: pose, name: clasp, dur: 0.08}
+      - {at: "word:It+1.42", who: m1, do: pose, name: reach, dur: 0.08}
+      - {at: "word:It+1.69", who: m1, do: pose, name: clasp, dur: 0.08}
+      - {at: "word:It+1.96", who: m1, do: pose, name: reach, dur: 0.08}
+      - {at: "word:It+2.23", who: m1, do: pose, name: clasp, dur: 0.08}
+      - {at: "word:It+2.50", who: m1, do: pose, name: reach, dur: 0.08}
+      - {at: "word:It-0.25", who: bow, do: rock, amp: 16, freq: 3.4, until: "word:music+0.1"}
+      - {at: "word:so+0.06", who: c1, do: pose, name: wave, dur: 0.1}
+      - {at: "word:so+0.30", who: c1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:so+0.46", who: c1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:so+0.71", who: c1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:dancing+0.20", who: c1, do: tremble, amount: 1.5}
+      - {at: "word:so+0.18", who: c3, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:so+0.41", who: c3, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:so+0.62", who: c3, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:so+0.85", who: c3, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:dancing+0.20", who: c3, do: tremble, amount: 1.5}
+      - {at: "word:so+0.03", who: c2, do: pose, name: wave, dur: 0.1}
+      - {at: "word:so+0.22", who: c2, do: pose, name: wave, dur: 0.1}
+      - {at: "word:so+0.39", who: c2, do: pose, name: wave, dur: 0.1}
+      - {at: "word:so+0.61", who: c2, do: pose, name: wave, dur: 0.1}
+      - {at: "word:so+0.77", who: c2, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:dancing+0.20", who: c2, do: tremble, amount: 1.5}
+      - {at: "word:It-0.25", who: fa0, do: fade, to: 1, dur: 0.01}
+      - {at: "word:It-0.25", who: fa0, do: attach, to: m1, anchor: hand, offset: [0, -10]}
+      - {at: "word:It-0.22", who: fa0, do: show}
+      - {at: "word:It-0.20", who: fa0, do: detach}
+      - {at: "word:It-0.19", who: fa0, do: move, dx: -70, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:It-0.19", who: fa0, do: rotate, to: 30, dur: 0.95}
+      - {at: "word:It+0.20", who: fa0, do: fade, to: 0, dur: 0.5}
+      - {at: "word:It+0.20", who: fa1, do: fade, to: 1, dur: 0.01}
+      - {at: "word:It+0.20", who: fa1, do: attach, to: m1, anchor: hand, offset: [0, -10]}
+      - {at: "word:It+0.23", who: fa1, do: show}
+      - {at: "word:It+0.25", who: fa1, do: detach}
+      - {at: "word:It+0.26", who: fa1, do: move, dx: 40, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:It+0.26", who: fa1, do: rotate, to: -30, dur: 0.95}
+      - {at: "word:It+0.65", who: fa1, do: fade, to: 0, dur: 0.5}
+      - {at: "word:It+0.65", who: fa2, do: fade, to: 1, dur: 0.01}
+      - {at: "word:It+0.65", who: fa2, do: attach, to: m1, anchor: hand, offset: [0, -10]}
+      - {at: "word:It+0.68", who: fa2, do: show}
+      - {at: "word:It+0.70", who: fa2, do: detach}
+      - {at: "word:It+0.71", who: fa2, do: move, dx: -70, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:It+0.71", who: fa2, do: rotate, to: -18, dur: 0.95}
+      - {at: "word:It+1.10", who: fa2, do: fade, to: 0, dur: 0.5}
+      - {at: "word:It+1.10", who: fa0, do: fade, to: 1, dur: 0.01}
+      - {at: "word:It+1.10", who: fa0, do: attach, to: m1, anchor: hand, offset: [0, -10]}
+      - {at: "word:It+1.13", who: fa0, do: show}
+      - {at: "word:It+1.15", who: fa0, do: detach}
+      - {at: "word:It+1.16", who: fa0, do: move, dx: 70, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:It+1.16", who: fa0, do: rotate, to: 18, dur: 0.95}
+      - {at: "word:It+1.55", who: fa0, do: fade, to: 0, dur: 0.5}
+      - {at: "word:It+1.55", who: fa1, do: fade, to: 1, dur: 0.01}
+      - {at: "word:It+1.55", who: fa1, do: attach, to: m1, anchor: hand, offset: [0, -10]}
+      - {at: "word:It+1.58", who: fa1, do: show}
+      - {at: "word:It+1.60", who: fa1, do: detach}
+      - {at: "word:It+1.61", who: fa1, do: move, dx: 40, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:It+1.61", who: fa1, do: rotate, to: -30, dur: 0.95}
+      - {at: "word:It+2.00", who: fa1, do: fade, to: 0, dur: 0.5}
+      - {at: "word:It+2.00", who: fa2, do: fade, to: 1, dur: 0.01}
+      - {at: "word:It+2.00", who: fa2, do: attach, to: m1, anchor: hand, offset: [0, -10]}
+      - {at: "word:It+2.03", who: fa2, do: show}
+      - {at: "word:It+2.05", who: fa2, do: detach}
+      - {at: "word:It+2.06", who: fa2, do: move, dx: 40, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:It+2.06", who: fa2, do: rotate, to: 30, dur: 0.95}
+      - {at: "word:It+2.45", who: fa2, do: fade, to: 0, dur: 0.5}
+      - {at: "word:It+2.45", who: fa0, do: fade, to: 1, dur: 0.01}
+      - {at: "word:It+2.45", who: fa0, do: attach, to: m1, anchor: hand, offset: [0, -10]}
+      - {at: "word:It+2.48", who: fa0, do: show}
+      - {at: "word:It+2.50", who: fa0, do: detach}
+      - {at: "word:It+2.51", who: fa0, do: move, dx: -40, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:It+2.51", who: fa0, do: rotate, to: 30, dur: 0.95}
+      - {at: "word:It+2.90", who: fa0, do: fade, to: 0, dur: 0.5}
+      - {at: "word:It-0.11", who: fb0, do: fade, to: 1, dur: 0.01}
+      - {at: "word:It-0.11", who: fb0, do: attach, to: m2, anchor: mouth, offset: [10, -16]}
+      - {at: "word:It-0.08", who: fb0, do: show}
+      - {at: "word:It-0.06", who: fb0, do: detach}
+      - {at: "word:It-0.05", who: fb0, do: move, dx: -70, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:It-0.05", who: fb0, do: rotate, to: -18, dur: 0.95}
+      - {at: "word:It+0.34", who: fb0, do: fade, to: 0, dur: 0.5}
+      - {at: "word:It+0.34", who: fb1, do: fade, to: 1, dur: 0.01}
+      - {at: "word:It+0.34", who: fb1, do: attach, to: m2, anchor: mouth, offset: [10, -16]}
+      - {at: "word:It+0.37", who: fb1, do: show}
+      - {at: "word:It+0.39", who: fb1, do: detach}
+      - {at: "word:It+0.40", who: fb1, do: move, dx: 40, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:It+0.40", who: fb1, do: rotate, to: -30, dur: 0.95}
+      - {at: "word:It+0.79", who: fb1, do: fade, to: 0, dur: 0.5}
+      - {at: "word:It+0.79", who: fb2, do: fade, to: 1, dur: 0.01}
+      - {at: "word:It+0.79", who: fb2, do: attach, to: m2, anchor: mouth, offset: [10, -16]}
+      - {at: "word:It+0.82", who: fb2, do: show}
+      - {at: "word:It+0.84", who: fb2, do: detach}
+      - {at: "word:It+0.85", who: fb2, do: move, dx: 70, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:It+0.85", who: fb2, do: rotate, to: 18, dur: 0.95}
+      - {at: "word:It+1.24", who: fb2, do: fade, to: 0, dur: 0.5}
+      - {at: "word:It+1.24", who: fb0, do: fade, to: 1, dur: 0.01}
+      - {at: "word:It+1.24", who: fb0, do: attach, to: m2, anchor: mouth, offset: [10, -16]}
+      - {at: "word:It+1.27", who: fb0, do: show}
+      - {at: "word:It+1.29", who: fb0, do: detach}
+      - {at: "word:It+1.30", who: fb0, do: move, dx: -70, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:It+1.30", who: fb0, do: rotate, to: 18, dur: 0.95}
+      - {at: "word:It+1.69", who: fb0, do: fade, to: 0, dur: 0.5}
+      - {at: "word:It+1.69", who: fb1, do: fade, to: 1, dur: 0.01}
+      - {at: "word:It+1.69", who: fb1, do: attach, to: m2, anchor: mouth, offset: [10, -16]}
+      - {at: "word:It+1.72", who: fb1, do: show}
+      - {at: "word:It+1.74", who: fb1, do: detach}
+      - {at: "word:It+1.75", who: fb1, do: move, dx: 70, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:It+1.75", who: fb1, do: rotate, to: 18, dur: 0.95}
+      - {at: "word:It+2.14", who: fb1, do: fade, to: 0, dur: 0.5}
+      - {at: "word:It+2.14", who: fb2, do: fade, to: 1, dur: 0.01}
+      - {at: "word:It+2.14", who: fb2, do: attach, to: m2, anchor: mouth, offset: [10, -16]}
+      - {at: "word:It+2.17", who: fb2, do: show}
+      - {at: "word:It+2.19", who: fb2, do: detach}
+      - {at: "word:It+2.20", who: fb2, do: move, dx: 70, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:It+2.20", who: fb2, do: rotate, to: -30, dur: 0.95}
+      - {at: "word:It+2.59", who: fb2, do: fade, to: 0, dur: 0.5}
+      - {at: "word:It+2.59", who: fb0, do: fade, to: 1, dur: 0.01}
+      - {at: "word:It+2.59", who: fb0, do: attach, to: m2, anchor: mouth, offset: [10, -16]}
+      - {at: "word:It+2.62", who: fb0, do: show}
+      - {at: "word:It+2.64", who: fb0, do: detach}
+      - {at: "word:It+2.65", who: fb0, do: move, dx: -40, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:It+2.65", who: fb0, do: rotate, to: 18, dur: 0.95}
+      - {at: "word:It+3.04", who: fb0, do: fade, to: 0, dur: 0.5}
+      - {at: "word:It+0.03", who: fc0, do: fade, to: 1, dur: 0.01}
+      - {at: "word:It+0.03", who: fc0, do: attach, to: m3, anchor: mouth, offset: [6, -30]}
+      - {at: "word:It+0.06", who: fc0, do: show}
+      - {at: "word:It+0.08", who: fc0, do: detach}
+      - {at: "word:It+0.09", who: fc0, do: move, dx: -70, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:It+0.09", who: fc0, do: rotate, to: -30, dur: 0.95}
+      - {at: "word:It+0.48", who: fc0, do: fade, to: 0, dur: 0.5}
+      - {at: "word:It+0.48", who: fc1, do: fade, to: 1, dur: 0.01}
+      - {at: "word:It+0.48", who: fc1, do: attach, to: m3, anchor: mouth, offset: [6, -30]}
+      - {at: "word:It+0.51", who: fc1, do: show}
+      - {at: "word:It+0.53", who: fc1, do: detach}
+      - {at: "word:It+0.54", who: fc1, do: move, dx: -40, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:It+0.54", who: fc1, do: rotate, to: 18, dur: 0.95}
+      - {at: "word:It+0.93", who: fc1, do: fade, to: 0, dur: 0.5}
+      - {at: "word:It+0.93", who: fc2, do: fade, to: 1, dur: 0.01}
+      - {at: "word:It+0.93", who: fc2, do: attach, to: m3, anchor: mouth, offset: [6, -30]}
+      - {at: "word:It+0.96", who: fc2, do: show}
+      - {at: "word:It+0.98", who: fc2, do: detach}
+      - {at: "word:It+0.99", who: fc2, do: move, dx: 70, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:It+0.99", who: fc2, do: rotate, to: -18, dur: 0.95}
+      - {at: "word:It+1.38", who: fc2, do: fade, to: 0, dur: 0.5}
+      - {at: "word:It+1.38", who: fc0, do: fade, to: 1, dur: 0.01}
+      - {at: "word:It+1.38", who: fc0, do: attach, to: m3, anchor: mouth, offset: [6, -30]}
+      - {at: "word:It+1.41", who: fc0, do: show}
+      - {at: "word:It+1.43", who: fc0, do: detach}
+      - {at: "word:It+1.44", who: fc0, do: move, dx: -70, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:It+1.44", who: fc0, do: rotate, to: 18, dur: 0.95}
+      - {at: "word:It+1.83", who: fc0, do: fade, to: 0, dur: 0.5}
+      - {at: "word:It+1.83", who: fc1, do: fade, to: 1, dur: 0.01}
+      - {at: "word:It+1.83", who: fc1, do: attach, to: m3, anchor: mouth, offset: [6, -30]}
+      - {at: "word:It+1.86", who: fc1, do: show}
+      - {at: "word:It+1.88", who: fc1, do: detach}
+      - {at: "word:It+1.89", who: fc1, do: move, dx: -40, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:It+1.89", who: fc1, do: rotate, to: 30, dur: 0.95}
+      - {at: "word:It+2.28", who: fc1, do: fade, to: 0, dur: 0.5}
+      - {at: "word:It+2.28", who: fc2, do: fade, to: 1, dur: 0.01}
+      - {at: "word:It+2.28", who: fc2, do: attach, to: m3, anchor: mouth, offset: [6, -30]}
+      - {at: "word:It+2.31", who: fc2, do: show}
+      - {at: "word:It+2.33", who: fc2, do: detach}
+      - {at: "word:It+2.34", who: fc2, do: move, dx: 40, dy: -190, dur: 0.95, ease: power1.out}
+      - {at: "word:It+2.34", who: fc2, do: rotate, to: 18, dur: 0.95}
+      - {at: "word:It+2.73", who: fc2, do: fade, to: 0, dur: 0.5}
+
+  # ---------------------------------------------------------------- G: the dancers in red shoes are led uphill to the shrine
+  - id: shrine
+    sents: [s8]
+    in: {type: drop}
+    camera: {zoom: 1.0, at: [400, 640], screen: [360, 640]}
+    set:
+      - {kind: sky, clouds: [[80, 300, 110], [470, 250, 100], [700, 340, 100]], drift: 8}
+      - {kind: mountains, base: 640, peaks: [[-40, 640], [80, 520], [200, 600], [330, 500], [470, 590], [600, 480], [760, 600]]}
+      - {kind: shape, shape: hillslope, x: 0, y: 0}
+      - {id: chapel, kind: shape, shape: chapel, x: 660, y: 602}
+    props:
+      - {id: staff, kind: shape, shape: crossstaff, on: pr, anchor: hand, offset: [0, 0], layer: top}
+      - {id: rs, kind: shape, shape: redshoes, x: 360, y: 250, scale: 1.4, hidden: true, layer: top}
+      - {id: sh1, kind: shape, shape: shoes, x: 220, y: 792, scale: 1.05, layer: top}
+      - {id: sh2, kind: shape, shape: shoes, x: 140, y: 836, scale: 1.12, layer: top}
+      - {id: sh3, kind: shape, shape: shoes, x: 60, y: 881, scale: 1.2, layer: top}
+      - {id: sh4, kind: shape, shape: shoes, x: -20, y: 925, scale: 1.28, layer: top}
+      - {id: sh5, kind: shape, shape: shoes, x: -100, y: 970, scale: 1.36, layer: top}
+    cast:
+      - {id: pr, x: 300, gy: 745, k: 1.0, facing: r, coat: "#1d1d2b", coat_len: 40, hair: "#9e9e9e", face: flat}
+      - {id: d1, x: 220, gy: 790, k: 1.05, facing: r, hat: [orange, cream], coat: "#52796f", coat_len: 18}
+      - {id: d2, x: 140, gy: 834, k: 1.12, facing: r, hat: [teal, "#e9c46a"]}
+      - {id: d3, x: 60, gy: 879, k: 1.2, facing: r, hat: [purple, "#ffbe0b"], coat: "#bc6c25", coat_len: 30}
+      - {id: d4, x: -20, gy: 923, k: 1.28, facing: r, hat: [pink, white]}
+      - {id: d5, x: -100, gy: 968, k: 1.36, facing: r, hat: [blue, "#ffd166"], coat: "#6d597a", coat_len: 18}
+    beats:
+      - {at: "word:led-0.1", who: pr, do: look, target: chapel}
+      - {at: "word:shrine-0.1", who: chapel, do: jiggle, amp: 0.05, freq: 6, decay: 5}
+      - {at: "word:shrine", who: cam, do: shake, amp: 4, dur: 0.2}
+      - {at: "word:red", who: rs, do: stamp, from: 2.4, r0: -10, r1: -4}
+      - {at: prev, who: cam, do: shake, amp: 8, dur: 0.25}
+      - {at: "scene+0.00", who: pr, do: walk_to, to: 500, dur: 2.7, ease: none, stride: 55, lift: 16}
+      - {at: "scene+0.00", who: pr, do: move, dx: 0, dy: -111.5, dur: 2.7, ease: none}
+      - {at: "scene+0.00", who: pr, do: bob, amp: 5, freq: 3.0, until: "scene+2.75"}
+      - {at: "scene+0.00", who: pr, do: rock, amp: 3, freq: 1.8, until: "scene+2.75"}
+      - {at: "scene+0.00", who: d1, do: walk_to, to: 420, dur: 2.7, ease: none, stride: 55, lift: 16}
+      - {at: "scene+0.00", who: d1, do: move, dx: 0, dy: -111.5, dur: 2.7, ease: none}
+      - {at: "scene+0.05", who: d1, do: bob, amp: 5, freq: 3.15, until: "scene+2.75"}
+      - {at: "scene+0.05", who: d1, do: rock, amp: 3, freq: 1.8, until: "scene+2.75"}
+      - {at: "scene+0.47", who: d1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.09", who: d1, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+1.49", who: d1, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+1.89", who: d1, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+2.51", who: d1, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+0.00", who: d2, do: walk_to, to: 340, dur: 2.7, ease: none, stride: 55, lift: 16}
+      - {at: "scene+0.00", who: d2, do: move, dx: 0, dy: -111.5, dur: 2.7, ease: none}
+      - {at: "scene+0.10", who: d2, do: bob, amp: 5, freq: 3.3, until: "scene+2.75"}
+      - {at: "scene+0.10", who: d2, do: rock, amp: 3, freq: 1.8, until: "scene+2.75"}
+      - {at: "scene+0.47", who: d2, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+0.87", who: d2, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.29", who: d2, do: pose, name: head, dur: 0.1}
+      - {at: "scene+1.73", who: d2, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+2.28", who: d2, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+0.00", who: d3, do: walk_to, to: 260, dur: 2.7, ease: none, stride: 55, lift: 16}
+      - {at: "scene+0.00", who: d3, do: move, dx: 0, dy: -111.5, dur: 2.7, ease: none}
+      - {at: "scene+0.15", who: d3, do: bob, amp: 5, freq: 3.45, until: "scene+2.75"}
+      - {at: "scene+0.15", who: d3, do: rock, amp: 3, freq: 1.8, until: "scene+2.75"}
+      - {at: "scene+0.49", who: d3, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+1.09", who: d3, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+1.52", who: d3, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+2.10", who: d3, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+2.61", who: d3, do: pose, name: head, dur: 0.1}
+      - {at: "scene+0.00", who: d4, do: walk_to, to: 180, dur: 2.7, ease: none, stride: 55, lift: 16}
+      - {at: "scene+0.00", who: d4, do: move, dx: 0, dy: -111.5, dur: 2.7, ease: none}
+      - {at: "scene+0.20", who: d4, do: bob, amp: 5, freq: 3.6, until: "scene+2.75"}
+      - {at: "scene+0.20", who: d4, do: rock, amp: 3, freq: 1.8, until: "scene+2.75"}
+      - {at: "scene+0.33", who: d4, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+0.88", who: d4, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+1.45", who: d4, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+2.04", who: d4, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+2.51", who: d4, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+0.00", who: d5, do: walk_to, to: 100, dur: 2.7, ease: none, stride: 55, lift: 16}
+      - {at: "scene+0.00", who: d5, do: move, dx: 0, dy: -111.5, dur: 2.7, ease: none}
+      - {at: "scene+0.25", who: d5, do: bob, amp: 5, freq: 3.75, until: "scene+2.75"}
+      - {at: "scene+0.25", who: d5, do: rock, amp: 3, freq: 1.8, until: "scene+2.75"}
+      - {at: "scene+0.41", who: d5, do: pose, name: wave, dur: 0.1}
+      - {at: "scene+0.85", who: d5, do: pose, name: reach, dur: 0.1}
+      - {at: "scene+1.28", who: d5, do: pose, name: cheeks, dur: 0.1}
+      - {at: "scene+1.83", who: d5, do: pose, name: hands_up, dur: 0.1}
+      - {at: "scene+2.44", who: d5, do: pose, name: head, dur: 0.1}
+      - {at: "word:red+0.00", who: sh1, do: pulse, amp: 0.3, freq: 3.5}
+      - {at: "word:red+0.00", who: sh2, do: pulse, amp: 0.3, freq: 3.5}
+      - {at: "word:red+0.00", who: sh3, do: pulse, amp: 0.3, freq: 3.5}
+      - {at: "word:red+0.00", who: sh4, do: pulse, amp: 0.3, freq: 3.5}
+      - {at: "word:red+0.00", who: sh5, do: pulse, amp: 0.3, freq: 3.5}
+      - {at: "scene+0.00", who: sh1, do: move, to: [420, 680.5], dur: 2.7, ease: none}
+      - {at: "scene+0.00", who: sh2, do: move, to: [340, 724.5], dur: 2.7, ease: none}
+      - {at: "scene+0.00", who: sh3, do: move, to: [260, 769.5], dur: 2.7, ease: none}
+      - {at: "scene+0.00", who: sh4, do: move, to: [180, 813.5], dur: 2.7, ease: none}
+      - {at: "scene+0.00", who: sh5, do: move, to: [100, 858.5], dur: 2.7, ease: none}
+
+  # ---------------------------------------------------------------- H: the street again, the dancers slow down, stop, look at their feet, go home
+  - id: stops
+    sents: [s9]
+    in: {type: slide}
+    set:
+      - {kind: sky, clouds: [[120, 330, 110], [600, 300, 100]], drift: 8}
+      - {id: minster, kind: shape, shape: minster, x: 360, y: 748}
+      - {kind: house, x: 292, y: 750, w: 96, h: 78, wall: "#e9c46a"}
+      - {kind: house, x: 432, y: 750, w: 96, h: 78, wall: "#a8dadc"}
+      - {kind: shape, shape: street, x: 360, y: 930}
+      - {id: homeL, kind: shape, shape: houseL, x: 100, y: 842}
+      - {id: homeR, kind: shape, shape: houseR, x: 628, y: 842, scale: 0.94}
+    props:
+      - {id: smoke, kind: emitter, emitter: smoke, at: [185, 318], rise: 70, r: [12, 20], opacity: 0.55, prewarm: true}
+      - {id: birds, kind: emitter, emitter: birds, at: [560, 330], n: 4, dir: 1}
+    cast:
+      - {id: b1, x: 60, gy: 866, k: 0.95, facing: r, hat: [orange, cream]}
+      - {id: b3, x: 440, gy: 866, k: 0.95, facing: l, hat: [purple, "#ffbe0b"]}
+      - {id: b2, x: 210, gy: 868, k: 0.95, facing: r, hat: [teal, "#e9c46a"]}
+      - {id: b4, x: 610, gy: 868, k: 0.95, facing: l, hat: [pink, white]}
+      - {id: f1, x: 110, gy: 896, k: 1.2, facing: r, hat: [red, yellow]}
+      - {id: f3, x: 560, gy: 896, k: 1.2, facing: l, hat: [green, cream], coat: "#457b9d", coat_len: 18}
+      - {id: hus, x: 250, gy: 894, k: 1.45, facing: r, hair: "#6d4c41", coat: "#3d5a80", coat_len: 18}
+      - {id: fra, x: 380, gy: 894, k: 1.55, facing: r, coat: "#9d4edd", coat_len: 40, hat: [cream, pink]}
+    beats:
+      - {at: scene, who: smoke, do: emit}
+      - {at: scene, who: homeL.door, do: fade, to: 0, dur: 0.05}
+      - {at: scene, who: cam, do: push, zoom: 1.2, target: [380, 690], screen: [360, 660], dur: 2.0, ease: sine.inOut}
+      - {at: "word:stops", who: birds, do: burst}
+      - {at: prev, who: cam, do: shake, amp: 3, dur: 0.15}
+      - {at: "word:September-0.34", who: b1, do: bob, amp: 10.1, freq: 1.93, until: "word:September-0.15"}
+      - {at: "word:September-0.34", who: b1, do: rock, amp: 9.4, freq: 1.76, until: "word:September-0.15"}
+      - {at: "word:September-0.21", who: b1, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:September-0.15", who: b1, do: bob, amp: 3, freq: 1.3, until: "word:September+0.15"}
+      - {at: "word:September-0.15", who: b1, do: rock, amp: 2, freq: 0.8, until: "word:September+0.15"}
+      - {at: "word:September+0.15", who: b1, do: pose, name: stand, dur: 0.25}
+      - {at: "word:September+0.15", who: b1, do: face, name: wow}
+      - {at: "word:September+0.20", who: b1, do: look, target: down}
+      - {at: "word:September+0.45", who: b1, do: exit, to: left, dur: 0.5}
+      - {at: "word:September-0.34", who: b3, do: bob, amp: 11.9, freq: 2.15, until: "word:September-0.02"}
+      - {at: "word:September-0.34", who: b3, do: rock, amp: 3.0, freq: 1.65, until: "word:September-0.02"}
+      - {at: "word:September-0.15", who: b3, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:September-0.02", who: b3, do: bob, amp: 3, freq: 1.3, until: "word:September+0.28"}
+      - {at: "word:September-0.02", who: b3, do: rock, amp: 2, freq: 0.8, until: "word:September+0.28"}
+      - {at: "word:September+0.28", who: b3, do: pose, name: stand, dur: 0.25}
+      - {at: "word:September+0.28", who: b3, do: face, name: wow}
+      - {at: "word:September+0.33", who: b3, do: look, target: down}
+      - {at: "word:September+0.58", who: b3, do: exit, to: right, dur: 0.5}
+      - {at: "word:September-0.26", who: b2, do: bob, amp: 16.7, freq: 2.02, until: "word:September+0.24"}
+      - {at: "word:September-0.26", who: b2, do: rock, amp: 6.7, freq: 1.58, until: "word:September+0.24"}
+      - {at: "word:September-0.02", who: b2, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:September+0.24", who: b2, do: bob, amp: 3, freq: 1.3, until: "word:September+0.54"}
+      - {at: "word:September+0.24", who: b2, do: rock, amp: 2, freq: 0.8, until: "word:September+0.54"}
+      - {at: "word:September+0.54", who: b2, do: pose, name: stand, dur: 0.25}
+      - {at: "word:September+0.54", who: b2, do: face, name: wow}
+      - {at: "word:September+0.59", who: b2, do: look, target: down}
+      - {at: "word:September+0.84", who: b2, do: exit, to: left, dur: 0.5}
+      - {at: "word:September-0.34", who: b4, do: bob, amp: 19.6, freq: 2.04, until: "word:September+0.50"}
+      - {at: "word:September-0.34", who: b4, do: rock, amp: 8.4, freq: 1.68, until: "word:September+0.50"}
+      - {at: "word:September-0.26", who: b4, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:September+0.21", who: b4, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:September+0.50", who: b4, do: bob, amp: 3, freq: 1.3, until: "word:September+0.80"}
+      - {at: "word:September+0.50", who: b4, do: rock, amp: 2, freq: 0.8, until: "word:September+0.80"}
+      - {at: "word:September+0.80", who: b4, do: pose, name: stand, dur: 0.25}
+      - {at: "word:September+0.80", who: b4, do: face, name: wow}
+      - {at: "word:September+0.85", who: b4, do: look, target: down}
+      - {at: "word:September+1.10", who: b4, do: exit, to: right, dur: 0.5}
+      - {at: "word:September-0.30", who: f1, do: bob, amp: 8.3, freq: 1.91, until: "word:September+0.11"}
+      - {at: "word:September-0.30", who: f1, do: rock, amp: 8.3, freq: 1.38, until: "word:September+0.11"}
+      - {at: "word:September-0.11", who: f1, do: pose, name: head, dur: 0.1}
+      - {at: "word:September+0.11", who: f1, do: bob, amp: 3, freq: 1.3, until: "word:September+0.41"}
+      - {at: "word:September+0.11", who: f1, do: rock, amp: 2, freq: 0.8, until: "word:September+0.41"}
+      - {at: "word:September+0.41", who: f1, do: pose, name: stand, dur: 0.25}
+      - {at: "word:September+0.41", who: f1, do: face, name: wow}
+      - {at: "word:September+0.46", who: f1, do: look, target: down}
+      - {at: "word:September+0.71", who: f1, do: exit, to: left, dur: 0.5}
+      - {at: "word:September-0.30", who: f3, do: bob, amp: 17.9, freq: 2.5, until: "word:September+0.63"}
+      - {at: "word:September-0.30", who: f3, do: rock, amp: 7.8, freq: 1.73, until: "word:September+0.63"}
+      - {at: "word:September-0.09", who: f3, do: pose, name: wave, dur: 0.1}
+      - {at: "word:September+0.15", who: f3, do: pose, name: reach, dur: 0.1}
+      - {at: "word:September+0.48", who: f3, do: pose, name: cheeks, dur: 0.1}
+      - {at: "word:September+0.63", who: f3, do: bob, amp: 3, freq: 1.3, until: "word:September+0.93"}
+      - {at: "word:September+0.63", who: f3, do: rock, amp: 2, freq: 0.8, until: "word:September+0.93"}
+      - {at: "word:September+0.93", who: f3, do: pose, name: stand, dur: 0.25}
+      - {at: "word:September+0.93", who: f3, do: face, name: wow}
+      - {at: "word:September+0.98", who: f3, do: look, target: down}
+      - {at: "word:September+1.23", who: f3, do: exit, to: right, dur: 0.5}
+      - {at: "word:September-0.35", who: hus, do: bob, amp: 11.6, freq: 3.05, until: "word:September+0.37"}
+      - {at: "word:September-0.35", who: hus, do: rock, amp: 9.6, freq: 1.8, until: "word:September+0.37"}
+      - {at: "word:September+0.08", who: hus, do: pose, name: head, dur: 0.1}
+      - {at: "word:September+0.37", who: hus, do: bob, amp: 3, freq: 1.3, until: "word:September+0.67"}
+      - {at: "word:September+0.37", who: hus, do: rock, amp: 2, freq: 0.8, until: "word:September+0.67"}
+      - {at: "word:September+0.67", who: hus, do: pose, name: stand, dur: 0.25}
+      - {at: "word:September+0.67", who: hus, do: face, name: wow}
+      - {at: "word:September+0.72", who: hus, do: look, target: down}
+      - {at: "word:September+0.97", who: hus, do: exit, to: left, dur: 0.5}
+      - {at: "word:September-0.29", who: fra, do: bob, amp: 17.0, freq: 2.05, until: "word:September+0.75"}
+      - {at: "word:September-0.29", who: fra, do: rock, amp: 10.7, freq: 1.06, until: "word:September+0.75"}
+      - {at: "word:September-0.09", who: fra, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:September+0.38", who: fra, do: pose, name: hands_up, dur: 0.1}
+      - {at: "word:September+0.75", who: fra, do: bob, amp: 3, freq: 1.3, until: "word:September+1.05"}
+      - {at: "word:September+0.75", who: fra, do: rock, amp: 2, freq: 0.8, until: "word:September+1.05"}
+      - {at: "word:September+1.05", who: fra, do: pose, name: stand, dur: 0.25}
+      - {at: "word:September+1.05", who: fra, do: face, name: wow}
+      - {at: "word:September+1.10", who: fra, do: look, target: down}
+      - {at: "word:September+1.35", who: fra, do: exit, to: left, dur: 0.42}
+
+  # ---------------------------------------------------------------- I: split picture, hysteria or bread?, then loop home
+  - id: finale
+    sents: [s10]
+    in: {type: zoom, target: [380, 700], from: [540, 640]}
+    set:
+      - {kind: shape, shape: panels, x: 0, y: 0}
+      - {kind: shape, shape: table, x: 180, y: 790}
+      - {id: halo, kind: shape, shape: halo, x: 180, y: 730, scale: 1.4, opacity: 0}
+      - {id: loaf, kind: shape, shape: loaf, x: 180, y: 790}
+      - {id: shimmer, kind: shape, shape: shimmer, x: 180, y: 640, opacity: 0}
+    props:
+      - {id: divider, kind: line, points: [[360, 330], [354, 520], [363, 720], [358, 906]], width: 8}
+      - {id: crowd, kind: shape, shape: crowdfaces, x: 542, y: 650, scale: 1.05}
+      - {id: gfume, kind: emitter, emitter: fumes, at: [180, 670], color: "#9ccc65", n: 8, r: [18, 30], rise: 100, period: 1.5, s0: 0.6, s1: 1.1, opacity: 0.6}
+      - {id: q, kind: shape, shape: question, x: 360, y: 620, scale: 2.2, hidden: true}
+    beats:
+      - {at: "word:Mass+0.05", who: divider, do: draw_line, dur: 0.35}
+      - {at: "word:hysteria", who: crowd, do: jiggle, amp: 0.08, freq: 6, decay: 4}
+      - {at: prev, who: cam, do: shake, amp: 6, dur: 0.3}
+      - {at: "word:hysteria+0.1", who: crowd, do: rock, amp: 3, freq: 6, until: "word:Nobody"}
+      - {at: prev, who: crowd, do: pulse, amp: 0.04, freq: 7, until: "word:Nobody"}
+      - {at: "word:poisoned", who: halo, do: fade, to: 1, dur: 0.4}
+      - {at: prev, who: loaf, do: jiggle, amp: 0.06, freq: 5, decay: 5}
+      - {at: "word:poisoned", who: gfume, do: emit}
+      - {at: "word:bread", who: shimmer, do: fade, to: 1, dur: 0.3}
+      - {at: prev, who: shimmer, do: bob, amp: 12, freq: 1.6}
+      - {at: "word:bread", who: loaf, do: pulse, amp: 0.04, freq: 3}
+      - {at: prev, who: cam, do: shake, amp: 5, dur: 0.25}
+      - {at: "word:Nobody", who: q, do: stamp, from: 2.6, r0: -10, r1: -4}
+      - {at: prev, who: cam, do: shake, amp: 7, dur: 0.25}
+      - {at: "word:knows", who: q, do: jiggle, amp: 0.1, freq: 4, decay: 3}
