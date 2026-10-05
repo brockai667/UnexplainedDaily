@@ -77,11 +77,43 @@ _Loader.yaml_implicit_resolvers = {k: [r for r in v if r[0] != _BOOL] for k, v i
 _Loader.add_implicit_resolver(_BOOL, re.compile(r"^(?:true|True|TRUE|false|False|FALSE)$"), list("tTfF"))
 
 
+def add_library_shapes(E):
+    """Kresby z kniznice (lib/shapes.yaml) sa pouzivaju menom bez definicie: do scenara sa doplnia tie, ktore sceny
+    (alebo ine tvary cez `use:`) spominaju a scenar ich sam nedefinuje. Vlastny tvar s rovnakym menom ma prednost."""
+    lp = os.path.join(os.path.dirname(os.path.abspath(__file__)), "lib", "shapes.yaml")
+    if not isinstance(E, dict) or not os.path.exists(lp):
+        return E
+    lib = (yaml.safe_load(open(lp, encoding="utf-8")) or {}).get("shapes") or {}
+    shapes = E.get("shapes") if isinstance(E.get("shapes"), dict) else {}
+    todo = [o.get("shape") for sc in (E.get("scenes") or []) if isinstance(sc, dict) for sec in ("set", "props", "cast")
+            for o in (sc.get(sec) or []) if isinstance(o, dict) and o.get("shape")]
+
+    def uses(items):
+        for it in items or []:
+            if isinstance(it, dict):
+                if it.get("use"):
+                    todo.append(it["use"])
+                uses(it.get("items"))
+    for items in list(shapes.values()):
+        uses(items)
+    seen = set()
+    while todo:
+        n = todo.pop()
+        if n in seen:
+            continue
+        seen.add(n)
+        if n not in shapes and n in lib:
+            shapes[n] = lib[n]["items"]
+            uses(shapes[n])
+    E["shapes"] = shapes
+    return E
+
+
 def load_screenplay(ep_dir):
     for fn in ("screenplay.yaml", "screenplay.yml", "screenplay.json"):
         p = os.path.join(ep_dir, fn)
         if os.path.exists(p):
-            return yaml.load(open(p, encoding="utf-8"), Loader=_Loader)
+            return add_library_shapes(yaml.load(open(p, encoding="utf-8"), Loader=_Loader))
     raise SPError(f"no screenplay.yaml in {ep_dir}")
 
 
