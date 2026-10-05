@@ -92,6 +92,10 @@ def chat(provider, model, messages, meta, max_tokens=24000, temperature=0.5):
             continue
         if not r.ok:
             print(f"    HTTP {r.status_code}: {r.text[:300]}", flush=True)
+            if r.status_code in (400, 401, 402, 403, 404):          # model nedostupny / zly kluc: nema zmysel skusat dalej
+                print("    FATAL: model sa neda volat, koncim", flush=True)
+                STATS["calls"] = MAX_CALLS
+                STATS["fatal"] = f"HTTP {r.status_code}: {r.text[:200]}"
             return ""
         j = r.json()
         if j.get("error"):
@@ -369,7 +373,10 @@ def main():
     ap.add_argument("--chunk", type=int, default=3)
     ap.add_argument("--tag", default="")
     ap.add_argument("--no-qa", action="store_true")
+    ap.add_argument("--max-calls", type=int, default=14)
     a = ap.parse_args()
+    global MAX_CALLS
+    MAX_CALLS = a.max_calls
     B = yaml.safe_load(open(a.brief, encoding="utf-8"))
     tag = a.tag or re.sub(r"[^a-z0-9]+", "-", a.model.split("/")[-1].lower()).strip("-")[:24]
     name = f"{B['name']}_{tag}" if a.provider != "mock" else f"{B['name']}_mock"
@@ -500,6 +507,8 @@ def main():
         r = results[pid]
         return (0 if r["ok"] else 100) + len(r["problems"]) * 3 + (r.get("n0", 0) - r.get("n1", 0))
     for rnd in (1, 2):
+        if STATS.get("fatal"):
+            break
         worst = sorted([p for p in plans if badness(p["id"]) >= 3], key=lambda p: -badness(p["id"]))
         for p in worst:
             if STATS["calls"] >= MAX_CALLS:
