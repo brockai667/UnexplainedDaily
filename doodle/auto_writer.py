@@ -247,7 +247,39 @@ def strip_fences(txt):
 def parse_json_list(txt):
     txt = strip_fences(txt)
     i, j = txt.find("["), txt.rfind("]")
-    return json.loads(txt[i:j + 1])
+    try:
+        return json.loads(txt[i:j + 1])
+    except Exception:                                                      # noqa: BLE001
+        pass
+    # zachrana: dlhy JSON od modelu byva na jednom mieste pokazeny -> objekty najvyssej urovne citat po jednom
+    out, depth, start, instr, esc = [], 0, None, False, False
+    body = txt[i + 1:] if i >= 0 else txt
+    for k, ch in enumerate(body):
+        if instr:
+            if esc:
+                esc = False
+            elif ch == "\\":
+                esc = True
+            elif ch == '"':
+                instr = False
+            continue
+        if ch == '"':
+            instr = True
+        elif ch == "{":
+            if depth == 0:
+                start = k
+            depth += 1
+        elif ch == "}":
+            depth -= 1
+            if depth == 0 and start is not None:
+                try:
+                    out.append(json.loads(body[start:k + 1]))
+                except Exception:                                          # noqa: BLE001
+                    pass
+                start = None
+    if not out:
+        raise ValueError("no JSON object could be read")
+    return out
 
 
 def parse_yaml_doc(txt):
@@ -438,9 +470,13 @@ def visibility_problems(ep_dir, checks):
             probs.append(f"'{thing}' is still hidden or transparent when '{c['word']}' is spoken: show it before that word")
             continue
         big = max(max(o.get("w") or 0, o.get("h") or 0) for o in vis)
-        inside = max(o.get("in_frame") or 0 for o in vis)
-        if inside < 0.5:
-            probs.append(f"'{thing}' is mostly outside the visible frame when '{c['word']}' is spoken (box {vis[0]['box']}): move it or frame the camera on it")
+
+        def seen(o):                                   # viditelny kus objektu v zabere (720 x 926), v pixeloch
+            x0, y0, x1, y1 = o["box"]
+            return min(max(0.0, min(x1, 720) - max(x0, 0)), max(0.0, min(y1, 926) - max(y0, 0)))
+        if max(seen(o) for o in vis) < 45:
+            probs.append(f"'{thing}' is outside the visible frame when '{c['word']}' is spoken (box {[round(v) for v in vis[0]['box']]}, frame is 0..720 x 0..926): "
+                         f"move it or frame the camera on it")
         elif big < 55:
             probs.append(f"'{thing}' is only {big:.0f} px big on screen when '{c['word']}' is spoken - unreadable on a phone: make it at least 90 px "
                          f"(bigger scale, or camera zoom on it)")
