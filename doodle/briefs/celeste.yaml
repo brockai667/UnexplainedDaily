@@ -1,0 +1,77 @@
+# Zadanie pre automatickeho autora (auto_writer.py): Mary Celeste, 1872. Fakty overene na Wikipedii (5.10.2026):
+# najdena 4. 12. 1872 pri Azorach, 1 701 sudov alkoholu, posledny zapis v dennik 25. 11. (9 dni), chyba zachranny cln,
+# 10 ludi (kapitan Briggs, manzelka, 2-rocna dcera, 7 clenov posadky), nikoho uz nikdy nevideli.
+name: celeste_auto
+header: |
+  title: The Mary Celeste
+  voice: {voice: am_michael, speed: 1.10, pause: 0.30}
+  tail: 2.0
+  music: sneaky_snitch.mp3
+  loop: {at: "s10.end+0.55", dur: 1.3}
+  sentences:
+    s1: December 1872. A ship drifts alone in the Atlantic, near the Azores.
+    s2: Sailors on a passing ship signal her. Nobody answers.
+    s3: They row over and climb aboard.
+    s4: The deck is empty, and the sails are still set.
+    s5: "Below, the cargo is untouched: seventeen hundred barrels of alcohol."
+    s6: There is plenty of food and fresh water.
+    s7: The last entry in the logbook is nine days old.
+    s8: Only the lifeboat is missing.
+    s9: Ten people sailed on the Mary Celeste, among them the captain's wife and their little daughter.
+    s10: None of them was ever seen again.
+  gold:
+    - {word: "1872", label: "1872", kind: stamp, top: 128, size: 120, until: "word:alone", stamp: {from: 2.4, r0: -14, r1: -4}}
+    - {word: seventeen, label: "1701", kind: counter, top: 112, size: 112, dur: 0.9, until: "s5.end"}
+    - {word: nine, label: "9 DAYS", kind: stamp, top: 118, size: 100, until: "s7.end", stamp: {from: 2.2, r0: -10, r1: -4}}
+    - {word: s10/ever, label: "NEVER FOUND", kind: stamp, top: 118, size: 88, until: "s10.end+0.6", stamp: {from: 2.2, r0: -10, r1: -4}}
+scenes:
+  - id: drift
+    sents: [s1]
+    must: >-
+      Grey daytime Atlantic: an old two-masted sailing ship drifts slowly across the frame with nobody on deck, rocking on the
+      waves; a few gulls circle; slow camera push toward the silent ship.
+  - id: signal
+    sents: [s2]
+    must: >-
+      On the deck of a second ship in the foreground two sailors wave their arms and shout toward the silent ship in the
+      distance; no answer comes; they look at each other and one shrugs.
+  - id: board
+    sents: [s3]
+    must: >-
+      A small rowing boat with three sailors rows from the left to the big ship's side; they climb a rope ladder up the
+      hull one after another while the boat bobs below.
+  - id: deck
+    sents: [s4]
+    must: >-
+      On the empty wooden deck under big set sails the three sailors walk carefully and look around; a loose rope swings;
+      one calls out and cups his ear; nobody answers.
+  - id: cargo
+    sents: [s5]
+    must: >-
+      Below deck: a sailor with a lantern walks along rows of wooden barrels stacked in the dark hold and knocks on one;
+      the rows go on and on as the camera pans.
+  - id: food
+    sents: [s6]
+    must: >-
+      The ship's galley: a table with bread and a jug, sacks and a water barrel; a sailor lifts the lid of the barrel,
+      looks in and nods; everything is in its place.
+  - id: logbook
+    sents: [s7]
+    must: >-
+      Close-up of the open logbook on the captain's desk; a hand turns a page and a finger stops under the last written
+      line; the rest of the page is empty.
+  - id: lifeboat
+    sents: [s8]
+    must: >-
+      At the ship's rail: two empty davits with loose ropes swinging where the lifeboat used to hang; a sailor points at
+      them; the camera tilts down to the empty sea below.
+  - id: people
+    sents: [s9]
+    must: >-
+      Ten small figures appear one by one in a row on the deck: the captain in a cap, his wife in a long dress holding the
+      hand of a very small girl, and seven sailors.
+  - id: gone
+    sents: [s10]
+    must: >-
+      The ten figures fade away one after another until the deck is empty; then the lonely ship drifts away toward the
+      horizon at dusk and gets smaller.

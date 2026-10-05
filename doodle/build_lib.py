@@ -105,19 +105,9 @@ def main(paths):
         styles, shapes = d.get("styles") or {}, d.get("shapes") or {}
         rename = {n: (n if n not in lib else f"{n}_{ep[:6]}") for n in shapes}
         for n, items in shapes.items():
-            if n in SKIP:
-                continue
             lib[rename[n]] = {"from": ep, "note": NOTES.get(n, n.replace("_", " ")), "items": resolve(items, styles, rename)}
-    for n in list(lib):                                   # tvar, ktory pouziva vyhodeny tvar, tiez von
-        def uses(items):
-            for it in items or []:
-                if it.get("use") and it["use"] not in lib:
-                    return True
-                if it.get("items") and uses(it["items"]):
-                    return True
-            return False
-        if uses(lib[n]["items"]):
-            del lib[n]
+            if n in SKIP:                                 # pomocne tvary: v katalogu sa neukazuju, ale vzorove sceny ich pouzivaju
+                lib[rename[n]]["hidden"] = True
     for _ in range(3):                                    # obalky (use: potrebuje obalku pouziteho tvaru)
         for n, s in lib.items():
             s["box"] = bbox_items(s["items"], lib)
@@ -125,9 +115,7 @@ def main(paths):
     with open(OUT, "w", encoding="utf-8") as f:
         f.write("# Generovane: python doodle/build_lib.py ... - neupravovat rucne.\n")
         yaml.safe_dump({"shapes": lib}, f, sort_keys=False, allow_unicode=True, width=200, default_flow_style=None)
-    print(f"{len(lib)} tvarov -> {OUT}")
-    for n, s in lib.items():
-        print(f"  {n:<16} {str(s['box']):<26} {s['from']:<12} {s['note'][:70]}")
+    print(f"{len(lib)} tvarov ({sum(1 for v in lib.values() if not v.get('hidden'))} v katalogu) -> {OUT}")
 
 
 if __name__ == "__main__":

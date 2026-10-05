@@ -1,0 +1,610 @@
+# Milky seas - the whole episode as data (python sp.py episodes/milky_seas)
+title: Milky Seas
+voice: {voice: am_michael, speed: 1.10, pause: 0.30}
+tail: 2.0
+music: sneaky_snitch.mp3
+loop: {at: "s10.end+0.55", dur: 1.3}
+
+sentences:
+  s1: "For centuries, sailors told the same strange story."
+  s2: "At night, far from land, the whole sea began to glow like milk."
+  s3: "The light was steady and silent, from horizon to horizon."
+  s4: "Nobody believed them. There was no photograph, no proof."
+  s5: "In 1995 a merchant ship crossed a glowing sea in the Indian Ocean."
+  s6: "Ten years later, scientists found that same night in old satellite images."
+  s7: "The glow covered more than fifteen thousand square kilometres."
+  s8: "The light comes from bacteria, countless of them, shining together."
+  s9: "In 2019 one milky sea glowed for more than forty nights."
+  s10: "So what makes a whole sea switch on its light?"
+
+gold:
+  - {word: "1995", label: "1995", kind: stamp, top: 128, size: 120, stamp: {from: 2.4, r0: -14, r1: -4}}
+  - {word: fifteen, label: "15 400 km²", kind: measure, points: [[398, 1452], [588, 1452]], label_at: [395, 1190], size: 64}
+  - {word: s9/sea, label: "40 nights", kind: counter, top: 112, size: 112, dur: 0.95, until: "scene.end-0.05"}
+  - {word: s10/its, label: "WHAT LIGHTS|THE SEA?", kind: stamp, top: 92, size: 84, stamp: {from: 2.0, r0: -5, r1: -2}}
+
+styles:
+  sea: {fill: "#8ecae6", stroke: "#8ecae6", width: 1}
+  plank: {fill: "#b08968", width: 6}
+  wood: {fill: "#b08968", width: 6}
+  hullwood: {fill: "#8d5a3b", width: 7}
+  sail: {fill: "#f4ecd8", width: 6}
+  skyN: {fill: "#0b1d3a", stroke: "#0b1d3a", width: 1}
+  seaN: {fill: "#12305c", stroke: "#12305c", width: 1}
+  seaG: {fill: "#d6efff", stroke: "#d6efff", width: 1}
+  paper: {fill: "#fbf7ea", width: 5}
+  metal: {fill: "#cfd8dc", width: 6}
+
+shapes:
+  harbour:                                   # day quay, absolute coordinates (object at 0,0)
+    - {rect: [-20, 560, 760, 310], style: sea}
+    - {line: [[40, 660], [100, 650], [160, 660]], width: 4, stroke: "#5fa8d3"}
+    - {line: [[250, 720], [310, 710], [370, 720]], width: 4, stroke: "#5fa8d3"}
+    - {line: [[470, 620], [530, 610], [590, 620]], width: 4, stroke: "#5fa8d3"}
+    - {poly: [[600, 566], [706, 566], [690, 608], [616, 608]], style: hullwood}
+    - {line: [[653, 566], [653, 450]], width: 8}
+    - {poly: [[661, 462], [661, 556], [704, 556]], style: sail}
+    - {poly: [[645, 480], [645, 556], [606, 556]], style: sail}
+    - {rect: [-20, 856, 760, 80], style: plank}
+    - {line: [[-20, 856], [740, 856]], width: 8}
+    - {line: [[70, 862], [58, 926]], width: 4}
+    - {line: [[210, 862], [198, 926]], width: 4}
+    - {line: [[350, 862], [338, 926]], width: 4}
+    - {line: [[490, 862], [478, 926]], width: 4}
+    - {line: [[630, 862], [618, 926]], width: 4}
+    - {rect: [22, 786, 78, 70, 4], style: wood}
+    - {line: [[22, 810], [100, 810]], width: 4}
+    - {line: [[61, 786], [61, 856]], width: 4}
+    - {rect: [628, 790, 62, 68, 12], fill: "#9c6644", width: 6}
+    - {line: [[628, 812], [690, 812]], width: 4}
+    - {line: [[628, 836], [690, 836]], width: 4}
+    - {rect: [318, 826, 28, 32, 6], fill: "#6d6875", width: 5}
+    - {rect: [520, 826, 28, 32, 6], fill: "#6d6875", width: 5}
+
+  bubble:                                    # speech bubble, origin = tail tip
+    - {poly: [[-26, -78], [30, -84], [0, 0]], fill: white, width: 6}
+    - {ellipse: [0, -200, 200, 130], fill: white, width: 7}
+    - {poly: [[-22, -92], [28, -96], [4, -58]], fill: white, stroke: white, width: 2}
+    - {rect: [-105, -262, 210, 130, 12], fill: "#0b1d3a", width: 5}
+    - {circle: [64, -230, 15], fill: "#fff3b0", width: 3}
+    - {circle: [-70, -236, 3], fill: white, stroke: white, width: 1}
+    - {circle: [-20, -246, 3], fill: white, stroke: white, width: 1}
+    - {circle: [18, -226, 3], fill: white, stroke: white, width: 1}
+    - {ellipse: [0, -158, 92, 26], fill: "#e4f5ff", width: 3}
+    - {line: [[-70, -158], [-45, -166], [-20, -158], [5, -166], [30, -158], [55, -166], [75, -158]], width: 3, stroke: "#4a90c2"}
+    - {poly: [[-30, -174], [-30, -208], [-6, -174]], fill: "#f4ecd8", width: 3}
+    - {line: [[-42, -172], [8, -172]], width: 5}
+
+  tophat:                                    # origin = bottom centre (sits on the head)
+    - {rect: [-42, -14, 84, 14, 5], fill: "#222222", width: 5}
+    - {rect: [-28, -80, 56, 68, 4], fill: "#222222", width: 5}
+    - {rect: [-28, -32, 56, 12], fill: "#e63946", width: 3}
+
+  pframe:                                    # empty picture frame, origin = centre
+    - {rect: [-100, -125, 200, 250, 8], fill: "#b08968", width: 8}
+    - {rect: [-74, -99, 148, 198, 4], fill: "#f1efe4", width: 5}
+    - {line: [[-74, -99], [-56, -81]], width: 3}
+    - {line: [[74, 99], [56, 81]], width: 3}
+
+  sheet:                                     # sheet of paper, origin = centre
+    - {rect: [-88, -112, 176, 224, 4], style: paper}
+    - {line: [[-58, -72], [58, -72]], width: 4, stroke: "#9aa5b1"}
+    - {line: [[-58, -40], [58, -40]], width: 4, stroke: "#9aa5b1"}
+    - {line: [[-58, -8], [58, -8]], width: 4, stroke: "#9aa5b1"}
+    - {line: [[-58, 24], [30, 24]], width: 4, stroke: "#9aa5b1"}
+    - {line: [[-58, 56], [58, 56]], width: 4, stroke: "#9aa5b1"}
+
+  redx:                                      # big red cross, origin = centre
+    - {line: [[-70, -70], [70, 70]], stroke: "#d62828", width: 22}
+    - {line: [[70, -70], [-70, 70]], stroke: "#d62828", width: 22}
+
+  nightsky:                                  # everything above the horizon (y 620), absolute
+    - {rect: [-500, -800, 1720, 1420], style: skyN}
+    - {line: [[-500, 620], [1220, 620]], width: 5, stroke: "#28527a"}
+    - {circle: [40, 90, 4], fill: white, stroke: white, width: 1}
+    - {circle: [130, 330, 3], fill: white, stroke: white, width: 1}
+    - {circle: [210, 170, 4], fill: white, stroke: white, width: 1}
+    - {circle: [270, 470, 3], fill: white, stroke: white, width: 1}
+    - {circle: [330, 60, 3], fill: white, stroke: white, width: 1}
+    - {circle: [380, 380, 4], fill: white, stroke: white, width: 1}
+    - {circle: [450, 220, 3], fill: white, stroke: white, width: 1}
+    - {circle: [560, 90, 4], fill: white, stroke: white, width: 1}
+    - {circle: [610, 500, 3], fill: white, stroke: white, width: 1}
+    - {circle: [660, 250, 4], fill: white, stroke: white, width: 1}
+    - {circle: [700, 420, 3], fill: white, stroke: white, width: 1}
+    - {circle: [90, 520, 3], fill: white, stroke: white, width: 1}
+    - {circle: [300, 250, 3], fill: white, stroke: white, width: 1}
+    - {circle: [500, 540, 3], fill: white, stroke: white, width: 1}
+    - {circle: [-40, 250, 4], fill: white, stroke: white, width: 1}
+    - {circle: [760, 160, 4], fill: white, stroke: white, width: 1}
+    - {circle: [790, 470, 3], fill: white, stroke: white, width: 1}
+    - {circle: [-70, 520, 3], fill: white, stroke: white, width: 1}
+
+  seadark:                                   # dark night sea
+    - {rect: [-500, 620, 1720, 900], style: seaN}
+
+  seapale:                                   # sea that already glows
+    - {rect: [-500, 620, 1720, 900], style: seaG}
+
+  glowdisc:                                  # pale ellipse that grows over the dark sea (origin = centre)
+    - {ellipse: [0, 0, 60, 22], style: seaG}
+
+  moon:                                      # origin = centre
+    - {circle: [0, 0, 50], fill: "#fff3b0", width: 6}
+    - {circle: [-14, -10, 9], fill: "#f2dc82", width: 3}
+    - {circle: [16, 14, 12], fill: "#f2dc82", width: 3}
+    - {circle: [8, -22, 6], fill: "#f2dc82", width: 3}
+
+  wavesA:                                    # wave lines, absolute (drawn behind ship)
+    - {path: "M-100,660 Q-55,646 -10,660 T80,660 T170,660 T260,660 T350,660 T440,660 T530,660 T620,660 T710,660 T800,660", width: 4, stroke: "#4a90c2"}
+    - {path: "M-55,720 Q-10,706 35,720 T125,720 T215,720 T305,720 T395,720 T485,720 T575,720 T665,720 T755,720 T845,720", width: 4, stroke: "#4a90c2"}
+
+  wavesB:                                    # foreground wave lines
+    - {path: "M-100,880 Q-55,866 -10,880 T80,880 T170,880 T260,880 T350,880 T440,880 T530,880 T620,880 T710,880 T800,880", width: 5, stroke: "#4a90c2"}
+    - {path: "M-55,850 Q-10,836 35,850 T125,850 T215,850 T305,850 T395,850 T485,850 T575,850 T665,850 T755,850 T845,850", width: 4, stroke: "#4a90c2"}
+
+  frontD:                                    # dark water in front of the ship's hull (absolute)
+    - {path: "M-200,806 Q-155,790 -110,806 T-20,806 T70,806 T160,806 T250,806 T340,806 T430,806 T520,806 T610,806 T700,806 T790,806 T880,806 L880,1000 L-200,1000 Z", fill: "#12305c", width: 5, stroke: "#4a90c2"}
+
+  frontG:                                    # pale glowing water in front of the hull
+    - {path: "M-200,806 Q-155,790 -110,806 T-20,806 T70,806 T160,806 T250,806 T340,806 T430,806 T520,806 T610,806 T700,806 T790,806 T880,806 L880,1000 L-200,1000 Z", fill: "#d6efff", width: 5, stroke: "#4a90c2"}
+
+  galleon:                                   # wooden sailing ship, origin = waterline centre
+    - {group: rig, pivot: [0, -70], items: [
+        {line: [[-70, -70], [-70, -340]], width: 10},
+        {line: [[80, -70], [80, -290]], width: 9},
+        {poly: [[-70, -330], [-150, -300], [-150, -175], [-70, -150]], style: sail},
+        {poly: [[-70, -330], [16, -300], [16, -175], [-70, -150]], style: sail},
+        {poly: [[80, -280], [22, -260], [22, -170], [80, -150]], style: sail},
+        {poly: [[80, -280], [150, -262], [150, -170], [80, -150]], style: sail},
+        {poly: [[-70, -340], [-70, -370], [-20, -355]], fill: red, width: 4}]}
+    - {poly: [[-175, -72], [180, -72], [148, 12], [-150, 12]], style: hullwood}
+    - {poly: [[-175, -72], [-175, -138], [-100, -138], [-100, -72]], style: hullwood}
+    - {line: [[180, -72], [250, -112]], width: 9}
+    - {line: [[-165, -40], [172, -40]], width: 4}
+    - {circle: [-136, -104, 9], fill: "#ffd166", width: 4}
+    - {circle: [-70, -20, 8], fill: "#ffd166", width: 4}
+    - {circle: [20, -20, 8], fill: "#ffd166", width: 4}
+    - {circle: [110, -20, 8], fill: "#ffd166", width: 4}
+
+  shiprail:                                  # rail in front of the sailors, same origin as galleon
+    - {line: [[-100, -72], [-100, -142]], width: 6}
+    - {line: [[-55, -72], [-55, -142]], width: 6}
+    - {line: [[-10, -72], [-10, -142]], width: 6}
+    - {line: [[35, -72], [35, -142]], width: 6}
+    - {line: [[80, -72], [80, -142]], width: 6}
+    - {line: [[125, -72], [125, -142]], width: 6}
+    - {line: [[170, -72], [170, -142]], width: 6}
+    - {line: [[-100, -142], [170, -142]], width: 8}
+    - {line: [[-100, -106], [170, -106]], width: 5}
+
+  cargo:                                     # modern container ship, origin = waterline centre, bow to the right
+    - {poly: [[-300, -70], [320, -70], [278, 8], [-284, 8]], fill: "#9b2226", width: 7}
+    - {line: [[-292, -34], [300, -34]], width: 4}
+    - {rect: [-56, -126, 68, 56, 3], fill: "#e63946", width: 4}
+    - {rect: [12, -126, 68, 56, 3], fill: "#2a9d8f", width: 4}
+    - {rect: [80, -126, 68, 56, 3], fill: "#f4a261", width: 4}
+    - {rect: [148, -126, 68, 56, 3], fill: "#457b9d", width: 4}
+    - {rect: [216, -126, 68, 56, 3], fill: "#e9c46a", width: 4}
+    - {rect: [12, -182, 68, 56, 3], fill: "#457b9d", width: 4}
+    - {rect: [80, -182, 68, 56, 3], fill: "#e63946", width: 4}
+    - {rect: [148, -182, 68, 56, 3], fill: "#f4a261", width: 4}
+    - {rect: [216, -182, 68, 56, 3], fill: "#2a9d8f", width: 4}
+    - {rect: [148, -238, 68, 56, 3], fill: "#e9c46a", width: 4}
+    - {rect: [216, -238, 68, 56, 3], fill: "#457b9d", width: 4}
+    - {rect: [-290, -138, 210, 68, 4], fill: white, width: 6}
+    - {rect: [-278, -212, 186, 76, 4], fill: white, width: 6}
+    - {rect: [-282, -420, 190, 208, 4], fill: "#c9d6df", width: 6}
+    - {rect: [-262, -384, 150, 44, 4], fill: "#8ecae6", width: 5}
+    - {rect: [-298, -438, 222, 18, 4], fill: white, width: 6}
+    - {rect: [-232, -488, 44, 50, 4], fill: "#e63946", width: 6}
+    - {rect: [-232, -470, 44, 10], fill: "#222222", width: 2}
+    - {line: [[-120, -438], [-120, -470]], width: 5}
+    - {ellipse: [-120, -476, 26, 7], fill: gray, width: 4}
+
+  logbook:                                   # open logbook with a scribbling pen, origin = centre
+    - {rect: [-40, -28, 38, 56, 3], style: paper}
+    - {rect: [2, -28, 38, 56, 3], style: paper}
+    - {line: [[-30, -14], [-10, -14]], width: 3, stroke: "#9aa5b1"}
+    - {line: [[-30, 0], [-10, 0]], width: 3, stroke: "#9aa5b1"}
+    - {line: [[12, -14], [32, -14]], width: 3, stroke: "#9aa5b1"}
+    - {group: pen, pivot: [16, 4], items: [{line: [[16, 4], [40, -34]], stroke: "#c0392b", width: 6}]}
+
+  sat:                                       # satellite with a scanning beam (group beam), origin = centre
+    - {group: beam, pivot: [0, 18], items: [{poly: [[-10, 18], [10, 18], [95, 250], [-95, 250]], fill: "#dff3ff", stroke: "#dff3ff", width: 1, opacity: 0.5}]}
+    - {rect: [-92, -14, 62, 28, 3], fill: "#457b9d", width: 5}
+    - {rect: [30, -14, 62, 28, 3], fill: "#457b9d", width: 5}
+    - {line: [[-61, -14], [-61, 14]], width: 3}
+    - {line: [[61, -14], [61, 14]], width: 3}
+    - {rect: [-26, -22, 52, 40, 6], fill: "#e5e5e5", width: 6}
+    - {circle: [0, 20, 10], fill: "#222222", width: 4}
+    - {line: [[0, -22], [0, -44]], width: 5}
+    - {circle: [0, -48, 6], fill: red, width: 3}
+
+  earth:                                     # space background + curved Earth (absolute, down to y 1000)
+    - {rect: [-400, -500, 1520, 1500], fill: "#0a1128", stroke: "#0a1128", width: 1}
+    - {circle: [60, 110, 4], fill: white, stroke: white, width: 1}
+    - {circle: [190, 380, 3], fill: white, stroke: white, width: 1}
+    - {circle: [300, 90, 3], fill: white, stroke: white, width: 1}
+    - {circle: [440, 430, 4], fill: white, stroke: white, width: 1}
+    - {circle: [520, 150, 3], fill: white, stroke: white, width: 1}
+    - {circle: [650, 300, 4], fill: white, stroke: white, width: 1}
+    - {circle: [690, 90, 3], fill: white, stroke: white, width: 1}
+    - {circle: [110, 260, 3], fill: white, stroke: white, width: 1}
+    - {circle: [590, 440, 3], fill: white, stroke: white, width: 1}
+    - {path: "M-100,720 Q360,360 820,720 L820,1000 L-100,1000 Z", fill: "#1d5fa8", width: 7}
+    - {path: "M-90,698 Q360,338 810,698", stroke: "#8ecae6", width: 8}
+    - {poly: [[40, 820], [110, 742], [200, 715], [245, 780], [180, 860], [70, 890]], fill: "#4f9d69", width: 5}
+    - {poly: [[560, 690], [640, 700], [700, 760], [650, 850], [560, 800]], fill: "#4f9d69", width: 5}
+    - {path: "M300,640 Q340,620 390,640", stroke: white, width: 6}
+    - {path: "M330,880 Q400,850 470,880", stroke: white, width: 6}
+
+  lab:                                       # dim laboratory below the Earth (absolute)
+    - {rect: [-100, 940, 920, 840], fill: "#26445f", stroke: "#26445f", width: 1}
+    - {rect: [-100, 1770, 920, 260], fill: "#1a2f45", stroke: "#1a2f45", width: 1}
+    - {line: [[-100, 1770], [820, 1770]], width: 7}
+    - {line: [[-100, 940], [820, 940]], width: 9}
+    - {line: [[20, 1330], [200, 1330]], width: 8}
+    - {rect: [30, 1270, 22, 60, 2], fill: "#e63946", width: 4}
+    - {rect: [56, 1282, 20, 48, 2], fill: "#ffd166", width: 4}
+    - {rect: [80, 1262, 24, 68, 2], fill: "#2a9d8f", width: 4}
+    - {rect: [108, 1276, 20, 54, 2], fill: "#f4a261", width: 4}
+    - {circle: [640, 1130, 42], fill: white, width: 7}
+    - {line: [[640, 1130], [640, 1102]], width: 5}
+    - {line: [[640, 1130], [662, 1138]], width: 5}
+
+  desk:                                      # origin = floor level, centre
+    - {rect: [-215, -190, 430, 22, 5], style: wood}
+    - {rect: [-200, -168, 30, 168, 3], style: wood}
+    - {rect: [170, -168, 30, 168, 3], style: wood}
+    - {rect: [-150, -160, 120, 90, 4], fill: "#8d6e63", width: 5}
+    - {circle: [-90, -115, 6], fill: "#ffd166", width: 3}
+
+  chair:                                     # origin = floor level, backrest on the left
+    - {rect: [-46, -100, 92, 14, 4], fill: "#6d6875", width: 5}
+    - {rect: [-52, -200, 14, 100, 4], fill: "#6d6875", width: 5}
+    - {line: [[0, -86], [0, 0]], width: 7}
+    - {line: [[-40, 0], [40, 0]], width: 7}
+
+  monitor:                                   # origin = centre of the screen
+    - {rect: [-140, -103, 280, 206, 10], fill: "#b0bec5", width: 7}
+    - {rect: [-125, -88, 250, 176, 4], fill: "#050a18", width: 5}
+    - {poly: [[-125, -20], [-95, -40], [-60, -34], [-40, -8], [-70, 20], [-110, 30]], fill: "#1c2d44", width: 3}
+    - {poly: [[70, 40], [100, 20], [125, 30], [125, 88], [60, 88]], fill: "#1c2d44", width: 3}
+    - {circle: [-80, -60, 2], fill: white, stroke: white, width: 1}
+    - {circle: [30, -70, 2], fill: white, stroke: white, width: 1}
+    - {circle: [90, -50, 2], fill: white, stroke: white, width: 1}
+    - {group: patch, pivot: [10, 15], items: [
+        {ellipse: [10, 15, 104, 52], fill: "#8ecae6", stroke: "#8ecae6", width: 1, opacity: 0.35},
+        {ellipse: [10, 15, 70, 34], fill: "#e4f5ff", stroke: "#e4f5ff", width: 1},
+        {ellipse: [10, 15, 34, 16], fill: white, stroke: white, width: 1}]}
+    - {group: scan, pivot: [0, -88], items: [{line: [[-125, -88], [125, -88]], stroke: "#9dffb0", width: 5}]}
+    - {poly: [[-30, 103], [30, 103], [45, 150], [-45, 150]], fill: "#90a4ae", width: 5}
+    - {rect: [-70, 150, 140, 14, 5], fill: "#90a4ae", width: 5}
+
+  lens:                                      # magnifying glass, origin = centre of the glass
+    - {line: [[212, 212], [330, 330]], stroke: "#5d4037", width: 46}
+    - {line: [[212, 212], [330, 330]], stroke: "#8d6e63", width: 32}
+    - {circle: [0, 0, 300], fill: "#0f3a5f", stroke: "#cfd8dc", width: 18}
+    - {circle: [0, 0, 290], stroke: "#222222", width: 3}
+    - {path: "M-215,-150 Q-155,-218 -70,-238", stroke: "#4a90c2", width: 8, opacity: 0.6}
+    - {path: "M-160,120 Q-120,100 -80,120", stroke: "#2f6d9b", width: 5}
+    - {path: "M120,-140 Q160,-160 200,-140", stroke: "#2f6d9b", width: 5}
+    - {path: "M100,170 Q140,150 180,170", stroke: "#2f6d9b", width: 5}
+
+  deepbg:                                    # plain dark background
+    - {rect: [-200, -200, 1120, 1600], fill: "#07121f", stroke: "#07121f", width: 1}
+
+  halo:                                      # soft light behind the bacteria, origin = centre
+    - {ellipse: [0, 0, 250, 250], fill: "#b8fff0", stroke: "#b8fff0", width: 1, opacity: 0.4}
+
+  swarmA:                                    # 4 rod bacteria; lit rods underneath, group dN = dark cover that fades away
+    - {line: [[-91, -57], [-49, -43]], stroke: "#5df2c8", width: 30}
+    - {line: [[-91, -57], [-49, -43]], stroke: "#eafff8", width: 18}
+    - {line: [[38, -93], [2, -67]], stroke: "#5df2c8", width: 30}
+    - {line: [[38, -93], [2, -67]], stroke: "#eafff8", width: 18}
+    - {line: [[71, 29], [49, -9]], stroke: "#5df2c8", width: 30}
+    - {line: [[71, 29], [49, -9]], stroke: "#eafff8", width: 18}
+    - {line: [[-18, 36], [-62, 44]], stroke: "#5df2c8", width: 30}
+    - {line: [[-18, 36], [-62, 44]], stroke: "#eafff8", width: 18}
+    - {group: d1, pivot: [-70, -50], items: [{line: [[-91, -57], [-49, -43]], stroke: "#111111", width: 30}, {line: [[-91, -57], [-49, -43]], stroke: "#2c5f56", width: 18}]}
+    - {group: d2, pivot: [20, -80], items: [{line: [[38, -93], [2, -67]], stroke: "#111111", width: 30}, {line: [[38, -93], [2, -67]], stroke: "#2c5f56", width: 18}]}
+    - {group: d3, pivot: [60, 10], items: [{line: [[71, 29], [49, -9]], stroke: "#111111", width: 30}, {line: [[71, 29], [49, -9]], stroke: "#2c5f56", width: 18}]}
+    - {group: d4, pivot: [-40, 40], items: [{line: [[-18, 36], [-62, 44]], stroke: "#111111", width: 30}, {line: [[-18, 36], [-62, 44]], stroke: "#2c5f56", width: 18}]}
+
+  swarmB:
+    - {line: [[-60, -30], [-18, -52]], stroke: "#5df2c8", width: 30}
+    - {line: [[-60, -30], [-18, -52]], stroke: "#eafff8", width: 18}
+    - {line: [[30, 20], [72, 26]], stroke: "#5df2c8", width: 30}
+    - {line: [[30, 20], [72, 26]], stroke: "#eafff8", width: 18}
+    - {line: [[-30, 60], [-46, 100]], stroke: "#5df2c8", width: 30}
+    - {line: [[-30, 60], [-46, 100]], stroke: "#eafff8", width: 18}
+    - {line: [[50, -70], [90, -40]], stroke: "#5df2c8", width: 30}
+    - {line: [[50, -70], [90, -40]], stroke: "#eafff8", width: 18}
+    - {group: d1, pivot: [-39, -41], items: [{line: [[-60, -30], [-18, -52]], stroke: "#111111", width: 30}, {line: [[-60, -30], [-18, -52]], stroke: "#2c5f56", width: 18}]}
+    - {group: d2, pivot: [51, 23], items: [{line: [[30, 20], [72, 26]], stroke: "#111111", width: 30}, {line: [[30, 20], [72, 26]], stroke: "#2c5f56", width: 18}]}
+    - {group: d3, pivot: [-38, 80], items: [{line: [[-30, 60], [-46, 100]], stroke: "#111111", width: 30}, {line: [[-30, 60], [-46, 100]], stroke: "#2c5f56", width: 18}]}
+    - {group: d4, pivot: [70, -55], items: [{line: [[50, -70], [90, -40]], stroke: "#111111", width: 30}, {line: [[50, -70], [90, -40]], stroke: "#2c5f56", width: 18}]}
+
+  swarmC:
+    - {line: [[-80, -20], [-36, -30]], stroke: "#5df2c8", width: 30}
+    - {line: [[-80, -20], [-36, -30]], stroke: "#eafff8", width: 18}
+    - {line: [[20, -60], [44, -22]], stroke: "#5df2c8", width: 30}
+    - {line: [[20, -60], [44, -22]], stroke: "#eafff8", width: 18}
+    - {line: [[-10, 40], [34, 62]], stroke: "#5df2c8", width: 30}
+    - {line: [[-10, 40], [34, 62]], stroke: "#eafff8", width: 18}
+    - {line: [[-96, 70], [-60, 92]], stroke: "#5df2c8", width: 30}
+    - {line: [[-96, 70], [-60, 92]], stroke: "#eafff8", width: 18}
+    - {group: d1, pivot: [-58, -25], items: [{line: [[-80, -20], [-36, -30]], stroke: "#111111", width: 30}, {line: [[-80, -20], [-36, -30]], stroke: "#2c5f56", width: 18}]}
+    - {group: d2, pivot: [32, -41], items: [{line: [[20, -60], [44, -22]], stroke: "#111111", width: 30}, {line: [[20, -60], [44, -22]], stroke: "#2c5f56", width: 18}]}
+    - {group: d3, pivot: [12, 51], items: [{line: [[-10, 40], [34, 62]], stroke: "#111111", width: 30}, {line: [[-10, 40], [34, 62]], stroke: "#2c5f56", width: 18}]}
+    - {group: d4, pivot: [-78, 81], items: [{line: [[-96, 70], [-60, 92]], stroke: "#111111", width: 30}, {line: [[-96, 70], [-60, 92]], stroke: "#2c5f56", width: 18}]}
+
+  switchplate:                               # big wall light switch, origin = centre of the plate
+    - {rect: [-150, -210, 300, 420, 28], fill: "#f4f1e8", width: 9}
+    - {circle: [0, -172, 14], fill: "#b0b0b0", width: 4}
+    - {line: [[-9, -172], [9, -172]], width: 4}
+    - {circle: [0, 172, 14], fill: "#b0b0b0", width: 4}
+    - {line: [[-9, 172], [9, 172]], width: 4}
+    - {circle: [0, 40, 58], fill: "#cfcfc5", width: 8}
+    - {group: lever, pivot: [0, 40], items: [
+        {rect: [-15, -128, 30, 168, 12], fill: "#9e9e9e", width: 7},
+        {circle: [0, -136, 30], fill: "#e63946", width: 7}]}
+
+  hand:                                      # pushing hand, origin = centre of the palm, fingers point right
+    - {rect: [-300, -36, 270, 72, 8], fill: "#3d5a80", width: 6}
+    - {ellipse: [0, 0, 46, 40], fill: "#ffd7b5", width: 6}
+    - {line: [[26, -24], [84, -24]], stroke: "#222222", width: 24}
+    - {line: [[26, -24], [84, -24]], stroke: "#ffd7b5", width: 13}
+    - {line: [[26, -6], [92, -6]], stroke: "#222222", width: 24}
+    - {line: [[26, -6], [92, -6]], stroke: "#ffd7b5", width: 13}
+    - {line: [[26, 12], [88, 12]], stroke: "#222222", width: 24}
+    - {line: [[26, 12], [88, 12]], stroke: "#ffd7b5", width: 13}
+    - {line: [[26, 28], [76, 28]], stroke: "#222222", width: 22}
+    - {line: [[26, 28], [76, 28]], stroke: "#ffd7b5", width: 12}
+
+scenes:
+  # ---------------------------------------------------------------- A: the old sailor tells his story on the quay (s1)
+  - id: quay1
+    sents: [s1]
+    set:
+      - {kind: sky, clouds: [[110, 210, 130], [580, 330, 110]], drift: 8}
+      - {kind: shape, shape: harbour, x: 0, y: 0}
+    props:
+      - {id: bubble, kind: shape, shape: bubble, x: 300, y: 520, scale: 0.05, hidden: true}
+      - {id: gulls, kind: emitter, emitter: birds, at: [560, 300]}
+    cast:
+      - {id: lis2, x: 590, gy: 902, k: 1.1, facing: l, hat: [red, yellow], face: curious}
+      - {id: lis1, x: 470, gy: 902, k: 1.2, facing: l, hair: "#6d4c41", coat: "#52796f", coat_len: 20, face: curious}
+      - {id: sailor, x: 240, gy: 902, k: 1.5, facing: r, cap: navy, coat: "#3d5a80", coat_len: 30, hair: "#9e9e9e", face: happy}
+    beats:
+      - {at: 0.05, who: lis1, do: pose, name: lean_in}
+      - {at: 0.12, who: lis2, do: pose, name: lean_in}
+      - {at: 0.1, who: sailor, do: pose, name: hands_up}
+      - {at: "word:centuries", who: gulls, do: burst}
+      - {at: "word:sailors-0.1", who: sailor, do: pose, name: wave}
+      - {at: "word:sailors-0.05", who: bubble, do: show}
+      - {at: prev, who: bubble, do: scale, to: 1, dur: 1.1, ease: back.out(1.5)}
+      - {at: "word:told", who: sailor, do: pose, name: reach}
+      - {at: "word:same", who: sailor, do: pose, name: hands_up}
+      - {at: "word:same", who: lis1, do: nod, until: "word:story"}
+      - {at: "word:same+0.1", who: lis2, do: nod, until: "word:story"}
+      - {at: "word:strange", who: sailor, do: point, target: bubble}
+      - {at: "word:strange", who: cam, do: push, zoom: 1.12, target: [340, 520], screen: [360, 570], dur: 1.4, ease: sine.inOut}
+      - {at: "word:story-0.1", who: sailor, do: pose, name: hands_up}
+
+  # ---------------------------------------------------------------- B: night at sea, the water starts to glow (s2, s3)
+  - id: night
+    sents: [s2, s3]
+    in: {type: slide}
+    camera: {zoom: 1.55, at: [400, 730], screen: [360, 620]}
+    set:
+      - {kind: shape, shape: seadark, x: 0, y: 0}
+      - {id: glowE, kind: shape, shape: glowdisc, x: 360, y: 812, scale: 0.05}
+      - {kind: shape, shape: nightsky, x: 0, y: 0}
+      - {kind: shape, shape: moon, x: 540, y: 430}
+      - {id: wa, kind: shape, shape: wavesA, x: 0, y: 0}
+      - {id: ship, kind: shape, shape: galleon, x: 360, y: 812}
+      - {id: fd, kind: shape, shape: frontD, x: 0, y: 0}
+      - {id: fg, kind: shape, shape: frontG, x: 0, y: 0, opacity: 0}
+      - {id: wb, kind: shape, shape: wavesB, x: 0, y: 0}
+    props:
+      - {id: rail, kind: shape, shape: shiprail, x: 360, y: 812, layer: top}
+      - {id: hz, kind: line, points: [[20, 612], [700, 612]], style: dash, width: 5, color: white, arrows: both}
+    cast:
+      - {id: sa1, x: 400, gy: 742, k: 0.95, facing: r, cap: "#264653", coat: "#52796f", coat_len: 14, face: ok}
+      - {id: sa2, x: 480, gy: 742, k: 0.95, facing: r, hat: [teal, "#e9c46a"], face: ok}
+    beats:
+      - {at: scene, who: ship, do: rock, amp: 2.0, freq: 0.32}
+      - {at: scene, who: rail, do: rock, amp: 2.0, freq: 0.32}
+      - {at: scene, who: sa1, do: rock, amp: 2.0, freq: 0.32}
+      - {at: scene, who: sa2, do: rock, amp: 2.0, freq: 0.32}
+      - {at: scene, who: wa, do: bob, amp: 5, freq: 0.5}
+      - {at: scene, who: wb, do: bob, amp: 6, freq: 0.42}
+      - {at: scene, who: fd, do: bob, amp: 3, freq: 0.45}
+      - {at: scene, who: fg, do: bob, amp: 3, freq: 0.45}
+      - {at: scene, who: sa1, do: look, target: [600, 700]}
+      - {at: scene, who: sa2, do: look, target: [600, 700]}
+      - {at: "word:glow-0.2", who: glowE, do: scale, to: 14, dur: 2.3, ease: power2.out}
+      - {at: "word:glow-0.2", who: fg, do: fade, to: 1, dur: 2.0}
+      - {at: "word:glow", who: sa1, do: pose, name: lean_in}
+      - {at: "word:glow", who: sa1, do: face, name: wow}
+      - {at: "word:glow", who: sa1, do: look, target: down}
+      - {at: "word:glow+0.12", who: sa2, do: pose, name: lean_in}
+      - {at: "word:glow+0.12", who: sa2, do: face, name: wow}
+      - {at: "word:glow+0.12", who: sa2, do: look, target: down}
+      - {at: "word:milk", who: sa1, do: pose, name: cheeks}
+      - {at: "word:milk+0.1", who: sa2, do: pose, name: cheeks}
+      - {at: "word:steady-0.2", who: cam, do: pull, zoom: 1.0, target: [360, 640], screen: [360, 640], dur: 2.6, ease: sine.inOut}
+      - {at: "word:horizon", who: hz, do: draw_line, dur: 0.9}
+
+  # ---------------------------------------------------------------- C: back on the quay, nobody believes him (s4)
+  - id: quay2
+    sents: [s4]
+    in: {type: slide}
+    set:
+      - {kind: sky, clouds: [[100, 230, 130], [600, 300, 110]], drift: 8}
+      - {kind: shape, shape: harbour, x: 0, y: 0}
+    props:
+      - {id: pic, kind: shape, shape: pframe, x: 300, y: 400, scale: 0.05, hidden: true}
+      - {id: x1, kind: shape, shape: redx, x: 300, y: 400, scale: 1.25, hidden: true, layer: top}
+      - {id: doc, kind: shape, shape: sheet, x: 560, y: 400, scale: 0.05, hidden: true}
+      - {id: x2, kind: shape, shape: redx, x: 560, y: 400, scale: 1.1, hidden: true, layer: top}
+      - {id: hat, kind: shape, shape: tophat, on: gent, anchor: top, offset: [0, 2]}
+    cast:
+      - {id: scholar, x: 590, gy: 902, k: 1.2, facing: l, glasses: true, coat: "#6d4c41", coat_len: 40, hair: "#a3a3a3", face: happy}
+      - {id: gent, x: 440, gy: 902, k: 1.25, facing: l, coat: "#1d1d1d", coat_len: 40, hair: "#3b2a1e", face: happy}
+      - {id: sailor, x: 200, gy: 902, k: 1.5, facing: r, cap: navy, coat: "#3d5a80", coat_len: 30, hair: "#9e9e9e", face: worried}
+    beats:
+      - {at: scene, who: sailor, do: pose, name: hands_up}
+      - {at: 0.15, who: gent, do: pose, name: wave}
+      - {at: 0.3, who: scholar, do: pose, name: wave}
+      - {at: "word:believed", who: gent, do: heave, until: "word:proof+0.6"}
+      - {at: "word:believed", who: scholar, do: heave, until: "word:proof+0.6"}
+      - {at: "word:believed+0.2", who: sailor, do: face, name: sad}
+      - {at: "word:no", who: pic, do: show}
+      - {at: prev, who: pic, do: scale, to: 1, dur: 0.5, ease: back.out(1.8)}
+      - {at: "word:photograph", who: x1, do: stamp, from: 2.2, r0: -14, r1: -4}
+      - {at: "word:no#2", who: doc, do: show}
+      - {at: prev, who: doc, do: scale, to: 1, dur: 0.5, ease: back.out(1.8)}
+      - {at: "word:proof", who: x2, do: stamp, from: 2.2, r0: -12, r1: -3}
+      - {at: "word:proof+0.15", who: sailor, do: pose, name: shrug}
+
+  # ---------------------------------------------------------------- D: 1995, a cargo ship crosses the glowing sea (s5)
+  - id: cargo
+    sents: [s5]
+    in: {type: slide}
+    set:
+      - {kind: shape, shape: seapale, x: 0, y: 0}
+      - {kind: shape, shape: nightsky, x: 0, y: 0}
+      - {kind: shape, shape: moon, x: 610, y: 340}
+      - {id: wa, kind: shape, shape: wavesA, x: 0, y: 0}
+      - {id: ship, kind: shape, shape: cargo, x: 300, y: 800}
+      - {id: fg, kind: shape, shape: frontG, x: 0, y: -14}
+      - {id: wb, kind: shape, shape: wavesB, x: 0, y: 0}
+    props:
+      - {id: log, kind: shape, shape: logbook, x: 160, y: 488, scale: 1.4, layer: top}
+    cast:
+      - {id: officer, x: 113, gy: 588, k: 0.82, facing: r, cap: navy, coat: "#1d3557", coat_len: 26, hair: "#3b2a1e", face: flat}
+    beats:
+      - {at: scene, who: ship, do: move, dx: 330, dy: 0, dur: 4.6, ease: none}
+      - {at: scene, who: officer, do: move, dx: 330, dy: 0, dur: 4.6, ease: none}
+      - {at: scene, who: log, do: move, dx: 330, dy: 0, dur: 4.6, ease: none}
+      - {at: scene, who: wa, do: bob, amp: 5, freq: 0.5}
+      - {at: scene, who: wb, do: bob, amp: 6, freq: 0.42}
+      - {at: scene, who: log.pen, do: rock, amp: 14, freq: 3.2}
+      - {at: scene, who: officer, do: look, target: log}
+      - {at: "word:merchant", who: officer, do: nod, until: "s5.end"}
+      - {at: "word:glowing-0.2", who: cam, do: push, zoom: 1.25, target: [440, 560], screen: [360, 570], until: "s5.end", ease: sine.inOut}
+
+  # ---------------------------------------------------------------- E: satellite, then the scientist at the monitor (s6, s7)
+  - id: space
+    sents: [s6, s7]
+    in: {type: slide}
+    set:
+      - {kind: shape, shape: earth, x: 0, y: 0}
+      - {kind: shape, shape: lab, x: 0, y: 0}
+      - {kind: shape, shape: desk, x: 430, y: 1770}
+      - {id: mon, kind: shape, shape: monitor, x: 480, y: 1367, scale: 1.3}
+      - {id: satl, kind: shape, shape: sat, x: 140, y: 330, scale: 1.3}
+    cast:
+      - {id: sci, x: 190, gy: 1770, k: 1.5, facing: r, coat: true, glasses: true, hair: "#a3a3a3", face: flat}
+    beats:
+      - {at: scene, who: satl, do: path, points: [[140, 330], [260, 285], [470, 285], [620, 335]], dur: 2.6, ease: none}
+      - {at: 0.15, who: satl.beam, do: rock, amp: 14, freq: 1.3, until: "word:scientists+0.6"}
+      - {at: scene, who: mon.patch, do: fade, to: 0, dur: 0.01}
+      - {at: "word:scientists+0.35", who: cam, do: tilt, zoom: 1.0, target: [360, 1590], screen: [360, 640], dur: 1.0, ease: power2.inOut}
+      - {at: "word:found", who: sci, do: look, target: mon}
+      - {at: "word:found", who: sci, do: point, target: mon}
+      - {at: "word:old-0.1", who: mon.scan, do: move, dy: 176, dur: 1.2, ease: none}
+      - {at: "word:satellite", who: mon.patch, do: fade, to: 1, dur: 0.6}
+      - {at: "word:satellite", who: sci, do: sway, until: "word:glow"}
+      - {at: "word:glow", who: sci, do: pose, name: hands_up}
+      - {at: "word:glow", who: sci, do: face, name: wow}
+      - {at: "word:glow", who: sci, do: move, dy: -80, dur: 0.22, ease: power2.out}
+      - {at: prev.end, who: sci, do: move, dy: 80, dur: 0.25, ease: power2.in}
+      - {at: "word:satellite+0.6", who: mon.patch, do: pulse, amp: 0.12, freq: 1.6, until: scene.end}
+      - {at: "word:thousand", who: sci, do: move, dy: -80, dur: 0.22, ease: power2.out}
+      - {at: prev.end, who: sci, do: move, dy: 80, dur: 0.25, ease: power2.in}
+
+  # ---------------------------------------------------------------- F: zoom into the water, bacteria light up (s8)
+  - id: bacteria
+    sents: [s8]
+    in: {type: zoom, target: [480, 1431], from: [360, 500]}
+    set:
+      - {kind: shape, shape: deepbg, x: 0, y: 0}
+      - {kind: shape, shape: lens, x: 360, y: 500}
+      - {id: halo, kind: shape, shape: halo, x: 360, y: 500, opacity: 0}
+      - {id: swA, kind: shape, shape: swarmA, x: 300, y: 420, scale: 1.2}
+      - {id: swB, kind: shape, shape: swarmB, x: 440, y: 540, scale: 1.2}
+      - {id: swC, kind: shape, shape: swarmC, x: 320, y: 620, scale: 1.2}
+    beats:
+      - {at: scene, who: swA, do: move, dx: 40, dy: -30, dur: 4.4, ease: sine.inOut}
+      - {at: scene, who: swB, do: move, dx: -50, dy: 25, dur: 4.4, ease: sine.inOut}
+      - {at: scene, who: swC, do: move, dx: 45, dy: -35, dur: 4.4, ease: sine.inOut}
+      - {at: "word:comes", who: swA.d1, do: fade, to: 0, dur: 0.25}
+      - {at: "word:comes+0.15", who: swB.d1, do: fade, to: 0, dur: 0.25}
+      - {at: "word:comes+0.3", who: swC.d1, do: fade, to: 0, dur: 0.25}
+      - {at: "word:comes+0.45", who: swA.d2, do: fade, to: 0, dur: 0.25}
+      - {at: "word:comes+0.6", who: swC.d2, do: fade, to: 0, dur: 0.25}
+      - {at: "word:comes+0.75", who: swB.d2, do: fade, to: 0, dur: 0.25}
+      - {at: "word:comes+0.9", who: swB.d3, do: fade, to: 0, dur: 0.25}
+      - {at: "word:comes+1.05", who: swA.d3, do: fade, to: 0, dur: 0.25}
+      - {at: "word:comes+1.2", who: swC.d3, do: fade, to: 0, dur: 0.25}
+      - {at: "word:comes+1.35", who: swA.d4, do: fade, to: 0, dur: 0.25}
+      - {at: "word:comes+1.5", who: swC.d4, do: fade, to: 0, dur: 0.25}
+      - {at: "word:comes+1.65", who: swB.d4, do: fade, to: 0, dur: 0.25}
+      - {at: "word:shining-0.1", who: halo, do: fade, to: 1, dur: 0.5}
+      - {at: "word:shining", who: halo, do: pulse, amp: 0.1, freq: 2.0, until: scene.end}
+      - {at: "word:shining", who: swA, do: pulse, amp: 0.12, freq: 2.0, until: scene.end}
+      - {at: "word:shining", who: swB, do: pulse, amp: 0.12, freq: 2.0, until: scene.end}
+      - {at: "word:shining", who: swC, do: pulse, amp: 0.12, freq: 2.0, until: scene.end}
+
+  # ---------------------------------------------------------------- G: the moon crosses again and again, 40 nights (s9)
+  - id: nights
+    sents: [s9]
+    in: {type: slide}
+    set:
+      - {kind: shape, shape: seapale, x: 0, y: 0}
+      - {kind: shape, shape: nightsky, x: 0, y: 0}
+      - {id: m1, kind: shape, shape: moon, x: -90, y: 440}
+      - {id: m2, kind: shape, shape: moon, x: -90, y: 440}
+      - {id: m3, kind: shape, shape: moon, x: -90, y: 440}
+      - {id: m4, kind: shape, shape: moon, x: -90, y: 440}
+      - {id: wa, kind: shape, shape: wavesA, x: 0, y: 0}
+      - {id: ship, kind: shape, shape: cargo, x: 440, y: 800, scale: 0.6}      # 2019 = moderna lod, nie plachetnica
+      - {id: fg, kind: shape, shape: frontG, x: 0, y: -10}
+      - {id: wb, kind: shape, shape: wavesB, x: 0, y: 0}
+    beats:
+      - {at: scene, who: ship, do: rock, amp: 2.0, freq: 0.32}
+      - {at: scene, who: wa, do: bob, amp: 5, freq: 0.5}
+      - {at: scene, who: wb, do: bob, amp: 6, freq: 0.42}
+      - {at: scene, who: fg, do: bob, amp: 3, freq: 0.45}
+      - {at: scene, who: m1, do: path, points: [[-90, 440], [180, 240], [540, 240], [810, 440]], dur: 0.95, ease: none}
+      - {at: "scene+0.95", who: m2, do: path, points: [[-90, 440], [180, 240], [540, 240], [810, 440]], dur: 0.95, ease: none}
+      - {at: "scene+1.9", who: m3, do: path, points: [[-90, 440], [180, 240], [540, 240], [810, 440]], dur: 0.95, ease: none}
+      - {at: "scene+2.85", who: m4, do: path, points: [[-90, 440], [180, 240], [540, 240], [810, 440]], dur: 0.95, ease: none}
+
+  # ---------------------------------------------------------------- H: the big switch, the sea lights up, the question (s10)
+  - id: finale
+    sents: [s10]
+    in: {type: slide}
+    set:
+      - {kind: shape, shape: seadark, x: 0, y: 0}
+      - {id: glowE, kind: shape, shape: glowdisc, x: 360, y: 700, scale: 0.05}
+      - {kind: shape, shape: nightsky, x: 0, y: 0}
+      - {kind: shape, shape: moon, x: 110, y: 450}
+      - {id: wa, kind: shape, shape: wavesA, x: 0, y: 0}
+      - {id: wb, kind: shape, shape: wavesB, x: 0, y: 0}
+      - {id: plate, kind: shape, shape: switchplate, x: 360, y: 560}
+    props:
+      - {id: hand, kind: shape, shape: hand, x: -250, y: 451}
+    beats:
+      - {at: scene, who: plate.lever, do: rotate, to: -32, dur: 0.01}
+      - {at: scene, who: wa, do: bob, amp: 5, freq: 0.5}
+      - {at: scene, who: wb, do: bob, amp: 6, freq: 0.42}
+      - {at: "word:whole-0.3", who: hand, do: move, to: [145, 451], dur: 0.9, ease: power2.out}
+      - {at: "word:switch-0.05", who: plate.lever, do: rotate, to: 32, dur: 0.35, ease: power2.inOut}
+      - {at: "word:switch-0.05", who: hand, do: move, to: [331, 451], dur: 0.35, ease: power2.inOut}
+      - {at: "word:switch+0.1", who: glowE, do: scale, to: 14, dur: 1.4, ease: power2.out}
+      - {at: "word:switch+0.5", who: hand, do: move, to: [-250, 451], dur: 0.7, ease: power2.in}

@@ -15,6 +15,16 @@ shapes:
       width: 5
     - {path: 'M-700,520 Q-350,430 0,500 Q260,440 520,508 Q800,430 1400,520 L1400,600 L-700,600 Z', fill: '#8e7dbe', width: 5}
     box: [-700, -700, 1400, 600]
+  hoofv:
+    from: devon1855
+    note: hoofv
+    items:
+    - ellipse: [0, -1, 28, 17]
+      fill: '#d5dfea'
+      stroke: none
+    - {path: 'M-20,11 C-26,0 -20,-13 0,-13 C20,-13 26,0 20,11 L9,11 C13,1 9,-6.6 0,-6.6 C-9,-6.6 -13,1 -9,11 Z', fill: '#5f7391', stroke: '#16212e', width: 4}
+    hidden: true
+    box: [-28, -18, 28, 16]
   crow:
     from: devon1855
     note: crow
@@ -222,6 +232,62 @@ shapes:
       width: 6
       stroke: '#ffd166'
     box: [-104, -250, 104, 0]
+  dogr:
+    from: devon1855
+    note: dogr
+    items:
+    - group: rope
+      pivot: [40, -66]
+      items:
+      - {path: 'M40,-66 Q-30,-64 -112,-132', width: 4, stroke: '#6d4c41'}
+    - group: tail
+      pivot: [-38, -50]
+      items:
+      - {path: 'M-38,-50 Q-58,-64 -56,-86', width: 7}
+    - group: legb
+      pivot: [-18, -42]
+      items:
+      - line:
+        - [-24, -42]
+        - [-28, 0]
+        width: 8
+      - line:
+        - [-12, -42]
+        - [-8, 0]
+        width: 8
+    - group: legf
+      pivot: [28, -42]
+      items:
+      - line:
+        - [22, -42]
+        - [18, 0]
+        width: 8
+      - line:
+        - [34, -42]
+        - [38, 0]
+        width: 8
+    - ellipse: [0, -50, 44, 19]
+      fill: '#d4a373'
+      width: 5
+    - circle: [46, -72, 18]
+      fill: '#d4a373'
+      width: 5
+    - ellipse: [64, -66, 13, 9]
+      fill: '#d4a373'
+      width: 5
+    - circle: [75, -69, 4.5]
+      fill: black
+    - circle: [49, -78, 3.5]
+      fill: black
+      stroke: none
+    - {path: 'M36,-84 Q30,-102 42,-104 Q48,-94 44,-82', fill: '#d4a373', width: 5}
+    - line:
+      - [34, -62]
+      - [40, -52]
+      width: 5
+      stroke: '#d62828'
+    hidden: true
+    box: [-112, -132, 80, 0]
   gun:
     from: devon1855
     note: long hunting gun
@@ -274,6 +340,13 @@ shapes:
       fill: '#fff3c4'
       stroke: none
     box: [-303, -153, 124, 63]
+  hillsG:
+    from: devon1855
+    note: hillsG
+    items:
+    - {path: 'M-500,830 Q-200,560 150,830 Q450,610 750,830 Q1050,550 1350,830 Q1650,610 1950,830 Q2250,560 2550,830 Q2850,620 3150,830 L3150,1000 L-500,1000 Z', fill: '#dfe8f3', width: 6}
+    hidden: true
+    box: [-500, 550, 3150, 1000]
   fence:
     from: devon1855
     note: fence
@@ -362,6 +435,132 @@ shapes:
         fill: black
       - {path: 'M128,-140 Q146,-170 150,-204', width: 7, stroke: '#4e342e'}
     box: [-34, -228, 204, 0]
+  hoof4:
+    from: devon1855
+    note: hoof4
+    items:
+    - use: hoofp
+      at: [0, 0]
+    - use: hoofp
+      at: [80, 0]
+    - use: hoofp
+      at: [160, 0]
+    - use: hoofp
+      at: [240, 0]
+    hidden: true
+    box: [-31, -16, 273, 16]
+  trailrun:
+    from: devon1855
+    note: trailrun
+    items:
+    - use: hoof4
+      at: [0, 0]
+    - use: hoof4
+      at: [320, 0]
+    - use: hoof4
+      at: [640, 0]
+    - use: hoof4
+      at: [960, 0]
+    - use: hoof4
+      at: [1280, 0]
+    - use: hoof4
+      at: [1600, 0]
+    - use: hoof4
+      at: [1920, 0]
+    - use: hoof4
+      at: [2240, 0]
+    hidden: true
+    box: [-31, -16, 2513, 16]
+  cover:
+    from: devon1855
+    note: cover
+    items:
+    - rect: [0, -32, 2900, 64, 0]
+      fill: white
+      stroke: none
+    hidden: true
+    box: [0, -32, 2900, 32]
+  devonmap:
+    from: devon1855
+    note: devonmap
+    items:
+    - poly:
+      - [34, 158]
+      - [200, 150]
+      - [380, 160]
+      - [560, 150]
+      - [688, 160]
+      - [684, 520]
+      - [690, 896]
+      - [34, 896]
+      - [28, 520]
+      fill: '#f3e3c3'
+      width: 6
+    - {path: 'M468,318 Q450,262 470,212 T452,164', width: 5, stroke: '#5fa8d3'}
+    - {path: 'M100,600 L132,556 L164,600 M150,600 L184,550 L218,600 M210,380 L236,346 L262,380', width: 4}
+    - poly:
+      - [684, 520]
+      - [610, 548]
+      - [548, 584]
+      - [514, 606]
+      - [502, 540]
+      - [497, 450]
+      - [486, 372]
+      - [468, 318]
+      - [454, 360]
+      - [449, 450]
+      - [447, 540]
+      - [458, 614]
+      - [430, 650]
+      - [392, 686]
+      - [346, 722]
+      - [302, 766]
+      - [264, 808]
+      - [232, 840]
+      - [196, 868]
+      - [160, 896]
+      - [690, 896]
+      fill: '#9bd0e8'
+      width: 5
+    - text: [560, 812, ENGLISH CHANNEL]
+      size: 24
+      fill: '#1d3557'
+      stroke: none
+    - group: waves
+      pivot: [560, 760]
+      items:
+      - {path: 'M520,716 Q530,706 540,716 T560,716', width: 4, stroke: '#1d3557'}
+      - {path: 'M612,766 Q622,756 632,766 T652,766', width: 4, stroke: '#1d3557'}
+      - {path: 'M400,852 Q410,842 420,852 T440,852', width: 4, stroke: '#1d3557'}
+      - {path: 'M560,862 Q570,852 580,862 T600,862', width: 4, stroke: '#1d3557'}
+    - group: rose
+      pivot: [110, 262]
+      items:
+      - circle: [110, 262, 36]
+        fill: '#fdf0d5'
+        width: 4
+      - poly:
+        - [110, 228]
+        - [120, 262]
+        - [110, 296]
+        - [100, 262]
+        fill: '#d62828'
+        width: 3
+      - text: [110, 212, N]
+        size: 22
+    - text: [370, 222, DEVON]
+      size: 46
+    hidden: true
+    box: [28, 150, 690, 896]
+  dot:
+    from: devon1855
+    note: dot
+    items:
+    - circle: [0, 0, 11]
+      fill: '#2b2d42'
+      width: 4
+    hidden: true
+    box: [-11, -11, 11, 11]
   tophat:
     from: devon1855
     note: top hat
@@ -376,6 +575,55 @@ shapes:
       fill: '#8d0801'
       width: 3
     box: [-26, -46, 26, 0]
+  pipewall:
+    from: devon1855
+    note: pipewall
+    items:
+    - rect: [-100, -170, 200, 170, 2]
+      fill: '#b8b8aa'
+      width: 6
+    - rect: [-108, -184, 216, 20, 6]
+      fill: white
+      width: 5
+    - line:
+      - [-100, -120]
+      - [100, -120]
+      width: 3
+    - line:
+      - [-100, -72]
+      - [100, -72]
+      width: 3
+    - line:
+      - [-30, -164]
+      - [-30, -120]
+      width: 3
+    - line:
+      - [40, -120]
+      - [40, -72]
+      width: 3
+    - line:
+      - [-60, -72]
+      - [-60, -40]
+      width: 3
+    - group: pipe
+      pivot: [0, -20]
+      items:
+      - rect: [-150, -40, 300, 40, 0]
+        fill: '#8d99ae'
+        width: 6
+      - line:
+        - [-146, -31]
+        - [146, -31]
+        width: 3
+        stroke: '#dfe7ef'
+      - ellipse: [-150, -20, 11, 20]
+        fill: '#2b2d42'
+        width: 5
+      - ellipse: [150, -20, 11, 20]
+        fill: '#2b2d42'
+        width: 5
+    hidden: true
+    box: [-161, -184, 161, 0]
   stonewall:
     from: devon1855
     note: stonewall
@@ -574,6 +822,16 @@ shapes:
       fill: '#ffd166'
       width: 6
     box: [-84, -84, 84, 84]
+  hoofp:
+    from: devon1855
+    note: hoofp
+    items:
+    - ellipse: [1, 0, 32, 15]
+      fill: '#d5dfea'
+      stroke: none
+    - {path: 'M-24,-11 C2,-16 26,-12 26,0 C26,12 2,16 -24,11 L-24,5 C-2,8 12,5 12,0 C12,-5 -2,-8 -24,-5 Z', width: 3, fill: '#5f7391', stroke: '#16212e'}
+    hidden: true
+    box: [-31, -16, 33, 16]
   bucket:
     from: devon1855
     note: bucket
@@ -670,6 +928,32 @@ shapes:
       items:
       - {path: 'M16,-77 Q18,-88 34,-86 Q59,-93 84,-86 Q100,-88 102,-77 Z', fill: white, width: 5}
     box: [-170, -334, 170, 0]
+  lampwin:
+    from: devon1855
+    note: lampwin
+    items:
+    - rect: [-37, -32, 74, 64, 4]
+      fill: '#22333b'
+    - group: glow
+      pivot: [0, 0]
+      items:
+      - circle: [0, 0, 72]
+        fill: '#ffd166'
+        stroke: none
+        opacity: 0.3
+      - rect: [-37, -32, 74, 64, 4]
+        fill: '#ffd166'
+        width: 5
+    - line:
+      - [0, -32]
+      - [0, 32]
+      width: 4
+    - line:
+      - [-37, 0]
+      - [37, 0]
+      width: 4
+    hidden: true
+    box: [-72, -72, 72, 72]
   church:
     from: devon1855
     note: small church with tower
@@ -981,6 +1265,60 @@ shapes:
       fill: '#e63946'
       width: 3
     box: [-42, -80, 42, 0]
+  pframe:
+    from: milky_seas
+    note: pframe
+    items:
+    - rect: [-100, -125, 200, 250, 8]
+      fill: '#b08968'
+      width: 8
+    - rect: [-74, -99, 148, 198, 4]
+      fill: '#f1efe4'
+      width: 5
+    - line:
+      - [-74, -99]
+      - [-56, -81]
+      width: 3
+    - line:
+      - [74, 99]
+      - [56, 81]
+      width: 3
+    hidden: true
+    box: [-100, -125, 100, 125]
+  sheet:
+    from: milky_seas
+    note: sheet
+    items:
+    - rect: [-88, -112, 176, 224, 4]
+      fill: '#fbf7ea'
+      width: 5
+    - line:
+      - [-58, -72]
+      - [58, -72]
+      width: 4
+      stroke: '#9aa5b1'
+    - line:
+      - [-58, -40]
+      - [58, -40]
+      width: 4
+      stroke: '#9aa5b1'
+    - line:
+      - [-58, -8]
+      - [58, -8]
+      width: 4
+      stroke: '#9aa5b1'
+    - line:
+      - [-58, 24]
+      - [30, 24]
+      width: 4
+      stroke: '#9aa5b1'
+    - line:
+      - [-58, 56]
+      - [58, 56]
+      width: 4
+      stroke: '#9aa5b1'
+    hidden: true
+    box: [-88, -112, 88, 112]
   redx:
     from: milky_seas
     note: red X mark
@@ -1100,6 +1438,16 @@ shapes:
       stroke: '#d6efff'
       width: 1
     box: [-500, 620, 1220, 1520]
+  glowdisc:
+    from: milky_seas
+    note: glowdisc
+    items:
+    - ellipse: [0, 0, 60, 22]
+      fill: '#d6efff'
+      stroke: '#d6efff'
+      width: 1
+    hidden: true
+    box: [-60, -22, 60, 22]
   moon_milky_:
     from: milky_seas
     note: moon
@@ -1117,6 +1465,36 @@ shapes:
       fill: '#f2dc82'
       width: 3
     box: [-50, -50, 50, 50]
+  wavesA:
+    from: milky_seas
+    note: wavesA
+    items:
+    - {path: 'M-100,660 Q-55,646 -10,660 T80,660 T170,660 T260,660 T350,660 T440,660 T530,660 T620,660 T710,660 T800,660', width: 4, stroke: '#4a90c2'}
+    - {path: 'M-55,720 Q-10,706 35,720 T125,720 T215,720 T305,720 T395,720 T485,720 T575,720 T665,720 T755,720 T845,720', width: 4, stroke: '#4a90c2'}
+    hidden: true
+    box: [-100, 646, 845, 720]
+  wavesB:
+    from: milky_seas
+    note: wavesB
+    items:
+    - {path: 'M-100,880 Q-55,866 -10,880 T80,880 T170,880 T260,880 T350,880 T440,880 T530,880 T620,880 T710,880 T800,880', width: 5, stroke: '#4a90c2'}
+    - {path: 'M-55,850 Q-10,836 35,850 T125,850 T215,850 T305,850 T395,850 T485,850 T575,850 T665,850 T755,850 T845,850', width: 4, stroke: '#4a90c2'}
+    hidden: true
+    box: [-100, 836, 845, 880]
+  frontD:
+    from: milky_seas
+    note: frontD
+    items:
+    - {path: 'M-200,806 Q-155,790 -110,806 T-20,806 T70,806 T160,806 T250,806 T340,806 T430,806 T520,806 T610,806 T700,806 T790,806 T880,806 L880,1000 L-200,1000 Z', fill: '#12305c', width: 5, stroke: '#4a90c2'}
+    hidden: true
+    box: [-200, 790, 880, 1000]
+  frontG:
+    from: milky_seas
+    note: frontG
+    items:
+    - {path: 'M-200,806 Q-155,790 -110,806 T-20,806 T70,806 T160,806 T250,806 T340,806 T430,806 T520,806 T610,806 T700,806 T790,806 T880,806 L880,1000 L-200,1000 Z', fill: '#d6efff', width: 5, stroke: '#4a90c2'}
+    hidden: true
+    box: [-200, 790, 880, 1000]
   galleon:
     from: milky_seas
     note: old sailing ship
@@ -1201,6 +1579,48 @@ shapes:
       fill: '#ffd166'
       width: 4
     box: [-175, -370, 250, 12]
+  shiprail:
+    from: milky_seas
+    note: shiprail
+    items:
+    - line:
+      - [-100, -72]
+      - [-100, -142]
+      width: 6
+    - line:
+      - [-55, -72]
+      - [-55, -142]
+      width: 6
+    - line:
+      - [-10, -72]
+      - [-10, -142]
+      width: 6
+    - line:
+      - [35, -72]
+      - [35, -142]
+      width: 6
+    - line:
+      - [80, -72]
+      - [80, -142]
+      width: 6
+    - line:
+      - [125, -72]
+      - [125, -142]
+      width: 6
+    - line:
+      - [170, -72]
+      - [170, -142]
+      width: 6
+    - line:
+      - [-100, -142]
+      - [170, -142]
+      width: 8
+    - line:
+      - [-100, -106]
+      - [170, -106]
+      width: 5
+    hidden: true
+    box: [-100, -142, 170, -72]
   cargo:
     from: milky_seas
     note: modern cargo ship
@@ -1609,6 +2029,356 @@ shapes:
     - {path: 'M120,-140 Q160,-160 200,-140', stroke: '#2f6d9b', width: 5}
     - {path: 'M100,170 Q140,150 180,170', stroke: '#2f6d9b', width: 5}
     box: [-300, -300, 330, 330]
+  deepbg:
+    from: milky_seas
+    note: deepbg
+    items:
+    - rect: [-200, -200, 1120, 1600]
+      fill: '#07121f'
+      stroke: '#07121f'
+      width: 1
+    hidden: true
+    box: [-200, -200, 920, 1400]
+  halo:
+    from: milky_seas
+    note: halo
+    items:
+    - ellipse: [0, 0, 250, 250]
+      fill: '#b8fff0'
+      stroke: '#b8fff0'
+      width: 1
+      opacity: 0.4
+    hidden: true
+    box: [-250, -250, 250, 250]
+  swarmA:
+    from: milky_seas
+    note: swarmA
+    items:
+    - line:
+      - [-91, -57]
+      - [-49, -43]
+      stroke: '#5df2c8'
+      width: 30
+    - line:
+      - [-91, -57]
+      - [-49, -43]
+      stroke: '#eafff8'
+      width: 18
+    - line:
+      - [38, -93]
+      - [2, -67]
+      stroke: '#5df2c8'
+      width: 30
+    - line:
+      - [38, -93]
+      - [2, -67]
+      stroke: '#eafff8'
+      width: 18
+    - line:
+      - [71, 29]
+      - [49, -9]
+      stroke: '#5df2c8'
+      width: 30
+    - line:
+      - [71, 29]
+      - [49, -9]
+      stroke: '#eafff8'
+      width: 18
+    - line:
+      - [-18, 36]
+      - [-62, 44]
+      stroke: '#5df2c8'
+      width: 30
+    - line:
+      - [-18, 36]
+      - [-62, 44]
+      stroke: '#eafff8'
+      width: 18
+    - group: d1
+      pivot: [-70, -50]
+      items:
+      - line:
+        - [-91, -57]
+        - [-49, -43]
+        stroke: '#111111'
+        width: 30
+      - line:
+        - [-91, -57]
+        - [-49, -43]
+        stroke: '#2c5f56'
+        width: 18
+    - group: d2
+      pivot: [20, -80]
+      items:
+      - line:
+        - [38, -93]
+        - [2, -67]
+        stroke: '#111111'
+        width: 30
+      - line:
+        - [38, -93]
+        - [2, -67]
+        stroke: '#2c5f56'
+        width: 18
+    - group: d3
+      pivot: [60, 10]
+      items:
+      - line:
+        - [71, 29]
+        - [49, -9]
+        stroke: '#111111'
+        width: 30
+      - line:
+        - [71, 29]
+        - [49, -9]
+        stroke: '#2c5f56'
+        width: 18
+    - group: d4
+      pivot: [-40, 40]
+      items:
+      - line:
+        - [-18, 36]
+        - [-62, 44]
+        stroke: '#111111'
+        width: 30
+      - line:
+        - [-18, 36]
+        - [-62, 44]
+        stroke: '#2c5f56'
+        width: 18
+    hidden: true
+    box: [-91, -93, 71, 44]
+  swarmB:
+    from: milky_seas
+    note: swarmB
+    items:
+    - line:
+      - [-60, -30]
+      - [-18, -52]
+      stroke: '#5df2c8'
+      width: 30
+    - line:
+      - [-60, -30]
+      - [-18, -52]
+      stroke: '#eafff8'
+      width: 18
+    - line:
+      - [30, 20]
+      - [72, 26]
+      stroke: '#5df2c8'
+      width: 30
+    - line:
+      - [30, 20]
+      - [72, 26]
+      stroke: '#eafff8'
+      width: 18
+    - line:
+      - [-30, 60]
+      - [-46, 100]
+      stroke: '#5df2c8'
+      width: 30
+    - line:
+      - [-30, 60]
+      - [-46, 100]
+      stroke: '#eafff8'
+      width: 18
+    - line:
+      - [50, -70]
+      - [90, -40]
+      stroke: '#5df2c8'
+      width: 30
+    - line:
+      - [50, -70]
+      - [90, -40]
+      stroke: '#eafff8'
+      width: 18
+    - group: d1
+      pivot: [-39, -41]
+      items:
+      - line:
+        - [-60, -30]
+        - [-18, -52]
+        stroke: '#111111'
+        width: 30
+      - line:
+        - [-60, -30]
+        - [-18, -52]
+        stroke: '#2c5f56'
+        width: 18
+    - group: d2
+      pivot: [51, 23]
+      items:
+      - line:
+        - [30, 20]
+        - [72, 26]
+        stroke: '#111111'
+        width: 30
+      - line:
+        - [30, 20]
+        - [72, 26]
+        stroke: '#2c5f56'
+        width: 18
+    - group: d3
+      pivot: [-38, 80]
+      items:
+      - line:
+        - [-30, 60]
+        - [-46, 100]
+        stroke: '#111111'
+        width: 30
+      - line:
+        - [-30, 60]
+        - [-46, 100]
+        stroke: '#2c5f56'
+        width: 18
+    - group: d4
+      pivot: [70, -55]
+      items:
+      - line:
+        - [50, -70]
+        - [90, -40]
+        stroke: '#111111'
+        width: 30
+      - line:
+        - [50, -70]
+        - [90, -40]
+        stroke: '#2c5f56'
+        width: 18
+    hidden: true
+    box: [-60, -70, 90, 100]
+  swarmC:
+    from: milky_seas
+    note: swarmC
+    items:
+    - line:
+      - [-80, -20]
+      - [-36, -30]
+      stroke: '#5df2c8'
+      width: 30
+    - line:
+      - [-80, -20]
+      - [-36, -30]
+      stroke: '#eafff8'
+      width: 18
+    - line:
+      - [20, -60]
+      - [44, -22]
+      stroke: '#5df2c8'
+      width: 30
+    - line:
+      - [20, -60]
+      - [44, -22]
+      stroke: '#eafff8'
+      width: 18
+    - line:
+      - [-10, 40]
+      - [34, 62]
+      stroke: '#5df2c8'
+      width: 30
+    - line:
+      - [-10, 40]
+      - [34, 62]
+      stroke: '#eafff8'
+      width: 18
+    - line:
+      - [-96, 70]
+      - [-60, 92]
+      stroke: '#5df2c8'
+      width: 30
+    - line:
+      - [-96, 70]
+      - [-60, 92]
+      stroke: '#eafff8'
+      width: 18
+    - group: d1
+      pivot: [-58, -25]
+      items:
+      - line:
+        - [-80, -20]
+        - [-36, -30]
+        stroke: '#111111'
+        width: 30
+      - line:
+        - [-80, -20]
+        - [-36, -30]
+        stroke: '#2c5f56'
+        width: 18
+    - group: d2
+      pivot: [32, -41]
+      items:
+      - line:
+        - [20, -60]
+        - [44, -22]
+        stroke: '#111111'
+        width: 30
+      - line:
+        - [20, -60]
+        - [44, -22]
+        stroke: '#2c5f56'
+        width: 18
+    - group: d3
+      pivot: [12, 51]
+      items:
+      - line:
+        - [-10, 40]
+        - [34, 62]
+        stroke: '#111111'
+        width: 30
+      - line:
+        - [-10, 40]
+        - [34, 62]
+        stroke: '#2c5f56'
+        width: 18
+    - group: d4
+      pivot: [-78, 81]
+      items:
+      - line:
+        - [-96, 70]
+        - [-60, 92]
+        stroke: '#111111'
+        width: 30
+      - line:
+        - [-96, 70]
+        - [-60, 92]
+        stroke: '#2c5f56'
+        width: 18
+    hidden: true
+    box: [-96, -60, 44, 92]
+  switchplate:
+    from: milky_seas
+    note: switchplate
+    items:
+    - rect: [-150, -210, 300, 420, 28]
+      fill: '#f4f1e8'
+      width: 9
+    - circle: [0, -172, 14]
+      fill: '#b0b0b0'
+      width: 4
+    - line:
+      - [-9, -172]
+      - [9, -172]
+      width: 4
+    - circle: [0, 172, 14]
+      fill: '#b0b0b0'
+      width: 4
+    - line:
+      - [-9, 172]
+      - [9, 172]
+      width: 4
+    - circle: [0, 40, 58]
+      fill: '#cfcfc5'
+      width: 8
+    - group: lever
+      pivot: [0, 40]
+      items:
+      - rect: [-15, -128, 30, 168, 12]
+        fill: '#9e9e9e'
+        width: 7
+      - circle: [0, -136, 30]
+        fill: '#e63946'
+        width: 7
+    hidden: true
+    box: [-150, -210, 150, 210]
   hand:
     from: milky_seas
     note: hand
@@ -1660,6 +2430,102 @@ shapes:
       stroke: '#ffd7b5'
       width: 12
     box: [-300, -40, 92, 40]
+  frame:
+    from: dancing1518
+    note: frame
+    items:
+    - rect: [70, -520, 30, 90, 2]
+      fill: '#e3b98f'
+      width: 5
+    - rect: [-135, -400, 270, 400, 3]
+      fill: '#f1e3c6'
+      width: 6
+    - poly:
+      - [-165, -400]
+      - [0, -560]
+      - [165, -400]
+      fill: '#c0583f'
+      width: 7
+    - line:
+      - [-135, -200]
+      - [135, -200]
+      width: 8
+    - line:
+      - [-135, -400]
+      - [135, -400]
+      width: 8
+    - line:
+      - [-135, -400]
+      - [-135, 0]
+      width: 8
+    - line:
+      - [135, -400]
+      - [135, 0]
+      width: 8
+    - line:
+      - [0, -400]
+      - [0, -200]
+      width: 8
+    - line:
+      - [-135, -200]
+      - [0, -400]
+      width: 6
+    - line:
+      - [135, -200]
+      - [0, -400]
+      width: 6
+    - rect: [-105, -370, 66, 100, 3]
+      fill: '#bfe3f0'
+      width: 5
+    - rect: [39, -370, 66, 100, 3]
+      fill: '#bfe3f0'
+      width: 5
+    - line:
+      - [-72, -370]
+      - [-72, -270]
+      width: 4
+    - line:
+      - [72, -370]
+      - [72, -270]
+      width: 4
+    - rect: [-105, -150, 66, 80, 3]
+      fill: '#bfe3f0'
+      width: 5
+    hidden: true
+    box: [-165, -560, 165, 0]
+  houseL:
+    from: dancing1518
+    note: half-timbered town house (left side of a street)
+    items:
+    - use: frame
+      at: [0, 0]
+      scale: 1
+    - rect: [38, -190, 62, 190, 4]
+      fill: '#2b2118'
+    - group: door
+      pivot: [38, -95]
+      items:
+      - rect: [38, -190, 62, 190, 4]
+        fill: '#8d6e63'
+      - line:
+        - [50, -150]
+        - [50, -40]
+        width: 4
+      - circle: [90, -95, 4]
+        fill: yellow
+    box: [-165, -560, 165, 0]
+  houseR:
+    from: dancing1518
+    note: half-timbered town house (right side)
+    items:
+    - use: frame
+      at: [0, 0]
+      scale: 1
+    - rect: [38, -190, 62, 190, 4]
+      fill: '#8d6e63'
+    - circle: [90, -95, 4]
+      fill: yellow
+    box: [-165, -560, 165, 0]
   minster:
     from: dancing1518
     note: big cathedral
@@ -1744,6 +2610,16 @@ shapes:
     items:
     - {path: 'M13.2,-39.9 A42,42 0 1 0 36.1,21.3 A34,34 0 1 1 13.2,-39.9 Z', fill: '#fff3b0', width: 6}
     box: [13, -40, 13, -40]
+  veil:
+    from: dancing1518
+    note: veil
+    items:
+    - rect: [-800, -900, 1600, 2200]
+      fill: '#1b2a49'
+      stroke: '#1b2a49'
+      width: 1
+    hidden: true
+    box: [-800, -900, 800, 1300]
   nomusic:
     from: dancing1518
     note: crossed-out music note
@@ -2009,6 +2885,55 @@ shapes:
       stroke: '#e63946'
       width: 24
     box: [-90, -90, 90, 90]
+  bignote:
+    from: dancing1518
+    note: bignote
+    items:
+    - ellipse: [-34, 40, 20, 14]
+      fill: black
+    - ellipse: [34, 26, 20, 14]
+      fill: black
+    - line:
+      - [-16, 38]
+      - [-16, -40]
+      width: 8
+    - line:
+      - [50, 24]
+      - [50, -54]
+      width: 8
+    - poly:
+      - [-16, -40]
+      - [50, -54]
+      - [50, -28]
+      - [-16, -14]
+      fill: black
+    hidden: true
+    box: [-54, -54, 54, 54]
+  hillslope:
+    from: dancing1518
+    note: hillslope
+    items:
+    - poly:
+      - [-200, 930]
+      - [-200, 908]
+      - [40, 890]
+      - [560, 600]
+      - [900, 600]
+      - [900, 930]
+      fill: '#b7d58a'
+      width: 6
+    - line:
+      - [0, 905]
+      - [560, 614]
+      stroke: '#e9d8a6'
+      width: 30
+    - line:
+      - [560, 614]
+      - [900, 614]
+      stroke: '#e9d8a6'
+      width: 30
+    hidden: true
+    box: [-200, 600, 900, 930]
   chapel:
     from: dancing1518
     note: small hilltop chapel
@@ -2075,6 +3000,34 @@ shapes:
       fill: '#e63946'
       width: 7
     box: [-110, -24, 124, 26]
+  crossstaff:
+    from: dancing1518
+    note: crossstaff
+    items:
+    - line:
+      - [0, 40]
+      - [0, -260]
+      stroke: '#8d6e63'
+      width: 8
+    - line:
+      - [-34, -224]
+      - [34, -224]
+      stroke: '#8d6e63'
+      width: 8
+    hidden: true
+    box: [-34, -260, 34, 40]
+  panels:
+    from: dancing1518
+    note: panels
+    items:
+    - rect: [0, 330, 356, 576, 10]
+      fill: '#e3f0cf'
+      width: 6
+    - rect: [364, 330, 356, 576, 10]
+      fill: '#f7dede'
+      width: 6
+    hidden: true
+    box: [0, 330, 720, 906]
   table:
     from: dancing1518
     note: table
@@ -2115,6 +3068,83 @@ shapes:
       fill: '#558b2f'
       width: 3
     box: [-135, -130, 135, 0]
+  halo_dancin:
+    from: dancing1518
+    note: halo
+    items:
+    - ellipse: [0, -60, 170, 120]
+      fill: '#b5e08a'
+      opacity: 0.4
+      stroke: '#b5e08a'
+      width: 1
+    hidden: true
+    box: [-170, -180, 170, 60]
+  shimmer:
+    from: dancing1518
+    note: shimmer
+    items:
+    - {path: 'M-70,0 Q-55,-25 -70,-50 Q-85,-75 -70,-100', stroke: '#7cb342', width: 7}
+    - {path: 'M0,-10 Q15,-35 0,-60 Q-15,-85 0,-110', stroke: '#7cb342', width: 7}
+    - {path: 'M70,0 Q85,-25 70,-50 Q55,-75 70,-100', stroke: '#7cb342', width: 7}
+    hidden: true
+    box: [-85, -110, 85, 0]
+  sface:
+    from: dancing1518
+    note: sface
+    items:
+    - circle: [0, 0, 46]
+      fill: '#f6e7cb'
+      width: 6
+    - {path: 'M-40,-22 Q0,-78 40,-22 Z', fill: '#f4a261', width: 5}
+    - circle: [0, -62, 7]
+      fill: '#e63946'
+      width: 4
+    - circle: [-17, -2, 15]
+      fill: white
+      width: 4
+    - circle: [17, -2, 15]
+      fill: white
+      width: 4
+    - circle: [-15, 0, 5]
+      fill: black
+      width: 1
+    - circle: [15, 0, 5]
+      fill: black
+      width: 1
+    - line:
+      - [-34, -26]
+      - [-8, -22]
+      width: 5
+    - line:
+      - [34, -26]
+      - [8, -22]
+      width: 5
+    - ellipse: [0, 28, 8, 11]
+      fill: black
+      width: 2
+    hidden: true
+    box: [-46, -78, 46, 46]
+  crowdfaces:
+    from: dancing1518
+    note: crowdfaces
+    items:
+    - use: sface
+      at: [-92, 30]
+      scale: 0.95
+    - use: sface
+      at: [10, 55]
+      scale: 1.1
+    - use: sface
+      at: [100, 20]
+      scale: 0.9
+    - use: sface
+      at: [-45, -62]
+      scale: 0.85
+    - use: sface
+      at: [58, -58]
+      scale: 0.9
+    hidden: true
+    box: [-136, -128, 141, 106]
   counter:
     from: koepenick
     note: shop counter

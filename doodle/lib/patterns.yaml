@@ -1,0 +1,40 @@
+# Vzorove sceny, ktore napisal Claude (hotove, overene). Rezia si pre kazdu novu scenu vyberie najblizsi vzor podla toho,
+# co sa v scene DEJE (nie o com je pribeh); koder dostane YAML vzoru a prisposobi ho: ine objekty, kresby, polohy, slova.
+- {key: devon.night, file: examples/devon1855/screenplay.yaml, scene: night,
+   use: "opening establishing shot of a place at night with weather (falling snow); small ambient life: an animal trots home, a lamp goes out, a tree bends; slow push-in; year stamp"}
+- {key: devon.yard, file: examples/devon1855/screenplay.yaml, scene: yard,
+   use: "a person steps out of a door, stops and discovers a row of small things popping up one by one on the ground; a neighbour runs in; both bend over; camera pushes into the things"}
+- {key: devon.measure, file: examples/devon1855/screenplay.yaml, scene: measure,
+   use: "extreme close-up of one small object with a ruler sliding in next to it, then pull back to a long line of the same objects with a walker pointing at them"}
+- {key: devon.roofs, file: examples/devon1855/screenplay.yaml, scene: roofs,
+   use: "a trail of marks climbs a wall, crosses a roof and a haystack; a boy on a ladder peeks and slips; the camera pans and tilts along the trail"}
+- {key: devon.pipe, file: examples/devon1855/screenplay.yaml, scene: pipe,
+   use: "ground-level close-up: marks lead into and out of an object; a man kneels, peers inside, his hat falls off, he scratches his head"}
+- {key: devon.map, file: examples/devon1855/screenplay.yaml, scene: map,
+   use: "a hand-drawn map fills the frame; place names appear exactly on their spoken words, each stamped with a mark; a dashed route connects them"}
+- {key: devon.race, file: examples/devon1855/screenplay.yaml, scene: race,
+   use: "fast night pan across hills following a trail, speed lines, an animal rears and bolts, a number counter climbs"}
+- {key: devon.hunt, file: examples/devon1855/screenplay.yaml, scene: hunt,
+   use: "a group of people with a dog hurries along a trail (camera follows them), stops where it ends, looks around, shrugs; the dog hides behind legs"}
+- {key: devon.vicar, file: examples/devon1855/screenplay.yaml, scene: vicar,
+   use: "a speaker stands in a pulpit with a thought bubble; the things he imagines actually cross the frame one after another; onlookers shake their heads; a question stamps in"}
+- {key: devon.dusk, file: examples/devon1855/screenplay.yaml, scene: dusk,
+   use: "quiet ending at dusk: a trail runs to the horizon and fades, wind blows loose snow, a bird lands, looks, flies off; the final gold word"}
+- {key: carancas.village, file: examples/carancas2/screenplay.yaml, scene: village,
+   use: "opening with an event in the sky: a man walks in and watches a fireball cross the sky; impact, explosion, a shockwave shakes a house and shatters windows, a cyclist falls"}
+- {key: carancas.crater, file: examples/carancas2/screenplay.yaml, scene: crater,
+   use: "a crater seen in cross-section with boiling water and a gold measure; a crowd gathers one by one with a counter; people feel sick; an official tapes the place off"}
+- {key: carancas.under, file: examples/carancas2/screenplay.yaml, scene: under,
+   use: "underground cross-section that explains a hidden cause: soil layers, groundwater, labelled particles rising as steam; a scientist with a magnifier above"}
+- {key: carancas.doctor, file: examples/carancas2/screenplay.yaml, scene: doctor,
+   use: "two people in close shot: a doctor examines a frightened patient; a dark worry cloud grows over the patient's head"}
+- {key: carancas.finale, file: examples/carancas2/screenplay.yaml, scene: finale,
+   use: "final question: two symbols side by side (one answer on the left, the other on the right) and the gold question stamps in"}
+- {key: milky.quay1, file: examples/milky_seas/screenplay.yaml, scene: quay1,
+   use: "a storyteller on a harbour quay tells listeners something they do not believe; reactions on faces, a thought bubble"}
+- {key: milky.night, file: examples/milky_seas/screenplay.yaml, scene: night,
+   use: "a sailing ship on the sea at night under the moon, seen from the side; sailors at the rail point and stare at something in the water; the sea changes"}
+- {key: milky.cargo, file: examples/milky_seas/screenplay.yaml, scene: cargo,
+   use: "a big modern ship crosses the sea in daylight; a crewman notes it in a logbook"}
+- {key: milky.space, file: examples/milky_seas/screenplay.yaml, scene: space,
+   use: "a satellite passes over the Earth while a scientist at a desk watches a monitor; a gold measure marks a region"}
