@@ -64,6 +64,7 @@
   function Obj(sc, def, parent) {
     this.sc = sc; this.def = def; this.id = def.id;
     this.g = D.el(parent, "g", {});
+    if (def.id) this.g.setAttribute("data-oid", def.id);                 // look.py finds the object on screen by this (no effect on rendering)
     this.x = new Chan(def.x || 0); this.y = new Chan(def.y || 0);
     this.s = new Chan(def.scale == null ? 1 : def.scale); this.r = new Chan(def.rot || 0);
     this.o = new Chan(def.hidden ? 0 : def.opacity == null ? 1 : def.opacity);
@@ -382,7 +383,7 @@
     o.parts = {};
     Object.keys(parts).forEach(function (k) {                          // animatable sub-parts: id.part (pivot = their origin)
       var p = parts[k], po = new Obj(sc, { id: def.id + "." + k, x: p.pv[0], y: p.pv[1] }, null);
-      po.g = p.g;
+      po.g = p.g; po.g.setAttribute("data-oid", po.id);                 // the part's own group replaces the one made by Obj
       o.parts[k] = po; sc.objs[def.id + "." + k] = po;
     });
     o.render = function (t) { o.place(t); for (var k in o.parts) o.parts[k].place(t); };
@@ -1036,6 +1037,7 @@
       var lay = def.layer || (kind === "emitter" && TOP_EMIT[def.emitter] ? "top" : "mid");
       var o = maker(sc, def, lay === "mid" ? sc.lay.mid : sc.layer(lay), byWho[def.id] || []);
       o.def = o.def || def; o.id = def.id; o.kindName = kind;
+      if (o.g && o.g.setAttribute) o.g.setAttribute("data-kind", kind);
       if (def.on && CARRY[kind]) { var of0 = def.offset || [0, 0]; o.att = new Steps({ on: def.on, anchor: def.anchor || "hand", dx: of0[0], dy: of0[1] }); }
       if (def.id) sc.objs[def.id] = o;
       list.push(o);
