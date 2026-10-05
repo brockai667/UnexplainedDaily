@@ -1,0 +1,78 @@
+# Zadanie pre automatickeho autora (auto_writer.py): vety, zlate slova a kratko, co ma byt v kazdej scene vidiet.
+# Rovnake zadanie dostal Opus pre examples/devon1855 - sluzi na porovnanie.
+name: devon_auto
+header: |
+  title: The Devil's Footprints
+  voice: {voice: am_michael, speed: 1.10, pause: 0.30}
+  tail: 2.0
+  music: sneaky_snitch.mp3
+  loop: {at: "s10.end+0.55", dur: 1.3}
+  sentences:
+    s1: February 1855. Devon, England. Overnight, heavy snow covers the county.
+    s2: In the morning people find a trail of hoof prints in the snow.
+    s3: Each print is four inches long, and they run in a single line.
+    s4: The trail climbs onto roofs, over high walls and haystacks, and comes down the other side.
+    s5: It even goes in and out of a drainpipe four inches wide.
+    s6: "Town after town reports the same marks: Exmouth, Topsham, Dawlish, Teignmouth."
+    s7: In one night the trail covers up to one hundred miles.
+    s8: Villagers with guns follow it for miles. It leads nowhere.
+    s9: A vicar blames a kangaroo. Others say badgers, mice, or a runaway balloon.
+    s10: The creature is never found. The Devil's Footprints remain unexplained.
+  gold:
+    - {word: "1855", label: "1855", kind: stamp, top: 128, size: 120, until: "word:heavy", stamp: {from: 2.4, r0: -14, r1: -4}}
+    - {word: s3/four, label: "4 IN", kind: stamp, top: 128, size: 110, until: "s3.end", stamp: {from: 2.2, r0: -10, r1: -4}}
+    - {word: up, label: "100 MILES", kind: counter, top: 112, size: 100, dur: 0.6, until: "s7.end"}
+    - {word: kangaroo, label: "KANGAROO?", kind: stamp, top: 118, size: 96, until: "word:badgers", stamp: {from: 2.2, r0: -10, r1: -4}}
+    - {word: unexplained, label: "UNEXPLAINED", kind: stamp, top: 118, size: 88, until: "s10.end+0.6", stamp: {from: 2.2, r0: -10, r1: -4}}
+scenes:
+  - id: night
+    sents: [s1]
+    must: >-
+      Night. Two snowy cottages with chimneys, a church tower behind, a lamp glowing in one window. Heavy snow falling,
+      wind bends a bare tree, a lone dog trots home and disappears, the window lamp goes out. Slow camera push toward the cottage door.
+  - id: yard
+    sents: [s2]
+    must: >-
+      Bright morning, the same cottage. A woman with a bucket steps out BIG in frame, takes two steps, stops, looks down:
+      hoof prints (custom shape, like a small horseshoe) pop up one by one in a straight line across the yard, right between
+      her feet. She drops the bucket; a neighbour runs in, both bend low over the prints; the camera pushes into the prints.
+  - id: measure
+    sents: [s3]
+    must: >-
+      Extreme close-up of one hoof print with a ruler sliding in next to it; then pull back: a single line of prints across
+      a snow field, a man walks beside it pointing, new prints keep appearing ahead of him.
+  - id: roofs
+    sents: [s4]
+    must: >-
+      The trail reaches a cottage: prints go UP the wall, over the roof, down the other side, then over a haystack.
+      A boy climbs a ladder to peek at the roof and almost slips. The camera pans and tilts following the prints.
+  - id: pipe
+    sents: [s5]
+    must: >-
+      Close-up of a drainpipe lying along a wall: prints lead into one end and out of the other. A man kneels and peers
+      into the pipe, his hat falls off, he looks at the prints on the far side and scratches his head.
+  - id: map
+    sents: [s6]
+    must: >-
+      A big hand-drawn map of the Devon coast with a river estuary; the four town names appear one after another exactly on
+      their spoken words, each with a hoof print stamped next to it, and a dashed trail line connects them.
+  - id: race
+    sents: [s7]
+    must: >-
+      Night again, moon out: the trail races across snowy hills, prints appearing at high speed, the camera pans fast to
+      keep up; a horse in a field rears as the prints pass.
+  - id: hunt
+    sents: [s8]
+    must: >-
+      Day: three villagers with guns and a dog run BIG through the snow along the trail (camera follows), the dog tugs
+      ahead; the trail ends at the edge of a field; they stop, look around, shrug; the dog hides behind a man's legs.
+  - id: vicar
+    sents: [s9]
+    must: >-
+      A vicar in a pulpit raises a finger; a thought bubble shows a kangaroo, then a kangaroo hops across the frame
+      (repeat beats); a badger waddles by, a mouse hops, a balloon trailing a rope drifts across the sky; villagers shake heads.
+  - id: dusk
+    sents: [s10]
+    must: >-
+      The snow field at dusk: the line of prints runs to the horizon and fades; loose snow blows across; a crow lands,
+      looks at a print, flies off; the scene holds still for the gold word UNEXPLAINED.

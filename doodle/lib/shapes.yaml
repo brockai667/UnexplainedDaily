@@ -1,0 +1,2254 @@
+# Generovane: python doodle/build_lib.py ... - neupravovat rucne.
+shapes:
+  dusk:
+    from: devon1855
+    note: full-frame dusk sky backdrop with low sun and far hills (absolute coords, place at x 0 y 0)
+    items:
+    - rect: [-700, -700, 2100, 1050, 0]
+      fill: '#f4a261'
+      stroke: none
+    - rect: [-700, 330, 2100, 200, 0]
+      fill: '#f6bd60'
+      stroke: none
+    - circle: [540, 506, 62]
+      fill: '#e76f51'
+      width: 5
+    - {path: 'M-700,520 Q-350,430 0,500 Q260,440 520,508 Q800,430 1400,520 L1400,600 L-700,600 Z', fill: '#8e7dbe', width: 5}
+    box: [-700, -700, 1400, 600]
+  crow:
+    from: devon1855
+    note: crow
+    items:
+    - line:
+      - [-4, -26]
+      - [-8, 0]
+      width: 4
+    - line:
+      - [6, -26]
+      - [8, 0]
+      width: 4
+    - poly:
+      - [20, -40]
+      - [56, -30]
+      - [52, -22]
+      - [18, -30]
+      fill: '#212529'
+      width: 4
+    - ellipse: [0, -38, 26, 16]
+      fill: '#212529'
+      width: 4
+    - group: head
+      pivot: [-18, -46]
+      items:
+      - circle: [-24, -54, 12]
+        fill: '#212529'
+        width: 4
+      - poly:
+        - [-34, -58]
+        - [-52, -52]
+        - [-34, -48]
+        fill: '#f4a261'
+        width: 3
+      - circle: [-27, -57, 2.5]
+        fill: white
+        stroke: none
+    - group: wing
+      pivot: [2, -44]
+      items:
+      - {path: 'M2,-44 Q24,-62 40,-44 Q20,-34 2,-44 Z', fill: '#343a40', width: 4}
+    box: [-52, -66, 56, 0]
+  bubble:
+    from: devon1855
+    note: thought bubble (put a small drawing inside)
+    items:
+    - {path: 'M-110,10 Q-130,-40 -80,-60 Q-60,-100 -10,-84 Q30,-110 70,-80 Q120,-78 116,-30 Q140,10 100,40 Q80,76 30,62 Q-10,86 -50,62 Q-100,70 -110,10 Z', fill: white, width: 6}
+    - circle: [-70, 92, 14]
+      fill: white
+      width: 5
+    - circle: [-96, 124, 9]
+      fill: white
+      width: 4
+    box: [-130, -110, 140, 133]
+  kangaroo:
+    from: devon1855
+    note: kangaroo
+    items:
+    - poly:
+      - [22, -66]
+      - [134, -8]
+      - [130, 4]
+      - [16, -36]
+      fill: '#c68642'
+      width: 5
+    - poly:
+      - [-8, -52]
+      - [30, -50]
+      - [16, 0]
+      - [-58, 0]
+      - [-58, -10]
+      - [-10, -18]
+      fill: '#c68642'
+      width: 5
+    - {path: 'M-34,-34 C-56,-94 -46,-152 -10,-164 C28,-168 46,-110 38,-40 Z', fill: '#c68642', width: 5}
+    - line:
+      - [-30, -124]
+      - [-52, -102]
+      - [-60, -106]
+      width: 6
+    - ellipse: [-26, -182, 22, 17]
+      fill: '#c68642'
+      width: 5
+    - poly:
+      - [-40, -192]
+      - [-74, -180]
+      - [-70, -168]
+      - [-36, -170]
+      fill: '#c68642'
+      width: 5
+    - poly:
+      - [-20, -194]
+      - [-16, -230]
+      - [-6, -196]
+      fill: '#c68642'
+      width: 5
+    - poly:
+      - [-8, -194]
+      - [2, -226]
+      - [8, -192]
+      fill: '#c68642'
+      width: 5
+    - circle: [-34, -186, 3.5]
+      fill: black
+    - circle: [-73, -175, 3]
+      fill: black
+    box: [-76, -230, 134, 4]
+  badger:
+    from: devon1855
+    note: badger
+    items:
+    - line:
+      - [-30, -10]
+      - [-30, 0]
+      width: 9
+    - line:
+      - [-12, -10]
+      - [-12, 0]
+      width: 9
+    - line:
+      - [18, -10]
+      - [18, 0]
+      width: 9
+    - line:
+      - [34, -10]
+      - [34, 0]
+      width: 9
+    - ellipse: [0, -30, 56, 26]
+      fill: '#6c757d'
+      width: 5
+    - {path: 'M36,-46 Q70,-46 86,-22 L64,-12 Q48,-10 36,-16 Z', fill: white, width: 5}
+    - {path: 'M42,-42 Q64,-40 78,-24', width: 8, stroke: '#212529'}
+    - circle: [86, -22, 5]
+      fill: black
+    box: [-56, -56, 91, 0]
+  mouse:
+    from: devon1855
+    note: mouse
+    items:
+    - {path: 'M20,-8 Q44,-4 50,-24', width: 4}
+    - {path: 'M-24,0 Q-26,-26 0,-28 Q24,-28 24,0 Z', fill: '#adb5bd', width: 4}
+    - poly:
+      - [-24, -6]
+      - [-40, -8]
+      - [-24, -18]
+      fill: '#adb5bd'
+      width: 4
+    - circle: [-8, -30, 8]
+      fill: '#ffc2d1'
+      width: 4
+    - circle: [-26, -14, 2.5]
+      fill: black
+    box: [-40, -38, 50, 0]
+  balloon:
+    from: devon1855
+    note: balloon
+    items:
+    - {path: 'M0,120 Q-30,170 -80,190 T-160,240', width: 4}
+    - line:
+      - [-30, 50]
+      - [-14, 96]
+      width: 3
+    - line:
+      - [30, 50]
+      - [14, 96]
+      width: 3
+    - rect: [-18, 94, 36, 26, 4]
+      fill: '#8d6e63'
+      width: 5
+    - {path: 'M0,-80 C60,-80 80,-20 50,40 L30,58 L-30,58 L-50,40 C-80,-20 -60,-80 0,-80 Z', fill: '#e63946', width: 6}
+    - {path: 'M0,-80 C24,-60 26,20 16,58 M0,-80 C-24,-60 -26,20 -16,58', width: 4}
+    box: [-160, -80, 80, 240]
+  pulpit:
+    from: devon1855
+    note: pulpit
+    items:
+    - rect: [-100, -40, 200, 40, 3]
+      fill: '#b8b8aa'
+      width: 6
+    - poly:
+      - [-80, -40]
+      - [80, -40]
+      - [92, -230]
+      - [-92, -230]
+      fill: '#8d6e63'
+      width: 5
+    - rect: [-104, -250, 208, 24, 5]
+      fill: '#8d6e63'
+      width: 5
+    - poly:
+      - [-40, -226]
+      - [40, -226]
+      - [30, -120]
+      - [-30, -120]
+      fill: '#9d0208'
+      width: 5
+    - line:
+      - [0, -210]
+      - [0, -150]
+      width: 6
+      stroke: '#ffd166'
+    - line:
+      - [-18, -190]
+      - [18, -190]
+      width: 6
+      stroke: '#ffd166'
+    box: [-104, -250, 104, 0]
+  gun:
+    from: devon1855
+    note: long hunting gun
+    items:
+    - line:
+      - [-8, 8]
+      - [84, -48]
+      width: 7
+    - poly:
+      - [-8, 8]
+      - [-34, 20]
+      - [-28, 32]
+      - [2, 16]
+      fill: '#8d6e63'
+      width: 4
+    box: [-34, -48, 84, 32]
+  hedge:
+    from: devon1855
+    note: hedge
+    items:
+    - {path: 'M-88,0 Q-98,-62 -62,-82 Q-40,-104 -10,-92 Q16,-110 42,-90 Q82,-94 90,-52 Q98,-20 88,0 Z', fill: '#52796f', width: 6}
+    - {path: 'M-68,-80 Q-40,-106 -10,-94 Q16,-112 42,-92 Q68,-96 78,-76 Q52,-82 30,-74 Q0,-86 -30,-76 Q-50,-84 -68,-80 Z', fill: white, width: 5}
+    box: [-98, -112, 98, 0]
+  moon:
+    from: devon1855
+    note: moon
+    items:
+    - circle: [0, 0, 46]
+      fill: '#fff3c4'
+      width: 5
+    - circle: [-14, -10, 9]
+      fill: '#f1e3a8'
+      stroke: none
+    - circle: [14, 12, 7]
+      fill: '#f1e3a8'
+      stroke: none
+    - circle: [-250, -120, 4]
+      fill: '#fff3c4'
+      stroke: none
+    - circle: [-150, 40, 3]
+      fill: '#fff3c4'
+      stroke: none
+    - circle: [120, -140, 4]
+      fill: '#fff3c4'
+      stroke: none
+    - circle: [-300, 60, 3]
+      fill: '#fff3c4'
+      stroke: none
+    - circle: [-60, -150, 3]
+      fill: '#fff3c4'
+      stroke: none
+    box: [-303, -153, 124, 63]
+  fence:
+    from: devon1855
+    note: fence
+    items:
+    - line:
+      - [0, -44]
+      - [480, -44]
+      width: 6
+    - line:
+      - [0, -20]
+      - [480, -20]
+      width: 6
+    - rect: [-5, -60, 10, 60, 2]
+      fill: '#8d6e63'
+      width: 5
+    - rect: [115, -60, 10, 60, 2]
+      fill: '#8d6e63'
+      width: 5
+    - rect: [235, -60, 10, 60, 2]
+      fill: '#8d6e63'
+      width: 5
+    - rect: [355, -60, 10, 60, 2]
+      fill: '#8d6e63'
+      width: 5
+    - rect: [475, -60, 10, 60, 2]
+      fill: '#8d6e63'
+      width: 5
+    box: [-5, -60, 485, 0]
+  horse:
+    from: devon1855
+    note: horse
+    items:
+    - group: tail
+      pivot: [-6, -112]
+      items:
+      - {path: 'M-6,-112 Q-34,-96 -30,-44', width: 9}
+    - group: legsb
+      pivot: [22, -80]
+      items:
+      - line:
+        - [12, -80]
+        - [6, 0]
+        width: 9
+      - line:
+        - [32, -80]
+        - [34, 0]
+        width: 9
+    - group: legsf
+      pivot: [112, -80]
+      items:
+      - line:
+        - [102, -80]
+        - [98, 0]
+        width: 9
+      - line:
+        - [122, -80]
+        - [126, 0]
+        width: 9
+    - ellipse: [62, -98, 74, 34]
+      fill: '#bc8a5f'
+      width: 6
+    - group: head
+      pivot: [118, -118]
+      items:
+      - poly:
+        - [100, -122]
+        - [128, -132]
+        - [166, -196]
+        - [140, -206]
+        fill: '#bc8a5f'
+        width: 6
+      - poly:
+        - [138, -210]
+        - [192, -204]
+        - [204, -184]
+        - [162, -178]
+        fill: '#bc8a5f'
+        width: 6
+      - poly:
+        - [146, -208]
+        - [150, -228]
+        - [158, -207]
+        fill: '#bc8a5f'
+        width: 4
+      - circle: [166, -198, 3.5]
+        fill: black
+      - {path: 'M128,-140 Q146,-170 150,-204', width: 7, stroke: '#4e342e'}
+    box: [-34, -228, 204, 0]
+  tophat:
+    from: devon1855
+    note: top hat
+    items:
+    - rect: [-26, -8, 52, 8, 3]
+      fill: '#2b2d42'
+      width: 4
+    - rect: [-17, -46, 34, 40, 3]
+      fill: '#2b2d42'
+      width: 4
+    - rect: [-17, -18, 34, 7, 0]
+      fill: '#8d0801'
+      width: 3
+    box: [-26, -46, 26, 0]
+  stonewall:
+    from: devon1855
+    note: stonewall
+    items:
+    - rect: [0, -300, 130, 300, 2]
+      fill: '#b8b8aa'
+      width: 6
+    - rect: [-8, -316, 146, 22, 5]
+      fill: white
+      width: 5
+    - line:
+      - [0, -240]
+      - [130, -240]
+      width: 3
+    - line:
+      - [0, -180]
+      - [130, -180]
+      width: 3
+    - line:
+      - [0, -120]
+      - [130, -120]
+      width: 3
+    - line:
+      - [0, -60]
+      - [130, -60]
+      width: 3
+    - line:
+      - [50, -294]
+      - [50, -240]
+      width: 3
+    - line:
+      - [95, -240]
+      - [95, -180]
+      width: 3
+    - line:
+      - [40, -180]
+      - [40, -120]
+      width: 3
+    - line:
+      - [85, -120]
+      - [85, -60]
+      width: 3
+    - line:
+      - [45, -60]
+      - [45, 0]
+      width: 3
+    box: [-8, -316, 138, 0]
+  haystack:
+    from: devon1855
+    note: haystack
+    items:
+    - {path: 'M-130,0 C-130,-150 -80,-230 0,-230 C80,-230 130,-150 130,0 Z', fill: '#e9c46a', width: 6}
+    - {path: 'M-90,-20 Q-80,-120 -40,-190 M-40,-10 Q-30,-110 0,-200 M30,-15 Q40,-120 50,-190 M85,-20 Q95,-100 90,-150', width: 3, stroke: '#9c7a2c'}
+    - {path: 'M-86,-176 C-60,-240 60,-240 86,-176 Q62,-158 42,-174 Q20,-156 0,-176 Q-20,-156 -42,-174 Q-62,-158 -86,-176 Z', fill: white, width: 5}
+    box: [-130, -240, 130, 0]
+  ladder:
+    from: devon1855
+    note: ladder
+    items:
+    - line:
+      - [-22, 0]
+      - [-52, -300]
+      width: 7
+    - line:
+      - [22, 0]
+      - [-8, -300]
+      width: 7
+    - line:
+      - [-25, -30]
+      - [19, -30]
+      width: 5
+    - line:
+      - [-29, -72]
+      - [15, -72]
+      width: 5
+    - line:
+      - [-33, -114]
+      - [11, -114]
+      width: 5
+    - line:
+      - [-38, -156]
+      - [6, -156]
+      width: 5
+    - line:
+      - [-42, -198]
+      - [2, -198]
+      width: 5
+    - line:
+      - [-46, -240]
+      - [-2, -240]
+      width: 5
+    - line:
+      - [-50, -282]
+      - [-6, -282]
+      width: 5
+    box: [-52, -300, 22, 0]
+  hoof:
+    from: devon1855
+    note: hoof print (horseshoe shape)
+    items:
+    - ellipse: [0, -2, 27, 30]
+      fill: '#d5dfea'
+      stroke: none
+    - {path: 'M-20,20 C-26,0 -20,-24 0,-24 C20,-24 26,0 20,20 L9,20 C13,2 9,-12 0,-12 C-9,-12 -13,2 -9,20 Z', fill: '#5f7391', stroke: '#16212e', width: 4}
+    box: [-27, -32, 27, 28]
+  ruler:
+    from: devon1855
+    note: wooden ruler
+    items:
+    - rect: [-8, 0, 112, 20, 3]
+      fill: '#e9c46a'
+      width: 5
+    - line:
+      - [0, 0]
+      - [0, 9]
+      width: 4
+    - line:
+      - [15.5, 0]
+      - [15.5, 6]
+      width: 3
+    - line:
+      - [31, 0]
+      - [31, 9]
+      width: 4
+    - line:
+      - [46.5, 0]
+      - [46.5, 6]
+      width: 3
+    - line:
+      - [62, 0]
+      - [62, 9]
+      width: 4
+    - line:
+      - [77.5, 0]
+      - [77.5, 6]
+      width: 3
+    - line:
+      - [93, 0]
+      - [93, 9]
+      width: 4
+    - text: [31, 15, '2']
+      size: 8
+    - text: [62, 15, '4']
+      size: 8
+    - text: [93, 15, '6']
+      size: 8
+    box: [-8, 0, 104, 20]
+  daysky:
+    from: devon1855
+    note: full-frame pale day sky backdrop (absolute coords, place at x 0 y 0)
+    items:
+    - rect: [-1200, -900, 3600, 2000, 0]
+      fill: '#cfe9f6'
+      stroke: none
+    box: [-1200, -900, 2400, 1100]
+  sun:
+    from: devon1855
+    note: sun
+    items:
+    - group: rays
+      pivot: [0, 0]
+      items:
+      - line:
+        - [0, -60]
+        - [0, -84]
+        width: 6
+      - line:
+        - [0, 60]
+        - [0, 84]
+        width: 6
+      - line:
+        - [-60, 0]
+        - [-84, 0]
+        width: 6
+      - line:
+        - [60, 0]
+        - [84, 0]
+        width: 6
+      - line:
+        - [42, 42]
+        - [60, 60]
+        width: 6
+      - line:
+        - [-42, 42]
+        - [-60, 60]
+        width: 6
+      - line:
+        - [42, -42]
+        - [60, -60]
+        width: 6
+      - line:
+        - [-42, -42]
+        - [-60, -60]
+        width: 6
+    - circle: [0, 0, 44]
+      fill: '#ffd166'
+      width: 6
+    box: [-84, -84, 84, 84]
+  bucket:
+    from: devon1855
+    note: bucket
+    items:
+    - {path: 'M-17,12 Q0,-10 17,12', width: 4}
+    - poly:
+      - [-19, 12]
+      - [19, 12]
+      - [15, 46]
+      - [-15, 46]
+      fill: '#90a4ae'
+      width: 5
+    - line:
+      - [-19, 22]
+      - [19, 22]
+      width: 3
+    box: [-19, -10, 19, 46]
+  nightsky:
+    from: devon1855
+    note: full-frame night sky backdrop with stars (absolute coords, place at x 0 y 0)
+    items:
+    - rect: [-1200, -900, 3600, 2000, 0]
+      fill: '#1d2b4f'
+      stroke: none
+    box: [-1200, -900, 2400, 1100]
+  snowland:
+    from: devon1855
+    note: snow-covered ground with a soft horizon (absolute coords, place at x 0 y 0)
+    items:
+    - {path: 'M-1200,0 Q-1000,-16 -800,0 T-400,0 T0,0 T400,0 T800,0 T1200,0 T1600,0 T2000,0 T2400,0 L2400,900 L-1200,900 Z', fill: white, width: 5}
+    box: [-1200, -16, 2400, 900]
+  cottage:
+    from: devon1855
+    note: snowy cottage with chimney, door and window
+    items:
+    - rect: [62, -318, 36, 100, 3]
+      fill: '#b5651d'
+      width: 5
+    - rect: [55, -334, 50, 20, 9]
+      fill: white
+      width: 5
+    - rect: [-130, -180, 260, 180, 4]
+      fill: '#f4a261'
+      width: 6
+    - poly:
+      - [-160, -174]
+      - [0, -300]
+      - [160, -174]
+      fill: '#8d5524'
+      width: 6
+    - line:
+      - [-104, -196]
+      - [104, -196]
+      width: 3
+    - line:
+      - [-70, -222]
+      - [70, -222]
+      width: 3
+    - line:
+      - [-38, -248]
+      - [38, -248]
+      width: 3
+    - group: cap
+      pivot: [0, -300]
+      items:
+      - {path: 'M-170,-166 Q-90,-250 0,-310 Q90,-250 170,-166 Q158,-146 146,-160 Q130,-150 116,-180 L0,-274 L-116,-180 Q-130,-150 -146,-160 Q-158,-146 -170,-166 Z', fill: white, width: 5}
+    - rect: [-100, -116, 64, 116, 4]
+      fill: '#2b1d14'
+    - group: door
+      pivot: [-100, -58]
+      items:
+      - rect: [-100, -116, 64, 116, 4]
+        fill: '#8d6e63'
+        width: 5
+      - line:
+        - [-68, -108]
+        - [-68, -8]
+        width: 3
+      - circle: [-46, -58, 5]
+        fill: black
+    - rect: [22, -142, 74, 64, 4]
+      fill: '#a8dadc'
+      width: 5
+    - line:
+      - [59, -142]
+      - [59, -78]
+      width: 4
+    - line:
+      - [22, -110]
+      - [96, -110]
+      width: 4
+    - group: sill
+      pivot: [59, -78]
+      items:
+      - {path: 'M16,-77 Q18,-88 34,-86 Q59,-93 84,-86 Q100,-88 102,-77 Z', fill: white, width: 5}
+    box: [-170, -334, 170, 0]
+  church:
+    from: devon1855
+    note: small church with tower
+    items:
+    - rect: [-160, -150, 124, 150, 2]
+      fill: '#b8b8aa'
+      width: 6
+    - poly:
+      - [-170, -146]
+      - [-98, -212]
+      - [-26, -146]
+      fill: '#6c757d'
+      width: 6
+    - {path: 'M-176,-142 Q-140,-190 -98,-218 Q-56,-190 -20,-142 Q-40,-134 -60,-150 L-98,-190 L-136,-150 Q-156,-134 -176,-142 Z', fill: white, width: 5}
+    - {path: 'M-112,-50 L-112,-96 Q-98,-114 -84,-96 L-84,-50 Z', fill: '#22333b'}
+    - rect: [-40, -340, 80, 340, 2]
+      fill: '#b8b8aa'
+      width: 6
+    - poly:
+      - [-50, -336]
+      - [0, -432]
+      - [50, -336]
+      fill: '#6c757d'
+      width: 6
+    - {path: 'M-54,-332 L0,-440 L54,-332 Q40,-322 28,-340 L0,-396 L-28,-340 Q-40,-322 -54,-332 Z', fill: white, width: 5}
+    - line:
+      - [0, -440]
+      - [0, -478]
+      width: 5
+    - line:
+      - [-13, -464]
+      - [13, -464]
+      width: 5
+    - circle: [0, -290, 17]
+      fill: '#fdf0d5'
+      width: 4
+    - {path: 'M-15,-190 L-15,-226 Q0,-246 15,-226 L15,-190 Z', fill: '#22333b'}
+    box: [-176, -478, 54, 0]
+  tree:
+    from: devon1855
+    note: tree
+    items:
+    - group: crown
+      pivot: [0, 0]
+      items:
+      - poly:
+        - [-13, 0]
+        - [-5, -205]
+        - [5, -205]
+        - [13, 0]
+        fill: '#4e342e'
+        width: 5
+      - line:
+        - [-3, -110]
+        - [-50, -160]
+        - [-82, -168]
+        width: 7
+      - line:
+        - [-50, -160]
+        - [-58, -204]
+        width: 6
+      - line:
+        - [3, -140]
+        - [46, -192]
+        - [80, -198]
+        width: 7
+      - line:
+        - [46, -192]
+        - [50, -236]
+        width: 6
+      - line:
+        - [0, -200]
+        - [-24, -256]
+        width: 6
+      - line:
+        - [0, -200]
+        - [22, -268]
+        width: 6
+      - {path: 'M-90,-170 Q-70,-184 -50,-164 Z', fill: white, width: 5}
+      - {path: 'M40,-198 Q62,-212 86,-200 Z', fill: white, width: 5}
+    box: [-90, -268, 86, 0]
+  dog:
+    from: devon1855
+    note: dog
+    items:
+    - group: tail
+      pivot: [-38, -50]
+      items:
+      - {path: 'M-38,-50 Q-58,-64 -56,-86', width: 7}
+    - group: legb
+      pivot: [-18, -42]
+      items:
+      - line:
+        - [-24, -42]
+        - [-28, 0]
+        width: 8
+      - line:
+        - [-12, -42]
+        - [-8, 0]
+        width: 8
+    - group: legf
+      pivot: [28, -42]
+      items:
+      - line:
+        - [22, -42]
+        - [18, 0]
+        width: 8
+      - line:
+        - [34, -42]
+        - [38, 0]
+        width: 8
+    - ellipse: [0, -50, 44, 19]
+      fill: '#d4a373'
+      width: 5
+    - group: head
+      pivot: [36, -60]
+      items:
+      - circle: [46, -72, 18]
+        fill: '#d4a373'
+        width: 5
+      - ellipse: [64, -66, 13, 9]
+        fill: '#d4a373'
+        width: 5
+      - circle: [75, -69, 4.5]
+        fill: black
+      - circle: [49, -78, 3.5]
+        fill: black
+        stroke: none
+      - {path: 'M36,-84 Q30,-102 42,-104 Q48,-94 44,-82', fill: '#d4a373', width: 5}
+    box: [-58, -104, 80, 0]
+  harbour:
+    from: milky_seas
+    note: harbour quay backdrop
+    items:
+    - rect: [-20, 560, 760, 310]
+      fill: '#8ecae6'
+      stroke: '#8ecae6'
+      width: 1
+    - line:
+      - [40, 660]
+      - [100, 650]
+      - [160, 660]
+      width: 4
+      stroke: '#5fa8d3'
+    - line:
+      - [250, 720]
+      - [310, 710]
+      - [370, 720]
+      width: 4
+      stroke: '#5fa8d3'
+    - line:
+      - [470, 620]
+      - [530, 610]
+      - [590, 620]
+      width: 4
+      stroke: '#5fa8d3'
+    - poly:
+      - [600, 566]
+      - [706, 566]
+      - [690, 608]
+      - [616, 608]
+      fill: '#8d5a3b'
+      width: 7
+    - line:
+      - [653, 566]
+      - [653, 450]
+      width: 8
+    - poly:
+      - [661, 462]
+      - [661, 556]
+      - [704, 556]
+      fill: '#f4ecd8'
+      width: 6
+    - poly:
+      - [645, 480]
+      - [645, 556]
+      - [606, 556]
+      fill: '#f4ecd8'
+      width: 6
+    - rect: [-20, 856, 760, 80]
+      fill: '#b08968'
+      width: 6
+    - line:
+      - [-20, 856]
+      - [740, 856]
+      width: 8
+    - line:
+      - [70, 862]
+      - [58, 926]
+      width: 4
+    - line:
+      - [210, 862]
+      - [198, 926]
+      width: 4
+    - line:
+      - [350, 862]
+      - [338, 926]
+      width: 4
+    - line:
+      - [490, 862]
+      - [478, 926]
+      width: 4
+    - line:
+      - [630, 862]
+      - [618, 926]
+      width: 4
+    - rect: [22, 786, 78, 70, 4]
+      fill: '#b08968'
+      width: 6
+    - line:
+      - [22, 810]
+      - [100, 810]
+      width: 4
+    - line:
+      - [61, 786]
+      - [61, 856]
+      width: 4
+    - rect: [628, 790, 62, 68, 12]
+      fill: '#9c6644'
+      width: 6
+    - line:
+      - [628, 812]
+      - [690, 812]
+      width: 4
+    - line:
+      - [628, 836]
+      - [690, 836]
+      width: 4
+    - rect: [318, 826, 28, 32, 6]
+      fill: '#6d6875'
+      width: 5
+    - rect: [520, 826, 28, 32, 6]
+      fill: '#6d6875'
+      width: 5
+    box: [-20, 450, 740, 936]
+  bubble_milky_:
+    from: milky_seas
+    note: thought bubble (put a small drawing inside)
+    items:
+    - poly:
+      - [-26, -78]
+      - [30, -84]
+      - [0, 0]
+      fill: white
+      width: 6
+    - ellipse: [0, -200, 200, 130]
+      fill: white
+      width: 7
+    - poly:
+      - [-22, -92]
+      - [28, -96]
+      - [4, -58]
+      fill: white
+      stroke: white
+      width: 2
+    - rect: [-105, -262, 210, 130, 12]
+      fill: '#0b1d3a'
+      width: 5
+    - circle: [64, -230, 15]
+      fill: '#fff3b0'
+      width: 3
+    - circle: [-70, -236, 3]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [-20, -246, 3]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [18, -226, 3]
+      fill: white
+      stroke: white
+      width: 1
+    - ellipse: [0, -158, 92, 26]
+      fill: '#e4f5ff'
+      width: 3
+    - line:
+      - [-70, -158]
+      - [-45, -166]
+      - [-20, -158]
+      - [5, -166]
+      - [30, -158]
+      - [55, -166]
+      - [75, -158]
+      width: 3
+      stroke: '#4a90c2'
+    - poly:
+      - [-30, -174]
+      - [-30, -208]
+      - [-6, -174]
+      fill: '#f4ecd8'
+      width: 3
+    - line:
+      - [-42, -172]
+      - [8, -172]
+      width: 5
+    box: [-200, -330, 200, 0]
+  tophat_milky_:
+    from: milky_seas
+    note: top hat
+    items:
+    - rect: [-42, -14, 84, 14, 5]
+      fill: '#222222'
+      width: 5
+    - rect: [-28, -80, 56, 68, 4]
+      fill: '#222222'
+      width: 5
+    - rect: [-28, -32, 56, 12]
+      fill: '#e63946'
+      width: 3
+    box: [-42, -80, 42, 0]
+  redx:
+    from: milky_seas
+    note: red X mark
+    items:
+    - line:
+      - [-70, -70]
+      - [70, 70]
+      stroke: '#d62828'
+      width: 22
+    - line:
+      - [70, -70]
+      - [-70, 70]
+      stroke: '#d62828'
+      width: 22
+    box: [-70, -70, 70, 70]
+  nightsky_milky_:
+    from: milky_seas
+    note: full-frame night sky backdrop with stars (absolute coords, place at x 0 y 0)
+    items:
+    - rect: [-500, -800, 1720, 1420]
+      fill: '#0b1d3a'
+      stroke: '#0b1d3a'
+      width: 1
+    - line:
+      - [-500, 620]
+      - [1220, 620]
+      width: 5
+      stroke: '#28527a'
+    - circle: [40, 90, 4]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [130, 330, 3]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [210, 170, 4]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [270, 470, 3]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [330, 60, 3]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [380, 380, 4]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [450, 220, 3]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [560, 90, 4]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [610, 500, 3]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [660, 250, 4]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [700, 420, 3]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [90, 520, 3]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [300, 250, 3]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [500, 540, 3]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [-40, 250, 4]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [760, 160, 4]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [790, 470, 3]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [-70, 520, 3]
+      fill: white
+      stroke: white
+      width: 1
+    box: [-500, -800, 1220, 620]
+  seadark:
+    from: milky_seas
+    note: dark night sea surface, full width
+    items:
+    - rect: [-500, 620, 1720, 900]
+      fill: '#12305c'
+      stroke: '#12305c'
+      width: 1
+    box: [-500, 620, 1220, 1520]
+  seapale:
+    from: milky_seas
+    note: pale glowing sea surface, full width
+    items:
+    - rect: [-500, 620, 1720, 900]
+      fill: '#d6efff'
+      stroke: '#d6efff'
+      width: 1
+    box: [-500, 620, 1220, 1520]
+  moon_milky_:
+    from: milky_seas
+    note: moon
+    items:
+    - circle: [0, 0, 50]
+      fill: '#fff3b0'
+      width: 6
+    - circle: [-14, -10, 9]
+      fill: '#f2dc82'
+      width: 3
+    - circle: [16, 14, 12]
+      fill: '#f2dc82'
+      width: 3
+    - circle: [8, -22, 6]
+      fill: '#f2dc82'
+      width: 3
+    box: [-50, -50, 50, 50]
+  galleon:
+    from: milky_seas
+    note: old sailing ship
+    items:
+    - group: rig
+      pivot: [0, -70]
+      items:
+      - line:
+        - [-70, -70]
+        - [-70, -340]
+        width: 10
+      - line:
+        - [80, -70]
+        - [80, -290]
+        width: 9
+      - poly:
+        - [-70, -330]
+        - [-150, -300]
+        - [-150, -175]
+        - [-70, -150]
+        fill: '#f4ecd8'
+        width: 6
+      - poly:
+        - [-70, -330]
+        - [16, -300]
+        - [16, -175]
+        - [-70, -150]
+        fill: '#f4ecd8'
+        width: 6
+      - poly:
+        - [80, -280]
+        - [22, -260]
+        - [22, -170]
+        - [80, -150]
+        fill: '#f4ecd8'
+        width: 6
+      - poly:
+        - [80, -280]
+        - [150, -262]
+        - [150, -170]
+        - [80, -150]
+        fill: '#f4ecd8'
+        width: 6
+      - poly:
+        - [-70, -340]
+        - [-70, -370]
+        - [-20, -355]
+        fill: red
+        width: 4
+    - poly:
+      - [-175, -72]
+      - [180, -72]
+      - [148, 12]
+      - [-150, 12]
+      fill: '#8d5a3b'
+      width: 7
+    - poly:
+      - [-175, -72]
+      - [-175, -138]
+      - [-100, -138]
+      - [-100, -72]
+      fill: '#8d5a3b'
+      width: 7
+    - line:
+      - [180, -72]
+      - [250, -112]
+      width: 9
+    - line:
+      - [-165, -40]
+      - [172, -40]
+      width: 4
+    - circle: [-136, -104, 9]
+      fill: '#ffd166'
+      width: 4
+    - circle: [-70, -20, 8]
+      fill: '#ffd166'
+      width: 4
+    - circle: [20, -20, 8]
+      fill: '#ffd166'
+      width: 4
+    - circle: [110, -20, 8]
+      fill: '#ffd166'
+      width: 4
+    box: [-175, -370, 250, 12]
+  cargo:
+    from: milky_seas
+    note: modern cargo ship
+    items:
+    - poly:
+      - [-300, -70]
+      - [320, -70]
+      - [278, 8]
+      - [-284, 8]
+      fill: '#9b2226'
+      width: 7
+    - line:
+      - [-292, -34]
+      - [300, -34]
+      width: 4
+    - rect: [-56, -126, 68, 56, 3]
+      fill: '#e63946'
+      width: 4
+    - rect: [12, -126, 68, 56, 3]
+      fill: '#2a9d8f'
+      width: 4
+    - rect: [80, -126, 68, 56, 3]
+      fill: '#f4a261'
+      width: 4
+    - rect: [148, -126, 68, 56, 3]
+      fill: '#457b9d'
+      width: 4
+    - rect: [216, -126, 68, 56, 3]
+      fill: '#e9c46a'
+      width: 4
+    - rect: [12, -182, 68, 56, 3]
+      fill: '#457b9d'
+      width: 4
+    - rect: [80, -182, 68, 56, 3]
+      fill: '#e63946'
+      width: 4
+    - rect: [148, -182, 68, 56, 3]
+      fill: '#f4a261'
+      width: 4
+    - rect: [216, -182, 68, 56, 3]
+      fill: '#2a9d8f'
+      width: 4
+    - rect: [148, -238, 68, 56, 3]
+      fill: '#e9c46a'
+      width: 4
+    - rect: [216, -238, 68, 56, 3]
+      fill: '#457b9d'
+      width: 4
+    - rect: [-290, -138, 210, 68, 4]
+      fill: white
+      width: 6
+    - rect: [-278, -212, 186, 76, 4]
+      fill: white
+      width: 6
+    - rect: [-282, -420, 190, 208, 4]
+      fill: '#c9d6df'
+      width: 6
+    - rect: [-262, -384, 150, 44, 4]
+      fill: '#8ecae6'
+      width: 5
+    - rect: [-298, -438, 222, 18, 4]
+      fill: white
+      width: 6
+    - rect: [-232, -488, 44, 50, 4]
+      fill: '#e63946'
+      width: 6
+    - rect: [-232, -470, 44, 10]
+      fill: '#222222'
+      width: 2
+    - line:
+      - [-120, -438]
+      - [-120, -470]
+      width: 5
+    - ellipse: [-120, -476, 26, 7]
+      fill: gray
+      width: 4
+    box: [-300, -488, 320, 8]
+  logbook:
+    from: milky_seas
+    note: open ship logbook
+    items:
+    - rect: [-40, -28, 38, 56, 3]
+      fill: '#fbf7ea'
+      width: 5
+    - rect: [2, -28, 38, 56, 3]
+      fill: '#fbf7ea'
+      width: 5
+    - line:
+      - [-30, -14]
+      - [-10, -14]
+      width: 3
+      stroke: '#9aa5b1'
+    - line:
+      - [-30, 0]
+      - [-10, 0]
+      width: 3
+      stroke: '#9aa5b1'
+    - line:
+      - [12, -14]
+      - [32, -14]
+      width: 3
+      stroke: '#9aa5b1'
+    - group: pen
+      pivot: [16, 4]
+      items:
+      - line:
+        - [16, 4]
+        - [40, -34]
+        stroke: '#c0392b'
+        width: 6
+    box: [-40, -34, 40, 28]
+  sat:
+    from: milky_seas
+    note: satellite with solar panels
+    items:
+    - group: beam
+      pivot: [0, 18]
+      items:
+      - poly:
+        - [-10, 18]
+        - [10, 18]
+        - [95, 250]
+        - [-95, 250]
+        fill: '#dff3ff'
+        stroke: '#dff3ff'
+        width: 1
+        opacity: 0.5
+    - rect: [-92, -14, 62, 28, 3]
+      fill: '#457b9d'
+      width: 5
+    - rect: [30, -14, 62, 28, 3]
+      fill: '#457b9d'
+      width: 5
+    - line:
+      - [-61, -14]
+      - [-61, 14]
+      width: 3
+    - line:
+      - [61, -14]
+      - [61, 14]
+      width: 3
+    - rect: [-26, -22, 52, 40, 6]
+      fill: '#e5e5e5'
+      width: 6
+    - circle: [0, 20, 10]
+      fill: '#222222'
+      width: 4
+    - line:
+      - [0, -22]
+      - [0, -44]
+      width: 5
+    - circle: [0, -48, 6]
+      fill: red
+      width: 3
+    box: [-95, -54, 95, 250]
+  earth:
+    from: milky_seas
+    note: planet Earth disc
+    items:
+    - rect: [-400, -500, 1520, 1500]
+      fill: '#0a1128'
+      stroke: '#0a1128'
+      width: 1
+    - circle: [60, 110, 4]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [190, 380, 3]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [300, 90, 3]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [440, 430, 4]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [520, 150, 3]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [650, 300, 4]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [690, 90, 3]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [110, 260, 3]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [590, 440, 3]
+      fill: white
+      stroke: white
+      width: 1
+    - {path: 'M-100,720 Q360,360 820,720 L820,1000 L-100,1000 Z', fill: '#1d5fa8', width: 7}
+    - {path: 'M-90,698 Q360,338 810,698', stroke: '#8ecae6', width: 8}
+    - poly:
+      - [40, 820]
+      - [110, 742]
+      - [200, 715]
+      - [245, 780]
+      - [180, 860]
+      - [70, 890]
+      fill: '#4f9d69'
+      width: 5
+    - poly:
+      - [560, 690]
+      - [640, 700]
+      - [700, 760]
+      - [650, 850]
+      - [560, 800]
+      fill: '#4f9d69'
+      width: 5
+    - {path: 'M300,640 Q340,620 390,640', stroke: white, width: 6}
+    - {path: 'M330,880 Q400,850 470,880', stroke: white, width: 6}
+    box: [-400, -500, 1120, 1000]
+  lab:
+    from: milky_seas
+    note: laboratory room backdrop
+    items:
+    - rect: [-100, 940, 920, 840]
+      fill: '#26445f'
+      stroke: '#26445f'
+      width: 1
+    - rect: [-100, 1770, 920, 260]
+      fill: '#1a2f45'
+      stroke: '#1a2f45'
+      width: 1
+    - line:
+      - [-100, 1770]
+      - [820, 1770]
+      width: 7
+    - line:
+      - [-100, 940]
+      - [820, 940]
+      width: 9
+    - line:
+      - [20, 1330]
+      - [200, 1330]
+      width: 8
+    - rect: [30, 1270, 22, 60, 2]
+      fill: '#e63946'
+      width: 4
+    - rect: [56, 1282, 20, 48, 2]
+      fill: '#ffd166'
+      width: 4
+    - rect: [80, 1262, 24, 68, 2]
+      fill: '#2a9d8f'
+      width: 4
+    - rect: [108, 1276, 20, 54, 2]
+      fill: '#f4a261'
+      width: 4
+    - circle: [640, 1130, 42]
+      fill: white
+      width: 7
+    - line:
+      - [640, 1130]
+      - [640, 1102]
+      width: 5
+    - line:
+      - [640, 1130]
+      - [662, 1138]
+      width: 5
+    box: [-100, 940, 820, 2030]
+  desk:
+    from: milky_seas
+    note: desk
+    items:
+    - rect: [-215, -190, 430, 22, 5]
+      fill: '#b08968'
+      width: 6
+    - rect: [-200, -168, 30, 168, 3]
+      fill: '#b08968'
+      width: 6
+    - rect: [170, -168, 30, 168, 3]
+      fill: '#b08968'
+      width: 6
+    - rect: [-150, -160, 120, 90, 4]
+      fill: '#8d6e63'
+      width: 5
+    - circle: [-90, -115, 6]
+      fill: '#ffd166'
+      width: 3
+    box: [-215, -190, 215, 0]
+  chair:
+    from: milky_seas
+    note: chair
+    items:
+    - rect: [-46, -100, 92, 14, 4]
+      fill: '#6d6875'
+      width: 5
+    - rect: [-52, -200, 14, 100, 4]
+      fill: '#6d6875'
+      width: 5
+    - line:
+      - [0, -86]
+      - [0, 0]
+      width: 7
+    - line:
+      - [-40, 0]
+      - [40, 0]
+      width: 7
+    box: [-52, -200, 46, 0]
+  monitor:
+    from: milky_seas
+    note: monitor
+    items:
+    - rect: [-140, -103, 280, 206, 10]
+      fill: '#b0bec5'
+      width: 7
+    - rect: [-125, -88, 250, 176, 4]
+      fill: '#050a18'
+      width: 5
+    - poly:
+      - [-125, -20]
+      - [-95, -40]
+      - [-60, -34]
+      - [-40, -8]
+      - [-70, 20]
+      - [-110, 30]
+      fill: '#1c2d44'
+      width: 3
+    - poly:
+      - [70, 40]
+      - [100, 20]
+      - [125, 30]
+      - [125, 88]
+      - [60, 88]
+      fill: '#1c2d44'
+      width: 3
+    - circle: [-80, -60, 2]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [30, -70, 2]
+      fill: white
+      stroke: white
+      width: 1
+    - circle: [90, -50, 2]
+      fill: white
+      stroke: white
+      width: 1
+    - group: patch
+      pivot: [10, 15]
+      items:
+      - ellipse: [10, 15, 104, 52]
+        fill: '#8ecae6'
+        stroke: '#8ecae6'
+        width: 1
+        opacity: 0.35
+      - ellipse: [10, 15, 70, 34]
+        fill: '#e4f5ff'
+        stroke: '#e4f5ff'
+        width: 1
+      - ellipse: [10, 15, 34, 16]
+        fill: white
+        stroke: white
+        width: 1
+    - group: scan
+      pivot: [0, -88]
+      items:
+      - line:
+        - [-125, -88]
+        - [125, -88]
+        stroke: '#9dffb0'
+        width: 5
+    - poly:
+      - [-30, 103]
+      - [30, 103]
+      - [45, 150]
+      - [-45, 150]
+      fill: '#90a4ae'
+      width: 5
+    - rect: [-70, 150, 140, 14, 5]
+      fill: '#90a4ae'
+      width: 5
+    box: [-140, -103, 140, 164]
+  lens:
+    from: milky_seas
+    note: magnifying lens
+    items:
+    - line:
+      - [212, 212]
+      - [330, 330]
+      stroke: '#5d4037'
+      width: 46
+    - line:
+      - [212, 212]
+      - [330, 330]
+      stroke: '#8d6e63'
+      width: 32
+    - circle: [0, 0, 300]
+      fill: '#0f3a5f'
+      stroke: '#cfd8dc'
+      width: 18
+    - circle: [0, 0, 290]
+      stroke: '#222222'
+      width: 3
+    - {path: 'M-215,-150 Q-155,-218 -70,-238', stroke: '#4a90c2', width: 8, opacity: 0.6}
+    - {path: 'M-160,120 Q-120,100 -80,120', stroke: '#2f6d9b', width: 5}
+    - {path: 'M120,-140 Q160,-160 200,-140', stroke: '#2f6d9b', width: 5}
+    - {path: 'M100,170 Q140,150 180,170', stroke: '#2f6d9b', width: 5}
+    box: [-300, -300, 330, 330]
+  hand:
+    from: milky_seas
+    note: hand
+    items:
+    - rect: [-300, -36, 270, 72, 8]
+      fill: '#3d5a80'
+      width: 6
+    - ellipse: [0, 0, 46, 40]
+      fill: '#ffd7b5'
+      width: 6
+    - line:
+      - [26, -24]
+      - [84, -24]
+      stroke: '#222222'
+      width: 24
+    - line:
+      - [26, -24]
+      - [84, -24]
+      stroke: '#ffd7b5'
+      width: 13
+    - line:
+      - [26, -6]
+      - [92, -6]
+      stroke: '#222222'
+      width: 24
+    - line:
+      - [26, -6]
+      - [92, -6]
+      stroke: '#ffd7b5'
+      width: 13
+    - line:
+      - [26, 12]
+      - [88, 12]
+      stroke: '#222222'
+      width: 24
+    - line:
+      - [26, 12]
+      - [88, 12]
+      stroke: '#ffd7b5'
+      width: 13
+    - line:
+      - [26, 28]
+      - [76, 28]
+      stroke: '#222222'
+      width: 22
+    - line:
+      - [26, 28]
+      - [76, 28]
+      stroke: '#ffd7b5'
+      width: 12
+    box: [-300, -40, 92, 40]
+  minster:
+    from: dancing1518
+    note: big cathedral
+    items:
+    - rect: [-38, -230, 76, 230, 3]
+      fill: '#d9a08a'
+    - poly:
+      - [-38, -230]
+      - [0, -390]
+      - [38, -230]
+      fill: '#d9a08a'
+    - line:
+      - [0, -390]
+      - [0, -425]
+      width: 5
+    - rect: [-12, -200, 24, 54, 10]
+      fill: '#6c4a3a'
+    - rect: [-12, -120, 24, 54, 10]
+      fill: '#6c4a3a'
+    - line:
+      - [-38, -150]
+      - [38, -150]
+      width: 4
+    box: [-38, -425, 38, 0]
+  street:
+    from: dancing1518
+    note: cobbled street backdrop
+    items:
+    - rect: [-400, -90, 800, 90]
+      fill: '#d8c7a3'
+      width: 6
+    - poly:
+      - [-128, -90]
+      - [128, -90]
+      - [34, -190]
+      - [-34, -190]
+      fill: '#cdb991'
+    - line:
+      - [-92, -120]
+      - [92, -120]
+      width: 4
+      dash: 16 10
+    - line:
+      - [-60, -152]
+      - [60, -152]
+      width: 3
+      dash: 12 8
+    - line:
+      - [-400, -66]
+      - [400, -66]
+      width: 4
+      dash: 26 14
+    - line:
+      - [-400, -40]
+      - [400, -40]
+      width: 4
+      dash: 20 18
+    - line:
+      - [-400, -15]
+      - [400, -15]
+      width: 4
+      dash: 32 12
+    box: [-400, -190, 400, 0]
+  sun_dancin:
+    from: dancing1518
+    note: sun
+    items:
+    - {path: 'M58,0 L80,0 M41,41 L57,57 M0,58 L0,80 M-41,41 L-57,57 M-58,0 L-80,0 M-41,-41 L-57,-57 M0,-58 L0,-80 M41,-41 L57,-57', width: 7}
+    - circle: [0, 0, 46]
+      fill: '#ffd23f'
+    - circle: [-16, -8, 4]
+      fill: black
+      width: 2
+    - circle: [16, -8, 4]
+      fill: black
+      width: 2
+    - {path: 'M-18,12 Q0,30 18,12', width: 5}
+    box: [-80, -80, 80, 80]
+  moon_dancin:
+    from: dancing1518
+    note: moon
+    items:
+    - {path: 'M13.2,-39.9 A42,42 0 1 0 36.1,21.3 A34,34 0 1 1 13.2,-39.9 Z', fill: '#fff3b0', width: 6}
+    box: [13, -40, 13, -40]
+  nomusic:
+    from: dancing1518
+    note: crossed-out music note
+    items:
+    - ellipse: [-34, 40, 20, 14]
+      fill: black
+    - ellipse: [34, 26, 20, 14]
+      fill: black
+    - line:
+      - [-16, 38]
+      - [-16, -40]
+      width: 8
+    - line:
+      - [50, 24]
+      - [50, -54]
+      width: 8
+    - poly:
+      - [-16, -40]
+      - [50, -54]
+      - [50, -28]
+      - [-16, -14]
+      fill: black
+    - line:
+      - [-80, -72]
+      - [84, 84]
+      stroke: '#e63946'
+      width: 16
+    - line:
+      - [84, -72]
+      - [-80, 84]
+      stroke: '#e63946'
+      width: 16
+    box: [-80, -72, 84, 84]
+  basket:
+    from: dancing1518
+    note: basket
+    items:
+    - poly:
+      - [-34, 14]
+      - [34, 14]
+      - [24, 58]
+      - [-24, 58]
+      fill: '#c08a4f'
+      width: 5
+    - line:
+      - [-30, 30]
+      - [30, 30]
+      width: 3
+    - line:
+      - [-27, 44]
+      - [27, 44]
+      width: 3
+    - circle: [-14, 10, 11]
+      fill: '#d62828'
+      width: 4
+    - circle: [10, 8, 11]
+      fill: '#d62828'
+      width: 4
+    - {path: 'M-26,14 Q0,-34 26,14', width: 6}
+    box: [-34, -34, 34, 58]
+  apple:
+    from: dancing1518
+    note: apple
+    items:
+    - circle: [0, 0, 11]
+      fill: '#d62828'
+      width: 4
+    - line:
+      - [0, -10]
+      - [3, -18]
+      width: 3
+    box: [-11, -18, 11, 11]
+  plaza:
+    from: dancing1518
+    note: town square backdrop
+    items:
+    - rect: [-800, -150, 1600, 150]
+      fill: '#d8c7a3'
+      width: 6
+    - line:
+      - [-800, -118]
+      - [800, -118]
+      width: 4
+      dash: 30 16
+    - line:
+      - [-800, -86]
+      - [800, -86]
+      width: 4
+      dash: 22 20
+    - line:
+      - [-800, -54]
+      - [800, -54]
+      width: 4
+      dash: 36 12
+    - line:
+      - [-800, -22]
+      - [800, -22]
+      width: 4
+      dash: 26 18
+    box: [-800, -150, 800, 0]
+  guildhall:
+    from: dancing1518
+    note: big hall with double doors
+    items:
+    - rect: [-240, -300, 480, 300, 3]
+      fill: '#f1e3c6'
+      width: 6
+    - poly:
+      - [-270, -300]
+      - [0, -440]
+      - [270, -300]
+      fill: '#c0583f'
+      width: 7
+    - line:
+      - [-240, -150]
+      - [240, -150]
+      width: 8
+    - line:
+      - [-240, -300]
+      - [240, -300]
+      width: 8
+    - line:
+      - [-240, -300]
+      - [-240, 0]
+      width: 8
+    - line:
+      - [240, -300]
+      - [240, 0]
+      width: 8
+    - line:
+      - [-150, -300]
+      - [-150, -150]
+      width: 7
+    - line:
+      - [150, -300]
+      - [150, -150]
+      width: 7
+    - rect: [-222, -120, 54, 70, 3]
+      fill: '#bfe3f0'
+      width: 5
+    - rect: [168, -120, 54, 70, 3]
+      fill: '#bfe3f0'
+      width: 5
+    - rect: [-100, -292, 200, 46, 6]
+      fill: '#f4d35e'
+      width: 5
+    - text: [0, -268, GUILD HALL]
+      size: 26
+    - rect: [-80, -200, 160, 200, 4]
+      fill: '#ffcf70'
+    - group: dl
+      pivot: [-80, -100]
+      items:
+      - rect: [-80, -200, 80, 200, 4]
+        fill: '#8d6e63'
+      - line:
+        - [-60, -170]
+        - [-60, -30]
+        width: 4
+      - circle: [-14, -100, 5]
+        fill: yellow
+    - group: dr
+      pivot: [80, -100]
+      items:
+      - rect: [0, -200, 80, 200, 4]
+        fill: '#8d6e63'
+      - line:
+        - [60, -170]
+        - [60, -30]
+        width: 4
+      - circle: [14, -100, 5]
+        fill: yellow
+    box: [-270, -440, 270, 0]
+  note:
+    from: dancing1518
+    note: music note
+    items:
+    - ellipse: [0, 0, 11, 8]
+      fill: black
+      width: 3
+    - line:
+      - [10, -2]
+      - [10, -38]
+      width: 5
+    - {path: 'M10,-38 Q28,-30 24,-14', width: 5}
+    box: [-11, -38, 28, 8]
+  drum:
+    from: dancing1518
+    note: drum
+    items:
+    - rect: [-32, -8, 64, 46, 6]
+      fill: '#c0583f'
+      width: 5
+    - ellipse: [0, -8, 32, 10]
+      fill: '#f1e3c6'
+      width: 5
+    - line:
+      - [-30, 2]
+      - [-15, 34]
+      - [0, 2]
+      - [15, 34]
+      - [30, 2]
+      width: 3
+    box: [-32, -18, 32, 38]
+  pipe:
+    from: dancing1518
+    note: flute (musical pipe)
+    items:
+    - rect: [-2, -4, 78, 9, 3]
+      fill: '#c08a4f'
+      width: 4
+    - circle: [22, 0, 2]
+      fill: black
+      width: 1
+    - circle: [40, 0, 2]
+      fill: black
+      width: 1
+    - circle: [58, 0, 2]
+      fill: black
+      width: 1
+    box: [-2, -4, 76, 5]
+  fiddle:
+    from: dancing1518
+    note: fiddle
+    items:
+    - ellipse: [0, 20, 24, 20]
+      fill: '#a0522d'
+      width: 5
+    - ellipse: [0, -2, 17, 15]
+      fill: '#a0522d'
+      width: 5
+    - line:
+      - [0, -14]
+      - [0, -52]
+      width: 6
+    - circle: [0, -56, 6]
+      fill: '#a0522d'
+      width: 4
+    box: [-24, -62, 24, 40]
+  bow:
+    from: dancing1518
+    note: fiddle bow
+    items:
+    - line:
+      - [-46, 0]
+      - [46, 0]
+      width: 4
+    - line:
+      - [-46, 0]
+      - [-46, 8]
+      width: 4
+    box: [-46, 0, 46, 8]
+  ban:
+    from: dancing1518
+    note: red prohibition sign (circle with a slash)
+    items:
+    - circle: [0, 0, 90]
+      stroke: '#e63946'
+      width: 24
+    - line:
+      - [-64, -64]
+      - [64, 64]
+      stroke: '#e63946'
+      width: 24
+    box: [-90, -90, 90, 90]
+  chapel:
+    from: dancing1518
+    note: small hilltop chapel
+    items:
+    - rect: [-60, -110, 120, 110, 3]
+      fill: '#f1e3c6'
+      width: 6
+    - poly:
+      - [-74, -110]
+      - [0, -172]
+      - [74, -110]
+      fill: '#c0583f'
+      width: 7
+    - line:
+      - [0, -172]
+      - [0, -222]
+      width: 7
+    - line:
+      - [-16, -200]
+      - [16, -200]
+      width: 7
+    - rect: [-17, -72, 34, 72, 14]
+      fill: '#8d6e63'
+    - rect: [-48, -96, 22, 30, 3]
+      fill: '#bfe3f0'
+      width: 5
+    - rect: [26, -96, 22, 30, 3]
+      fill: '#bfe3f0'
+      width: 5
+    box: [-74, -222, 74, 0]
+  shoes:
+    from: dancing1518
+    note: shoes
+    items:
+    - ellipse: [-16, 0, 16, 8]
+      fill: '#e63946'
+      width: 4
+    - ellipse: [16, 0, 16, 8]
+      fill: '#e63946'
+      width: 4
+    box: [-32, -8, 32, 8]
+  redshoes:
+    from: dancing1518
+    note: redshoes
+    items:
+    - poly:
+      - [-110, 26]
+      - [-110, -6]
+      - [-78, -24]
+      - [-54, -20]
+      - [-36, 0]
+      - [-2, 8]
+      - [0, 26]
+      fill: '#e63946'
+      width: 7
+    - poly:
+      - [14, 26]
+      - [14, -6]
+      - [46, -24]
+      - [70, -20]
+      - [88, 0]
+      - [122, 8]
+      - [124, 26]
+      fill: '#e63946'
+      width: 7
+    box: [-110, -24, 124, 26]
+  table:
+    from: dancing1518
+    note: table
+    items:
+    - rect: [-150, 0, 300, 24, 6]
+      fill: '#b08968'
+    - line:
+      - [-120, 24]
+      - [-120, 110]
+      width: 8
+    - line:
+      - [120, 24]
+      - [120, 110]
+      width: 8
+    box: [-150, 0, 150, 110]
+  loaf:
+    from: dancing1518
+    note: loaf of bread
+    items:
+    - {path: 'M-120,0 Q-135,-90 -60,-112 Q0,-130 60,-112 Q135,-90 120,0 Z', fill: '#d9a05b', width: 7}
+    - ellipse: [-40, -72, 40, 22]
+      fill: '#7cb342'
+      opacity: 0.6
+      stroke: '#7cb342'
+      width: 1
+    - ellipse: [52, -58, 32, 18]
+      fill: '#7cb342'
+      opacity: 0.6
+      stroke: '#7cb342'
+      width: 1
+    - {path: 'M-58,-96 Q-46,-64 -64,-36', stroke: '#8a5a25', width: 6}
+    - {path: 'M-8,-106 Q2,-74 -10,-44', stroke: '#8a5a25', width: 6}
+    - {path: 'M40,-98 Q50,-68 36,-42', stroke: '#8a5a25', width: 6}
+    - circle: [-84, -38, 7]
+      fill: '#558b2f'
+      width: 3
+    - circle: [80, -26, 6]
+      fill: '#558b2f'
+      width: 3
+    box: [-135, -130, 135, 0]
+  counter:
+    from: koepenick
+    note: shop counter
+    items:
+    - rect: [-150, -110, 300, 110, 6]
+      fill: '#b08968'
+      width: 6
+    - line:
+      - [-150, -82]
+      - [150, -82]
+      width: 5
+    box: [-150, -110, 150, 0]
+  uniform:
+    from: koepenick
+    note: officer uniform on a hanger
+    items:
+    - {path: 'M0,8 Q0,-10 12,-10', width: 5}
+    - line:
+      - [-60, 30]
+      - [0, 8]
+      - [60, 30]
+      width: 6
+    - group: sleeve
+      pivot: [-56, 34]
+      items:
+      - poly:
+        - [-58, 32]
+        - [-86, 150]
+        - [-64, 158]
+        - [-44, 62]
+        fill: '#3d5a80'
+        width: 6
+    - poly:
+      - [58, 32]
+      - [86, 150]
+      - [64, 158]
+      - [44, 62]
+      fill: '#3d5a80'
+      width: 6
+    - poly:
+      - [-58, 30]
+      - [58, 30]
+      - [66, 190]
+      - [-66, 190]
+      fill: '#3d5a80'
+      width: 6
+    - line:
+      - [0, 34]
+      - [0, 188]
+      width: 4
+    - circle: [-12, 76, 6]
+      fill: '#ffd166'
+      width: 4
+    - circle: [-12, 116, 6]
+      fill: '#ffd166'
+      width: 4
+    - circle: [-12, 156, 6]
+      fill: '#ffd166'
+      width: 4
+    - rect: [-66, 26, 30, 12, 4]
+      fill: '#ffd166'
+      width: 4
+    - rect: [36, 26, 30, 12, 4]
+      fill: '#ffd166'
+      width: 4
+    box: [-86, -10, 86, 190]
+  coin:
+    from: koepenick
+    note: coin
+    items:
+    - circle: [0, 0, 15]
+      fill: '#ffd166'
+      width: 4
+    - text: [0, 1, $]
+      size: 20
+    box: [-15, -15, 15, 15]
+  townhall:
+    from: koepenick
+    note: town hall facade
+    items:
+    - rect: [-60, -470, 120, 220, 4]
+      fill: '#e9d8a6'
+      width: 7
+    - poly:
+      - [-75, -470]
+      - [0, -545]
+      - [75, -470]
+      fill: '#9c6644'
+      width: 7
+    - circle: [0, -405, 38]
+      fill: white
+    - group: hand
+      pivot: [0, -405]
+      items:
+      - line:
+        - [0, -405]
+        - [0, -432]
+        width: 6
+    - rect: [-230, -260, 460, 260, 4]
+      fill: '#e9d8a6'
+      width: 7
+    - poly:
+      - [-250, -258]
+      - [0, -330]
+      - [250, -258]
+      fill: '#9c6644'
+      width: 7
+    - rect: [-40, -120, 80, 120, 4]
+      fill: '#8d6e63'
+    - rect: [-190, -215, 60, 70, 4]
+      fill: '#8ecae6'
+      width: 5
+    - rect: [130, -215, 60, 70, 4]
+      fill: '#8ecae6'
+      width: 5
+    - rect: [-190, -115, 60, 70, 4]
+      fill: '#8ecae6'
+      width: 5
+    - rect: [130, -115, 60, 70, 4]
+      fill: '#8ecae6'
+      width: 5
+    box: [-250, -545, 250, 0]
+  cashbox:
+    from: koepenick
+    note: 'cash box with a lid (part: lid)'
+    items:
+    - rect: [-40, -18, 80, 46, 6]
+      fill: '#6d6875'
+    - group: lid
+      pivot: [-40, -18]
+      items:
+      - rect: [-42, -32, 84, 16, 5]
+        fill: '#8d8a99'
+    - circle: [0, 6, 6]
+      fill: '#ffd166'
+      width: 4
+    box: [-42, -32, 42, 28]

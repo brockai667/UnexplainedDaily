@@ -27,3 +27,4 @@ doodle/**/__pycache__/
 # model weights (Kokoro sa stiahne do kokoro/ vyssie; faster-whisper do ~/.cache/huggingface, mimo repa)
 *.onnx
 voices-*.bin
+doodle/episodes/
