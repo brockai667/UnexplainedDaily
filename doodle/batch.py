@@ -3,7 +3,7 @@
 
     python doodle/batch.py --topics "Mary Celeste,Tunguska event" [--start 004]     # explicit topics (use ; when a name contains commas)
     python doodle/batch.py --from-bank 100 [--start 004]                            # the next 100 unused topics of the topic bank
-    options: [--backend cli|none] [--model sonnet] [--no-review] [--keep] [--bank FILE]
+    options: [--backend cli|none|agentfile] [--model sonnet] [--no-review] [--keep] [--bank FILE]
 
 Per topic (details in doodle/BATCH.md):
   1 facts   Wikipedia summary + intro (no key)
@@ -16,8 +16,12 @@ Per topic (details in doodle/BATCH.md):
   7 queue   doodle/queue/<NNN>-<slug>/ (screenplay.yaml + meta.json) and one line in doodle/batch_log.jsonl
 The model is the installed `claude -p` command (the owner's subscription). --backend none = plumbing test without any model call
 (brief = briefs/celeste.yaml, screenplay = episodes/celeste_sonnet/screenplay.yaml, no review).
+--backend agentfile = a Claude Code agent is the model, no CLI login. Every model call is a resumable STAGE (brief, brief-retry, author, fix1,
+fix2, review, fix3): without <episode>/answers/<stage>.txt the prompt is written to <episode>/prompts/<stage>.md, the line
+`ANSWER NEEDED <stage> <prompt file> -> <answer file>` is printed and the run ends with exit code 10; the agent writes the answer file and
+runs the same command again (what is done is reused). Details in doodle/BATCH.md.
 Exit codes: 0 all fine, 1 a topic failed, 2 usage error, 3 Claude CLI needs login, 4 usage limit / network / the CLI keeps failing
-(run again later: --from-bank skips what is done)."""
+(run again later: --from-bank skips what is done), 10 agentfile: an answer is needed."""
 import argparse
 import collections
 import datetime
@@ -69,7 +73,8 @@ CALL_TIMEOUT, CALL_RETRIES = 600, 2          # seconds per `claude -p` call, ret
 MAX_FIX_ROUNDS = 2
 ENV = dict(os.environ, PYTHONIOENCODING="utf-8", PYTHONUNBUFFERED="1")
 NOWIN = getattr(subprocess, "CREATE_NO_WINDOW", 0)       # no console window pops up for child processes on Windows
-KEEP_FILES = {"screenplay.yaml", "brief.yaml", "facts.txt", "AUTHOR.md", "calls.json", "review.jpg", "accept.log", "qa.log"}
+KEEP_FILES = {"screenplay.yaml", "brief.yaml", "facts.txt", "facts.json", "AUTHOR.md", "calls.json", "review.jpg", "accept.log", "qa.log",
+              "prompts", "answers"}
 STATE = {"dir": None, "calls": []}           # the topic being processed: its folder and the usage rows of its model calls
 
 
@@ -88,6 +93,14 @@ class BatchAbort(Exception):
     def __init__(self, code, msg):
         super().__init__(msg)
         self.code = code
+
+
+class NeedAnswer(BatchAbort):
+    """backend agentfile: a stage has no answer yet. Its prompt is written and the run ends with exit code 10; the message is the line
+    `ANSWER NEEDED <stage> <prompt file> -> <answer file>` (last line of the output): the agent writes the answer and runs the same command again"""
+
+    def __init__(self, stage, prompt_path, answer_path):
+        super().__init__(10, f"ANSWER NEEDED {stage} {prompt_path} -> {answer_path}")
 
 
 class ClaudeError(Exception):
@@ -123,6 +136,16 @@ def rel(path):
         return os.path.relpath(path, REPO).replace("\\", "/")
     except ValueError:                              # a path on another drive (Windows)
         return str(path).replace("\\", "/")
+
+
+def fwd(path):
+    """absolute path with forward slashes: usable in Git Bash, PowerShell and cmd and by the Read / Write tools of an agent"""
+    return os.path.abspath(path).replace("\\", "/")
+
+
+def rerun_command():
+    """this run's command line, for the agent to repeat (absolute script path: works from any folder)"""
+    return "python " + subprocess.list2cmdline([fwd(__file__)] + sys.argv[1:])
 
 
 def slugify(text, maxlen=40):
@@ -736,27 +759,65 @@ class Ctx:
     def say(self, msg):
         say(f"[{self.slug} +{time.time() - self.t0:.0f}s] {msg}")
 
-    def ask(self, prompt, system, label, tools=""):
+    def ask(self, prompt, system, label, tools="", stage=None):
+        if self.args.backend == "agentfile":
+            return self.ask_agent(prompt, system, stage or label)
         try:
             return call_claude(prompt, system, self.args.model, tools=tools, label=label)
         except ClaudeError as e:
             raise StageFail(f"model call failed ({label}): {e}", model=True)
 
+    def answer(self, stage):
+        """backend agentfile: the agent's answer for the stage (answers/<stage>.txt); None while the file is missing or empty"""
+        try:
+            with open(os.path.join(self.ep, "answers", stage + ".txt"), encoding="utf-8-sig") as f:
+                text = f.read()
+        except OSError:
+            return None
+        return text if text.strip() else None
+
+    def ask_agent(self, prompt, system, stage):
+        """backend agentfile: the answer of the stage if the agent has written it, else the prompt goes to prompts/<stage>.md and the
+        run stops (NeedAnswer, exit code 10); the agent writes answers/<stage>.txt and runs the same command again"""
+        text = self.answer(stage)
+        if text is not None:
+            self.say(f"{stage}: answers/{stage}.txt ({len(text)} chars)")
+            return text
+        answer_path = fwd(os.path.join(self.ep, "answers", stage + ".txt"))
+        prompt_path = fwd(os.path.join(self.ep, "prompts", stage + ".md"))
+        os.makedirs(os.path.dirname(prompt_path), exist_ok=True)
+        os.makedirs(os.path.dirname(answer_path), exist_ok=True)
+        write_text(prompt_path, f"Write your complete answer to {answer_path} as plain text (no code fences), then re-run: {rerun_command()}\n\n"
+                                f"ROLE AND OUTPUT RULES: {system}\n\n-----\n\n{prompt}\n")
+        self.say(f"{stage}: waiting for the agent")
+        raise NeedAnswer(stage, prompt_path, answer_path)
+
     def write_screenplay(self, reply):
         write_text(self.sp, clean_screenplay(reply, self.brief["header"]))
 
 
-def fresh_dir(path):
-    """an empty work folder for the topic; an earlier run of this script is wiped, a folder somebody else made is not touched"""
+def fresh_dir(path, keep=False):
+    """an empty work folder for the topic; an earlier run of this script is wiped (keep=True, backend agentfile: it is kept, it holds the
+    answers and the finished stages of the topic), a folder somebody else made is not touched"""
     if os.path.isdir(path):
         if os.listdir(path) and not any(os.path.exists(os.path.join(path, m)) for m in ("brief.yaml", "facts.txt", "calls.json", "AUTHOR.md")):
             raise StageFail(f"{rel(path)} exists and was not made by batch.py: rename or delete it")
-        shutil.rmtree(path, ignore_errors=True)
+        if not keep:
+            shutil.rmtree(path, ignore_errors=True)
     os.makedirs(path, exist_ok=True)
     STATE["dir"], STATE["calls"] = path, []
 
 
 def stage_facts(c):
+    if c.args.backend == "agentfile":                   # a re-run: the facts of the first run (no new request, the brief prompt stays the same)
+        try:
+            kept = json.loads(read_text(os.path.join(c.ep, "facts.json")))
+        except (OSError, ValueError):
+            kept = None
+        if isinstance(kept, dict) and kept.get("text"):
+            c.facts = kept["text"]
+            c.say(f"facts: kept from facts.json, {len(c.facts)} chars")
+            return
     try:
         f = fetch_facts(c.topic)
     except BatchAbort as e:
@@ -773,13 +834,28 @@ def stage_facts(c):
         raise StageFail("no Wikipedia page for this topic (search found nothing either)", status="SKIPPED")
     c.facts = f["text"]
     write_text(os.path.join(c.ep, "facts.txt"), c.facts + "\n")
+    if c.args.backend == "agentfile":
+        write_text(os.path.join(c.ep, "facts.json"), json.dumps(f, ensure_ascii=False, indent=1) + "\n")
     c.say(f"facts: {f['title']}{f['note']}, {len(c.facts)} chars")
 
 
+def kept_brief(c):
+    """backend agentfile, a re-run: the brief of the first run (brief.yaml) if it is still valid, else None"""
+    try:
+        errs, b = validate_brief(yaml.safe_load(read_text(os.path.join(c.ep, "brief.yaml"))), c.slug)
+    except (OSError, yaml.YAMLError):
+        return None
+    return None if errs else b
+
+
 def stage_brief(c):
+    kept = kept_brief(c) if c.args.backend == "agentfile" else None
     if c.args.backend == "none":
         c.brief = sample_brief(c.slug)
         c.say("brief: briefs/celeste.yaml (backend none)")
+    elif kept:
+        c.brief = kept
+        c.say("brief: kept from brief.yaml")
     else:
         prompt = (BRIEF_PROMPT.replace("@@TOPIC@@", c.topic).replace("@@FACTS@@", c.facts[:7000])
                   .replace("@@SLUG@@", c.slug).replace("@@EXAMPLE@@", example_text()))
@@ -818,9 +894,9 @@ def stage_author(c):
     c.write_screenplay(reply)
 
 
-def fix_screenplay(c, problems, label):
+def fix_screenplay(c, problems, label, stage=None):
     prompt = (c.author_md + "\n\nYOUR SCREENPLAY:\n" + read_text(c.sp) + "\n\nPROBLEMS:\n" + problems.strip()[:8000] + FIX_TAIL)
-    c.write_screenplay(c.ask(prompt, AUTHOR_SYSTEM, label))
+    c.write_screenplay(c.ask(prompt, AUTHOR_SYSTEM, label, stage=stage))
 
 
 def precheck(c):
@@ -1005,14 +1081,17 @@ def stage_review(c):
         c.review = "skipped"
         return
     sheet = os.path.join(c.ep, "review.jpg")
+    answered = c.args.backend == "agentfile" and c.answer("review") is not None      # agentfile re-run: the stills were made with the prompt
     try:
-        frames = snapshots(c, review_times(c.ep))
-        tile_sheet(frames, sheet)
+        if not answered:
+            frames = snapshots(c, review_times(c.ep))
+            tile_sheet(frames, sheet)
     except (OSError, ValueError, KeyError, RuntimeError, subprocess.SubprocessError) as e:
         c.review = f"skipped ({short(e, 100)})"
         c.say("review: " + c.review)
         return
-    c.say(f"review: {len(frames)} stills -> review.jpg, model call")
+    if not answered:
+        c.say(f"review: {len(frames)} stills -> review.jpg, model call")
     try:
         reply = c.ask(review_prompt(c, sheet), REVIEW_SYSTEM, "review", tools="Read")
     except StageFail as e:
@@ -1036,7 +1115,7 @@ def stage_review(c):
     problems = ("A reviewer looked at stills of the rendered video and found these problems (scene id: problem -> what to change):\n"
                 + "\n".join(f"- {f['scene']}: {f['problem']} -> {f['fix']}" for f in fixes))
     try:
-        fix_screenplay(c, problems, "review-fix")
+        fix_screenplay(c, problems, "review-fix", stage=f"fix{MAX_FIX_ROUNDS + 1}")
     except StageFail as e:
         if not e.model:
             raise
@@ -1149,11 +1228,29 @@ def bank_topics(a):
     return out
 
 
+PICK = os.path.join(EPISODES, ".agentfile_pick.json")
+
+
+def agent_pick(a):
+    """backend agentfile + --from-bank: the topics the first run of this command line picked are kept until the command is finished, so
+    every re-run works on the same list (a new pick each time would slide forward as topics get finished)"""
+    try:
+        d = json.loads(read_text(PICK))
+    except (OSError, ValueError):
+        d = None
+    if isinstance(d, dict) and d.get("args") == sys.argv[1:] and d.get("topics"):
+        return list(d["topics"])
+    names = bank_topics(a)
+    os.makedirs(EPISODES, exist_ok=True)
+    write_text(PICK, json.dumps({"args": sys.argv[1:], "topics": names}, ensure_ascii=False) + "\n")
+    return names
+
+
 def pick_topics(a):
     if a.topics is not None:
         names = [t.strip() for t in a.topics.split(";" if ";" in a.topics else ",") if t.strip()]
     else:
-        names = bank_topics(a)
+        names = agent_pick(a) if a.backend == "agentfile" else bank_topics(a)
     seen, out = set(), []
     for t in names:
         if slugify(t) not in seen:
@@ -1176,16 +1273,31 @@ def cleanup(ep):
                     pass
 
 
+def earlier_result(ep):
+    """backend agentfile: the FAILED / SKIPPED result an earlier run of the command left in <episode>/result.json, else None"""
+    try:
+        d = json.loads(read_text(os.path.join(ep, "result.json")))
+    except (OSError, ValueError):
+        return None
+    return d if isinstance(d, dict) and d.get("status") else None
+
+
 def process_topic(topic, a):
     slug = slugify(topic)
     c = Ctx(topic, slug, a)
     STATE["dir"], STATE["calls"] = None, []
     status, reason, dup = "OK", "", False
+    resume = a.backend == "agentfile"               # an unfinished topic keeps its folder: the stages that are done are not redone
     try:
         if slug in queued_slugs():
             dup = True                               # shown, but not logged (the queue entry says it all)
             raise StageFail(f"already in the queue ({slug})", status="SKIPPED")
-        fresh_dir(c.ep)
+        prev = earlier_result(c.ep) if resume else None
+        if prev:
+            dup = True                               # FAILED / SKIPPED by an earlier run of this command: not tried again by every re-run
+            raise StageFail(f"already {prev['status']} (delete {rel(c.ep)} to start over): {short(prev.get('reason') or '', 120)}",
+                            status=prev["status"])
+        fresh_dir(c.ep, keep=resume)
         stage_facts(c)
         stage_brief(c)
         stage_author(c)
@@ -1201,6 +1313,8 @@ def process_topic(topic, a):
         traceback.print_exc()
         status, reason = "FAILED", f"internal error: {type(e).__name__}: {short(e, 200)}"
     calls, tin, tout, cost = usage_totals(STATE["calls"])
+    if resume and not dup:                           # the agent's answers are the model calls (a re-run does not ask again for what it kept)
+        calls = len(os.listdir(os.path.join(c.ep, "answers"))) if os.path.isdir(os.path.join(c.ep, "answers")) else 0
     row = {"ts": utc_now(), "topic": topic, "slug": slug, "status": status, "reason": reason, "queue": c.queue, "backend": a.backend,
            "model": a.model if a.backend == "cli" else "", "calls": calls, "tokens_in": tin, "tokens_out": tout,
            "cost_usd": round(cost, 4), "seconds": round(time.time() - c.t0), "fix_rounds": c.fix_rounds,
@@ -1208,12 +1322,16 @@ def process_topic(topic, a):
     if not dup:
         with open(LOG, "a", encoding="utf-8", newline="\n") as f:
             f.write(json.dumps(row, ensure_ascii=False) + "\n")
+        if resume and status in ("FAILED", "SKIPPED") and os.path.isdir(c.ep):
+            write_text(os.path.join(c.ep, "result.json"), json.dumps({"status": status, "reason": reason, "ts": row["ts"]}, ensure_ascii=False) + "\n")
     if status == "OK" and not a.keep:
         cleanup(c.ep)
     fixed = max(0, (c.problems_first or 0) - (c.problems_left or 0)) if status == "OK" else 0
     say(f"--> {topic}: {status}" + (f"  {c.queue}" if c.queue else f"  ({short(reason, 200)})")
         + f"  calls {calls}, tokens {tin // 1000}k/{tout // 1000}k, ${cost:.2f}, {row['seconds']} s"
         + (f", {c.fix_rounds} fix round(s), {fixed} problem(s) fixed, {c.problems_left} left" if status == "OK" else ""))
+    if resume:                                       # the lines an agent looks for
+        say(f"QUEUED {c.queue}" if status == "OK" else f"{status} {slug}: {short(reason, 200)}")
     return row
 
 
@@ -1246,7 +1364,9 @@ def main():
     g.add_argument("--from-bank", type=int, metavar="N", help="the next N unused topics of the topic bank")
     ap.add_argument("--bank", help="topic bank JSON (default: stickman/topics_unexplained.json, else stickman/topics.json)")
     ap.add_argument("--start", type=int, help="first queue number NNN (default: after the highest in queue/ and done/)")
-    ap.add_argument("--backend", choices=("cli", "none"), default="cli", help="cli = claude -p; none = plumbing test without any model call")
+    ap.add_argument("--backend", choices=("cli", "none", "agentfile"), default="cli",
+                    help="cli = claude -p; none = plumbing test without any model call; agentfile = a Claude Code agent answers through files "
+                         "(<episode>/prompts, <episode>/answers; exit code 10 = an answer is needed, see BATCH.md)")
     ap.add_argument("--model", default="sonnet", help="model alias for every call (default sonnet)")
     ap.add_argument("--no-review", action="store_true", help="skip the look at stills (saves 1-2 model calls per topic)")
     ap.add_argument("--keep", action="store_true", help="keep the whole episode work folder after a good run (default: only the small text files)")
@@ -1270,6 +1390,8 @@ def main():
     except KeyboardInterrupt:
         abort = BatchAbort(130, "interrupted")
     summary(rows)
+    if a.backend == "agentfile" and a.from_bank is not None and not abort and os.path.isfile(PICK):
+        os.remove(PICK)                              # the command is finished: the next --from-bank picks fresh topics
     if abort:
         say(("\n" if rows else "") + str(abort))
         return abort.code
