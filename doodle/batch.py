@@ -71,6 +71,7 @@ WIKI_UA = "UnexplainedDoodleBatch/1.0 (hand-drawn mystery shorts; python-urllib)
 LOGIN_MSG = "Claude CLI needs login: run `claude` and /login"
 CALL_TIMEOUT, CALL_RETRIES = 600, 2          # seconds per `claude -p` call, retries after the first attempt
 MAX_FIX_ROUNDS = 2
+GOLD_MAX_W, GOLD_MIN_SIZE, GOLD_MAX_SIZE = 640, 48, 120    # gold word: widest line in px (the frame is 720 wide), font-size range
 ENV = dict(os.environ, PYTHONIOENCODING="utf-8", PYTHONUNBUFFERED="1")
 NOWIN = getattr(subprocess, "CREATE_NO_WINDOW", 0)       # no console window pops up for child processes on Windows
 KEEP_FILES = {"screenplay.yaml", "brief.yaml", "facts.txt", "facts.json", "AUTHOR.md", "calls.json", "review.jpg", "accept.log", "qa.log",
@@ -498,6 +499,73 @@ def header_text(title, sents, golds):
     return "\n".join(lines) + "\n"
 
 
+def gold_width(label, size):
+    """px width of the widest line of a gold label (| = new line) in Comic Neue Bold at font-size `size`"""
+    font = ImageFont.truetype(FONT, max(1, round(size)))
+    return max(font.getlength(part.strip()) for part in str(label).split("|"))
+
+
+def gold_fit(label, size):
+    """the font-size for a gold label: at most GOLD_MAX_SIZE and, if its widest line is wider than GOLD_MAX_W px, reduced (integer, down to
+    GOLD_MIN_SIZE) until it fits. A size that is fine is returned unchanged."""
+    new = min(size, GOLD_MAX_SIZE)
+    if new > GOLD_MIN_SIZE and gold_width(label, new) > GOLD_MAX_W:
+        new = int(new)
+        while new > GOLD_MIN_SIZE and gold_width(label, new) > GOLD_MAX_W:
+            new -= 1
+    return new
+
+
+GOLD_SIZE = re.compile(r"(\bsize\s*:\s*)(\d+(?:\.\d+)?)")
+
+
+def clamp_gold(path, log=None):
+    """mechanical guard, run right after every screenplay write (author / fix) and before accept.py / qa.py: a gold entry whose label is wider
+    than GOLD_MAX_W px at its size gets a smaller size (>= GOLD_MIN_SIZE), a size above GOLD_MAX_SIZE is cut. Only the number after `size:` on the
+    entry's line (the one-line `- {word: ..., size: N, ...}` items of header_text) is edited, the rest of the file stays byte-identical, and the
+    file is written only if something changed. One log line per changed entry. -> the number of changed entries"""
+    log = log or say
+    with open(path, encoding="utf-8", newline="") as f:
+        lines = f.read().splitlines(True)
+    in_gold, changed = False, 0
+    for i, line in enumerate(lines):
+        if re.match(r"gold\s*:\s*(#.*)?$", line.rstrip("\r\n")):
+            in_gold = True
+            continue
+        if in_gold and line.strip() and line[0] not in " \t-#":      # the next top-level key ends the gold list
+            in_gold = False
+        m = re.match(r"(\s*-\s*)(\{.*\})(\s*)$", line) if in_gold else None
+        if not m:
+            continue
+        try:
+            g = yaml.safe_load(m.group(2))
+        except yaml.YAMLError:
+            continue
+        size = g.get("size") if isinstance(g, dict) else None
+        if isinstance(size, bool) or not isinstance(size, (int, float)) or not str(g.get("label") or "").strip():
+            continue
+        label, new = str(g["label"]), gold_fit(g["label"], size)
+        if new == size:
+            continue
+        flow = GOLD_SIZE.sub(lambda mm: mm.group(1) + str(new), m.group(2), count=1)
+        try:
+            edited = yaml.safe_load(flow) == dict(g, size=new)
+        except yaml.YAMLError:
+            edited = False
+        if not edited:
+            log(f"gold '{label}': size {size} should be {new}, but the line could not be edited in place")
+            continue
+        lines[i] = m.group(1) + flow + m.group(3)
+        changed += 1
+        w0, w1 = gold_width(label, size), gold_width(label, new)
+        log(f"gold '{label}': size {size} -> {new} (widest line {w0:.0f} -> {w1:.0f} px, limit {GOLD_MAX_W} px)"
+            + (" - still too wide at the minimum size" if w1 > GOLD_MAX_W else ""))
+    if changed:
+        with open(path, "w", encoding="utf-8", newline="") as f:
+            f.write("".join(lines))
+    return changed
+
+
 def title_problems(t):
     if not t:
         return ["title is missing"]
@@ -584,9 +652,8 @@ def validate_brief(B, slug, need_meta=True):
             errs.append(f'gold #{n}: until must be "word:X", "sK.end" or "sK.end+0.6"')
         elif end is not None and pos is not None and end < pos:
             errs.append(f"gold #{n}: until ends before its own word")
-        longest = max([len(p) for p in label.split("|")] or [1]) or 1
         item = {"word": str(word), "label": label, "kind": kind, "top": num(g.get("top"), 120, 100, 150),
-                "size": num(g.get("size"), 110, 60, max(60, min(120, int(600 / (0.62 * longest)))))}
+                "size": gold_fit(label, num(g.get("size"), 110, 60, GOLD_MAX_SIZE))}
         if kind == "counter":
             item["dur"] = num(g.get("dur"), 0.9, 0.4, 2.0)
         item["until"] = str(g.get("until"))
@@ -794,6 +861,7 @@ class Ctx:
 
     def write_screenplay(self, reply):
         write_text(self.sp, clean_screenplay(reply, self.brief["header"]))
+        clamp_gold(self.sp, log=self.say)
 
 
 def fresh_dir(path, keep=False):

@@ -471,11 +471,14 @@ def visibility_problems(ep_dir, checks):
             continue
         big = max(max(o.get("w") or 0, o.get("h") or 0) for o in vis)
 
-        def seen(o):                                   # viditelny kus objektu v zabere (720 x 926), v pixeloch
+        def share(a0, a1, lo, hi):                     # podiel useku <a0, a1>, ktory lezi v <lo, hi>; useck nulovej dlzky (ciara) je vnutri alebo vonku
+            return max(0.0, min(a1, hi) - max(a0, lo)) / (a1 - a0) if a1 - a0 > 1e-9 else float(lo <= a0 <= hi)
+
+        def seen(o):                                   # podiel plochy objektu v zabere (720 x 926): viditelna sirka * viditelna vyska / (w * h)
             x0, y0, x1, y1 = o["box"]
-            return min(max(0.0, min(x1, 720) - max(x0, 0)), max(0.0, min(y1, 926) - max(y0, 0)))
-        if max(seen(o) for o in vis) < 45:
-            probs.append(f"'{thing}' is outside the visible frame when '{c['word']}' is spoken (box {[round(v) for v in vis[0]['box']]}, frame is 0..720 x 0..926): "
+            return share(x0, x1, 0, 720) * share(y0, y1, 0, 926)
+        if max(seen(o) for o in vis) < 0.5:
+            probs.append(f"'{thing}' is mostly outside the visible frame when '{c['word']}' is spoken (box {[round(v) for v in vis[0]['box']]}, frame is 0..720 x 0..926): "
                          f"move it or frame the camera on it")
         elif big < 55:
             probs.append(f"'{thing}' is only {big:.0f} px big on screen when '{c['word']}' is spoken - unreadable on a phone: make it at least 90 px "
