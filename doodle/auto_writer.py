@@ -474,9 +474,12 @@ def visibility_problems(ep_dir, checks):
         def share(a0, a1, lo, hi):                     # podiel useku <a0, a1>, ktory lezi v <lo, hi>; useck nulovej dlzky (ciara) je vnutri alebo vonku
             return max(0.0, min(a1, hi) - max(a0, lo)) / (a1 - a0) if a1 - a0 > 1e-9 else float(lo <= a0 <= hi)
 
-        def seen(o):                                   # podiel plochy objektu v zabere (720 x 926): viditelna sirka * viditelna vyska / (w * h)
+        def seen(o):                                   # viditelna plocha / min(plocha objektu, plocha zaberu 720 x 926): kresba vacsia nez zaber (vybuch, kruh) je viditelna
             x0, y0, x1, y1 = o["box"]
-            return share(x0, x1, 0, 720) * share(y0, y1, 0, 926)
+            area = (x1 - x0) * (y1 - y0)
+            if area <= 1e-9:                           # ciara alebo bod: bez plochy, plati kolko z nej je v zabere
+                return share(x0, x1, 0, 720) * share(y0, y1, 0, 926)
+            return max(0.0, min(x1, 720) - max(x0, 0)) * max(0.0, min(y1, 926) - max(y0, 0)) / min(area, 720 * 926)
         if max(seen(o) for o in vis) < 0.5:
             probs.append(f"'{thing}' is mostly outside the visible frame when '{c['word']}' is spoken (box {[round(v) for v in vis[0]['box']]}, frame is 0..720 x 0..926): "
                          f"move it or frame the camera on it")

@@ -34,6 +34,7 @@ FONT = os.path.join(HERE, "anim_src", "assets", "fonts", "ComicNeue-Bold.ttf")
 W, H, SW, SH = 720, 1280, 180, 320            # canvas and analysis size (1/4)
 ART_ROWS = 926 // 4                          # world area above the caption band (the world is masked below 926 px)
 PAPER = np.array([246, 241, 228], dtype=np.int16)
+GOLD_SLAM = 0.45                             # s after a gold stamp starts in which it may overshoot the frame (slam-in, scale 2.2 -> 1)
 RESULTS = []
 
 
@@ -234,7 +235,10 @@ async (t) => {
     const ws = [...c.querySelectorAll('.cw')].map(w => w.getBoundingClientRect());
     return { id: c.id, text: c.textContent.trim(), box: [Math.min(...ws.map(r => r.left)), Math.min(...ws.map(r => r.top)), Math.max(...ws.map(r => r.right)), Math.max(...ws.map(r => r.bottom))] };
   });
-  const golds = [...document.querySelectorAll('.gold')].filter(g => eff(g) > 0.05).map(g => ({ id: g.id, text: g.textContent.trim(), box: textBox(g) }));
+  const sg = (typeof SP !== 'undefined' && SP && SP.gold) || [];            // SP.gold[].t = the moment a gold stamp starts (index.html)
+  const golds = [...document.querySelectorAll('.gold')].filter(g => eff(g) > 0.05).map(g => {
+    const s = sg.find(x => 'gold_' + x.key === g.id);
+    return { id: g.id, text: g.textContent.trim(), box: textBox(g), t0: s ? s.t : null }; });
   const texts = [...document.querySelectorAll('.scene svg text')].filter(x => eff(x) > 0.1 && x.textContent.trim()).map(x => ({ id: x.textContent.trim(), box: box(x.getBoundingClientRect()) }));
   return { caps, golds, texts };
 }
@@ -271,6 +275,8 @@ def step_dom(ep, total):
                     if gx0 < x1 and x0 < gx1 and gy0 < y1 and y0 < gy1:
                         gold_hit.append(f"{t:.1f}s gold '{g['text']}' over caption '{c['text']}'")
             for g in d["golds"]:                                         # gold cut by the frame edge
+                if g.get("t0") is not None and t < g["t0"] + GOLD_SLAM:      # the slam-in (scale 2.2 -> 1 in ~0.4 s) overshoots the frame on purpose
+                    continue
                 gx0, gy0, gx1, gy1 = g["box"]
                 area = max(0.0, gx1 - gx0) * max(0.0, gy1 - gy0)
                 vis = max(0.0, min(gx1, W) - max(gx0, 0)) * max(0.0, min(gy1, H) - max(gy0, 0))
