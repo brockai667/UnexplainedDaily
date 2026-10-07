@@ -4,6 +4,7 @@
 -> doodle/episodes/<name>/AUTHOR.md   (autor potom pise doodle/episodes/<name>/screenplay.yaml)"""
 import argparse
 import os
+import re
 import sys
 
 import yaml
@@ -56,6 +57,42 @@ SEES exactly what it says, big, and something moves all the time.
 """
 
 
+# "How to work" for an author that has NO tools (batch.py: `claude -p --tools ""`): the whole reply is the file
+HOW_TEXT = """## How to work (you have NO tools: your whole reply is the file)
+1. This brief is all you need. There are no files to open and nothing to run; nobody answers questions.
+2. Reply with the complete file `{sp}` as plain text and nothing else: the HEADER below copied verbatim, then `styles:`,
+   `shapes:` (only your NEW drawings), then `scenes:` as the last top-level key. No prose, no explanations, no code fences.
+3. Afterwards a program compiles the file and measures every `check:` entry on screen (is the thing visible and big enough when
+   its word is spoken). What it finds is sent back to you and you may repair the file at most twice - so get the structure,
+   the ids and the word anchors right the first time.
+
+"""
+
+
+def build(B, ep_dir, patterns=(), text_only=False):
+    """Text of the author brief (AUTHOR.md) for the brief dict B (name, header, scenes) and the absolute episode folder ep_dir.
+    patterns = keys of lib/patterns.yaml to include. text_only=True: the reader has no tools, so the "How to work" section
+    says "reply with the file" instead of "write it with Write/Edit and run accept.py" (batch.py)."""
+    root = os.path.dirname(HERE)
+    ep_rel = os.path.relpath(ep_dir, root).replace("\\", "/")
+    lib, pats = W.load_lib([]), W.load_patterns([])
+    sp = ep_rel + "/screenplay.yaml"
+    rules = RULES.format(sp=sp, ep=ep_rel, root=root.replace("\\", "/"))
+    if text_only:
+        rules = re.sub(r"## How to work.*?(?=## Rules for every scene)", lambda m: HOW_TEXT.format(sp=sp), rules, flags=re.S)
+    out = [rules]
+    out.append("## HEADER (copy verbatim as the start of the file)\n```yaml\n" + B["header"].rstrip() + "\n```\n")
+    out.append("## SCENES THE PRODUCER WANTS (you may merge two neighbours or split one if it reads better)\n" +
+               "\n".join(f"- `{p['id']}` {p['sents']}: {p['must']}" for p in B["scenes"]) + "\n")
+    out.append("## " + W.catalog(lib) + "\n")
+    chosen = [k for k in patterns if k in pats]
+    if chosen:
+        out.append("## PATTERN SCENES\n" + "\n".join(
+            f"### {k} - {pats[k]['use']}\n(its sentences: {pats[k]['words']})\n```yaml\n" + W.dump({"scenes": [pats[k]["scene"]]}) + "```\n" for k in chosen))
+    out.append("## ENGINE DOCUMENTATION\n" + W.api_doc())
+    return "\n".join(out)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("brief")
@@ -65,21 +102,8 @@ def main():
     B = yaml.safe_load(open(a.brief, encoding="utf-8"))
     ep_dir = os.path.join(HERE, "episodes", a.name)
     os.makedirs(ep_dir, exist_ok=True)
-    root = os.path.dirname(HERE)
-    ep_rel = os.path.relpath(ep_dir, root).replace("\\", "/")
-    lib, pats = W.load_lib([]), W.load_patterns([])
-    out = [RULES.format(sp=ep_rel + "/screenplay.yaml", ep=ep_rel, root=root.replace("\\", "/"))]
-    out.append("## HEADER (copy verbatim as the start of the file)\n```yaml\n" + B["header"].rstrip() + "\n```\n")
-    out.append("## SCENES THE PRODUCER WANTS (you may merge two neighbours or split one if it reads better)\n" +
-               "\n".join(f"- `{p['id']}` {p['sents']}: {p['must']}" for p in B["scenes"]) + "\n")
-    out.append("## " + W.catalog(lib) + "\n")
-    chosen = [k for k in a.patterns.split(",") if k in pats]
-    if chosen:
-        out.append("## PATTERN SCENES\n" + "\n".join(
-            f"### {k} - {pats[k]['use']}\n(its sentences: {pats[k]['words']})\n```yaml\n" + W.dump({"scenes": [pats[k]["scene"]]}) + "```\n" for k in chosen))
-    out.append("## ENGINE DOCUMENTATION\n" + W.api_doc())
     path = os.path.join(ep_dir, "AUTHOR.md")
-    open(path, "w", encoding="utf-8").write("\n".join(out))
+    open(path, "w", encoding="utf-8").write(build(B, ep_dir, a.patterns.split(",")))
     print(path, f"({os.path.getsize(path) // 1024} kB, ~{os.path.getsize(path) // 3500} tis. tokenov)")
 
 
