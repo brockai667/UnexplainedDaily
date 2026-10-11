@@ -154,6 +154,11 @@ def slugify(text, maxlen=40):
     return re.sub(r"[^a-z0-9]+", "-", s).strip("-")[:maxlen].strip("-") or "topic"
 
 
+def base_slug(slug):
+    """slug without a leading article, for comparing topics"""
+    return re.sub(r"^(the|a|an)-", "", slug)
+
+
 def npx():
     p = shutil.which("npx") or shutil.which("npx.cmd")
     if not p:
@@ -1285,10 +1290,11 @@ def bank_topics(a):
     skip = queued_slugs() | logged_slugs({"OK", "FAILED", "SKIPPED"})
     for key in ("used", "auto", "solved"):
         skip |= {slugify(t) for t in (d.get(key) or [] if isinstance(d, dict) else []) if isinstance(t, str)}
+    skip = {base_slug(x) for x in skip}          # "The Tunguska event" and "Tunguska event" are the same topic
     out = []
     for t in items:
         name = t if isinstance(t, str) else (t.get("title") or t.get("topic") or t.get("name") or "")
-        if name and slugify(name) not in skip and slugify(name) not in {slugify(x) for x in out}:
+        if name and base_slug(slugify(name)) not in skip and base_slug(slugify(name)) not in {base_slug(slugify(x)) for x in out}:
             out.append(name)
         if len(out) >= a.from_bank:
             break

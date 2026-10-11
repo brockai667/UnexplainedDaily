@@ -1,6 +1,6 @@
 {
- "_comment": "Banka tem pre stickman engine (UnexplainedDaily). Kazda tema musi mat clanok na Wikipedii - storyboard.py z neho robi fact sheet. Ziadne konspiracie bez podkladu; zahada ma byt skutocna a doložena.",
- "used": ["Gobekli Tepe", "The Mary Celeste", "The Antikythera mechanism"],
+ "_comment": "used = uz vydane videa (aj starym enginom, scripts/ + pushed.json) alebo duplicitna tema (Eilean Mor = Flannan Isles). Banka tem pre stickman engine (UnexplainedDaily). Kazda tema musi mat clanok na Wikipedii - storyboard.py z neho robi fact sheet. Ziadne konspiracie bez podkladu; zahada ma byt skutocna a doložena.",
+ "used": ["Gobekli Tepe", "The Mary Celeste", "The Antikythera mechanism", "The moai of Easter Island", "Stonehenge", "The Terracotta Army", "Rongorongo", "The Dyatlov Pass incident", "The Wow! signal", "The Yonaguni Monument", "The Bronze Age collapse", "The Carnac stones", "The Oak Island money pit", "The Roanoke Colony", "Great Zimbabwe", "The Bloop", "Cicada 3301", "The Piri Reis map", "The Baghdad Battery", "The Antikythera wreck", "The Bimini Road", "The Hessdalen lights", "The Marfa lights", "The Taos hum", "The Bermuda Triangle", "The Sphinx water erosion hypothesis", "The Eilean Mor mystery"],
  "topics": [
   "Roopkund",
   "The Nazca lines",
