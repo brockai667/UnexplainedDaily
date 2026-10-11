@@ -1,0 +1,474 @@
+title: "D. B. Cooper"
+voice: {voice: am_michael, speed: 1.10, pause: 0.30}
+tail: 2.0
+music: sneaky_snitch.mp3
+loop: {at: "s9.end+0.55", dur: 1.3}
+sentences:
+  s1: "November 1971. A man hijacks a plane flying from Portland to Seattle."
+  s2: "He calls himself Dan Cooper and says he has a bomb."
+  s3: "He demands two hundred thousand dollars and four parachutes."
+  s4: "In Seattle, he lets the passengers go."
+  s5: "Then he orders the crew to refuel and fly on to Mexico City."
+  s6: "Over thick forest in Washington, he opens the rear door."
+  s7: "He parachutes toward an uncertain fate."
+  s8: "In 1980, six thousand dollars of the ransom is found beside the Columbia River."
+  s9: "The rest of the money is never found, and nobody knows who he is."
+gold:
+  - {word: "1971", label: "1971", kind: stamp, top: 128, size: 120, until: "s1.end", stamp: {from: 2.4, r0: -14, r1: -4}}
+  - {word: two, label: "200000", kind: counter, top: 112, size: 112, dur: 0.9, until: "s3.end"}
+  - {word: "1980", label: "1980", kind: stamp, top: 128, size: 120, until: "s8.end", stamp: {from: 2.4, r0: -14, r1: -4}}
+  - {word: never, label: "NEVER FOUND", kind: stamp, top: 118, size: 88, until: "s9.end+0.6", stamp: {from: 2.2, r0: -10, r1: -4}}
+styles:
+  paper: {fill: "#f4efe6", width: 6}
+  metal: {fill: "#9aa5b1", width: 6}
+shapes:
+  jet:
+    - {poly: [[-236,-110],[-246,-212],[-176,-212],[-96,-116]], fill: "#c1121f"}
+    - {ellipse: [-196,-148,44,20], style: metal}
+    - {path: "M-246,-86 Q-252,-128 -200,-128 L150,-128 Q246,-122 246,-80 Q238,-40 150,-38 L-190,-38 Q-244,-44 -246,-86 Z", style: paper}
+    - {line: [[-206,-70],[236,-70]], width: 7, stroke: "#3d5a80"}
+    - {line: [[-150,-96],[110,-96]], width: 14, stroke: "#4a90c2", dash: "14 36"}
+    - {poly: [[150,-114],[198,-114],[222,-92],[150,-92]], fill: "#4a90c2", width: 5}
+    - {ellipse: [-50,-98,6,8], fill: "#222222", width: 2}
+    - {poly: [[-30,-60],[-130,-4],[-76,-4],[56,-60]], style: metal}
+    - {circle: [-40,-14,10], fill: "#222222"}
+    - {circle: [150,-14,10], fill: "#222222"}
+  towers:
+    - {rect: [-72,-130,44,130,0], fill: "#34495e", width: 5}
+    - {rect: [-30,-215,52,215,0], fill: "#2c3e50", width: 5}
+    - {rect: [20,-165,48,165,0], fill: "#3d566e", width: 5}
+    - {rect: [60,-105,34,105,0], fill: "#34495e", width: 5}
+    - {line: [[-4,-196],[-4,-16]], width: 9, stroke: "#ffd166", dash: "10 18"}
+    - {line: [[44,-146],[44,-16]], width: 9, stroke: "#ffd166", dash: "10 18"}
+  hills:
+    - {path: "M-400,620 Q-100,540 160,600 T520,590 T900,610 L900,1500 L-400,1500 Z", fill: "#17332d", width: 5}
+  pine:
+    - {poly: [[-38,0],[0,-120],[38,0]], fill: "#0b1f1a", width: 5}
+    - {poly: [[-28,-62],[0,-160],[28,-62]], fill: "#0b1f1a", width: 5}
+  pinerow:
+    - {use: pine, at: [-260,0], scale: 1.6}
+    - {use: pine, at: [-130,10], scale: 1.9}
+    - {use: pine, at: [0,0], scale: 1.6}
+    - {use: pine, at: [130,10], scale: 1.9}
+    - {use: pine, at: [260,0], scale: 1.6}
+    - {use: pine, at: [390,10], scale: 1.9}
+    - {use: pine, at: [520,0], scale: 1.6}
+    - {use: pine, at: [650,10], scale: 1.9}
+    - {use: pine, at: [780,0], scale: 1.6}
+    - {use: pine, at: [910,10], scale: 1.9}
+  cloud:
+    - {ellipse: [0,-20,80,26], fill: "#6b5876", width: 5}
+    - {ellipse: [50,-6,50,20], fill: "#6b5876", width: 5}
+  bombicon:
+    - {circle: [0,-40,38], fill: "#222222"}
+    - {rect: [-14,-92,28,18,3], fill: "#555555", width: 5}
+    - {path: "M0,-92 Q10,-116 26,-110", stroke: "#8d5524", width: 6}
+    - {poly: [[26,-110],[42,-126],[34,-104],[52,-108],[32,-96]], fill: "#ffb703", width: 3}
+  briefcase:
+    - {rect: [-30,-22,60,44,6], fill: "#6b4423"}
+    - {rect: [-6,-6,12,10,2], fill: "#ffd166", width: 3}
+  cabin:
+    - {rect: [-300,-300,2400,1200,0], fill: "#ece3cf", width: 5}
+    - {rect: [-300,900,2400,420,0], fill: "#4b5563", width: 5}
+    - {line: [[-60,500],[1500,500]], width: 100, stroke: "#8ecae6", dash: "110 110"}
+  pack:
+    - {rect: [-32,-88,64,88,12], fill: "#6a994e"}
+    - {path: "M-16,-88 L-16,-18 M16,-88 L16,-18", width: 8, stroke: "#222222"}
+    - {rect: [-14,-62,28,22,4], fill: "#bc4749", width: 4}
+  bundle:
+    - {rect: [-30,-19,60,38,4], fill: "#74c69d"}
+    - {rect: [-7,-19,14,38,0], fill: "#f4e285", width: 4}
+  runway:
+    - {rect: [-400,820,1900,500,0], fill: "#2d3142", width: 5}
+    - {line: [[-400,905],[1500,905]], width: 8, stroke: "#f4efe6", dash: "60 50"}
+  steps:
+    - {poly: [[0,-96],[110,0],[0,0]], style: metal}
+    - {line: [[0,-72],[28,-72],[28,-48],[56,-48],[56,-24],[84,-24],[84,0]], width: 6}
+  terminal:
+    - {rect: [-120,-140,240,140,0], fill: "#e0d5bd"}
+    - {line: [[-92,-92],[92,-92]], width: 36, stroke: "#ffd166", dash: "36 22"}
+    - {rect: [-20,-66,40,66,0], fill: "#ffd166", width: 5}
+  truck:
+    - {rect: [-110,-100,150,70,16], fill: "#e63946"}
+    - {rect: [40,-84,70,54,10], fill: "#f1faee"}
+    - {circle: [-70,-24,24], fill: "#222222"}
+    - {circle: [70,-24,24], fill: "#222222"}
+  hose:
+    - {path: "M175,838 Q240,905 320,872 T400,850", stroke: "#222222", width: 11}
+  star:
+    - {poly: [[0,-60],[14,-19],[57,-19],[23,7],[35,49],[0,24],[-35,49],[-23,7],[-57,-19],[-14,-19]], fill: "#ffd166"}
+  dot:
+    - {circle: [0,0,9], fill: "#f4efe6", width: 4}
+  qmdisc:
+    - {circle: [0,0,240], fill: "#fff0b8", width: 5}
+  tailsec:
+    - {poly: [[-215,-150],[-235,-330],[-155,-330],[-65,-170]], fill: "#c1121f"}
+    - {poly: [[300,-190],[-150,-190],[-250,-150],[-120,-40],[300,-20]], style: paper}
+    - {rect: [40,-170,110,150,8], fill: "#ffe8a3"}
+    - {group: stairs, pivot: [40,-20], items: [{poly: [[45,-20],[150,-20],[112,64],[8,64]], style: metal}]}
+    - {group: door, pivot: [150,-170], items: [{rect: [40,-170,110,150,8], fill: "#c9d1d9"}]}
+  faller:
+    - {circle: [0,-36,13], fill: "#f4efe6", width: 5}
+    - {path: "M0,-23 L0,16 M0,-16 L-24,-44 M0,-16 L24,-40 M0,16 L-18,44 M0,16 L20,40", width: 6}
+  chutist:
+    - {path: "M-120,-170 Q-110,-300 0,-304 Q110,-300 120,-170 Q60,-200 0,-172 Q-60,-200 -120,-170 Z", fill: "#e63946", width: 6}
+    - {path: "M-120,-170 L-6,-46 M120,-170 L6,-46 M0,-172 L0,-46 M0,-22 L0,18 L-14,46 M0,18 L14,46", width: 5}
+    - {circle: [0,-34,12], fill: "#f4efe6", width: 5}
+  riverbank:
+    - {rect: [-400,560,1900,44,0], fill: "#6a994e", width: 5}
+    - {rect: [-400,600,1900,180,0], fill: "#7ab8d9", width: 5}
+    - {rect: [190,540,300,16,0], fill: "#6c757d", width: 5}
+    - {path: "M230,556 L230,602 M450,556 L450,602", width: 8}
+    - {path: "M60,650 q22,-14 44,0 t44,0 M360,700 q22,-14 44,0 t44,0 M560,640 q22,-14 44,0 t44,0", stroke: "#ffffff", width: 5}
+    - {path: "M-400,770 Q150,730 450,766 T1400,756 L1400,1500 L-400,1500 Z", fill: "#e9d8a6", width: 5}
+  reeds:
+    - {path: "M0,0 L-10,-96 M12,0 L18,-120 M-12,0 L-30,-80", width: 6, stroke: "#4f772d"}
+    - {ellipse: [18,-128,6,16], fill: "#7f5539", width: 3}
+scenes:
+- id: flight
+  sents: [s1]
+  camera: {zoom: 1.0, at: [360, 620], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: dusk, x: 0, y: 0}
+  - {kind: shape, shape: hills, x: 0, y: 0}
+  - {id: cl1, kind: shape, shape: cloud, x: 560, y: 360, scale: 1.5}
+  - {id: cl2, kind: shape, shape: cloud, x: 160, y: 450, scale: 1.1}
+  - {id: cL, kind: shape, shape: towers, x: 120, y: 710, scale: 1.3, hidden: true}
+  - {id: cR, kind: shape, shape: towers, x: 610, y: 700, scale: 1.3, hidden: true}
+  - {kind: shape, shape: pinerow, x: 360, y: 830, scale: 0.8}
+  props:
+  - {id: jet, kind: shape, shape: jet, x: -330, y: 560, scale: 1.25}
+  beats:
+  - {at: scene+0.05, who: jet, do: move, to: [400, 520], until: scene.end, ease: sine.out}
+  - {at: scene+0.05, who: cam, do: push, zoom: 1.2, target: [360, 580], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - {at: scene, who: cl1, do: move, dx: -140, until: scene.end, ease: none}
+  - {at: scene, who: cl2, do: move, dx: -90, until: scene.end, ease: none}
+  - {at: "word:1971", who: fx, do: flash, peak: 0.3}
+  - {at: "word:man", who: jet, do: jiggle, amp: 0.05, freq: 4}
+  - {at: "word:hijacks", who: fx, do: lines, dur: 0.8, target: [360, 540]}
+  - {at: "word:plane", who: jet, do: rotate, to: -4, dur: 0.5}
+  - {at: "word:flying", who: jet, do: rotate, to: 0, dur: 0.5}
+  - {at: "word:Portland-0.15", who: cL, do: pop, dur: 0.3, sfx: [tick, 0.3]}
+  - {at: "word:Seattle-0.15", who: cR, do: pop, dur: 0.3, sfx: [tick, 0.3]}
+  check:
+  - {thing: "the plane", ids: [jet], word: "flying"}
+  - {thing: "Portland", ids: [cL], word: "Portland"}
+  - {thing: "Seattle", ids: [cR], word: "Seattle"}
+- id: bomb
+  sents: [s2]
+  in: {type: slide}
+  camera: {zoom: 1.15, at: [340, 700], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {kind: shape, shape: cabin, x: 0, y: 0}
+  props:
+  - {id: case, kind: shape, shape: briefcase, on: man, anchor: hand, offset: [0, 14], scale: 1.2}
+  - {id: bub, kind: shape, shape: bubble, x: 370, y: 500, scale: 1.4, hidden: true}
+  - {id: bomb, kind: shape, shape: bombicon, x: 377, y: 620, scale: 1.7, hidden: true}
+  cast:
+  - {id: stew, x: 560, gy: 900, k: 1.25, facing: l, coat: '#1d3557', coat_len: 36, hair: '#6d4c41', face: ok}
+  - {id: man, x: 170, gy: 900, k: 1.3, coat: '#2b2d42', coat_len: 30, hair: '#1b1b1b', face: flat, hidden: true}
+  beats:
+  - {at: scene, who: man, do: show}
+  - {at: prev, who: man, do: enter, from: -80, to: 170, until: "word:himself"}
+  - {at: "word:himself", who: stew, do: look, target: man}
+  - {at: "word:Dan", who: man, do: pose, name: lean_in, dur: 0.3}
+  - {at: "word:Cooper", who: man, do: nod, until: "word:says"}
+  - {at: "word:says", who: stew, do: face, name: worried}
+  - {at: "word:says", who: cam, do: push, zoom: 1.35, target: [370, 560], screen: [360, 620], until: scene.end, ease: sine.inOut}
+  - {at: "word:has-0.3", who: bub, do: pop, dur: 0.25, sfx: [tick, 0.4]}
+  - {at: prev, who: bomb, do: pop, dur: 0.25}
+  - {at: "word:has", who: stew, do: startle}
+  - {at: prev, who: stew, do: pose, name: cheeks, dur: 0.2}
+  - {at: prev, who: stew, do: face, name: scared}
+  - {at: "word:bomb", who: bomb, do: jiggle, amp: 0.1, freq: 6}
+  check:
+  - {thing: "the bomb", ids: [bomb], word: "has"}
+  - {thing: "the man", ids: [man], word: "Cooper"}
+  - {thing: "the stewardess", ids: [stew], word: "says"}
+- id: demand
+  sents: [s3]
+  in: {type: flash}
+  camera: {zoom: 1.0, at: [360, 730], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {kind: shape, shape: cabin, x: 0, y: 0}
+  props:
+  - {id: b1, kind: shape, shape: bundle, x: 130, y: 873, scale: 1.4, hidden: true}
+  - {id: b2, kind: shape, shape: bundle, x: 214, y: 873, scale: 1.4, hidden: true}
+  - {id: b3, kind: shape, shape: bundle, x: 298, y: 873, scale: 1.4, hidden: true}
+  - {id: b4, kind: shape, shape: bundle, x: 382, y: 873, scale: 1.4, hidden: true}
+  - {id: b5, kind: shape, shape: bundle, x: 172, y: 820, scale: 1.4, hidden: true}
+  - {id: b6, kind: shape, shape: bundle, x: 256, y: 820, scale: 1.4, hidden: true}
+  - {id: b7, kind: shape, shape: bundle, x: 340, y: 820, scale: 1.4, hidden: true}
+  - {id: b8, kind: shape, shape: bundle, x: 214, y: 767, scale: 1.4, hidden: true}
+  - {id: b9, kind: shape, shape: bundle, x: 298, y: 767, scale: 1.4, hidden: true}
+  - {id: b10, kind: shape, shape: bundle, x: 256, y: 714, scale: 1.4, hidden: true}
+  - {id: p1, kind: shape, shape: pack, x: 500, y: 900, scale: 1.05, hidden: true}
+  - {id: p2, kind: shape, shape: pack, x: 561, y: 900, scale: 1.05, hidden: true}
+  - {id: p3, kind: shape, shape: pack, x: 622, y: 900, scale: 1.05, hidden: true}
+  - {id: p4, kind: shape, shape: pack, x: 683, y: 900, scale: 1.05, hidden: true}
+  cast:
+  - {id: man, x: 432, gy: 900, k: 1.2, facing: l, coat: '#2b2d42', coat_len: 30, hair: '#1b1b1b', face: flat}
+  beats:
+  - {at: "word:demands", who: man, do: point, target: [250, 800]}
+  - at: "word:two-0.05"
+    who: b1
+    do: pop
+    dur: 0.12
+    sfx: [tick, 0.3]
+    repeat:
+      every: 0.17
+      n: 10
+      cycle: [{who: b1}, {who: b2}, {who: b3}, {who: b4}, {who: b5}, {who: b6}, {who: b7}, {who: b8}, {who: b9}, {who: b10}]
+  - {at: "word:hundred", who: cam, do: shake, amp: 2, dur: 0.3}
+  - {at: "word:thousand", who: fx, do: flash, peak: 0.25}
+  - {at: "word:thousand", who: cam, do: push, zoom: 1.1, target: [420, 780], screen: [360, 700], until: scene.end, ease: sine.inOut}
+  - {at: "word:dollars", who: man, do: pose, name: arms_crossed, dur: 0.2}
+  - at: "word:dollars+0.2"
+    who: p1
+    do: pop
+    dur: 0.15
+    sfx: [tick, 0.35]
+    repeat:
+      every: 0.25
+      n: 4
+      cycle: [{who: p1}, {who: p2}, {who: p3}, {who: p4}]
+  - {at: "word:four", who: man, do: pose, name: hands_up, dur: 0.2}
+  - {at: "word:four+0.2", who: man, do: look, target: p2}
+  - {at: "word:parachutes", who: p2, do: jiggle, amp: 0.08}
+  - {at: "word:parachutes", who: p3, do: jiggle, amp: 0.08}
+  check:
+  - {thing: "the money", ids: [b1, b2, b3, b4, b5, b6, b7, b8, b9, b10], word: "dollars"}
+  - {thing: "the parachutes", ids: [p1, p2, p3, p4], word: "four"}
+  - {thing: "the man", ids: [man], word: "demands"}
+- id: seattle
+  sents: [s4]
+  in: {type: slide}
+  camera: {zoom: 1.25, at: [370, 790], screen: [360, 700]}
+  set:
+  - {kind: shape, shape: nightsky, x: 0, y: 0}
+  - {kind: shape, shape: runway, x: 0, y: 0}
+  - {id: jet, kind: shape, shape: jet, x: 215, y: 868, scale: 1.0}
+  - {id: term, kind: shape, shape: terminal, x: 610, y: 868, scale: 0.9}
+  props:
+  - {id: stp, kind: shape, shape: steps, x: 330, y: 868, hidden: true}
+  cast:
+  - {id: pa, x: 345, gy: 885, k: 0.6, coat: '#e07a5f', coat_len: 20, hair: '#3b2a1e', hidden: true}
+  - {id: pb, x: 345, gy: 885, k: 0.6, coat: '#81b29a', coat_len: 20, hair: '#6d4c41', hidden: true}
+  - {id: pc, x: 345, gy: 885, k: 0.6, coat: '#f2cc8f', coat_len: 20, hair: '#222222', hidden: true}
+  - {id: pd, x: 345, gy: 885, k: 0.6, coat: '#3d405b', coat_len: 20, hair: '#b08968', hidden: true}
+  beats:
+  - {at: "word:Seattle-0.1", who: stp, do: pop, dur: 0.3, sfx: [tick, 0.3]}
+  - {at: "word:he", who: jet, do: jiggle, amp: 0.02, freq: 5}
+  - {at: "word:lets-0.2", who: pa, do: show}
+  - {at: prev, who: pa, do: enter, from: 345, to: 560, until: "word:go", stride: 70, lift: 12}
+  - {at: "word:the", who: pb, do: show}
+  - {at: prev, who: pb, do: enter, from: 345, to: 510, until: "word:go", stride: 70, lift: 12}
+  - {at: "word:passengers-0.1", who: pc, do: show}
+  - {at: prev, who: pc, do: enter, from: 345, to: 460, until: "word:go", stride: 70, lift: 12}
+  - {at: "word:passengers+0.3", who: pd, do: show}
+  - {at: prev, who: pd, do: enter, from: 345, to: 410, until: "word:go", stride: 70, lift: 12}
+  - {at: scene, who: cam, do: push, zoom: 1.45, target: [470, 800], screen: [360, 690], until: scene.end, ease: sine.inOut}
+  - {at: "word:go", who: pa, do: pose, name: wave, dur: 0.3}
+  - {at: "word:go", who: term, do: jiggle, amp: 0.03}
+  check:
+  - {thing: "the passengers", ids: [pa, pb, pc, pd], word: "passengers"}
+  - {thing: "the plane", ids: [jet], word: "lets"}
+  - {thing: "the terminal", ids: [term], word: "lets"}
+- id: refuel
+  sents: [s5]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [400, 740], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: nightsky, x: 0, y: 0}
+  - {kind: shape, shape: runway, x: 0, y: 0}
+  - {id: truck, kind: shape, shape: truck, x: 60, y: 878}
+  props:
+  - {id: jet, kind: shape, shape: jet, x: 460, y: 868, scale: 1.2}
+  - {id: hose, kind: shape, shape: hose, x: 0, y: 0, hidden: true}
+  - {id: d1, kind: shape, shape: dot, x: 230, y: 640, hidden: true}
+  - {id: d2, kind: shape, shape: dot, x: 275, y: 565, hidden: true}
+  - {id: d3, kind: shape, shape: dot, x: 335, y: 500, hidden: true}
+  - {id: d4, kind: shape, shape: dot, x: 405, y: 455, hidden: true}
+  - {id: d5, kind: shape, shape: dot, x: 480, y: 425, hidden: true}
+  - {id: d6, kind: shape, shape: dot, x: 545, y: 410, hidden: true}
+  - {id: star, kind: shape, shape: star, x: 590, y: 395, scale: 1.8, hidden: true}
+  cast:
+  - {id: crew, x: 700, gy: 895, k: 0.8, facing: l, cap: navy, coat: '#1d3557', coat_len: 30, hair: '#3b2a1e', hidden: true}
+  beats:
+  - {at: scene, who: crew, do: show}
+  - {at: scene, who: jet, do: rock, amp: 0.012, freq: 5, until: "word:fly"}
+  - {at: prev, who: crew, do: enter, from: 800, to: 640, until: "word:orders"}
+  - {at: "word:crew", who: crew, do: point, target: [480, 800]}
+  - {at: "word:crew+0.3", who: crew, do: face, name: happy}
+  - {at: "word:refuel-0.1", who: hose, do: pop, dur: 0.3, sfx: [tick, 0.3]}
+  - {at: "word:refuel", who: truck, do: rock, amp: 0.01, freq: 8, until: "word:fly"}
+  - {at: "word:refuel", who: cam, do: tilt, zoom: 1.18, target: [380, 790], screen: [360, 640], dur: 1.0, ease: power1.inOut}
+  - {at: "word:fly-0.1", who: hose, do: hide}
+  - {at: "word:fly", who: jet, do: move, dx: 1000, dy: -260, dur: 1.5, ease: power2.in, sfx: [whoosh, 0.5]}
+  - {at: "word:fly", who: fx, do: lines, dur: 1.0, target: [360, 780]}
+  - {at: "word:fly+0.4", who: cam, do: tilt, zoom: 1.0, target: [400, 540], screen: [360, 640], dur: 1.0, ease: power2.inOut}
+  - at: "word:Mexico-0.3"
+    who: d1
+    do: pop
+    dur: 0.12
+    sfx: [tick, 0.3]
+    repeat:
+      every: 0.13
+      n: 6
+      cycle: [{who: d1}, {who: d2}, {who: d3}, {who: d4}, {who: d5}, {who: d6}]
+  - {at: "word:City-0.1", who: star, do: pop, dur: 0.3, sfx: [thud, 0.4]}
+  - {at: "word:City", who: star, do: pulse, amp: 0.1, freq: 3, until: scene.end}
+  check:
+  - {thing: "the fuel truck", ids: [truck], word: "refuel"}
+  - {thing: "the crew", ids: [crew], word: "crew"}
+  - {thing: "the star", ids: [star], word: "City"}
+- id: door
+  sents: [s6]
+  in: {type: flash}
+  camera: {zoom: 1.1, at: [440, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: nightsky, x: 0, y: 0}
+  - {id: moon, kind: shape, shape: moon_milky_, x: 580, y: 330, scale: 1.4}
+  - {id: hl, kind: shape, shape: hills, x: 0, y: 180}
+  - {id: pn1, kind: shape, shape: pinerow, x: 360, y: 1090, scale: 1.0}
+  props:
+  - {id: tsec, kind: shape, shape: tailsec, x: 380, y: 720, scale: 1.5}
+  cast:
+  - {id: man, x: 522, gy: 690, k: 0.8, coat: '#2b2d42', coat_len: 30, hair: '#1b1b1b', face: flat, hidden: true}
+  beats:
+  - {at: scene, who: tsec.stairs, do: hide}
+  - {at: scene, who: cam, do: push, zoom: 1.45, target: [500, 600], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - {at: scene, who: pn1, do: move, dx: -260, until: scene.end, ease: none}
+  - {at: scene, who: hl, do: move, dx: -120, until: scene.end, ease: none}
+  - {at: "word:forest", who: moon, do: pulse, amp: 0.05, freq: 2, until: scene.end}
+  - {at: "word:Washington", who: cam, do: shake, amp: 3, dur: 0.4}
+  - {at: "word:opens-0.1", who: tsec.door, do: fade, to: 0, dur: 0.35, sfx: [thud, 0.4]}
+  - {at: "word:rear", who: tsec.stairs, do: show}
+  - {at: "word:opens", who: man, do: show}
+  - {at: "word:opens+0.25", who: man, do: sway, until: scene.end}
+  - {at: "word:door", who: fx, do: lines, dur: 0.9, target: [520, 600]}
+  - {at: "word:opens+0.3", who: man, do: look, target: down}
+  check:
+  - {thing: "the open door", ids: [tsec], word: "door"}
+  - {thing: "the man", ids: [man], word: "door"}
+- id: jump
+  sents: [s7]
+  in: {type: cut}
+  camera: {zoom: 1.0, at: [360, 560], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: nightsky, x: 0, y: 0}
+  - {id: moon, kind: shape, shape: moon_milky_, x: 570, y: 300, scale: 1.6}
+  - {kind: shape, shape: hills, x: 0, y: 460}
+  - {id: pn, kind: shape, shape: pinerow, x: 360, y: 1120, scale: 1.1}
+  props:
+  - {id: jet, kind: shape, shape: jet, x: 140, y: 400, scale: 0.6}
+  - {id: fl, kind: shape, shape: faller, x: 170, y: 470, scale: 1.4}
+  - {id: ch, kind: shape, shape: chutist, x: 204, y: 545, scale: 1.2, hidden: true}
+  beats:
+  - {at: scene, who: fl, do: path, points: [[170, 470], [180, 495], [192, 520], [204, 545]], dur: 0.4, ease: power2.in}
+  - {at: scene, who: jet, do: move, dx: 650, dy: -80, until: scene.end, ease: power2.in}
+  - {at: scene, who: moon, do: pulse, amp: 0.03, freq: 0.8, until: scene.end}
+  - {at: "word:parachutes-0.1", who: fl, do: hide}
+  - {at: prev, who: ch, do: pop, dur: 0.25, sfx: [whoosh, 0.4]}
+  - {at: prev, who: ch, do: path, points: [[204, 545], [290, 610], [250, 700], [320, 790]], dur: 2.6, ease: sine.inOut}
+  - {at: "word:parachutes", who: cam, do: shake, amp: 4, dur: 0.3}
+  - {at: "word:toward", who: cam, do: tilt, zoom: 1.1, target: [320, 860], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - {at: "word:uncertain", who: ch, do: rock, amp: 0.12, freq: 1.2, until: scene.end}
+  - {at: "word:fate", who: fx, do: flash, peak: 0.2}
+  check:
+  - {thing: "the parachute", ids: [ch], word: "uncertain"}
+  - {thing: "the plane", ids: [jet], word: "toward"}
+- id: river
+  sents: [s8]
+  in: {type: slide}
+  camera: {zoom: 1.1, at: [360, 700], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {id: rb, kind: shape, shape: riverbank, x: 0, y: 0}
+  - {kind: shape, shape: reeds, x: 70, y: 810, scale: 1.4}
+  - {kind: shape, shape: reeds, x: 650, y: 800, scale: 1.2}
+  props:
+  - {id: fb, kind: shape, shape: bundle, x: 330, y: 872, scale: 1.9, hidden: true}
+  - {id: u1, kind: shape, shape: bundle, x: 150, y: 880, scale: 1.4, rot: 12, hidden: true}
+  - {id: u2, kind: shape, shape: bundle, x: 520, y: 884, scale: 1.4, rot: -10, hidden: true}
+  - {id: u3, kind: shape, shape: bundle, x: 600, y: 870, scale: 1.4, rot: 20, hidden: true}
+  cast:
+  - {id: kid, x: 300, gy: 880, k: 1.1, coat: '#e07a5f', coat_len: 24, hair: '#6d4c41', hidden: true}
+  beats:
+  - {at: scene, who: cam, do: push, zoom: 1.166, target: [360, 700], screen: [360, 640], until: "word:ransom", ease: sine.inOut}
+  - {at: scene, who: kid, do: show}
+  - {at: prev, who: kid, do: enter, from: -80, to: 300, until: "word:six"}
+  - {at: "word:1980", who: fx, do: flash, peak: 0.3}
+  - {at: "word:ransom", who: kid, do: look, target: down}
+  - {at: "word:ransom", who: cam, do: push, zoom: 1.7, target: [330, 800], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - {at: "word:found-0.3", who: kid, do: bend_over}
+  - {at: "word:found-0.2", who: fb, do: pop, dur: 0.2, sfx: [thud, 0.4]}
+  - {at: "word:found+0.3", who: fb, do: attach, to: kid, anchor: hand, offset: [0, -10]}
+  - {at: prev, who: kid, do: pose, name: hands_up, dur: 0.3}
+  - {at: prev, who: kid, do: face, name: wow}
+  - at: "word:found+0.5"
+    who: u1
+    do: pop
+    dur: 0.2
+    sfx: [tick, 0.3]
+    repeat:
+      every: 0.3
+      n: 3
+      cycle: [{who: u1}, {who: u2}, {who: u3}]
+  - {at: "word:Columbia", who: kid, do: look, target: [600, 650]}
+  check:
+  - {thing: "the bundle", ids: [fb], word: "found"}
+  - {thing: "the river", ids: [rb], word: "River"}
+  - {thing: "the finder", ids: [kid], word: "ransom"}
+- id: unknown
+  sents: [s9]
+  in: {type: slide}
+  camera: {zoom: 1.25, at: [330, 700], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: nightsky, x: 0, y: 0}
+  - {id: moon, kind: shape, shape: moon_milky_, x: 570, y: 340, scale: 1.5}
+  - {kind: shape, shape: hills, x: 0, y: 220}
+  - {kind: shape, shape: pinerow, x: 360, y: 1110, scale: 1.0}
+  props:
+  - {id: r1, kind: shape, shape: bundle, x: 450, y: 880, scale: 1.5, hidden: true}
+  - {id: r2, kind: shape, shape: bundle, x: 540, y: 884, scale: 1.5, rot: 10, hidden: true}
+  - {id: r3, kind: shape, shape: bundle, x: 495, y: 840, scale: 1.5, rot: -8, hidden: true}
+  - {id: qmd, kind: shape, shape: qmdisc, x: 330, y: 520, hidden: true}
+  - {id: qm, kind: shape, shape: question, x: 330, y: 560, scale: 3.2, hidden: true}
+  cast:
+  - {id: man, x: 250, gy: 885, k: 1.4, coat: '#111111', skin: '#111111', hair: '#111111', face: flat}
+  beats:
+  - {at: scene, who: cam, do: pull, zoom: 1.0, target: [360, 660], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - at: "word:rest"
+    who: r1
+    do: pop
+    dur: 0.15
+    repeat:
+      every: 0.2
+      n: 3
+      cycle: [{who: r1}, {who: r2}, {who: r3}]
+  - {at: "word:money", who: man, do: look, target: r2}
+  - at: "word:never"
+    who: r1
+    do: fade
+    to: 0
+    dur: 0.5
+    repeat:
+      every: 0.25
+      n: 3
+      cycle: [{who: r1}, {who: r2}, {who: r3}]
+  - {at: "word:found", who: man, do: pose, name: shrug, dur: 0.3}
+  - {at: "word:nobody", who: fx, do: flash, peak: 0.2}
+  - {at: "word:nobody-0.2", who: qmd, do: pop, dur: 0.4}
+  - {at: "word:nobody-0.2", who: qm, do: pop, dur: 0.4, sfx: [thud, 0.4]}
+  - {at: "word:knows", who: qmd, do: move, dy: -50, until: scene.end, ease: sine.out}
+  - {at: "word:knows", who: qm, do: move, dy: -50, until: scene.end, ease: sine.out}
+  - {at: "word:knows", who: qm, do: pulse, amp: 0.06, freq: 2, until: scene.end}
+  - {at: "word:who", who: man, do: fade, to: 0, dur: 1.4}
+  - {at: scene, who: moon, do: pulse, amp: 0.03, freq: 0.8, until: scene.end}
+  check:
+  - {thing: "the question mark", ids: [qm], word: "knows"}
+  - {thing: "the man", ids: [man], word: "money"}
+  - {thing: "the money", ids: [r1, r2, r3], word: "money"}

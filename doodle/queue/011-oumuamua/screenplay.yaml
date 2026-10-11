@@ -1,0 +1,332 @@
+title: "Oumuamua"
+voice: {voice: am_michael, speed: 1.10, pause: 0.30}
+tail: 2.0
+music: sneaky_snitch.mp3
+loop: {at: "s9.end+0.55", dur: 1.3}
+sentences:
+  s1: "October 2017. On a mountain in Hawaii, a telescope spots a strange object."
+  s2: "A physicist finds it, thirty three million kilometres from Earth."
+  s3: "Forty days after passing the Sun, it is already flying away."
+  s4: "Meet Oumuamua, the first confirmed visitor from interstellar space."
+  s5: "It is red, up to one thousand metres long, and it tumbles."
+  s6: "Near the Sun, comets grow a cloud. This one does not."
+  s7: "Yet it speeds up, and gravity does not explain why."
+  s8: "Maybe a broken comet, or a piece of a planet rich in nitrogen ice."
+  s9: "It is leaving for good. Where it comes from, nobody knows."
+gold:
+  - {word: "2017", label: "2017", kind: stamp, top: 128, size: 120, until: "word:mountain", stamp: {from: 2.4, r0: -14, r1: -4}}
+  - {word: thirty, label: "33 MILLION", kind: stamp, top: 118, size: 92, until: "s2.end", stamp: {from: 2.2, r0: -10, r1: -4}}
+  - {word: first, label: "FIRST EVER", kind: stamp, top: 118, size: 92, until: "s4.end", stamp: {from: 2.2, r0: -10, r1: -4}}
+  - {word: thousand, label: "1000", kind: counter, top: 112, size: 112, dur: 0.9, until: "s5.end"}
+  - {word: "s9/nobody", label: "NOBODY KNOWS", kind: stamp, top: 118, size: 80, until: "s9.end+0.6", stamp: {from: 2.2, r0: -10, r1: -4}}
+styles:
+  rockred: {fill: "#b5392b", width: 6}
+  crater: {fill: "#8f2a20", width: 4}
+  paper: {fill: "#f4f1ea", width: 6}
+shapes:
+  oum:
+    - {ellipse: [0, 0, 150, 42], style: rockred}
+    - {ellipse: [-50, -8, 24, 11], style: crater}
+    - {ellipse: [30, 12, 18, 9], style: crater}
+    - {circle: [92, -12, 9], style: crater}
+    - {circle: [-105, 10, 7], style: crater}
+  obsdome:
+    - {rect: [-110, -110, 220, 110, 4], style: paper}
+    - {path: "M-110,-110 Q-110,-240 0,-240 Q110,-240 110,-110 Z", style: paper}
+    - {rect: [-22, -238, 44, 130, 0], fill: "#1c2540", width: 5}
+    - {rect: [-24, -90, 48, 90, 3], fill: "#7a6a58", width: 5}
+    - {group: tele, pivot: [0, -130], items: [{poly: [[-16, -130], [16, -130], [26, -300], [-26, -300]], fill: "#8d99a6", width: 6}]}
+  palm:
+    - {poly: [[-12, 0], [12, 0], [7, -190], [-7, -190]], fill: "#8b5a2b", width: 6}
+    - {poly: [[0, -190], [-80, -232], [-135, -190], [-70, -205]], fill: "#2e8b57", width: 5}
+    - {poly: [[0, -190], [80, -232], [135, -190], [70, -205]], fill: "#2e8b57", width: 5}
+    - {poly: [[0, -190], [-30, -260], [5, -275], [30, -215]], fill: "#3aa86a", width: 5}
+    - {poly: [[0, -190], [40, -255], [75, -250], [40, -205]], fill: "#3aa86a", width: 5}
+  mount:
+    - {poly: [[-470, 0], [-210, -190], [-70, -300], [0, -340], [80, -305], [230, -190], [480, 0]], fill: "#3b5b4a", width: 6}
+    - {line: [[-60, -290], [-130, -150], [-110, -60]], width: 4}
+    - {line: [[70, -290], [130, -170], [120, -80]], width: 4}
+  glow:
+    - {circle: [0, 0, 46], fill: "#ffe066", stroke: "#ffe066", opacity: 0.4, width: 3}
+    - {circle: [0, 0, 22], fill: "#fff6bf", width: 5}
+    - {line: [[-62, 0], [62, 0]], stroke: "#ffe066", width: 4}
+    - {line: [[0, -62], [0, 62]], stroke: "#ffe066", width: 4}
+  groundn:
+    - {rect: [-400, 0, 1600, 500, 0], fill: "#27332b", stroke: "#27332b", width: 2}
+    - {line: [[-400, 0], [1200, 0]], width: 8}
+  room:
+    - {rect: [-300, -200, 1320, 1080, 0], fill: "#2a3550", stroke: "#2a3550", width: 2}
+    - {rect: [-300, 880, 1320, 500, 0], fill: "#4a3b32", stroke: "#4a3b32", width: 2}
+    - {line: [[-300, 880], [1020, 880]], width: 8}
+    - {rect: [40, 330, 150, 200, 6], fill: "#0e1730", width: 6}
+    - {line: [[115, 330], [115, 530]], width: 5}
+    - {line: [[40, 430], [190, 430]], width: 5}
+  screen1:
+    - {rect: [-70, -16, 140, 16, 4], fill: "#555b66", width: 5}
+    - {rect: [-14, -80, 28, 66, 0], fill: "#555b66", width: 5}
+    - {rect: [-190, -350, 380, 276, 14], fill: "#2b2f3a", width: 6}
+    - {rect: [-170, -330, 340, 236, 8], fill: "#0b1020", width: 4}
+    - {circle: [-105, -212, 44], fill: "#2e86c1", width: 5}
+    - {poly: [[-125, -232], [-100, -244], [-85, -222], [-108, -205]], fill: "#4caf50", width: 4}
+    - {circle: [125, -218, 10], fill: "#ffd54f", width: 4}
+  comet:
+    - {ellipse: [110, 0, 170, 80], fill: "#e3f2fd", opacity: 0.75, width: 4}
+    - {poly: [[40, -34], [330, -70], [330, 70], [40, 34]], fill: "#f1f8ff", opacity: 0.8, width: 4}
+    - {circle: [-10, 0, 38], fill: "#ffffff", width: 6}
+    - {circle: [-18, -6, 12], fill: "#cfd8dc", width: 3}
+  pieces:
+    - {group: p1, pivot: [-45, 10], items: [{poly: [[-90, -10], [-40, -40], [-10, 0], [-45, 35], [-85, 25]], fill: "#9aa5b1", width: 6}]}
+    - {group: p2, pivot: [30, -30], items: [{poly: [[5, -60], [55, -70], [70, -30], [35, -5], [8, -25]], fill: "#b0bac4", width: 6}]}
+    - {group: p3, pivot: [25, 45], items: [{poly: [[0, 25], [45, 20], [60, 55], [30, 75], [-5, 60]], fill: "#8793a0", width: 6}]}
+  icyplanet:
+    - {circle: [0, 0, 92], fill: "#8fb3d9", width: 6}
+    - {poly: [[-60, -40], [-20, -70], [10, -45], [-25, -20], [-55, -15]], fill: "#ffffff", width: 4}
+    - {poly: [[20, 10], [60, 0], [70, 35], [35, 55], [10, 40]], fill: "#ffffff", width: 4}
+    - {ellipse: [-40, 45, 22, 12], fill: "#ffffff", width: 4}
+    - {group: chunk, pivot: [62, -62], items: [{circle: [62, -62, 24], fill: "#dbe8f5", width: 5}]}
+  orbits:
+    - {circle: [0, 0, 110], stroke: "#8794a3", width: 4}
+    - {circle: [0, 0, 170], stroke: "#8794a3", width: 4}
+    - {circle: [0, 0, 230], stroke: "#8794a3", width: 4}
+    - {circle: [0, 0, 290], stroke: "#8794a3", width: 4}
+    - {circle: [78, -78, 12], fill: "#c9a227", width: 4}
+    - {circle: [-120, 120, 14], fill: "#4f9dde", width: 4}
+    - {circle: [-163, -50, 16], fill: "#d9534f", width: 4}
+    - {circle: [190, 150, 18], fill: "#e8b45c", width: 4}
+  ticks:
+    - {line: [[0, 0], [0, -60]], stroke: "#ffffff", width: 7}
+    - {line: [[18, 0], [18, -60]], stroke: "#ffffff", width: 7}
+    - {line: [[36, 0], [36, -60]], stroke: "#ffffff", width: 7}
+    - {line: [[54, 0], [54, -60]], stroke: "#ffffff", width: 7}
+    - {line: [[72, 0], [72, -60]], stroke: "#ffffff", width: 7}
+    - {line: [[90, 0], [90, -60]], stroke: "#ffffff", width: 7}
+    - {line: [[108, 0], [108, -60]], stroke: "#ffffff", width: 7}
+    - {line: [[126, 0], [126, -60]], stroke: "#ffffff", width: 7}
+  scope:
+    - {line: [[0, -100], [-55, 0]], width: 7}
+    - {line: [[0, -100], [55, 0]], width: 7}
+    - {line: [[0, -100], [0, 0]], width: 6}
+    - {group: tube, pivot: [0, -100], items: [{poly: [[-14, -100], [14, -100], [22, -210], [-22, -210]], fill: "#8d99a6", width: 6}]}
+scenes:
+- id: dome
+  sents: [s1]
+  camera: {zoom: 1.0, at: [360, 620], screen: [360, 620]}
+  set:
+  - {kind: shape, shape: nightsky_milky_, x: 0, y: 0}
+  - {kind: shape, shape: seadark, x: 0, y: 0}
+  - {id: mnt, kind: shape, shape: mount, x: 360, y: 900}
+  - {id: obs, kind: shape, shape: obsdome, x: 360, y: 575}
+  - {id: palm1, kind: shape, shape: palm, x: 150, y: 710, scale: 0.9}
+  - {id: palm2, kind: shape, shape: palm, x: 560, y: 690, scale: 0.8}
+  props:
+  - {id: glow, kind: shape, shape: glow, x: 555, y: 290, scale: 1.6, hidden: true}
+  beats:
+  - {at: scene+0.05, who: cam, do: push, zoom: 1.15, target: [360, 560], screen: [360, 600], until: 'word:object', ease: sine.inOut}
+  - {at: scene+0.1, who: palm1, do: rock, amp: 0.03, freq: 1.1, until: scene.end}
+  - {at: scene+0.1, who: palm2, do: rock, amp: 0.04, freq: 0.9, until: scene.end}
+  - {at: 'word:mountain', who: mnt, do: pulse, amp: 0.03, freq: 2.5, until: 'word:Hawaii'}
+  - {at: 'word:Hawaii', who: palm1, do: jiggle, amp: 0.12}
+  - {at: 'word:Hawaii', who: palm2, do: jiggle, amp: 0.12}
+  - {at: 'word:telescope-0.2', who: obs.tele, do: rotate, to: 50, dur: 1.0, ease: power2.inOut}
+  - {at: 'word:telescope', who: obs, do: jiggle, amp: 0.03}
+  - {at: 'word:spots', who: glow, do: pop, sfx: [tick, 0.4]}
+  - {at: 'word:strange', who: glow, do: pulse, amp: 0.3, freq: 3, until: scene.end}
+  - {at: 'word:object', who: fx, do: flash, peak: 0.2}
+  - {at: 'word:object', who: glow, do: shake, amp: 3, dur: 0.4}
+  check:
+  - {thing: "the observatory dome with its telescope", ids: [obs], word: "mountain"}
+  - {thing: "the palm trees", ids: [palm1, palm2], word: "Hawaii"}
+  - {thing: "the strange glowing dot", ids: [glow], word: "object"}
+- id: desk
+  sents: [s2]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 620], screen: [360, 620]}
+  set:
+  - {kind: shape, shape: nightsky, x: 0, y: 0}
+  - {kind: shape, shape: room, x: 0, y: 0}
+  - {id: tbl, kind: shape, shape: desk, x: 300, y: 880}
+  - {id: mon, kind: shape, shape: screen1, x: 300, y: 690}
+  props:
+  - {id: dl, kind: line, points: [[243, 478], [413, 473]], style: dash, color: yellow, width: 7, arrows: both, hidden: true}
+  - {id: dotp, kind: shape, shape: glow, x: 425, y: 472, scale: 0.6, hidden: true}
+  cast:
+  - {id: phys, x: 570, gy: 880, k: 1.4, coat: '#f5f5f5', coat_len: 34, glasses: true, hair: '#3b2a1e', face: curious, facing: l}
+  beats:
+  - {at: scene+0.05, who: cam, do: push, zoom: 1.2, target: [345, 560], screen: [360, 610], until: scene.end-0.2, ease: sine.inOut}
+  - {at: scene+0.05, who: phys, do: enter, from: 900, to: 570, dur: 0.8, stride: 150, lift: 24}
+  - {at: 'word:physicist', who: phys, do: face, name: curious}
+  - {at: 'word:finds-0.1', who: phys, do: pose, name: lean_in, dur: 0.3}
+  - {at: 'word:finds', who: phys, do: point, target: [425, 472]}
+  - {at: 'word:finds+0.1', who: phys, do: face, name: wow}
+  - {at: 'word:finds', who: dotp, do: pop, sfx: [tick, 0.4]}
+  - {at: 'word:finds+0.2', who: dotp, do: pulse, amp: 0.4, freq: 3, until: scene.end}
+  - {at: 'word:thirty-0.1', who: dl, do: show}
+  - {at: prev, who: dl, do: draw_line, dur: 1.3}
+  - {at: 'word:million', who: mon, do: jiggle, amp: 0.02}
+  - {at: 'word:kilometres', who: dl, do: pulse, amp: 0.08, freq: 3, until: 'word:Earth'}
+  - {at: 'word:Earth', who: mon, do: pulse, amp: 0.03, freq: 2, until: scene.end}
+  - {at: 'word:Earth', who: phys, do: nod, until: scene.end}
+  check:
+  - {thing: "the physicist", ids: [phys], word: "finds"}
+  - {thing: "the screen with Earth and the dot", ids: [mon], word: "million"}
+- id: map
+  sents: [s3, s4]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 560], screen: [360, 600]}
+  set:
+  - {kind: shape, shape: nightsky, x: 0, y: 0}
+  - {id: orb, kind: shape, shape: orbits, x: 360, y: 560}
+  - {id: sol, kind: shape, shape: sun, x: 360, y: 560, scale: 0.9}
+  props:
+  - {id: traj, kind: line, points: [[-60, 260], [45, 439], [150, 568], [255, 644], [360, 670], [465, 644], [570, 568], [675, 439], [780, 260]], style: dash, color: orange, width: 6, hidden: true}
+  - {id: tk, kind: shape, shape: ticks, x: 540, y: 800, hidden: true}
+  - {id: rk, kind: shape, shape: oum, x: -60, y: 260, scale: 0.45, hidden: true}
+  - {id: rk2, kind: shape, shape: oum, x: -60, y: 260, scale: 0.45, hidden: true}
+  - {id: rkbig, kind: shape, shape: oum, x: 360, y: 345, scale: 0.8, hidden: true}
+  beats:
+  - {at: 'word:Forty-0.1', who: cam, do: push, zoom: 1.2, target: [420, 600], screen: [360, 610], until: 'word:flying', ease: sine.inOut}
+  - {at: scene+0.1, who: sol, do: pulse, amp: 0.04, freq: 2, until: scene.end}
+  - {at: 'word:Forty', who: rk, do: show}
+  - {at: prev, who: rk, do: path, points: [[-60, 260], [220, 807], [500, 807], [780, 260]], dur: 3.6, ease: sine.inOut}
+  - {at: 'word:days', who: tk, do: pop, sfx: [tick, 0.4]}
+  - {at: 'word:passing', who: sol, do: jiggle, amp: 0.1}
+  - {at: 'word:flying-0.1', who: fx, do: lines, dur: 0.9, target: [600, 520]}
+  - {at: 'word:away', who: tk, do: jiggle, amp: 0.1}
+  - {at: 'word:Meet', who: cam, do: pull, zoom: 1.0, target: [360, 560], screen: [360, 600], until: scene.end, ease: sine.inOut}
+  - {at: 'word:Meet', who: traj, do: show}
+  - {at: prev, who: traj, do: draw_line, dur: 1.6}
+  - {at: 'word:Oumuamua', who: rkbig, do: pop, sfx: [whoosh, 0.3]}
+  - {at: 'word:Oumuamua+0.1', who: rkbig, do: spin, speed: 25, until: scene.end}
+  - {at: 'word:first', who: rkbig, do: jiggle, amp: 0.1}
+  - {at: 'word:confirmed', who: rk2, do: show}
+  - {at: prev, who: rk2, do: path, points: [[-60, 260], [220, 807], [500, 807], [780, 260]], dur: 1.8, ease: sine.inOut}
+  check:
+  - {thing: "the Sun", ids: [sol], word: "Sun"}
+  - {thing: "the red rock", ids: [rkbig], word: "visitor"}
+  - {thing: "the dashed track", ids: [traj], word: "interstellar"}
+- id: rock
+  sents: [s5]
+  in: {type: slide}
+  camera: {zoom: 1.1, at: [360, 600], screen: [360, 600]}
+  set:
+  - {kind: shape, shape: nightsky, x: 0, y: 0}
+  props:
+  - {id: rk, kind: shape, shape: oum, x: 360, y: 590, scale: 1.8}
+  - {id: len, kind: line, points: [[90, 885], [630, 885]], style: gold, width: 8, arrows: both, hidden: true}
+  beats:
+  - {at: scene+0.05, who: cam, do: pull, zoom: 0.95, target: [360, 590], screen: [360, 600], until: scene.end, ease: sine.inOut}
+  - {at: scene+0.05, who: rk, do: spin, speed: 20, until: 'word:tumbles-0.1'}
+  - {at: 'word:tumbles-0.1', who: rk, do: spin, speed: 85, until: scene.end}
+  - {at: 'word:red', who: rk, do: pulse, amp: 0.06, freq: 3, until: 'word:up'}
+  - {at: 'word:red', who: fx, do: flash, peak: 0.25}
+  - {at: 'word:thousand-0.1', who: len, do: show}
+  - {at: prev, who: len, do: draw_line, dur: 1.0}
+  - {at: 'word:metres', who: len, do: pulse, amp: 0.1, freq: 3, until: 'word:long'}
+  - {at: 'word:long', who: len, do: jiggle, amp: 0.1}
+  - {at: 'word:long', who: rk, do: jiggle, amp: 0.05}
+  - {at: 'word:tumbles', who: rk, do: shake, amp: 4, dur: 0.4}
+  - {at: 'word:tumbles+0.2', who: fx, do: lines, dur: 0.8, target: [360, 600]}
+  check:
+  - {thing: "the red rock", ids: [rk], word: "red"}
+  - {thing: "the long tumbling rock", ids: [rk], word: "long"}
+- id: cloud
+  sents: [s6, s7]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 620], screen: [360, 620]}
+  set:
+  - {kind: shape, shape: nightsky, x: 0, y: 0}
+  - {kind: shape, shape: groundn, x: 0, y: 880}
+  - {id: sol, kind: shape, shape: sun, x: 120, y: 600, scale: 1.1}
+  props:
+  - {id: com, kind: shape, shape: comet, x: 240, y: 450, scale: 0.95, hidden: true}
+  - {id: rk, kind: shape, shape: oum, x: -200, y: 770, scale: 1.3, hidden: true}
+  cast:
+  - {id: ast, x: 560, gy: 880, k: 1.2, coat: '#3d5a80', coat_len: 24, hair: '#3b2a1e', face: curious, facing: l}
+  beats:
+  - {at: scene+0.05, who: cam, do: push, zoom: 1.15, target: [330, 620], screen: [360, 620], until: 'word:This', ease: sine.inOut}
+  - {at: scene+0.1, who: sol, do: pulse, amp: 0.04, freq: 2, until: scene.end}
+  - {at: scene+0.1, who: ast, do: enter, from: 900, to: 560, dur: 0.9, stride: 150, lift: 24}
+  - {at: 'word:Sun', who: sol, do: jiggle, amp: 0.1}
+  - {at: 'word:comets-0.1', who: com, do: pop, sfx: [whoosh, 0.3]}
+  - {at: 'word:comets', who: com, do: move, dx: 40, dur: 3.5, ease: none}
+  - {at: 'word:cloud', who: com, do: pulse, amp: 0.08, freq: 3, until: 'word:This'}
+  - {at: 'word:This-0.1', who: rk, do: show}
+  - {at: prev, who: rk, do: move, to: [350, 770], dur: 1.1, ease: power2.out}
+  - {at: 'word:one', who: ast, do: pose, name: scratch}
+  - {at: 'word:one', who: ast, do: face, name: curious}
+  - {at: 'word:Yet', who: cam, do: pan, zoom: 1.1, target: [420, 640], screen: [360, 630], until: scene.end, ease: sine.inOut}
+  - {at: 'word:speeds-0.1', who: fx, do: lines, dur: 1.0, target: [360, 760]}
+  - {at: 'word:speeds', who: rk, do: move, to: [1000, 770], dur: 1.2, ease: power2.in, sfx: [whoosh, 0.4]}
+  - {at: 'word:gravity', who: ast, do: pose, name: shrug, dur: 0.3}
+  - {at: 'word:gravity', who: ast, do: face, name: worried}
+  - {at: 'word:why', who: ast, do: pose, name: head, dur: 0.3}
+  check:
+  - {thing: "the Sun", ids: [sol], word: "Sun"}
+  - {thing: "the comet with its cloud", ids: [com], word: "cloud"}
+  - {thing: "the bare red rock", ids: [rk], word: "one"}
+- id: ideas
+  sents: [s8]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 620], screen: [360, 620]}
+  set:
+  - {kind: shape, shape: nightsky, x: 0, y: 0}
+  - {kind: shape, shape: groundn, x: 0, y: 880}
+  props:
+  - {id: bubL, kind: shape, shape: bubble, x: 195, y: 480, scale: 1.05, hidden: true}
+  - {id: pcs, kind: shape, shape: pieces, x: 195, y: 485, scale: 0.85, hidden: true}
+  - {id: bubR, kind: shape, shape: bubble, x: 525, y: 480, scale: 1.05, hidden: true}
+  - {id: icyp, kind: shape, shape: icyplanet, x: 525, y: 485, scale: 0.75, hidden: true}
+  cast:
+  - {id: sci, x: 360, gy: 880, k: 1.15, coat: '#f5f5f5', coat_len: 30, glasses: true, hair: '#3b2a1e', face: think}
+  beats:
+  - {at: scene+0.05, who: cam, do: push, zoom: 1.1, target: [360, 560], screen: [360, 610], until: scene.end, ease: sine.inOut}
+  - {at: scene+0.1, who: sci, do: enter, from: -100, to: 360, dur: 0.9, stride: 150, lift: 24}
+  - {at: 'word:Maybe', who: sci, do: pose, name: think, dur: 0.4}
+  - {at: 'word:Maybe', who: sci, do: face, name: think}
+  - {at: 'word:broken-0.3', who: bubL, do: pop, sfx: [tick, 0.3]}
+  - {at: 'word:broken-0.1', who: pcs, do: pop}
+  - {at: 'word:broken', who: pcs.p1, do: move, dx: -35, dy: 10, dur: 0.7}
+  - {at: 'word:broken', who: pcs.p2, do: move, dx: 30, dy: -25, dur: 0.7}
+  - {at: 'word:broken', who: pcs.p3, do: move, dx: 25, dy: 35, dur: 0.7}
+  - {at: 'word:comet', who: sci, do: look, target: [195, 485]}
+  - {at: 'word:piece-0.3', who: bubR, do: pop, sfx: [tick, 0.3]}
+  - {at: 'word:piece-0.1', who: icyp, do: pop}
+  - {at: 'word:planet', who: sci, do: look, target: [525, 485]}
+  - {at: 'word:planet', who: icyp, do: rock, amp: 0.05, freq: 2, until: 'word:ice'}
+  - {at: 'word:ice', who: icyp.chunk, do: move, dx: 55, dy: -45, dur: 0.7}
+  - {at: 'word:nitrogen', who: sci, do: pose, name: scratch, dur: 0.4}
+  check:
+  - {thing: "the broken comet", ids: [pcs], word: "comet"}
+  - {thing: "the icy planet", ids: [icyp], word: "planet"}
+  - {thing: "the scientist", ids: [sci], word: "piece"}
+- id: gone
+  sents: [s9]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 620], screen: [360, 620]}
+  set:
+  - {kind: shape, shape: nightsky, x: 0, y: 0}
+  - {kind: shape, shape: groundn, x: 0, y: 880}
+  props:
+  - {id: scp, kind: shape, shape: scope, x: 300, y: 880, scale: 1.2}
+  - {id: rk, kind: shape, shape: oum, x: 330, y: 560, scale: 1.2}
+  cast:
+  - {id: ast, x: 170, gy: 880, k: 1.25, coat: '#3d5a80', coat_len: 24, hair: '#3b2a1e', face: curious}
+  beats:
+  - {at: scene+0.05, who: cam, do: push, zoom: 1.1, target: [400, 580], screen: [360, 610], until: scene.end, ease: sine.inOut}
+  - {at: scene+0.1, who: ast, do: enter, from: -120, to: 170, dur: 0.8, stride: 150, lift: 24}
+  - {at: scene+0.1, who: rk, do: spin, speed: 18, until: scene.end}
+  - {at: 'word:leaving', who: rk, do: move, to: [640, 420], dur: 4.4, ease: sine.in}
+  - {at: 'word:leaving', who: rk, do: scale, to: 0.12, dur: 4.4, ease: sine.in}
+  - {at: 'word:leaving', who: ast, do: pose, name: shade, dur: 0.4}
+  - {at: 'word:leaving', who: ast, do: look, target: [640, 420]}
+  - {at: 'word:good', who: ast, do: face, name: sad}
+  - {at: 'word:Where', who: ast, do: pose, name: shrug, dur: 0.3}
+  - {at: 'word:Where', who: scp.tube, do: rotate, to: 28, dur: 0.9}
+  - {at: 'word:comes', who: ast, do: look, target: [-100, 560]}
+  - {at: 'word:nobody', who: ast, do: face, name: worried}
+  - {at: 'word:knows', who: ast, do: pose, name: head, dur: 0.4}
+  - {at: 'word:knows', who: scp, do: jiggle, amp: 0.05}
+  check:
+  - {thing: "the red rock", ids: [rk], word: "leaving"}
+  - {thing: "the astronomer", ids: [ast], word: "Where"}
+  - {thing: "the telescope", ids: [scp], word: "knows"}

@@ -1,0 +1,533 @@
+title: "Ball Lightning"
+voice: {voice: am_michael, speed: 1.10, pause: 0.30}
+tail: 2.0
+music: sneaky_snitch.mp3
+loop: {at: "s11.end+0.55", dur: 1.3}
+sentences:
+  s1: "Under thunderclouds, for centuries, people describe a strange light."
+  s2: "It is a glowing ball, sometimes as small as a pea."
+  s3: "Sometimes it is several meters wide."
+  s4: "For a split second, a lightning bolt flashes."
+  s5: "But witnesses say the ball lasts far longer."
+  s6: "Some reports say it explodes, leaving a smell of sulfur behind."
+  s7: "In January 2014, a light spectrum of what seems to be ball lightning is published."
+  s8: "It comes with a high speed video."
+  s9: "Still, scientific data remain scarce."
+  s10: "In laboratories, experiments create effects that look similar."
+  s11: "But how they relate to real ball lightning remains unclear."
+gold:
+  - {word: centuries, label: CENTURIES, kind: stamp, top: 118, size: 96, until: "s1.end", stamp: {from: 2.2, r0: -10, r1: -4}}
+  - {word: split, label: "SPLIT SECOND", kind: stamp, top: 118, size: 80, until: "s4.end", stamp: {from: 2.2, r0: -10, r1: -4}}
+  - {word: sulfur, label: SULFUR, kind: stamp, top: 118, size: 100, until: "s6.end", stamp: {from: 2.2, r0: -10, r1: -4}}
+  - {word: "2014", label: "2014", kind: counter, top: 112, size: 112, dur: 0.9, until: "word:seems"}
+  - {word: unclear, label: UNEXPLAINED, kind: stamp, top: 118, size: 80, until: "s11.end+0.6", stamp: {from: 2.2, r0: -10, r1: -4}}
+styles:
+  glow: {fill: "#fff3a0", width: 6}
+  wood: {fill: "#a9794a", width: 6}
+  steel: {fill: "#8d99ae", width: 6}
+shapes:
+  orb:
+  - {circle: [0, 0, 64], fill: "#fff3a0", opacity: 0.4, stroke: "#ffd23f", width: 4}
+  - group: rays
+    pivot: [0, 0]
+    items:
+    - {line: [[0, -80], [0, -106]], stroke: "#f4a300", width: 7}
+    - {line: [[57, -57], [75, -75]], stroke: "#f4a300", width: 7}
+    - {line: [[80, 0], [106, 0]], stroke: "#f4a300", width: 7}
+    - {line: [[57, 57], [75, 75]], stroke: "#f4a300", width: 7}
+    - {line: [[0, 80], [0, 106]], stroke: "#f4a300", width: 7}
+    - {line: [[-57, 57], [-75, 75]], stroke: "#f4a300", width: 7}
+    - {line: [[-80, 0], [-106, 0]], stroke: "#f4a300", width: 7}
+    - {line: [[-57, -57], [-75, -75]], stroke: "#f4a300", width: 7}
+  - {circle: [0, 0, 40], fill: "#fff3a0", width: 6}
+  - {circle: [-12, -14, 10], fill: white, stroke: white, width: 3}
+  pea:
+  - {circle: [0, 0, 36], fill: "#7bc043", width: 6}
+  - {path: "M-20,-6 Q-10,-24 8,-20", stroke: white, width: 5}
+  bolt:
+  - {poly: [[14, -560], [-46, -300], [-6, -300], [-60, 0], [50, -330], [6, -330], [74, -560]], fill: "#fff59d", width: 6}
+  - {line: [[30, -520], [-10, -330]], stroke: white, width: 5}
+  stormcloud:
+  - {ellipse: [0, 10, 150, 46], fill: "#5c5f7a", width: 6}
+  - {circle: [-92, -26, 52], fill: "#5c5f7a", width: 6}
+  - {circle: [-24, -50, 64], fill: "#6b6e8c", width: 6}
+  - {circle: [64, -34, 56], fill: "#5c5f7a", width: 6}
+  watch:
+  - {rect: [-12, -112, 24, 24, 4], fill: "#c9a227", width: 5}
+  - {circle: [0, 0, 80], fill: "#c9a227", width: 6}
+  - {circle: [0, 0, 62], fill: "#fff8e1", width: 5}
+  - {line: [[0, -62], [0, -46]], width: 5}
+  - {line: [[62, 0], [46, 0]], width: 5}
+  - {line: [[0, 62], [0, 46]], width: 5}
+  - {line: [[-62, 0], [-46, 0]], width: 5}
+  - group: hand
+    pivot: [0, 0]
+    items:
+    - {line: [[0, 0], [0, -50]], stroke: "#b00020", width: 6}
+  - {circle: [0, 0, 8], fill: black, width: 3}
+  burst:
+  - {poly: [[0, -160], [20.7, -77.3], [80, -138.6], [56.6, -56.6], [138.6, -80], [77.3, -20.7], [160, 0], [77.3, 20.7], [138.6, 80], [56.6, 56.6], [80, 138.6], [20.7, 77.3], [0, 160], [-20.7, 77.3], [-80, 138.6], [-56.6, 56.6], [-138.6, 80], [-77.3, 20.7], [-160, 0], [-77.3, -20.7], [-138.6, -80], [-56.6, -56.6], [-80, -138.6], [-20.7, -77.3]], fill: "#ffe066", width: 7}
+  - {circle: [0, 0, 62], fill: white, width: 5}
+  gascloud:
+  - {circle: [-70, 10, 48], fill: "#e3d65c", width: 6}
+  - {circle: [0, -20, 62], fill: "#e8dc6a", width: 6}
+  - {circle: [72, 8, 50], fill: "#e3d65c", width: 6}
+  - {ellipse: [0, 26, 110, 34], fill: "#e8dc6a", width: 6}
+  barn:
+  - {rect: [-150, -190, 300, 190, 4], fill: "#a23b2a", width: 7}
+  - {poly: [[-172, -190], [0, -292], [172, -190]], fill: "#6d2e22", width: 7}
+  - {rect: [-48, -120, 96, 120, 4], fill: "#7b3226", width: 6}
+  - {line: [[-48, -120], [48, 0]], width: 5}
+  - {line: [[48, -120], [-48, 0]], width: 5}
+  - {circle: [0, -225, 16], fill: "#2b2d42", width: 5}
+  hilltop:
+  - {ellipse: [0, 170, 780, 170], fill: "#2d5a3d", width: 7}
+  - {path: "M-208,22 L-200,6 L-192,22", stroke: black, width: 5}
+  - {path: "M-68,14 L-60,-2 L-52,14", stroke: black, width: 5}
+  - {path: "M142,16 L150,0 L158,16", stroke: black, width: 5}
+  - {path: "M252,26 L260,10 L268,26", stroke: black, width: 5}
+  nightground:
+  - {rect: [-1200, 0, 3600, 600, 2], fill: "#2d5a3d", width: 7}
+  - {path: "M60,26 L68,8 L76,26", stroke: black, width: 5}
+  - {path: "M260,34 L268,16 L276,34", stroke: black, width: 5}
+  - {path: "M470,26 L478,8 L486,26", stroke: black, width: 5}
+  - {path: "M660,34 L668,16 L676,34", stroke: black, width: 5}
+  streetground:
+  - {rect: [-1200, 0, 3600, 600, 2], fill: "#4b4a5a", width: 7}
+  - {line: [[-100, 80], [900, 80]], stroke: "#7a7890", width: 5, dash: "30 24"}
+  room:
+  - {rect: [-500, -200, 1720, 1080, 2], fill: "#e8d5b0", width: 5}
+  - {rect: [-500, 880, 1720, 500, 2], fill: "#8d6e63", width: 5}
+  - {rect: [-500, 830, 1720, 50, 2], fill: "#cdb88f", width: 5}
+  - {line: [[-500, 880], [1220, 880]], width: 7}
+  labroom:
+  - {rect: [-500, -200, 1720, 1080, 2], fill: "#dfe8ec", width: 5}
+  - {rect: [-500, 880, 1720, 500, 2], fill: "#b9a58f", width: 5}
+  - {rect: [-500, 830, 1720, 50, 2], fill: "#9fb2bb", width: 5}
+  - {line: [[-500, 880], [1220, 880]], width: 7}
+  - {rect: [30, 340, 240, 14, 3], fill: "#8d6e63", width: 5}
+  - {rect: [60, 290, 34, 50, 4], fill: "#90be6d", width: 4}
+  - {rect: [120, 280, 30, 60, 4], fill: "#f9c74f", width: 4}
+  - {rect: [180, 300, 42, 40, 4], fill: "#f94144", width: 4}
+  labbench:
+  - {rect: [-290, -200, 580, 26, 5], fill: "#8d6e63", width: 7}
+  - {rect: [-262, -174, 524, 174, 2], fill: "#a1887f", width: 7}
+  - {line: [[0, -174], [0, 0]], width: 5}
+  - {circle: [-40, -110, 8], fill: "#d9d9d9", width: 4}
+  - {circle: [40, -110, 8], fill: "#d9d9d9", width: 4}
+  smalltable:
+  - {rect: [-230, -210, 460, 34, 6], fill: "#b5835a", width: 7}
+  - {rect: [-200, -176, 30, 176, 2], fill: "#9a6b43", width: 6}
+  - {rect: [170, -176, 30, 176, 2], fill: "#9a6b43", width: 6}
+  - {rect: [-200, -176, 400, 28, 2], fill: "#a9764d", width: 6}
+  chamber:
+  - {rect: [-120, -26, 240, 26, 4], fill: "#6d6875", width: 6}
+  - {rect: [-96, -236, 192, 212, 26], fill: "#d6f1f7", opacity: 0.6, width: 6}
+  - {rect: [-14, -310, 28, 150, 4], fill: "#8d99ae", width: 6}
+  - {rect: [-14, -90, 28, 66, 4], fill: "#8d99ae", width: 6}
+  - {path: "M-70,-200 Q-60,-216 -40,-212", stroke: white, width: 6}
+  spark:
+  - {line: [[-6, -60], [14, -34], [-12, -18], [10, 6], [-4, 30]], stroke: "#ffb703", width: 7}
+  specscreen:
+  - {rect: [-190, -300, 380, 250, 16], fill: "#2b2d42", width: 7}
+  - {rect: [-166, -278, 332, 206, 6], fill: "#0d1020", width: 4}
+  - {rect: [-30, -52, 60, 40, 4], fill: "#555b6e", width: 6}
+  - {rect: [-96, -14, 192, 14, 4], fill: "#555b6e", width: 6}
+  specbands:
+  - {rect: [-161, -268, 46, 186, 1], fill: "#7b2cbf", stroke: "#7b2cbf", width: 2}
+  - {rect: [-115, -268, 46, 186, 1], fill: "#3a86ff", stroke: "#3a86ff", width: 2}
+  - {rect: [-69, -268, 46, 186, 1], fill: "#2ec4b6", stroke: "#2ec4b6", width: 2}
+  - {rect: [-23, -268, 46, 186, 1], fill: "#80ed99", stroke: "#80ed99", width: 2}
+  - {rect: [23, -268, 46, 186, 1], fill: "#ffd23f", stroke: "#ffd23f", width: 2}
+  - {rect: [69, -268, 46, 186, 1], fill: "#ff9f1c", stroke: "#ff9f1c", width: 2}
+  - {rect: [115, -268, 46, 186, 1], fill: "#e63946", stroke: "#e63946", width: 2}
+  - {line: [[-92, -268], [-92, -82]], stroke: black, width: 5}
+  - {line: [[8, -268], [8, -82]], stroke: black, width: 5}
+  - {line: [[92, -268], [92, -82]], stroke: black, width: 5}
+  filmscreen:
+  - {rect: [-130, -220, 260, 172, 14], fill: "#2b2d42", width: 7}
+  - {rect: [-112, -202, 224, 136, 4], fill: "#16213e", width: 4}
+  - {rect: [-30, -50, 60, 36, 4], fill: "#555b6e", width: 6}
+  - {rect: [-80, -14, 160, 14, 4], fill: "#555b6e", width: 6}
+  - {circle: [98, -188, 7], fill: "#e63946", width: 3}
+  chartboard:
+  - {rect: [-230, -470, 460, 330, 8], fill: "#fdfdf5", width: 7}
+  - {line: [[-190, -170], [-190, -430]], width: 6}
+  - {line: [[-190, -170], [190, -170]], width: 6}
+  - {line: [[-130, -140], [-170, 0]], width: 7}
+  - {line: [[130, -140], [170, 0]], width: 7}
+  - {line: [[0, -140], [0, 0]], width: 7}
+  dot:
+  - {circle: [0, 0, 14], fill: black, width: 3}
+  folder:
+  - {poly: [[-80, 0], [-60, -44], [0, -44], [0, 0]], fill: "#e9c46a", width: 6}
+  - {poly: [[0, 0], [0, -44], [60, -44], [80, 0]], fill: "#f4d58d", width: 6}
+  - {line: [[18, -26], [56, -26]], width: 4}
+  nightwindow:
+  - {rect: [-190, -320, 380, 420, 8], fill: "#23284b", width: 8}
+  - {line: [[0, -320], [0, 100]], width: 8}
+  - {line: [[-190, -110], [190, -110]], width: 8}
+  - {rect: [-206, 100, 412, 22, 4], fill: "#bcb8b1", width: 6}
+scenes:
+- id: storm
+  sents: [s1]
+  camera: {zoom: 1.05, at: [360, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: nightsky, x: 0, y: 0}
+  - {id: c1, kind: shape, shape: stormcloud, x: 130, y: 380, scale: 1.2}
+  - {id: c2, kind: shape, shape: stormcloud, x: 430, y: 400, scale: 1.3}
+  - {id: c3, kind: shape, shape: stormcloud, x: 700, y: 420, scale: 1.1}
+  - {kind: shape, shape: houseL, x: 70, y: 880, scale: 0.75}
+  - {kind: shape, shape: houseR, x: 300, y: 880, scale: 0.75}
+  - {id: chu, kind: shape, shape: church, x: 600, y: 880, scale: 0.95}
+  - {kind: shape, shape: streetground, x: 0, y: 880}
+  props:
+  - {id: bolt1, kind: shape, shape: bolt, x: 520, y: 640, scale: 0.55, hidden: true}
+  - {id: light, kind: shape, shape: orb, x: 270, y: 540, scale: 1.5, hidden: true}
+  cast:
+  - {id: v1, x: 160, gy: 880, k: 1.2, facing: r, coat: "#6b705c", coat_len: 22, hair: "#3b2a1e", face: curious, hidden: true}
+  - {id: v2, x: 360, gy: 880, k: 1.1, facing: l, coat: "#7f5539", coat_len: 18, hair: "#6d4c41", face: curious, hidden: true}
+  beats:
+  - {at: scene+0.05, who: cam, do: push, zoom: 1.25, target: [300, 620], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - {at: scene+0.1, who: c1, do: bob, amp: 6, freq: 0.6, until: scene.end}
+  - {at: scene+0.1, who: c2, do: bob, amp: 8, freq: 0.5, until: scene.end}
+  - {at: scene+0.1, who: c3, do: bob, amp: 6, freq: 0.7, until: scene.end}
+  - {at: "word:thunderclouds-0.1", who: bolt1, do: pop, dur: 0.1, sfx: [boom, 0.35]}
+  - {at: "word:thunderclouds", who: fx, do: flash, peak: 0.6}
+  - {at: "word:thunderclouds+0.25", who: bolt1, do: fade, to: 0, dur: 0.15}
+  - {at: "word:centuries", who: chu, do: jiggle, amp: 0.02}
+  - {at: scene+0.3, who: v1, do: show}
+  - {at: prev, who: v1, do: enter, from: -90, to: 160, dur: 0.7}
+  - {at: scene+0.4, who: v2, do: show}
+  - {at: prev, who: v2, do: enter, from: 820, to: 360, dur: 0.7}
+  - {at: "word:describe", who: v1, do: face, name: wow}
+  - {at: "word:strange-0.15", who: light, do: pop, dur: 0.3, sfx: [tick, 0.4]}
+  - {at: "word:strange", who: v1, do: point, target: [270, 520]}
+  - {at: "word:strange+0.05", who: v2, do: look, target: [270, 520]}
+  - {at: "word:strange+0.1", who: v2, do: face, name: wow}
+  - {at: "word:strange", who: light.rays, do: spin, speed: 40, until: scene.end}
+  - {at: "word:light", who: light, do: pulse, amp: 0.08, freq: 3, until: scene.end}
+  check:
+  - {thing: "the thunderclouds", ids: [c2], word: "thunderclouds"}
+  - {thing: "the villagers", ids: [v1, v2], word: "describe"}
+  - {thing: "the strange light", ids: [light], word: "light"}
+- id: pea
+  sents: [s2]
+  in: {type: slide}
+  camera: {zoom: 1.4, at: [330, 680], screen: [360, 650]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {kind: shape, shape: room, x: 0, y: 0}
+  - {kind: shape, shape: nightwindow, x: 560, y: 560}
+  - {id: tbl, kind: shape, shape: smalltable, x: 400, y: 900}
+  props:
+  - {id: orb2, kind: shape, shape: orb, x: 480, y: 642, scale: 1.2, hidden: true}
+  - {id: peap, kind: shape, shape: pea, x: 320, y: 642, scale: 1.33, hidden: true}
+  cast:
+  - {id: w, x: 110, gy: 900, k: 1.2, facing: r, coat: "#6b705c", coat_len: 22, hair: "#3b2a1e", face: curious, hidden: true}
+  beats:
+  - {at: scene+0.05, who: w, do: show}
+  - {at: prev, who: w, do: enter, from: -80, to: 110, dur: 0.6}
+  - {at: "word:glowing-0.1", who: orb2, do: pop, dur: 0.3, sfx: [tick, 0.4]}
+  - {at: "word:glowing", who: orb2.rays, do: spin, speed: 45, until: scene.end}
+  - {at: "word:glowing", who: w, do: pose, name: lean_in, dur: 0.3}
+  - {at: "word:glowing+0.1", who: w, do: face, name: wow}
+  - {at: "word:ball", who: orb2, do: pulse, amp: 0.08, freq: 3, until: scene.end}
+  - {at: "word:sometimes", who: cam, do: push, zoom: 1.6, target: [370, 650], screen: [360, 650], until: scene.end, ease: sine.inOut}
+  - {at: "word:small-0.1", who: orb2, do: bob, amp: 8, freq: 1.4, until: scene.end}
+  - {at: "word:sometimes", who: peap, do: pop, dur: 0.25, sfx: [tick, 0.4]}
+  - {at: "word:pea", who: w, do: point, target: [320, 640]}
+  - {at: "word:pea+0.15", who: peap, do: jiggle, amp: 0.1}
+  - {at: "word:pea+0.3", who: w, do: look, target: [480, 640]}
+  check:
+  - {thing: "the glowing ball", ids: [orb2], word: "ball"}
+  - {thing: "the pea", ids: [peap], word: "small"}
+  - {thing: "the witness", ids: [w], word: "glowing"}
+- id: giant
+  sents: [s3]
+  in: {type: slide}
+  camera: {zoom: 1.5, at: [360, 560], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: nightsky, x: 0, y: 0}
+  - {kind: shape, shape: nightground, x: 0, y: 880}
+  - {id: tree1, kind: shape, shape: tree, x: 640, y: 880, scale: 1.3}
+  props:
+  - {id: orb3, kind: shape, shape: orb, x: 360, y: 540, scale: 1.2}
+  cast:
+  - {id: m, x: 220, gy: 880, k: 1.0, facing: r, coat: "#7f5539", coat_len: 18, hair: "#6d4c41", face: curious, hidden: true}
+  beats:
+  - {at: scene+0.05, who: cam, do: pull, zoom: 1.0, target: [360, 600], screen: [360, 640], until: "word:wide+0.3", ease: sine.inOut}
+  - {at: scene+0.05, who: m, do: show}
+  - {at: prev, who: m, do: enter, from: -80, to: 220, dur: 0.7}
+  - {at: scene+0.1, who: orb3.rays, do: spin, speed: 25, until: scene.end}
+  - {at: scene+0.1, who: orb3, do: pulse, amp: 0.04, freq: 2, until: scene.end}
+  - {at: scene+0.1, who: tree1, do: rock, amp: 1.5, freq: 0.6, until: scene.end}
+  - {at: "word:sometimes", who: m, do: look, target: [360, 520]}
+  - {at: "word:several-0.1", who: orb3, do: scale, to: 2.5, dur: 0.7, ease: back.out(1.4), sfx: [whoosh, 0.3]}
+  - {at: "word:several", who: m, do: pose, name: hands_up, dur: 0.3}
+  - {at: "word:several", who: m, do: face, name: wow}
+  - {at: "word:meters", who: m, do: step_back, dist: 30}
+  - {at: "word:wide", who: cam, do: shake, amp: 4, dur: 0.3}
+  check:
+  - {thing: "the giant glowing ball", ids: [orb3], word: "wide"}
+  - {thing: "the small man", ids: [m], word: "meters"}
+- id: strike
+  sents: [s4]
+  in: {type: flash}
+  camera: {zoom: 1.1, at: [380, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: nightsky, x: 0, y: 0}
+  - {id: sc1, kind: shape, shape: stormcloud, x: 170, y: 400, scale: 1.5}
+  - {id: sc2, kind: shape, shape: stormcloud, x: 520, y: 390, scale: 1.7}
+  - {kind: shape, shape: hilltop, x: 360, y: 800}
+  - {id: ltree, kind: shape, shape: tree, x: 560, y: 806, scale: 1.2}
+  props:
+  - {id: bolt4, kind: shape, shape: bolt, x: 450, y: 800, scale: 0.8, hidden: true}
+  cast:
+  - {id: wt, x: 240, gy: 802, k: 1.2, facing: r, coat: "#6b705c", coat_len: 22, hair: "#3b2a1e", face: curious}
+  beats:
+  - {at: scene+0.05, who: cam, do: push, zoom: 1.3, target: [400, 620], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - {at: scene+0.1, who: sc1, do: bob, amp: 6, freq: 0.6, until: scene.end}
+  - {at: scene+0.1, who: sc2, do: bob, amp: 8, freq: 0.5, until: scene.end}
+  - {at: scene+0.1, who: ltree, do: rock, amp: 1.5, freq: 0.7, until: scene.end}
+  - {at: "word:split", who: wt, do: look, target: [450, 420]}
+  - {at: "word:second", who: wt, do: face, name: worried}
+  - {at: "word:lightning", who: sc2, do: shake, amp: 4, dur: 0.3}
+  - {at: "word:bolt-0.1", who: bolt4, do: pop, dur: 0.08, sfx: [boom, 0.6]}
+  - {at: "word:bolt-0.1", who: fx, do: flash, peak: 0.8}
+  - {at: "word:bolt-0.05", who: wt, do: startle}
+  - {at: "word:bolt+0.08", who: wt, do: pose, name: cover, dur: 0.15}
+  - {at: "word:bolt+0.1", who: cam, do: shake, amp: 6, dur: 0.35}
+  - {at: "word:flashes+0.1", who: bolt4, do: fade, to: 0, dur: 0.15}
+  - {at: "word:flashes", who: wt, do: face, name: scared}
+  - {at: "word:flashes+0.2", who: wt, do: pose, name: stand, dur: 0.3}
+  check:
+  - {thing: "the lightning bolt", ids: [bolt4], word: "bolt"}
+  - {thing: "the storm cloud", ids: [sc2], word: "lightning"}
+  - {thing: "the watcher", ids: [wt], word: "second"}
+- id: lasts
+  sents: [s5]
+  in: {type: slide}
+  camera: {zoom: 1.1, at: [320, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: nightsky, x: 0, y: 0}
+  - {id: lc1, kind: shape, shape: stormcloud, x: 120, y: 420, scale: 1.3}
+  - {id: lc2, kind: shape, shape: stormcloud, x: 600, y: 430, scale: 1.2}
+  - {kind: shape, shape: hilltop, x: 360, y: 800}
+  - {id: ltree2, kind: shape, shape: tree, x: 560, y: 806, scale: 1.2}
+  props:
+  - {id: orb5, kind: shape, shape: orb, x: 430, y: 470, scale: 1.7}
+  - {id: watch5, kind: shape, shape: watch, x: 215, y: 560, scale: 1.2, hidden: true}
+  cast:
+  - {id: w5, x: 80, gy: 802, k: 1.2, facing: r, coat: "#6b705c", coat_len: 22, hair: "#3b2a1e", face: curious, hidden: true}
+  beats:
+  - {at: scene+0.05, who: cam, do: pan, zoom: 1.15, target: [420, 640], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - {at: scene+0.05, who: orb5, do: move, to: [700, 450], dur: 3.0, ease: none}
+  - {at: scene+0.1, who: orb5.rays, do: spin, speed: 35, until: scene.end}
+  - {at: scene+0.1, who: orb5, do: pulse, amp: 0.05, freq: 2, until: scene.end}
+  - {at: scene+0.1, who: lc1, do: bob, amp: 6, freq: 0.6, until: scene.end}
+  - {at: scene+0.1, who: lc2, do: bob, amp: 6, freq: 0.5, until: scene.end}
+  - {at: scene+0.1, who: ltree2, do: rock, amp: 1.5, freq: 0.7, until: scene.end}
+  - {at: scene+0.02, who: w5, do: show}
+  - {at: prev, who: w5, do: enter, from: -90, to: 80, dur: 0.55}
+  - {at: "word:witnesses", who: w5, do: point, target: [450, 470]}
+  - {at: "word:say", who: w5, do: face, name: wow}
+  - {at: "word:ball", who: w5, do: look, target: [520, 460]}
+  - {at: "word:lasts-0.15", who: watch5, do: pop, dur: 0.25, sfx: [tick, 0.4]}
+  - {at: "word:lasts", who: watch5.hand, do: spin, speed: 420, until: scene.end}
+  - {at: "word:far", who: watch5, do: pulse, amp: 0.06, freq: 3, until: scene.end}
+  - {at: "word:longer", who: w5, do: pose, name: shade, dur: 0.3}
+  check:
+  - {thing: "the glowing ball", ids: [orb5], word: "lasts"}
+  - {thing: "the pocket watch", ids: [watch5], word: "longer"}
+  - {thing: "the witness", ids: [w5], word: "say"}
+- id: boom
+  sents: [s6]
+  in: {type: slide}
+  camera: {zoom: 1.1, at: [360, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: nightsky, x: 0, y: 0}
+  - {kind: shape, shape: nightground, x: 0, y: 880}
+  - {id: barn, kind: shape, shape: barn, x: 540, y: 880, scale: 1.45}
+  - {kind: shape, shape: haystack, x: 270, y: 880, scale: 0.9}
+  props:
+  - {id: orb6, kind: shape, shape: orb, x: 500, y: 600, scale: 1.2}
+  - {id: burst6, kind: shape, shape: burst, x: 330, y: 580, scale: 0.9, hidden: true}
+  - {id: gas, kind: shape, shape: gascloud, x: 330, y: 620, scale: 1.3, opacity: 0.85, hidden: true}
+  cast:
+  - {id: f, x: 90, gy: 880, k: 1.2, facing: r, coat: "#386641", coat_len: 22, hair: "#6d4c41", face: curious, hidden: true}
+  beats:
+  - {at: scene+0.05, who: cam, do: push, zoom: 1.3, target: [330, 650], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - {at: scene+0.05, who: f, do: show}
+  - {at: prev, who: f, do: enter, from: -90, to: 90, dur: 0.6}
+  - {at: scene+0.1, who: orb6, do: move, to: [330, 580], dur: 1.2, ease: sine.inOut}
+  - {at: scene+0.1, who: orb6.rays, do: spin, speed: 40, until: "word:explodes"}
+  - {at: "word:reports", who: f, do: look, target: [400, 580]}
+  - {at: "word:explodes-0.05", who: burst6, do: pop, dur: 0.1, sfx: [boom, 0.7]}
+  - {at: "word:explodes-0.05", who: orb6, do: hide}
+  - {at: "word:explodes-0.05", who: fx, do: flash, peak: 0.8}
+  - {at: "word:explodes", who: cam, do: shake, amp: 8, dur: 0.4}
+  - {at: "word:explodes", who: f, do: startle}
+  - {at: "word:explodes+0.1", who: f, do: pose, name: cower, dur: 0.2}
+  - {at: "word:explodes+0.15", who: burst6, do: scale, to: 1.4, dur: 0.3}
+  - {at: "word:explodes+0.45", who: burst6, do: fade, to: 0, dur: 0.3}
+  - {at: "word:leaving", who: gas, do: pop, dur: 0.3}
+  - {at: "word:smell", who: gas, do: move, dx: -150, dy: 10, dur: 1.8, ease: sine.inOut}
+  - {at: "word:smell", who: f, do: pose, name: stand, dur: 0.3}
+  - {at: "word:smell", who: f, do: face, name: sick}
+  - {at: "word:sulfur", who: f, do: sniff}
+  - {at: "word:behind", who: f, do: pose, name: cheeks, dur: 0.3}
+  check:
+  - {thing: "the exploding ball", ids: [burst6], word: "explodes"}
+  - {thing: "the yellow smell cloud", ids: [gas], word: "sulfur"}
+  - {thing: "the farmer", ids: [f], word: "smell"}
+- id: spectrum
+  sents: [s7, s8]
+  in: {type: slide}
+  camera: {zoom: 1.1, at: [360, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {kind: shape, shape: labroom, x: 0, y: 0}
+  - {id: bench, kind: shape, shape: labbench, x: 380, y: 900, scale: 1.1}
+  - {id: spec, kind: shape, shape: specscreen, x: 235, y: 680}
+  - {id: film, kind: shape, shape: filmscreen, x: 565, y: 680, hidden: true}
+  props:
+  - {id: bands, kind: shape, shape: specbands, x: 235, y: 680, hidden: true}
+  - {id: filmorb, kind: shape, shape: orb, x: 500, y: 545, scale: 0.4, hidden: true}
+  - {id: okmark, kind: shape, shape: check, x: 420, y: 340, scale: 1.4, hidden: true}
+  cast:
+  - {id: dra, x: 45, gy: 900, k: 1.2, facing: r, coat: white, coat_len: 40, glasses: true, hair: "#3b2a1e", face: curious, hidden: true}
+  beats:
+  - {at: scene+0.05, who: dra, do: show}
+  - {at: prev, who: dra, do: enter, from: -90, to: 45, dur: 0.6}
+  - {at: scene+0.1, who: cam, do: push, zoom: 1.3, target: [235, 560], screen: [360, 620], until: "word:seems", ease: sine.inOut}
+  - {at: "word:January", who: dra, do: look, target: [235, 520]}
+  - {at: "word:light-0.1", who: bands, do: pop, dur: 0.4, sfx: [tick, 0.4]}
+  - {at: "word:spectrum", who: bands, do: pulse, amp: 0.02, freq: 2, until: "word:seems"}
+  - {at: "word:spectrum", who: dra, do: face, name: wow}
+  - {at: "word:seems", who: dra, do: pose, name: think, dur: 0.3}
+  - {at: "word:seems", who: dra, do: face, name: think}
+  - {at: "word:ball", who: spec, do: jiggle, amp: 0.02}
+  - {at: "word:published-0.1", who: okmark, do: pop, dur: 0.25, sfx: [thud, 0.4]}
+  - {at: "word:published+0.1", who: okmark, do: pulse, amp: 0.05, freq: 3, until: "word:comes"}
+  - {at: "word:comes-0.1", who: okmark, do: fade, to: 0, dur: 0.3}
+  - {at: "word:comes", who: film, do: pop, dur: 0.3, sfx: [whoosh, 0.3]}
+  - {at: "word:comes", who: cam, do: pan, zoom: 1.3, target: [500, 560], screen: [360, 620], dur: 0.9, ease: power2.inOut}
+  - {at: "word:high-0.1", who: filmorb, do: pop, dur: 0.2}
+  - {at: "word:high", who: filmorb, do: move, to: [650, 530], dur: 1.2, ease: sine.inOut}
+  - {at: "word:speed", who: film, do: jiggle, amp: 0.03}
+  - {at: "word:speed", who: filmorb.rays, do: spin, speed: 200, until: scene.end}
+  - {at: "word:video", who: dra, do: face, name: happy}
+  check:
+  - {thing: "the rainbow spectrum on the screen", ids: [bands], word: "spectrum"}
+  - {thing: "the scientist", ids: [dra], word: "January"}
+  - {thing: "the high speed video screen", ids: [film], word: "video"}
+- id: scarce
+  sents: [s9]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {kind: shape, shape: labroom, x: 0, y: 0}
+  - {id: board, kind: shape, shape: chartboard, x: 440, y: 890, scale: 1.1}
+  - {kind: shape, shape: folder, x: 270, y: 895, scale: 1.4}
+  props:
+  - {id: d1, kind: shape, shape: dot, x: 319, y: 637, scale: 3, hidden: true}
+  - {id: d2, kind: shape, shape: dot, x: 418, y: 571, scale: 3, hidden: true}
+  - {id: d3, kind: shape, shape: dot, x: 539, y: 527, scale: 3, hidden: true}
+  cast:
+  - {id: drb, x: 90, gy: 900, k: 1.25, facing: r, coat: white, coat_len: 40, glasses: true, hair: "#3b2a1e", face: curious, hidden: true}
+  beats:
+  - {at: scene+0.05, who: drb, do: show}
+  - {at: prev, who: drb, do: enter, from: -90, to: 90, dur: 0.6}
+  - {at: scene+0.1, who: cam, do: push, zoom: 1.3, target: [440, 600], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - {at: "word:still", who: drb, do: look, target: [440, 560]}
+  - {at: "word:scientific", who: d1, do: pop, dur: 0.2, sfx: [tick, 0.4]}
+  - {at: "word:data", who: d2, do: pop, dur: 0.2, sfx: [tick, 0.4]}
+  - {at: "word:remain", who: d3, do: pop, dur: 0.2, sfx: [tick, 0.4]}
+  - {at: "word:data", who: drb, do: pose, name: scratch, dur: 0.3}
+  - {at: "word:data", who: drb, do: face, name: worried}
+  - {at: "word:remain", who: drb, do: pose, name: shrug, dur: 0.3}
+  - {at: "word:scarce-0.1", who: board, do: jiggle, amp: 0.02}
+  - {at: "word:scarce", who: drb, do: face, name: flat}
+  - {at: "word:scarce", who: drb, do: sway, until: scene.end}
+  check:
+  - {thing: "the nearly empty chart board", ids: [board], word: "data"}
+  - {thing: "the three tiny dots", ids: [d1, d2, d3], word: "scarce"}
+  - {thing: "the scientist", ids: [drb], word: "still"}
+- id: labwork
+  sents: [s10]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {kind: shape, shape: labroom, x: 0, y: 0}
+  - {id: bench2, kind: shape, shape: labbench, x: 360, y: 900}
+  - {id: chm, kind: shape, shape: chamber, x: 360, y: 700, scale: 1.3}
+  props:
+  - {id: blob, kind: shape, shape: orb, x: 360, y: 531, scale: 0.55, hidden: true}
+  - {id: sp1, kind: shape, shape: spark, x: 360, y: 538, hidden: true}
+  - {id: sp2, kind: shape, shape: spark, x: 360, y: 538, scale: 0.9, rot: 25, hidden: true}
+  cast:
+  - {id: dr1, x: 50, gy: 900, k: 1.1, facing: r, coat: white, coat_len: 40, glasses: true, hair: "#3b2a1e", face: curious, hidden: true}
+  - {id: dr2, x: 670, gy: 900, k: 1.1, facing: l, coat: "#e9ecef", coat_len: 36, hair: "#6d4c41", face: curious, hidden: true}
+  beats:
+  - {at: scene+0.05, who: dr1, do: show}
+  - {at: prev, who: dr1, do: enter, from: -90, to: 50, dur: 0.6}
+  - {at: scene+0.1, who: dr2, do: show}
+  - {at: prev, who: dr2, do: enter, from: 820, to: 670, dur: 0.6}
+  - {at: scene+0.1, who: cam, do: push, zoom: 1.25, target: [360, 600], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - {at: "word:laboratories", who: dr1, do: pose, name: lean_in, dur: 0.3}
+  - {at: "word:laboratories", who: dr2, do: pose, name: lean_in, dur: 0.3}
+  - {at: "word:experiments-0.1", who: blob, do: pop, dur: 0.3, sfx: [tick, 0.4]}
+  - {at: "word:experiments", who: blob, do: pulse, amp: 0.1, freq: 4, until: scene.end}
+  - {at: "word:experiments", who: blob.rays, do: spin, speed: 90, until: scene.end}
+  - {at: "word:create-0.05", who: sp1, do: pop, dur: 0.1, sfx: [tick, 0.4]}
+  - {at: "word:create", who: sp2, do: pop, dur: 0.1}
+  - {at: "word:create+0.1", who: sp1, do: jiggle, amp: 0.2, repeat: {every: 0.25, n: 8}}
+  - {at: "word:effects", who: chm, do: jiggle, amp: 0.02}
+  - {at: "word:effects", who: dr1, do: face, name: wow}
+  - {at: "word:look", who: dr2, do: face, name: wow}
+  - {at: "word:similar", who: dr1, do: nod, until: scene.end}
+  check:
+  - {thing: "the glass chamber", ids: [chm], word: "experiments"}
+  - {thing: "the glowing effect inside", ids: [blob], word: "effects"}
+  - {thing: "the scientists", ids: [dr1, dr2], word: "experiments"}
+- id: unclear
+  sents: [s11]
+  in: {type: slide}
+  camera: {zoom: 1.3, at: [330, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {kind: shape, shape: labroom, x: 0, y: 0}
+  - {kind: shape, shape: nightwindow, x: 560, y: 620, scale: 0.85}
+  - {id: stormc, kind: shape, shape: stormcloud, x: 560, y: 470, scale: 0.55}
+  - {id: bench3, kind: shape, shape: labbench, x: 130, y: 900, scale: 0.6}
+  - {id: chamber2, kind: shape, shape: chamber, x: 130, y: 780, scale: 0.85}
+  props:
+  - {id: blob2, kind: shape, shape: orb, x: 130, y: 690, scale: 0.5}
+  - {id: wball, kind: shape, shape: orb, x: 560, y: 590, scale: 0.8}
+  cast:
+  - {id: dr3, x: 340, gy: 900, k: 1.25, facing: r, coat: white, coat_len: 40, glasses: true, hair: "#3b2a1e", face: curious, hidden: true}
+  beats:
+  - {at: scene+0.05, who: cam, do: pull, zoom: 1.0, target: [360, 640], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - {at: scene+0.05, who: dr3, do: show}
+  - {at: prev, who: dr3, do: enter, from: -90, to: 340, dur: 0.7}
+  - {at: scene+0.1, who: wball, do: pulse, amp: 0.06, freq: 2.5, until: "word:remains"}
+  - {at: scene+0.1, who: wball.rays, do: spin, speed: 35, until: scene.end}
+  - {at: scene+0.1, who: blob2, do: pulse, amp: 0.1, freq: 4, until: scene.end}
+  - {at: scene+0.1, who: blob2.rays, do: spin, speed: 90, until: scene.end}
+  - {at: scene+0.1, who: stormc, do: bob, amp: 5, freq: 0.6, until: scene.end}
+  - {at: "word:how", who: dr3, do: look, target: [130, 690]}
+  - {at: "word:they", who: chamber2, do: jiggle, amp: 0.03}
+  - {at: "word:relate", who: dr3, do: look, target: [560, 590]}
+  - {at: "word:relate", who: dr3, do: face, name: think}
+  - {at: "word:real", who: wball, do: jiggle, amp: 0.05}
+  - {at: "word:ball", who: dr3, do: pose, name: think, dur: 0.3}
+  - {at: "word:remains", who: wball, do: fade, to: 0.2, dur: 1.4}
+  - {at: "word:unclear", who: dr3, do: pose, name: shrug, dur: 0.3}
+  - {at: "word:unclear", who: dr3, do: face, name: worried}
+  check:
+  - {thing: "the lab chamber with its small glowing blob", ids: [chamber2, blob2], word: "they"}
+  - {thing: "the real glowing ball in the window", ids: [wball], word: "real"}
+  - {thing: "the scientist", ids: [dr3], word: "relate"}
