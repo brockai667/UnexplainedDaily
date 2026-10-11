@@ -43,7 +43,9 @@ SEES exactly what it says, big, and something moves all the time.
   a coin) gets a close-up: camera zoom 1.6-2.2 centred on it, so it is at least 100 px on screen.
 - Something moves all the time: at least 10 beats per scene, at least 4 tied to spoken words (`at: "word:..."`, only words of
   that scene's sentences). People walk in (enter), react (face, pose, point, look, startle), things pop up one after another
-  (`repeat`), and the camera works: a start `camera:` plus at least one push / pan / follow beat.
+  (`repeat`), and the camera works: a start `camera:` plus at least one push / pan / follow beat. A tiny `rock` or `pulse`
+  (amp under 0.03) does not count as motion: EVERY second of the video needs a visible move (a walk, a pop, a camera move),
+  or the render fails the "frozen" check.
 - Each scene ends with `check:` - 2 to 4 entries, one per thing the sentence names:
   `- {{thing: "the logbook", ids: [book], word: "logbook"}}`  (ids = the object ids that draw it; word = an exact spoken word of
   the scene at which it must be clearly visible). accept.py measures exactly these.
