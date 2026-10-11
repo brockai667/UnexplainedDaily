@@ -48,7 +48,8 @@ SEES exactly what it says, big, and something moves all the time.
   or the render fails the "frozen" check.
 - Each scene ends with `check:` - 2 to 4 entries, one per thing the sentence names:
   `- {{thing: "the logbook", ids: [book], word: "logbook"}}`  (ids = the object ids that draw it; word = an exact spoken word of
-  the scene at which it must be clearly visible). accept.py measures exactly these.
+  the scene at which it must be clearly visible, not the scene's last word: it is measured 0.6 s after the word starts).
+  accept.py measures exactly these.
 - Library drawings are used by name with no definition. New drawings: thick black outline (width 5-7), flat fills, 4-14 items,
   around their own origin (0,0 = bottom centre for things standing on the ground), at least 80 px for anything that matters.
 - Keep the action between y 280 and y 900 (captions are below y 926, gold words sit at y 100-260). Quote "#rrggbb" colours
