@@ -1,0 +1,508 @@
+title: "The Nazca Lines"
+voice: {voice: am_michael, speed: 1.10, pause: 0.30}
+tail: 2.0
+music: sneaky_snitch.mp3
+loop: {at: "s10.end+0.55", dur: 1.3}
+sentences:
+  s1: "Southern Peru. For one thousand years, people draw in the desert."
+  s2: "They remove dark pebbles and leave pale soil showing."
+  s3: "The lines are only a few inches deep."
+  s4: "Together they stretch over eight hundred miles."
+  s5: "Over seventy are animals, like a hummingbird, a monkey and a condor."
+  s6: "The shapes are usually one continuous line."
+  s7: "They are best seen from the air."
+  s8: "Drones have found several hundred new figures."
+  s9: "Scholars see religious meaning, but they disagree on the purpose."
+  s10: "Nobody knows for sure why they were drawn, or how many remain hidden."
+gold:
+  - {word: thousand, label: "1000 YEARS", kind: stamp, top: 118, size: 96, until: "s1.end", stamp: {from: 2.2, r0: -10, r1: -4}}
+  - {word: eight, label: "800", kind: counter, top: 112, size: 112, dur: 0.9, until: "s4.end"}
+  - {word: seventy, label: "70", kind: counter, top: 112, size: 112, dur: 0.9, until: "s5.end"}
+  - {word: "s10/nobody", label: "NO ONE KNOWS", kind: stamp, top: 118, size: 80, until: "s10.end+0.6", stamp: {from: 2.2, r0: -10, r1: -4}}
+styles:
+  dirt: {fill: "#8f5f45", width: 6}
+shapes:
+  desert:
+    - {poly: [[-600,520],[-300,440],[0,500],[260,420],[560,490],[860,430],[1320,520]], fill: "#8c5a40", width: 5}
+    - {rect: [-600,520,1920,800], fill: "#a9714f", width: 5}
+    - {ellipse: [60,620,14,8], fill: "#6b4533", width: 3}
+    - {ellipse: [210,700,16,9], fill: "#6b4533", width: 3}
+    - {ellipse: [340,600,12,7], fill: "#6b4533", width: 3}
+    - {ellipse: [470,760,18,10], fill: "#6b4533", width: 3}
+    - {ellipse: [600,640,14,8], fill: "#6b4533", width: 3}
+    - {ellipse: [90,820,18,10], fill: "#6b4533", width: 3}
+    - {ellipse: [260,930,16,9], fill: "#6b4533", width: 3}
+    - {ellipse: [560,900,18,10], fill: "#6b4533", width: 3}
+    - {ellipse: [680,780,12,7], fill: "#6b4533", width: 3}
+  closeup:
+    - {rect: [-600,520,1920,800], fill: "#8f5f45", width: 6}
+    - {ellipse: [60,600,26,16], fill: "#4a3226", width: 4}
+    - {ellipse: [330,590,28,17], fill: "#4a3226", width: 4}
+    - {ellipse: [580,610,26,15], fill: "#4a3226", width: 4}
+    - {ellipse: [190,660,20,12], fill: "#4a3226", width: 4}
+    - {ellipse: [450,650,24,14], fill: "#4a3226", width: 4}
+    - {ellipse: [680,680,18,11], fill: "#4a3226", width: 4}
+    - {ellipse: [40,720,22,13], fill: "#4a3226", width: 4}
+    - {ellipse: [150,890,28,16], fill: "#4a3226", width: 4}
+    - {ellipse: [300,880,24,14], fill: "#4a3226", width: 4}
+    - {ellipse: [430,905,26,15], fill: "#4a3226", width: 4}
+    - {ellipse: [560,880,22,13], fill: "#4a3226", width: 4}
+    - {ellipse: [670,900,28,16], fill: "#4a3226", width: 4}
+  pebcl:
+    - {ellipse: [-32,2,24,15], fill: "#3b2a1e", width: 5}
+    - {ellipse: [10,-12,22,14], fill: "#3b2a1e", width: 5}
+    - {ellipse: [34,12,26,16], fill: "#3b2a1e", width: 5}
+    - {ellipse: [-8,18,20,12], fill: "#3b2a1e", width: 5}
+  patch:
+    - {rect: [-75,-40,150,80,10], fill: "#f3e3b5", width: 6}
+  board:
+    - {rect: [-60,-8,120,16,4], fill: "#c89b5e", width: 6}
+  section:
+    - {rect: [-420,0,840,200], fill: "#d7be86", width: 6}
+    - {rect: [-420,-60,840,60], fill: "#7a4f38", width: 6}
+    - {ellipse: [-300,-30,16,9], fill: "#3b2a1e", width: 3}
+    - {ellipse: [-220,-40,14,9], fill: "#3b2a1e", width: 3}
+    - {ellipse: [-150,-25,18,10], fill: "#3b2a1e", width: 3}
+    - {ellipse: [160,-35,16,9], fill: "#3b2a1e", width: 3}
+    - {ellipse: [240,-28,18,10], fill: "#3b2a1e", width: 3}
+    - {ellipse: [320,-40,14,9], fill: "#3b2a1e", width: 3}
+    - {rect: [-60,-62,120,78], fill: "#f3e3b5", width: 6}
+  mapboard:
+    - {rect: [-320,-300,640,600,14], fill: "#efe0b8", width: 7}
+    - {poly: [[-320,-300],[-120,-300],[-60,-120],[-130,40],[-220,150],[-320,260]], fill: "#9ec9d9", width: 4}
+    - {ellipse: [60,40,200,170], fill: "#d9b88a", width: 4}
+    - {line: [[-120,60],[270,60]], stroke: "#fff3cf", width: 9}
+  tiny:
+    - {circle: [0,-40,8], fill: white, width: 4}
+    - {line: [[0,-32],[0,-12]], width: 4}
+    - {line: [[0,-12],[-8,0]], width: 4}
+    - {line: [[0,-12],[8,0]], width: 4}
+    - {line: [[-9,-28],[9,-28]], width: 4}
+  airfield:
+    - {rect: [-600,-200,1920,1600], fill: "#a9714f", width: 6}
+    - {ellipse: [60,330,14,8], fill: "#7a4c33", width: 3}
+    - {ellipse: [650,380,16,9], fill: "#7a4c33", width: 3}
+    - {ellipse: [330,520,12,7], fill: "#7a4c33", width: 3}
+    - {ellipse: [690,760,14,8], fill: "#7a4c33", width: 3}
+    - {ellipse: [40,910,16,9], fill: "#7a4c33", width: 3}
+    - {ellipse: [420,930,14,8], fill: "#7a4c33", width: 3}
+  hb:
+    - {ellipse: [0,0,60,26], stroke: "#f6ead0", width: 9}
+    - {circle: [70,-8,18], stroke: "#f6ead0", width: 9}
+    - {line: [[88,-12],[150,-36]], stroke: "#f6ead0", width: 9}
+    - {path: "M-10,-14 Q-50,-110 -120,-130 Q-80,-60 -10,-14", stroke: "#f6ead0", width: 9}
+    - {path: "M10,14 Q-10,100 -80,120 Q-40,50 10,14", stroke: "#f6ead0", width: 9}
+    - {line: [[-60,6],[-130,40]], stroke: "#f6ead0", width: 9}
+    - {line: [[-60,0],[-140,8]], stroke: "#f6ead0", width: 9}
+  mk:
+    - {circle: [0,-110,34], stroke: "#f6ead0", width: 9}
+    - {ellipse: [0,-30,30,55], stroke: "#f6ead0", width: 9}
+    - {line: [[-25,-60],[-80,-10],[-60,50]], stroke: "#f6ead0", width: 9}
+    - {line: [[25,-60],[80,-10],[60,50]], stroke: "#f6ead0", width: 9}
+    - {line: [[-15,20],[-50,100]], stroke: "#f6ead0", width: 9}
+    - {line: [[15,20],[50,100]], stroke: "#f6ead0", width: 9}
+    - {path: "M20,30 Q130,40 105,-20 Q75,-55 60,-20 Q70,0 88,-8", stroke: "#f6ead0", width: 9}
+  cd:
+    - {ellipse: [0,0,26,70], stroke: "#f6ead0", width: 9}
+    - {circle: [0,-92,18], stroke: "#f6ead0", width: 9}
+    - {path: "M-8,-108 Q0,-132 8,-108", stroke: "#f6ead0", width: 9}
+    - {path: "M-20,-30 Q-140,-70 -210,10 Q-160,-10 -120,30 Q-90,10 -60,50 Q-40,40 -20,30", stroke: "#f6ead0", width: 9}
+    - {path: "M20,-30 Q140,-70 210,10 Q160,-10 120,30 Q90,10 60,50 Q40,40 20,30", stroke: "#f6ead0", width: 9}
+    - {line: [[-15,70],[-25,130]], stroke: "#f6ead0", width: 9}
+    - {line: [[0,70],[0,140]], stroke: "#f6ead0", width: 9}
+    - {line: [[15,70],[25,130]], stroke: "#f6ead0", width: 9}
+  fishfill:
+    - {poly: [[100,650],[240,480],[440,450],[590,550],[680,450],[650,840],[590,740],[440,860],[240,830]], fill: "#f3e3b5", stroke: "#f3e3b5", width: 4}
+  hotair:
+    - {circle: [0,-330,125], fill: "#e63946", width: 6}
+    - {ellipse: [0,-330,50,125], fill: "#f1faee", width: 5}
+    - {line: [[-80,-230],[-40,-55]], width: 4}
+    - {line: [[80,-230],[40,-55]], width: 4}
+    - {rect: [-55,-55,110,55,6], fill: "#a47148", width: 6}
+  drone:
+    - {line: [[-45,-6],[-90,-24]], width: 6}
+    - {line: [[45,-6],[90,-24]], width: 6}
+    - {ellipse: [0,0,45,22], fill: "#6d6875", width: 6}
+    - {circle: [0,16,8], fill: "#1d3557", width: 4}
+    - {group: rotL, pivot: [-90,-26], items: [{line: [[-125,-26],[-55,-26]], width: 6}]}
+    - {group: rotR, pivot: [90,-26], items: [{line: [[55,-26],[125,-26]], width: 6}]}
+  ctl:
+    - {rect: [-14,-8,28,16,4], fill: "#333333", width: 4}
+    - {line: [[-8,-8],[-12,-22]], width: 4}
+    - {line: [[8,-8],[12,-22]], width: 4}
+  drawing:
+    - {line: [[-120,-170],[-150,0]], width: 7}
+    - {line: [[120,-170],[150,0]], width: 7}
+    - {rect: [-180,-490,360,320,8], fill: "#a9714f", width: 7}
+    - {use: hb, at: [0,-330], scale: 0.9}
+scenes:
+- id: desert
+  sents: [s1]
+  camera: {zoom: 1.0, at: [360, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {kind: sky, clouds: [[120, 330, 120], [560, 300, 110]], drift: 10}
+  - {id: dsrt, kind: shape, shape: desert, x: 0, y: 0}
+  - {id: ln, kind: line, points: [[-100, 905], [300, 880], [800, 820]], style: ink, width: 16, color: "#f3e3b5"}
+  cast:
+  - {id: p3, x: 400, gy: 880, k: 0.9, coat: '#386641', hair: '#3b2a1e', face: ok}
+  - {id: p2, x: 260, gy: 890, k: 0.95, coat: '#b56576', coat_len: 30, hair: '#6d4c41', face: ok}
+  - {id: p1, x: 120, gy: 900, k: 1.0, coat: '#3d5a80', hair: '#3b2a1e', face: ok}
+  beats:
+  - {at: scene+0.05, who: cam, do: push, zoom: 1.25, target: [420, 760], screen: [360, 640], until: "word:desert", ease: sine.inOut}
+  - {at: scene+0.1, who: p1, do: enter, from: -120, to: 120, until: "word:thousand", stride: 150, lift: 24}
+  - {at: scene+0.2, who: p2, do: enter, from: -260, to: 260, until: "word:thousand", stride: 150, lift: 24}
+  - {at: scene+0.3, who: p3, do: enter, from: -400, to: 400, until: "word:years", stride: 150, lift: 24}
+  - {at: "word:people", who: ln, do: draw_line, dur: 2.2, ease: none}
+  - {at: "word:people", who: p1, do: walk_to, to: 300, dur: 2.0}
+  - {at: "word:people+0.1", who: p2, do: walk_to, to: 480, dur: 2.0}
+  - {at: "word:people+0.2", who: p3, do: walk_to, to: 620, dur: 2.0}
+  - {at: "word:draw", who: p1, do: point, target: [760, 840]}
+  - {at: prev, who: p1, do: face, name: happy}
+  - {at: "word:draw", who: p2, do: face, name: curious}
+  - {at: "word:desert", who: p3, do: look, target: [900, 760]}
+  - {at: "word:desert", who: p2, do: face, name: wow}
+  - {at: "word:desert", who: cam, do: pan, zoom: 1.2, target: [560, 770], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  check:
+  - {thing: "the desert", ids: [dsrt, ln], word: "draw"}
+  - {thing: "the people", ids: [p1, p2, p3], word: "people"}
+  - {thing: "the long line", ids: [ln], word: "draw"}
+- id: pebbles
+  sents: [s2]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {id: gnd, kind: shape, shape: closeup, x: 0, y: 0}
+  props:
+  - {id: pa1, kind: shape, shape: patch, x: 90, y: 800, hidden: true}
+  - {id: pa2, kind: shape, shape: patch, x: 200, y: 800, hidden: true}
+  - {id: pa3, kind: shape, shape: patch, x: 310, y: 800, hidden: true}
+  - {id: pa4, kind: shape, shape: patch, x: 420, y: 800, hidden: true}
+  - {id: pa5, kind: shape, shape: patch, x: 530, y: 800, hidden: true}
+  - {id: pa6, kind: shape, shape: patch, x: 640, y: 800, hidden: true}
+  - {id: pc1, kind: shape, shape: pebcl, x: 200, y: 800, scale: 1.2}
+  - {id: pc2, kind: shape, shape: pebcl, x: 360, y: 800, scale: 1.2}
+  - {id: pc3, kind: shape, shape: pebcl, x: 520, y: 800, scale: 1.2}
+  - {id: bd, kind: shape, shape: board, x: 130, y: 830, scale: 1.2, layer: top}
+  - {id: dust, kind: emitter, emitter: dust, at: [200, 800], n: 10, r: [3, 6], color: "#6b4533", period: 1.0, rise: 40, drift: 30, spread: 60, s0: 1, s1: 0.5, opacity: 0.7}
+  cast:
+  - {id: sw, x: 60, gy: 770, k: 1.3, coat: '#3d5a80', hair: '#3b2a1e', face: ok}
+  beats:
+  - {at: scene+0.1, who: cam, do: pan, zoom: 1.12, target: [340, 760], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - {at: "word:they", who: sw, do: pose, name: lean_in, dur: 0.2}
+  - {at: "word:remove", who: sw, do: walk_to, to: 700, dur: 2.9}
+  - {at: "word:remove", who: bd, do: move, dx: 110, dy: 0, dur: 0.5, repeat: {every: 0.5, n: 6}}
+  - {at: "word:remove", who: dust, do: emit, until: "word:showing"}
+  - at: "word:pebbles"
+    who: pa1
+    do: pop
+    dur: 0.15
+    sfx: [tick, 0.3]
+    repeat:
+      every: 0.45
+      n: 6
+      cycle:
+      - {who: pa1}
+      - {who: pa2}
+      - {who: pa3}
+      - {who: pa4}
+      - {who: pa5}
+      - {who: pa6}
+  - {at: "word:pebbles", who: pc1, do: path, points: [[200, 800], [190, 700], [140, 720], [100, 640]], dur: 0.6, ease: power2.out}
+  - {at: "word:and", who: pc2, do: path, points: [[360, 800], [350, 700], [300, 720], [270, 640]], dur: 0.6, ease: power2.out}
+  - {at: "word:leave", who: pc3, do: path, points: [[520, 800], [510, 700], [460, 720], [430, 640]], dur: 0.6, ease: power2.out}
+  - {at: "word:dark", who: pc1, do: pulse, amp: 0.1, freq: 3, until: "word:pebbles"}
+  - {at: "word:pale", who: pa6, do: pulse, amp: 0.08, freq: 3, until: "word:showing"}
+  - {at: "word:soil", who: sw, do: face, name: happy}
+  check:
+  - {thing: "the dark pebbles", ids: [gnd, pc1, pc2, pc3], word: "dark"}
+  - {thing: "the pale soil", ids: [pa1, pa2, pa3, pa4, pa5, pa6], word: "showing"}
+  - {thing: "the worker", ids: [sw], word: "remove"}
+- id: depth
+  sents: [s3]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {id: sunn, kind: shape, shape: sun, x: 610, y: 430, scale: 0.9}
+  - {id: sec, kind: shape, shape: section, x: 360, y: 700}
+  props:
+  - {id: rul, kind: shape, shape: ruler, x: 470, y: 440, scale: 1.3, rot: 90}
+  - {id: arr, kind: shape, shape: arrow_down, x: 360, y: 540, scale: 0.9, hidden: true}
+  cast:
+  - {id: fg, x: 150, gy: 640, k: 1.2, coat: '#386641', hair: '#3b2a1e', face: ok}
+  beats:
+  - {at: scene+0.1, who: fg, do: enter, from: -100, to: 150, until: "word:lines", stride: 150, lift: 24}
+  - {at: "word:the", who: sunn, do: spin, speed: 20, until: scene.end}
+  - {at: "word:lines", who: fg, do: look, target: [360, 680]}
+  - {at: "word:lines", who: sec, do: pulse, amp: 0.01, freq: 2, until: "word:only"}
+  - {at: "word:only", who: fg, do: kneel_down, target: [360, 650]}
+  - {at: "word:only", who: cam, do: push, zoom: 1.5, target: [360, 690], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - {at: "word:few", who: fg, do: face, name: curious}
+  - {at: "word:inches", who: rul, do: move, to: [470, 640], dur: 0.5, ease: back.out(1.4), sfx: [whoosh, 0.3]}
+  - {at: "word:inches+0.5", who: rul, do: jiggle, amp: 0.06}
+  - {at: "word:deep-0.1", who: arr, do: pop, sfx: [tick, 0.4]}
+  - {at: "word:deep", who: arr, do: bob, amp: 10, freq: 3, until: scene.end}
+  - {at: "word:deep", who: fg, do: face, name: wow}
+  check:
+  - {thing: "the shallow groove", ids: [sec], word: "deep"}
+  - {thing: "the ruler", ids: [rul], word: "deep"}
+  - {thing: "the observer", ids: [fg], word: "only"}
+- id: length
+  sents: [s4]
+  in: {type: slide}
+  camera: {zoom: 1.8, at: [360, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {id: mp, kind: shape, shape: mapboard, x: 360, y: 600}
+  - {id: l1, kind: line, points: [[250, 470], [640, 410]], style: ink, width: 9, color: "#fff3cf"}
+  - {id: l2, kind: line, points: [[260, 740], [620, 780]], style: ink, width: 9, color: "#fff3cf"}
+  - {id: l3, kind: line, points: [[330, 380], [420, 820]], style: ink, width: 9, color: "#fff3cf"}
+  - {id: l4, kind: line, points: [[470, 400], [520, 800]], style: ink, width: 9, color: "#fff3cf"}
+  cast:
+  - {id: wk, x: 250, gy: 662, k: 0.4, coat: '#3d5a80', hair: '#3b2a1e', face: curious}
+  beats:
+  - {at: scene+0.1, who: wk, do: walk_to, to: 620, dur: 3.0}
+  - {at: "word:together", who: l1, do: draw_line, dur: 0.6}
+  - {at: "word:they", who: l2, do: draw_line, dur: 0.6}
+  - {at: "word:stretch", who: l3, do: draw_line, dur: 0.6}
+  - {at: "word:over", who: l4, do: draw_line, dur: 0.6}
+  - {at: "word:stretch", who: cam, do: pull, zoom: 1.05, target: [360, 620], screen: [360, 640], dur: 1.8, ease: power2.inOut}
+  - {at: "word:eight", who: wk, do: face, name: wow}
+  - {at: "word:hundred", who: mp, do: pulse, amp: 0.015, freq: 3, until: "word:miles"}
+  - {at: "word:miles", who: wk, do: point, target: [660, 640]}
+  - {at: "word:miles", who: cam, do: pan, zoom: 1.15, target: [420, 620], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - {at: "word:miles", who: l1, do: jiggle, amp: 0.03}
+  check:
+  - {thing: "the map", ids: [mp], word: "miles"}
+  - {thing: "the many lines", ids: [l1, l2, l3, l4], word: "hundred"}
+  - {thing: "the walker", ids: [wk], word: "over"}
+- id: animals
+  sents: [s5]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {id: fld, kind: shape, shape: airfield, x: 0, y: 0}
+  props:
+  - {id: hbf, kind: shape, shape: hb, x: 190, y: 480, hidden: true}
+  - {id: mkf, kind: shape, shape: mk, x: 520, y: 650, scale: 1.1, hidden: true}
+  - {id: cdf, kind: shape, shape: cd, x: 230, y: 850, scale: 0.9, hidden: true}
+  cast:
+  - {id: t2, x: 380, gy: 750, k: 0.4, facing: r, coat: '#b56576', hair: '#6d4c41', face: ok}
+  - {id: t1, x: 660, gy: 770, k: 0.4, facing: l, coat: '#3d5a80', hair: '#3b2a1e', face: ok}
+  beats:
+  - {at: scene+0.1, who: cam, do: pan, zoom: 1.1, target: [330, 560], screen: [360, 640], until: "word:monkey", ease: sine.inOut}
+  - {at: scene+0.1, who: t1, do: enter, from: 900, to: 660, until: "word:animals", stride: 120, lift: 18}
+  - {at: scene+0.2, who: t2, do: enter, from: -100, to: 380, until: "word:animals", stride: 120, lift: 18}
+  - {at: "word:seventy", who: t1, do: face, name: wow}
+  - {at: "word:animals", who: t2, do: look, target: [190, 480]}
+  - {at: "word:hummingbird", who: hbf, do: pop, sfx: [tick, 0.4]}
+  - {at: "word:hummingbird+0.2", who: hbf, do: jiggle, amp: 0.05}
+  - {at: "word:hummingbird", who: t2, do: point, target: [190, 480]}
+  - {at: "word:monkey", who: mkf, do: pop, sfx: [tick, 0.4]}
+  - {at: "word:monkey+0.2", who: mkf, do: jiggle, amp: 0.05}
+  - {at: "word:monkey", who: t1, do: look, target: [520, 650]}
+  - {at: "word:monkey", who: cam, do: pan, zoom: 1.1, target: [420, 740], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - {at: "word:condor", who: cdf, do: pop, sfx: [tick, 0.4]}
+  - {at: "word:condor+0.2", who: cdf, do: jiggle, amp: 0.05}
+  - {at: "word:condor", who: t2, do: face, name: happy}
+  check:
+  - {thing: "the hummingbird", ids: [hbf], word: "hummingbird"}
+  - {thing: "the monkey", ids: [mkf], word: "monkey"}
+  - {thing: "the condor", ids: [cdf], word: "condor"}
+- id: oneline
+  sents: [s6]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {id: fld6, kind: shape, shape: airfield, x: 0, y: 0}
+  - {id: ff, kind: shape, shape: fishfill, x: 0, y: 0, opacity: 0}
+  - {id: fl, kind: line, points: [[100, 650], [240, 480], [440, 450], [590, 550], [680, 450], [650, 840], [590, 740], [440, 860], [240, 830], [100, 650]], style: ink, width: 14, color: "#f6ead0"}
+  props:
+  - {id: rx, kind: shape, shape: redx, x: 100, y: 650, scale: 0.6, hidden: true}
+  - {id: wk6, kind: shape, shape: tiny, x: 100, y: 650, scale: 1.8, layer: top}
+  beats:
+  - {at: scene+0.1, who: cam, do: push, zoom: 1.2, target: [390, 650], screen: [360, 640], until: "word:line", ease: sine.inOut}
+  - {at: "word:the", who: rx, do: pop, sfx: [tick, 0.4]}
+  - {at: "word:shapes", who: fl, do: draw_line, dur: 2.4, ease: none}
+  - {at: "word:shapes", who: wk6, do: path, points: [[100, 650], [240, 480], [440, 450], [590, 550], [680, 450], [650, 840], [590, 740], [440, 860], [240, 830], [100, 650]], dur: 2.4, ease: none}
+  - {at: "word:shapes", who: wk6, do: bob, amp: 5, freq: 5, until: "word:line"}
+  - {at: "word:usually", who: fx, do: lines, dur: 0.6, target: [390, 650]}
+  - {at: "word:one", who: rx, do: pulse, amp: 0.15, freq: 3, until: "word:continuous"}
+  - {at: "word:continuous", who: rx, do: fade, to: 0, dur: 0.3}
+  - {at: "word:continuous", who: fl, do: jiggle, amp: 0.02}
+  - {at: "word:line", who: ff, do: fade, to: 0.55, dur: 0.5}
+  - {at: "word:line", who: wk6, do: jiggle, amp: 0.08}
+  - {at: "word:line", who: cam, do: pull, zoom: 1.05, target: [390, 650], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  check:
+  - {thing: "the animal shape", ids: [fl, ff], word: "line"}
+  - {thing: "the walker", ids: [wk6], word: "continuous"}
+- id: air
+  sents: [s7]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 560], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {kind: sky, clouds: [[90, 330, 110], [620, 360, 120]], drift: 14}
+  - {id: dsr7, kind: shape, shape: desert, x: 0, y: 0}
+  - {id: cd7, kind: shape, shape: cd, x: 360, y: 820, scale: 1.2, hidden: true}
+  props:
+  - {id: hot, kind: shape, shape: hotair, x: 360, y: 600}
+  - {id: brd, kind: emitter, emitter: birds, at: [900, 420], n: 3, dir: -1}
+  cast:
+  - {id: obs, x: 360, gy: 595, k: 0.8, coat: '#3d5a80', hair: '#3b2a1e', face: ok}
+  beats:
+  - {at: scene+0.2, who: cd7, do: pop}
+  - {at: scene+0.2, who: obs, do: sway, until: scene.end}
+  - {at: "word:they", who: obs, do: look, target: [360, 820]}
+  - {at: "word:are", who: hot, do: pulse, amp: 0.01, freq: 1, until: scene.end}
+  - {at: "word:best", who: obs, do: pose, name: shade, dur: 0.3}
+  - {at: "word:best", who: cd7, do: pulse, amp: 0.04, freq: 2, until: scene.end}
+  - {at: "word:seen", who: obs, do: point, target: [360, 830]}
+  - {at: "word:seen", who: obs, do: face, name: wow}
+  - {at: "word:seen", who: cam, do: tilt, zoom: 1.2, target: [360, 700], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - {at: "word:from", who: brd, do: burst}
+  - {at: "word:the", who: hot, do: shake, amp: 2, dur: 0.4}
+  - {at: "word:air", who: obs, do: face, name: happy}
+  check:
+  - {thing: "the hot-air balloon", ids: [hot], word: "seen"}
+  - {thing: "the observer", ids: [obs], word: "best"}
+  - {thing: "the giant figure", ids: [cd7], word: "best"}
+- id: drones
+  sents: [s8]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {id: dsr8, kind: shape, shape: desert, x: 0, y: 0}
+  props:
+  - {id: f1, kind: shape, shape: hb, x: 120, y: 700, scale: 0.55, hidden: true}
+  - {id: f2, kind: shape, shape: mk, x: 290, y: 730, scale: 0.6, hidden: true}
+  - {id: f3, kind: shape, shape: cd, x: 190, y: 860, scale: 0.5, hidden: true}
+  - {id: f4, kind: shape, shape: hb, x: 420, y: 840, scale: 0.5, hidden: true}
+  - {id: f5, kind: shape, shape: mk, x: 450, y: 690, scale: 0.5, hidden: true}
+  - {id: f6, kind: shape, shape: cd, x: 70, y: 580, scale: 0.4, hidden: true}
+  - {id: ctl, kind: shape, shape: ctl, x: 590, y: 780, layer: top}
+  - {id: dr, kind: shape, shape: drone, x: -150, y: 380, scale: 1.2, layer: top}
+  cast:
+  - {id: res, x: 560, gy: 890, k: 1.2, coat: '#386641', hair: '#6d4c41', face: ok}
+  beats:
+  - {at: scene+0.05, who: ctl, do: attach, to: res, anchor: hand, offset: [10, -10]}
+  - {at: scene+0.1, who: dr, do: path, points: [[-150, 380], [100, 330], [300, 420], [430, 380]], dur: 2.0, ease: power2.out}
+  - {at: scene+0.1, who: dr.rotL, do: spin, speed: 900, until: scene.end}
+  - {at: scene+0.1, who: dr.rotR, do: spin, speed: 900, until: scene.end}
+  - {at: "word:drones", who: cam, do: pan, zoom: 1.12, target: [340, 700], screen: [360, 640], until: "word:hundred", ease: sine.inOut}
+  - {at: "word:have", who: res, do: look, target: [430, 380]}
+  - at: "word:found"
+    who: f1
+    do: pop
+    dur: 0.15
+    sfx: [tick, 0.35]
+    repeat:
+      every: 0.33
+      n: 6
+      cycle:
+      - {who: f1}
+      - {who: f2}
+      - {who: f3}
+      - {who: f4}
+      - {who: f5}
+      - {who: f6}
+  - {at: "word:found", who: res, do: face, name: happy}
+  - {at: "word:several", who: res, do: pose, name: hands_up, dur: 0.3}
+  - {at: "word:hundred", who: dr, do: bob, amp: 8, freq: 2, until: scene.end}
+  - {at: "word:new", who: res, do: sway, until: scene.end}
+  - {at: "word:figures", who: cam, do: pull, zoom: 1.0, target: [360, 640], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  check:
+  - {thing: "the drone", ids: [dr], word: "found"}
+  - {thing: "the new figures", ids: [f1, f2, f3, f4, f5, f6], word: "figures"}
+  - {thing: "the researcher", ids: [res], word: "found"}
+- id: scholars
+  sents: [s9]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {id: dsr9, kind: shape, shape: desert, x: 0, y: 0}
+  - {id: drw, kind: shape, shape: drawing, x: 330, y: 890}
+  props:
+  - {id: qm, kind: shape, shape: question, x: 330, y: 330, scale: 1.8, hidden: true}
+  cast:
+  - {id: sC, x: 650, gy: 880, k: 1.1, facing: l, coat: '#582f0e', hair: '#9e9e9e', glasses: true, face: ok}
+  - {id: sB, x: 560, gy: 890, k: 1.2, facing: l, coat: '#2b2d42', coat_len: 40, hair: '#6d4c41', glasses: true, face: ok}
+  - {id: sA, x: 90, gy: 890, k: 1.2, coat: '#b56576', coat_len: 36, hair: '#e9c46a', glasses: true, face: ok}
+  beats:
+  - {at: scene+0.05, who: cam, do: push, zoom: 1.2, target: [330, 640], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - {at: scene+0.1, who: sA, do: enter, from: -100, to: 90, until: "word:see", stride: 150, lift: 20}
+  - {at: scene+0.1, who: sB, do: enter, from: 820, to: 560, until: "word:see", stride: 150, lift: 20}
+  - {at: scene+0.15, who: sC, do: enter, from: 900, to: 650, until: "word:see", stride: 150, lift: 20}
+  - {at: "word:scholars", who: drw, do: jiggle, amp: 0.02}
+  - {at: "word:religious", who: sA, do: point, target: up}
+  - {at: prev, who: sA, do: face, name: happy}
+  - {at: "word:meaning", who: sB, do: point, target: up}
+  - {at: "word:but", who: sA, do: pose, name: hands_up, dur: 0.2}
+  - {at: "word:but", who: sC, do: face, name: worried}
+  - {at: "word:disagree", who: sB, do: turn, facing: r, repeat: {every: 0.2, n: 4, alt: {facing: l}}}
+  - {at: "word:disagree", who: sC, do: pose, name: shrug, dur: 0.2}
+  - {at: "word:disagree", who: sA, do: face, name: angry}
+  - {at: "word:purpose", who: qm, do: pop, sfx: [tick, 0.4]}
+  - {at: "word:purpose", who: sB, do: pose, name: shrug, dur: 0.2}
+  - {at: prev, who: sB, do: face, name: flat}
+  check:
+  - {thing: "the big drawing", ids: [drw], word: "religious"}
+  - {thing: "the scholars", ids: [sA, sB, sC], word: "disagree"}
+  - {thing: "the question mark", ids: [qm], word: "purpose"}
+- id: hidden
+  sents: [s10]
+  in: {type: slide}
+  camera: {zoom: 1.6, at: [360, 700], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: dusk, x: 0, y: 0}
+  - {id: dsr10, kind: shape, shape: desert, x: 0, y: 0}
+  - {id: g1, kind: shape, shape: cd, x: 360, y: 720, scale: 1.3}
+  - {id: h1, kind: shape, shape: hb, x: 100, y: 600, scale: 0.45, opacity: 0}
+  - {id: h2, kind: shape, shape: mk, x: 620, y: 580, scale: 0.4, opacity: 0}
+  - {id: h3, kind: shape, shape: mk, x: 110, y: 870, scale: 0.55, opacity: 0}
+  - {id: h4, kind: shape, shape: hb, x: 610, y: 860, scale: 0.55, opacity: 0}
+  - {id: h5, kind: shape, shape: cd, x: 360, y: 560, scale: 0.4, opacity: 0}
+  - {id: h6, kind: shape, shape: hb, x: 250, y: 530, scale: 0.3, opacity: 0}
+  - {id: h7, kind: shape, shape: cd, x: 490, y: 530, scale: 0.3, opacity: 0}
+  props:
+  - {id: wind, kind: emitter, emitter: dust, at: [-120, 780], n: 20, r: [3, 6], color: "#d9b88a", period: 2.2, rise: 30, drift: 900, spread: 200, s0: 1, s1: 0.6, opacity: 0.7, prewarm: true, layer: top}
+  - {id: bds, kind: emitter, emitter: birds, at: [900, 420], n: 4, dir: -1}
+  - {id: qq, kind: shape, shape: question, x: 360, y: 420, scale: 2.0, hidden: true}
+  beats:
+  - {at: scene+0.1, who: cam, do: pull, zoom: 1.2, target: [360, 680], screen: [360, 640], until: "word:why", ease: sine.inOut}
+  - {at: "word:nobody", who: g1, do: jiggle, amp: 0.03}
+  - {at: "word:knows", who: g1, do: pulse, amp: 0.03, freq: 2, until: "word:why"}
+  - {at: "word:why", who: qq, do: pop, sfx: [tick, 0.4]}
+  - {at: "word:why", who: cam, do: pull, zoom: 1.0, target: [360, 640], screen: [360, 640], until: "word:how", ease: sine.inOut}
+  - {at: "word:drawn", who: bds, do: burst}
+  - {at: "word:drawn", who: qq, do: fade, to: 0, dur: 0.4}
+  - at: "word:how"
+    who: h1
+    do: fade
+    to: 0.55
+    dur: 0.4
+    repeat:
+      every: 0.4
+      n: 7
+      cycle:
+      - {who: h1}
+      - {who: h2}
+      - {who: h3}
+      - {who: h4}
+      - {who: h5}
+      - {who: h6}
+      - {who: h7}
+  - {at: "word:many", who: g1, do: fade, to: 0.7, dur: 0.5}
+  - {at: "word:remain", who: h3, do: jiggle, amp: 0.04}
+  - {at: "word:hidden", who: h4, do: jiggle, amp: 0.04}
+  - {at: "word:hidden", who: cam, do: pull, zoom: 1.1, target: [360, 650], screen: [360, 640], until: "s10.end+1.2", ease: sine.inOut}
+  check:
+  - {thing: "the great pale figure", ids: [g1], word: "knows"}
+  - {thing: "the question mark", ids: [qq], word: "why"}
+  - {thing: "the hidden outlines", ids: [h1, h2, h3, h4], word: "hidden"}

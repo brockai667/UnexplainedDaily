@@ -1,0 +1,928 @@
+title: "Roopkund"
+voice: {voice: am_michael, speed: 1.10, pause: 0.30}
+tail: 2.0
+music: sneaky_snitch.mp3
+loop: {at: "s10.end+0.55", dur: 1.3}
+sentences:
+  s1: "Today, high in the Himalayas of India, a small lake lies between two peaks."
+  s2: "It sits above five thousand meters."
+  s3: "It is frozen in winter, and only about three meters deep."
+  s4: "When the snow melts, skeletons appear at the bottom."
+  s5: "Hundreds of them. People call it Skeleton Lake."
+  s6: "Some once believed one group died in a hailstorm in the ninth century."
+  s7: "Research shows something stranger."
+  s8: "The skeletons belong to three distinct ancestry groups."
+  s9: "They died in two separate events, around 800 and 1800."
+  s10: "Why they came to this frozen lake is still unanswered."
+gold:
+  - {word: five, label: "5020", kind: counter, top: 112, size: 112, dur: 0.9, until: "s2.end"}
+  - {word: Hundreds, label: HUNDREDS, kind: stamp, top: 118, size: 96, until: "s5.end", stamp: {from: 2.2, r0: -10, r1: -4}}
+  - {word: "s8/three", label: "3 GROUPS", kind: stamp, top: 118, size: 100, until: "s8.end", stamp: {from: 2.2, r0: -10, r1: -4}}
+  - {word: "800", label: "800 AND 1800", kind: stamp, top: 118, size: 80, until: "s9.end", stamp: {from: 2.2, r0: -10, r1: -4}}
+styles:
+  ink: {fill: white, width: 6}
+shapes:
+  peak:
+    - {poly: [[-190, 0], [0, -400], [190, 0]], fill: "#8d9bb0", width: 6}
+    - {poly: [[-52, -290], [0, -400], [52, -290], [22, -310], [0, -286], [-22, -312]], fill: white, width: 5}
+  peakd:
+    - {poly: [[-190, 0], [0, -400], [190, 0]], fill: "#4a5568", width: 6}
+    - {poly: [[-52, -290], [0, -400], [52, -290], [22, -310], [0, -286], [-22, -312]], fill: "#e8eef5", width: 5}
+  cloud:
+    - {ellipse: [0, -22, 70, 26], fill: white, width: 5}
+    - {ellipse: [-42, -10, 40, 20], fill: white, width: 5}
+    - {ellipse: [44, -8, 44, 20], fill: white, width: 5}
+  stormcloud:
+    - {ellipse: [0, -22, 70, 26], fill: "#5b6270", width: 5}
+    - {ellipse: [-42, -10, 40, 20], fill: "#5b6270", width: 5}
+    - {ellipse: [44, -8, 44, 20], fill: "#5b6270", width: 5}
+  lake:
+    - {ellipse: [0, -46, 150, 46], fill: "#6fb7c9", width: 6}
+    - {path: "M-80,-48 Q-50,-60 -20,-48", width: 4}
+    - {path: "M20,-30 Q50,-42 80,-30", width: 4}
+  frozenlake:
+    - {ellipse: [0, -46, 150, 46], fill: "#e6f4f8", width: 6}
+    - {line: [[-80, -60], [-30, -45], [10, -70], [60, -40]], width: 4}
+    - {line: [[-20, -45], [-10, -20], [30, -12]], width: 4}
+  crack:
+    - {line: [[-60, 0], [-20, -18], [10, 0], [50, -14]], width: 5}
+  cut:
+    - {rect: [-200, 0, 400, 170], fill: "#6fb7c9", width: 6}
+    - {rect: [-200, -14, 400, 18, 4], fill: "#e6f4f8", width: 6}
+    - {rect: [-200, 150, 400, 26], fill: "#8d6e63", width: 6}
+  bone:
+    - {rect: [-22, -5, 44, 10, 5], fill: "#f5f5f0", width: 4}
+    - {circle: [-24, -7, 7], fill: "#f5f5f0", width: 4}
+    - {circle: [-24, 7, 7], fill: "#f5f5f0", width: 4}
+    - {circle: [24, -7, 7], fill: "#f5f5f0", width: 4}
+    - {circle: [24, 7, 7], fill: "#f5f5f0", width: 4}
+  snowpile:
+    - {poly: [[-120, 0], [-90, -50], [-40, -80], [20, -70], [70, -40], [120, 0]], fill: white, width: 6}
+  bundle:
+    - {ellipse: [0, -26, 28, 26], fill: "#a1887f", width: 6}
+    - {line: [[-18, -30], [18, -30]], width: 5}
+    - {line: [[36, 0], [40, -100]], width: 7}
+  flag:
+    - {line: [[0, 0], [0, -110]], width: 7}
+    - {poly: [[0, -110], [60, -90], [0, -70]], fill: "#d62828", width: 5}
+  microscope:
+    - {rect: [-40, -12, 80, 12, 3], fill: "#455a64", width: 6}
+    - {path: "M22,-12 Q52,-80 12,-120", width: 10}
+    - {rect: [-30, -132, 26, 76, 4], fill: "#9aa5b1", width: 6}
+    - {rect: [-26, -148, 18, 16, 3], fill: "#455a64", width: 5}
+    - {line: [[-32, -40], [12, -40]], width: 8}
+  tube:
+    - {rect: [-9, -60, 18, 60, 6], fill: "#b2ebf2", width: 4}
+    - {rect: [-9, -34, 18, 34, 6], fill: "#4db6ac", width: 4}
+  campfire:
+    - {line: [[-30, 0], [30, -16]], width: 12}
+    - {line: [[-30, -16], [30, 0]], width: 12}
+    - {poly: [[-20, -12], [-8, -46], [0, -30], [10, -60], [24, -12]], fill: orange, width: 5}
+  paper:
+    - {rect: [-300, -400, 2000, 1500], fill: "#f4ecd8", stroke: "#f4ecd8", width: 3}
+  room:
+    - {rect: [-100, -300, 920, 1100], fill: "#efe2c8", stroke: "#efe2c8", width: 3}
+    - {rect: [-100, 800, 920, 260], fill: "#a1887f", width: 6}
+  ringa:
+    - {ellipse: [0, -90, 110, 110], stroke: "#d62828", dash: "10 8", width: 6}
+  ringb:
+    - {ellipse: [0, -90, 110, 110], stroke: "#1d4e89", dash: "10 8", width: 6}
+  ringc:
+    - {ellipse: [0, -90, 110, 110], stroke: "#2a9d8f", dash: "10 8", width: 6}
+scenes:
+  - id: peaks
+    sents: [s1]
+    camera:
+      zoom: 1.0
+      at: [360, 520]
+      screen: [360, 640]
+    set:
+    - {kind: shape, shape: daysky, x: 0, y: 0}
+    - {id: c1, kind: shape, shape: cloud, x: 120, y: 400, scale: 1.6}
+    - {id: c2, kind: shape, shape: cloud, x: 600, y: 470, scale: 1.3}
+    - {kind: shape, shape: snowland, x: -300, y: 700}
+    props:
+    - {id: pkA, kind: shape, shape: peak, x: 170, y: 705, scale: 1.2, hidden: true}
+    - {id: pkB, kind: shape, shape: peak, x: 560, y: 705, scale: 1.05, hidden: true}
+    - {id: lake, kind: shape, shape: lake, x: 360, y: 810, scale: 1.1, hidden: true}
+    - {id: crow, kind: shape, shape: crow, x: 800, y: 420, scale: 1.2, layer: top}
+    beats:
+    - {at: scene, who: c1, do: move, dx: 260, dur: 7, ease: none}
+    - {at: scene, who: c2, do: move, dx: -220, dur: 7, ease: none}
+    - at: word:high
+      who: pkA
+      do: pop
+      dur: 0.3
+      sfx: [whoosh, 0.3]
+    - at: word:Himalayas
+      who: pkB
+      do: pop
+      dur: 0.3
+      sfx: [whoosh, 0.3]
+    - at: word:India
+      who: crow
+      do: path
+      points:
+      - [800, 420]
+      - [600, 380]
+      - [400, 430]
+      - [-100, 360]
+      dur: 2.2
+      ease: power2.inOut
+    - at: word:India
+      who: crow.wing
+      do: rotate
+      to: -50
+      dur: 0.1
+      repeat:
+        every: 0.1
+        until: word:India+2.0
+        alt: {to: 10}
+    - at: word:small
+      who: lake
+      do: pop
+      dur: 0.3
+      sfx: [tick, 0.35]
+    - {at: 'word:lies', who: lake, do: pulse, amp: 0.05, freq: 2.5, until: 'word:peaks'}
+    - {at: 'word:between', who: pkA, do: jiggle, amp: 0.03}
+    - {at: 'word:two', who: pkB, do: jiggle, amp: 0.03}
+    - {at: 'word:two+0.2', who: pkA, do: pulse, amp: 0.02, freq: 3, until: 'word:peaks'}
+    - at: word:lake-0.1
+      who: cam
+      do: push
+      zoom: 1.35
+      target: [360, 740]
+      screen: [360, 640]
+      until: scene.end
+      ease: sine.inOut
+    check:
+    - thing: the small lake
+      ids: [lake]
+      word: lies
+    - thing: the two peaks
+      ids: [pkA, pkB]
+      word: peaks
+  - id: height
+    sents: [s2]
+    in: {type: slide}
+    camera:
+      zoom: 1.2
+      at: [360, 830]
+      screen: [360, 640]
+    set:
+    - {kind: shape, shape: daysky, x: 0, y: 0}
+    - {id: pkC, kind: shape, shape: peak, x: 520, y: 830, scale: 1.5}
+    - {id: cl1, kind: shape, shape: cloud, x: 110, y: 775, scale: 2.2}
+    - {id: cl2, kind: shape, shape: cloud, x: 560, y: 790, scale: 2.0}
+    - {kind: shape, shape: snowland, x: -300, y: 825}
+    props:
+    - {id: flag, kind: shape, shape: flag, x: 600, y: 830, hidden: true}
+    - id: breath
+      kind: emitter
+      emitter: steam
+      'on': trek
+      anchor: mouth
+      n: 8
+      r: [4, 8]
+      color: white
+      period: 1.2
+      rise: 30
+      drift: 40
+      spread: 10
+      s0: 1
+      s1: 1.6
+      opacity: 0.8
+    cast:
+    - id: trek
+      x: 90
+      gy: 830
+      k: 1.4
+      hat: [orange, cream]
+      coat: '#d62828'
+      coat_len: 20
+      face: ok
+    beats:
+    - {at: scene+0.05, who: trek, do: enter, from: -90, to: 330, until: 'word:five+0.4'}
+    - {at: scene, who: cl1, do: move, dx: 120, dur: 5, ease: none}
+    - {at: scene, who: cl2, do: move, dx: -120, dur: 5, ease: none}
+    - at: scene+0.1
+      who: cam
+      do: tilt
+      zoom: 1.2
+      target: [360, 640]
+      screen: [360, 640]
+      until: word:meters+0.5
+      ease: sine.inOut
+    - {at: 'word:sits', who: trek, do: face, name: worried}
+    - {at: 'word:above', who: trek, do: look, target: up}
+    - {at: 'word:above', who: trek, do: pose, name: shade, dur: 0.2}
+    - {at: 'word:five', who: breath, do: emit, until: scene.end}
+    - {at: 'word:five', who: pkC, do: jiggle, amp: 0.02}
+    - at: word:thousand
+      who: flag
+      do: pop
+      dur: 0.3
+      sfx: [tick, 0.35]
+    - {at: 'word:thousand', who: trek, do: sweat, until: scene.end}
+    - at: word:meters
+      who: trek
+      do: point
+      target: [600, 760]
+    - {at: 'word:meters', who: trek, do: face, name: wow}
+    - {at: 'word:meters+0.2', who: flag, do: jiggle, amp: 0.1}
+    check:
+    - thing: the climber
+      ids: [trek]
+      word: above
+    - thing: the high peak
+      ids: [pkC]
+      word: five
+    - thing: the clouds below
+      ids: [cl1, cl2]
+      word: thousand
+  - id: ice
+    sents: [s3]
+    in: {type: slide}
+    camera:
+      zoom: 1.0
+      at: [360, 640]
+      screen: [360, 640]
+    set:
+    - {kind: shape, shape: daysky, x: 0, y: 0}
+    - {kind: shape, shape: snowland, x: -300, y: 610}
+    - {id: ice, kind: shape, shape: frozenlake, x: 360, y: 690, scale: 1.8}
+    props:
+    - id: snowfall
+      kind: emitter
+      emitter: dust
+      at: [-120, 620]
+      n: 26
+      r: [3, 7]
+      color: white
+      period: 2.2
+      rise: 70
+      drift: 950
+      spread: 260
+      s0: 1
+      s1: 0.6
+      opacity: 0.95
+      prewarm: true
+      layer: top
+    - {id: crA, kind: shape, shape: crack, x: 280, y: 640, scale: 1.2, hidden: true}
+    - {id: crB, kind: shape, shape: crack, x: 430, y: 660, scale: 1.2, hidden: true}
+    - {id: cut, kind: shape, shape: cut, x: 360, y: 735, hidden: true}
+    - {id: rul, kind: shape, shape: ruler, x: 140, y: 740, scale: 1.5, hidden: true, rot: 90}
+    - id: dep
+      kind: line
+      points:
+      - [590, 745]
+      - [590, 895]
+      style: ink
+      width: 7
+      color: '#d62828'
+      arrows: both
+    beats:
+    - at: scene+0.1
+      who: cam
+      do: pan
+      zoom: 1.0
+      target: [400, 640]
+      screen: [360, 640]
+      until: word:frozen
+      ease: sine.inOut
+    - {at: 'word:frozen', who: ice, do: jiggle, amp: 0.03}
+    - at: word:frozen+0.1
+      who: crA
+      do: pop
+      dur: 0.2
+      sfx: [tick, 0.35]
+    - at: word:frozen+0.3
+      who: crB
+      do: pop
+      dur: 0.2
+      sfx: [tick, 0.35]
+    - at: word:frozen-0.1
+      who: cam
+      do: push
+      zoom: 1.25
+      target: [360, 600]
+      screen: [360, 620]
+      until: word:winter.end
+      ease: sine.inOut
+    - {at: 'word:winter', who: ice, do: pulse, amp: 0.02, freq: 3, until: 'word:only'}
+    - at: word:only-0.1
+      who: cam
+      do: tilt
+      zoom: 1.0
+      target: [360, 740]
+      screen: [360, 640]
+      until: scene.end
+      ease: power2.inOut
+    - at: word:only
+      who: cut
+      do: pop
+      dur: 0.3
+      sfx: [whoosh, 0.3]
+    - at: word:about
+      who: rul
+      do: pop
+      dur: 0.25
+      sfx: [tick, 0.35]
+    - {at: 'word:three', who: rul, do: jiggle, amp: 0.08}
+    - {at: 'word:three', who: dep, do: draw_line, dur: 0.4}
+    - {at: 'word:meters', who: cut, do: pulse, amp: 0.02, freq: 3, until: scene.end}
+    - {at: 'word:deep', who: dep, do: pulse, amp: 0.05, freq: 3, until: scene.end}
+    check:
+    - thing: the frozen lake
+      ids: [ice]
+      word: frozen
+    - thing: the water depth
+      ids: [cut]
+      word: deep
+    - thing: the ruler
+      ids: [rul]
+      word: three
+  - id: melt
+    sents: [s4]
+    in: {type: slide}
+    camera:
+      zoom: 1.1
+      at: [360, 700]
+      screen: [360, 640]
+    set:
+    - {kind: shape, shape: daysky, x: 0, y: 0}
+    - {id: sun, kind: shape, shape: sun, x: 590, y: 420, scale: 1.4}
+    - {kind: shape, shape: snowland, x: -300, y: 650}
+    - {id: lake, kind: shape, shape: lake, x: 360, y: 815, scale: 1.9}
+    - {id: snow1, kind: shape, shape: snowpile, x: 150, y: 655, scale: 0.6}
+    - {id: snow2, kind: shape, shape: snowpile, x: 570, y: 655, scale: 0.6}
+    props:
+    - {id: m1, kind: shape, shape: bone, x: 270, y: 740, scale: 1.5, hidden: true, rot: 10}
+    - {id: m2, kind: shape, shape: bone, x: 330, y: 770, scale: 1.5, hidden: true, rot: 80}
+    - {id: m3, kind: shape, shape: bone, x: 390, y: 735, scale: 1.5, hidden: true, rot: 160}
+    - {id: m4, kind: shape, shape: bone, x: 440, y: 775, scale: 1.5, hidden: true, rot: 30}
+    - {id: m5, kind: shape, shape: bone, x: 300, y: 755, scale: 1.5, hidden: true, rot: 120}
+    - {id: m6, kind: shape, shape: bone, x: 470, y: 735, scale: 1.5, hidden: true, rot: 100}
+    - {id: icecap, kind: shape, shape: frozenlake, x: 360, y: 815, scale: 1.9}
+    beats:
+    - at: scene+0.1
+      who: cam
+      do: push
+      zoom: 1.3
+      target: [360, 740]
+      screen: [360, 640]
+      until: scene.end
+      ease: sine.inOut
+    - {at: 'word:When', who: sun, do: pulse, amp: 0.05, freq: 2, until: scene.end}
+    - {at: 'word:When+0.1', who: sun, do: spin, speed: 20, until: scene.end}
+    - {at: 'word:snow', who: snow1, do: move, dy: 40, dur: 0.9, ease: power2.in}
+    - {at: 'word:snow+0.1', who: snow2, do: move, dy: 40, dur: 0.9, ease: power2.in}
+    - {at: 'word:melts', who: snow1, do: fade, to: 0, dur: 0.6}
+    - {at: 'word:melts+0.1', who: snow2, do: fade, to: 0, dur: 0.6}
+    - {at: 'word:melts', who: icecap, do: fade, to: 0, dur: 1.0}
+    - {at: 'word:melts+0.3', who: lake, do: jiggle, amp: 0.03}
+    - at: word:skeletons
+      who: m1
+      do: pop
+      dur: 0.12
+      sfx: [tick, 0.3]
+      repeat:
+        every: 0.2
+        n: 6
+        cycle:
+        - {who: m1}
+        - {who: m2}
+        - {who: m3}
+        - {who: m4}
+        - {who: m5}
+        - {who: m6}
+    - {at: 'word:appear', who: m1, do: pulse, amp: 0.08, freq: 3, until: scene.end}
+    - {at: 'word:appear+0.1', who: m3, do: pulse, amp: 0.08, freq: 3, until: scene.end}
+    - {at: 'word:bottom', who: lake, do: pulse, amp: 0.03, freq: 3, until: scene.end}
+    check:
+    - thing: the melting snow
+      ids: [snow1, snow2]
+      word: snow
+    - thing: the lake bottom bones
+      ids: [m1, m2, m3, m4]
+      word: bottom
+    - thing: the lake
+      ids: [lake]
+      word: appear
+  - id: hundreds
+    sents: [s5]
+    in: {type: slide}
+    camera:
+      zoom: 1.15
+      at: [250, 760]
+      screen: [360, 640]
+    set:
+    - {kind: shape, shape: daysky, x: 0, y: 0}
+    - {kind: shape, shape: snowland, x: -300, y: 650}
+    - {id: lake, kind: shape, shape: lake, x: 360, y: 865, scale: 1.9}
+    props:
+    - {id: h1, kind: shape, shape: bone, x: 300, y: 836, scale: 1.25, hidden: true, rot: 38}
+    - {id: h2, kind: shape, shape: bone, x: 337, y: 798, scale: 1.25, hidden: true, rot: 12}
+    - {id: h3, kind: shape, shape: bone, x: 172, y: 820, scale: 1.25, hidden: true, rot: 137}
+    - {id: h4, kind: shape, shape: bone, x: 183, y: 761, scale: 1.25, hidden: true, rot: 149}
+    - {id: h5, kind: shape, shape: bone, x: 394, y: 742, scale: 1.25, hidden: true, rot: 9}
+    - {id: h6, kind: shape, shape: bone, x: 179, y: 770, scale: 1.25, hidden: true, rot: 107}
+    - {id: h7, kind: shape, shape: bone, x: 170, y: 745, scale: 1.25, hidden: true, rot: 23}
+    - {id: h8, kind: shape, shape: bone, x: 417, y: 769, scale: 1.25, hidden: true, rot: 15}
+    - {id: h9, kind: shape, shape: bone, x: 558, y: 787, scale: 1.25, hidden: true, rot: 31}
+    - {id: h10, kind: shape, shape: bone, x: 249, y: 795, scale: 1.25, hidden: true, rot: 160}
+    - {id: h11, kind: shape, shape: bone, x: 433, y: 836, scale: 1.25, hidden: true, rot: 15}
+    - {id: h12, kind: shape, shape: bone, x: 430, y: 789, scale: 1.25, hidden: true, rot: 101}
+    - {id: h13, kind: shape, shape: bone, x: 248, y: 720, scale: 1.25, hidden: true, rot: 142}
+    - {id: h14, kind: shape, shape: bone, x: 283, y: 768, scale: 1.25, hidden: true, rot: 36}
+    - {id: h15, kind: shape, shape: bone, x: 411, y: 730, scale: 1.25, hidden: true, rot: 146}
+    - {id: h16, kind: shape, shape: bone, x: 292, y: 786, scale: 1.25, hidden: true, rot: 174}
+    - {id: h17, kind: shape, shape: bone, x: 227, y: 728, scale: 1.25, hidden: true, rot: 148}
+    - {id: h18, kind: shape, shape: bone, x: 427, y: 796, scale: 1.25, hidden: true, rot: 48}
+    - {id: h19, kind: shape, shape: bone, x: 325, y: 727, scale: 1.25, hidden: true, rot: 140}
+    - {id: h20, kind: shape, shape: bone, x: 423, y: 722, scale: 1.25, hidden: true, rot: 158}
+    cast:
+    - id: tr1
+      x: 110
+      gy: 700
+      k: 1.2
+      facing: r
+      hat: [teal, cream]
+      coat: '#6b705c'
+      coat_len: 18
+      face: ok
+    - {id: tr2, x: 620, gy: 700, k: 1.2, facing: l, cap: navy, coat: '#457b9d', coat_len: 18, face: ok, hidden: true}
+    beats:
+    - at: word:Hundreds
+      who: h1
+      do: pop
+      dur: 0.12
+      sfx: [tick, 0.3]
+      repeat:
+        every: 0.07
+        n: 20
+        cycle:
+        - {who: h1}
+        - {who: h2}
+        - {who: h3}
+        - {who: h4}
+        - {who: h5}
+        - {who: h6}
+        - {who: h7}
+        - {who: h8}
+        - {who: h9}
+        - {who: h10}
+        - {who: h11}
+        - {who: h12}
+        - {who: h13}
+        - {who: h14}
+        - {who: h15}
+        - {who: h16}
+        - {who: h17}
+        - {who: h18}
+        - {who: h19}
+        - {who: h20}
+    - at: scene+0.1
+      who: cam
+      do: pan
+      zoom: 1.15
+      target: [330, 770]
+      screen: [360, 640]
+      until: word:People
+      ease: sine.inOut
+    - {at: 'word:Hundreds', who: tr1, do: face, name: wow}
+    - at: word:Hundreds
+      who: tr1
+      do: look
+      target: [360, 780]
+    - {at: 'word:them', who: tr1, do: pose, name: head}
+    - {at: 'word:them+0.2', who: tr1, do: tremble, amount: 1.5, until: 'word:Skeleton'}
+    - {at: 'word:People', who: tr2, do: show}
+    - {at: 'word:People', who: tr2, do: enter, from: 820, to: 620, until: 'word:call+0.3'}
+    - at: word:People-0.05
+      who: cam
+      do: pull
+      zoom: 1.0
+      target: [360, 740]
+      screen: [360, 640]
+      until: scene.end
+      ease: power2.inOut
+    - at: word:call
+      who: tr2
+      do: point
+      target: [360, 780]
+    - {at: 'word:call', who: tr2, do: face, name: happy}
+    - {at: 'word:it', who: h5, do: pulse, amp: 0.1, freq: 3, until: scene.end}
+    - {at: 'word:Skeleton', who: lake, do: jiggle, amp: 0.03}
+    - {at: 'word:Lake', who: h12, do: pulse, amp: 0.1, freq: 3, until: scene.end}
+    check:
+    - thing: the lake full of bones
+      ids: [lake]
+      word: Skeleton
+    - thing: many bones
+      ids: [h1, h5, h10, h15, h20]
+      word: call
+    - thing: the amazed trekker
+      ids: [tr1]
+      word: them
+  - id: hail
+    sents: [s6]
+    in: {type: slide}
+    camera:
+      zoom: 1.15
+      at: [360, 720]
+      screen: [360, 640]
+    set:
+    - {kind: shape, shape: dusk, x: 0, y: 0}
+    - {id: sc1, kind: shape, shape: stormcloud, x: 120, y: 360, scale: 2.2}
+    - {id: sc2, kind: shape, shape: stormcloud, x: 380, y: 330, scale: 2.6}
+    - {id: sc3, kind: shape, shape: stormcloud, x: 620, y: 370, scale: 2.2}
+    - {kind: shape, shape: snowland, x: -300, y: 760}
+    - {id: lake, kind: shape, shape: frozenlake, x: 380, y: 880, scale: 1.4}
+    props:
+    - id: hailer
+      kind: emitter
+      emitter: drops
+      at: [360, 380]
+      n: 30
+      spread: 340
+      dir: 90
+      vmin: 500
+      vmax: 800
+      life: 1.0
+      floor: 480
+      size: 3
+      color: white
+    - {id: bub, kind: shape, shape: bubble, x: 190, y: 560, scale: 1.4, hidden: true}
+    - {id: bun1, kind: shape, shape: bundle, x: 150, y: 610, scale: 1.1, hidden: true}
+    - {id: bun2, kind: shape, shape: bundle, x: 215, y: 612, scale: 0.9, hidden: true}
+    cast:
+    - {id: sage, x: 590, gy: 780, k: 1.3, glasses: true, hair: '#3b2a1e', coat: '#8d6e63', coat_len: 22, face: think}
+    beats:
+    - {at: scene, who: sc1, do: move, dx: 80, dur: 6, ease: none}
+    - {at: scene, who: sc3, do: move, dx: -80, dur: 6, ease: none}
+    - {at: 'word:Some', who: sage, do: pose, name: think}
+    - at: word:believed
+      who: bub
+      do: pop
+      dur: 0.3
+      sfx: [tick, 0.35]
+    - {at: 'word:believed', who: sage, do: face, name: think}
+    - at: word:group
+      who: bun1
+      do: pop
+      dur: 0.25
+      sfx: [tick, 0.35]
+    - at: word:group+0.15
+      who: bun2
+      do: pop
+      dur: 0.25
+      sfx: [tick, 0.35]
+    - {at: 'word:died', who: bub, do: pulse, amp: 0.04, freq: 2.5, until: scene.end}
+    - at: word:hailstorm-0.3
+      who: hailer
+      do: burst
+      repeat: {every: 0.4, n: 6}
+    - {at: 'word:hailstorm', who: fx, do: flash, peak: 0.4}
+    - {at: 'word:hailstorm', who: sage, do: look, target: up}
+    - at: word:hailstorm
+      who: cam
+      do: tilt
+      zoom: 1.15
+      target: [360, 520]
+      screen: [360, 640]
+      until: word:ninth
+      ease: sine.inOut
+    - {at: 'word:hailstorm+0.2', who: sage, do: pose, name: cover}
+    - {at: 'word:hailstorm+0.2', who: sc2, do: shake, amp: 6, dur: 0.5}
+    - at: word:ninth
+      who: cam
+      do: pull
+      zoom: 1.0
+      target: [360, 640]
+      screen: [360, 640]
+      until: scene.end
+      ease: power2.inOut
+    check:
+    - thing: the thought bubble with bundles
+      ids: [bub, bun1]
+      word: group
+    - thing: the storm clouds
+      ids: [sc1, sc2, sc3]
+      word: hailstorm
+    - thing: the frozen lake
+      ids: [lake]
+      word: ninth
+  - id: research
+    sents: [s7]
+    in: {type: slide}
+    camera:
+      zoom: 1.1
+      at: [360, 700]
+      screen: [360, 640]
+    set:
+    - {kind: shape, shape: daysky, x: 0, y: 0}
+    - {kind: shape, shape: room, x: 0, y: 0}
+    - {kind: shape, shape: desk, x: 400, y: 830, scale: 1.2}
+    - {id: mic, kind: shape, shape: microscope, x: 330, y: 604, scale: 1.5}
+    - {id: lens, kind: shape, shape: lens, x: 470, y: 545, scale: 0.2}
+    - {id: t1, kind: shape, shape: tube, x: 520, y: 604, scale: 1.3}
+    - {id: t2, kind: shape, shape: tube, x: 550, y: 604, scale: 1.3}
+    - {id: t3, kind: shape, shape: tube, x: 580, y: 604, scale: 1.3}
+    cast:
+    - {id: sci, x: 90, gy: 830, k: 1.4, glasses: true, hair: '#6d4c41', coat: '#ffffff', coat_len: 40, face: curious}
+    beats:
+    - at: scene+0.05
+      who: cam
+      do: push
+      zoom: 1.6
+      target: [330, 600]
+      screen: [360, 640]
+      until: scene.end
+      ease: sine.inOut
+    - {at: scene+0.05, who: sci, do: enter, from: -90, to: 140, until: 'word:shows'}
+    - {at: 'word:Research', who: t1, do: jiggle, amp: 0.08}
+    - {at: 'word:Research+0.1', who: t2, do: jiggle, amp: 0.08}
+    - {at: 'word:Research+0.2', who: t3, do: jiggle, amp: 0.08}
+    - {at: 'word:shows-0.1', who: sci, do: pose, name: lean_in}
+    - at: word:shows
+      who: sci
+      do: look
+      target: [330, 540]
+    - {at: 'word:shows', who: mic, do: jiggle, amp: 0.04}
+    - {at: 'word:something', who: lens, do: jiggle, amp: 0.1}
+    - {at: 'word:something', who: sci, do: face, name: wow}
+    - {at: 'word:stranger', who: sci, do: startle}
+    - {at: 'word:stranger', who: mic, do: pulse, amp: 0.04, freq: 4, until: scene.end}
+    - {at: 'word:stranger', who: fx, do: flash, peak: 0.3}
+    check:
+    - thing: the microscope
+      ids: [mic]
+      word: shows
+    - thing: the scientist
+      ids: [sci]
+      word: something
+    - thing: the test tubes
+      ids: [t1, t2, t3]
+      word: stranger
+  - id: groups
+    sents: [s8]
+    in: {type: slide}
+    camera:
+      zoom: 1.0
+      at: [360, 640]
+      screen: [360, 640]
+    set:
+    - {kind: shape, shape: daysky, x: 0, y: 0}
+    - {kind: shape, shape: paper, x: 0, y: 0}
+    - kind: line
+      points:
+      - [-200, 850]
+      - [920, 850]
+      width: 7
+    props:
+    - {id: ringa, kind: shape, shape: ringa, x: 132, y: 850, scale: 1.25, hidden: true}
+    - {id: ringb, kind: shape, shape: ringb, x: 352, y: 850, scale: 1.25, hidden: true}
+    - {id: ringc, kind: shape, shape: ringc, x: 588, y: 850, scale: 1.25, hidden: true}
+    cast:
+    - id: a1
+      x: 90
+      gy: 840
+      k: 1.25
+      facing: r
+      face: ok
+      hidden: true
+      hat: [red, cream]
+    - id: a2
+      x: 175
+      gy: 840
+      k: 1.25
+      facing: r
+      face: ok
+      hidden: true
+      hat: [red, cream]
+    - {id: b1, x: 310, gy: 840, k: 1.25, facing: r, face: ok, hidden: true, cap: navy}
+    - {id: b2, x: 395, gy: 840, k: 1.25, facing: r, face: ok, hidden: true, cap: navy}
+    - {id: c1, x: 545, gy: 840, k: 1.25, facing: l, face: ok, hidden: true, hair: '#3b2a1e', coat: '#2a9d8f', coat_len: 22}
+    - {id: c2, x: 630, gy: 840, k: 1.25, facing: l, face: ok, hidden: true, hair: '#3b2a1e', coat: '#2a9d8f', coat_len: 22}
+    beats:
+    - at: scene+0.1
+      who: cam
+      do: push
+      zoom: 1.0
+      target: [360, 640]
+      screen: [360, 640]
+      until: scene.end
+      ease: sine.inOut
+    - {at: scene, who: a1, do: show}
+    - {at: prev, who: a1, do: enter, from: -90, to: 90, dur: 0.7}
+    - {at: scene+0.12, who: a2, do: show}
+    - {at: prev, who: a2, do: enter, from: -90, to: 175, dur: 0.7}
+    - {at: 'word:three', who: b1, do: show}
+    - {at: prev, who: b1, do: enter, from: 820, to: 310, dur: 0.7}
+    - {at: 'word:three+0.12', who: b2, do: show}
+    - {at: prev, who: b2, do: enter, from: 820, to: 395, dur: 0.7}
+    - {at: 'word:distinct', who: c1, do: show}
+    - {at: prev, who: c1, do: enter, from: 820, to: 545, dur: 0.7}
+    - {at: 'word:distinct+0.12', who: c2, do: show}
+    - {at: prev, who: c2, do: enter, from: 820, to: 630, dur: 0.7}
+    - at: scene+0.9
+      who: ringa
+      do: pop
+      dur: 0.25
+      sfx: [tick, 0.35]
+    - at: word:three+0.7
+      who: ringb
+      do: pop
+      dur: 0.25
+      sfx: [tick, 0.35]
+    - at: word:distinct+0.7
+      who: ringc
+      do: pop
+      dur: 0.25
+      sfx: [tick, 0.35]
+    - {at: 'word:groups', who: ringa, do: pulse, amp: 0.04, freq: 3, until: scene.end}
+    - {at: 'word:groups+0.1', who: ringb, do: pulse, amp: 0.04, freq: 3, until: scene.end}
+    - {at: 'word:groups+0.2', who: ringc, do: pulse, amp: 0.04, freq: 3, until: scene.end}
+    - {at: 'word:groups', who: a1, do: pose, name: wave}
+    - {at: 'word:groups', who: b1, do: pose, name: wave}
+    - {at: 'word:groups', who: c1, do: pose, name: wave}
+    check:
+    - thing: the first group
+      ids: [a1, a2]
+      word: ancestry
+    - thing: the second group
+      ids: [b1, b2]
+      word: ancestry
+    - thing: the third group
+      ids: [c1, c2]
+      word: groups
+  - id: events
+    sents: [s9]
+    in: {type: slide}
+    camera:
+      zoom: 1.3
+      at: [300, 690]
+      screen: [360, 640]
+    set:
+    - {kind: shape, shape: daysky, x: 0, y: 0}
+    - {kind: shape, shape: paper, x: 0, y: 0}
+    props:
+    - id: tl
+      kind: line
+      points:
+      - [120, 800]
+      - [1080, 800]
+      width: 9
+      style: ink
+    - id: tk1
+      kind: line
+      points:
+      - [300, 690]
+      - [300, 910]
+      width: 11
+      style: ink
+    - id: tk2
+      kind: line
+      points:
+      - [900, 690]
+      - [900, 910]
+      width: 11
+      style: ink
+    - {id: fire1, kind: shape, shape: campfire, x: 360, y: 800, scale: 1.9, hidden: true}
+    - {id: bun1, kind: shape, shape: bundle, x: 230, y: 800, scale: 1.3, hidden: true}
+    - {id: fire2, kind: shape, shape: campfire, x: 960, y: 800, scale: 1.9, hidden: true}
+    - {id: bun2, kind: shape, shape: bundle, x: 1040, y: 800, scale: 1.3, hidden: true}
+    beats:
+    - {at: scene+0.05, who: tl, do: draw_line, dur: 0.7}
+    - {at: 'word:They', who: tk1, do: draw_line, dur: 0.3}
+    - at: word:died
+      who: fire1
+      do: pop
+      dur: 0.3
+      sfx: [tick, 0.35]
+    - at: word:died+0.2
+      who: bun1
+      do: pop
+      dur: 0.3
+      sfx: [tick, 0.35]
+    - {at: 'word:died+0.4', who: fire1, do: pulse, amp: 0.05, freq: 4, until: scene.end}
+    - {at: 'word:two', who: tk1, do: jiggle, amp: 0.05}
+    - at: word:separate-0.1
+      who: cam
+      do: pan
+      zoom: 1.3
+      target: [900, 690]
+      screen: [360, 640]
+      until: word:events
+      ease: power2.inOut
+    - {at: 'word:events-0.2', who: tk2, do: draw_line, dur: 0.3}
+    - at: word:events+0.1
+      who: fire2
+      do: pop
+      dur: 0.3
+      sfx: [tick, 0.35]
+    - at: word:events+0.3
+      who: bun2
+      do: pop
+      dur: 0.3
+      sfx: [tick, 0.35]
+    - {at: 'word:around+0.1', who: fire2, do: pulse, amp: 0.05, freq: 4, until: scene.end}
+    - {at: 'word:800', who: fire1, do: jiggle, amp: 0.05}
+    - at: word:and
+      who: cam
+      do: pull
+      zoom: 0.75
+      target: [600, 740]
+      screen: [360, 600]
+      until: scene.end
+      ease: power2.inOut
+    - {at: 'word:1800', who: fire2, do: jiggle, amp: 0.05}
+    check:
+    - thing: the two campfires
+      ids: [fire1, fire2]
+      word: '1800'
+    - thing: the two tick marks
+      ids: [tk1, tk2]
+      word: '1800'
+    - thing: the walking sticks
+      ids: [bun1, bun2]
+      word: '1800'
+  - id: question
+    sents: [s10]
+    in: {type: slide}
+    camera:
+      zoom: 1.4
+      at: [420, 700]
+      screen: [360, 640]
+    set:
+    - {kind: shape, shape: dusk, x: 0, y: 0}
+    - {id: pkL, kind: shape, shape: peakd, x: 110, y: 720, scale: 1.3}
+    - {id: pkR, kind: shape, shape: peakd, x: 620, y: 720, scale: 1.2}
+    - {kind: shape, shape: snowland, x: -300, y: 720}
+    - {id: lake, kind: shape, shape: frozenlake, x: 340, y: 850, scale: 1.6}
+    props:
+    - id: drift
+      kind: emitter
+      emitter: dust
+      at: [-120, 760]
+      n: 22
+      r: [3, 7]
+      color: white
+      period: 2.2
+      rise: 70
+      drift: 950
+      spread: 260
+      s0: 1
+      s1: 0.6
+      opacity: 0.95
+      prewarm: true
+      layer: top
+    - {id: q, kind: shape, shape: question, x: 360, y: 520, scale: 3.0, hidden: true}
+    cast:
+    - id: wan
+      x: 520
+      gy: 790
+      k: 1.0
+      facing: l
+      hat: [orange, cream]
+      coat: '#6b705c'
+      coat_len: 18
+      face: ok
+    beats:
+    - at: scene+0.1
+      who: cam
+      do: pull
+      zoom: 1.0
+      target: [360, 660]
+      screen: [360, 640]
+      until: s10.end+1.2
+      ease: sine.inOut
+    - at: word:Why
+      who: q
+      do: pop
+      dur: 0.35
+      sfx: [tick, 0.4]
+    - {at: 'word:Why+0.4', who: q, do: bob, amp: 8, freq: 1.2, until: scene.end}
+    - {at: 'word:they', who: pkL, do: jiggle, amp: 0.02}
+    - at: word:to+0.3
+      who: wan
+      do: look
+      target: [360, 520]
+    - {at: 'word:this', who: pkR, do: jiggle, amp: 0.02}
+    - {at: 'word:frozen', who: lake, do: jiggle, amp: 0.03}
+    - {at: 'word:frozen', who: q, do: pulse, amp: 0.05, freq: 3, until: scene.end}
+    - {at: 'word:lake', who: wan, do: face, name: think}
+    - {at: 'word:is+0.1', who: wan, do: sway, until: scene.end}
+    - {at: 'word:still', who: q, do: rock, amp: 6, freq: 1.0, until: scene.end}
+    - {at: 'word:unanswered', who: wan, do: pose, name: shrug}
+    check:
+    - thing: the question mark
+      ids: [q]
+      word: still
+    - thing: the frozen lake
+      ids: [lake]
+      word: lake
+    - thing: the lone trekker
+      ids: [wan]
+      word: is

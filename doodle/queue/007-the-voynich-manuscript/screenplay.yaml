@@ -1,0 +1,542 @@
+title: "The Voynich Manuscript"
+voice: {voice: am_michael, speed: 1.10, pause: 0.30}
+tail: 2.0
+music: sneaky_snitch.mp3
+loop: {at: "s10.end+0.55", dur: 1.3}
+sentences:
+  s1: "Possibly Italy, between 1404 and 1438. Someone writes a book in a strange script."
+  s2: "The book has about two hundred forty pages."
+  s3: "They are full of unknown plants, astrological symbols, and people."
+  s4: "Some pages unfold into larger sheets."
+  s5: "The first confirmed owner is Georg Baresch, an alchemist from Prague."
+  s6: "In 1912 a Polish book dealer named Wilfrid Voynich buys it."
+  s7: "Codebreakers from both world wars try to crack it and fail."
+  s8: "Since 1969 it rests at Yale University, and since 2020 it is online."
+  s9: "Is it a code, a lost language, or a hoax?"
+  s10: "Nobody has ever deciphered it."
+gold:
+  - {word: "1404", label: "1404", kind: stamp, top: 128, size: 120, until: "s1.end", stamp: {from: 2.4, r0: -14, r1: -4}}
+  - {word: two, label: "240", kind: counter, top: 112, size: 112, dur: 0.9, until: "s2.end"}
+  - {word: "1912", label: "1912", kind: stamp, top: 128, size: 120, until: "s6.end", stamp: {from: 2.4, r0: -14, r1: -4}}
+  - {word: "s10/ever", label: "NEVER READ", kind: stamp, top: 118, size: 88, until: "s10.end+0.6", stamp: {from: 2.2, r0: -10, r1: -4}}
+styles:
+  paper: {fill: "#f6edd3", width: 5}
+shapes:
+  room:
+    - {rect: [-300, -300, 1320, 1090], fill: "#efe3c2", stroke: "#efe3c2", width: 1}
+    - {rect: [-300, 790, 1320, 700], fill: "#b08968", stroke: "#b08968", width: 1}
+    - {line: [[-300, 790], [1020, 790]], width: 6}
+  tabletop:
+    - {rect: [-300, 800, 1320, 700], fill: "#8d6e63", width: 6}
+  lawn:
+    - {rect: [-300, 860, 1320, 700], fill: "#8ecf6a", stroke: "#8ecf6a", width: 1}
+    - {line: [[-300, 860], [1020, 860]], width: 6}
+  dark:
+    - {rect: [-300, -300, 1320, 1900], fill: "#05060f", stroke: "#05060f", width: 1}
+  glow:
+    - {ellipse: [0, 0, 210, 80], fill: "#ffe28a", stroke: "#ffe28a", width: 1, opacity: 0.55}
+  bookopen:
+    - {poly: [[-118, 0], [118, 0], [118, -12], [-118, -12]], fill: "#6d4c41", width: 5}
+    - {poly: [[-110, -12], [0, -6], [0, -96], [-110, -104]], style: paper}
+    - {poly: [[110, -12], [0, -6], [0, -96], [110, -104]], style: paper}
+    - {line: [[-96, -86], [-14, -82]], width: 3}
+    - {line: [[-96, -68], [-14, -64]], width: 3}
+    - {line: [[-96, -50], [-14, -46]], width: 3}
+    - {path: "M-90,-28 q8,-12 16,0 t16,0 t16,0", width: 3}
+    - {line: [[14, -82], [96, -86]], width: 3}
+    - {line: [[14, -64], [96, -68]], width: 3}
+    - {path: "M30,-34 q8,-12 16,0 t16,0 t16,0", width: 3}
+  bookclosed:
+    - {rect: [-70, -40, 140, 40, 4], fill: "#6d4c41", width: 6}
+    - {line: [[-70, -26], [70, -26]], width: 4}
+    - {circle: [0, -20, 7], fill: "#ffd166", width: 4}
+  squig:
+    - {path: "M0,0 q10,-22 20,0 t20,0 t20,0", width: 5}
+  leaf:
+    - {rect: [-45, -7, 90, 14, 2], fill: "#f6edd3", width: 4}
+  candle:
+    - {rect: [-12, -60, 24, 60, 3], fill: "#f5f0e1", width: 5}
+    - {group: flame, pivot: [0, -62], items: [{path: "M0,-64 Q-12,-84 0,-104 Q12,-84 0,-64", fill: "#ffb703", width: 4}]}
+  window:
+    - {rect: [-60, -200, 120, 200, 0], fill: "#bde0fe", width: 7}
+    - {path: "M-60,-200 Q0,-260 60,-200 Z", fill: "#bde0fe", width: 7}
+    - {path: "M-60,-60 Q-20,-100 20,-60 T60,-70 L60,0 L-60,0 Z", fill: "#a7c957", width: 5}
+    - {path: "M30,-60 Q22,-120 30,-150 Q38,-120 30,-60 Z", fill: "#386641", width: 5}
+    - {line: [[0, -232], [0, 0]], width: 5}
+    - {line: [[-60, -110], [60, -110]], width: 5}
+  pragwin:
+    - {rect: [-110, -260, 220, 260, 0], fill: "#ffe8d6", width: 7}
+    - {poly: [[-90, 0], [-90, -120], [-70, -120], [-70, 0]], fill: "#6b705c", width: 5}
+    - {poly: [[-40, 0], [-40, -160], [-20, -210], [0, -160], [0, 0]], fill: "#8d99ae", width: 5}
+    - {poly: [[20, 0], [20, -110], [60, -110], [60, 0]], fill: "#6b705c", width: 5}
+    - {poly: [[64, 0], [64, -170], [78, -215], [92, -170], [92, 0]], fill: "#8d99ae", width: 5}
+    - {line: [[0, -260], [0, 0]], width: 6}
+    - {line: [[-110, -130], [110, -130]], width: 6}
+  shelf:
+    - {rect: [-120, -8, 240, 16, 3], fill: "#8d6e63", width: 5}
+    - {rect: [-100, -58, 34, 50, 6], fill: "#a2d2ff", width: 5}
+    - {rect: [-40, -70, 34, 62, 6], fill: "#ffafcc", width: 5}
+    - {rect: [20, -52, 34, 44, 6], fill: "#caffbf", width: 5}
+    - {rect: [70, -64, 34, 56, 6], fill: "#ffd6a5", width: 5}
+  beaker:
+    - {path: "M-18,-70 L-18,-40 L-42,0 L42,0 L18,-40 L18,-70 Z", fill: "#b9fbc0", width: 6}
+    - {line: [[-26, -20], [26, -20]], width: 4}
+  plant:
+    - {path: "M0,-20 Q-4,-70 0,-110", width: 5}
+    - {path: "M0,-60 Q-30,-70 -34,-96 Q-8,-90 0,-60 Z", fill: "#80b918", width: 4}
+    - {path: "M0,-80 Q30,-86 36,-112 Q8,-108 0,-80 Z", fill: "#80b918", width: 4}
+    - {circle: [0, -116, 8], fill: "#e63946", width: 4}
+    - {path: "M0,-20 Q-14,-6 -26,0 M0,-20 Q2,-4 6,6 M0,-20 Q16,-8 28,-2", width: 4}
+  rosette:
+    - {circle: [0, 0, 44], fill: "#fff3b0", width: 5}
+    - {circle: [0, 0, 22], fill: "#ffd166", width: 4}
+    - {line: [[0, -44], [0, -60]], width: 5}
+    - {line: [[0, 44], [0, 60]], width: 5}
+    - {line: [[-44, 0], [-60, 0]], width: 5}
+    - {line: [[44, 0], [60, 0]], width: 5}
+    - {line: [[31, -31], [42, -42]], width: 5}
+    - {line: [[-31, 31], [-42, 42]], width: 5}
+    - {line: [[31, 31], [42, 42]], width: 5}
+    - {line: [[-31, -31], [-42, -42]], width: 5}
+  pooler:
+    - {ellipse: [0, 0, 40, 16], fill: "#90e0ef", width: 5}
+    - {circle: [0, -34, 8], fill: white, width: 4}
+    - {line: [[0, -26], [0, -6]], width: 4}
+    - {line: [[-14, -20], [0, -16], [14, -20]], width: 4}
+  panelA:
+    - {rect: [-75, -300, 150, 300, 0], fill: "#f6edd3", width: 6}
+    - {circle: [0, -215, 46], fill: "#ffe8a3", width: 5}
+    - {circle: [0, -215, 24], fill: "#f4a261", width: 4}
+    - {line: [[-50, -120], [50, -120]], width: 4}
+    - {line: [[-50, -100], [30, -100]], width: 4}
+    - {line: [[-50, -80], [50, -80]], width: 4}
+    - {circle: [-30, -40, 14], fill: "#80b918", width: 4}
+    - {circle: [30, -40, 14], fill: "#80b918", width: 4}
+  panelB:
+    - {rect: [-75, -300, 150, 300, 0], fill: "#f6edd3", width: 6}
+    - {path: "M-60,-60 Q0,-260 60,-60", width: 5}
+    - {circle: [0, -150, 30], fill: "#a2d2ff", width: 5}
+    - {poly: [[-40, -60], [0, -110], [40, -60]], fill: "#ffafcc", width: 5}
+    - {line: [[-50, -30], [50, -30]], width: 4}
+    - {line: [[-50, -14], [30, -14]], width: 4}
+  sheetscrib:
+    - {poly: [[-34, -24], [34, -30], [36, 24], [-32, 28]], fill: "#fffdf5", width: 4}
+    - {line: [[-24, -12], [22, -14]], width: 3}
+    - {line: [[-24, 0], [22, -2]], width: 3}
+    - {line: [[-24, 12], [14, 10]], width: 3}
+  case:
+    - {rect: [-90, -58, 180, 58, 4], fill: "#6d4c41", width: 6}
+    - {use: bookopen, at: [0, -62], scale: 0.85}
+    - {rect: [-110, -170, 220, 112, 8], fill: "#cfe8f0", width: 6, opacity: 0.55}
+  lock:
+    - {path: "M-24,-62 Q-24,-104 0,-104 Q24,-104 24,-62", width: 9}
+    - {rect: [-34, -64, 68, 54, 8], fill: "#ffd166", width: 6}
+    - {circle: [0, -42, 7], fill: "#222222", width: 3}
+    - {line: [[0, -38], [0, -24]], width: 5}
+  jester:
+    - {path: "M-34,-52 Q-70,-100 -64,-124 Q-30,-96 -8,-76 Q0,-130 0,-140 Q20,-110 8,-76 Q34,-94 62,-124 Q70,-100 34,-52 Z", fill: "#e63946", width: 5}
+    - {circle: [0, -40, 34], fill: "#ffe0bd", width: 6}
+    - {circle: [-64, -126, 7], fill: "#ffd166", width: 4}
+    - {circle: [0, -142, 7], fill: "#ffd166", width: 4}
+    - {circle: [62, -126, 7], fill: "#ffd166", width: 4}
+    - {circle: [-12, -44, 4], fill: "#222222", width: 2}
+    - {circle: [12, -44, 4], fill: "#222222", width: 2}
+    - {path: "M-14,-26 Q0,-14 14,-26", width: 4}
+  shelves:
+    - {rect: [-40, 300, 800, 290, 0], fill: "#7f5539", width: 7}
+    - {rect: [-20, 320, 760, 100, 0], fill: "#bc6c25", width: 4}
+    - {line: [[-20, 370], [740, 370]], stroke: "#1b1b1b", width: 100, dash: "5 30", opacity: 0.8}
+    - {rect: [-20, 450, 760, 110, 0], fill: "#2a9d8f", width: 4}
+    - {line: [[-20, 505], [740, 505]], stroke: "#1b1b1b", width: 110, dash: "5 30", opacity: 0.8}
+    - {line: [[-40, 430], [800, 430]], width: 10}
+    - {line: [[-40, 568], [800, 568]], width: 10}
+scenes:
+- id: scribe
+  sents: [s1]
+  camera: {zoom: 1.1, at: [400, 660], screen: [360, 640]}
+  set:
+  - {id: bg, kind: shape, shape: daysky, x: 0, y: 0}
+  - {id: room, kind: shape, shape: room, x: 0, y: 0}
+  - {id: desk, kind: shape, shape: desk, x: 480, y: 850, scale: 1.15}
+  props:
+  - {id: win, kind: shape, shape: window, x: 150, y: 620, scale: 1.3, hidden: true}
+  - {id: candle, kind: shape, shape: candle, x: 660, y: 631, scale: 1.0}
+  - {id: book, kind: shape, shape: bookopen, x: 470, y: 631, scale: 1.3, hidden: true}
+  - {id: sq1, kind: shape, shape: squig, x: 400, y: 570, hidden: true}
+  - {id: sq2, kind: shape, shape: squig, x: 450, y: 530, hidden: true}
+  - {id: sq3, kind: shape, shape: squig, x: 500, y: 490, hidden: true}
+  - {id: sq4, kind: shape, shape: squig, x: 550, y: 450, hidden: true}
+  - {id: sq5, kind: shape, shape: squig, x: 600, y: 410, hidden: true}
+  cast:
+  - {id: scribe, x: 200, gy: 850, k: 1.5, facing: r, coat: '#6d4c41', coat_len: 40, hair: '#3b2a1e', face: curious, hidden: true}
+  beats:
+  - {at: scene, who: candle.flame, do: rock, amp: 6, freq: 4}
+  - {at: 'scene+0.05', who: scribe, do: show}
+  - {at: prev, who: scribe, do: enter, from: -90, to: 200, until: 'word:between'}
+  - {at: 'word:Possibly', who: win, do: pop, sfx: [tick, 0.4]}
+  - {at: 'word:Italy', who: win, do: jiggle, amp: 0.06}
+  - {at: 'word:1404', who: cam, do: push, zoom: 1.25, target: [330, 640], screen: [360, 640], until: 'word:Someone', ease: sine.inOut}
+  - {at: 'word:1438', who: candle, do: jiggle, amp: 0.1}
+  - {at: 'word:Someone', who: scribe, do: face, name: happy}
+  - {at: 'word:writes', who: scribe, do: pose, name: lean_in, dur: 0.3}
+  - {at: 'word:writes', who: book, do: pop, sfx: [tick, 0.4]}
+  - at: 'word:writes+0.15'
+    who: sq1
+    do: pop
+    dur: 0.12
+    sfx: [tick, 0.3]
+    repeat:
+      every: 0.22
+      n: 5
+      cycle:
+      - {who: sq1}
+      - {who: sq2}
+      - {who: sq3}
+      - {who: sq4}
+      - {who: sq5}
+  - {at: 'word:book', who: book, do: pulse, amp: 0.06, freq: 3, until: 'word:strange'}
+  - {at: 'word:strange', who: cam, do: push, zoom: 1.7, target: [470, 600], screen: [360, 640], until: 'word:script', ease: sine.inOut}
+  - {at: 'word:script', who: scribe, do: face, name: wow}
+  - {at: 'word:script+0.1', who: cam, do: pull, zoom: 1.1, target: [400, 660], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  check:
+  - {thing: "the window with Italy", ids: [win], word: "Italy"}
+  - {thing: "the scribe", ids: [scribe], word: "writes"}
+  - {thing: "the book", ids: [book], word: "book"}
+- id: pages
+  sents: [s2, s3]
+  in: {type: slide}
+  camera: {zoom: 1.5, at: [420, 700], screen: [360, 640]}
+  set:
+  - {id: bg, kind: shape, shape: daysky, x: 0, y: 0}
+  - {id: room, kind: shape, shape: room, x: 0, y: 0}
+  - {id: table, kind: shape, shape: tabletop, x: 0, y: 0}
+  props:
+  - {id: book, kind: shape, shape: bookopen, x: 420, y: 800, scale: 2.4}
+  - {id: leaf1, kind: shape, shape: leaf, x: 70, y: 790, scale: 1.2, hidden: true}
+  - {id: leaf2, kind: shape, shape: leaf, x: 72, y: 778, scale: 1.2, hidden: true}
+  - {id: leaf3, kind: shape, shape: leaf, x: 68, y: 766, scale: 1.2, hidden: true}
+  - {id: leaf4, kind: shape, shape: leaf, x: 72, y: 754, scale: 1.2, hidden: true}
+  - {id: leaf5, kind: shape, shape: leaf, x: 68, y: 742, scale: 1.2, hidden: true}
+  - {id: leaf6, kind: shape, shape: leaf, x: 72, y: 730, scale: 1.2, hidden: true}
+  - {id: leaf7, kind: shape, shape: leaf, x: 68, y: 718, scale: 1.2, hidden: true}
+  - {id: leaf8, kind: shape, shape: leaf, x: 72, y: 706, scale: 1.2, hidden: true}
+  - {id: plant1, kind: shape, shape: plant, x: 288, y: 760, scale: 1.4, hidden: true}
+  - {id: rosette1, kind: shape, shape: rosette, x: 552, y: 625, scale: 1.0, hidden: true}
+  - {id: pool1, kind: shape, shape: pooler, x: 552, y: 745, scale: 1.3, hidden: true}
+  beats:
+  - {at: 'scene+0.05', who: cam, do: pull, zoom: 1.0, target: [360, 650], screen: [360, 640], until: 'word:pages', ease: sine.inOut}
+  - {at: 'word:book', who: book, do: pulse, amp: 0.04, freq: 3, until: 'word:two'}
+  - at: 'word:about'
+    who: leaf1
+    do: pop
+    dur: 0.1
+    sfx: [tick, 0.3]
+    repeat:
+      every: 0.17
+      n: 8
+      cycle:
+      - {who: leaf1}
+      - {who: leaf2}
+      - {who: leaf3}
+      - {who: leaf4}
+      - {who: leaf5}
+      - {who: leaf6}
+      - {who: leaf7}
+      - {who: leaf8}
+  - {at: 'word:pages', who: book, do: jiggle, amp: 0.03}
+  - {at: 'word:full', who: cam, do: push, zoom: 1.2, target: [420, 640], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - {at: 'word:unknown', who: plant1, do: pop, sfx: [tick, 0.4]}
+  - {at: 'word:plants', who: plant1, do: jiggle, amp: 0.08}
+  - {at: 'word:astrological', who: rosette1, do: pop, sfx: [tick, 0.4]}
+  - {at: 'word:symbols', who: rosette1, do: spin, speed: 50, until: scene.end}
+  - {at: 'word:people', who: pool1, do: pop, sfx: [tick, 0.4]}
+  - {at: 'word:people+0.1', who: pool1, do: bob, amp: 4, freq: 2, until: scene.end}
+  check:
+  - {thing: "the book", ids: [book], word: "book"}
+  - {thing: "the plant", ids: [plant1], word: "plants"}
+  - {thing: "the star symbol", ids: [rosette1], word: "symbols"}
+  - {thing: "the person", ids: [pool1], word: "people"}
+- id: foldout
+  sents: [s4]
+  in: {type: slide}
+  camera: {zoom: 1.7, at: [135, 680], screen: [360, 640]}
+  set:
+  - {id: bg, kind: shape, shape: daysky, x: 0, y: 0}
+  - {id: room, kind: shape, shape: room, x: 0, y: 0}
+  - {id: table, kind: shape, shape: tabletop, x: 0, y: 0}
+  props:
+  - {id: f1, kind: shape, shape: panelA, x: 135, y: 830}
+  - {id: f2, kind: shape, shape: panelB, x: 285, y: 830, hidden: true}
+  - {id: f3, kind: shape, shape: panelA, x: 435, y: 830, hidden: true}
+  - {id: f4, kind: shape, shape: panelB, x: 585, y: 830, hidden: true}
+  beats:
+  - {at: 'word:Some', who: f1, do: pulse, amp: 0.04, freq: 3, until: 'word:unfold'}
+  - {at: 'word:pages', who: f1, do: jiggle, amp: 0.05}
+  - {at: 'word:unfold-0.05', who: fx, do: lines, dur: 0.4, target: [360, 680]}
+  - at: 'word:unfold'
+    who: f2
+    do: pop
+    dur: 0.2
+    sfx: [whoosh, 0.35]
+    repeat:
+      every: 0.28
+      n: 3
+      cycle:
+      - {who: f2}
+      - {who: f3}
+      - {who: f4}
+  - {at: 'word:unfold', who: cam, do: pull, zoom: 1.0, target: [360, 690], screen: [360, 640], until: 'word:larger', ease: power2.inOut}
+  - {at: 'word:into', who: f1, do: rock, amp: 1.5, freq: 3, until: 'word:larger'}
+  - {at: 'word:larger', who: f4, do: rock, amp: 2, freq: 3, until: scene.end}
+  - {at: 'word:larger', who: f2, do: rock, amp: 2, freq: 3, until: scene.end}
+  - {at: 'word:larger+0.1', who: f3, do: rock, amp: 2, freq: 3, until: scene.end}
+  - {at: 'word:sheets', who: cam, do: shake, amp: 6, dur: 0.25}
+  - {at: 'word:sheets', who: f4, do: pulse, amp: 0.03, freq: 3, until: scene.end}
+  - {at: 'word:sheets+0.2', who: cam, do: move, zoom: 0.92, target: [360, 690], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  check:
+  - {thing: "the big folded sheets", ids: [f1, f2, f3, f4], word: "sheets"}
+- id: baresch
+  sents: [s5]
+  in: {type: slide}
+  camera: {zoom: 1.15, at: [360, 660], screen: [360, 640]}
+  set:
+  - {id: bg, kind: shape, shape: daysky, x: 0, y: 0}
+  - {id: room, kind: shape, shape: room, x: 0, y: 0}
+  - {id: pwin, kind: shape, shape: pragwin, x: 560, y: 600}
+  - {id: shelf, kind: shape, shape: shelf, x: 175, y: 520, scale: 1.4}
+  - {id: tab, kind: shape, shape: table, x: 185, y: 760, scale: 1.1}
+  props:
+  - {id: beaker1, kind: shape, shape: beaker, x: 120, y: 760, scale: 1.1}
+  - {id: beaker2, kind: shape, shape: beaker, x: 250, y: 760, scale: 1.1}
+  - {id: bub, kind: emitter, emitter: bubbles, at: [250, 690], n: 8, r: [4, 9], color: white, period: 1.4, rise: 60, spread: 20, drift: 0}
+  - {id: tome, kind: shape, shape: bookopen, scale: 1.1, on: alch, anchor: hand, offset: [20, -70], hidden: true}
+  cast:
+  - {id: alch, x: 400, gy: 850, k: 1.5, facing: l, coat: '#5e548e', coat_len: 40, hair: '#9e9e9e', glasses: true, face: curious, hidden: true}
+  beats:
+  - {at: 'scene+0.05', who: alch, do: show}
+  - {at: prev, who: alch, do: enter, from: 800, to: 400, until: 'word:confirmed'}
+  - {at: 'word:first', who: tome, do: show, sfx: [tick, 0.3]}
+  - {at: 'word:owner', who: tome, do: pulse, amp: 0.05, freq: 3, until: 'word:alchemist'}
+  - {at: 'word:Georg', who: alch, do: face, name: think}
+  - {at: 'word:Baresch', who: alch, do: pose, name: scratch, dur: 0.3}
+  - {at: 'word:alchemist', who: bub, do: emit, until: scene.end}
+  - {at: 'word:alchemist', who: alch, do: nod, until: 'word:from'}
+  - {at: 'word:alchemist', who: beaker1, do: jiggle, amp: 0.05}
+  - {at: 'word:alchemist+0.2', who: beaker2, do: jiggle, amp: 0.05}
+  - {at: 'word:from', who: cam, do: pan, zoom: 1.2, target: [520, 640], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - {at: 'word:Prague', who: pwin, do: pulse, amp: 0.04, freq: 3, until: scene.end}
+  - {at: 'word:Prague', who: alch, do: point, target: pwin}
+  check:
+  - {thing: "the alchemist", ids: [alch], word: "alchemist"}
+  - {thing: "the old book", ids: [tome], word: "owner"}
+  - {thing: "Prague in the window", ids: [pwin], word: "Prague"}
+- id: dealer
+  sents: [s6]
+  in: {type: slide}
+  camera: {zoom: 1.1, at: [360, 690], screen: [360, 640]}
+  set:
+  - {id: bg, kind: shape, shape: daysky, x: 0, y: 0}
+  - {id: room, kind: shape, shape: room, x: 0, y: 0}
+  - {id: shelves, kind: shape, shape: shelves, x: 0, y: 0}
+  - {id: counter, kind: shape, shape: counter, x: 360, y: 850, scale: 1.3}
+  props:
+  - {id: book, kind: shape, shape: bookopen, x: 360, y: 707, scale: 1.2, hidden: true}
+  - {id: c1, kind: shape, shape: coin, x: 300, y: 695, scale: 2.0, hidden: true}
+  - {id: c2, kind: shape, shape: coin, x: 340, y: 695, scale: 2.0, hidden: true}
+  - {id: c3, kind: shape, shape: coin, x: 380, y: 695, scale: 2.0, hidden: true}
+  cast:
+  - {id: seller, x: 560, gy: 850, k: 1.3, facing: l, hair: '#6d4c41', coat: '#bc4749', coat_len: 30, face: happy}
+  - {id: dealer, x: 190, gy: 850, k: 1.5, facing: r, cap: '#2b2d42', hair: '#3b2a1e', coat: '#2b2d42', coat_len: 36, face: curious, hidden: true}
+  beats:
+  - {at: 'scene+0.05', who: dealer, do: show}
+  - {at: prev, who: dealer, do: enter, from: -90, to: 190, until: 'word:book'}
+  - {at: 'word:In', who: seller, do: nod, until: 'word:book'}
+  - {at: 'word:1912', who: cam, do: push, zoom: 1.2, target: [360, 690], screen: [360, 640], until: 'word:named', ease: sine.inOut}
+  - {at: 'word:Polish', who: dealer, do: face, name: happy}
+  - {at: 'word:book', who: book, do: pop, sfx: [tick, 0.4]}
+  - {at: 'word:dealer', who: dealer, do: pose, name: reach, dur: 0.3}
+  - at: 'word:dealer+0.1'
+    who: c1
+    do: pop
+    dur: 0.1
+    sfx: [tick, 0.35]
+    repeat:
+      every: 0.2
+      n: 3
+      cycle:
+      - {who: c1}
+      - {who: c2}
+      - {who: c3}
+  - {at: 'word:Wilfrid', who: seller, do: face, name: ok}
+  - {at: 'word:Voynich', who: seller, do: point, target: book}
+  - {at: 'word:buys-0.05', who: book, do: attach, to: dealer, anchor: hand, offset: [10, -20]}
+  - {at: 'word:buys', who: dealer, do: pose, name: clasp, dur: 0.3}
+  - {at: 'word:it', who: dealer, do: face, name: happy}
+  - {at: 'word:buys', who: cam, do: pull, zoom: 1.1, target: [330, 690], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  check:
+  - {thing: "the book dealer", ids: [dealer], word: "dealer"}
+  - {thing: "the old book", ids: [book], word: "book"}
+- id: codebreakers
+  sents: [s7]
+  in: {type: slide}
+  camera: {zoom: 1.1, at: [360, 680], screen: [360, 640]}
+  set:
+  - {id: bg, kind: shape, shape: daysky, x: 0, y: 0}
+  - {id: room, kind: shape, shape: room, x: 0, y: 0}
+  - {id: desk, kind: shape, shape: desk, x: 360, y: 850, scale: 1.35}
+  props:
+  - {id: book, kind: shape, shape: bookopen, x: 360, y: 594, scale: 1.1}
+  - {id: pa1, kind: shape, shape: sheetscrib, x: 230, y: 570, scale: 1.3, hidden: true}
+  - {id: pa2, kind: shape, shape: sheetscrib, x: 290, y: 575, scale: 1.3, rot: 8, hidden: true}
+  - {id: pa3, kind: shape, shape: sheetscrib, x: 430, y: 572, scale: 1.3, rot: -6, hidden: true}
+  - {id: pa4, kind: shape, shape: sheetscrib, x: 490, y: 575, scale: 1.3, hidden: true}
+  - {id: pa5, kind: shape, shape: sheetscrib, x: 520, y: 565, scale: 1.3, rot: 12, hidden: true}
+  - {id: thr, kind: shape, shape: sheetscrib, x: 260, y: 570, scale: 1.3, hidden: true}
+  cast:
+  - {id: cb1, x: 150, gy: 850, k: 1.4, facing: r, coat: '#6b705c', coat_len: 24, hair: '#3b2a1e', face: curious}
+  - {id: cb2, x: 580, gy: 850, k: 1.4, facing: l, coat: '#264653', coat_len: 24, hair: '#9e9e9e', glasses: true, face: curious}
+  beats:
+  - {at: 'scene+0.05', who: cb1, do: hold, prop: magnifier}
+  - {at: 'scene+0.05', who: cam, do: push, zoom: 1.3, target: [360, 600], screen: [360, 640], until: 'word:wars', ease: sine.inOut}
+  - {at: 'word:Codebreakers', who: cb1, do: pose, name: lean_in, dur: 0.3}
+  - {at: 'word:Codebreakers', who: cb2, do: pose, name: lean_in, dur: 0.3}
+  - {at: 'word:both', who: cb2, do: face, name: think}
+  - {at: 'word:world', who: book, do: pulse, amp: 0.04, freq: 3, until: 'word:try'}
+  - at: 'word:wars'
+    who: pa1
+    do: pop
+    dur: 0.1
+    sfx: [tick, 0.3]
+    repeat:
+      every: 0.2
+      n: 5
+      cycle:
+      - {who: pa1}
+      - {who: pa2}
+      - {who: pa3}
+      - {who: pa4}
+      - {who: pa5}
+  - {at: 'word:try', who: cb1, do: pose, name: scratch, dur: 0.3}
+  - {at: 'word:crack', who: cb1, do: face, name: angry}
+  - {at: 'word:crack', who: thr, do: show}
+  - {at: 'word:crack+0.1', who: thr, do: path, points: [[260, 570], [220, 420], [120, 470], [60, 840]], dur: 0.8, ease: power1.inOut}
+  - at: 'word:and'
+    who: cb2
+    do: turn
+    facing: r
+    repeat:
+      every: 0.2
+      n: 4
+      alt: {facing: l}
+  - {at: 'word:fail', who: cb1, do: pose, name: shrug, dur: 0.3}
+  - {at: 'word:fail', who: cb2, do: face, name: sad}
+  - {at: 'word:fail', who: cam, do: pull, zoom: 1.0, target: [360, 680], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  check:
+  - {thing: "the codebreakers", ids: [cb1, cb2], word: "Codebreakers"}
+  - {thing: "the book", ids: [book], word: "crack"}
+- id: yale
+  sents: [s8]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 640], screen: [360, 640]}
+  set:
+  - {id: sky, kind: shape, shape: daysky, x: 0, y: 0}
+  - {id: lawn, kind: shape, shape: lawn, x: 0, y: 0}
+  - {id: hall, kind: shape, shape: guildhall, x: 360, y: 860, scale: 1.15}
+  props:
+  - {id: case, kind: shape, shape: case, x: 195, y: 900, scale: 1.35, hidden: true}
+  - {id: mon, kind: shape, shape: monitor, x: 575, y: 760, hidden: true}
+  - {id: mbook, kind: shape, shape: bookopen, x: 575, y: 770, scale: 0.9, hidden: true}
+  cast:
+  - {id: visitor, x: 365, gy: 900, k: 1.2, facing: r, coat: '#e07a5f', hair: '#3b2a1e', face: curious, hidden: true}
+  beats:
+  - {at: 'scene+0.05', who: cam, do: push, zoom: 1.2, target: [360, 640], screen: [360, 640], until: 'word:rests', ease: sine.inOut}
+  - {at: 'word:1969', who: hall, do: pulse, amp: 0.02, freq: 2.5, until: 'word:rests'}
+  - {at: 'word:rests', who: case, do: pop, sfx: [tick, 0.4]}
+  - {at: 'word:rests+0.2', who: case, do: pulse, amp: 0.04, freq: 3, until: 'word:Yale'}
+  - {at: 'word:Yale', who: cam, do: pan, zoom: 1.1, target: [300, 700], screen: [360, 640], until: 'word:University', ease: sine.inOut}
+  - {at: 'word:University', who: hall, do: jiggle, amp: 0.02}
+  - {at: 'word:and', who: visitor, do: show}
+  - {at: prev, who: visitor, do: enter, from: -90, to: 365, until: 'word:2020'}
+  - {at: 'word:2020', who: mon, do: pop, sfx: [tick, 0.4]}
+  - {at: 'word:2020', who: cam, do: pan, zoom: 1.15, target: [470, 720], screen: [360, 640], until: 'word:online', ease: sine.inOut}
+  - {at: 'word:2020+0.3', who: mbook, do: pop}
+  - {at: 'word:is', who: visitor, do: pose, name: lean_in, dur: 0.3}
+  - {at: 'word:online', who: mbook, do: pulse, amp: 0.06, freq: 3, until: scene.end}
+  - {at: 'word:online', who: visitor, do: face, name: wow}
+  - {at: 'word:online', who: cam, do: pull, zoom: 1.0, target: [360, 660], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  check:
+  - {thing: "the university building", ids: [hall], word: "Yale"}
+  - {thing: "the book in a glass case", ids: [case], word: "rests"}
+  - {thing: "the book on a screen", ids: [mon, mbook], word: "online"}
+- id: guesses
+  sents: [s9]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 640], screen: [360, 640]}
+  set:
+  - {id: bg, kind: shape, shape: daysky, x: 0, y: 0}
+  - {id: room, kind: shape, shape: room, x: 0, y: 0}
+  props:
+  - {id: book, kind: shape, shape: bookopen, x: 360, y: 640, scale: 1.7}
+  - {id: lock, kind: shape, shape: lock, x: 150, y: 480, scale: 1.8, hidden: true}
+  - {id: bub, kind: shape, shape: bubble, x: 570, y: 470, scale: 0.9, hidden: true}
+  - {id: bsq, kind: shape, shape: squig, x: 540, y: 470, scale: 1.1, hidden: true}
+  - {id: jest, kind: shape, shape: jester, x: 540, y: 870, scale: 1.9, layer: top, hidden: true}
+  cast:
+  - {id: reader, x: 110, gy: 880, k: 1.2, facing: r, coat: '#6b705c', coat_len: 30, hair: '#3b2a1e', face: curious}
+  beats:
+  - {at: scene, who: book, do: bob, amp: 6, freq: 1.2}
+  - {at: 'word:Is', who: reader, do: pose, name: think, dur: 0.3}
+  - {at: 'word:code', who: lock, do: pop, sfx: [tick, 0.4]}
+  - {at: 'word:code+0.1', who: reader, do: look, target: lock}
+  - {at: 'word:code+0.2', who: lock, do: jiggle, amp: 0.08}
+  - {at: 'word:lost', who: bub, do: pop, sfx: [tick, 0.4]}
+  - {at: 'word:language', who: bsq, do: pop, sfx: [tick, 0.3]}
+  - {at: 'word:language', who: reader, do: look, target: bub}
+  - {at: 'word:language+0.2', who: bsq, do: jiggle, amp: 0.06}
+  - {at: 'word:or-0.4', who: jest, do: pop, sfx: [tick, 0.4]}
+  - {at: 'word:hoax', who: jest, do: jiggle, amp: 0.08}
+  - {at: 'word:hoax', who: reader, do: look, target: jest}
+  - {at: 'word:hoax+0.3', who: reader, do: pose, name: shrug, dur: 0.3}
+  check:
+  - {thing: "the book", ids: [book], word: "code"}
+  - {thing: "the padlock", ids: [lock], word: "code"}
+  - {thing: "the speech bubble", ids: [bub, bsq], word: "language"}
+  - {thing: "the jester", ids: [jest], word: "hoax"}
+- id: unread
+  sents: [s10]
+  in: {type: slide}
+  camera: {zoom: 1.2, at: [380, 720], screen: [360, 640]}
+  set:
+  - {id: bg, kind: shape, shape: daysky, x: 0, y: 0}
+  - {id: room, kind: shape, shape: room, x: 0, y: 0}
+  - {id: desk, kind: shape, shape: desk, x: 440, y: 850, scale: 1.3}
+  props:
+  - {id: book, kind: shape, shape: bookopen, x: 440, y: 603, scale: 1.5}
+  - {id: closed, kind: shape, shape: bookclosed, x: 440, y: 603, scale: 2.0, hidden: true}
+  - {id: dark, kind: shape, shape: dark, x: 0, y: 0, opacity: 0, layer: top}
+  - {id: glow, kind: shape, shape: glow, x: 440, y: 560, scale: 1.2, layer: top, hidden: true}
+  cast:
+  - {id: reader, x: 190, gy: 850, k: 1.5, facing: r, coat: '#6b705c', coat_len: 30, hair: '#3b2a1e', face: worried}
+  beats:
+  - {at: 'scene+0.05', who: cam, do: push, zoom: 1.5, target: [420, 700], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - {at: 'word:Nobody', who: reader, do: face, name: sad}
+  - at: 'word:Nobody'
+    who: reader
+    do: turn
+    facing: l
+    repeat:
+      every: 0.22
+      n: 4
+      alt: {facing: r}
+  - {at: 'word:has', who: book, do: pulse, amp: 0.04, freq: 3, until: 'word:deciphered'}
+  - {at: 'word:ever', who: glow, do: pop}
+  - {at: 'word:ever', who: glow, do: pulse, amp: 0.03, freq: 2, until: scene.end}
+  - {at: 'word:ever+0.3', who: reader, do: pose, name: shrug, dur: 0.3}
+  - {at: 'word:deciphered', who: book, do: hide}
+  - {at: 'word:deciphered', who: closed, do: show, sfx: [thud, 0.4]}
+  - {at: 'word:deciphered', who: reader, do: face, name: flat}
+  - {at: 'word:deciphered+0.2', who: dark, do: fade, to: 0.8, dur: 1.4, ease: sine.inOut}
+  - {at: 'word:it', who: reader, do: pose, name: stand, dur: 0.3}
+  check:
+  - {thing: "the lonely reader", ids: [reader], word: "Nobody"}
+  - {thing: "the book", ids: [book, closed], word: "has"}

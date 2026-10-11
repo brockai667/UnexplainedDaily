@@ -1,0 +1,589 @@
+title: "Derinkuyu"
+voice: {voice: am_michael, speed: 1.10, pause: 0.30}
+tail: 2.0
+music: sneaky_snitch.mp3
+loop: {at: "s10.end+0.55", dur: 1.3}
+sentences:
+  s1: "Cappadocia, Turkey, in ancient times. Beneath a quiet town, a whole city hides."
+  s2: "Its name is Derinkuyu, also called Malakopi."
+  s3: "It lies near the modern town of Derinkuyu, in Nevsehir Province."
+  s4: "The city has many levels, one under the other."
+  s5: "It reaches down about eighty-five metres."
+  s6: "Up to twenty thousand people could shelter here."
+  s7: "Their livestock and food stores fit inside too."
+  s8: "It is the largest excavated underground city in Turkey."
+  s9: "Yet it is only one of several underground complexes across Cappadocia."
+  s10: "Why anyone dug so deep, the stone does not say."
+gold:
+  - {word: ancient, label: ANCIENT, kind: stamp, top: 128, size: 100, until: "s1.end", stamp: {from: 2.4, r0: -14, r1: -4}}
+  - {word: metres, label: "85 METRES", kind: stamp, top: 118, size: 92, until: "s5.end", stamp: {from: 2.2, r0: -10, r1: -4}}
+  - {word: twenty, label: "20000", kind: counter, top: 112, size: 112, dur: 0.9, until: "s6.end"}
+  - {word: "s10/deep", label: "WHY SO DEEP", kind: stamp, top: 118, size: 88, until: "s10.end+0.6", stamp: {from: 2.2, r0: -10, r1: -4}}
+styles:
+  dark: {fill: "#2e2420", width: 5}
+  clay: {fill: "#c8693a", width: 5}
+  hide: {fill: "#e8e0d0", width: 5}
+shapes:
+  dirt:
+    - {rect: [-200, 0, 1700, 2400], fill: "#c9a074", stroke: "#c9a074", width: 2}
+    - {line: [[-200, 90], [1500, 70]], stroke: "#b08560", width: 6}
+    - {line: [[-200, 420], [1500, 450]], stroke: "#b08560", width: 6}
+    - {line: [[-200, 900], [1500, 880]], stroke: "#b08560", width: 6}
+    - {line: [[-200, 1500], [1500, 1520]], stroke: "#b08560", width: 6}
+    - {circle: [100, 230, 14], fill: "#a87f59"}
+    - {circle: [560, 300, 10], fill: "#a87f59"}
+    - {circle: [330, 680, 16], fill: "#a87f59"}
+    - {circle: [640, 1100, 14], fill: "#a87f59"}
+    - {line: [[-200, 0], [1500, 0]], stroke: black, width: 7}
+  glow:
+    - {ellipse: [0, 0, 250, 100], fill: yellow, opacity: 0.45, stroke: yellow, width: 2}
+  room:
+    - {rect: [-130, -150, 260, 150, 14], style: dark}
+    - {line: [[-110, -8], [110, -8]], stroke: "#6b5846", width: 4}
+  hall:
+    - {rect: [-340, -380, 680, 380, 22], style: dark}
+    - {line: [[-320, -6], [320, -6]], stroke: "#6b5846", width: 5}
+  longtunnel:
+    - {rect: [-340, -200, 680, 200, 14], style: dark}
+    - {line: [[-320, -6], [320, -6]], stroke: "#6b5846", width: 5}
+  shaft:
+    - {rect: [-45, 0, 90, 1300], style: dark}
+  shaftv:
+    - {rect: [-12, 0, 24, 36], style: dark}
+  door:
+    - {rect: [-110, -300, 220, 300, 6], fill: "#b9a98c"}
+    - {path: "M-62,0 L-62,-150 Q0,-250 62,-150 L62,0 Z", style: dark}
+    - {line: [[-110, -200], [-62, -200]], width: 4}
+    - {line: [[62, -200], [110, -200]], width: 4}
+  wheel:
+    - {circle: [0, -60, 60], fill: "#9a9a9a"}
+    - {circle: [0, -60, 20], fill: "#7d7d7d"}
+    - {line: [[0, -60], [40, -100]], width: 4}
+  pin:
+    - {poly: [[0, 0], [-28, -70], [28, -70]], fill: red}
+    - {circle: [0, -90, 34], fill: red}
+    - {circle: [0, -90, 12], fill: white}
+  turkey:
+    - {poly: [[-300, -60], [-240, -110], [-120, -100], [-40, -140], [60, -110], [160, -130], [280, -100], [310, -40], [220, 20], [100, 40], [0, 10], [-100, 60], [-200, 40], [-300, 0]], fill: "#e9d8a6"}
+  hillbump:
+    - {path: "M-60,0 Q0,-100 60,0 Z", fill: "#a3b18a"}
+  jar:
+    - {ellipse: [0, -45, 38, 45], style: clay}
+    - {rect: [-18, -105, 36, 24, 4], style: clay}
+    - {ellipse: [0, -105, 24, 8], fill: "#8a4a26"}
+  sack:
+    - {ellipse: [0, -35, 40, 38], fill: "#d9c9a3"}
+    - {rect: [-12, -82, 24, 16, 4], fill: "#d9c9a3"}
+    - {line: [[-14, -66], [14, -66]], width: 4}
+  cow:
+    - {line: [[-45, -45], [-45, 0]], width: 9}
+    - {line: [[-15, -45], [-15, 0]], width: 9}
+    - {line: [[25, -45], [25, 0]], width: 9}
+    - {line: [[55, -45], [55, 0]], width: 9}
+    - {ellipse: [0, -80, 70, 38], style: hide}
+    - {ellipse: [-20, -88, 16, 12], fill: "#4e342e"}
+    - {ellipse: [28, -72, 14, 10], fill: "#4e342e"}
+    - {ellipse: [85, -95, 28, 22], style: hide}
+    - {line: [[75, -112], [70, -135]], width: 6}
+    - {line: [[98, -112], [104, -135]], width: 6}
+    - {circle: [94, -98, 4], fill: black}
+  goat:
+    - {line: [[-30, -35], [-30, 0]], width: 7}
+    - {line: [[-8, -35], [-8, 0]], width: 7}
+    - {line: [[22, -35], [22, 0]], width: 7}
+    - {line: [[42, -35], [42, 0]], width: 7}
+    - {ellipse: [5, -58, 48, 26], fill: "#e0d6c2"}
+    - {ellipse: [58, -80, 18, 15], fill: "#e0d6c2"}
+    - {line: [[52, -92], [44, -120]], width: 5}
+    - {line: [[64, -92], [72, -120]], width: 5}
+    - {line: [[68, -66], [68, -52]], width: 4}
+    - {circle: [62, -82, 3], fill: black}
+  donkey:
+    - {line: [[-50, -55], [-50, 0]], width: 9}
+    - {line: [[-20, -55], [-20, 0]], width: 9}
+    - {line: [[30, -55], [30, 0]], width: 9}
+    - {line: [[58, -55], [58, 0]], width: 9}
+    - {ellipse: [0, -95, 76, 40], fill: "#9a8f86"}
+    - {ellipse: [84, -118, 30, 22], fill: "#9a8f86"}
+    - {ellipse: [78, -150, 8, 28], fill: "#9a8f86"}
+    - {ellipse: [98, -148, 8, 28], fill: "#9a8f86"}
+    - {circle: [96, -122, 4], fill: black}
+    - {line: [[-76, -100], [-100, -70]], width: 6}
+  lantern:
+    - {line: [[-9, -34], [0, -50], [9, -34]], width: 4}
+    - {rect: [-12, -34, 24, 34, 4], fill: yellow}
+    - {line: [[0, -34], [0, 0]], width: 3}
+  lamp:
+    - {circle: [0, 0, 9], fill: yellow}
+  post:
+    - {rect: [-8, -220, 16, 220], fill: "#8d6e63"}
+  shelf:
+    - {rect: [-300, 0, 600, 18, 4], fill: "#8d6e63"}
+  mini:
+    - {rect: [-12, 0, 24, 50], style: dark}
+    - {rect: [-60, 50, 120, 44, 8], style: dark}
+    - {rect: [-12, 94, 24, 30], style: dark}
+    - {rect: [-80, 124, 160, 48, 8], style: dark}
+  minilit:
+    - {rect: [-12, 0, 24, 50], fill: "#f4d35e"}
+    - {rect: [-60, 50, 120, 44, 8], fill: "#f4d35e"}
+    - {rect: [-12, 94, 24, 30], fill: "#f4d35e"}
+    - {rect: [-80, 124, 160, 48, 8], fill: "#f4d35e"}
+scenes:
+- id: town
+  sents: [s1]
+  camera: {zoom: 1.0, at: [360, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {kind: hill, x0: -100, x1: 520, top: 520, base: 780, peak: 250, color: "#d9b382"}
+  - {kind: ground, y: 780, x0: -200, x1: 920}
+  - {kind: shape, shape: dirt, x: 0, y: 780}
+  - {id: h1, kind: house, x: 150, y: 780, w: 170, h: 150, wall: "#e6d5b8", roof: "#b5651d"}
+  - {id: h2, kind: house, x: 360, y: 780, w: 190, h: 170, wall: "#e6d5b8", roof: "#b5651d"}
+  - {id: h3, kind: house, x: 570, y: 780, w: 170, h: 150, wall: "#e6d5b8", roof: "#b5651d"}
+  props:
+  - {id: glow, kind: shape, shape: glow, x: 360, y: 960, scale: 1.6, hidden: true}
+  - {id: r1, kind: shape, shape: room, x: 150, y: 1010, scale: 0.6, hidden: true}
+  - {id: r2, kind: shape, shape: room, x: 360, y: 1050, scale: 0.6, hidden: true}
+  - {id: r3, kind: shape, shape: room, x: 570, y: 1010, scale: 0.6, hidden: true}
+  - {id: dust, kind: emitter, emitter: dust, at: [100, 770], n: 14, r: [3, 6], color: "#e0c9a6", period: 2.4, rise: 40, drift: 300, spread: 120, s0: 1, s1: 0.6, opacity: 0.8, prewarm: true, layer: top}
+  cast:
+  - {id: vil, x: -90, gy: 780, k: 0.55, hat: [orange, cream], face: ok}
+  beats:
+  - {at: 'scene+0.1', who: cam, do: push, zoom: 1.4, target: [360, 880], screen: [360, 640], until: 'word:hides', ease: sine.inOut}
+  - {at: 'scene+0.1', who: vil, do: enter, from: -90, to: 560, until: 'scene.end-0.05'}
+  - {at: 'word:turkey', who: h2, do: pulse, amp: 0.03, freq: 2, until: 'word:ancient'}
+  - {at: 'word:ancient', who: h1, do: jiggle, amp: 0.05}
+  - {at: 'word:times', who: h3, do: jiggle, amp: 0.05}
+  - {at: 'word:beneath', who: glow, do: pop, dur: 0.3, sfx: [tick, 0.3]}
+  - {at: 'word:quiet', who: vil, do: face, name: happy}
+  - {at: 'word:town', who: h2, do: pulse, amp: 0.04, freq: 2, until: 'word:whole'}
+  - {at: 'word:whole', who: glow, do: pulse, amp: 0.08, freq: 3, until: 'scene.end'}
+  - at: 'word:city'
+    who: r1
+    do: pop
+    dur: 0.15
+    sfx: [tick, 0.35]
+    repeat:
+      every: 0.25
+      n: 3
+      cycle:
+      - {who: r1}
+      - {who: r2}
+      - {who: r3}
+  - {at: 'word:hides', who: vil, do: look, target: down}
+  - {at: 'word:hides', who: vil, do: face, name: curious}
+  check:
+  - {thing: "the town houses", ids: [h1, h2, h3], word: "town"}
+  - {thing: "the hidden city glow", ids: [glow], word: "hides"}
+  - {thing: "the rooms underground", ids: [r1, r2, r3], word: "hides"}
+- id: name
+  sents: [s2]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {kind: hill, x0: -100, x1: 820, top: 360, base: 860, peak: 360, color: "#c9a074"}
+  - {kind: ground, y: 860, x0: -200, x1: 920}
+  - {id: door, kind: shape, shape: door, x: 360, y: 860, scale: 1.3}
+  - {id: wheel, kind: shape, shape: wheel, x: 620, y: 860, scale: 1.3}
+  props:
+  - {id: dust, kind: emitter, emitter: dust, at: [360, 800], n: 12, r: [3, 6], color: "#e0c9a6", period: 2.2, rise: 80, drift: 40, spread: 80, s0: 1, s1: 0.5, opacity: 0.7, prewarm: true, layer: top}
+  cast:
+  - {id: guide, x: -80, gy: 860, k: 1.4, cap: navy, face: ok}
+  beats:
+  - {at: 'scene+0.1', who: cam, do: push, zoom: 1.3, target: [360, 720], screen: [360, 640], until: 'scene.end', ease: sine.inOut}
+  - {at: 'scene+0.1', who: guide, do: enter, from: -80, to: 170, dur: 1.2}
+  - {at: 'word:name', who: guide, do: point, target: [360, 700]}
+  - {at: 'word:name', who: wheel, do: move, to: [560, 860], dur: 0.6, ease: power2.out}
+  - {at: 'word:name', who: wheel, do: rotate, to: -360, dur: 0.6}
+  - {at: 'word:derinkuyu', who: door, do: pulse, amp: 0.03, freq: 3, until: 'word:also'}
+  - {at: 'word:derinkuyu', who: guide, do: face, name: happy}
+  - {at: 'word:also', who: wheel, do: jiggle, amp: 0.06}
+  - {at: 'word:called', who: guide, do: pose, name: stand, dur: 0.3}
+  - {at: 'word:malakopi', who: guide, do: point, target: [360, 740]}
+  - {at: 'word:malakopi', who: door, do: jiggle, amp: 0.04}
+  - {at: 'word:malakopi', who: guide, do: face, name: wow}
+  check:
+  - {thing: "the stone doorway", ids: [door], word: "derinkuyu"}
+  - {thing: "the guide", ids: [guide], word: "name"}
+  - {thing: "the stone wheel", ids: [wheel], word: "called"}
+- id: map
+  sents: [s3]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {id: map, kind: shape, shape: turkey, x: 360, y: 700, scale: 1.1}
+  - {id: tnhouse, kind: house, x: 335, y: 700, w: 70, h: 60, wall: cream, roof: red}
+  props:
+  - {id: mpin, kind: shape, shape: pin, x: 395, y: 360, scale: 1.6, hidden: true}
+  - {id: hb1, kind: shape, shape: hillbump, x: 480, y: 690, scale: 0.8, hidden: true}
+  - {id: hb2, kind: shape, shape: hillbump, x: 230, y: 690, scale: 0.8, hidden: true}
+  - {id: hb3, kind: shape, shape: hillbump, x: 420, y: 625, scale: 0.7, hidden: true}
+  - {id: ring, kind: line, points: [[250, 560], [470, 560], [470, 725], [250, 725], [250, 560]], style: gold, width: 7, hidden: true}
+  beats:
+  - {at: 'scene+0.1', who: cam, do: push, zoom: 1.8, target: [380, 650], screen: [360, 640], until: 'scene.end', ease: sine.inOut}
+  - {at: 'word:lies', who: mpin, do: pop, dur: 0.2}
+  - {at: 'word:near', who: mpin, do: move, to: [395, 700], dur: 0.4, ease: 'back.out(1.6)', sfx: [thud, 0.3]}
+  - {at: 'word:modern', who: tnhouse, do: pulse, amp: 0.06, freq: 3, until: 'word:derinkuyu'}
+  - {at: 'word:town', who: tnhouse, do: jiggle, amp: 0.06}
+  - {at: 'word:derinkuyu', who: mpin, do: pulse, amp: 0.06, freq: 3, until: 'word:in'}
+  - at: 'word:in'
+    who: hb1
+    do: pop
+    dur: 0.15
+    sfx: [tick, 0.3]
+    repeat:
+      every: 0.2
+      n: 3
+      cycle:
+      - {who: hb1}
+      - {who: hb2}
+      - {who: hb3}
+  - {at: 'word:nevsehir', who: map, do: jiggle, amp: 0.02}
+  - {at: 'word:province', who: ring, do: show}
+  - {at: 'word:province', who: ring, do: draw_line, dur: 0.6}
+  check:
+  - {thing: "the map", ids: [map], word: "lies"}
+  - {thing: "the pin", ids: [mpin], word: "s3/derinkuyu"}
+  - {thing: "the town house", ids: [tnhouse], word: "s3/town"}
+- id: levels
+  sents: [s4]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {kind: shape, shape: dirt, x: 0, y: 300}
+  - {id: r1, kind: shape, shape: room, x: 190, y: 480, scale: 1.3}
+  props:
+  - {id: shaft, kind: shape, shape: shaft, x: 360, y: 440, scale: 0.35, hidden: true}
+  - {id: r2, kind: shape, shape: room, x: 530, y: 650, scale: 1.3}
+  - {id: r3, kind: shape, shape: room, x: 190, y: 820, scale: 1.3}
+  cast:
+  - {id: f3, x: 330, gy: 820, k: 0.55, hat: [orange, cream], face: ok}
+  - {id: f2, x: 400, gy: 650, k: 0.55, hat: [teal, cream], face: ok}
+  - {id: f1, x: 100, gy: 480, k: 0.55, hat: [red, cream], face: ok}
+  beats:
+  - {at: 'scene+0.1', who: cam, do: tilt, zoom: 1.15, target: [360, 700], screen: [360, 640], until: 'scene.end', ease: sine.inOut}
+  - {at: 'scene+0.2', who: f1, do: walk_to, to: 320, dur: 1.0}
+  - {at: 'word:city', who: r1, do: pulse, amp: 0.03, freq: 3, until: 'word:many'}
+  - {at: 'word:city', who: f1, do: face, name: happy}
+  - {at: 'word:many', who: shaft, do: show}
+  - {at: 'word:many', who: r2, do: pop, dur: 0.25, sfx: [tick, 0.35]}
+  - {at: 'word:levels', who: r3, do: pop, dur: 0.25, sfx: [tick, 0.35]}
+  - {at: 'word:levels', who: f1, do: hide}
+  - {at: 'word:one', who: f2, do: show}
+  - {at: 'word:one', who: f2, do: walk_to, to: 600, dur: 0.9}
+  - {at: 'word:under', who: f3, do: show}
+  - {at: 'word:under', who: f3, do: walk_to, to: 110, dur: 0.9}
+  - {at: 'word:other', who: r3, do: jiggle, amp: 0.03}
+  check:
+  - {thing: "levels stacked down", ids: [r1, r2, r3], word: "levels"}
+  - {thing: "the people walking down", ids: [f2, f3], word: "s4/other"}
+- id: depth
+  sents: [s5]
+  in: {type: slide}
+  camera: {zoom: 0.8, at: [360, 850], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {kind: shape, shape: dirt, x: 0, y: 520}
+  - {id: shaft, kind: shape, shape: shaft, x: 360, y: 520, scale: 0.55}
+  props:
+  - {id: room5, kind: shape, shape: room, x: 360, y: 1340, scale: 1.2, hidden: true}
+  - {id: rope, kind: line, points: [[360, 540], [360, 1190]], style: ink, width: 6, hidden: true}
+  - {id: lan2, kind: shape, shape: lantern, x: 360, y: 560, scale: 1.2}
+  - {id: dust, kind: emitter, emitter: dust, at: [360, 900], n: 14, r: [3, 6], color: "#e0c9a6", period: 3.0, rise: 60, drift: 20, spread: 30, s0: 1, s1: 0.5, opacity: 0.6, prewarm: true, layer: top}
+  cast:
+  - {id: fig, x: 200, gy: 520, k: 0.9, hat: [orange, cream], face: ok}
+  beats:
+  - {at: 'word:reaches', who: rope, do: show}
+  - {at: 'word:reaches', who: rope, do: draw_line, dur: 1.2}
+  - {at: 'word:reaches', who: lan2, do: move, to: [360, 1180], dur: 1.8, ease: power2.in}
+  - {at: 'word:reaches', who: fig, do: look, target: [360, 700]}
+  - {at: 'word:down', who: cam, do: tilt, zoom: 0.8, target: [360, 1050], screen: [360, 640], until: 'word:metres', ease: power2.inOut}
+  - {at: 'word:down', who: fig, do: face, name: worried}
+  - {at: 'word:about', who: room5, do: pop, dur: 0.3, sfx: [tick, 0.3]}
+  - {at: 'word:about', who: shaft, do: pulse, amp: 0.01, freq: 2, until: 'word:metres'}
+  - {at: 'word:metres', who: room5, do: jiggle, amp: 0.03}
+  - {at: 'word:metres', who: lan2, do: jiggle, amp: 0.1}
+  - {at: 'word:metres', who: cam, do: shake, amp: 3, dur: 0.3}
+  - {at: 'scene+0.1', who: fig, do: point, target: [360, 800]}
+  check:
+  - {thing: "the deep shaft", ids: [shaft], word: "down"}
+  - {thing: "the rope", ids: [rope], word: "about"}
+  - {thing: "the bottom room", ids: [room5], word: "metres"}
+- id: crowd
+  sents: [s6]
+  in: {type: slide}
+  camera: {zoom: 1.5, at: [360, 720], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {kind: shape, shape: dirt, x: 0, y: 0}
+  - {id: hall, kind: shape, shape: hall, x: 360, y: 880}
+  - {id: lamp1, kind: shape, shape: lamp, x: 120, y: 620}
+  - {id: lamp2, kind: shape, shape: lamp, x: 360, y: 600}
+  - {id: lamp3, kind: shape, shape: lamp, x: 600, y: 620}
+  cast:
+  - {id: b1, x: -60, gy: 850, k: 0.45, hat: [teal, cream], face: ok, hidden: true}
+  - {id: b2, x: -60, gy: 850, k: 0.45, hat: [red, cream], face: ok, hidden: true}
+  - {id: b3, x: 780, gy: 850, k: 0.45, hat: [orange, cream], face: ok, hidden: true}
+  - {id: b4, x: 780, gy: 850, k: 0.45, hat: [purple, cream], face: ok, hidden: true}
+  - {id: p1, x: -60, gy: 880, k: 0.6, hat: [orange, cream], face: ok, hidden: true}
+  - {id: p2, x: -60, gy: 880, k: 0.6, hat: [teal, cream], face: ok, hidden: true}
+  - {id: p3, x: 780, gy: 880, k: 0.6, hat: [red, cream], face: ok, hidden: true}
+  - {id: p4, x: 780, gy: 880, k: 0.6, hat: [blue, cream], face: ok, hidden: true}
+  beats:
+  - {at: 'scene+0.1', who: cam, do: pull, zoom: 1.0, target: [360, 640], screen: [360, 640], until: 'word:here', ease: sine.inOut}
+  - {at: 'word:up', who: p1, do: show}
+  - {at: 'word:up', who: p1, do: enter, from: -60, to: 160, dur: 0.9}
+  - {at: 'word:up+0.2', who: p2, do: show}
+  - {at: 'word:up+0.2', who: p2, do: enter, from: -60, to: 300, dur: 1.0}
+  - {at: 'word:to', who: b1, do: show}
+  - {at: 'word:to', who: b1, do: enter, from: -60, to: 90, dur: 0.9}
+  - {at: 'word:to+0.2', who: b2, do: show}
+  - {at: 'word:to+0.2', who: b2, do: enter, from: -60, to: 250, dur: 1.0}
+  - {at: 'word:twenty', who: p3, do: show}
+  - {at: 'word:twenty', who: p3, do: enter, from: 780, to: 430, dur: 0.9}
+  - {at: 'word:twenty+0.2', who: p4, do: show}
+  - {at: 'word:twenty+0.2', who: p4, do: enter, from: 780, to: 570, dur: 1.0}
+  - {at: 'word:thousand', who: b3, do: show}
+  - {at: 'word:thousand', who: b3, do: enter, from: 780, to: 470, dur: 0.9}
+  - {at: 'word:thousand+0.2', who: b4, do: show}
+  - {at: 'word:thousand+0.2', who: b4, do: enter, from: 780, to: 630, dur: 1.0}
+  - {at: 'word:people', who: p1, do: pose, name: wave, dur: 0.4}
+  - {at: 'word:people', who: p3, do: pose, name: wave, dur: 0.4}
+  - {at: 'word:people', who: b2, do: pose, name: wave, dur: 0.4}
+  - {at: 'word:could', who: p2, do: sit_down}
+  - {at: 'word:could', who: p4, do: sit_down}
+  - {at: 'word:shelter', who: hall, do: pulse, amp: 0.01, freq: 2, until: 'scene.end'}
+  - {at: 'word:shelter', who: p1, do: face, name: happy}
+  - {at: 'word:here', who: lamp2, do: pulse, amp: 0.3, freq: 3, until: 'scene.end'}
+  check:
+  - {thing: "the big hall", ids: [hall], word: "shelter"}
+  - {thing: "the crowd of people", ids: [p1, p2, p3, p4, b1, b2, b3, b4], word: "people"}
+- id: animals
+  sents: [s7]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {kind: shape, shape: dirt, x: 0, y: 0}
+  - {id: hall, kind: shape, shape: hall, x: 360, y: 880}
+  - {kind: shape, shape: shelf, x: 360, y: 640}
+  - {kind: shape, shape: post, x: 215, y: 880}
+  - {kind: shape, shape: post, x: 410, y: 880}
+  props:
+  - {id: goat, kind: shape, shape: goat, x: 100, y: 880, scale: 1.3, hidden: true}
+  - {id: cow, kind: shape, shape: cow, x: 300, y: 880, scale: 1.0, hidden: true}
+  - {id: donkey, kind: shape, shape: donkey, x: 480, y: 880, scale: 0.95, hidden: true}
+  - {id: j1, kind: shape, shape: jar, x: 120, y: 640, scale: 0.9, hidden: true}
+  - {id: j2, kind: shape, shape: jar, x: 230, y: 640, scale: 0.9, hidden: true}
+  - {id: j3, kind: shape, shape: jar, x: 340, y: 640, scale: 0.9, hidden: true}
+  - {id: j4, kind: shape, shape: jar, x: 450, y: 640, scale: 0.9, hidden: true}
+  - {id: s1, kind: shape, shape: sack, x: 560, y: 640, scale: 1.0, hidden: true}
+  - {id: s2, kind: shape, shape: sack, x: 590, y: 880, scale: 1.2, hidden: true}
+  - {id: s3, kind: shape, shape: sack, x: 540, y: 880, scale: 1.0, hidden: true}
+  - {id: grain, kind: emitter, emitter: drops, at: [650, 780], n: 20, spread: 20, dir: 90, vmin: 60, vmax: 120, life: 0.8, floor: 100, size: 4, color: "#e0b84a"}
+  cast:
+  - {id: farmer, x: 780, gy: 880, k: 1.0, hat: [orange, cream], face: ok, hidden: true}
+  beats:
+  - {at: 'scene+0.1', who: cam, do: push, zoom: 1.2, target: [360, 740], screen: [360, 640], until: 'word:inside', ease: sine.inOut}
+  - at: 'word:livestock'
+    who: goat
+    do: pop
+    dur: 0.2
+    sfx: [tick, 0.35]
+    repeat:
+      every: 0.35
+      n: 3
+      cycle:
+      - {who: goat}
+      - {who: cow}
+      - {who: donkey}
+  - {at: 'word:and', who: farmer, do: show}
+  - {at: 'word:and', who: farmer, do: enter, from: 780, to: 650, dur: 0.9}
+  - at: 'word:food'
+    who: j1
+    do: pop
+    dur: 0.15
+    sfx: [tick, 0.3]
+    repeat:
+      every: 0.2
+      n: 4
+      cycle:
+      - {who: j1}
+      - {who: j2}
+      - {who: j3}
+      - {who: j4}
+  - at: 'word:stores'
+    who: s1
+    do: pop
+    dur: 0.15
+    sfx: [tick, 0.3]
+    repeat:
+      every: 0.22
+      n: 3
+      cycle:
+      - {who: s1}
+      - {who: s2}
+      - {who: s3}
+  - {at: 'word:stores', who: farmer, do: face, name: happy}
+  - {at: 'word:fit', who: farmer, do: bend_over, target: [590, 820]}
+  - {at: 'word:fit', who: grain, do: burst}
+  - {at: 'word:fit', who: cow, do: jiggle, amp: 0.04}
+  - {at: 'word:inside', who: hall, do: pulse, amp: 0.01, freq: 2, until: 'scene.end'}
+  - {at: 'word:too', who: goat, do: jiggle, amp: 0.05}
+  - {at: 'word:too', who: donkey, do: jiggle, amp: 0.05}
+  check:
+  - {thing: "the animals", ids: [goat, cow, donkey], word: "food"}
+  - {thing: "the clay jars", ids: [j1, j2, j3, j4], word: "stores"}
+  - {thing: "the sacks", ids: [s1, s2, s3], word: "fit"}
+- id: largest
+  sents: [s8]
+  in: {type: slide}
+  camera: {zoom: 1.3, at: [360, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {kind: shape, shape: dirt, x: 0, y: 0}
+  - {kind: shape, shape: shaftv, x: 200, y: 400}
+  - {kind: shape, shape: shaftv, x: 330, y: 400}
+  - {kind: shape, shape: shaftv, x: 420, y: 400}
+  - {kind: shape, shape: shaftv, x: 540, y: 400}
+  - {kind: shape, shape: shaftv, x: 200, y: 550}
+  - {kind: shape, shape: shaftv, x: 330, y: 550}
+  - {kind: shape, shape: shaftv, x: 420, y: 550}
+  - {kind: shape, shape: shaftv, x: 540, y: 550}
+  - {kind: shape, shape: shaftv, x: 130, y: 700}
+  - {kind: shape, shape: shaftv, x: 360, y: 700}
+  - {kind: shape, shape: shaftv, x: 590, y: 700}
+  - {id: La1, kind: shape, shape: room, x: 130, y: 400, scale: 0.8}
+  - {id: La2, kind: shape, shape: room, x: 360, y: 400, scale: 0.8}
+  - {id: La3, kind: shape, shape: room, x: 590, y: 400, scale: 0.8}
+  - {id: Lb1, kind: shape, shape: room, x: 245, y: 550, scale: 0.8}
+  - {id: Lb2, kind: shape, shape: room, x: 475, y: 550, scale: 0.8}
+  - {id: Lc1, kind: shape, shape: room, x: 130, y: 700, scale: 0.8}
+  - {id: Lc2, kind: shape, shape: room, x: 360, y: 700, scale: 0.8}
+  - {id: Lc3, kind: shape, shape: room, x: 590, y: 700, scale: 0.8}
+  - {id: base, kind: shape, shape: longtunnel, x: 360, y: 900}
+  props:
+  - {id: m1, kind: shape, shape: lamp, x: 130, y: 360, hidden: true}
+  - {id: m2, kind: shape, shape: lamp, x: 360, y: 360, hidden: true}
+  - {id: m3, kind: shape, shape: lamp, x: 590, y: 360, hidden: true}
+  - {id: m4, kind: shape, shape: lamp, x: 245, y: 510, hidden: true}
+  - {id: m5, kind: shape, shape: lamp, x: 475, y: 510, hidden: true}
+  - {id: m6, kind: shape, shape: lamp, x: 130, y: 660, hidden: true}
+  - {id: m7, kind: shape, shape: lamp, x: 360, y: 660, hidden: true}
+  - {id: m8, kind: shape, shape: lamp, x: 590, y: 660, hidden: true}
+  cast:
+  - {id: exp, x: -60, gy: 900, k: 0.7, cap: '#5d4037', face: ok}
+  beats:
+  - {at: 'scene+0.1', who: cam, do: pull, zoom: 1.0, target: [360, 640], screen: [360, 640], until: 'scene.end', ease: sine.inOut}
+  - {at: 'scene+0.1', who: exp, do: enter, from: -60, to: 200, dur: 1.2}
+  - {at: 'word:largest', who: exp, do: look, target: up}
+  - at: 'word:largest'
+    who: m1
+    do: pop
+    dur: 0.12
+    sfx: [tick, 0.3]
+    repeat:
+      every: 0.15
+      n: 8
+      cycle:
+      - {who: m1}
+      - {who: m2}
+      - {who: m3}
+      - {who: m4}
+      - {who: m5}
+      - {who: m6}
+      - {who: m7}
+      - {who: m8}
+  - {at: 'word:excavated', who: La2, do: pulse, amp: 0.04, freq: 3, until: 'word:underground'}
+  - {at: 'word:underground', who: Lb1, do: pulse, amp: 0.04, freq: 3, until: 'word:city'}
+  - {at: 'word:city', who: base, do: pulse, amp: 0.02, freq: 3, until: 'word:turkey'}
+  - {at: 'word:city', who: exp, do: face, name: wow}
+  - {at: 'word:turkey', who: exp, do: pose, name: shade, dur: 0.4}
+  - {at: 'word:turkey', who: cam, do: shake, amp: 2, dur: 0.3}
+  check:
+  - {thing: "the huge underground city", ids: [La1, La2, La3, Lb1, Lb2, Lc1, Lc2, Lc3], word: "s8/city"}
+  - {thing: "the explorer", ids: [exp], word: "excavated"}
+- id: others
+  sents: [s9]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {kind: hill, x0: -100, x1: 420, top: 330, base: 520, peak: 200, color: "#d9b382"}
+  - {kind: hill, x0: 300, x1: 800, top: 350, base: 520, peak: 560, color: "#e0bf8f"}
+  - {kind: hill, x0: 700, x1: 1300, top: 330, base: 520, peak: 1000, color: "#d9b382"}
+  - {kind: ground, y: 520, x0: -200, x1: 1500}
+  - {kind: shape, shape: dirt, x: 0, y: 520}
+  - {id: mini1, kind: shape, shape: mini, x: 300, y: 520, scale: 1.6}
+  - {id: mini2, kind: shape, shape: mini, x: 560, y: 520, scale: 1.0}
+  - {id: mini3, kind: shape, shape: mini, x: 730, y: 520, scale: 1.1}
+  - {id: mini4, kind: shape, shape: mini, x: 900, y: 520, scale: 1.0}
+  - {id: mini5, kind: shape, shape: mini, x: 1070, y: 520, scale: 1.2}
+  props:
+  - {id: lit1, kind: shape, shape: minilit, x: 300, y: 520, scale: 1.6, hidden: true}
+  - {id: lit2, kind: shape, shape: minilit, x: 560, y: 520, scale: 1.0, hidden: true}
+  - {id: lit3, kind: shape, shape: minilit, x: 730, y: 520, scale: 1.1, hidden: true}
+  - {id: lit4, kind: shape, shape: minilit, x: 900, y: 520, scale: 1.0, hidden: true}
+  - {id: lit5, kind: shape, shape: minilit, x: 1070, y: 520, scale: 1.2, hidden: true}
+  beats:
+  - {at: 'scene+0.1', who: cam, do: pan, zoom: 1.0, target: [700, 640], screen: [360, 640], until: 'scene.end', ease: sine.inOut}
+  - {at: 'word:yet', who: lit1, do: pop, dur: 0.3, sfx: [tick, 0.3]}
+  - {at: 'word:only', who: lit1, do: pulse, amp: 0.04, freq: 3, until: 'word:several'}
+  - {at: 'word:one', who: mini1, do: jiggle, amp: 0.03}
+  - at: 'word:several'
+    who: lit2
+    do: pop
+    dur: 0.25
+    sfx: [tick, 0.35]
+    repeat:
+      every: 0.45
+      n: 4
+      cycle:
+      - {who: lit2}
+      - {who: lit3}
+      - {who: lit4}
+      - {who: lit5}
+  - {at: 'word:underground', who: mini2, do: jiggle, amp: 0.04}
+  - {at: 'word:complexes', who: lit3, do: pulse, amp: 0.05, freq: 3, until: 'word:across'}
+  - {at: 'word:complexes', who: lit4, do: pulse, amp: 0.05, freq: 3, until: 'word:across'}
+  - {at: 'word:across', who: lit5, do: pulse, amp: 0.05, freq: 3, until: 'scene.end'}
+  - {at: 'word:across', who: lit2, do: pulse, amp: 0.05, freq: 3, until: 'scene.end'}
+  - {at: 'word:cappadocia', who: mini5, do: jiggle, amp: 0.04}
+  check:
+  - {thing: "the big complex", ids: [mini1, lit1], word: "s9/one"}
+  - {thing: "the other complexes", ids: [lit2, lit3, lit4], word: "complexes"}
+- id: mystery
+  sents: [s10]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {kind: shape, shape: dirt, x: 0, y: 600}
+  - {id: shaft2, kind: shape, shape: shaft, x: 500, y: 600, scale: 0.5}
+  props:
+  - {id: lan, kind: shape, shape: lantern, x: 250, y: 600, scale: 1.3}
+  - {id: lglow, kind: shape, shape: glow, x: 250, y: 600, scale: 0.6, opacity: 0.6}
+  - {id: dust, kind: emitter, emitter: dust, at: [500, 900], n: 12, r: [3, 6], color: "#e0c9a6", period: 3.0, rise: 70, drift: 10, spread: 25, s0: 1, s1: 0.5, opacity: 0.6, prewarm: true, layer: top}
+  cast:
+  - {id: exp2, x: -80, gy: 600, k: 1.3, cap: '#5d4037', face: ok}
+  beats:
+  - {at: 'scene+0.1', who: cam, do: push, zoom: 1.5, target: [450, 860], screen: [360, 640], until: 'scene.end', ease: sine.inOut}
+  - {at: 'scene+0.1', who: exp2, do: enter, from: -80, to: 270, dur: 1.0}
+  - {at: 'scene+0.1', who: lan, do: attach, to: exp2, anchor: hand, offset: [0, 0]}
+  - {at: 'scene+0.1', who: lglow, do: attach, to: exp2, anchor: hand, offset: [0, 10]}
+  - {at: 'word:why', who: exp2, do: look, target: [500, 900]}
+  - {at: 'word:anyone', who: exp2, do: pose, name: scratch, dur: 0.5}
+  - {at: 'word:dug', who: exp2, do: face, name: think}
+  - {at: 'word:so', who: exp2, do: pose, name: lean_in, dur: 0.4}
+  - {at: 'word:deep', who: shaft2, do: pulse, amp: 0.01, freq: 2, until: 'word:stone'}
+  - {at: 'word:deep', who: lglow, do: pulse, amp: 0.1, freq: 3, until: 'scene.end'}
+  - {at: 'word:stone', who: shaft2, do: jiggle, amp: 0.01}
+  - {at: 'word:not', who: exp2, do: face, name: worried}
+  - {at: 'word:say', who: exp2, do: pose, name: shrug, dur: 0.5}
+  check:
+  - {thing: "the explorer", ids: [exp2], word: "anyone"}
+  - {thing: "the dark shaft", ids: [shaft2], word: "deep"}
