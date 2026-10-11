@@ -1,0 +1,475 @@
+title: "The Tunguska Event"
+voice: {voice: am_michael, speed: 1.10, pause: 0.30}
+tail: 2.0
+music: sneaky_snitch.mp3
+loop: {at: "s10.end+0.55", dur: 1.3}
+sentences:
+  s1: "June 1908. Morning in the quiet Siberian forest."
+  s2: "A stony asteroid, fifty or sixty meters wide, races in from the east."
+  s3: "Five to ten kilometers above the ground, it explodes."
+  s4: "The blast equals between three and fifty megatons of explosives."
+  s5: "Trees fall across more than two thousand square kilometers."
+  s6: "Witnesses say up to three people may have died."
+  s7: "A blast like this could destroy a large city."
+  s8: "It is the largest impact event in recorded history."
+  s9: "Yet there is no crater, because it never hits the ground."
+  s10: "So nobody can say for sure what it really was."
+gold:
+  - {word: "1908", label: "1908", kind: stamp, top: 128, size: 120, until: "s1.end", stamp: {from: 2.4, r0: -14, r1: -4}}
+  - {word: megatons, label: MEGATONS, kind: stamp, top: 118, size: 100, until: "s4.end", stamp: {from: 2.2, r0: -10, r1: -4}}
+  - {word: crater, label: "NO CRATER", kind: stamp, top: 118, size: 94, until: "s9.end", stamp: {from: 2.2, r0: -10, r1: -4}}
+  - {word: nobody, label: UNKNOWN, kind: stamp, top: 118, size: 100, until: "s10.end+0.6", stamp: {from: 2.2, r0: -10, r1: -4}}
+styles:
+  ink: {width: 6}
+shapes:
+  meadow:
+    - {rect: [-1300, 0, 3400, 600, 0], fill: "#a7c957", width: 6}
+    - {rect: [-1300, 0, 3400, 14, 0], fill: "#7aa142", width: 5}
+    - {path: "M120,40 Q130,18 140,40 M150,44 Q162,20 172,44", stroke: "#6a994e", width: 5}
+    - {path: "M520,50 Q532,26 542,50 M552,54 Q564,30 574,54", stroke: "#6a994e", width: 5}
+  pine:
+    - {rect: [-9, -40, 18, 40, 0], fill: "#7f5539", width: 6}
+    - {poly: [[-62, -36], [62, -36], [0, -120]], fill: "#40916c", width: 6}
+    - {poly: [[-52, -92], [52, -92], [0, -170]], fill: "#52b788", width: 6}
+    - {poly: [[-40, -150], [40, -150], [0, -226]], fill: "#74c69d", width: 6}
+  hut:
+    - {rect: [42, -200, 26, 70, 0], fill: "#6c757d", width: 6}
+    - {rect: [-85, -95, 170, 95, 0], fill: "#b08968", width: 6}
+    - {poly: [[-105, -95], [105, -95], [0, -170]], fill: "#7f5539", width: 6}
+    - {rect: [-16, -66, 32, 66, 0], fill: "#5e3a1f", width: 6}
+    - {rect: [38, -72, 34, 34, 0], fill: "#ffe8a3", width: 5}
+    - {line: [[-85, -48], [-30, -48]], width: 4}
+  asteroid:
+    - {poly: [[40, -60], [330, -210], [235, -118], [370, -118], [180, -36], [285, 10], [70, 70]], fill: "#ff9f1c", width: 5}
+    - {poly: [[30, -40], [200, -130], [140, -66], [230, -66], [110, -12], [60, 36]], fill: "#ffd60a", width: 4}
+    - {poly: [[-80, -20], [-50, -72], [10, -88], [70, -56], [92, 0], [56, 62], [-10, 82], [-66, 50]], fill: "#8d99ae", width: 6}
+    - {circle: [-20, -22, 14], fill: "#6c757d", width: 4}
+    - {circle: [36, 18, 18], fill: "#6c757d", width: 4}
+    - {circle: [-34, 36, 10], fill: "#6c757d", width: 4}
+  starburst:
+    - {poly: [[130, 0], [59, 19], [105, 76], [36, 50], [40, 124], [0, 62], [-40, 124], [-36, 50], [-105, 76], [-59, 19], [-130, 0], [-59, -19], [-105, -76], [-36, -50], [-40, -124], [0, -62], [40, -124], [36, -50], [105, -76], [59, -19]], fill: "#ffd60a", width: 6}
+    - {circle: [0, 0, 62], fill: "#ff9f1c", width: 5}
+    - {circle: [0, 0, 34], fill: white, width: 4}
+    - {circle: [0, 0, 10], fill: "#ffd60a", width: 3}
+  ring:
+    - {circle: [0, 0, 150], width: 6}
+    - {circle: [0, 0, 120], width: 4, dash: "10 14"}
+    - {circle: [0, 0, 90], width: 3, dash: "6 12"}
+    - {circle: [0, 0, 60], width: 3, dash: "4 10"}
+  heightline:
+    - {line: [[0, 0], [0, 400]], width: 7, dash: "14 10"}
+    - {poly: [[-18, 380], [18, 380], [0, 410]], fill: black, width: 4}
+    - {line: [[-26, 100], [26, 100]], width: 6}
+    - {line: [[-26, 200], [26, 200]], width: 6}
+    - {line: [[-26, 300], [26, 300]], width: 6}
+  bracket:
+    - {line: [[-100, 0], [100, 0]], width: 7, dash: "12 8"}
+    - {poly: [[-100, 0], [-70, -14], [-70, 14]], fill: black, width: 4}
+    - {poly: [[100, 0], [70, -14], [70, 14]], fill: black, width: 4}
+    - {line: [[-100, -60], [-100, 60]], width: 7}
+    - {line: [[100, -60], [100, 60]], width: 7}
+  cratepile:
+    - {rect: [-200, -100, 100, 100, 0], fill: "#c8955a", width: 6}
+    - {rect: [-100, -100, 100, 100, 0], fill: "#b8844c", width: 6}
+    - {rect: [0, -100, 100, 100, 0], fill: "#c8955a", width: 6}
+    - {rect: [100, -100, 100, 100, 0], fill: "#b8844c", width: 6}
+    - {rect: [-150, -200, 100, 100, 0], fill: "#b8844c", width: 6}
+    - {rect: [-50, -200, 100, 100, 0], fill: "#c8955a", width: 6}
+    - {rect: [50, -200, 100, 100, 0], fill: "#b8844c", width: 6}
+    - {rect: [-100, -300, 100, 100, 0], fill: "#c8955a", width: 6}
+    - {rect: [0, -300, 100, 100, 0], fill: "#b8844c", width: 6}
+    - {rect: [-50, -400, 100, 100, 0], fill: "#c8955a", width: 6}
+    - {rect: [-40, -470, 26, 70, 6], fill: "#d62828", width: 5}
+    - {rect: [-13, -480, 26, 80, 6], fill: "#e63946", width: 5}
+    - {rect: [14, -470, 26, 70, 6], fill: "#d62828", width: 5}
+    - {path: "M0,-480 Q16,-515 40,-505", width: 5}
+  fuse:
+    - {path: "M0,0 Q35,-26 70,0 T140,0 T210,0", width: 7}
+    - {path: "M0,0 Q35,-26 70,0 T140,0 T210,0", stroke: "#e9c46a", width: 2, dash: "6 8"}
+    - {circle: [0, 0, 8], fill: "#e63946", width: 4}
+    - {circle: [210, 0, 6], fill: "#d62828", width: 4}
+  cap:
+    - {ellipse: [0, -14, 34, 20], fill: "#264653", width: 5}
+    - {rect: [-34, -14, 68, 14, 4], fill: "#264653", width: 5}
+    - {ellipse: [22, -2, 30, 8], fill: "#1d3557", width: 4}
+    - {circle: [0, -30, 4], fill: "#e9c46a", width: 3}
+  shovel:
+    - {line: [[0, 0], [0, -130]], width: 8}
+    - {rect: [-8, -140, 16, 14, 3], fill: "#6d4c41", width: 4}
+    - {poly: [[-20, 0], [20, 0], [14, 44], [0, 56], [-14, 44]], fill: "#adb5bd", width: 5}
+    - {line: [[0, 0], [0, 40]], width: 3}
+  globe:
+    - {rect: [-70, -22, 140, 22, 6], fill: "#6d4c41", width: 6}
+    - {rect: [-12, -92, 24, 72, 0], fill: "#6d4c41", width: 6}
+    - {circle: [0, -250, 160], fill: "#4cc9f0", width: 6}
+    - {path: "M-120,-300 Q-80,-380 -20,-340 Q10,-300 -40,-270 Q-90,-250 -120,-300 Z", fill: "#80b918", width: 4}
+    - {path: "M10,-350 Q80,-390 130,-320 Q145,-270 100,-250 Q50,-260 20,-300 Z", fill: "#80b918", width: 4}
+    - {path: "M-50,-200 Q10,-235 50,-195 Q40,-130 -20,-120 Q-60,-140 -50,-200 Z", fill: "#80b918", width: 4}
+    - {ellipse: [0, -250, 70, 160], width: 3}
+    - {ellipse: [0, -250, 160, 34], width: 3}
+  books:
+    - {rect: [-80, -34, 160, 34, 4], fill: "#7f5539", width: 6}
+    - {rect: [-70, -66, 144, 32, 4], fill: "#9c6644", width: 6}
+    - {rect: [-76, -98, 150, 32, 4], fill: "#b08968", width: 6}
+    - {line: [[-80, -17], [80, -17]], stroke: "#e6ccb2", width: 4}
+    - {line: [[-70, -50], [74, -50]], stroke: "#e6ccb2", width: 4}
+    - {line: [[-76, -82], [74, -82]], stroke: "#e6ccb2", width: 4}
+  craterhint:
+    - {ellipse: [0, 0, 170, 34], width: 6, dash: "14 10"}
+    - {ellipse: [0, 0, 110, 20], width: 4, dash: "8 10"}
+    - {line: [[-170, 0], [-140, 0]], width: 4}
+    - {line: [[140, 0], [170, 0]], width: 4}
+scenes:
+- id: forest
+  sents: [s1]
+  camera: {zoom: 1.0, at: [360, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {kind: sky, clouds: [[130, 340, 140], [560, 420, 150]], drift: 10}
+  - {id: sun, kind: shape, shape: sun, x: 560, y: 930, scale: 1.4}
+  - {kind: shape, shape: meadow, x: 0, y: 880}
+  - {id: f1, kind: shape, shape: pine, x: 70, y: 872, scale: 1.3}
+  - {id: f2, kind: shape, shape: pine, x: 215, y: 884, scale: 1.7}
+  - {id: hut, kind: shape, shape: hut, x: 370, y: 884, scale: 1.1}
+  - {id: f4, kind: shape, shape: pine, x: 530, y: 886, scale: 1.9}
+  - {id: f5, kind: shape, shape: pine, x: 670, y: 872, scale: 1.4}
+  props:
+  - {id: smk, kind: emitter, emitter: smoke, at: [430, 662], n: 8, r: [6, 12], color: gray, period: 2.6, rise: 120, drift: 20, spread: 6, s0: 0.6, s1: 1.8, opacity: 0.8, prewarm: true}
+  - {id: birds, kind: emitter, emitter: birds, at: [700, 400], n: 4, dir: -1}
+  beats:
+  - {at: scene+0.05, who: sun, do: move, dy: -300, dur: 3.2, ease: sine.out}
+  - {at: scene+0.05, who: smk, do: start}
+  - {at: scene+0.1, who: cam, do: push, zoom: 1.12, target: [360, 620], screen: [360, 640], until: "word:Siberian", ease: sine.inOut}
+  - {at: scene+0.2, who: f2, do: rotate, to: 2, dur: 0.9, repeat: {every: 0.9, until: scene.end, alt: {to: -2}}}
+  - {at: scene+0.3, who: f4, do: rotate, to: -2, dur: 1.0, repeat: {every: 1.0, until: scene.end, alt: {to: 2}}}
+  - {at: scene+0.4, who: f1, do: rotate, to: 2, dur: 1.1, repeat: {every: 1.1, until: scene.end, alt: {to: -2}}}
+  - {at: scene+0.5, who: f5, do: rotate, to: -2, dur: 1.2, repeat: {every: 1.2, until: scene.end, alt: {to: 2}}}
+  - {at: "word:Morning", who: sun, do: pulse, amp: 0.06, freq: 3, until: "word:quiet"}
+  - {at: "word:Morning", who: birds, do: burst}
+  - {at: "word:quiet", who: hut, do: jiggle, amp: 0.03, freq: 3}
+  - {at: "word:Siberian", who: cam, do: pan, zoom: 1.2, target: [430, 600], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - {at: "word:forest", who: f4, do: jiggle, amp: 0.04, freq: 4}
+  - {at: "word:forest", who: f2, do: jiggle, amp: 0.04, freq: 4}
+  check:
+  - {thing: "the forest", ids: [f2, f4, f5], word: "forest"}
+  - {thing: "the morning sun", ids: [sun], word: "Morning"}
+  - {thing: "the Siberian pines", ids: [f1, f2, f4], word: "Siberian"}
+- id: asteroid
+  sents: [s2]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {kind: sky, clouds: [[120, 330, 130], [590, 430, 140]], drift: 14}
+  - {kind: shape, shape: meadow, x: 0, y: 880}
+  - {kind: shape, shape: pine, x: 60, y: 880, scale: 0.4}
+  - {kind: shape, shape: pine, x: 140, y: 884, scale: 0.35}
+  - {kind: shape, shape: pine, x: 230, y: 880, scale: 0.42}
+  - {kind: shape, shape: pine, x: 330, y: 884, scale: 0.36}
+  - {kind: shape, shape: pine, x: 440, y: 880, scale: 0.4}
+  - {kind: shape, shape: pine, x: 540, y: 884, scale: 0.34}
+  - {kind: shape, shape: pine, x: 650, y: 880, scale: 0.42}
+  props:
+  - {id: ast, kind: shape, shape: asteroid, x: 600, y: 330, scale: 0.6}
+  - {id: brk, kind: shape, shape: bracket, x: 428, y: 690, scale: 1.12, hidden: true}
+  beats:
+  - {at: scene+0.05, who: ast, do: path, points: [[600, 330], [560, 380], [500, 450], [420, 520]], dur: 2.4, ease: power2.out}
+  - {at: scene+0.05, who: ast, do: scale, to: 1.3, dur: 2.4, ease: power2.out}
+  - {at: scene+0.1, who: cam, do: push, zoom: 1.1, target: [420, 540], screen: [360, 640], until: "word:fifty", ease: sine.inOut}
+  - {at: scene+0.2, who: ast, do: rotate, to: 8, dur: 0.5, repeat: {every: 0.5, until: scene.end, alt: {to: -8}}}
+  - {at: "word:stony", who: fx, do: lines, dur: 1.2, target: [420, 520]}
+  - {at: "word:asteroid", who: ast, do: pulse, amp: 0.05, freq: 3, until: "word:fifty"}
+  - {at: "word:fifty", who: brk, do: pop}
+  - {at: "word:fifty", who: cam, do: pull, zoom: 1.0, target: [420, 580], screen: [360, 640], until: "word:races", ease: sine.inOut}
+  - {at: "word:sixty", who: brk, do: pulse, amp: 0.05, freq: 3, until: "word:wide"}
+  - {at: "word:meters", who: brk, do: jiggle, amp: 0.05, freq: 3}
+  - {at: "word:races", who: ast, do: shake, amp: 4, dur: 0.6}
+  - {at: "word:races", who: fx, do: lines, dur: 1.0, target: [420, 520]}
+  - {at: "word:east", who: cam, do: push, zoom: 1.12, target: [440, 540], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  check:
+  - {thing: "the stony asteroid", ids: [ast], word: "asteroid"}
+  - {thing: "the width of the asteroid", ids: [brk], word: "meters"}
+  - {thing: "the asteroid racing in", ids: [ast], word: "races"}
+- id: burst
+  sents: [s3]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {kind: shape, shape: meadow, x: 0, y: 880}
+  - {id: p1, kind: shape, shape: pine, x: 60, y: 884, scale: 1.0}
+  - {id: p2, kind: shape, shape: pine, x: 160, y: 880, scale: 1.0}
+  - {id: p3, kind: shape, shape: pine, x: 260, y: 886, scale: 1.0}
+  - {id: p4, kind: shape, shape: pine, x: 460, y: 884, scale: 1.0}
+  - {id: p5, kind: shape, shape: pine, x: 560, y: 880, scale: 1.0}
+  - {id: p6, kind: shape, shape: pine, x: 660, y: 886, scale: 1.0}
+  props:
+  - {id: hl, kind: shape, shape: heightline, x: 360, y: 430, scale: 0.6, hidden: true}
+  - {id: ast, kind: shape, shape: asteroid, x: 450, y: 320, scale: 1.0}
+  - {id: fl, kind: shape, shape: starburst, x: 360, y: 395, scale: 1.7, hidden: true}
+  - {id: rg1, kind: shape, shape: ring, x: 360, y: 395, scale: 0.5, hidden: true}
+  - {id: rg2, kind: shape, shape: ring, x: 360, y: 395, scale: 0.5, hidden: true}
+  beats:
+  - {at: scene+0.05, who: ast, do: path, points: [[450, 320], [425, 345], [400, 370], [360, 395]], dur: 2.6, ease: none}
+  - {at: scene+0.1, who: cam, do: push, zoom: 1.1, target: [360, 560], screen: [360, 640], until: "word:above", ease: sine.inOut}
+  - {at: "word:Five", who: hl, do: pop}
+  - {at: "word:ten", who: hl, do: pulse, amp: 0.04, freq: 3, until: "word:above"}
+  - {at: "word:kilometers", who: hl, do: jiggle, amp: 0.05, freq: 3}
+  - {at: "word:above", who: cam, do: pull, zoom: 1.0, target: [360, 600], screen: [360, 640], until: "word:it", ease: sine.inOut}
+  - {at: "word:above", who: ast, do: pulse, amp: 0.05, freq: 4, until: "word:it"}
+  - {at: "word:ground", who: p2, do: jiggle, amp: 0.04, freq: 4}
+  - {at: "word:ground", who: p5, do: jiggle, amp: 0.04, freq: 4}
+  - {at: "word:it", who: ast, do: shake, amp: 3, dur: 0.4}
+  - {at: "word:explodes-0.2", who: ast, do: hide}
+  - {at: "word:explodes-0.2", who: fl, do: pop}
+  - {at: "word:explodes-0.2", who: fx, do: flash, peak: 0.7}
+  - {at: "word:explodes", who: rg1, do: show}
+  - {at: "word:explodes", who: rg1, do: scale, to: 3.2, dur: 1.0}
+  - {at: "word:explodes", who: rg1, do: fade, to: 0, dur: 1.0}
+  - {at: "word:explodes+0.2", who: rg2, do: show}
+  - {at: "word:explodes+0.2", who: rg2, do: scale, to: 3.2, dur: 1.0}
+  - {at: "word:explodes+0.2", who: rg2, do: fade, to: 0, dur: 1.0}
+  - {at: "word:explodes", who: cam, do: shake, amp: 6, dur: 0.6}
+  check:
+  - {thing: "the stone above the forest", ids: [ast], word: "above"}
+  - {thing: "the ground below", ids: [p1, p2, p3, p4, p5, p6], word: "ground"}
+  - {thing: "the explosion", ids: [fl], word: "explodes"}
+- id: blast
+  sents: [s4]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {kind: sky, clouds: [[130, 330, 140], [580, 300, 150]], drift: 8}
+  - {kind: shape, shape: meadow, x: 0, y: 880}
+  - {id: pile, kind: shape, shape: cratepile, x: 400, y: 884, scale: 0.95}
+  - {id: fuse, kind: shape, shape: fuse, x: 20, y: 886}
+  props:
+  - {id: spark, kind: shape, shape: starburst, x: 20, y: 886, scale: 0.16, hidden: true}
+  cast:
+  - {id: man, x: 650, gy: 880, k: 0.9, facing: l, hair: "#3b2a1e", coat: "#457b9d", coat_len: 18, face: curious}
+  beats:
+  - {at: scene+0.05, who: man, do: look, target: [400, 450]}
+  - {at: scene+0.05, who: man, do: face, name: wow}
+  - {at: scene+0.1, who: cam, do: push, zoom: 1.08, target: [400, 640], screen: [360, 640], until: "word:equals", ease: sine.inOut}
+  - {at: "word:blast", who: spark, do: show}
+  - {at: "word:blast", who: spark, do: path, points: [[20, 886], [80, 850], [170, 922], [230, 886]], dur: 1.6, ease: none}
+  - {at: "word:blast", who: spark, do: pulse, amp: 0.2, freq: 8, until: "word:three"}
+  - {at: "word:equals", who: cam, do: tilt, zoom: 1.0, target: [400, 620], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - {at: "word:between", who: man, do: pose, name: look_up, dur: 0.3}
+  - {at: "word:three", who: man, do: step_back, dist: 20}
+  - {at: "word:fifty", who: pile, do: jiggle, amp: 0.02, freq: 4}
+  - {at: "word:megatons", who: pile, do: pulse, amp: 0.03, freq: 4, until: "word:explosives"}
+  - {at: "word:megatons", who: man, do: pose, name: cover, dur: 0.3}
+  - {at: "word:explosives", who: man, do: face, name: scared}
+  - {at: "word:explosives", who: man, do: tremble, amount: 1.5, until: scene.end}
+  check:
+  - {thing: "the pile of explosives", ids: [pile], word: "explosives"}
+  - {thing: "the tiny man", ids: [man], word: "blast"}
+- id: trees
+  sents: [s5]
+  in: {type: slide}
+  camera: {zoom: 1.25, at: [360, 700], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {kind: shape, shape: meadow, x: 0, y: 880}
+  - {id: t1, kind: shape, shape: pine, x: 40, y: 884, scale: 1.4}
+  - {id: t2, kind: shape, shape: pine, x: 120, y: 880, scale: 1.4}
+  - {id: t3, kind: shape, shape: pine, x: 200, y: 886, scale: 1.4}
+  - {id: t4, kind: shape, shape: pine, x: 280, y: 882, scale: 1.4}
+  - {id: t5, kind: shape, shape: pine, x: 360, y: 884, scale: 1.4}
+  - {id: t6, kind: shape, shape: pine, x: 440, y: 880, scale: 1.4}
+  - {id: t7, kind: shape, shape: pine, x: 520, y: 886, scale: 1.4}
+  - {id: t8, kind: shape, shape: pine, x: 600, y: 882, scale: 1.4}
+  - {id: t9, kind: shape, shape: pine, x: 680, y: 884, scale: 1.4}
+  props:
+  - {id: rg, kind: shape, shape: ring, x: 360, y: 620, scale: 0.6, hidden: true}
+  - {id: rg2, kind: shape, shape: ring, x: 360, y: 620, scale: 0.6, hidden: true}
+  beats:
+  - {at: scene+0.1, who: cam, do: push, zoom: 1.35, target: [360, 700], screen: [360, 640], until: "word:fall", ease: sine.inOut}
+  - {at: "word:Trees", who: t5, do: jiggle, amp: 0.05, freq: 4}
+  - {at: "word:fall-0.2", who: rg, do: show}
+  - {at: "word:fall-0.2", who: rg, do: scale, to: 3.4, dur: 1.6}
+  - {at: "word:fall-0.2", who: rg, do: fade, to: 0, dur: 1.6}
+  - {at: "word:fall", who: t5, do: rotate, to: 88, dur: 0.5, ease: power2.in, sfx: [thud, 0.3], repeat: {every: 0.22, n: 5, cycle: [{who: t5}, {who: t6}, {who: t7}, {who: t8}, {who: t9}]}}
+  - {at: "word:fall+0.1", who: t4, do: rotate, to: -88, dur: 0.5, ease: power2.in, sfx: [thud, 0.3], repeat: {every: 0.22, n: 4, cycle: [{who: t4}, {who: t3}, {who: t2}, {who: t1}]}}
+  - {at: "word:across", who: cam, do: pull, zoom: 1.05, target: [360, 700], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - {at: "word:across", who: rg2, do: show}
+  - {at: "word:across", who: rg2, do: scale, to: 3.4, dur: 1.6}
+  - {at: "word:across", who: rg2, do: fade, to: 0, dur: 1.6}
+  - {at: "word:thousand", who: fx, do: lines, dur: 0.8, target: [360, 700]}
+  - {at: "word:square", who: cam, do: shake, amp: 3, dur: 0.5}
+  check:
+  - {thing: "the trees", ids: [t3, t4, t5, t6, t7], word: "Trees"}
+  - {thing: "the trees falling", ids: [t2, t3, t4, t5, t6, t7, t8], word: "fall"}
+- id: witness
+  sents: [s6]
+  in: {type: slide}
+  camera: {zoom: 1.2, at: [330, 760], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {kind: shape, shape: meadow, x: 0, y: 880}
+  - {kind: shape, shape: pine, x: 50, y: 884, scale: 1.1}
+  - {kind: shape, shape: pine, x: 135, y: 880, scale: 0.9}
+  - {id: hut, kind: shape, shape: hut, x: 610, y: 886, scale: 1.3}
+  props:
+  - {id: cap1, kind: shape, shape: cap, x: 150, y: 905, scale: 2.0, hidden: true}
+  - {id: cap2, kind: shape, shape: cap, x: 215, y: 912, scale: 2.0, hidden: true}
+  - {id: cap3, kind: shape, shape: cap, x: 280, y: 905, scale: 2.0, hidden: true}
+  cast:
+  - {id: vA, x: 370, gy: 880, k: 1.2, facing: l, cap: "#264653", coat: "#6c584c", coat_len: 18, hair: "#3b2a1e", face: worried}
+  - {id: vB, x: 480, gy: 880, k: 1.25, facing: l, hat: [orange, cream], coat: "#386641", coat_len: 18, face: scared}
+  beats:
+  - {at: scene+0.05, who: vA, do: look, target: [60, 700]}
+  - {at: scene+0.05, who: vB, do: look, target: [60, 700]}
+  - {at: scene+0.1, who: cam, do: push, zoom: 1.3, target: [330, 740], screen: [360, 640], until: "word:three", ease: sine.inOut}
+  - {at: "word:Witnesses", who: vA, do: face, name: worried}
+  - {at: "word:say", who: vB, do: point, target: [60, 700]}
+  - {at: "word:say", who: vB, do: face, name: scared}
+  - {at: "word:up", who: vA, do: pose, name: hands_up, dur: 0.25}
+  - {at: "word:three", who: cap1, do: pop, sfx: [tick, 0.4], repeat: {every: 0.3, n: 3, cycle: [{who: cap1}, {who: cap2}, {who: cap3}]}}
+  - {at: "word:three", who: cam, do: push, zoom: 1.7, target: [215, 860], screen: [360, 700], until: scene.end, ease: sine.inOut}
+  - {at: "word:people", who: vA, do: turn, facing: r, repeat: {every: 0.3, n: 4, alt: {facing: l}}}
+  - {at: "word:may", who: vB, do: pose, name: shrug, dur: 0.25}
+  - {at: "word:have", who: vA, do: face, name: sad}
+  - {at: "word:died", who: vB, do: face, name: sad}
+  - {at: "word:died", who: vA, do: tremble, amount: 1.2, until: scene.end}
+  check:
+  - {thing: "the witnesses", ids: [vA, vB], word: "Witnesses"}
+  - {thing: "the three caps", ids: [cap1, cap2, cap3], word: "may"}
+- id: city
+  sents: [s7]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {kind: shape, shape: meadow, x: 0, y: 880}
+  - {id: b1, kind: building, x: 90, y: 880, w: 120, h: 330, wall: "#8d99ae", windows: 6, type: plain}
+  - {id: b2, kind: building, x: 215, y: 880, w: 110, h: 470, wall: "#6c757d", windows: 8, type: plain}
+  - {id: b3, kind: building, x: 360, y: 880, w: 130, h: 560, wall: "#adb5bd", windows: 9, type: plain}
+  - {id: b4, kind: building, x: 505, y: 880, w: 110, h: 420, wall: "#6c757d", windows: 7, type: plain}
+  - {id: b5, kind: building, x: 640, y: 880, w: 120, h: 340, wall: "#8d99ae", windows: 6, type: plain}
+  props:
+  - {id: rg, kind: shape, shape: ring, x: 360, y: 700, scale: 0.4, hidden: true}
+  cast:
+  - {id: pA, x: 160, gy: 880, k: 0.7, facing: r, hair: "#3b2a1e", coat: "#e76f51", coat_len: 16, face: ok}
+  - {id: pB, x: 560, gy: 880, k: 0.75, facing: l, hair: "#6d4c41", coat: "#2a9d8f", coat_len: 16, face: ok}
+  beats:
+  - {at: scene+0.1, who: cam, do: push, zoom: 1.08, target: [360, 660], screen: [360, 640], until: "word:could", ease: sine.inOut}
+  - {at: "word:blast", who: rg, do: show}
+  - {at: "word:blast", who: rg, do: scale, to: 4.2, dur: 2.6, ease: power2.out}
+  - {at: "word:like", who: pA, do: pose, name: look_up, dur: 0.3}
+  - {at: "word:like", who: pB, do: pose, name: look_up, dur: 0.3}
+  - {at: "word:this", who: pA, do: face, name: scared}
+  - {at: "word:this", who: pB, do: face, name: scared}
+  - {at: "word:could", who: b3, do: shake, amp: 5, dur: 0.8}
+  - {at: "word:could", who: b2, do: shake, amp: 4, dur: 0.8}
+  - {at: "word:destroy", who: b1, do: shatter, window: all, stagger: 0.1}
+  - {at: "word:destroy", who: b3, do: shatter, window: all, stagger: 0.08}
+  - {at: "word:destroy", who: b5, do: shatter, window: all, stagger: 0.1}
+  - {at: "word:destroy", who: b4, do: shake, amp: 6, dur: 0.8}
+  - {at: "word:large", who: cam, do: pull, zoom: 0.8, target: [360, 560], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - {at: "word:city", who: b2, do: shatter, window: all, stagger: 0.1}
+  check:
+  - {thing: "the city", ids: [b1, b2, b3, b4, b5], word: "city"}
+  - {thing: "the large buildings", ids: [b2, b3, b4], word: "large"}
+  - {thing: "the blast circle", ids: [rg], word: "destroy"}
+- id: globe
+  sents: [s8]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 640], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: dusk, x: 0, y: 0}
+  - {kind: shape, shape: meadow, x: 0, y: 880}
+  - {id: gl, kind: shape, shape: globe, x: 300, y: 884, scale: 1.15}
+  - {id: books, kind: shape, shape: books, x: 580, y: 884, scale: 1.6}
+  props:
+  - {id: mark, kind: shape, shape: starburst, x: 398, y: 528, scale: 0.45, hidden: true}
+  - {id: rg1, kind: shape, shape: ring, x: 398, y: 528, scale: 0.3, hidden: true}
+  - {id: rg2, kind: shape, shape: ring, x: 398, y: 528, scale: 0.3, hidden: true}
+  beats:
+  - {at: scene+0.1, who: cam, do: push, zoom: 1.12, target: [360, 620], screen: [360, 640], until: "word:impact", ease: sine.inOut}
+  - {at: scene+0.2, who: gl, do: rotate, to: 3, dur: 1.4, ease: sine.inOut, repeat: {every: 1.4, until: scene.end, alt: {to: -3}}}
+  - {at: "word:largest", who: mark, do: pop}
+  - {at: "word:largest", who: mark, do: pulse, amp: 0.1, freq: 3, until: scene.end}
+  - {at: "word:impact", who: rg1, do: show}
+  - {at: "word:impact", who: rg1, do: scale, to: 1.8, dur: 1.0}
+  - {at: "word:impact", who: rg1, do: fade, to: 0, dur: 1.0}
+  - {at: "word:impact", who: cam, do: push, zoom: 1.6, target: [398, 540], screen: [360, 640], until: "word:recorded", ease: power2.inOut}
+  - {at: "word:event", who: rg2, do: show}
+  - {at: "word:event", who: rg2, do: scale, to: 2.2, dur: 1.0}
+  - {at: "word:event", who: rg2, do: fade, to: 0, dur: 1.0}
+  - {at: "word:recorded", who: cam, do: pan, zoom: 1.2, target: [450, 700], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - {at: "word:recorded", who: books, do: jiggle, amp: 0.04, freq: 3}
+  - {at: "word:history", who: books, do: pulse, amp: 0.05, freq: 3, until: scene.end}
+  check:
+  - {thing: "the globe of the Earth", ids: [gl], word: "largest"}
+  - {thing: "the impact starburst", ids: [mark], word: "event"}
+  - {thing: "the history books", ids: [books], word: "history"}
+- id: ground
+  sents: [s9]
+  in: {type: slide}
+  camera: {zoom: 1.0, at: [360, 700], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {id: gnd, kind: shape, shape: meadow, x: 0, y: 880}
+  - {kind: shape, shape: pine, x: 140, y: 884, scale: 0.9, rot: -88}
+  - {kind: shape, shape: pine, x: 600, y: 884, scale: 0.9, rot: 88}
+  props:
+  - {id: fl, kind: shape, shape: starburst, x: 360, y: 400, scale: 1.1}
+  - {id: dl, kind: shape, shape: heightline, x: 360, y: 520, scale: 0.45, hidden: true}
+  - {id: hint, kind: shape, shape: craterhint, x: 360, y: 895, hidden: true}
+  - {id: ban1, kind: shape, shape: ban, x: 360, y: 815, scale: 0.9, hidden: true}
+  beats:
+  - {at: scene+0.05, who: fl, do: pulse, amp: 0.06, freq: 4, until: "word:hits"}
+  - {at: scene+0.1, who: cam, do: push, zoom: 1.1, target: [360, 700], screen: [360, 640], until: "word:never", ease: sine.inOut}
+  - {at: "word:there", who: ban1, do: pop}
+  - {at: "word:no", who: hint, do: show}
+  - {at: "word:crater", who: hint, do: pulse, amp: 0.05, freq: 3, until: "word:because"}
+  - {at: "word:crater", who: ban1, do: jiggle, amp: 0.08, freq: 3}
+  - {at: "word:because", who: dl, do: pop}
+  - {at: "word:never", who: dl, do: jiggle, amp: 0.05, freq: 4}
+  - {at: "word:hits", who: fl, do: fade, to: 0, dur: 0.8}
+  - {at: "word:hits", who: dl, do: shake, amp: 3, dur: 0.4}
+  - {at: "word:ground", who: cam, do: tilt, zoom: 1.35, target: [360, 800], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - {at: "word:ground", who: ban1, do: pulse, amp: 0.08, freq: 3, until: scene.end}
+  check:
+  - {thing: "the flash in the air", ids: [fl], word: "Yet"}
+  - {thing: "no crater", ids: [ban1, hint], word: "crater"}
+- id: search
+  sents: [s10]
+  in: {type: slide}
+  camera: {zoom: 1.3, at: [360, 760], screen: [360, 640]}
+  set:
+  - {kind: shape, shape: daysky, x: 0, y: 0}
+  - {kind: shape, shape: meadow, x: 0, y: 880}
+  - {id: fl1, kind: shape, shape: pine, x: 90, y: 886, scale: 0.8, rot: -88}
+  - {id: fl2, kind: shape, shape: pine, x: 270, y: 884, scale: 0.8, rot: 88}
+  - {id: fl3, kind: shape, shape: pine, x: 470, y: 888, scale: 0.8, rot: -88}
+  - {id: fl4, kind: shape, shape: pine, x: 660, y: 884, scale: 0.8, rot: 88}
+  props:
+  - {id: sh1, kind: shape, shape: shovel, x: 120, y: 880}
+  - {id: sh3, kind: shape, shape: shovel, x: 600, y: 880}
+  cast:
+  - {id: sc1, x: 170, gy: 880, k: 1.1, facing: r, coat: "#f8f9fa", coat_len: 30, hair: "#6d4c41", face: curious}
+  - {id: sc2, x: 360, gy: 880, k: 1.15, facing: r, coat: "#f8f9fa", coat_len: 30, glasses: true, hair: "#212529", face: think}
+  - {id: sc3, x: 550, gy: 880, k: 1.1, facing: l, coat: "#f8f9fa", coat_len: 30, hair: "#e9c46a", face: curious}
+  beats:
+  - {at: scene+0.05, who: sh1, do: attach, to: sc1, anchor: hand, offset: [0, 0]}
+  - {at: scene+0.05, who: sh3, do: attach, to: sc3, anchor: hand, offset: [0, 0]}
+  - {at: scene+0.05, who: sc2, do: hold, prop: magnifier}
+  - {at: scene+0.1, who: cam, do: push, zoom: 1.4, target: [360, 760], screen: [360, 640], until: "word:say", ease: sine.inOut}
+  - {at: "word:nobody", who: sc2, do: look, target: [360, 900]}
+  - {at: "word:nobody", who: sc1, do: pose, name: reach, dur: 0.1, repeat: {every: 0.3, n: 4, alt: {name: stand}}}
+  - {at: "word:can", who: sc3, do: pose, name: reach, dur: 0.1, repeat: {every: 0.3, n: 4, alt: {name: stand}}}
+  - {at: "word:say", who: sc1, do: pose, name: shrug, dur: 0.25}
+  - {at: "word:say", who: sc3, do: pose, name: shrug, dur: 0.25}
+  - {at: "word:sure", who: sc2, do: pose, name: scratch, dur: 0.3}
+  - {at: "word:sure", who: sc2, do: face, name: worried}
+  - {at: "word:what", who: sc1, do: pose, name: look_up, dur: 0.3}
+  - {at: "word:what", who: sc1, do: look, target: up}
+  - {at: "word:really", who: cam, do: pull, zoom: 0.95, target: [360, 700], screen: [360, 640], until: scene.end, ease: sine.inOut}
+  - {at: "word:was", who: sc3, do: face, name: sad}
+  check:
+  - {thing: "the scientists", ids: [sc1, sc2, sc3], word: "nobody"}
+  - {thing: "the flattened forest", ids: [fl1, fl2, fl3, fl4], word: "sure"}
