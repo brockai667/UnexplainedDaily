@@ -38,7 +38,7 @@ def main():
             issues.append("no backdrop: the first object of `set` must be a sky or a full-frame backdrop shape")
         if not sc.get("check"):
             issues.append("no `check:` list (things the sentence names + the spoken word at which each must be visible)")
-        issues += W.visibility_problems(ep_dir, sc.get("check"))
+        issues += W.visibility_problems(ep_dir, sc.get("check"), sc.get("sents"))
         total += len(issues)
         print(f"- {sc['id']}: beats {len(sc.get('beats') or [])}" + ("  OK" if not issues else ""))
         for i in issues:

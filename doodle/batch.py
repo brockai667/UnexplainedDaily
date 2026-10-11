@@ -310,8 +310,8 @@ def _urlopen(url):
 
 def http_json(url):
     """GET -> parsed JSON; None for 404; BatchAbort(4) when Wikipedia stays unreachable"""
-    last = None
-    for i in range(3):
+    last, wait = None, 0
+    for i in range(5):
         try:
             with _urlopen(url) as r:
                 return json.loads(r.read().decode("utf-8"))
@@ -319,9 +319,15 @@ def http_json(url):
             if e.code == 404:
                 return None
             last = e
+            if e.code == 429:                                    # rate limited: wait as asked (Retry-After), else longer each time
+                try:
+                    wait = int(e.headers.get("Retry-After") or 0)
+                except ValueError:
+                    wait = 0
+                wait = min(60, wait or 5 * (i + 1))
         except (urllib.error.URLError, OSError, ValueError) as e:
             last = e
-        time.sleep(2 * (i + 1))
+        time.sleep(wait or 2 * (i + 1))
     raise BatchAbort(4, f"Wikipedia is not reachable ({last}) - check the network and run again")
 
 
@@ -337,6 +343,44 @@ def wiki_page(title):
     extract = next((p.get("extract") or "" for p in pages.values() if "missing" not in p), "").strip()
     summary = (s.get("extract") or "").strip()
     return (canon, summary, extract) if (summary or extract) else None
+
+
+def wiki_body(canon, limit=7000):
+    """plain text of the whole article (lead + sections) cut at `limit` chars: for pages whose lead says almost nothing
+    (Flannan Isles Lighthouse: two sentences; the story is in the sections)"""
+    d = http_json("https://en.wikipedia.org/w/api.php?action=query&prop=extracts&explaintext=1&format=json&redirects=1&titles="
+                  + urllib.parse.quote(canon, safe=""))
+    pages = ((d or {}).get("query") or {}).get("pages") or {}
+    return next((p.get("extract") or "" for p in pages.values() if "missing" not in p), "").strip()[:limit]
+
+
+SKIP_SECTIONS = re.compile(r"^(see also|references|notes|external links|bibliography|further reading|gallery|sources|citations|"
+                           r"footnotes|in popular culture|popular culture|legacy|modern use|modern-day use|unicode|summary table)$", re.I)
+PRIORITY_SECTIONS = re.compile(r"disappear|vanish|myster|unexplained|incident|event|hijack|investigat|discover|found|finding|evidence|"
+                               r"theor|hypothes|speculat|explanation|origin|legend|account|sighting|fate|aftermath|search|crew|"
+                               r"voyage|expedition|excavation|phenomen|observation|report|purpose|function", re.I)
+
+
+def wiki_sections(canon):
+    """[(heading, text)] of the article body, one entry per section and subsection ("Parent: Sub"), the standard tail sections
+    (references, see also ...) dropped. The lead (before the first heading) is not included."""
+    out, cur, buf, top = [], None, [], ""
+    for line in wiki_body(canon, limit=200000).splitlines():
+        m = re.match(r"^(=+) *(.+?) *=+ *$", line)
+        if m:
+            if cur is not None:
+                out.append((cur, "\n".join(buf).strip()))
+            if len(m.group(1)) == 2:
+                top = m.group(2).strip()
+                cur = top
+            else:
+                cur = f"{top}: {m.group(2).strip()}" if top else m.group(2).strip()
+            buf = []
+        elif cur is not None:
+            buf.append(line)
+    if cur is not None:
+        out.append((cur, "\n".join(buf).strip()))
+    return [(h, t) for h, t in out if t and not SKIP_SECTIONS.match(h)]
 
 
 def fetch_facts(topic):
@@ -356,6 +400,19 @@ def fetch_facts(topic):
         parts.append("SUMMARY:\n" + summary)
     if extract and extract != summary:
         parts.append("INTRO:\n" + extract[:6000])
+    secs = wiki_sections(canon)                       # the story is often in the sections (Flannan Isles: a two-sentence lead)
+    secs.sort(key=lambda ht: 0 if PRIORITY_SECTIONS.search(ht[0]) else 1)      # stable: article order inside each group
+    room, more = 7000, []
+    for h, t in secs:
+        if room < 300:
+            break
+        piece = t[:min(1800, room)]
+        if len(piece) < len(t) and ". " in piece[200:]:
+            piece = piece[:piece.rfind(". ") + 1]
+        more.append(f"[{h}] {piece}")
+        room -= len(piece)
+    if more:
+        parts.append("MORE FROM THE ARTICLE:\n" + "\n\n".join(more))
     return {"title": canon, "text": "\n\n".join(parts), "note": note}
 
 

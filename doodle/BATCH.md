@@ -18,7 +18,7 @@ run `claude`, type `/login`, start the batch again.
 
 | stage | what | model calls |
 |---|---|---|
-| facts | Wikipedia summary + intro (no key; search API once if the page is missing, else the topic is SKIPPED) | 0 |
+| facts | Wikipedia summary + intro + the article's sections (those about the disappearance / investigation / theories first, about 7000 chars; a thin lead such as Flannan Isles Lighthouse is no longer a problem; no key; search API once if the page is missing, else the topic is SKIPPED) | 0 |
 | brief | brief YAML in the format of `briefs/celeste.yaml` + title / description / tags, validated (word count, gold words, scenes cover every sentence, title rules ...) | 1 (+1 retry with the errors) |
 | author | `make_prompt.build()` brief -> complete `screenplay.yaml` (our validated header is put in front, so the narration cannot drift) | 1 |
 | check | `accept.py`; its problems go back to the model | 0 if clean, else 1 per fix round, at most 2 rounds |

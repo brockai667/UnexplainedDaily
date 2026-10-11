@@ -433,8 +433,10 @@ def prune(scene, err):
     return None
 
 
-def visibility_problems(ep_dir, checks):
-    """mechanicke oci (look.py): je vec zo zoznamu check pri svojom slove na obrazovke, viditelna a dost velka?"""
+def visibility_problems(ep_dir, checks, sents=None):
+    """mechanicke oci (look.py): je vec zo zoznamu check pri svojom slove na obrazovke, viditelna a dost velka?
+    sents = kluce viet danej sceny ("s3"): slovo sa hlada len v nich (inak by sa slovo povedane vo viacerych vetach meralo
+    pri prvom vyskyte, t.j. v inej scene)."""
     try:
         import look
     except Exception:                                                      # noqa: BLE001
@@ -444,12 +446,19 @@ def visibility_problems(ep_dir, checks):
         if not isinstance(c, dict) or not c.get("word") or not c.get("ids"):
             continue
         ids = [str(i) for i in (c["ids"] if isinstance(c["ids"], list) else [c["ids"]])]
-        try:
-            t = look.word_time(ep_dir, str(c["word"]))
-        except Exception:                                                  # noqa: BLE001
-            t = None
+        word = str(c["word"])
+        keys = [None] if ("/" in word or not sents) else [str(k) for k in sents]
+        t = None
+        for k in keys:
+            try:
+                t = look.word_time(ep_dir, word, k)
+                break
+            except Exception:                                              # noqa: BLE001
+                t = None
         if t is None:
-            probs.append(f"check '{c.get('thing')}': the word '{c['word']}' is not in the narration - use an exact spoken word")
+            where = (f" in this scene's sentences ({', '.join(str(k) for k in sents)})" if sents and "/" not in word
+                     else " in the narration")
+            probs.append(f"check '{c.get('thing')}': the word '{word}' is not{where} - use an exact spoken word of the scene")
             continue
         reqs.append((float(t) + 0.6, ids, c))
     if not reqs:
