@@ -6,7 +6,7 @@ One command turns a list of topics into finished doodle episodes in `doodle/queu
 ```
 python doodle/batch.py --topics "Mary Celeste,Tunguska event" [--start 004]   # explicit topics (use ; if a name contains commas)
 python doodle/batch.py --from-bank 100 [--start 004]                         # the next 100 unused topics of the bank
-        [--backend cli|none|agentfile] [--model sonnet] [--no-review] [--keep] [--bank FILE]
+        [--backend cli|none|agentfile|api] [--model sonnet] [--no-review] [--keep] [--bank FILE]
 ```
 
 Needs: the `claude` command logged in (the owner's subscription; not with `--backend agentfile`), `npx` (stills), the usual doodle engine
@@ -82,3 +82,55 @@ In the `review` stage open the `review.jpg` named in the prompt with your Read t
   re-run works on the same N topics.
 * Testing without a model: a Bash loop that, whenever the exit code is 10, copies a prepared answer to the answer path and runs the
   command again.
+
+## Backend api (free OpenAI-compatible model, no login)
+
+```
+python doodle/batch.py --topics "Mary Celeste;Tunguska event" --backend api --provider openrouter --model nvidia/nemotron-3.5-super-vl:free [--start 004]
+        [--review-model M] [--base-url URL] [--api-key-env VAR] [--max-tokens 16000] [--api-timeout 600] [--api-cap 10] [--no-review] [--keep]
+```
+
+No `claude` login, no agent, no human: a free model behind an OpenAI-compatible `POST <base-url>/chat/completions` is the author. It is the
+`agentfile` flow (same stages, same `prompts/<stage>.md` and `answers/<stage>.txt`, same resume after a stop, same `QUEUED <queue folder>` /
+`FAILED <slug>: <reason>` lines) except that a missing answer is fetched from the API and written to `answers/<stage>.txt`; the run never
+ends with exit code 10. Re-run the same command after any stop: what is done is reused (an `ERROR` topic goes on where it stopped).
+
+| `--provider` | base URL | key, read from the environment |
+|---|---|---|
+| `openrouter` (default) | `https://openrouter.ai/api/v1` | `OPENROUTER_API_KEY` |
+| `groq` | `https://api.groq.com/openai/v1` | `GROQ_API_KEY` |
+| `nim` | `https://integrate.api.nvidia.com/v1` | `NVIDIA_API_KEY` |
+| `gemini` | `https://generativelanguage.googleapis.com/v1beta/openai` | `GEMINI_API_KEY` |
+| `custom` | `--base-url` (required) | `OPENAI_API_KEY` |
+
+`--base-url` and `--api-key-env` replace the 2nd and 3rd column. The start prints `api key: <ENV NAME>, N chars` - the key itself is never printed
+or stored. `--model` is the provider's model id for brief, author and fixes (the default `sonnet` is a CLI alias: always pass `--model`),
+`--review-model` the one for the review (default `--model`).
+
+* Request: `{model, messages, max_tokens, temperature: 0.4}`; system = "You are the author. Reply with the answer only ..." + the role rules of
+  the stage, user = the stage prompt. `<think>` blocks of reasoning models are cut off the reply.
+* Review: `review.jpg` goes along as an `image_url` part (base64 data URL) to `--review-model`. If the model refuses images (a 4xx about image
+  input) the review counts as "no problems" and the topic's `review` is `skipped (no vision)`.
+* Retries: 429, 5xx, timeouts and connection errors are tried 5 times in all, waiting for `Retry-After`, else 10, 20, 40, 80 s (at most 90).
+  401/403 stop the batch (exit code 3, key rejected); 402 or a 429 that does not go away stop it with exit code 4 (run again later); another
+  4xx makes the topic `ERROR` (3 in a row stop the batch).
+* A reply cut off at `max_tokens` (`finish_reason: length`) or an empty one is asked again once with `max_tokens` doubled (up to 32000), then
+  the topic is `FAILED: truncated reply`. More than `--api-cap` calls for a topic (all runs together) = `FAILED: api cap`.
+* `calls.json` has one row per request (stage, model, status, seconds, prompt_tokens, completion_tokens, ...); `batch_log.jsonl` gets
+  `backend: api`, calls, tokens in/out, `cost_usd` 0.
+* Offline test (no key, no model; the real accept, qa render and queue still run, Wikipedia is still read):
+
+  ```
+  python doodle/tests/fake_openai.py --fail-first 1 --truncate-first 1 &     # fake API on http://127.0.0.1:8765/v1, POST /quit stops it
+  OPENROUTER_API_KEY=offline-test python doodle/batch.py --topics "Mary Celeste" --backend api --provider openrouter --base-url http://127.0.0.1:8765/v1 --model fake --start 900 --no-review
+  ```
+
+  (Windows cmd: `set PYTHONIOENCODING=utf-8 && set OPENROUTER_API_KEY=offline-test && python doodle/batch.py ...`.) Afterwards delete
+  `doodle/queue/900-*`, the Mary Celeste line of `doodle/batch_log.jsonl` and `doodle/episodes/mary-celeste/`.
+* GitHub Actions: `.github/workflows/doodle-author.yml` (manual `workflow_dispatch`; the cron `15 2 * * *` is prepared but commented out).
+  Inputs `provider`, `model`, `review_model`, `topics` (`;`-separated, empty = the next `from_bank` unused bank topics), `from_bank`, `start`,
+  `commit`; the secret of the provider (`OPENROUTER_API_KEY`, `GROQ_API_KEY`, `NVIDIA_API_KEY` or `GEMINI_API_KEY`). It runs batch.py with
+  `--backend api --keep` (limit 120 min) and always uploads the artifact `doodle-author` (review.jpg, accept.log, qa.log, calls.json,
+  screenplay.yaml, renders/*.mp4, batch_log.jsonl). `commit` off = artifact only; on = `git add doodle/queue doodle/batch_log.jsonl`, commit
+  "doodle-author: <topics>", push. A copy for a repo that holds the key secret: `doodle/tests/doodle-author-coldcase.yml` (checks out
+  `brockai667/UnexplainedDaily` at the input `ref`); it is not run from here.

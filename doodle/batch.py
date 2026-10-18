@@ -3,7 +3,9 @@
 
     python doodle/batch.py --topics "Mary Celeste,Tunguska event" [--start 004]     # explicit topics (use ; when a name contains commas)
     python doodle/batch.py --from-bank 100 [--start 004]                            # the next 100 unused topics of the topic bank
-    options: [--backend cli|none|agentfile] [--model sonnet] [--no-review] [--keep] [--bank FILE]
+    options: [--backend cli|none|agentfile|api] [--model sonnet] [--no-review] [--keep] [--bank FILE]
+    backend api: --provider openrouter|groq|nim|gemini|custom [--base-url URL] [--api-key-env VAR] [--review-model M] [--max-tokens 16000]
+                 [--api-timeout 600] [--api-cap 10]       (the key is read from OPENROUTER_API_KEY / GROQ_API_KEY / NVIDIA_API_KEY / GEMINI_API_KEY)
 
 Per topic (details in doodle/BATCH.md):
   1 facts   Wikipedia summary + intro (no key)
@@ -20,11 +22,16 @@ The model is the installed `claude -p` command (the owner's subscription). --bac
 fix2, review, fix3): without <episode>/answers/<stage>.txt the prompt is written to <episode>/prompts/<stage>.md, the line
 `ANSWER NEEDED <stage> <prompt file> -> <answer file>` is printed and the run ends with exit code 10; the agent writes the answer file and
 runs the same command again (what is done is reused). Details in doodle/BATCH.md.
-Exit codes: 0 all fine, 1 a topic failed, 2 usage error, 3 Claude CLI needs login, 4 usage limit / network / the CLI keeps failing
-(run again later: --from-bank skips what is done), 10 agentfile: an answer is needed."""
+--backend api = the same flow and the same files, but nobody has to answer: a missing answer is fetched from a free OpenAI-compatible model
+(OpenRouter / Groq / NVIDIA NIM / Gemini; the key is in an environment variable; the review stage sends review.jpg to a vision model), written
+to answers/<stage>.txt and the run goes on; every request is a row of <episode>/calls.json.
+Exit codes: 0 all fine, 1 a topic failed, 2 usage error, 3 Claude CLI needs login (api: key rejected), 4 usage limit / network / the CLI keeps
+failing (run again later: --from-bank skips what is done), 10 agentfile: an answer is needed."""
 import argparse
+import base64
 import collections
 import datetime
+import http.client
 import json
 import math
 import os
@@ -282,8 +289,194 @@ def call_claude(prompt, system, model="sonnet", tools="", label="call"):
 
 
 def usage_totals(calls):
-    tin = sum((c.get("input_tokens") or 0) + (c.get("cache_creation") or 0) + (c.get("cache_read") or 0) for c in calls)
-    return len(calls), tin, sum(c.get("output_tokens") or 0 for c in calls), sum(c.get("cost_usd") or 0 for c in calls)
+    """(number of calls, tokens in, tokens out, cost) of the rows of the CLI (input_tokens ...) and of backend api (prompt_tokens ...)"""
+    tin = sum((c.get("input_tokens") or c.get("prompt_tokens") or 0) + (c.get("cache_creation") or 0) + (c.get("cache_read") or 0) for c in calls)
+    return (len(calls), tin, sum(c.get("output_tokens") or c.get("completion_tokens") or 0 for c in calls),
+            sum(c.get("cost_usd") or 0 for c in calls))
+
+
+# ------------------------------------------------------------------------------------------ the model (backend api: free OpenAI-compatible API)
+PROVIDERS = {"openrouter": ("https://openrouter.ai/api/v1", "OPENROUTER_API_KEY"),
+             "groq": ("https://api.groq.com/openai/v1", "GROQ_API_KEY"),
+             "nim": ("https://integrate.api.nvidia.com/v1", "NVIDIA_API_KEY"),
+             "gemini": ("https://generativelanguage.googleapis.com/v1beta/openai", "GEMINI_API_KEY"),
+             "custom": ("", "OPENAI_API_KEY")}      # provider -> (base URL, variable that holds the key); custom needs --base-url
+API_SYSTEM = "You are the author. Reply with the answer only: no code fences, no commentary before or after."
+API_UA = "UnexplainedDoodleBatch/1.0"               # our own name: some gateways (Cloudflare) refuse the default Python-urllib one
+API_ATTEMPTS, API_WAITS, API_MAX_WAIT = 5, (10, 20, 40, 80), 90      # tries per request, seconds to wait after try 1..4, the longest wait
+API_MAX_TOKENS = 32000                              # a cut-off reply is asked again with max_tokens doubled, but never above this
+NO_PROBLEMS = '{"ok": true, "fixes": []}'           # the review verdict when the review model cannot see images
+NO_VISION = re.compile(r"image|vision|multimodal|multi-modal|modalit|must be a string|valid string|expected.{0,20}string", re.I)
+API = {"base": "", "key": "", "key_env": ""}        # filled by api_setup(): the key stays in memory, only its length is ever printed
+
+
+def redact(s):
+    """text that is safe to print: the API key, should it ever show up in an error message, becomes ***"""
+    key = API["key"]
+    return str(s).replace(key, "***") if len(key) >= 6 else str(s)
+
+
+class ApiError(Exception):
+    """one failed chat/completions request: status = HTTP status (0 = no answer at all: timeout, connection), body = what the server said"""
+
+    def __init__(self, msg, status=0, body=""):
+        super().__init__(redact(msg))
+        self.status, self.body = status, redact(body)[:2000]
+
+
+class NoVision(Exception):
+    """backend api, review stage: the review model cannot read images (a 4xx about image input): the review counts as 'no problems'"""
+
+
+def saved_calls(path):
+    """backend api, a re-run: the usage rows of the earlier runs of the topic (calls.json), so its call count and the api cap are cumulative"""
+    try:
+        rows = json.loads(read_text(os.path.join(path, "calls.json")))
+    except (OSError, ValueError):
+        return []
+    return rows if isinstance(rows, list) else []
+
+
+def api_setup(a):
+    """backend api: base URL and key (from the environment) -> API. Prints the length of the key, never the key"""
+    base, env = PROVIDERS[a.provider]
+    base, env = (a.base_url or base).rstrip("/"), a.api_key_env or env
+    if not base:
+        raise BatchAbort(2, "--provider custom needs --base-url")
+    key = (os.environ.get(env) or "").strip()
+    if not key:
+        raise BatchAbort(2, f"no API key: set the environment variable {env} (--api-key-env NAME names another one)")
+    API.update(base=base, key=key, key_env=env)
+    say(f"api key: {env}, {len(key)} chars")
+    say(f"api: {a.provider} ({urllib.parse.urlsplit(base).hostname}), model {a.model}, review model {a.review_model or a.model}, "
+        f"max_tokens {a.max_tokens}, timeout {a.api_timeout} s, at most {a.api_cap} calls per topic")
+
+
+def api_once(req, timeout):
+    """one HTTP request -> (status, body text, headers); status 0 = no answer (timeout, connection error), the text then says why"""
+    try:
+        with urllib.request.urlopen(req, timeout=timeout, context=_SSL["ctx"]) as r:
+            return r.status, r.read().decode("utf-8", errors="replace"), r.headers
+    except urllib.error.HTTPError as e:
+        try:
+            body = e.read().decode("utf-8", errors="replace")
+        except (OSError, http.client.HTTPException):
+            body = ""
+        return e.code, body, e.headers
+    except (OSError, http.client.HTTPException) as e:                # timeout, reset connection, DNS, TLS ...
+        return 0, f"{type(e).__name__}: {getattr(e, 'reason', None) or e}", None
+
+
+def retry_wait(i, hdrs):
+    """seconds to wait after failed try number i: the Retry-After header if the server sent one, else 10, 20, 40, 80; never more than 90"""
+    wait = API_WAITS[min(i, len(API_WAITS)) - 1]
+    try:
+        if hdrs and hdrs.get("Retry-After"):
+            wait = float(hdrs.get("Retry-After"))
+    except ValueError:                                  # an HTTP date: not worth parsing, the normal wait
+        pass
+    return min(API_MAX_WAIT, max(0, wait))
+
+
+def api_message(d, body):
+    """the text of an error reply ({"error": {"message": ...}} as OpenAI sends it), else the start of the body"""
+    err = d.get("error") if isinstance(d, dict) else None
+    msg = err.get("message") if isinstance(err, dict) else err
+    return short(msg or (d.get("message") if isinstance(d, dict) else "") or body, 240)
+
+
+def api_http(payload, timeout):
+    """POST {base}/chat/completions -> (reply, tries). A 429, a 5xx, a timeout or a connection error is tried again (API_ATTEMPTS tries in all,
+    waiting for the Retry-After header, else 10, 20, 40, 80 s, at most 90); any other failure is an ApiError at once"""
+    data = json.dumps(payload).encode("utf-8")
+    heads = {"Authorization": "Bearer " + API["key"], "Content-Type": "application/json", "Accept": "application/json", "User-Agent": API_UA}
+    for i in range(1, API_ATTEMPTS + 1):
+        req = urllib.request.Request(API["base"] + "/chat/completions", data=data, headers=heads, method="POST")
+        status, body, hdrs = api_once(req, timeout)
+        try:
+            d = json.loads(body)
+        except ValueError:
+            d = None
+        if status and isinstance(d, dict) and d.get("choices"):
+            return d, i
+        if 0 < status < 400:                            # 200 without choices: some gateways put the error into the body
+            err = d.get("error") if isinstance(d, dict) else None
+            code = str(err.get("code")) if isinstance(err, dict) else ""
+            status = int(code) if code.isdigit() and int(code) >= 400 else 502
+        e = ApiError(f"HTTP {status}: {api_message(d, body)}" if status else body, status, body)
+        if status and status != 429 and status < 500:   # the request itself is wrong (key, model, image ...): trying again changes nothing
+            raise e
+        if i == API_ATTEMPTS:
+            raise e
+        wait = retry_wait(i, hdrs)
+        say(f"  api: try {i}/{API_ATTEMPTS} failed ({short(e, 160)}), waiting {wait:g} s")
+        time.sleep(wait)
+
+
+def content_text(content):
+    """message.content is a string; some servers send a list of {"type": "text", "text": ...} parts"""
+    if isinstance(content, list):
+        content = "".join(p.get("text") or "" for p in content if isinstance(p, dict))
+    return content if isinstance(content, str) else ""
+
+
+def strip_think(text):
+    """reasoning models may put <think>...</think> in front of the answer (the opening tag can be missing): that is not the answer"""
+    text = re.sub(r"<think(?:ing)?>.*?</think(?:ing)?>", "", text, flags=re.S | re.I)
+    m = re.search(r"</think(?:ing)?>", text, re.I)
+    return text[m.end():] if m else text
+
+
+def reasoning_fields(a):
+    """--reasoning low / none -> the request fields that turn hidden thinking down or off (OpenAI style reasoning_effort, and OpenRouter's
+    unified `reasoning` object); --reasoning default -> nothing, so servers that reject unknown fields are not upset"""
+    if a.reasoning == "low":
+        return {"reasoning_effort": "low", "reasoning": {"effort": "low"}} if a.provider == "openrouter" else {"reasoning_effort": "low"}
+    if a.reasoning == "none":
+        return {"reasoning_effort": "none", "reasoning": {"exclude": True, "effort": "none"}} if a.provider == "openrouter" \
+            else {"reasoning_effort": "none"}
+    return {}
+
+
+def api_chat(c, stage, system, prompt, model, image=None):
+    """One stage of backend api -> the reply text. Every request is a row of calls.json (stage, model, status, seconds, tokens from `usage`).
+    A reply that stopped at max_tokens (finish_reason length) or is empty is asked once more with max_tokens doubled (at most 32000), then
+    StageFail 'truncated reply'; more requests than --api-cap for the topic: StageFail 'api cap'."""
+    a, user = c.args, prompt
+    if image:
+        try:
+            with open(image, "rb") as f:
+                url = "data:image/jpeg;base64," + base64.b64encode(f.read()).decode("ascii")
+        except OSError as e:
+            raise StageFail(f"cannot read {rel(image)}: {e}", model=True)
+        user = [{"type": "text", "text": prompt}, {"type": "image_url", "image_url": {"url": url}}]
+    messages = [{"role": "system", "content": API_SYSTEM + "\n\nThis step: " + system}, {"role": "user", "content": user}]
+    tokens = a.max_tokens
+    for attempt in (1, 2):
+        if len(STATE["calls"]) >= a.api_cap:
+            raise StageFail(f"api cap: {a.api_cap} API calls for this topic are used up, stage {stage} was not asked")
+        t0 = time.time()
+        row = {"n": len(STATE["calls"]) + 1, "stage": stage, "model": model, "attempt": attempt, "max_tokens": tokens, "image": bool(image),
+               "prompt_chars": len(prompt)}
+        try:
+            d, tries = api_http(dict({"model": model, "messages": messages, "max_tokens": tokens, "temperature": 0.4}, **reasoning_fields(a)),
+                                a.api_timeout)
+        except ApiError as e:
+            record_call(dict(row, status=f"error {e.status}" if e.status else "error", seconds=round(time.time() - t0, 1), prompt_tokens=0,
+                             completion_tokens=0, cost_usd=0, error=short(e, 300)))
+            raise
+        choice = d["choices"][0] if isinstance(d["choices"][0], dict) else {}
+        text = strip_think(content_text((choice.get("message") or {}).get("content")))
+        finish, u = choice.get("finish_reason"), d.get("usage") or {}
+        broken = "truncated" if finish == "length" else ("empty" if not text.strip() else "")
+        record_call(dict(row, status=broken or "ok", seconds=round(time.time() - t0, 1), tries=tries, finish_reason=finish, reply_chars=len(text),
+                         prompt_tokens=u.get("prompt_tokens") or 0, completion_tokens=u.get("completion_tokens") or 0, cost_usd=0))
+        if not broken:
+            return text
+        if attempt == 1:
+            tokens = min(tokens * 2, API_MAX_TOKENS)
+            c.say(f"{stage}: {broken} reply (finish_reason {finish}) - asking again with max_tokens {tokens}")
+    raise StageFail(f"truncated reply: {stage} was cut off or empty twice (max_tokens {a.max_tokens}, then {tokens})")
 
 
 # ------------------------------------------------------------------------------------------ 1 facts (Wikipedia, no key)
@@ -918,8 +1111,33 @@ class Ctx:
         os.makedirs(os.path.dirname(answer_path), exist_ok=True)
         write_text(prompt_path, f"Write your complete answer to {answer_path} as plain text (no code fences), then re-run: {rerun_command()}\n\n"
                                 f"ROLE AND OUTPUT RULES: {system}\n\n-----\n\n{prompt}\n")
+        if self.args.api:                            # backend api: the model answers at once, the run does not stop (the files are the same)
+            return self.ask_api(prompt, system, stage, answer_path)
         self.say(f"{stage}: waiting for the agent")
         raise NeedAnswer(stage, prompt_path, answer_path)
+
+    def ask_api(self, prompt, system, stage, answer_path):
+        """backend api: the answer of the stage from the OpenAI-compatible API, written to answers/<stage>.txt exactly where an agent would have
+        put it (so a re-run resumes and an agent could take over any stage). The review stage also sends review.jpg to --review-model."""
+        a = self.args
+        image = os.path.join(self.ep, "review.jpg") if stage == "review" else None
+        model = (a.review_model or a.model) if image else a.model
+        self.say(f"{stage}: {model}, {len(prompt) // 1024} kB prompt" + (" + review.jpg" if image else ""))
+        try:
+            text = api_chat(self, stage, system, prompt, model, image)
+        except ApiError as e:
+            if image and e.status in (400, 404, 415, 422) and NO_VISION.search(e.body or str(e)):
+                write_text(answer_path, NO_PROBLEMS + "\n")
+                self.say(f"review: {model} cannot read images ({short(e, 160)}) - counted as: no problems")
+                raise NoVision(str(e))
+            if e.status in (401, 403):
+                raise BatchAbort(3, f"API key rejected ({short(e, 160)}): check {API['key_env']}")
+            if e.status in (402, 429):
+                raise BatchAbort(4, f"API rate limit, quota or credit ({short(e, 160)}) - run again later, finished topics are skipped")
+            raise StageFail(f"model call failed ({stage}): {e}", model=True)
+        write_text(answer_path, text)
+        self.say(f"{stage}: {len(text)} chars -> answers/{stage}.txt")
+        return text
 
     def write_screenplay(self, reply):
         write_text(self.sp, clean_screenplay(reply, self.brief["header"]))
@@ -935,7 +1153,7 @@ def fresh_dir(path, keep=False):
         if not keep:
             shutil.rmtree(path, ignore_errors=True)
     os.makedirs(path, exist_ok=True)
-    STATE["dir"], STATE["calls"] = path, []
+    STATE["dir"], STATE["calls"] = path, (saved_calls(path) if keep and API["base"] else [])     # backend api: earlier runs' rows count too
 
 
 def stage_facts(c):
@@ -1175,8 +1393,10 @@ def review_prompt(c, sheet):
         if sid in intended:
             line += f"\n  intended picture: {intended[sid]}"
         lines.append(line)
+    look = ("Look at its contact sheet, which is attached to this message as an image." if c.args.api else
+            f"Look at its contact sheet: use the Read tool on exactly this file: {sheet.replace(os.sep, '/')}")
     return (f"A 40-second vertical doodle animation (720x1280, ink on paper, stick figures) is finished and about to be published.\n"
-            f"Look at its contact sheet: use the Read tool on exactly this file: {sheet.replace(os.sep, '/')}\n"
+            f"{look}\n"
             f"Every tile is one full frame of the video (captions sit at the bottom), labelled with the scene id and the time in seconds; "
             f"each scene has two tiles, one early and one late in the scene.\n\nNARRATION AND SCENES\n" + "\n".join(lines) + "\n\n"
             "Judge ONLY these three things:\n"
@@ -1224,6 +1444,10 @@ def stage_review(c):
         c.say(f"review: {len(frames)} stills -> review.jpg, model call")
     try:
         reply = c.ask(review_prompt(c, sheet), REVIEW_SYSTEM, "review", tools="Read")
+    except NoVision:                            # backend api: the review model cannot read images - same effect as --no-review for this topic
+        c.review = "skipped (no vision)"
+        c.say("review: " + c.review)
+        return
     except StageFail as e:
         if not e.model:
             raise
@@ -1444,10 +1668,11 @@ def process_topic(topic, a):
         traceback.print_exc()
         status, reason = "FAILED", f"internal error: {type(e).__name__}: {short(e, 200)}"
     calls, tin, tout, cost = usage_totals(STATE["calls"])
-    if resume and not dup:                           # the agent's answers are the model calls (a re-run does not ask again for what it kept)
+    if resume and not dup and not a.api:             # agentfile: the agent's answers are the model calls (a re-run does not ask again for what it kept)
         calls = len(os.listdir(os.path.join(c.ep, "answers"))) if os.path.isdir(os.path.join(c.ep, "answers")) else 0
-    row = {"ts": utc_now(), "topic": topic, "slug": slug, "status": status, "reason": reason, "queue": c.queue, "backend": a.backend,
-           "model": a.model if a.backend == "cli" else "", "calls": calls, "tokens_in": tin, "tokens_out": tout,
+    row = {"ts": utc_now(), "topic": topic, "slug": slug, "status": status, "reason": reason, "queue": c.queue,
+           "backend": "api" if a.api else a.backend,
+           "model": a.model if a.backend == "cli" or a.api else "", "calls": calls, "tokens_in": tin, "tokens_out": tout,
            "cost_usd": round(cost, 4), "seconds": round(time.time() - c.t0), "fix_rounds": c.fix_rounds,
            "problems_first": c.problems_first, "problems_left": c.problems_left, "review": c.review}
     if not dup:
@@ -1495,17 +1720,36 @@ def main():
     g.add_argument("--from-bank", type=int, metavar="N", help="the next N unused topics of the topic bank")
     ap.add_argument("--bank", help="topic bank JSON (default: stickman/topics_unexplained.json, else stickman/topics.json)")
     ap.add_argument("--start", type=int, help="first queue number NNN (default: after the highest in queue/ and done/)")
-    ap.add_argument("--backend", choices=("cli", "none", "agentfile"), default="cli",
+    ap.add_argument("--backend", choices=("cli", "none", "agentfile", "api"), default="cli",
                     help="cli = claude -p; none = plumbing test without any model call; agentfile = a Claude Code agent answers through files "
-                         "(<episode>/prompts, <episode>/answers; exit code 10 = an answer is needed, see BATCH.md)")
-    ap.add_argument("--model", default="sonnet", help="model alias for every call (default sonnet)")
+                         "(<episode>/prompts, <episode>/answers; exit code 10 = an answer is needed, see BATCH.md); api = the same files, "
+                         "but a free OpenAI-compatible model (see --provider) answers by itself: no login, no agent")
+    ap.add_argument("--model", default="sonnet", help="model for every call: an alias for cli (default sonnet), the model id of the provider for api")
+    ap.add_argument("--provider", choices=tuple(PROVIDERS), default="openrouter",
+                    help="backend api: openrouter (key in OPENROUTER_API_KEY), groq (GROQ_API_KEY), nim (NVIDIA_API_KEY), gemini (GEMINI_API_KEY) "
+                         "or custom (--base-url is required)")
+    ap.add_argument("--base-url", help="backend api: base URL of the API (default: the provider's); requests go to <base-url>/chat/completions")
+    ap.add_argument("--api-key-env", help="backend api: name of the environment variable that holds the key (default: the provider's)")
+    ap.add_argument("--review-model", help="backend api: model of the review stage, it must understand images (default: --model)")
+    ap.add_argument("--max-tokens", type=int, default=16000,
+                    help="backend api: max_tokens of a call (default 16000); a reply cut off by it is asked again once with twice as many (up to 32000)")
+    ap.add_argument("--api-timeout", type=int, default=600, help="backend api: seconds to wait for one reply (default 600)")
+    ap.add_argument("--api-cap", type=int, default=10, help="backend api: at most N API calls per topic, then the topic is FAILED (default 10)")
+    ap.add_argument("--reasoning", choices=("default", "low", "none"), default="default",
+                    help="backend api: thinking effort of reasoning models - default sends nothing; low / none send reasoning_effort "
+                         "(and OpenRouter's reasoning.effort / reasoning.exclude), so the answer is not eaten by hidden thinking tokens")
     ap.add_argument("--no-review", action="store_true", help="skip the look at stills (saves 1-2 model calls per topic)")
     ap.add_argument("--keep", action="store_true", help="keep the whole episode work folder after a good run (default: only the small text files)")
     a = ap.parse_args()
+    a.api = a.backend == "api"
+    if a.api:                                        # api = agentfile whose missing answers are fetched from the model (same files, same resume)
+        a.backend = "agentfile"
     rows, abort, streak = [], None, 0
     try:
         if a.backend == "cli":
             claude_cmd()
+        elif a.api:
+            api_setup(a)
         topics = pick_topics(a)
         if not topics:
             say("no topics to do")
@@ -1515,7 +1759,7 @@ def main():
             rows.append(row)
             streak = streak + 1 if row["status"] == "ERROR" else 0
             if streak >= 3:
-                raise BatchAbort(4, "the Claude CLI failed on 3 topics in a row - stopping (run again later)")
+                raise BatchAbort(4, f"{'the model' if a.api else 'the Claude CLI'} failed on 3 topics in a row - stopping (run again later)")
     except BatchAbort as e:
         abort = e
     except KeyboardInterrupt:
