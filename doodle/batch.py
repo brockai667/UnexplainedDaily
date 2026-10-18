@@ -12,14 +12,16 @@ Per topic (details in doodle/BATCH.md):
   2 brief   1 model call -> brief YAML (8-11 sentences, gold words, a scene paragraph per sentence) + title / description / tags;
             validated, one retry with the errors appended
   3 author  1 model call: make_prompt's author brief -> the complete screenplay.yaml
-  4 check   doodle/accept.py; its problems go back to the model (fix call, at most 2 rounds); a draft that does not compile = FAILED
+  4 check   doodle/accept.py (lists ALL compile problems at once); its problems go back to the model (fix call, at most --fix-rounds rounds, default 2);
+            a draft that does not compile = FAILED
   5 review  stills (hyperframes snapshot) tiled into review.jpg, 1 model call that looks at it (+ 1 fix call if it finds problems)
   6 render  doodle/qa.py must print RESULT: PASS
   7 queue   doodle/queue/<NNN>-<slug>/ (screenplay.yaml + meta.json) and one line in doodle/batch_log.jsonl
 The model is the installed `claude -p` command (the owner's subscription). --backend none = plumbing test without any model call
 (brief = briefs/celeste.yaml, screenplay = episodes/celeste_sonnet/screenplay.yaml, no review).
 --backend agentfile = a Claude Code agent is the model, no CLI login. Every model call is a resumable STAGE (brief, brief-retry, author, fix1,
-fix2, review, fix3): without <episode>/answers/<stage>.txt the prompt is written to <episode>/prompts/<stage>.md, the line
+fix2 ... fixN, review, fix<N+1>; N = --fix-rounds, default 2, so fix3 is the review fix): without <episode>/answers/<stage>.txt the prompt is
+written to <episode>/prompts/<stage>.md, the line
 `ANSWER NEEDED <stage> <prompt file> -> <answer file>` is printed and the run ends with exit code 10; the agent writes the answer file and
 runs the same command again (what is done is reused). Details in doodle/BATCH.md.
 --backend api = the same flow and the same files, but nobody has to answer: a missing answer is fetched from a free OpenAI-compatible model
@@ -432,9 +434,8 @@ def reasoning_fields(a):
     unified `reasoning` object); --reasoning default -> nothing, so servers that reject unknown fields are not upset"""
     if a.reasoning == "low":
         return {"reasoning_effort": "low", "reasoning": {"effort": "low"}} if a.provider == "openrouter" else {"reasoning_effort": "low"}
-    if a.reasoning == "none":
-        return {"reasoning_effort": "none", "reasoning": {"exclude": True, "effort": "none"}} if a.provider == "openrouter" \
-            else {"reasoning_effort": "none"}
+    if a.reasoning == "none":              # OpenRouter's documented switch for "no thinking": reasoning.enabled false (+ exclude), no reasoning_effort
+        return {"reasoning": {"enabled": False, "exclude": True}} if a.provider == "openrouter" else {"reasoning_effort": "none"}
     return {}
 
 
@@ -1242,8 +1243,17 @@ def stage_author(c):
     c.write_screenplay(reply)
 
 
+FIX_COMPILE_NOTE = """
+
+The COMPILE ERROR lines above are every compile problem found by one scan of the whole file (the compiler itself names only the first), so fix
+all of them in this answer. Use only drawing names from the LIBRARY section above or ones you define under `shapes:` in this screenplay, only the
+poses and actions listed in the problems or in the API above, and anchor beats (`word:`) only to words that occur in the narration sentences."""
+
+
 def fix_screenplay(c, problems, label, stage=None):
-    prompt = (c.author_md + "\n\nYOUR SCREENPLAY:\n" + read_text(c.sp) + "\n\nPROBLEMS:\n" + problems.strip()[:8000] + FIX_TAIL)
+    """fix prompt = the author prompt (LIBRARY and API once) + the screenplay + ALL problems (+ a reminder when compile errors are among them)"""
+    note = FIX_COMPILE_NOTE if "COMPILE ERROR" in problems else ""
+    prompt = (c.author_md + "\n\nYOUR SCREENPLAY:\n" + read_text(c.sp) + "\n\nPROBLEMS:\n" + problems.strip()[:8000] + note + FIX_TAIL)
     c.write_screenplay(c.ask(prompt, AUTHOR_SYSTEM, label, stage=stage))
 
 
@@ -1734,13 +1744,20 @@ def main():
     ap.add_argument("--max-tokens", type=int, default=16000,
                     help="backend api: max_tokens of a call (default 16000); a reply cut off by it is asked again once with twice as many (up to 32000)")
     ap.add_argument("--api-timeout", type=int, default=600, help="backend api: seconds to wait for one reply (default 600)")
-    ap.add_argument("--api-cap", type=int, default=10, help="backend api: at most N API calls per topic, then the topic is FAILED (default 10)")
+    ap.add_argument("--api-cap", type=int, default=10,
+                    help="backend api: at most N API calls per topic, then the topic is FAILED (default 10; --fix-rounds 4 needs 12 or more)")
+    ap.add_argument("--fix-rounds", type=int, default=2, metavar="N",             # = MAX_FIX_ROUNDS (a literal: main() assigns that name below)
+                    help="at most N fix calls for the problems of accept.py (default 2); the review fix is then stage fix<N+1>. Backend api: "
+                         "brief + author + N fixes + review + review fix (+ retries) calls, so N 4 needs --api-cap 12")
     ap.add_argument("--reasoning", choices=("default", "low", "none"), default="default",
-                    help="backend api: thinking effort of reasoning models - default sends nothing; low / none send reasoning_effort "
-                         "(and OpenRouter's reasoning.effort / reasoning.exclude), so the answer is not eaten by hidden thinking tokens")
+                    help="backend api: thinking of reasoning models - default sends nothing; low sends reasoning_effort low (OpenRouter: also "
+                         "reasoning.effort); none sends reasoning_effort none (OpenRouter: only reasoning {enabled: false, exclude: true}), "
+                         "so the answer is not eaten by hidden thinking tokens")
     ap.add_argument("--no-review", action="store_true", help="skip the look at stills (saves 1-2 model calls per topic)")
     ap.add_argument("--keep", action="store_true", help="keep the whole episode work folder after a good run (default: only the small text files)")
     a = ap.parse_args()
+    global MAX_FIX_ROUNDS                  # --fix-rounds: the check stage and the review fix (stage fix<N+1>) read this module value
+    MAX_FIX_ROUNDS = max(0, a.fix_rounds)
     a.api = a.backend == "api"
     if a.api:                                        # api = agentfile whose missing answers are fetched from the model (same files, same resume)
         a.backend = "agentfile"

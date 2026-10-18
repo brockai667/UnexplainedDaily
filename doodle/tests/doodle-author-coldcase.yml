@@ -34,9 +34,9 @@ on:
         options: [openrouter, groq, nim, gemini]
         default: openrouter
       model:
-        description: "Model id of the provider for brief, author and fixes"
+        description: "Model id of the provider for brief, author and fixes (18.10.2026: nemotron-3-ultra writes complete screenplays; nemotron-3.5-super-vl spends its output on hidden thinking)"
         type: string
-        default: "nvidia/nemotron-3.5-super-vl:free"
+        default: "nvidia/nemotron-3-ultra-550b-a55b:free"
       review_model:
         description: "Model id for the review of the stills (must understand images; empty = same as model)"
         type: string
@@ -60,7 +60,7 @@ on:
       extra:
         description: "Extra batch.py options, space-separated (e.g. --reasoning low --no-review)"
         type: string
-        default: ""
+        default: "--reasoning none --max-tokens 32000 --fix-rounds 4 --api-cap 12"
 
 permissions:
   contents: write            # only used by commit: true (push of doodle/queue + doodle/batch_log.jsonl)
@@ -174,7 +174,7 @@ jobs:
           START: ${{ inputs.start }}
           EXTRA: ${{ inputs.extra }}
         run: |
-          MODEL="${MODEL:-nvidia/nemotron-3.5-super-vl:free}"
+          MODEL="${MODEL:-nvidia/nemotron-3-ultra-550b-a55b:free}"
           ARGS=(--backend api --keep --provider "${PROVIDER:-openrouter}" --model "$MODEL" --review-model "${REVIEW_MODEL:-$MODEL}")
           # shellcheck disable=SC2206  # EXTRA is a space-separated list of extra batch.py options, e.g. "--reasoning low --no-review"
           if [ -n "$EXTRA" ]; then ARGS+=($EXTRA); fi

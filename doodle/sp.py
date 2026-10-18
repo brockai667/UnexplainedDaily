@@ -64,6 +64,20 @@ SFX_NAMES = set(SFX.MAKERS)
 VERB_SFX = {"explode": ("boom", 0.95, 0.0), "shatter": ("glass", 0.5, 0.0), "tip_over": ("clatter", 0.4, 0.34), "stamp": ("thud", 0.4, 0.06)}
 
 
+BUILTIN_SHAPES = ("check", "cross", "question", "exclaim", "arrow_down")      # `kind: shape` drawings that need no definition
+
+
+def shape_groups(shapes, items, seen=0):
+    """animatable parts of a custom shape: its named groups (also those of the shapes it `use`s); accept.py lints with it too"""
+    out = []
+    for it in items or []:
+        if it.get("group"):
+            out += [it["group"]] + shape_groups(shapes, it.get("items"), seen + 1)
+        elif it.get("use") and seen < 5:
+            out += shape_groups(shapes, shapes.get(it["use"]), seen + 1)
+    return out
+
+
 def norm(s):
     return re.sub(r"[^a-z0-9]", "", str(s).lower())
 
@@ -383,11 +397,11 @@ def compile_episode(ep_dir):
                     raise SPError(f"scene '{sid}' {sec}: object without kind: {od}")
                 if od["kind"] not in KIND_VERBS:
                     raise SPError(f"scene '{sid}': unknown kind '{od['kind']}'. Kinds: {', '.join(sorted(KIND_VERBS))}")
-                if od["kind"] == "shape" and od.get("shape") not in shapes and od.get("shape") not in ("check", "cross", "question", "exclaim", "arrow_down"):
+                if od["kind"] == "shape" and od.get("shape") not in shapes and od.get("shape") not in BUILTIN_SHAPES:
                     raise SPError(f"scene '{sid}': unknown shape '{od.get('shape')}'")
                 if od["kind"] == "emitter" and od.get("emitter") not in EMITTERS:
                     raise SPError(f"scene '{sid}': unknown emitter '{od.get('emitter')}'. Emitters: {', '.join(sorted(EMITTERS))}")
-                if od["kind"] == "emitter" and od.get("shape") and od["shape"] not in shapes and od["shape"] not in ("check", "cross", "question", "exclaim", "arrow_down"):
+                if od["kind"] == "emitter" and od.get("shape") and od["shape"] not in shapes and od["shape"] not in BUILTIN_SHAPES:
                     raise SPError(f"scene '{sid}': emitter '{od.get('id')}' uses unknown shape '{od['shape']}'")
                 od["section"] = sec
                 objs.append(od)
@@ -395,13 +409,7 @@ def compile_episode(ep_dir):
         kinds = {o["id"]: o["kind"] for o in objs if o.get("id")}
 
         def groups(items, seen=0):                                  # animatable parts of a custom shape: its named groups
-            out = []
-            for it in items or []:
-                if it.get("group"):
-                    out += [it["group"]] + groups(it.get("items"), seen + 1)
-                elif it.get("use") and seen < 5:
-                    out += groups(shapes.get(it["use"]), seen + 1)
-            return out
+            return shape_groups(shapes, items, seen)
         for o in objs:
             if o["kind"] == "shape" and o.get("id"):
                 for gname in groups(shapes.get(o.get("shape"))):

@@ -71,9 +71,16 @@ ANSWER NEEDED: exit code 0 = no topic failed (each ended with a `QUEUED <queue f
 In the `review` stage open the `review.jpg` named in the prompt with your Read tool and answer with the JSON only.
 
 * Every place where `--backend cli` calls the model is a stage with a fixed name: `brief`, `brief-retry` (the brief was invalid),
-  `author`, `fix1`, `fix2` (accept.py problems), `review`, `fix3` (problems found by the review). Prompt:
+  `author`, `fix1` ... `fixN` (accept.py problems; N = `--fix-rounds`, default 2), `review`, `fix<N+1>` (problems found by the review; `fix3`
+  with the default, so resume a topic with the same `--fix-rounds`). Prompt:
   `doodle/episodes/<slug>/prompts/<stage>.md`, answer: `doodle/episodes/<slug>/answers/<stage>.txt` (empty = missing; code fences are
   stripped as with `cli`).
+* Check stage, every backend: `accept.py` first scans the whole screenplay and prints EVERY problem the compiler would stop at (unknown drawing /
+  pose / face / sfx, an action the object cannot do, a `word:` anchor not in the narration, unknown sentence key, `check:` word not in its scene ...)
+  as `COMPILE ERROR: scene 'x' beat #n (...)` lines, exit code 1, nothing compiled; the fix prompt carries the whole list and a short reminder.
+  `--fix-rounds N` = how many fix calls it gets. Backend api: brief + author + N fixes + review + review fix (+ retries) calls, so
+  `--fix-rounds 4` needs `--api-cap 12` (the default cap stays 10). `--reasoning none` sends OpenRouter `{"reasoning": {"enabled": false,
+  "exclude": true}}` (no `reasoning_effort`); the workflow default `extra` is `--reasoning none --max-tokens 32000 --fix-rounds 4 --api-cap 12`.
 * Running the same command again resumes: the facts (`facts.json`), the validated brief (`brief.yaml`) and every answer are reused;
   `accept.py` runs again, the review stills are made only when the review prompt is written. Several topics are done in order, the
   first one that needs an answer stops the run; topics already in the queue are skipped. A topic that ended FAILED / SKIPPED is not
